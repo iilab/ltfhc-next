@@ -1,47 +1,35 @@
 FORMAT: 1A
-HOST: http://www.google.com
+HOST: http://ltfhc-next.hact.net
 
-# iilab
-Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+# LTFHC
+This API provides full access to the LTFHC forms system UI. 
+All JSON must be valid [JSON Schema](http://json-schema.org/latest/json-schema-core.html) or [JSON Hyper-Schema](http://json-schema.org/latest/json-schema-hypermedia.html).
+The forms system UI uses the [JSONForm](https://github.com/joshfire/jsonform) Javascript library to generate HTML5 forms for presentation to the user.
 
-# Group Notes
-Notes related resources of the **Notes API**
+# Group Collections
+Collections are simple key-value pair lists of items (diseases, villages, etc). 
 
-## Notes Collection [/notes]
-### List all Notes [GET]
+## Collection Lists [/lists]
+### List all Lists [GET]
 + Response 200 (application/json)
 
         [{
-          "id": 1, "title": "Jogging in park"
+          "id": 1, "title": "Drugs"
         }, {
-          "id": 2, "title": "Pick-up posters from post-office"
+          "id": 2, "title": "Villages"
         }]
 
-### Create a Note [POST]
+### Create a List [POST]
 + Request (application/json)
 
-        { "title": "Buy cheese and bread for breakfast." }
+        { "title": "Drugs", [ "Asprin", "Vitamin C", "Amoxicillin" ] }
 
 + Response 201 (application/json)
 
-        { "id": 3, "title": "Buy cheese and bread for breakfast." }
+        { "id": 1, "title": "Drugs", [ "Asprin", "Vitamin C", "Amoxicillin" ] }
 
-## Note [/notes/{id}]
-A single Note object with all its details
+### Retrieve a List [/lists/{id}]
+A list with its items
 
 + Parameters
-    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
-
-### Retrieve a Note [GET]
-+ Response 200 (application/json)
-
-    + Header
-
-            X-My-Header: The Value
-
-    + Body
-
-            { "id": 2, "title": "Pick-up posters from post-office" }
-
-### Remove a Note [DELETE]
-+ Response 204
+    + id (required, number, `1`) ... Numeric `id` of the list to perform action with. Has example value.
