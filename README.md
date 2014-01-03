@@ -1,4 +1,6 @@
 ltfhc-next
 ==========
 
-Next Generation LTFHC Forms
+Next Generation LTFHC Forms.
+
+[API Documentation](http://ltfhc.apiary.io)
