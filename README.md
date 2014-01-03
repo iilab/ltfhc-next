@@ -3,4 +3,4 @@ ltfhc-next
 
 Next Generation LTFHC Forms.
 
-[API Documentation](http://ltfhc.apiary.io)
+[API Documentation](http://docs.ltfhc.apiary.io)
