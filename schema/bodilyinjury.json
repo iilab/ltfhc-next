@@ -1,0 +1,61 @@
+{
+  "firstname": {
+    "title": "First Name",
+    "type": "string"
+  },
+  "lastname": {
+    "title": "Last Name",
+    "type": "string"
+  },
+  "village": {
+    "title": "village",
+    "type": "string"
+  },
+  "clinicid": {
+    "title": "Clinic ID",
+    "type": "string"
+  },
+  "userid": {
+    "title": "Clinician",
+    "type": "string"
+  },
+  "injurydate": {
+    "title": "Date of Injury",
+    "type": "date"
+  },
+  "injurytype": {
+    "title": "Type of Injury",
+    "type": "enum" [
+      "animal bite",
+      "fracture",
+      "concussion or head injury",
+      "motor vehicle accident",
+      "motorcycle accident",
+      "laceration",
+      "crash injury",
+      "burn",
+      "other"
+    ]
+  },
+  "injuryother": {
+    "title": "Other Injury",
+    "type": "string"
+  },
+  "testing": {
+    "title": "Testing",
+    "type": "text"
+  },
+  "treatment": {
+    "title": "Treatment",
+    "type": "enum" [ "A", "B", "C"]
+  },
+  "admission": {
+    "title": "Admission Required?",
+    "type": "enum" [ "Yes", "No" ]
+  },
+  "mortality": {
+    "title": "Did Injury Lead to death?",
+    "type": "enum" [ "Yes", "No" ]
+
+  }
+}
