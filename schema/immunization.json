@@ -1,0 +1,55 @@
+{
+  "firstname": {
+    "title": "First Name",
+    "type": "string"
+  },
+  "lastname": {
+    "title": "Last Name",
+    "type": "string"
+  },
+  "village": {
+    "title": "village",
+    "type": "string"
+  },
+  "clinicid": {
+    "title": "Clinic ID",
+    "type": "string"
+  },
+  "userid": {
+    "title": "Clinician",
+    "type": "string"
+  },
+  "dispensed": {
+    "title": "Medication Dispensed",
+    "type": "enum" [ "A", "B", "C"]
+  },
+  "immediateeffects": {
+    "title": "Immediate Effects",
+    "type": "enum" [ 
+      "none", 
+      "shortness of breath", 
+      "tongue swelling",
+      "rash",
+      "fever",
+      "swelling at injection site",
+      "nausea or vomiting",
+      "other"
+    ]
+  },
+  "otherreaction": {
+    "title": "If other vaccine reaction, please describe:",
+    "type": "string"
+  },
+  "anaphylaxis": {
+    "title": "Anaphylaxis present?",
+    "type": "string"
+  },
+  "counseling": {
+    "title": "Describe any counseling given regarding side-effects",
+    "type": "text"
+  },
+  "pregnant": {
+    "title": "Pregnant?",
+    "type": "enum" [ "Yes", "No"]
+  }
+}
