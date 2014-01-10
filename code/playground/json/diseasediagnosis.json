@@ -1,0 +1,74 @@
+{
+  "firstname": {
+    "title": "First Name",
+    "type": "string"
+  },
+  "lastname": {
+    "title": "Last Name",
+    "type": "string"
+  },
+  "village": {
+    "title": "village",
+    "type": "string"
+  },
+  "clinicid": {
+    "title": "Clinic ID",
+    "type": "string"
+  },
+  "userid": {
+    "title": "Clinician",
+    "type": "string"
+  },
+   "complaint": {
+    "title": "Chief complaint",
+    "type": "enum" [ "A", "B", "C"]
+  },
+   "othercomplaint": {
+    "title": "If Chief Complaint not listed above, please write in:",
+    "type": "string"
+   },
+   "symptoms": {
+    "title": "Symptoms",
+    "type": "enum" [ "A", "B", "C"]
+   },
+   "othersymptoms": {
+    "title": "Other Symptoms",
+    "type": "text"
+   },
+   "history": {
+    "title": "Past History",
+    "type": "enum" [ "A", "B", "C"]
+   },
+   "examnotes": {
+    "title": "Examination Notes",
+    "type": "text"
+   },
+   "testmethods": {
+    "title": "Testing Methods",
+    "type": "text"
+   },
+   "diseasediagnosis": {
+    "title": "Disease Diagnosis",
+    "type": "enum" [ "A", "B", "C"]
+   },
+    "otherdisease": {
+    "title": "Other Disease Diagnosis:",
+    "type": "string"
+   }, 
+   "treatment": {
+    "title": "treatment",
+    "type": "text"
+   },
+   "admission": {
+    "title": "Admission required?",
+    "type": "enum" [ "Yes", "No"]
+   },
+   "mortality": {
+    "title": "Did Disease lead to death?",
+    "type": "enum" [ "Yes", "No"]
+   },
+   "referral": {
+    "title": "Is referral required?",
+    "type": "string"
+   }
+}

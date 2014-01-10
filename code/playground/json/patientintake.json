@@ -1,0 +1,30 @@
+{
+  "firstname": {
+    "title": "First Name",
+    "type": "string"
+  },
+  "lastname": {
+    "title": "Last Name",
+    "type": "string"
+  },
+  "village": {
+    "title": "village",
+    "type": "string"
+  },
+  "clinicid": {
+    "title": "Clinic ID",
+    "type": "string"
+  },
+  "userid": {
+    "title": "Clinician",
+    "type": "string"
+  },
+  "notes": {
+    "title": "Notes",
+    "type": "text"
+  },
+  "reasons": {
+    "title": "Reasons for Visit",
+    "type": "enum" [ "A", "B", "C"]
+  }
+}

@@ -1,6 +1,4 @@
 {
-    "type": "object",
-    "properties": {
   "firstname": {
     "title": "First Name",
     "type": "string"
@@ -50,5 +48,4 @@
        "title": "Drug"
     }
   }
-}
 }
