@@ -1,54 +1,54 @@
 {
-    "type": "object",
-    "properties": {
-  "firstname": {
-    "title": "First Name",
-    "type": "string"
-  },
-  "lastname": {
-    "title": "Last Name",
-    "type": "string"
-  },
-  "gender": {
-    "title": "Gender",
-    "description": "Your gender",
-    "type": "string",
-    "enum": [
-      "male",
-      "female",
-    ]
-  },
-  "clinicid": {
-    "title": "Clinic ID",
-    "type": "string"
-  },
-  "governmentid": {
-    "title": "Government ID",
-    "type": "string"
-  },
-  "hivid": {
-    "title": "HIV ID",
-    "type": "string"
-  },
-  "phone": {
-    "title": "Phone",
-    "type": "number"
-  },
-  "birthday": {
-    "title": "Birthday",
-    "type": "date"
-  },
-  "approxage": {
-    "title": "Approximate Age",
-    "type": "number"
-  },
-  "allergies": {
-    "title": "Medication Allergies",
-    "type": "array",
-    "items": {
-       "type": "string",
-       "title": "Drug"
+  "properties": {
+    "allergies": {
+      "items": {
+        "title": "Drug",
+        "type": "string"
+      },
+      "title": "Medication Allergies",
+      "type": "array"
+    },
+    "approxage": {
+      "title": "Approximate Age",
+      "type": "number"
+    },
+    "birthday": {
+      "title": "Birthday",
+      "type": "date"
+    },
+    "clinicid": {
+      "title": "Clinic ID",
+      "type": "string"
+    },
+    "firstname": {
+      "title": "First Name",
+      "type": "string"
+    },
+    "gender": {
+      "description": "Your gender",
+      "enum": [
+        "male",
+        "female"
+      ],
+      "title": "Gender",
+      "type": "string"
+    },
+    "governmentid": {
+      "title": "Government ID",
+      "type": "string"
+    },
+    "hivid": {
+      "title": "HIV ID",
+      "type": "string"
+    },
+    "lastname": {
+      "title": "Last Name",
+      "type": "string"
+    },
+    "phone": {
+      "title": "Phone",
+      "type": "number"
     }
-  }
-}
+  },
+  "type": "object"
 }

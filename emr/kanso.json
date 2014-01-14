@@ -1,0 +1,16 @@
+{
+    "name": "example-app",
+    "version": "0.0.1",
+    "description": "The simplest possible app",
+    "attachments": ["index.html"],
+    "load": "lib/app",
+    "modules": ["lib"],
+    "dependencies": {
+        "attachments": null,
+        "modules": null,
+	"properties": null,
+        "db": null,
+        "bootstrap": null
+        "alpacajs": null
+    }
+}
