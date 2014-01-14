@@ -1,5 +1,5 @@
 {
-    "name": "example-app",
+    "name": "emr",
     "version": "0.0.1",
     "description": "The simplest possible app",
     "attachments": ["index.html"],
@@ -10,7 +10,7 @@
         "modules": null,
 	"properties": null,
         "db": null,
-        "bootstrap": null
+        "bootstrap": null,
         "alpacajs": null
     }
 }

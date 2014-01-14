@@ -1,4 +1,5 @@
 {
+  "type": "object",
   "properties": {
     "allergies": {
       "items": {
@@ -49,6 +50,5 @@
       "title": "Phone",
       "type": "number"
     }
-  },
-  "type": "object"
+  }
 }
