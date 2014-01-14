@@ -1,12 +1,14 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
   "properties": {
-    "allergies": {
-      "items": {
-        "title": "Drug",
-        "type": "string"
-      },
-      "title": "Medication Allergies",
-      "type": "array"
+    "firstname": {
+      "title": "First Name",
+      "type": "string"
+    },
+    "lastname": {
+      "title": "Last Name",
+      "type": "string"
     },
     "approxage": {
       "title": "Approximate Age",
@@ -20,18 +22,12 @@
       "title": "Clinic ID",
       "type": "string"
     },
-    "firstname": {
-      "title": "First Name",
-      "type": "string"
-    },
     "gender": {
-      "description": "Your gender",
       "enum": [
         "male",
         "female"
       ],
-      "title": "Gender",
-      "type": "string"
+      "title": "Gender"
     },
     "governmentid": {
       "title": "Government ID",
@@ -41,15 +37,18 @@
       "title": "HIV ID",
       "type": "string"
     },
-    "lastname": {
-      "title": "Last Name",
-      "type": "string"
-    },
     "phone": {
       "title": "Phone",
       "type": "number"
+    },
+    "allergies": {
+      "items": {
+        "title": "Drug",
+        "type": "string"
+      },
+      "title": "Medication Allergies",
+      "type": "array"
     }
   },
-  "type": "object",
   "_id": "data/newpatient.json"
 }

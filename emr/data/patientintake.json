@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
     "village": {
@@ -19,11 +20,7 @@
     },
     "reasons": {
       "title": "Reasons for Visit",
-      "enum": [
-        "A",
-        "B",
-        "C"
-      ]
+      "$ref": "forms/#formlist"
     }
   },
   "_id": "data/patientintake.json"

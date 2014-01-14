@@ -3,38 +3,23 @@
   "properties": {
     "complaint": {
       "title": "Chief complaint",
-      "type": "string",
-      "enum": [
-        "A",
-        "B",
-        "C"
-      ]
+      "$ref": "complaints.json/#complaint"
     },
     "othercomplaint": {
       "title": "If Chief Complaint not listed above, please write in:",
       "type": "string"
     },
     "symptoms": {
-      "title": "Symptoms",
-      "type": "string",
-      "enum": [
-        "A",
-        "B",
-        "C"
-      ]
+      "title": "Chief complaint",
+      "$ref": "symptoms/#symptoms"
     },
     "othersymptoms": {
       "title": "Other Symptoms",
       "type": "text"
     },
     "history": {
-      "title": "Past History",
-      "type": "string",
-      "enum": [
-        "A",
-        "B",
-        "C"
-      ]
+      "title": "Chief complaint",
+      "$ref": "symptoms/#symptoms"
     },
     "examnotes": {
       "title": "Examination Notes",
@@ -46,12 +31,7 @@
     },
     "diseasediagnosis": {
       "title": "Disease Diagnosis",
-      "type": "string",
-      "enum": [
-        "A",
-        "B",
-        "C"
-      ]
+      "$ref": "diseases/#disease"
     },
     "otherdisease": {
       "title": "Other Disease Diagnosis:",
@@ -79,8 +59,17 @@
     },
     "referral": {
       "title": "Is referral required?",
-      "type": "string"
-    }
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No"
+      ]    }
   },
+  "required": [
+    "complaint",
+    "symptoms",
+    "examnotes",
+    "diseasediagnosis"
+  ],
   "_id": "data/diseasediagnosis.json"
 }
