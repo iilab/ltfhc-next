@@ -1,1 +1,55 @@
-{"properties":{"allergies":{"items":{"title":"Drug","type":"string"},"title":"Medication Allergies","type":"array"},"approxage":{"title":"Approximate Age","type":"number"},"birthday":{"title":"Birthday","type":"date"},"clinicid":{"title":"Clinic ID","type":"string"},"firstname":{"title":"First Name","type":"string"},"gender":{"description":"Your gender","enum":["male","female"],"title":"Gender","type":"string"},"governmentid":{"title":"Government ID","type":"string"},"hivid":{"title":"HIV ID","type":"string"},"lastname":{"title":"Last Name","type":"string"},"phone":{"title":"Phone","type":"number"}},"type":"object","_id":"c174197e4e638ee5593724744ed5a5dd"}
+{
+  "properties": {
+    "allergies": {
+      "items": {
+        "title": "Drug",
+        "type": "string"
+      },
+      "title": "Medication Allergies",
+      "type": "array"
+    },
+    "approxage": {
+      "title": "Approximate Age",
+      "type": "number"
+    },
+    "birthday": {
+      "title": "Birthday",
+      "type": "date"
+    },
+    "clinicid": {
+      "title": "Clinic ID",
+      "type": "string"
+    },
+    "firstname": {
+      "title": "First Name",
+      "type": "string"
+    },
+    "gender": {
+      "description": "Your gender",
+      "enum": [
+        "male",
+        "female"
+      ],
+      "title": "Gender",
+      "type": "string"
+    },
+    "governmentid": {
+      "title": "Government ID",
+      "type": "string"
+    },
+    "hivid": {
+      "title": "HIV ID",
+      "type": "string"
+    },
+    "lastname": {
+      "title": "Last Name",
+      "type": "string"
+    },
+    "phone": {
+      "title": "Phone",
+      "type": "number"
+    }
+  },
+  "type": "object",
+  "_id": "data/newpatient.json"
+}

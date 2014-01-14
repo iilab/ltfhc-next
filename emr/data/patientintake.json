@@ -1,1 +1,30 @@
-{"type":"object","properties":{"village":{"title":"village","type":"string"},"clinicid":{"title":"Clinic ID","type":"string"},"userid":{"title":"Clinician","type":"string"},"notes":{"title":"Notes","type":"text"},"reasons":{"title":"Reasons for Visit","enum":["A","B","C"]}},"_id":"c174197e4e638ee5593724744ef57906"}
+{
+  "type": "object",
+  "properties": {
+    "village": {
+      "title": "village",
+      "type": "string"
+    },
+    "clinicid": {
+      "title": "Clinic ID",
+      "type": "string"
+    },
+    "userid": {
+      "title": "Clinician",
+      "type": "string"
+    },
+    "notes": {
+      "title": "Notes",
+      "type": "text"
+    },
+    "reasons": {
+      "title": "Reasons for Visit",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    }
+  },
+  "_id": "data/patientintake.json"
+}
