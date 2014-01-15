@@ -16,7 +16,7 @@
     },
     "notes": {
       "title": "Notes",
-      "type": "text"
+      "type": "string"
     },
     "reasons": {
       "title": "Reasons for Visit",

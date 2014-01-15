@@ -35,7 +35,7 @@
     },
     "counseling": {
       "title": "Describe any counseling given regarding side-effects",
-      "type": "text"
+      "type": "string"
     },
     "pregnant": {
       "title": "Pregnant?",

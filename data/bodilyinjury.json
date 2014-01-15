@@ -4,7 +4,8 @@
   "properties": {
     "injurydate": {
       "title": "Date of Injury",
-      "type": "date"
+      "type": "string",
+      "format": "date-time"
     },
     "injurytype": {
       "title": "Type of Injury",
@@ -27,7 +28,7 @@
     },
     "testing": {
       "title": "Testing",
-      "type": "text"
+      "type": "string"
     },
     "treatment": {
       "title": "Treatment",

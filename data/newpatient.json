@@ -16,7 +16,8 @@
     },
     "birthday": {
       "title": "Birthday",
-      "type": "date"
+      "type": "string",
+      "format": "date-time"
     },
     "clinicid": {
       "title": "Clinic ID",

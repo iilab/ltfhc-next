@@ -16,7 +16,7 @@
     },
     "othersymptoms": {
       "title": "Other Symptoms",
-      "type": "text"
+      "type": "string"
     },
     "history": {
       "title": "Chief complaint",
@@ -24,11 +24,11 @@
     },
     "examnotes": {
       "title": "Examination Notes",
-      "type": "text"
+      "type": "string"
     },
     "testmethods": {
       "title": "Testing Methods",
-      "type": "text"
+      "type": "string"
     },
     "diseasediagnosis": {
       "title": "Disease Diagnosis",
@@ -40,7 +40,7 @@
     },
     "treatment": {
       "title": "treatment",
-      "type": "text"
+      "type": "string"
     },
     "admission": {
       "title": "Admission required?",
