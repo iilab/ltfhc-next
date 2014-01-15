@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
     "dispensed": {
@@ -38,11 +39,12 @@
     },
     "pregnant": {
       "title": "Pregnant?",
-      "type": "string",
+      "type": "boolean",
       "enum": [
-        "Yes",
-        "No"
-      ]
+        true,
+        false
+      ],
+      "default": false
     }
   },
   "_id": "data/immunization.json"

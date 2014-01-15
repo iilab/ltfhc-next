@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
     "injurydate": {
@@ -39,19 +40,21 @@
     },
     "admission": {
       "title": "Admission Required?",
-      "type": "string",
+      "type": "boolean",
       "enum": [
-        "Yes",
-        "No"
-      ]
+        true,
+        false
+      ],
+      "default": false
     },
     "mortality": {
       "title": "Did Injury Lead to death?",
-      "type": "string",
+      "type": "boolean",
       "enum": [
-        "Yes",
-        "No"
-      ]
+        true,
+        false
+      ],
+      "default": false
     }
   },
   "_id": "data/bodilyinjury.json"

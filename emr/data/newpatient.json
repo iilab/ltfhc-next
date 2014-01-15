@@ -44,7 +44,7 @@
     "allergies": {
       "items": {
         "title": "Drug",
-        "type": "string"
+        "$ref": "drugs/#druglist"
       },
       "title": "Medication Allergies",
       "type": "array"
