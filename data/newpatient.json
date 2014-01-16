@@ -50,6 +50,5 @@
       "title": "Medication Allergies",
       "type": "array"
     }
-  },
-  "_id": "data/newpatient.json"
+  }
 }
