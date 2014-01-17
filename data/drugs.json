@@ -1,737 +1,107 @@
 [
-  {
-    "drug": "Artemether/Lumefantrine Tab 20/120mg (Njano-1x6)",
-    "msd": 10010001,
-    "supply": "",
-    "count": 30,
-    "units": "B"
-  },
-  {
-    "drug": "Artemether/Lumefantrine Tab 20/120mg (Bluu-2x6)",
-    "msd": 10010002,
-    "supply": "",
-    "count": 30,
-    "units": "B"
-  },
-  {
-    "drug": "Artemether/Lumefantrine Tab 20/120mg (Kahawia-3x6)",
-    "msd": 10010007,
-    "supply": "",
-    "count": 30,
-    "units": "B"
-  },
-  {
-    "drug": "Artemether/Lumefantrine Tab 20/120mg (Kijani-4x6)",
-    "msd": 10010004,
-    "supply": "",
-    "count": 30,
-    "units": "B"
-  },
-  {
-    "drug": "Acetylsalicylic Acid (Aspirin) Tabs 300mg",
-    "msd": 10011001,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Albendazole Tabs 200mg",
-    "msd": 10011002,
-    "supply": "",
-    "count": 100,
-    "units": "T"
-  },
-  {
-    "drug": "Aminophyline Tabs 100mg",
-    "msd": 10011005,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Amoxicillin Caps 250mg",
-    "msd": 10011007,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Chlorpheniramine Tabs 4mg",
-    "msd": 10011018,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Chlorpromazine Tabs 100mg",
-    "msd": 10011021,
-    "supply": "",
-    "count": 500,
-    "units": "T"
-  },
-  {
-    "drug": "Co-Trimoxazole Tabs 400mg/80mg",
-    "msd": 10011028,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Diclofenac tabs 50mg",
-    "msd": 10011031,
-    "supply": "",
-    "count": 100,
-    "units": "T"
-  },
-  {
-    "drug": "Doxycycline Caps 100mg",
-    "msd": 10011033,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Ephedrine Tabs 30mg",
-    "msd": 10011034,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Erythromycin Tabs 250mg",
-    "msd": 10011036,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Ferrous Sulphate + Folic Acid Tabs 200/0.25mg",
-    "msd": 10011037,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Folic Acid Tabs 5mg",
-    "msd": 10011038,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Hyoscin-N-butyl bromide 10mg",
-    "msd": 10011045,
-    "supply": "",
-    "count": 500,
-    "units": "T"
-  },
-  {
-    "drug": "Magnesium Trisilicate BPC Compound Tabs",
-    "msd": 10011050,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Metronidazole Tabs 200mg",
-    "msd": 10011053,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Paracetamol Tabs 500mg",
-    "msd": 10011059,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Phenobarbital Tabs 30mg",
-    "msd": 10011060,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Phenoxy methyl penicillin  Tabs 250mg",
-    "msd": 10011062,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Phenytoin Tabs100mg",
-    "msd": 10011063,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Quinine Tabs 300mg *",
-    "msd": 10011070,
-    "supply": "",
-    "count": 1000,
-    "units": "T"
-  },
-  {
-    "drug": "Ciprofloxacin Tabs 500mg",
-    "msd": 10011084,
-    "supply": "",
-    "count": 100,
-    "units": "T"
-  },
-  {
-    "drug": "Microgynon Tabs",
-    "msd": 10018100,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Lo-Femenal Tabs",
-    "msd": 10018101,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Microval Tabs",
-    "msd": 10018102,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Sulphadoxine+ Pyrimethamine Tabs 500/25mg",
-    "msd": 10018456,
-    "supply": "",
-    "count": 100,
-    "units": "T"
-  },
-  {
-    "drug": "Dextrose 5%, 500mls",
-    "msd": 10044019,
-    "supply": "",
-    "count": 24,
-    "units": "P"
-  },
-  {
-    "drug": "Sodium chloride 0.9%",
-    "msd": 10044021,
-    "supply": "",
-    "count": 24,
-    "units": "P"
-  },
-  {
-    "drug": "Erythromycin  granules 125mg/5ml",
-    "msd": 10101016,
-    "supply": "",
-    "count": 100,
-    "units": "ML"
-  },
-  {
-    "drug": "Oral rehydration salts (ORS) Pdr for 1 litre",
-    "msd": 10101023,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "Amoxicillin suspension 125mg/5ml, 100 ml",
-    "msd": 10101050,
-    "supply": "",
-    "count": 24,
-    "units": "P"
-  },
-  {
-    "drug": " Chloramphenicol eye ointment  1%",
-    "msd": 10101054,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "Clotrimazole 1% cream/ointment  Tube 2gm",
-    "msd": 10101055,
-    "supply": "",
-    "count": 24,
-    "units": "P"
-  },
-  {
-    "drug": "Oxytetracycline eye 1% ointment, Tube 3.5gm",
-    "msd": 10101056,
-    "supply": "",
-    "count": 20,
-    "units": "P"
-  },
-  {
-    "drug": "Paracetamol Syrup 120mg/5mls, 100ml",
-    "msd": 10101057,
-    "supply": "",
-    "count": 24,
-    "units": "P"
-  },
-  {
-    "drug": "Co-Trimoxazole Suspension 200/40mg/5ml, 100ml",
-    "msd": 10101060,
-    "supply": "",
-    "count": 24,
-    "units": "P"
-  },
-  {
-    "drug": "Dispensing Envelope",
-    "msd": 10112006,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "Chlorhexidine + Cetrimide (Savlon) liquid 1.5%/15%",
-    "msd": 10123001,
-    "supply": "",
-    "count": 5,
-    "units": "LT"
-  },
-  {
-    "drug": "Cresol Saponated (Lysol) Liquid 50%",
-    "msd": 10123003,
-    "supply": "",
-    "count": 5,
-    "units": "LT"
-  },
-  {
-    "drug": "Methylated Spirit Liquid 70%",
-    "msd": 10123007,
-    "supply": "",
-    "count": 5,
-    "units": "LT"
-  },
-  {
-    "drug": "Povidone Iodine Liquid 10%",
-    "msd": 10123012,
-    "supply": "",
-    "count": 250,
-    "units": "ML"
-  },
-  {
-    "drug": "Washing Soap Bar",
-    "msd": 10123014,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Spectinomycin 2g inj",
-    "msd": 10140001,
-    "supply": "",
-    "count": 1,
-    "units": "VL"
-  },
-  {
-    "drug": "Adrenaline 1ml inj 1mg/ml",
-    "msd": 10141001,
-    "supply": "",
-    "count": 10,
-    "units": "VL"
-  },
-  {
-    "drug": "Benzathine penicillin lnj 2.4mu",
-    "msd": 10141007,
-    "supply": "",
-    "count": 50,
-    "units": "VL"
-  },
-  {
-    "drug": "Benzyl Penicillin  Pdr for inj, 5mu",
-    "msd": 10141008,
-    "supply": "",
-    "count": 50,
-    "units": "VL"
-  },
-  {
-    "drug": "Ceftriaxone Powder lnj 250mg",
-    "msd": 10141010,
-    "supply": "",
-    "count": 20,
-    "units": "VL"
-  },
-  {
-    "drug": "Chloramphenicol Pdr for inj 1gm",
-    "msd": 10141011,
-    "supply": "",
-    "count": 50,
-    "units": "VL"
-  },
-  {
-    "drug": "Diazepam lnj 5mg/ml, 2ml",
-    "msd": 10141020,
-    "supply": "",
-    "count": 10,
-    "units": "VL"
-  },
-  {
-    "drug": "Ergometrine lnj 0.5mg",
-    "msd": 10141024,
-    "supply": "",
-    "count": 10,
-    "units": "VL"
-  },
-  {
-    "drug": "Procaine Penicillin Fortified Pdr for inj, 4mu",
-    "msd": 10141050,
-    "supply": "",
-    "count": 50,
-    "units": "VL"
-  },
-  {
-    "drug": "Quinine lnj 300mg/ml, 2ml",
-    "msd": 10141052,
-    "supply": "",
-    "count": 10,
-    "units": "VL"
-  },
-  {
-    "drug": "Water For Injection 10ml",
-    "msd": 10141060,
-    "supply": "",
-    "count": 100,
-    "units": "VL"
-  },
-  {
-    "drug": "Medroxyprogesterone (Depo-Provera) 150 mg",
-    "msd": 10148103,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Industrial Gloves",
-    "msd": 20025016,
-    "supply": "",
-    "count": 1,
-    "units": "Pair"
-  },
-  {
-    "drug": "Catgut Chromic  0,75cm ,1/2 circ, round body, 40mm",
-    "msd": 20036003,
-    "supply": "",
-    "count": 12,
-    "units": "P"
-  },
-  {
-    "drug": "Catgut Chromic 2,75cm, 1/2 circ, hvy tapercut, 35mm",
-    "msd": 20036008,
-    "supply": "",
-    "count": 12,
-    "units": "P"
-  },
-  {
-    "drug": "Silk Braided 0,75cm, 3/8 circ, reverse cutting, 45mm",
-    "msd": 20036027,
-    "supply": "",
-    "count": 12,
-    "units": "P"
-  },
-  {
-    "drug": "Umbilical Cotton Tape 3mm Roll,  100m",
-    "msd": 20036035,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Silk Braided 1/0, 75cm, 3/8 circ, reverse cutting, 45mm",
-    "msd": 20036050,
-    "supply": "",
-    "count": 12,
-    "units": "P"
-  },
-  {
-    "drug": "Gloves Examination Latex Non-Sterile size M",
-    "msd": 20111003,
-    "supply": "",
-    "count": 100,
-    "units": "Pieces"
-  },
-  {
-    "drug": "Gloves Surgical Size 7",
-    "msd": 20111041,
-    "supply": "",
-    "count": 50,
-    "units": "Pairs"
-  },
-  {
-    "drug": "Gloves Surgical Size 7.5",
-    "msd": 20111042,
-    "supply": "",
-    "count": 50,
-    "units": "Pairs"
-  },
-  {
-    "drug": "Syringe disposable w/needle, 10cc",
-    "msd": 20111045,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "Syringe disposable iw/ needle 2cc",
-    "msd": 20111046,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "Syringe disposable w/needle 5cc",
-    "msd": 20111047,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "Fomu 2A: Taarifa na maombi",
-    "msd": 20212002,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Fomu 2C: Fomu tupu ya maombi",
-    "msd": 20212004,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Leia ya mali",
-    "msd": 20212007,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Blood lancets",
-    "msd": 20133002,
-    "supply": "",
-    "count": 200,
-    "units": "P"
-  },
-  {
-    "drug": "I.V. giving set",
-    "msd": 20133004,
-    "supply": "",
-    "count": 25,
-    "units": "P"
-  },
-  {
-    "drug": "I.V. canula 20 G",
-    "msd": 20144004,
-    "supply": "",
-    "count": 50,
-    "units": "P"
-  },
-  {
-    "drug": "I.V. canula 22 G",
-    "msd": 20144005,
-    "supply": "",
-    "count": 50,
-    "units": "P"
-  },
-  {
-    "drug": "Scalp vein set 23 G",
-    "msd": 20155011,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "Bandage hospital quality 7.5cm x 4m",
-    "msd": 20166009,
-    "supply": "",
-    "count": 12,
-    "units": "P"
-  },
-  {
-    "drug": "Cotton wool absorbent 500 G",
-    "msd": 20166012,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Plaster Zinc Oxide 2.5cmx5m",
-    "msd": 20166013,
-    "supply": "",
-    "count": 12,
-    "units": "P"
-  },
-  {
-    "drug": "Gauze absorbent BPC 90 Cm x 100m",
-    "msd": 20166028,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "OPD Cards",
-    "msd": 20211811,
-    "supply": "",
-    "count": 250,
-    "units": "P"
-  },
-  {
-    "drug": "Ante-Natal Cards MCH #4",
-    "msd": 20211812,
-    "supply": "",
-    "count": 25,
-    "units": "P"
-  },
-  {
-    "drug": "MCH Growing Charts MCH #1",
-    "msd": 20211813,
-    "supply": "",
-    "count": 25,
-    "units": "P"
-  },
-  {
-    "drug": "Client Card MCH #5",
-    "msd": 20211814,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Daily Dispensing Register",
-    "msd": 20211878,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Injection Register",
-    "msd": 20318440,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Prescription Form A5",
-    "msd": 20211877,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "Scalpel Blade Size 10",
-    "msd": 20255026,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "Albustix Protein in Urine Reagent Strip",
-    "msd": 20277002,
-    "supply": "",
-    "count": 50,
-    "units": "P"
-  },
-  {
-    "drug": "Clinistix strips",
-    "msd": 20277004,
-    "supply": "",
-    "count": 50,
-    "units": "P"
-  },
-  {
-    "drug": "Urinalysis strips (Multistix)",
-    "msd": 20277007,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "RPR for syphilis antigen test 100 tests",
-    "msd": 20291539,
-    "supply": "Kit",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Field Stain A",
-    "msd": 20297075,
-    "supply": "",
-    "count": 25,
-    "units": "GM"
-  },
-  {
-    "drug": "Field Stain B",
-    "msd": 20297076,
-    "supply": "",
-    "count": 25,
-    "units": "GM"
-  },
-  {
-    "drug": "Oil for microscope (Oil Immersion)",
-    "msd": 20297088,
-    "supply": "",
-    "count": 25,
-    "units": "ML"
-  },
-  {
-    "drug": "Applicator Stick Wood",
-    "msd": 20307102,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "Stool Specimen Container Plastic Disposable",
-    "msd": 20307121,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Silver nitrate single use stick",
-    "msd": 20307214,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Cover Slips 22x22mm",
-    "msd": 20307383,
-    "supply": "",
-    "count": 100,
-    "units": "P"
-  },
-  {
-    "drug": "Patient Register",
-    "msd": 20318439,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Copper T IUD",
-    "msd": 30018134,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Norplant implant",
-    "msd": 30018135,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  },
-  {
-    "drug": "Male condoms",
-    "msd": 30308105,
-    "supply": "Each",
-    "count": null,
-    "units": ""
-  }
+{"drug":"Artemether/Lumefantrine Tab 20/120mg (Njano-1x6)","msd":10010001,"supply":"","count":30,"units":"B","_id":"806867c76984a3e06bd577cb5195b353"},
+{"drug":"Artemether/Lumefantrine Tab 20/120mg (Bluu-2x6)","msd":10010002,"supply":"","count":30,"units":"B","_id":"806867c76984a3e06bd577cb5195b357"},
+{"drug":"Artemether/Lumefantrine Tab 20/120mg (Kahawia-3x6)","msd":10010007,"supply":"","count":30,"units":"B","_id":"806867c76984a3e06bd577cb5195b749"},
+{"drug":"Artemether/Lumefantrine Tab 20/120mg (Kijani-4x6)","msd":10010004,"supply":"","count":30,"units":"B","_id":"806867c76984a3e06bd577cb5195bc25"},
+{"drug":"Acetylsalicylic Acid (Aspirin) Tabs 300mg","msd":10011001,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb5195c6e8"},
+{"drug":"Albendazole Tabs 200mg","msd":10011002,"supply":"","count":100,"units":"T","_id":"806867c76984a3e06bd577cb5195d517"},
+{"drug":"Aminophyline Tabs 100mg","msd":10011005,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb5195daf0"},
+{"drug":"Amoxicillin Caps 250mg","msd":10011007,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb5195dd32"},
+{"drug":"Chlorpheniramine Tabs 4mg","msd":10011018,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb5195e098"},
+{"drug":"Chlorpromazine Tabs 100mg","msd":10011021,"supply":"","count":500,"units":"T","_id":"806867c76984a3e06bd577cb5195e6cb"},
+{"drug":"Co-Trimoxazole Tabs 400mg/80mg","msd":10011028,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb5195ea75"},
+{"drug":"Diclofenac tabs 50mg","msd":10011031,"supply":"","count":100,"units":"T","_id":"806867c76984a3e06bd577cb5195ed0a"},
+{"drug":"Doxycycline Caps 100mg","msd":10011033,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb5195f4e9"},
+{"drug":"Ephedrine Tabs 30mg","msd":10011034,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb5195fe23"},
+{"drug":"Erythromycin Tabs 250mg","msd":10011036,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb519600c9"},
+{"drug":"Ferrous Sulphate + Folic Acid Tabs 200/0.25mg","msd":10011037,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb519605b4"},
+{"drug":"Folic Acid Tabs 5mg","msd":10011038,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb51960b3e"},
+{"drug":"Hyoscin-N-butyl bromide 10mg","msd":10011045,"supply":"","count":500,"units":"T","_id":"806867c76984a3e06bd577cb51960b48"},
+{"drug":"Magnesium Trisilicate BPC Compound Tabs","msd":10011050,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb519615d6"},
+{"drug":"Metronidazole Tabs 200mg","msd":10011053,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb519616bb"},
+{"drug":"Paracetamol Tabs 500mg","msd":10011059,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb51961e2e"},
+{"drug":"Phenobarbital Tabs 30mg","msd":10011060,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb51962dc2"},
+{"drug":"Phenoxy methyl penicillin  Tabs 250mg","msd":10011062,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb519635ad"},
+{"drug":"Phenytoin Tabs100mg","msd":10011063,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb51963757"},
+{"drug":"Quinine Tabs 300mg *","msd":10011070,"supply":"","count":1000,"units":"T","_id":"806867c76984a3e06bd577cb5196454c"},
+{"drug":"Ciprofloxacin Tabs 500mg","msd":10011084,"supply":"","count":100,"units":"T","_id":"806867c76984a3e06bd577cb519645d4"},
+{"drug":"Microgynon Tabs","msd":10018100,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb51964cfb"},
+{"drug":"Lo-Femenal Tabs","msd":10018101,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb51965b30"},
+{"drug":"Microval Tabs","msd":10018102,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb51965bb1"},
+{"drug":"Sulphadoxine+ Pyrimethamine Tabs 500/25mg","msd":10018456,"supply":"","count":100,"units":"T","_id":"806867c76984a3e06bd577cb519666e0"},
+{"drug":"Dextrose 5%, 500mls","msd":10044019,"supply":"","count":24,"units":"P","_id":"806867c76984a3e06bd577cb519672e8"},
+{"drug":"Sodium chloride 0.9%","msd":10044021,"supply":"","count":24,"units":"P","_id":"806867c76984a3e06bd577cb51967d81"},
+{"drug":"Erythromycin  granules 125mg/5ml","msd":10101016,"supply":"","count":100,"units":"ML","_id":"806867c76984a3e06bd577cb51968a4b"},
+{"drug":"Oral rehydration salts (ORS) Pdr for 1 litre","msd":10101023,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb51968f41"},
+{"drug":"Amoxicillin suspension 125mg/5ml, 100 ml","msd":10101050,"supply":"","count":24,"units":"P","_id":"806867c76984a3e06bd577cb51968f70"},
+{"drug":" Chloramphenicol eye ointment  1%","msd":10101054,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb51969ea5"},
+{"drug":"Clotrimazole 1% cream/ointment  Tube 2gm","msd":10101055,"supply":"","count":24,"units":"P","_id":"806867c76984a3e06bd577cb5196a13a"},
+{"drug":"Oxytetracycline eye 1% ointment, Tube 3.5gm","msd":10101056,"supply":"","count":20,"units":"P","_id":"806867c76984a3e06bd577cb5196af3d"},
+{"drug":"Paracetamol Syrup 120mg/5mls, 100ml","msd":10101057,"supply":"","count":24,"units":"P","_id":"806867c76984a3e06bd577cb5196b7df"},
+{"drug":"Co-Trimoxazole Suspension 200/40mg/5ml, 100ml","msd":10101060,"supply":"","count":24,"units":"P","_id":"806867c76984a3e06bd577cb5196bf39"},
+{"drug":"Dispensing Envelope","msd":10112006,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb5196cbe5"},
+{"drug":"Chlorhexidine + Cetrimide (Savlon) liquid 1.5%/15%","msd":10123001,"supply":"","count":5,"units":"LT","_id":"806867c76984a3e06bd577cb5196da80"},
+{"drug":"Cresol Saponated (Lysol) Liquid 50%","msd":10123003,"supply":"","count":5,"units":"LT","_id":"806867c76984a3e06bd577cb5196e1f2"},
+{"drug":"Methylated Spirit Liquid 70%","msd":10123007,"supply":"","count":5,"units":"LT","_id":"806867c76984a3e06bd577cb5196f139"},
+{"drug":"Povidone Iodine Liquid 10%","msd":10123012,"supply":"","count":250,"units":"ML","_id":"806867c76984a3e06bd577cb5196fb24"},
+{"drug":"Washing Soap Bar","msd":10123014,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb519702b4"},
+{"drug":"Spectinomycin 2g inj","msd":10140001,"supply":"","count":1,"units":"VL","_id":"806867c76984a3e06bd577cb51971224"},
+{"drug":"Adrenaline 1ml inj 1mg/ml","msd":10141001,"supply":"","count":10,"units":"VL","_id":"806867c76984a3e06bd577cb5197214a"},
+{"drug":"Benzathine penicillin lnj 2.4mu","msd":10141007,"supply":"","count":50,"units":"VL","_id":"806867c76984a3e06bd577cb519727c1"},
+{"drug":"Benzyl Penicillin  Pdr for inj, 5mu","msd":10141008,"supply":"","count":50,"units":"VL","_id":"806867c76984a3e06bd577cb51973483"},
+{"drug":"Ceftriaxone Powder lnj 250mg","msd":10141010,"supply":"","count":20,"units":"VL","_id":"806867c76984a3e06bd577cb51973968"},
+{"drug":"Chloramphenicol Pdr for inj 1gm","msd":10141011,"supply":"","count":50,"units":"VL","_id":"806867c76984a3e06bd577cb51973df7"},
+{"drug":"Diazepam lnj 5mg/ml, 2ml","msd":10141020,"supply":"","count":10,"units":"VL","_id":"806867c76984a3e06bd577cb5197476f"},
+{"drug":"Ergometrine lnj 0.5mg","msd":10141024,"supply":"","count":10,"units":"VL","_id":"806867c76984a3e06bd577cb519752e8"},
+{"drug":"Procaine Penicillin Fortified Pdr for inj, 4mu","msd":10141050,"supply":"","count":50,"units":"VL","_id":"806867c76984a3e06bd577cb519756fa"},
+{"drug":"Quinine lnj 300mg/ml, 2ml","msd":10141052,"supply":"","count":10,"units":"VL","_id":"806867c76984a3e06bd577cb519761da"},
+{"drug":"Water For Injection 10ml","msd":10141060,"supply":"","count":100,"units":"VL","_id":"806867c76984a3e06bd577cb5197706f"},
+{"drug":"Medroxyprogesterone (Depo-Provera) 150 mg","msd":10148103,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb5197712c"},
+{"drug":"Industrial Gloves","msd":20025016,"supply":"","count":1,"units":"Pair","_id":"806867c76984a3e06bd577cb519780c6"},
+{"drug":"Catgut Chromic  0,75cm ,1/2 circ, round body, 40mm","msd":20036003,"supply":"","count":12,"units":"P","_id":"806867c76984a3e06bd577cb51978ebf"},
+{"drug":"Catgut Chromic 2,75cm, 1/2 circ, hvy tapercut, 35mm","msd":20036008,"supply":"","count":12,"units":"P","_id":"806867c76984a3e06bd577cb51979952"},
+{"drug":"Silk Braided 0,75cm, 3/8 circ, reverse cutting, 45mm","msd":20036027,"supply":"","count":12,"units":"P","_id":"806867c76984a3e06bd577cb5197a209"},
+{"drug":"Umbilical Cotton Tape 3mm Roll,  100m","msd":20036035,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb5197a333"},
+{"drug":"Silk Braided 1/0, 75cm, 3/8 circ, reverse cutting, 45mm","msd":20036050,"supply":"","count":12,"units":"P","_id":"806867c76984a3e06bd577cb5197b2e6"},
+{"drug":"Gloves Examination Latex Non-Sterile size M","msd":20111003,"supply":"","count":100,"units":"Pieces","_id":"806867c76984a3e06bd577cb5197bb72"},
+{"drug":"Gloves Surgical Size 7","msd":20111041,"supply":"","count":50,"units":"Pairs","_id":"806867c76984a3e06bd577cb5197bc6c"},
+{"drug":"Gloves Surgical Size 7.5","msd":20111042,"supply":"","count":50,"units":"Pairs","_id":"806867c76984a3e06bd577cb5197bf6b"},
+{"drug":"Syringe disposable w/needle, 10cc","msd":20111045,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb5197c5e8"},
+{"drug":"Syringe disposable iw/ needle 2cc","msd":20111046,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb5197cb19"},
+{"drug":"Syringe disposable w/needle 5cc","msd":20111047,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb5197d080"},
+{"drug":"Fomu 2A: Taarifa na maombi","msd":20212002,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb5197d4d8"},
+{"drug":"Fomu 2C: Fomu tupu ya maombi","msd":20212004,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb5197da63"},
+{"drug":"Leia ya mali","msd":20212007,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb5197e6f0"},
+{"drug":"Blood lancets","msd":20133002,"supply":"","count":200,"units":"P","_id":"806867c76984a3e06bd577cb5197f1e9"},
+{"drug":"I.V. giving set","msd":20133004,"supply":"","count":25,"units":"P","_id":"806867c76984a3e06bd577cb5197f3e7"},
+{"drug":"I.V. canula 20 G","msd":20144004,"supply":"","count":50,"units":"P","_id":"806867c76984a3e06bd577cb5197fe91"},
+{"drug":"I.V. canula 22 G","msd":20144005,"supply":"","count":50,"units":"P","_id":"806867c76984a3e06bd577cb519806ed"},
+{"drug":"Scalp vein set 23 G","msd":20155011,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb51980e71"},
+{"drug":"Bandage hospital quality 7.5cm x 4m","msd":20166009,"supply":"","count":12,"units":"P","_id":"806867c76984a3e06bd577cb519812ed"},
+{"drug":"Cotton wool absorbent 500 G","msd":20166012,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb519819c3"},
+{"drug":"Plaster Zinc Oxide 2.5cmx5m","msd":20166013,"supply":"","count":12,"units":"P","_id":"806867c76984a3e06bd577cb5198200c"},
+{"drug":"Gauze absorbent BPC 90 Cm x 100m","msd":20166028,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb51982bec"},
+{"drug":"OPD Cards","msd":20211811,"supply":"","count":250,"units":"P","_id":"806867c76984a3e06bd577cb519834bf"},
+{"drug":"Ante-Natal Cards MCH #4","msd":20211812,"supply":"","count":25,"units":"P","_id":"806867c76984a3e06bd577cb519839cc"},
+{"drug":"MCH Growing Charts MCH #1","msd":20211813,"supply":"","count":25,"units":"P","_id":"806867c76984a3e06bd577cb51983c52"},
+{"drug":"Client Card MCH #5","msd":20211814,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb51984899"},
+{"drug":"Daily Dispensing Register","msd":20211878,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb51985008"},
+{"drug":"Injection Register","msd":20318440,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb519858cb"},
+{"drug":"Prescription Form A5","msd":20211877,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb51985926"},
+{"drug":"Scalpel Blade Size 10","msd":20255026,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb519866ec"},
+{"drug":"Albustix Protein in Urine Reagent Strip","msd":20277002,"supply":"","count":50,"units":"P","_id":"806867c76984a3e06bd577cb519868b3"},
+{"drug":"Clinistix strips","msd":20277004,"supply":"","count":50,"units":"P","_id":"806867c76984a3e06bd577cb51987038"},
+{"drug":"Urinalysis strips (Multistix)","msd":20277007,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb51987891"},
+{"drug":"RPR for syphilis antigen test 100 tests","msd":20291539,"supply":"Kit","count":null,"units":"","_id":"806867c76984a3e06bd577cb519887b5"},
+{"drug":"Field Stain A","msd":20297075,"supply":"","count":25,"units":"GM","_id":"806867c76984a3e06bd577cb51988927"},
+{"drug":"Field Stain B","msd":20297076,"supply":"","count":25,"units":"GM","_id":"806867c76984a3e06bd577cb51988bc1"},
+{"drug":"Oil for microscope (Oil Immersion)","msd":20297088,"supply":"","count":25,"units":"ML","_id":"806867c76984a3e06bd577cb519892ef"},
+{"drug":"Applicator Stick Wood","msd":20307102,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb5198a25d"},
+{"drug":"Stool Specimen Container Plastic Disposable","msd":20307121,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb5198b1cc"},
+{"drug":"Silver nitrate single use stick","msd":20307214,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb5198bf33"},
+{"drug":"Cover Slips 22x22mm","msd":20307383,"supply":"","count":100,"units":"P","_id":"806867c76984a3e06bd577cb5198c794"},
+{"drug":"Patient Register","msd":20318439,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb5198c905"},
+{"drug":"Copper T IUD","msd":30018134,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb5198d822"},
+{"drug":"Norplant implant","msd":30018135,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb5198e3d8"},
+{"drug":"Male condoms","msd":30308105,"supply":"Each","count":null,"units":"","_id":"806867c76984a3e06bd577cb5198eae7"}
 ]
