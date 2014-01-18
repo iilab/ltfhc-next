@@ -1,87 +1,310 @@
-{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "definitions": {
-    "disease": {
-      "enum": [
-        "Skin Infection",
-        "Skin Disorder Non-infectious",
-        "Osteomyelitis",
-        "UTI",
-        "GI Disease Non-infectious",
-        "Cardiovascular Disorder Other",
-        "Liver Disease Infectious",
-        "liver Disease Non-infectious",
-        "Peptic Ulcers",
-        "Pneumonia Mild/moderate",
-        "Pneumonia Severe",
-        "Asthma",
-        "Asthma-severe",
-        "Acute Flaccid Paralysis/polio",
-        "Cardiac Failure",
-        "Rheumatic Fever",
-        "Eye Infection Other",
-        "Eye Infection Viral Keratoconjunctivitis",
-        "Eye Disease Non-infectious",
-        "Eye Infection Acute",
-        "Eye Infection Chronic",
-        "Ear Infection Acute",
-        "Ear Infection Chronic",
-        "Ear Disease Non-infectious",
-        "Cerebal Palsy",
-        "Epilepsy",
-        "Anemia Mild/moderate",
-        "Anemia Severe",
-        "Thyroid Disease",
-        "Sickle Cell",
-        "Marasmus",
-        "Kwashiorkor",
-        "Diabetes",
-        "Schistosomiasis",
-        "Louse Born Typhus",
-        "GUS",
-        "GUD",
-        "PID",
-        "Tuberculosis",
-        "Cerebral Spinal Meningitis (CSM)",
-        "Cholera",
-        "Diarrhea Acute (<14d)",
-        "Diarrhea Chronic (>14d)",
-        "Dysentery",
-        "Leprosy",
-        "Malaria No Test",
-        "Malaria Blood Side Positive",
-        "Malaria Mrdt Positive",
-        "Malnutrition",
-        "Measles",
-        "Mlague",
-        "Rabies",
-        "Typhoid",
-        "Yellow Fever",
-        "Upper Respiratory Infection",
-        "HIV",
-        "Other Sti",
-        "Gynecologic Disease",
-        "Tetanus",
-        "Acute Glomerulonephritis",
-        "Complication Of Prematurity Or Low Birth Weight",
-        "Birth Asphyxia",
-        "Poisoning",
-        "Burns",
-        "Congenital Disorder",
-        "Rheumatoid/Joint Disorder",
-        "Neonatal Septicemia",
-        "Soil Transmitted Helminths",
-        "Anthrax",
-        "Lymphatic Filairiasis",
-        "Hepatitis",
-        "Neoplasm",
-        "Animal Bite - Suspect Rabies",
-        "Animal Bite - Do Not Suspect Rabies",
-        "Traffic Accident",
-        "Fracture",
-        "Other"
-      ]
-    }
+[
+  {
+    "collection": "diseases",
+    "disease": "Skin Infection"
   },
-  "_id": "diseases"
-}
+  {
+    "collection": "diseases",
+    "disease": "Skin Disorder Non-infectious"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Osteomyelitis"
+  },
+  {
+    "collection": "diseases",
+    "disease": "UTI"
+  },
+  {
+    "collection": "diseases",
+    "disease": "GI Disease Non-infectious"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Cardiovascular Disorder Other"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Liver Disease Infectious"
+  },
+  {
+    "collection": "diseases",
+    "disease": "liver Disease Non-infectious"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Peptic Ulcers"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Pneumonia Mild/Moderate"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Pneumonia Severe"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Asthma"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Asthma Severe"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Acute Flaccid Paralysis/Polio"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Cardiac Failure"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Rheumatic Fever"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Eye Infection Other"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Eye Infection Viral Keratoconjunctivitis"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Eye Disease Non-Infectious"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Eye Infection Acute"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Eye Infection Chronic"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Ear Infection Acute"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Ear Infection Chronic"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Ear Disease Non-Infectious"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Cerebal Palsy"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Epilepsy"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Anemia Mild/Moderate"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Anemia Severe"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Thyroid Disease"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Sickle Cell"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Marasmus"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Kwashiorkor"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Diabetes"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Schistosomiasis"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Louse Born Typhus"
+  },
+  {
+    "collection": "diseases",
+    "disease": "GUS"
+  },
+  {
+    "collection": "diseases",
+    "disease": "GUD"
+  },
+  {
+    "collection": "diseases",
+    "disease": "PID"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Tuberculosis"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Cerebral Spinal Meningitis (CSM)"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Cholera"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Diarrhea Acute (<14d)"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Diarrhea Chronic (>14d)"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Dysentery"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Leprosy"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Malaria No Test"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Malaria Blood Side Positive"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Malaria MRDT Positive"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Malnutrition"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Measles"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Plague"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Rabies"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Typhoid"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Yellow Fever"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Upper Respiratory Infection"
+  },
+  {
+    "collection": "diseases",
+    "disease": "HIV"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Other STI"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Gynecologic Disease"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Tetanus"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Acute Glomerulonephritis"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Complication of Prematurity or Low Birth Weight"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Birth Asphyxia"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Poisoning"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Burns"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Congenital Disorder"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Rheumatoid/Joint Disorder"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Neonatal Septicemia"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Soil Transmitted Helminths"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Anthrax"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Lymphatic Filairiasis"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Hepatitis"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Neoplasm"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Animal Bite - Suspect Rabies"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Animal Bite - Do Not Suspect Rabies"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Traffic Accident"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Fracture"
+  },
+  {
+    "collection": "diseases",
+    "disease": "Other"
+  }
+]
