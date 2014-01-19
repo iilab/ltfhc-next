@@ -2,7 +2,7 @@
     "name": "emr",
     "version": "0.4.0",
     "description": "Medical Record for LTFHC",
-    "attachments": ["index.html"],
+    "attachments": ["index.html", "static"],
     "load": "lib/app",
     "modules": ["lib"],
     "dependencies": {
@@ -11,7 +11,6 @@
 		"properties": null,
         "db": null,
         "bootstrap": null,
-		"jquery": null,
         "alpacajs": null
     }
 }
