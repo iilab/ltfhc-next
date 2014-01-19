@@ -4,6 +4,7 @@
   "class": "schema",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "title": "Patient",
   "properties": {
     "firstname": {
       "title": "First Name",
@@ -15,7 +16,8 @@
     },
     "approxage": {
       "title": "Approximate Age",
-      "type": "number"
+      "type": "number",
+      "minimum": 0
     },
     "birthday": {
       "title": "Birthday",
@@ -31,7 +33,9 @@
         "male",
         "female"
       ],
-      "title": "Gender"
+      "title": "Gender",
+      "required": true,
+      "default": "male"
     },
     "governmentid": {
       "title": "Government ID",
@@ -46,12 +50,12 @@
       "type": "number"
     },
     "allergies": {
+      "title": "Medication Allergies",
+      "type": "array",
       "items": {
         "title": "Drug",
         "$ref": "drugs/#druglist"
-      },
-      "title": "Medication Allergies",
-      "type": "array"
+      }
     }
   }
 }
