@@ -47,17 +47,7 @@ $(function() {
 					"type": "string"
 				},
 				"reasons": {
-					"title": "Reasons for Visit",
-					"type": "string",
 					"$ref": "#/definitions/list"
-				},
-				"subforms": {
-					"$ref": "#/definitions/subforms"
-				}
-			},
-			"definitions": {
-				"list": {
-					"enum": ["bodilyinjury", "diseasediagnosis", "immunization"]
 				},
 				"subforms": {
 					"type": "object",
@@ -74,11 +64,17 @@ $(function() {
 							"dependencies": "reasons"
 						},
 						"immunization": {
-							"title": "Imnunization",
-							"type": "string",
-							"dependencies": "reasons"
+							"title": "Immunization",
+							"type": "string"
 						}
 					}
+				}
+			},
+			"definitions": {
+				"list": {
+					"title": "Reasons for Visit",
+					"type": "string",
+					"enum": ["bodilyinjury", "diseasediagnosis", "immunization"]
 				}
 			},
 			"view": "VIEW_JQUERYUI_EDIT_LIST"
