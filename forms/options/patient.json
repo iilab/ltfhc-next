@@ -1,0 +1,26 @@
+{
+    "fields": {
+        "approxage": {
+            "type": "integer"
+        },
+        "gender": {
+            "type": "select",
+            "optionLabels": [
+                "Male",
+                "Female"
+            ]
+        }
+    },
+    "renderForm": true,
+    "form": {
+        "attributes": {
+            "action": "/todo",
+            "method": "post"
+        },
+        "buttons": {
+            "submit": {},
+            "reset": {}
+        }
+    },
+    "focus": true
+}

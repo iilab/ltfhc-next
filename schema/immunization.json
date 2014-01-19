@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "title": "Immunization",
   "properties": {
     "dispensed": {
       "title": "Medication Dispensed",
@@ -31,7 +32,9 @@
     },
     "anaphylaxis": {
       "title": "Anaphylaxis present?",
-      "type": "string"
+      "type": "boolean",
+      "required": true,
+      "default": false
     },
     "counseling": {
       "title": "Describe any counseling given regarding side-effects",
@@ -40,10 +43,7 @@
     "pregnant": {
       "title": "Pregnant?",
       "type": "boolean",
-      "enum": [
-        true,
-        false
-      ],
+      "required": true,
       "default": false
     }
   },
