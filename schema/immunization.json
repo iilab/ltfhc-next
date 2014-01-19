@@ -3,6 +3,7 @@
   "class": "schema",
   "parent": "visit",
   "_id": "forms/schema/visit/immunization",
+  "formname": "Immunization",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
