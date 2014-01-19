@@ -60,8 +60,8 @@ exports.env = {
 Then upload the data files to your personal development database.
 
 ```
-kanso upload data/lists.json
-kanso upload data/example-patient.json
+kanso upload data
+kanso upload schema
 ```
 
 Push your local couch app to your personal development database.
