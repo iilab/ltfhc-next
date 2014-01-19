@@ -1,4 +1,8 @@
 {
+  "collection": "forms",
+  "class": "schema",
+  "parent": "visit",
+  "_id": "forms/schema/visit/immunization",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -46,6 +50,5 @@
       ],
       "default": false
     }
-  },
-  "_id": "data/immunization.json"
+  }
 }
