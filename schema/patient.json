@@ -1,4 +1,7 @@
 {
+  "collection": "forms",
+  "class": "schema",
+  "_id": "forms/schema/patient",
   "id": "patient",
   "collection" : "forms",
   "class": "schema",
