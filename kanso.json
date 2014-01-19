@@ -1,16 +1,31 @@
 {
-    "name": "emr",
-    "version": "0.4.0",
-    "description": "Medical Record for LTFHC",
-    "attachments": ["index.html", "static"],
-    "load": "lib/app",
-    "modules": ["lib"],
-    "dependencies": {
-        "attachments": null,
-        "modules": null,
+	"name": "emr",
+	"version": "0.4.0",
+	"description": "Medical Record for LTFHC",
+	"attachments": ["static"],
+	"load": "lib/app",
+	"modules": ["lib"],
+    "less": {
+        "compress": true,
+        "compile": ["static/css/style.less"],
+        "remove_from_attachments": true
+    },
+	"duality": {
+		"base_template": "base.html"
+	},
+	"handlebars": {
+		"templates": "templates"
+	},
+	"dependencies": {
+		"attachments": null,
+		"modules": null,
 		"properties": null,
-        "db": null,
-        "bootstrap": null,
-        "alpacajs": null
-    }
+		"db": null,
+		"bootstrap": null,
+		"alpacajs": null,
+		"handlebars": null,
+		"handlebars-extra": null,
+		"handlebars-helpers": null,
+		"duality-handlebars": null
+	}
 }
