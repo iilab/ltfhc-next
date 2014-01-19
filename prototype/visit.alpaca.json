@@ -1,27 +1,7 @@
 $(function() {
 	$("#field1").alpaca({
 		"data": {},
-		"options": {
-			"fields": {
-				"subforms": {
-					"bodilyinjury": {
-						"dependencies": {
-							"reasons": "bodilyinjury"
-						}
-					},
-					"diseasediagnosis": {
-						"dependencies": {
-							"reasons": "diseasediagnosis"
-						}
-					},
-					"immunization": {
-						"dependencies": {
-							"reasons": "immunization"
-						}
-					}
-				}
-			}
-		},
+		"options": {},
 		"schema": {
 			"title": "Ice Cream Picker",
 			"description": "Select Your Favorite Ice Cream",
@@ -46,40 +26,31 @@ $(function() {
 				"reasons": {
 					"title": "Reasons for Visit",
 					"type": "String",
-					"$ref": "#/forms/schema/parent/visit/list/list"
+					"$ref": "#/definitions/list"
 				},
 				"subforms": {
-					"$ref": "#/forms/schema/parent/visit/subforms/subforms"
+					"$ref": "#/definitions/subforms"
 				}
 			},
-			"enum": ["bodilyinjury", "diseasediagnosis", "immunization"],
-			"forms": {
-				"schema": {
-					"parent": {
-						"visit": {
-							"list": {
-								"id": "list",
-								"enum": ["bodilyinjury", "diseasediagnosis", "immunization"]
-							},
-							"subforms": {
-								"id": "subforms",
-								"bodilyinjury": {
-									"title": "Bodily Injury",
-									"type": "String",
-									"dependencies": "reasons"
-								},
-								"diseasediagnosis": {
-									"title": "Disease Diagnosis",
-									"type": "String",
-									"dependencies": "reasons"
-								},
-								"immunization": {
-									"title": "Imnunization",
-									"type": "String",
-									"dependencies": "reasons"
-								}
-							}
-
+			"definitions": {
+				"list": {
+					"enum": ["bodilyinjury", "diseasediagnosis", "immunization"]
+				},
+				"subforms": {
+					"type": "object",
+					"title": "Sub forms",
+					"properties": {
+						"bodilyinjury": {
+							"title": "Bodily Injury",
+							"type": "string"
+						},
+						"diseasediagnosis": {
+							"title": "Disease Diagnosis",
+							"type": "string"
+						},
+						"immunization": {
+							"title": "Imnunization",
+							"type": "string"
 						}
 					}
 				}

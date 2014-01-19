@@ -2,28 +2,32 @@ $(function() {
 	$("#field1").alpaca({
 		"data": {},
 		"options": {
+			"renderform": "true",
 			"fields": {
 				"subforms": {
-					"bodilyinjury": {
-						"dependencies": {
-							"reasons": "bodilyinjury"
-						}
-					},
-					"diseasediagnosis": {
-						"dependencies": {
-							"reasons": "diseasediagnosis"
-						}
-					},
-					"immunization": {
-						"dependencies": {
-							"reasons": "immunization"
+					"fields": {
+						"bodilyinjury": {
+							"dependencies": {
+								"reasons": "bodilyinjury"
+							}
+						},
+						"diseasediagnosis": {
+							"dependencies": {
+								"reasons": "diseasediagnosis"
+							}
+						},
+						"immunization": {
+							"dependencies": {
+								"reasons": "immunization"
+							}
 						}
 					}
 				}
 			}
 		},
 		"schema": {
-			"_id": "forms/schema/visit",
+			"title": "Patient Visit",
+			"description": "Enter information about the patient's visit",
 			"type": "object",
 			"properties": {
 				"village": {
@@ -44,42 +48,38 @@ $(function() {
 				},
 				"reasons": {
 					"title": "Reasons for Visit",
-					"$ref": "#/definitions/visit/list/list"
+					"type": "string",
+					"$ref": "#/definitions/list"
 				},
 				"subforms": {
-					"$ref": "#/definitions/visit/subs/subs"
+					"$ref": "#/definitions/subforms"
 				}
 			},
 			"definitions": {
-						"visit": {
-							"list": {
-								"id": "list",
-								"enum": [
-									"bodilyinjury",
-									"diseasediagnosis",
-									"immunization"
-								]
-							},
-							"subs": {
-								"id": "subs",
-								"bodilyinjury": {
-									"title": "Bodily Injury",
-									"type": "String",
-									"dependencies": "reasons"
-								},
-								"diseasediagnosis": {
-									"title": "Disease Diagnosis",
-									"type": "String",
-									"dependencies": "reasons"
-								},
-								"immunization": {
-									"title": "Imnunization",
-									"type": "String",
-									"dependencies": "reasons"
-								}
+				"list": {
+					"enum": ["bodilyinjury", "diseasediagnosis", "immunization"]
+				},
+				"subforms": {
+					"type": "object",
+					"title": "Sub forms",
+					"properties": {
+						"bodilyinjury": {
+							"title": "Bodily Injury",
+							"type": "string",
+							"dependencies": "reasons"
+						},
+						"diseasediagnosis": {
+							"title": "Disease Diagnosis",
+							"type": "string",
+							"dependencies": "reasons"
+						},
+						"immunization": {
+							"title": "Imnunization",
+							"type": "string",
+							"dependencies": "reasons"
+						}
 					}
 				}
-
 			},
 			"view": "VIEW_JQUERYUI_EDIT_LIST"
 		}
