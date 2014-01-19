@@ -8,9 +8,10 @@
     "dependencies": {
         "attachments": null,
         "modules": null,
-	"properties": null,
+		"properties": null,
         "db": null,
         "bootstrap": null,
+		"jquery": null,
         "alpacajs": null
     }
 }
