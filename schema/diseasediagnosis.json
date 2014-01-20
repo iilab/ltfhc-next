@@ -1,4 +1,9 @@
 {
+  "collection": "forms",
+  "class": "schema",
+  "parent": "visit",
+  "_id": "forms/schema/visit/diseasediagnosis",
+  "formname": "Disease Diagnosis",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "title": "Disease Diagnosis",
@@ -76,6 +81,5 @@
     "symptoms",
     "examnotes",
     "diseasediagnosis"
-  ],
-  "_id": "data/diseasediagnosis.json"
+  ]
 }

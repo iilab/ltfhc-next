@@ -1,4 +1,9 @@
 {
+  "collection": "forms",
+  "class": "schema",
+  "parent": "visit",
+  "_id": "forms/schema/visit/bodilyinjury",
+  "formname": "Bodily Injury",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "title": "Bodily Injury",
@@ -62,6 +67,5 @@
       "default": false,
       "required": true
     }
-  },
-  "_id": "data/bodilyinjury.json"
+  }
 }
