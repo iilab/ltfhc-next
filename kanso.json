@@ -1,16 +1,45 @@
 {
-    "name": "emr",
-    "version": "0.4.0",
-    "description": "Medical Record for LTFHC",
-    "attachments": ["index.html"],
-    "load": "lib/app",
-    "modules": ["lib"],
-    "dependencies": {
-        "attachments": null,
-        "modules": null,
-	"properties": null,
-        "db": null,
-        "bootstrap": null,
-        "alpacajs": null
-    }
+	"name": "emr",
+	"version": "0.4.0",
+	"description": "Medical Record for LTFHC",
+	"attachments": ["static"],
+	"load": "lib/app",
+	"modules": ["lib"],
+    "dust": {
+        "templates": "templates"
+    },
+    "duality": {
+        "base_template": "base.html"
+    },
+    "less": {
+        "compress": true,
+        "compile": ["static/css/style.less", "static/css/app.less", "static/css/spreadsheet.less"],
+        "remove_from_attachments": true
+	},
+	"dependencies": {
+		"attachments": null,
+		"modules": null,
+		"properties": null,
+		"db": null,
+		"less-precompiler": null,
+        "duality": ">=0.0.18",
+        "dust": null,
+		"duality-dust": null,
+		"duality-contrib-session": null,
+        "select2": null,
+        "jsDump": null,
+        "git-info": null,
+        "showdown": null,
+        "couch-fakerequest": null,
+        "underscore-string": null,
+        "users": null,
+        "cookies": null,
+        "moment": ">=2.5.0",
+        "moment-timezone": ">=0.0.3",
+        "kanso-app-settings": null,
+        "locale": null,
+        "kujua-utils": null,
+        "kujua-reporting": null,
+		"ltfhc-branding": ">=0.0.2"
+	}
 }
