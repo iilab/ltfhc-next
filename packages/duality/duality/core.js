@@ -92,19 +92,18 @@ exports.set_called = false;
 exports.unknown_target = false;
 
 
-if (typeof window !== 'undefined') {
-    if (!window.console) {
-        // console.log is going to cause errors, just stub the functions
-        // for now. TODO: add logging utility for IE?
-        window.console = {
-            log: function () {},
-            error: function () {},
-            info: function () {},
-            warn: function () {}
-        };
-    }
-    var console = window.console;
-}
+// console.log is going to cause errors, just stub the functions
+// for now. TODO: add logging utility for IE?
+var console = {
+    log: function () {},
+    error: function () {},
+    info: function () {},
+    warn: function () {}
+};
+
+// reassign console if in the browser
+if (typeof window !== 'undefined' && window.console)
+    console = window.console;
 
 
 /**
@@ -188,6 +187,31 @@ loadDeps(settings.dependencies);
 exports._rewrites = _.flatten(exports._rewrites);
 
 
+exports.handleUrl = function(ev, href, rel) {
+    exports._in_page = /#[A-Za-z_\-:\.]+/.test(href);
+    if (exports._in_page) { // in-page anchor
+        return;
+    }
+    console.log('no in-page anchor');
+    if (href && exports.isAppURL(href) && rel !== 'external') {
+        var url = exports.appPath(href);
+        ev.preventDefault();
+        var match = exports.matchURL('GET', url);
+        if (/^_show\//.test(match.to) ||
+            /^_list\//.test(match.to) ||
+            /^_update\//.test(match.to)) {
+            exports.setURL('GET', url, {});
+        }
+        else {
+            // unknown rewrite target, don't create history entry
+            // but open in a new window since the new page probably
+            // doesn't have pushstate support and will break the back
+            // button
+            window.open(exports.getBaseURL() + url);
+        }
+        return false;
+    }
+};
 /**
  * Called by duality.js once the design doc has been loaded.
  */
@@ -197,7 +221,7 @@ exports.init = function () {
     if (window.history && history.pushState) {
         exports.history_support = true;
 
-        $('form').live('submit', function (ev) {
+        $(document).on('submit', 'form', function (ev) {
             var action = $(this).attr('action');
             var method = $(this).attr('method').toUpperCase();
 
@@ -232,34 +256,10 @@ exports.init = function () {
             return false;
         });
 
-        $('a').live('click', function (ev) {
-            var href = $(this).attr('href');
-            var rel = $(this).attr('rel');
+        $(document).on('click', 'a', function (ev) {
+            var $this = $(this);
 
-            if (/#[A-Za-z_\-:\.]+/.test(href)) {
-                exports._in_page = true;
-                // in-page anchor
-                return;
-            }
-            console.log('no in-page anchor');
-            if (href && exports.isAppURL(href) && rel !== 'external') {
-                var url = exports.appPath(href);
-                ev.preventDefault();
-                var match = exports.matchURL('GET', url);
-                if (/^_show\//.test(match.to) ||
-                    /^_list\//.test(match.to) ||
-                    /^_update\//.test(match.to)) {
-                    exports.setURL('GET', url, {});
-                }
-                else {
-                    // unknown rewrite target, don't create history entry
-                    // but open in a new window since the new page probably
-                    // doesn't have pushstate support and will break the back
-                    // button
-                    window.open(exports.getBaseURL() + url);
-                }
-                return false;
-            }
+            exports.handleUrl(ev, $this.attr('href'), $this.attr('rel'));
         });
 
         window.onpopstate = function (ev) {
@@ -738,9 +738,10 @@ exports.runShow = function (fn, doc, req) {
         fn: fn
     };
     events.emit('beforeRequest', info, req);
-    var res = fn(doc, req);
+    var res = fn.apply(this, [doc, req]);
 
-    if (!(res instanceof Object)) {
+    // For some reason using instanceof on libmozjs can be return true or false at different times
+    if ( ! (res instanceof Object || typeof(res) === 'object')  ) {
         res = {code: 200, body: res};
     }
     else {
@@ -870,10 +871,10 @@ exports.runUpdate = function (fn, doc, req, cb) {
         fn: fn
     };
     events.emit('beforeRequest', info, req);
-    var val = fn(doc, req);
+    var val = fn.call(this, doc, req);
 
     var res = val ? val[1]: null;
-    if (!(res instanceof Object)) {
+    if ( ! (res instanceof Object  || typeof(res) === 'object') ) {
         res = {code: 200, body: res};
     }
     else {
@@ -1065,9 +1066,9 @@ exports.runList = function (fn, head, req) {
         _send(data);
     };
     events.emit('beforeRequest', info, req);
-    var val = fn(head, req);
+    var val = fn.call(this, head, req);
 
-    if (val instanceof Object) {
+    if (val instanceof Object || typeof(val) === 'object'){
         val = exports.parseResponse(req, val).body;
     }
     if (!start_res) {
