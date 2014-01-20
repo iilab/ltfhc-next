@@ -31,8 +31,8 @@
 
 
 var events = require('events'),
-    _ = require('underscore')._;
-
+    _ = require('underscore'),
+    requestCache = {};
 
 /**
  * Tests if running in the browser
@@ -89,8 +89,11 @@ var httpData = function (xhr, type, s) {
 
 function onComplete(options, callback) {
     return function (req) {
-        var resp;
+        var resp = {};
         var ctype = req.getResponseHeader('Content-Type');
+
+        //$(document.body).removeClass('loading');
+
         if (ctype === 'application/json' || ctype === 'text/json') {
             try {
                 resp = httpData(req, "json");
@@ -120,7 +123,7 @@ function onComplete(options, callback) {
         if (req.status === 200 || req.status === 201 || req.status === 202) {
             callback(null, resp);
         }
-        else if (resp.error || resp.reason) {
+        else if (resp && (resp.error || resp.reason)) {
             var err = new Error(resp.reason || resp.error);
             err.error = resp.error;
             err.reason = resp.reason;
@@ -255,9 +258,19 @@ exports.stringifyQuery = function (query) {
  */
 
 exports.request = function (options, callback) {
-    options.complete = onComplete(options, callback);
-    options.dataType = 'json';
-    $.ajax(options);
+    var key = JSON.stringify(options);
+
+    if (!requestCache[key] || /^\/?_/.test(options.url)) {
+        // removed in onComplete
+        //$(document.body).addClass('loading');
+        requestCache[key] = true;
+        setTimeout(function() {
+            delete requestCache[key];
+        }, 400);
+        options.complete = onComplete(options, callback);
+        options.dataType = 'json';
+        $.ajax(options);
+    }
 };
 
 
@@ -355,7 +368,9 @@ exports.newUUID = function (cacheNum, callback) {
         if (err) {
             return callback(err);
         }
-        uuidCache = resp.uuids;
+        _.each(resp.uuids, function(uuid) {
+            uuidCache.push(uuid.substring(0, 8) + '-' + uuid.substring(8, 12) + '-' + uuid.substring(12, 16) + '-' + uuid.substring(16));
+        });
         callback(null, uuidCache.shift());
     });
 };
@@ -834,7 +849,9 @@ DB.prototype.changes = function (/*optional*/q, callback) {
         q = {};
     }
 
-    var that = this;
+    var that = this,
+        defaultDelay = 500,
+        delay = defaultDelay;
 
     q = q || {};
     q.feed = 'longpoll';
@@ -854,18 +871,28 @@ DB.prototype.changes = function (/*optional*/q, callback) {
             url: that.url + '/_changes',
             data: data
         };
-        var cb = function (err, data) {
+        exports.request(req, function(err, data) {
             var result = callback.apply(this, arguments);
-            if (result !== false) {
-                getChanges(data.last_seq);
+
+            // if there's an error, try again in `delay` which has exponential backoff
+            if (err) {
+                _.delay(getChanges, delay, since);
+                // max is twice heartbeat
+                if (delay < 2 * q.heartbeat) {
+                    delay *= 2;
+                }
+            } else {
+                if (result !== false && data) {
+                    getChanges(data.last_seq);
+                }
+                delay = defaultDelay;
             }
-        }
-        exports.request(req, cb);
+        });
     }
 
     // use setTimeout to pass control back to the browser briefly to
     // allow the loading spinner to stop on page load
-    setTimeout(function () {
+    _.defer(function () {
         if (q.hasOwnProperty('since')) {
             getChanges(q.since);
         }
@@ -877,7 +904,7 @@ DB.prototype.changes = function (/*optional*/q, callback) {
                 getChanges(info.update_seq);
             });
         }
-    }, 0);
+    });
 };
 
 

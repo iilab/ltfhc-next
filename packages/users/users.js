@@ -13,7 +13,6 @@
 
 
 var db = require('db'),
-    session = require('session'),
     sha1 = require('sha1'),
     _ = require('underscore')._;
 
@@ -52,7 +51,7 @@ var authdb = function(callback) {
 var getAdmin = function(username, callback) {
     db.request({
         type: 'GET',
-        url: '/_config/admins/' + encodeURIComponent(username),
+        url: '/_config/admins/' + username,
         contentType: 'application/json'
     }, callback);
 };
@@ -90,7 +89,7 @@ var deleteUser = function(authdb, id, user, callback) {
 var deleteAdmin = function(username, callback) {
     db.request({
         type: 'DELETE',
-        url: '/_config/admins/' + encodeURIComponent(username),
+        url: '/_config/admins/' + username,
         contentType: 'application/json'
     }, callback);
 };
@@ -164,7 +163,7 @@ var createUser = function(username, password, properties, callback) {
  */
 
 var createAdmin = function(username, password, callback) {
-    var url = '/_config/admins/' + encodeURIComponent(username);
+    var url = '/_config/admins/' + username;
     var req = {
         type: 'PUT',
         url: url,
@@ -409,58 +408,25 @@ exports.update = function (username, password, properties, callback) {
                 }
 
                 saveUser(options.authdb, user, function (err, user) {
-                    
-                    session.info(function(err, session_info){
-                        if (session_info.userCtx.roles && _.indexOf(session_info.userCtx.roles, "_admin") !== -1) {
-                            if (_.indexOf(properties.roles, "_admin") !== -1) {
-                                createAdmin(username, password, function () {
-                                    callback(null, user);
-                                });
+                    if (_.indexOf(properties.roles, "_admin") !== -1) {
+                        createAdmin(username, password, function () {
+                            callback(null, user);
+                        });
+                    }
+                    else {
+                        getAdmin(username, function(err, admin) {
+                            if (err) {
+                                if (err.status !== 404) {
+                                    return callback(err);
+                                }
+                                return callback(null, user);
                             }
                             else {
-                                getAdmin(username, function(err, admin) {
-                                    if (err) {
-                                        if (err.status !== 404) {
-                                            return callback(err);
-                                        }
-                                        return callback(null, user);
-                                    }
-                                    else {
-                                        deleteAdmin(username, callback);
-                                    }
-                                });
+                                deleteAdmin(username, callback);
                             }
-                        } else {
-                            callback(err, user);
-                        }
-                    });
-                    
+                        });
+                    }
                 });
             });
-    });
-};
-
-
-/**
- * Saves a user doc to the auth db (usually /_users).
- *
- * @name saveDoc(user_doc, callback)
- * @param {Object} user_doc - The user document to save
- * @param {Function} callback(err,response) - Function called on completion of
- *     the operation
- * @api public
- *
- * ```javascript
- * users.saveDoc(user_doc, function (err) {
- *     if (err) // there was an error deleting the user
- *     else     // success
- * });
- * ```
- */
-
-exports.saveDoc = function (user_doc, callback) {
-    authdb(function (err, authdb) {
-        if (err) { return callback(err); }
-        saveUser(authdb, user_doc, callback);
     });
 };
