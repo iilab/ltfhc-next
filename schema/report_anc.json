@@ -1,0 +1,44 @@
+"schema": {
+	"title": "Report ANC",
+	"description": "",
+	"type": "object",
+	"properties": {
+		"expected": {
+			"title": "Number of expected pregnant women",
+			"type": "string",
+			"heading": true
+		},
+		"first_visit": {
+			"title": "First visit",
+			"type": "string",
+			"heading": true
+		},
+		"gestational_age_below_12": {
+			"title": "Gestional age	below 12 weeks",
+			"type": "string",
+			"value": {
+				"field": "/visit/anc_first_visit/gestational_age", //gestional age < 12 weeks
+			}
+		},
+		"gestational_age_above_12": {
+			"title": "Gestional age	above 12 weeks",
+			"type": "string"
+		},
+		"columns": {
+			"$ref": "#/definitions/range_age"
+		}
+	},
+	"definitions": {
+		"range_age": {
+			"below20": {
+				"title": "Below 20 years old",				
+			},
+			"above20": {
+				"title": "Above 20 years old",				
+			},
+			"total": {
+				"title": "Total",
+			}
+		}
+	}
+}
