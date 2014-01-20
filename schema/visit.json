@@ -4,9 +4,10 @@
   "_id": "forms/schema/visit",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "title": "Visit",
   "properties": {
     "village": {
-      "title": "village",
+      "title": "Village",
       "type": "string"
     },
     "clinicid": {
