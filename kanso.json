@@ -23,6 +23,7 @@
 		"db": null,
 		"less-precompiler": null,
         "duality": ">=0.0.18",
+        "dust": null,
 		"duality-dust": null,
 		"duality-contrib-session": null,
         "select2": null,
