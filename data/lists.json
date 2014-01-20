@@ -11,185 +11,115 @@
     "class": "list",
     "order": "2",
     "item": "Female",
-    "_id": "9022034e7d5ecd0efab0762c5b10d80b"
+"_id": "9022034e7d5ecd0efab0762c5b10d80b"
   },
   {
-    "collection": "RFV",
-    "class": "list",
-    "order": "1",
-    "item": "Disease Diagnosis",
-    "_id": "9022034e7d5ecd0efab0762c5b10dfa0"
-  },
-  {
-    "collection": "RFV",
-    "class": "list",
-    "order": "2",
-    "item": "Bodily Injury",
-    "_id": "9022034e7d5ecd0efab0762c5b10e0dc"
-  },
-  {
-    "collection": "RFV",
-    "class": "list",
-    "order": "3",
-    "item": "Immunization / Post-Immunization",
-    "_id": "9022034e7d5ecd0efab0762c5b10e4c0"
-  },
-  {
-    "collection": "RFV",
-    "class": "list",
-    "order": "4",
-    "item": "HIV Counseling Mother",
-    "_id": "9022034e7d5ecd0efab0762c5b10efea"
-  },
-  {
-    "collection": "RFV",
-    "class": "list",
-    "order": "5",
-    "item": "HIV Counseling Child",
-    "_id": "9022034e7d5ecd0efab0762c5b10f3bd"
-  },
-  {
-    "collection": "RFV",
-    "class": "list",
-    "order": "6",
-    "item": "Reproductive Counseling / Treatment",
-    "_id": "9022034e7d5ecd0efab0762c5b10f896"
-  },
-  {
-    "collection": "RFV",
-    "class": "list",
-    "order": "7",
-    "item": "First Antenatal Visit",
-    "_id": "9022034e7d5ecd0efab0762c5b10fd10"
-  },
-  {
-    "collection": "RFV",
-    "class": "list",
-    "order": "8",
-    "item": "Follow - Up Antenatal Visit",
-    "_id": "9022034e7d5ecd0efab0762c5b11098b"
-  },
-  {
-    "collection": "RFV",
-    "class": "list",
-    "order": "9",
-    "item": "Well Child Visit",
-    "_id": "9022034e7d5ecd0efab0762c5b1115ee"
-  },
-  {
-    "collection": "RFV",
-    "class": "list",
-    "order": "10",
-    "item": "Other",
-    "_id": "9022034e7d5ecd0efab0762c5b111b16"
-  },
-  {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "1",
     "item": "Other",
     "_id": "9022034e7d5ecd0efab0762c5b111f15"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "2",
     "item": "Body Aches",
     "_id": "9022034e7d5ecd0efab0762c5b11268b"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "3",
     "item": "Chills",
     "_id": "9022034e7d5ecd0efab0762c5b113294"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "4",
     "item": "Diarrhea",
     "_id": "9022034e7d5ecd0efab0762c5b113535"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "5",
     "item": "Fever",
     "_id": "9022034e7d5ecd0efab0762c5b113cfb"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "6",
     "item": "Headache",
     "_id": "9022034e7d5ecd0efab0762c5b11414b"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "7",
     "item": "Shortness of Breath",
     "_id": "9022034e7d5ecd0efab0762c5b114622"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "8",
     "item": "Nausea or Vomiting",
     "_id": "9022034e7d5ecd0efab0762c5b114819"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "9",
     "item": "Rigors",
     "_id": "9022034e7d5ecd0efab0762c5b1151cf"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "10",
     "item": "Night Sweats",
     "_id": "9022034e7d5ecd0efab0762c5b1159c0"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "11",
     "item": "Rash",
     "_id": "9022034e7d5ecd0efab0762c5b1168f6"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "12",
     "item": "Abdominal Pain",
     "_id": "9022034e7d5ecd0efab0762c5b1169ff"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "13",
     "item": "Cough",
     "_id": "9022034e7d5ecd0efab0762c5b117320"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "14",
     "item": "Difficultly with Urination",
     "_id": "9022034e7d5ecd0efab0762c5b117a9e"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "15",
     "item": "Weakness",
     "_id": "9022034e7d5ecd0efab0762c5b11896d"
   },
   {
-    "collection": "Sym",
+    "collection": "symptoms",
     "class": "list",
     "order": "16",
     "item": "Weight Loss",
@@ -654,7 +584,7 @@
     "collection": "Disdia",
     "class": "list",
     "order": "55",
-    "item": "HIV, Symptomatic",
+    "item": "HIV, symptomsptomatic",
     "_id": "9022034e7d5ecd0efab0762c5b13b21d"
   },
   {
@@ -735,371 +665,371 @@
     "_id": "9022034e7d5ecd0efab0762c5b140339"
   },
   {
-    "collection": "reflo",
+    "collection": "referralloc",
     "class": "list",
     "order": "1",
     "item": "Not Applicable",
     "_id": "9022034e7d5ecd0efab0762c5b140400"
   },
   {
-    "collection": "reflo",
+    "collection": "referralloc",
     "class": "list",
     "order": "2",
     "item": "Laboratory",
     "_id": "9022034e7d5ecd0efab0762c5b14109e"
   },
   {
-    "collection": "reflo",
+    "collection": "referralloc",
     "class": "list",
     "order": "3",
     "item": "Pharmacy",
     "_id": "9022034e7d5ecd0efab0762c5b14207c"
   },
   {
-    "collection": "reflo",
+    "collection": "referralloc",
     "class": "list",
     "order": "4",
     "item": "Antenatal Clinic",
     "_id": "9022034e7d5ecd0efab0762c5b142e7b"
   },
   {
-    "collection": "reflo",
+    "collection": "referralloc",
     "class": "list",
     "order": "5",
     "item": "TB / Leprosy Department",
     "_id": "9022034e7d5ecd0efab0762c5b143941"
   },
   {
-    "collection": "reflo",
+    "collection": "referralloc",
     "class": "list",
     "order": "6",
     "item": "CTC",
     "_id": "9022034e7d5ecd0efab0762c5b143f01"
   },
   {
-    "collection": "reflo",
+    "collection": "referralloc",
     "class": "list",
     "order": "7",
     "item": "Reproductive Counseling",
     "_id": "9022034e7d5ecd0efab0762c5b14417f"
   },
   {
-    "collection": "reflo",
+    "collection": "referralloc",
     "class": "list",
     "order": "8",
     "item": "Immunization",
     "_id": "9022034e7d5ecd0efab0762c5b144b5d"
   },
   {
-    "collection": "intype",
+    "collection": "injuries",
     "class": "list",
     "order": "1",
     "item": "Animal Bite (suspected rabies)",
     "_id": "9022034e7d5ecd0efab0762c5b144f3d"
   },
   {
-    "collection": "intype",
+    "collection": "injuries",
     "class": "list",
     "order": "2",
     "item": "Animal Bite (no rabies)",
     "_id": "9022034e7d5ecd0efab0762c5b145de7"
   },
   {
-    "collection": "intype",
+    "collection": "injuries",
     "class": "list",
     "order": "3",
     "item": "Fracture",
     "_id": "9022034e7d5ecd0efab0762c5b145ff8"
   },
   {
-    "collection": "intype",
+    "collection": "injuries",
     "class": "list",
     "order": "4",
     "item": "Concussion / Head Injury",
     "_id": "9022034e7d5ecd0efab0762c5b146797"
   },
   {
-    "collection": "intype",
+    "collection": "injuries",
     "class": "list",
     "order": "5",
     "item": "Motor Vehicle Accident",
     "_id": "9022034e7d5ecd0efab0762c5b146966"
   },
   {
-    "collection": "intype",
+    "collection": "injuries",
     "class": "list",
     "order": "6",
     "item": "Motorcycle Accident",
     "_id": "9022034e7d5ecd0efab0762c5b1473ca"
   },
   {
-    "collection": "intype",
+    "collection": "injuries",
     "class": "list",
     "order": "7",
     "item": "Laceration",
     "_id": "9022034e7d5ecd0efab0762c5b14756c"
   },
   {
-    "collection": "intype",
+    "collection": "injuries",
     "class": "list",
     "order": "8",
     "item": "Crush injury",
     "_id": "9022034e7d5ecd0efab0762c5b147b7e"
   },
   {
-    "collection": "intype",
+    "collection": "injuries",
     "class": "list",
     "order": "9",
     "item": "Burn",
     "_id": "9022034e7d5ecd0efab0762c5b148169"
   },
   {
-    "collection": "intype",
+    "collection": "injuries",
     "class": "list",
     "order": "10",
     "item": "Other",
     "_id": "9022034e7d5ecd0efab0762c5b148234"
   },
   {
-    "collection": "treat",
+    "collection": "injurytreatments",
     "class": "list",
     "order": "1",
     "item": "None",
     "_id": "9022034e7d5ecd0efab0762c5b148788"
   },
   {
-    "collection": "treat",
+    "collection": "injurytreatments",
     "class": "list",
     "order": "2",
     "item": "Wound Washout",
     "_id": "9022034e7d5ecd0efab0762c5b148f98"
   },
   {
-    "collection": "treat",
+    "collection": "injurytreatments",
     "class": "list",
     "order": "3",
     "item": "Suture of Laceration",
     "_id": "9022034e7d5ecd0efab0762c5b1498cb"
   },
   {
-    "collection": "treat",
+    "collection": "injurytreatments",
     "class": "list",
     "order": "4",
-    "item": "Topical Treatment of Burn",
+    "item": "Topical injurytreatmentsment of Burn",
     "_id": "9022034e7d5ecd0efab0762c5b14a374"
   },
   {
-    "collection": "treat",
+    "collection": "injurytreatments",
     "class": "list",
     "order": "5",
     "item": "Bone Setting/Cast",
     "_id": "9022034e7d5ecd0efab0762c5b14a8fb"
   },
   {
-    "collection": "treat",
+    "collection": "injurytreatments",
     "class": "list",
     "order": "6",
     "item": "Surgery",
     "_id": "9022034e7d5ecd0efab0762c5b14ace9"
   },
   {
-    "collection": "treat",
+    "collection": "injurytreatments",
     "class": "list",
     "order": "7",
     "item": "Blood Transfusion",
     "_id": "9022034e7d5ecd0efab0762c5b14b993"
   },
   {
-    "collection": "treat",
+    "collection": "injurytreatments",
     "class": "list",
     "order": "8",
     "item": "Antibiotics",
     "_id": "9022034e7d5ecd0efab0762c5b14c5de"
   },
   {
-    "collection": "treat",
+    "collection": "injurytreatments",
     "class": "list",
     "order": "9",
     "item": "Antivenom",
     "_id": "9022034e7d5ecd0efab0762c5b14c6e5"
   },
   {
-    "collection": "treat",
+    "collection": "injurytreatments",
     "class": "list",
     "order": "10",
     "item": "Other",
     "_id": "9022034e7d5ecd0efab0762c5b14d258"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "1",
     "item": "BCG",
     "_id": "9022034e7d5ecd0efab0762c5b14dce1"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "2",
     "item": "OPV-0",
     "_id": "9022034e7d5ecd0efab0762c5b14ebf9"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "3",
     "item": "OPV-1",
     "_id": "9022034e7d5ecd0efab0762c5b14f398"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "4",
     "item": "OPV-2",
     "_id": "9022034e7d5ecd0efab0762c5b1500df"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "5",
     "item": "OPV-3",
     "_id": "9022034e7d5ecd0efab0762c5b150cb6"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "6",
     "item": "DTP-HB",
     "_id": "9022034e7d5ecd0efab0762c5b15190a"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "7",
     "item": "DPT 1",
     "_id": "9022034e7d5ecd0efab0762c5b152425"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "8",
     "item": "DPT 2",
     "_id": "9022034e7d5ecd0efab0762c5b152a04"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "9",
     "item": "DPT 3",
     "_id": "9022034e7d5ecd0efab0762c5b152f82"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "10",
     "item": "Measles",
     "_id": "9022034e7d5ecd0efab0762c5b153ed1"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "11",
     "item": "Tentanus Toxoid 1",
     "_id": "9022034e7d5ecd0efab0762c5b1543b0"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "12",
     "item": "Tentanus Toxoid 2",
     "_id": "9022034e7d5ecd0efab0762c5b154bb6"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "13",
     "item": "Tentanus Toxoid 3",
     "_id": "9022034e7d5ecd0efab0762c5b1559de"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "14",
     "item": "Tentanus Toxoid 4",
     "_id": "9022034e7d5ecd0efab0762c5b15648f"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "15",
     "item": "Tentanus Toxoid 5",
     "_id": "9022034e7d5ecd0efab0762c5b156b33"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "16",
     "item": "Vitamin A",
     "_id": "9022034e7d5ecd0efab0762c5b157432"
   },
   {
-    "collection": "meddis",
+    "collection": "immunizations",
     "class": "list",
     "order": "17",
     "item": "Other",
     "_id": "9022034e7d5ecd0efab0762c5b157e7a"
   },
   {
-    "collection": "eff",
+    "collection": "immunizationeffects",
     "class": "list",
     "order": "1",
     "item": "None",
     "_id": "9022034e7d5ecd0efab0762c5b1582a5"
   },
   {
-    "collection": "eff",
+    "collection": "immunizationeffects",
     "class": "list",
     "order": "2",
     "item": "Shortness of Breath",
     "_id": "9022034e7d5ecd0efab0762c5b158ecd"
   },
   {
-    "collection": "eff",
+    "collection": "immunizationeffects",
     "class": "list",
     "order": "3",
     "item": "Tongue Swelling",
     "_id": "9022034e7d5ecd0efab0762c5b15950e"
   },
   {
-    "collection": "eff",
+    "collection": "immunizationeffects",
     "class": "list",
     "order": "4",
     "item": "Rash",
     "_id": "9022034e7d5ecd0efab0762c5b1597db"
   },
   {
-    "collection": "eff",
+    "collection": "immunizationeffects",
     "class": "list",
     "order": "5",
     "item": "Fever",
     "_id": "9022034e7d5ecd0efab0762c5b15a042"
   },
   {
-    "collection": "eff",
+    "collection": "immunizationeffects",
     "class": "list",
     "order": "6",
     "item": "Swelling at Injection Site",
     "_id": "9022034e7d5ecd0efab0762c5b15a1f5"
   },
   {
-    "collection": "eff",
+    "collection": "immunizationeffects",
     "class": "list",
     "order": "7",
     "item": "Nausea or Vomiting",
     "_id": "9022034e7d5ecd0efab0762c5b15aaa6"
   },
   {
-    "collection": "eff",
+    "collection": "immunizationeffects",
     "class": "list",
     "order": "8",
     "item": "Other",
@@ -1785,189 +1715,189 @@
     "_id": "9022034e7d5ecd0efab0762c5b18c8d1"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "1",
     "item": "None",
     "_id": "9022034e7d5ecd0efab0762c5b18cef0"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "2",
     "item": "Abdominal Pain",
     "_id": "9022034e7d5ecd0efab0762c5b18d20c"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "3",
     "item": "Vaginal Pain",
     "_id": "9022034e7d5ecd0efab0762c5b18d2ee"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "4",
     "item": "Vaginal Bleeding",
     "_id": "9022034e7d5ecd0efab0762c5b18da9e"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "5",
     "item": "Loss of Fetal Movement",
     "_id": "9022034e7d5ecd0efab0762c5b18dd13"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "6",
     "item": "Vaginal Leakage of Fluid",
     "_id": "9022034e7d5ecd0efab0762c5b18e99f"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "7",
     "item": "Headache",
     "_id": "9022034e7d5ecd0efab0762c5b18ede5"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "8",
     "item": "Blurred Vision",
     "_id": "9022034e7d5ecd0efab0762c5b18eeb3"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "9",
     "item": "Nausea or Vomiting",
     "_id": "9022034e7d5ecd0efab0762c5b18f0ec"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "10",
     "item": "Diarrhea",
     "_id": "9022034e7d5ecd0efab0762c5b18fb00"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "11",
     "item": "Constipation",
     "_id": "9022034e7d5ecd0efab0762c5b19020d"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "12",
     "item": "Fever",
     "_id": "9022034e7d5ecd0efab0762c5b190b77"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "13",
     "item": "Contractions",
     "_id": "9022034e7d5ecd0efab0762c5b191b2f"
   },
   {
-    "collection": "symptos",
+    "collection": "symptomsptos",
     "class": "list",
     "order": "14",
     "item": "Post-Coital Bleeding",
     "_id": "9022034e7d5ecd0efab0762c5b1929fd"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "1",
     "item": "None",
     "_id": "9022034e7d5ecd0efab0762c5b192ea8"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "2",
     "item": "Other",
     "_id": "9022034e7d5ecd0efab0762c5b193711"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "3",
     "item": "Abdominal Pain",
     "_id": "9022034e7d5ecd0efab0762c5b193da6"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "4",
     "item": "Vaginal Bleeding",
     "_id": "9022034e7d5ecd0efab0762c5b19473f"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "5",
     "item": "Loss of Fetal Movement",
     "_id": "9022034e7d5ecd0efab0762c5b1947ad"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "6",
     "item": "Vaginal Leakage of Fluid",
     "_id": "9022034e7d5ecd0efab0762c5b19535b"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "7",
     "item": "Headache",
     "_id": "9022034e7d5ecd0efab0762c5b1957e6"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "8",
     "item": "Blurred Vision",
     "_id": "9022034e7d5ecd0efab0762c5b1966a8"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "9",
     "item": "Nausea or Vomiting",
     "_id": "9022034e7d5ecd0efab0762c5b197237"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "10",
     "item": "Diarrhea",
     "_id": "9022034e7d5ecd0efab0762c5b19802c"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "11",
     "item": "Constipation",
     "_id": "9022034e7d5ecd0efab0762c5b19818d"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "12",
     "item": "Fever",
     "_id": "9022034e7d5ecd0efab0762c5b1988b3"
   },
   {
-    "collection": "symptoms",
+    "collection": "symptomsptoms",
     "class": "list",
     "order": "13",
     "item": "Contractions",
