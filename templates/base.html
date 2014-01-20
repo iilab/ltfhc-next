@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{baseURL}/static/img/ico/icon_48.ico">
+    <title>{title}</title>
+    <link rel="stylesheet" type="text/css" href="{baseURL}/static/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="{baseURL}/static/css/spreadsheet.css" />
+	<link type="text/css" href="{{baseURL}}/static/css/alpaca.css" rel="stylesheet"/>
+	<link type="text/css" href="{{baseURL}}/static/css/alpaca-bootstrap.css" rel="stylesheet"/>
+    <script src="{baseURL}/static/js/jquery.min.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/js/jquery-ext.js" type="text/javascript"></script>
+	<script src="{baseURL}/static/js/alpaca.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="topnav" class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="{baseURL}/">LTFHC Home</a>
+          <span class="version pull-left" title="{info.sha}">{settings.version}</span>
+          <ul class="nav pull-right">
+            <li class="activity hide">
+              <a href="{baseURL}/"><i class="icon-list"></i></a>
+            </li>
+            {!<li class="sms-forms-data hide">
+              <a href="{baseURL}/forms"><i class="icon-download"></i></a>
+            </li>!}
+            <li class="facilities hide">
+              <a href="{baseURL}/facilities"><i class="icon-home"></i></a>
+            </li>
+            {!}<li class="add-message hide">
+              <button class="btn btn-primary">
+                  <i class="icon-envelope"></i>
+              </button>
+            </li>!}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page-header navbar-fixed-top">
+      <div class="container">
+        <h1 class="pull-left">&nbsp;</h1>
+        <div class="controls hide">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content">
+        <div id="content">
+          {content|s}
+        </div>
+      </div>
+      <div id="footer">
+        <div class="wrap">
+          <p class="logo"><img src="{baseURL}/static/img/floatingclinic_logo.png"></p>
+          <p class="copy">&copy; <span id="year"></span> LTFHC</p>
+        </div>
+      </div>
+    </div>
+    <div id="add-record-panel">
+      <ul class="dropdown-menu">
+        <li>
+          <button type="button" class="cancel close">×</button>
+        </li>
+      </ul>
+    </div>
+    <script src="{baseURL}/static/js/browser.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/js/underscore.min.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/js/json2.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/js/bootstrap-collapse.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/js/bootstrap-modal.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/js/bootstrap-typeahead.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/js/bootstrap-tooltip.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/js/bootstrap-popover.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/js/bootstrap-dropdown.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <script src="{baseURL}/select2/js/select2.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/js/jquery.spreadsheet.js" type="text/javascript"></script>
+    <script src="{baseURL}/static/kujua-reporting/js/raphael.js" type="text/javascript"></script>
+    <script src="{baseURL}/config.js" type="text/javascript"></script>
+    <script src="{baseURL}/modules.js" type="text/javascript"></script>
+    <script src="{baseURL}/duality.js" type="text/javascript"></script>
+  </body>
+</html>

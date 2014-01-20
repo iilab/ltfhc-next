@@ -6,11 +6,13 @@
   "formname": "Bodily Injury",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "title": "Bodily Injury",
   "properties": {
     "injurydate": {
       "title": "Date of Injury",
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "required": true
     },
     "injurytype": {
       "title": "Type of Injury",
@@ -42,7 +44,8 @@
         "A",
         "B",
         "C"
-      ]
+      ],
+      "required": true
     },
     "admission": {
       "title": "Admission Required?",
@@ -51,7 +54,8 @@
         true,
         false
       ],
-      "default": false
+      "default": false,
+      "required": true
     },
     "mortality": {
       "title": "Did Injury Lead to death?",
@@ -60,7 +64,8 @@
         true,
         false
       ],
-      "default": false
+      "default": false,
+      "required": true
     }
   }
 }

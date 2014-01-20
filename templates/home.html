@@ -1,0 +1,19 @@
+<h1>Hello, world!</h1>
+
+<div id="patient_search_buttons">
+        <form action="/patient">
+            <button type="submit" title="Show form to enter a new patient into the system" id='id_show_patient_new_button' data-toggle="tooltip" data-placement="top">{! trans !}"Create New Patient"</button>
+        </form>
+        <form action="/form_list">
+            <button type="submit" title="Show list of medical forms" id='id_show_form_list_button' data-toggle="tooltip" data-placement="top">{! trans !}"Access Forms"</button>
+        </form>
+        <form action="/list_formentry">
+            <button type="submit" title="Show list of reports" id='id_show_report_list_button' data-toggle="tooltip" data-placement="top">{! trans !}"Access Reports"</button>
+        </form>
+        <form action="/status">
+            <button type="submit" title="Access settings" id='id_show_settings_button' data-toggle="tooltip" data-placement="top">{! trans !}"System Status"</button>
+        </form>
+        <form action="/user/logout">
+            <button type="submit" title="Login" id='id_login_button' data-toggle="tooltip" data-placement="top">{! trans !}"Log Out" </button>
+        </form>
+</div> 
