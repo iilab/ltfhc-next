@@ -48,7 +48,7 @@ duality_events.on('init', function (ev) {
                 return kutils.logger.error('Failed to retreive user  info: '+err.reason);
             }
 
-            $('#topnav .nav .reports').after(templates.render('kujua-reporting/top_nav.html', {}, {}));
+            $('#topnav .nav .facilities').after(templates.render('kujua-reporting/top_nav.html', {}, {}));
         });
     });
 
