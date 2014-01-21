@@ -1,33 +1,24 @@
-# Code Conventions
+# Naming Conventions
 
-Multi-word identifiers are separated by underscores. 
+* Multi-word IDs are separated by underscores.
+* Field IDs should be as descriptive as possible
+* List names are plural. 
+* Field IDs are singular.
+* `number of x` field IDs begin with `number_` (ex Number of Pregnancies is id “number_pregnancy”)
+* `dose of` or `quantity of` field IDs begin with `quantity_` (ex "Quantity of Condoms Dispensed:” is id `quantity_condoms_dispensed`)
+* acronyms in field IDs are NOT in all caps, but honor underscores. (ex `hiv_risks` `hiv_diagnosis_dna_pcr`
+* `other` fields begin with `other_` (ex "Other Complaint:" is id `complaint_other`)
 
-List names are plural. 
-
-Field names are singular.
-
-"number of x” fields begin with “number” (ex Number of Pregnancies is named “number_pregnancy”)
-
-“dose of” or “quantity of” fields begin with “quantity” (ex "Quantity of Condoms Dispensed:” is named “quantity_condoms_dispensed”)
-
-acronyms in field names are NOT in all caps, but honor underscores. (ex “hiv_risks” “hiv_diagnosis_dna_pcr"
-
-field names should be as descriptive as possible
-
-types should be constrained to these options: 
+Field types must be constrained to these options: 
 * begin form
 * end form
 * string
 * text
 * number
-* select_one
-* select_multiple
+* select_one (creates dropdown from list in `list_id`)
+* select_multiple (creates checkboxes from list in `list_id`)
 * date
-* yes_no
-* yes_no_unknown
+* yes_no (creates radio buttons)
+* yes_no_unknown (creates radio buttons)
 
-select_one and select_multiple create dropdowns or checkbox lists based on the list_name associated with the line.
-
-yes_no and yes_no_unknown create radio button lists.
-
-list_names should be sourced from the list_name column on the "lists" sheet in the spreadsheet. They need to be unique within the system and follow underscore guidelines.
+`list_id` should be sourced from the `list_id` column on the `lists` sheet in the spreadsheet. They need to be unique within the system and follow underscore guidelines.
