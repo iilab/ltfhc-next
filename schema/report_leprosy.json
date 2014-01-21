@@ -158,5 +158,147 @@
         "field": "/visit/leprosy_tb/corticosteroids"
       }
     }
+  },
+  "definitions": {
+    "treatment_categories": {
+      "mb_a": {
+        "type": "number",
+        "title": "MB(A)"
+      },
+      "mb_c": {
+        "type": "number",
+        "title": "MB(C)"
+      },
+      "pb_a": {
+        "type": "number",
+        "title": "PB(A)"
+      },
+      "pb_c": {
+        "type": "number",
+        "title": "PB(C)"
+      },
+      "total": {
+        "type": "number",
+        "title": "Total"
+      }
+    },
+    "age_ranges": {
+      "0_14": {
+        "title": "0-14",
+        "type": "object",
+        "properties": {
+          "male": {
+            "type": "number",
+            "title": "Male"
+          },
+          "female": {
+            "type": "number",
+            "title": "Female"
+          }
+        }
+      }
+    },
+    "15_24": {
+      "title": "15-24",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
+        },
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "25-34": {
+      "title": "25-34",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
+        },
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "35_44": {
+      "title": "35-44",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
+        },
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "45_54": {
+      "title": "45-54",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
+        },
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "55_64": {
+      "title": "55-64",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
+        },
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "65": {
+      "title": "65+",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
+        },
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "total": {
+      "title": "Total",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
+        },
+        "female": {
+          "type": "number",
+          "title": "Female"
+        },
+        "total": {
+          "type": "number",
+          "title": "Total"
+        }
+      }
+    }
   }
 }
