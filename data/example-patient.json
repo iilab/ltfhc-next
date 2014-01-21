@@ -22,7 +22,7 @@
     },
     "forms": {
       "anc_first_visit": {
-        "last_menstrual_period": "12/12/12",
+        "last_menstrual_period": "01/23/2014 00:00",
         "due_date": "01/23/2014 00:00",
         "gestational_age": 12,
         "number_pregnancy": 1,
@@ -31,8 +31,8 @@
         "number_pre_term_delivery": 1,
         "number_miscarriage_abortion": 1,
         "number_live_birth": 1,
-        "weight_heaviest_infant": "1",
-        "pregnancy_complications": "1",
+        "weight_heaviest_infant": "<5kg",
+        "pregnancy_complications": "None",
         "other_pregnancy_complications": "",
         "std_status": false,
         "std_treatment": false,
@@ -45,13 +45,13 @@
         "partner_syphillus_treatment": true,
         "bp_systolic": 12,
         "bp_diastolic": 12,
-        "anemia_severe": "12",
-        "symptoms": "12",
+        "anemia_severe": ">8.5",
+        "symptoms": "None",
         "other_symptoms": "",
         "fundal_height": 12,
         "fetal_heart_rate": 12,
-        "treatment_given": "12",
-        "notes": "12",
+        "treatment_given": "",
+        "notes": "",
         "admission": false,
         "in_labor": false
       }
