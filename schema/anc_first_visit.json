@@ -1,0 +1,196 @@
+{
+  "collection": "forms",
+  "class": "schema",
+  "_id": "forms/schema/anc_first_visit",
+  "parent": "visit",
+  "id": "anc_first_visit",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Antenatal First Visit",
+  "properties": {
+    "last_menstrual_period": {
+      "title": "Date of Last Menstrual Period:",
+      "type": "string"
+    },
+    "due_date": {
+      "title": "Expected Due Date:",
+      "type": "string",
+      "format": "date-time"
+    },
+    "gestational_age": {
+      "title": "Approximate Estiamted Gestational Age (weeks):",
+      "type": "number"
+    },
+    "number_pregnancy": {
+      "title": "Pregnancy Number:",
+      "type": "number"
+    },
+    "pregnancy_test": {
+      "title": "Positive Pregnancy Test?",
+      "type": "boolean",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    },
+    "number_full_term_delivery": {
+      "title": "Number of Previous Full Term Deliveries:",
+      "type": "number"
+    },
+    "number_pre_term_delivery": {
+      "title": "Number of Previous Preterm Deliveries:",
+      "type": "number"
+    },
+    "number_miscarriage_abortion": {
+      "title": "Number of Previous Miscarriages/Abortions:",
+      "type": "number"
+    },
+    "number_live_birth": {
+      "title": "Number of Previous Live Births",
+      "type": "number"
+    },
+    "weight_heaviest_infant": {
+      "title": "Approximate Weight of Heaviest Infant Previously Delivered:",
+      "$ref": "/lists/infant_weights"
+    },
+    "pregnancy_complications": {
+      "title": "Complications in Previous Pregnancies:",
+      "$ref": "/lists/pregnancy_complications"
+    },
+    "other_pregnancy_complications": {
+      "title": "If Other Pregnancy Complciation, Please Describe:",
+      "type": "string"
+    },
+    "std_status": {
+      "title": "Infected with STD",
+      "type": "boolean",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    },
+    "std_treatment": {
+      "title": "Being treated for STD",
+      "type": "boolean",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    },
+    "hiv_status": {
+      "title": "HIV Status:",
+      "$ref": "/lists/hiv_statuses"
+    },
+    "syphillus_status": {
+      "title": "Infected with Syphillus",
+      "type": "boolean",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    },
+    "syphillus_treatment": {
+      "title": "Being treated for Syphillus",
+      "type": "boolean",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    },
+    "partner_std": {
+      "title": "Partner infected with STD",
+      "type": "boolean",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    },
+    "partner_std_treatment": {
+      "title": "Partner being treated for STD",
+      "type": "boolean",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    },
+    "partner_syphillus": {
+      "title": "Partner infected with Syphillus",
+      "type": "boolean",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    },
+    "partner_syphillus_treatment": {
+      "title": "Partner being treated for Syphillus",
+      "type": "boolean",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    },
+    "bp_systolic": {
+      "title": "BP Systolic",
+      "type": "number"
+    },
+    "bp_diastolic": {
+      "title": "BP Diastolic",
+      "type": "number"
+    },
+    "anemia_severe": {
+      "title": "Severe Anemia?",
+      "$ref": "/lists/anemia_severities"
+    },
+    "symptoms": {
+      "title": "Symptoms:",
+      "$ref": "/lists/anc_symptoms"
+    },
+    "other_symptoms": {
+      "title": "If Other Symptom, Please Describe:",
+      "type": "string"
+    },
+    "fundal_height": {
+      "title": "Fundal Height (cm):",
+      "type": "number"
+    },
+    "fetal_heart_rate": {
+      "title": "Fetal Heart Rate (Beats Per Minute):",
+      "type": "number"
+    },
+    "treatment_given": {
+      "title": "If Any Treatment Given, Please Describe:",
+      "type": "string"
+    },
+    "notes": {
+      "title": "Examination Notes:",
+      "type": "string"
+    },
+    "admission": {
+      "title": "Admission Required Today?",
+      "type": "boolean",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    },
+    "in_labor": {
+      "title": "Laboring Now?",
+      "type": "boolean",
+      "enum": [
+        true,
+        false
+      ],
+      "default": false
+    }
+  }
+}
