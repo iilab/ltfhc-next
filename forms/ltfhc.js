@@ -13,7 +13,7 @@ $(document).ready(function() {
         {
             if (typeof(resource) == "string")
             {
-                resource = "/schema/" + resource + ".json"
+                resource = "../schema/" + resource + ".json"
             }
 
             return this.base(resource, successCallback, errorCallback);
@@ -23,7 +23,7 @@ $(document).ready(function() {
         {
             if (typeof(resource) == "string")
             {
-                resource = "/forms/options/" + resource + ".json"
+                resource = "./options/" + resource + ".json"
             }
 
             return this.base(resource, successCallback, errorCallback);
