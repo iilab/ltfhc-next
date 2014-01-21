@@ -1,0 +1,4004 @@
+{
+  "survey": [
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "patient",
+      "en_labels": "Patient Information",
+      "sw_labels": "",
+      "en_help": "Enter Patient demographic information",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "required",
+      "id": "first_name",
+      "en_labels": "First Name:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "last_name",
+      "en_labels": "Last Name:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "genders",
+      "constraint": "",
+      "id": "gender",
+      "en_labels": "Gender:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "clinic_id",
+      "en_labels": "Clinic ID:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "government_id",
+      "en_labels": "Government ID:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "hiv_id",
+      "en_labels": "HIV ID:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "phone",
+      "en_labels": "Phone:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "hometown",
+      "en_labels": "Hometown:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "village",
+      "en_labels": "What village do you live in?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "date",
+      "list_id": "",
+      "constraint": "",
+      "id": "birthdate",
+      "en_labels": "Birth Date:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "patient_age",
+      "en_labels": "Patient Age:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "medication_allergy",
+      "en_labels": "Medication Allergies:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "note",
+      "en_labels": "Other Patient Notes:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "visit",
+      "en_labels": "Patient Intake",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "clinic",
+      "en_labels": "Clinic:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "clinician",
+      "en_labels": "Clinician:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "note",
+      "en_labels": "Notes:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "check_boxes",
+      "list_id": "form_lists",
+      "constraint": "",
+      "id": "form_list",
+      "en_labels": "Reason For Visit:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "diseaseDiagnosis",
+      "en_labels": "Disease Diagnosis",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "check_boxes",
+      "list_id": "symptoms",
+      "constraint": "",
+      "id": "complaint",
+      "en_labels": "Chief Complaint:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "complaint_other",
+      "en_labels": "Other Complaint:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "check_boxes",
+      "list_id": "symptoms",
+      "constraint": "",
+      "id": "symptom",
+      "en_labels": "Symptoms:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "symptom_other",
+      "en_labels": "Other Symptoms:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "check_boxes",
+      "list_id": "histories",
+      "constraint": "",
+      "id": "history",
+      "en_labels": "History:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "history_other",
+      "en_labels": "Other Past History:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "note",
+      "en_labels": "Examination Notes:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "testing_method",
+      "en_labels": "Tested By Following Method:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "diseases",
+      "constraint": "",
+      "id": "diagnosis",
+      "en_labels": "Disease Diagnosis:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "diagnosis_other",
+      "en_labels": "Other Disease Diagnosis:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "treatment",
+      "en_labels": "Treatment:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "admission",
+      "en_labels": "Admission Required?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "disease_mortality",
+      "en_labels": "Did Disease Lead To Death?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "referral",
+      "en_labels": "Referral?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "referral_locations",
+      "constraint": "",
+      "id": "referral_location",
+      "en_labels": "If Yes, Referral Location:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "bodilyInjury",
+      "en_labels": "Bodily Injury",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "date",
+      "list_id": "",
+      "constraint": "",
+      "id": "injury_date",
+      "en_labels": "Injury Date:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "injuries",
+      "constraint": "",
+      "id": "injury_type",
+      "en_labels": "Type of Injury:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "injury_other",
+      "en_labels": "Other Injury:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "testing_method",
+      "en_labels": "Testing Method:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "injury_treatments",
+      "constraint": "",
+      "id": "treatment",
+      "en_labels": "Treatment:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "treatment_other",
+      "en_labels": "Other Treatment:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "admission",
+      "en_labels": "Admission Required?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "injury_mortality",
+      "en_labels": "Did Injury Lead to Death?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "immunization",
+      "en_labels": "Immunization/Post-Immunization",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "check_boxes",
+      "list_id": "immunizations",
+      "constraint": "",
+      "id": "vaccine_dispensed",
+      "en_labels": "Medication Dispensed:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "immunization_effects",
+      "constraint": "",
+      "id": "vaccine_effect",
+      "en_labels": "Immediate Effect of Vaccination:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "vaccine_other_reaction",
+      "en_labels": "If Other Vaccine Reaction, Please Describe:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "anaphylaxis",
+      "en_labels": "Anaphylaxis Present?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "side_effect_counseling",
+      "en_labels": "Describe Any Counseling Given Regarding Side-Effects:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "pregnant",
+      "en_labels": "Pregnant?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "hivCounselingMother",
+      "en_labels": "HIV Counseling Mother",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "date",
+      "list_id": "",
+      "constraint": "",
+      "id": "delivery_date",
+      "en_labels": "Date of Infant Delivery:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no_unknown",
+      "list_id": "",
+      "constraint": "",
+      "id": "hiv_known_pre_birth",
+      "en_labels": "HIV Status Known Before Birth?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no_unknown",
+      "list_id": "",
+      "constraint": "",
+      "id": "hiv_test_during_labor",
+      "en_labels": "Tested for HIV During Labor?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no_unknown",
+      "list_id": "",
+      "constraint": "",
+      "id": "hiv_test_post_labor",
+      "en_labels": "Tested for HIV Post-Labor?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "medication_during_labor",
+      "en_labels": "Medicine Taken During Labor:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no_unknown",
+      "list_id": "",
+      "constraint": "",
+      "id": "referred_ctc",
+      "en_labels": "Mother Referred To CTC?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "date",
+      "list_id": "",
+      "constraint": "",
+      "id": "referral_date",
+      "en_labels": "Referral Date (Or is This a Different Date?):",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "arv_therapy",
+      "en_labels": "Currently Taking Anti-Retrovial Therapy?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "other_treatment",
+      "en_labels": "If Any Treatment Given, Please Describe:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "note",
+      "en_labels": "Other Notes for This Visit:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "hivCounselingChild",
+      "en_labels": "HIV Counseling Child",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no_unknown",
+      "list_id": "",
+      "constraint": "",
+      "id": "child_given_npv_during_labor",
+      "en_labels": "Child Given NPV Syrup in Labor and Delivery Ward?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "milk_types",
+      "constraint": "",
+      "id": "milk_source",
+      "en_labels": "Child Milk Source:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no_unknown",
+      "list_id": "",
+      "constraint": "",
+      "id": "hiv_diagnosis_dna_pcr",
+      "en_labels": "Was Child Diagnosed With HIV Using DNA-PCR(DBS)?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no_unknown",
+      "list_id": "",
+      "constraint": "",
+      "id": "hiv_diagnosis_antibody",
+      "en_labels": "Was Child Diagnosed With HIV Antibody or PCR As A Second Treatment?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "hiv_diagnosis_times",
+      "constraint": "",
+      "id": "hiv_diagnosis_date",
+      "en_labels": "When Did Diagnosis Take Place?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no_unknown",
+      "list_id": "",
+      "constraint": "",
+      "id": "child_taking_ctx",
+      "en_labels": "Is Child Taking CTX?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no_unknown",
+      "list_id": "",
+      "constraint": "",
+      "id": "child_start_ctx",
+      "en_labels": "Did Child Start On CTX Between 4 Weeks and 2 Months of Age?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "other_treatment",
+      "en_labels": "If Any Treatment Given, Please Describe:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "note",
+      "en_labels": "Other Notes For This Visit:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "reproductiveCounseling",
+      "en_labels": "Reproductive Counceling/Treatment",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "date",
+      "list_id": "",
+      "constraint": "",
+      "id": "last_menstrual_period",
+      "en_labels": "Last Menstrual Period:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "menses_regularity",
+      "constraint": "",
+      "id": "menstrual_history",
+      "en_labels": "Menstrual History:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "number_pregnancy",
+      "en_labels": "Total Number of Pregnancies",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "number_full_term_delivery",
+      "en_labels": "Number of Full Term Deliveries",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "number_pre_term_delivery",
+      "en_labels": "Number of Preterm Deliveries",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "number_miscarriage_or_abortion",
+      "en_labels": "Number of Miscarriages or Abortions",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "number_live_birth",
+      "en_labels": "Number of Live Births",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "check_boxes",
+      "list_id": "pregnancy_complications",
+      "constraint": "",
+      "id": "pregnancy_complication",
+      "en_labels": "Pregnancy Complications, Check All That Apply:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "pregnancy_complication_other",
+      "en_labels": "If Other Pregnancy Complication, Describe:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "marital_statuses",
+      "constraint": "",
+      "id": "marital_status",
+      "en_labels": "Marital Status:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "contraceptives",
+      "constraint": "",
+      "id": "contraception_previous",
+      "en_labels": "Previous Contraception:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "contraceptives",
+      "constraint": "",
+      "id": "contraception_current",
+      "en_labels": "Current Contraception:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "contraceptive_sources",
+      "constraint": "",
+      "id": "contraception_source",
+      "en_labels": "Source of Contraception",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "fertility_desires",
+      "constraint": "",
+      "id": "fertility_desire",
+      "en_labels": "Fertility Desires:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "hiv_risks",
+      "constraint": "",
+      "id": "hiv_risk",
+      "en_labels": "HIV Risks:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "contraceptives",
+      "constraint": "",
+      "id": "contraception_dispensed",
+      "en_labels": "Contraception Dispensed:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "drug_quantities",
+      "constraint": "",
+      "id": "quantity_pills_dispensed",
+      "en_labels": "Quantity of Pills Dispensed:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "comdom_quanitites",
+      "constraint": "",
+      "id": "quantity_condoms_dispensed",
+      "en_labels": "Quantity of Condoms Dispensed:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "depoprovera_quantities",
+      "constraint": "",
+      "id": "quantity_depo_provera",
+      "en_labels": "Dose of Depo Provera:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "condom_education",
+      "en_labels": "Condom Use Education Preformed",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "check_boxes",
+      "list_id": "cervical_symptoms",
+      "constraint": "",
+      "id": "cervical_symptom",
+      "en_labels": "Cervical Symptoms:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "anc_first_visit",
+      "en_labels": "First Antenatal Visit",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "last_menstrual_period",
+      "en_labels": "Date of Last Menstrual Period:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "due_date",
+      "en_labels": "Expected Due Date:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "gestational_age",
+      "en_labels": "Approximate Estiamted Gestational Age (weeks):",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "number_pregnancy",
+      "en_labels": "Pregnancy Number:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "pregnancy_test",
+      "en_labels": "Positive Pregnancy Test?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "number_full_term_delivery",
+      "en_labels": "Number of Previous Full Term Deliveries:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "number_pre_term_delivery",
+      "en_labels": "Number of Previous Preterm Deliveries:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "number_miscarriage_abortion",
+      "en_labels": "Number of Previous Miscarriages/Abortions:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "number_live_birth",
+      "en_labels": "Number of Previous Live Births",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "infant_weights",
+      "constraint": "",
+      "id": "weight_heaviest_infant",
+      "en_labels": "Approximate Weight of Heaviest Infant Previously Delivered:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "check_boxes",
+      "list_id": "pregnancy_complications",
+      "constraint": "",
+      "id": "pregnancy_complications",
+      "en_labels": "Complications in Previous Pregnancies:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "other_pregnancy_complications",
+      "en_labels": "If Other Pregnancy Complciation, Please Describe:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "std_status",
+      "en_labels": "Infected with STD",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "std_treatment",
+      "en_labels": "Being treated for STD",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "hiv_statuses",
+      "constraint": "",
+      "id": "hiv_status",
+      "en_labels": "HIV Status:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "syphillus_status",
+      "en_labels": "Infected with Syphillus",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "syphillus_treatment",
+      "en_labels": "Being treated for Syphillus",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "partner_std",
+      "en_labels": "Partner infected with STD",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "partner_std_treatment",
+      "en_labels": "Partner being treated for STD",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "partner_syphillus",
+      "en_labels": "Partner infected with Syphillus",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "partner_syphillus_treatment",
+      "en_labels": "Partner being treated for Syphillus",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "bp_systolic",
+      "en_labels": "BP Systolic",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "bp_diastolic",
+      "en_labels": "BP Diastolic",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "anemia_severities",
+      "constraint": "",
+      "id": "anemia_severe",
+      "en_labels": "Severe Anemia?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "check_boxes",
+      "list_id": "anc_symptoms",
+      "constraint": "",
+      "id": "symptoms",
+      "en_labels": "Symptoms:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "other_symptoms",
+      "en_labels": "If Other Symptom, Please Describe:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "fundal_height",
+      "en_labels": "Fundal Height (cm):",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "fetal_heart_rate",
+      "en_labels": "Fetal Heart Rate (Beats Per Minute):",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "treatment_given",
+      "en_labels": "If Any Treatment Given, Please Describe:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "notes",
+      "en_labels": "Examination Notes:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "admission",
+      "en_labels": "Admission Required Today?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "in_labor",
+      "en_labels": "Laboring Now?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "ancFollowup",
+      "en_labels": "Follow-up Antenatal Visit",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "due_date",
+      "en_labels": "Expected Due Date:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "number_pregnancy",
+      "en_labels": "Pregnancy Number:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "gestational_age",
+      "en_labels": "Approximate Estiamted Gestational Age (weeks):",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "check_boxes",
+      "list_id": "anc_symptoms",
+      "constraint": "",
+      "id": "symptom",
+      "en_labels": "Symptoms:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "single_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "other_symptom",
+      "en_labels": "If Other Symptoms, Please Describe:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "patient_weight",
+      "en_labels": "Patient Weight in Kg:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "fundal_height",
+      "en_labels": "Fundal Height (cm):",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "cervical_dilation",
+      "en_labels": "Cervical Dilation (cm):",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "fetal_stations",
+      "constraint": "",
+      "id": "fetal_station",
+      "en_labels": "Fetal Station:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "hemoglobin",
+      "en_labels": "Hemoglobin (g/dl):",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "fetal_movements",
+      "constraint": "",
+      "id": "fetal_movement",
+      "en_labels": "Fetal Movement:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "fetal_heart_rates",
+      "constraint": "",
+      "id": "fetal_heart_rate",
+      "en_labels": "Fetal Heart Rate:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "hiv_statuses",
+      "constraint": "",
+      "id": "hiv_status",
+      "en_labels": "HIV Status:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "treatment_given",
+      "en_labels": "If any treatment given, please describe:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "notes",
+      "en_labels": "Other Application Notes:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "admission",
+      "en_labels": "Admission required today?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "in_labor",
+      "en_labels": "Laboring Now?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "wellChild",
+      "en_labels": "Well Child Visit",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "height",
+      "en_labels": "Height in cm:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "weight",
+      "en_labels": "Weight in kg:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "milk_types",
+      "constraint": "",
+      "id": "milk_type",
+      "en_labels": "Milk Type",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "hiv_statuses",
+      "constraint": "",
+      "id": "mother_hiv",
+      "en_labels": "Mother HIV Positive",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "hiv_statuses",
+      "constraint": "",
+      "id": "child_hiv",
+      "en_labels": "Child HIV Positive",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "child_hiv_possible",
+      "en_labels": "Is HIV infection possible?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "child_hiv_pcr",
+      "en_labels": "HIV Test with PCR",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "given_extra_vitamin_a",
+      "en_labels": "Given extra Vitamin A",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "given_arv",
+      "en_labels": "Given Cotrimoxazole I ARV",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "given_arv_prophylaxis",
+      "en_labels": "Given ARV Prophylaxis",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "given_bed_net_voucher",
+      "en_labels": "Given Bed Net Vouchers",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "given_mebendazole",
+      "en_labels": "Given Mebendazole/Albendazole",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "moved_to_ctc",
+      "en_labels": "Moved from clinic care and treatment of HIV-positive (CTC)",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "multi_line_text",
+      "list_id": "",
+      "constraint": "",
+      "id": "notes",
+      "en_labels": "Notes:",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "diarrhea",
+      "en_labels": "Diarrhea Treatment",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "number",
+      "list_id": "",
+      "constraint": "",
+      "id": "duration",
+      "en_labels": "Duration of diarrhea (days)",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "water_sodium_severities",
+      "constraint": "",
+      "id": "water_sodium_imbalance",
+      "en_labels": "Water shortage/sodium imbalance",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "given_ors",
+      "en_labels": "ORS given",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "given_zinc",
+      "en_labels": "Zinc given?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "blood_in_stool",
+      "en_labels": "Blood in stool?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "admission",
+      "en_labels": "Admission required?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "referral",
+      "en_labels": "Referral required?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "yes_no",
+      "list_id": "",
+      "constraint": "",
+      "id": "diarrhea_mortality",
+      "en_labels": "Death due to diarrhea?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "end_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "Days post-partum",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "Completed all 4 visits?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "Maternal diagnoses, check all that apply",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "Delivered outside the health center?",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "begin_form",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "Delivery Record",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    },
+    {
+      "type": "drop_down",
+      "list_id": "",
+      "constraint": "",
+      "id": "",
+      "en_labels": "Type of delivery",
+      "sw_labels": "",
+      "en_help": "",
+      "sw_help": ""
+    }
+  ],
+  "lists": [
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 1,
+      "en": "Other",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 2,
+      "en": "Body Aches",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 3,
+      "en": "Chills",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 4,
+      "en": "Diarrhea",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 5,
+      "en": "Fever",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 6,
+      "en": "Headache",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 7,
+      "en": "Shortness of Breath",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 8,
+      "en": "Nausea or Vomiting",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 9,
+      "en": "Rigors",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 10,
+      "en": "Night Sweats",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 11,
+      "en": "Rash",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 12,
+      "en": "Abdominal Pain",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 13,
+      "en": "Cough",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 14,
+      "en": "Difficultly with Urination",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 15,
+      "en": "Weakness",
+      "sw": ""
+    },
+    {
+      "list_id": "symptoms",
+      "order": 16,
+      "en": "Weight Loss",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "histories",
+      "order": 1,
+      "en": "None",
+      "sw": ""
+    },
+    {
+      "list_id": "histories",
+      "order": 2,
+      "en": "Other",
+      "sw": ""
+    },
+    {
+      "list_id": "histories",
+      "order": 3,
+      "en": "Hypertension",
+      "sw": ""
+    },
+    {
+      "list_id": "histories",
+      "order": 4,
+      "en": "Diabetes",
+      "sw": ""
+    },
+    {
+      "list_id": "histories",
+      "order": 5,
+      "en": "Malaria",
+      "sw": ""
+    },
+    {
+      "list_id": "histories",
+      "order": 6,
+      "en": "Yellow Fever",
+      "sw": ""
+    },
+    {
+      "list_id": "histories",
+      "order": 7,
+      "en": "Cholera",
+      "sw": ""
+    },
+    {
+      "list_id": "histories",
+      "order": 8,
+      "en": "Meningitis",
+      "sw": ""
+    },
+    {
+      "list_id": "histories",
+      "order": 9,
+      "en": "Sickle Cell",
+      "sw": ""
+    },
+    {
+      "list_id": "histories",
+      "order": 10,
+      "en": "Cancer",
+      "sw": ""
+    },
+    {
+      "list_id": "histories",
+      "order": 11,
+      "en": "Leprosy",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 1,
+      "en": "Other",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 2,
+      "en": "Skin Infection - Fungal",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 3,
+      "en": "Skin Infection - Non-fungal",
+      "sw": " "
+    },
+    {
+      "list_id": "diseases",
+      "order": 4,
+      "en": "Skin Diseases - Non-infectious",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 5,
+      "en": "Osteomyelitis",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 6,
+      "en": "UTI",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 7,
+      "en": "GI Disease Non-Infectious",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 8,
+      "en": "Cardiovascular Disorder other",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 9,
+      "en": "Liver Disease Infectious",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 10,
+      "en": "Liver Disease Non-Infectious",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 11,
+      "en": "Peptic Ulcers",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 12,
+      "en": "Pneumonia Mild/Moderate",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 13,
+      "en": "Pneumonia Severe",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 14,
+      "en": "Asthma",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 15,
+      "en": "Acute Flaccid Paralysis / Polio",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 16,
+      "en": "Cardiac Failure",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 17,
+      "en": "Rheumatic Fever",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 18,
+      "en": "Eye Infection Other",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 19,
+      "en": "Eye Infection Viral Keratoconjuctivitis",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 20,
+      "en": "Eye Disease Non-Infectious",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 21,
+      "en": "Eye Infection Acute",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 22,
+      "en": "Eye Infection Chronic",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 23,
+      "en": "Ear Infection Acute",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 24,
+      "en": "Ear Infection Chronic",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 25,
+      "en": "Ear Disease Non-Infectious",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 26,
+      "en": "Cerebal Palsy",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 27,
+      "en": "Epilepsy",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 28,
+      "en": "Anemia Mild/Moderate",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 29,
+      "en": "Anemia Severe",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 30,
+      "en": "Thyroid Disease",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 31,
+      "en": "Sickle Cell",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 32,
+      "en": "Marasmus",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 33,
+      "en": "Kwashiorkor",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 34,
+      "en": "Diabetes",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 35,
+      "en": "Schistosomiasis",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 36,
+      "en": "Louse Born Typhus",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 37,
+      "en": "GUS",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 38,
+      "en": "GUD",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 39,
+      "en": "GDS",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 40,
+      "en": "PID",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 41,
+      "en": "Tuberculosis",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 42,
+      "en": "Cerebral Spinal Meningitis (CSM)",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 43,
+      "en": "Cholera",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 44,
+      "en": "Diarrhea Acute (<14d)",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 45,
+      "en": "Diarrhea Chronic (>14d)",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 46,
+      "en": "Dysentery",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 47,
+      "en": "Influenza",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 48,
+      "en": "Leprosy",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 49,
+      "en": "Malaria No Test",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 50,
+      "en": "Malaria Blood Side Positive",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 51,
+      "en": "Malaria mRDT Positive",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 52,
+      "en": "Malnutrition",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 53,
+      "en": "Measles",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 54,
+      "en": "Plague",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 55,
+      "en": "Rabies",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 56,
+      "en": "Typhoid",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 57,
+      "en": "Yellow Fever",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 58,
+      "en": "Respiratory Infection",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 59,
+      "en": "Respiratory Infection - Acute",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 60,
+      "en": "HIV, Symptomatic",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 61,
+      "en": "Other STI",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 62,
+      "en": "Neoplasm",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 63,
+      "en": "Hepatitis",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 64,
+      "en": "Soil transmitted helminths",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 65,
+      "en": "Lymphatic filairiasis",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 66,
+      "en": "Anthrax",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 67,
+      "en": "Congenital Disorder",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 68,
+      "en": "Gynecologic Disease",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 69,
+      "en": "Tetanus",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 70,
+      "en": "Trachoma",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 71,
+      "en": "Onchocerciasis",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 72,
+      "en": "Trypanosumiasis",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 73,
+      "en": "Viral Haemorrhagic Fevers",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 74,
+      "en": "Intestinal Worms",
+      "sw": ""
+    },
+    {
+      "list_id": "diseases",
+      "order": 75,
+      "en": "Cataract",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "referral_locations",
+      "order": 1,
+      "en": "Not Applicable",
+      "sw": ""
+    },
+    {
+      "list_id": "referral_locations",
+      "order": 2,
+      "en": "Laboratory",
+      "sw": ""
+    },
+    {
+      "list_id": "referral_locations",
+      "order": 3,
+      "en": "Pharmacy",
+      "sw": ""
+    },
+    {
+      "list_id": "referral_locations",
+      "order": 4,
+      "en": "Antenatal Clinic",
+      "sw": ""
+    },
+    {
+      "list_id": "referral_locations",
+      "order": 5,
+      "en": "TB / Leprosy Department",
+      "sw": ""
+    },
+    {
+      "list_id": "referral_locations",
+      "order": 6,
+      "en": "CTC",
+      "sw": ""
+    },
+    {
+      "list_id": "referral_locations",
+      "order": 7,
+      "en": "Reproductive Counseling",
+      "sw": ""
+    },
+    {
+      "list_id": "referral_locations",
+      "order": 8,
+      "en": "Immunization",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "injuries",
+      "order": 1,
+      "en": "Animal Bite (suspected rabies)",
+      "sw": ""
+    },
+    {
+      "list_id": "injuries",
+      "order": 2,
+      "en": "Animal Bite (no rabies)",
+      "sw": ""
+    },
+    {
+      "list_id": "injuries",
+      "order": 3,
+      "en": "Fracture",
+      "sw": ""
+    },
+    {
+      "list_id": "injuries",
+      "order": 4,
+      "en": "Concussion / Head Injury",
+      "sw": ""
+    },
+    {
+      "list_id": "injuries",
+      "order": 5,
+      "en": "Motor Vehicle Accident",
+      "sw": ""
+    },
+    {
+      "list_id": "injuries",
+      "order": 6,
+      "en": "Motorcycle Accident",
+      "sw": ""
+    },
+    {
+      "list_id": "injuries",
+      "order": 7,
+      "en": "Laceration",
+      "sw": ""
+    },
+    {
+      "list_id": "injuries",
+      "order": 8,
+      "en": "Crush injury",
+      "sw": ""
+    },
+    {
+      "list_id": "injuries",
+      "order": 9,
+      "en": "Burn",
+      "sw": ""
+    },
+    {
+      "list_id": "injuries",
+      "order": 10,
+      "en": "Other",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "injury_treatments",
+      "order": 1,
+      "en": "None",
+      "sw": ""
+    },
+    {
+      "list_id": "injury_treatments",
+      "order": 2,
+      "en": "Wound Washout",
+      "sw": ""
+    },
+    {
+      "list_id": "injury_treatments",
+      "order": 3,
+      "en": "Suture of Laceration",
+      "sw": ""
+    },
+    {
+      "list_id": "injury_treatments",
+      "order": 4,
+      "en": "Topical Treatment of Burn",
+      "sw": ""
+    },
+    {
+      "list_id": "injury_treatments",
+      "order": 5,
+      "en": "Bone Setting/Cast",
+      "sw": ""
+    },
+    {
+      "list_id": "injury_treatments",
+      "order": 6,
+      "en": "Surgery",
+      "sw": ""
+    },
+    {
+      "list_id": "injury_treatments",
+      "order": 7,
+      "en": "Blood Transfusion",
+      "sw": ""
+    },
+    {
+      "list_id": "injury_treatments",
+      "order": 8,
+      "en": "Antibiotics",
+      "sw": ""
+    },
+    {
+      "list_id": "injury_treatments",
+      "order": 9,
+      "en": "Antivenom",
+      "sw": ""
+    },
+    {
+      "list_id": "injury_treatments",
+      "order": 10,
+      "en": "Other",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 1,
+      "en": "BCG",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 2,
+      "en": "OPV-0",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 3,
+      "en": "OPV-1",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 4,
+      "en": "OPV-2",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 5,
+      "en": "OPV-3",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 6,
+      "en": "DTP-HB",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 7,
+      "en": "DPT 1",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 8,
+      "en": "DPT 2",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 9,
+      "en": "DPT 3",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 10,
+      "en": "Measles",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 11,
+      "en": "Tentanus Toxoid 1",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 12,
+      "en": "Tentanus Toxoid 2",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 13,
+      "en": "Tentanus Toxoid 3",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 14,
+      "en": "Tentanus Toxoid 4",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 15,
+      "en": "Tentanus Toxoid 5",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 16,
+      "en": "Vitamin A",
+      "sw": ""
+    },
+    {
+      "list_id": "immunizations",
+      "order": 17,
+      "en": "Other",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "immunization_effects",
+      "order": 1,
+      "en": "None",
+      "sw": ""
+    },
+    {
+      "list_id": "immunization_effects",
+      "order": 2,
+      "en": "Shortness of Breath",
+      "sw": ""
+    },
+    {
+      "list_id": "immunization_effects",
+      "order": 3,
+      "en": "Tongue Swelling",
+      "sw": ""
+    },
+    {
+      "list_id": "immunization_effects",
+      "order": 4,
+      "en": "Rash",
+      "sw": ""
+    },
+    {
+      "list_id": "immunization_effects",
+      "order": 5,
+      "en": "Fever",
+      "sw": ""
+    },
+    {
+      "list_id": "immunization_effects",
+      "order": 6,
+      "en": "Swelling at Injection Site",
+      "sw": ""
+    },
+    {
+      "list_id": "immunization_effects",
+      "order": 7,
+      "en": "Nausea or Vomiting",
+      "sw": ""
+    },
+    {
+      "list_id": "immunization_effects",
+      "order": 8,
+      "en": "Other",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "hiv_diagnosis_times",
+      "order": 1,
+      "en": "Unknown",
+      "sw": ""
+    },
+    {
+      "list_id": "hiv_diagnosis_times",
+      "order": 2,
+      "en": "Less Than 2 Month After Birth",
+      "sw": ""
+    },
+    {
+      "list_id": "hiv_diagnosis_times",
+      "order": 3,
+      "en": "Between 2-18 Months After Birth",
+      "sw": ""
+    },
+    {
+      "list_id": "hiv_diagnosis_times",
+      "order": 4,
+      "en": "More Than 18 Months After Birth",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "menses_regularity",
+      "order": 1,
+      "en": "None",
+      "sw": ""
+    },
+    {
+      "list_id": "menses_regularity",
+      "order": 2,
+      "en": "Irregular Menses",
+      "sw": ""
+    },
+    {
+      "list_id": "menses_regularity",
+      "order": 3,
+      "en": "Regular Menses Monthly",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 1,
+      "en": "None",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 2,
+      "en": "Fetal Death",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 3,
+      "en": "Neonatal Death",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 4,
+      "en": "Neonatal Injury",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 5,
+      "en": "Neonatal Tetanus",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 6,
+      "en": "Neonatal Sepsis",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 7,
+      "en": "Birth Asphyxia",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 8,
+      "en": "Shoulder Dystocia",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 9,
+      "en": "Obstructed Labor",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 10,
+      "en": "Hemorrhage",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 11,
+      "en": "Intra-uterine Infection",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 12,
+      "en": "Cesarean Section",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 13,
+      "en": "Seizure",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 14,
+      "en": "Forceps/Vacuum",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 15,
+      "en": "Sepsis",
+      "sw": ""
+    },
+    {
+      "list_id": "pregnancy_complications",
+      "order": 16,
+      "en": "Other",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "marital_statuses",
+      "order": 1,
+      "en": "Single",
+      "sw": ""
+    },
+    {
+      "list_id": "marital_statuses",
+      "order": 2,
+      "en": "Married",
+      "sw": ""
+    },
+    {
+      "list_id": "marital_statuses",
+      "order": 3,
+      "en": "Divorced",
+      "sw": ""
+    },
+    {
+      "list_id": "marital_statuses",
+      "order": 4,
+      "en": "Separated",
+      "sw": ""
+    },
+    {
+      "list_id": "marital_statuses",
+      "order": 5,
+      "en": "Widowed",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptives",
+      "order": 1,
+      "en": "None",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptives",
+      "order": 2,
+      "en": "Pills",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptives",
+      "order": 3,
+      "en": "Condoms",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptives",
+      "order": 4,
+      "en": "IUD",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptives",
+      "order": 5,
+      "en": "Other Implants",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptives",
+      "order": 6,
+      "en": "Depo Provera",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptives",
+      "order": 7,
+      "en": "Sterilization",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptives",
+      "order": 8,
+      "en": "Natural ways",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptives",
+      "order": 9,
+      "en": "Other",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "fertility_desires",
+      "order": 1,
+      "en": "Desires Pregnancy Now",
+      "sw": ""
+    },
+    {
+      "list_id": "fertility_desires",
+      "order": 2,
+      "en": "Desires Contraception Now",
+      "sw": ""
+    },
+    {
+      "list_id": "fertility_desires",
+      "order": 3,
+      "en": "Desires Future Pregnancy",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "hiv_risks",
+      "order": 1,
+      "en": "Patient Known to Have HIV",
+      "sw": ""
+    },
+    {
+      "list_id": "hiv_risks",
+      "order": 2,
+      "en": "Partner or Previous Partner Known to Have HIV",
+      "sw": ""
+    },
+    {
+      "list_id": "hiv_risks",
+      "order": 3,
+      "en": "History of Sexual Assult",
+      "sw": ""
+    },
+    {
+      "list_id": "hiv_risks",
+      "order": 4,
+      "en": "Desires HIV Testing",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 1,
+      "en": "Not Applicable",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 2,
+      "en": "1 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 3,
+      "en": "2 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 4,
+      "en": "3 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 5,
+      "en": "4 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 6,
+      "en": "5 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 7,
+      "en": "6 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 8,
+      "en": "7 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 9,
+      "en": "8 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 10,
+      "en": "9 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 11,
+      "en": "10 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 12,
+      "en": "11 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 13,
+      "en": "12 Month Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "drug_quantities",
+      "order": 14,
+      "en": "More Than One Year Supply",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "comdom_quanitites",
+      "order": 1,
+      "en": "Not Applicable",
+      "sw": ""
+    },
+    {
+      "list_id": "comdom_quanitites",
+      "order": 2,
+      "en": "1 to 10",
+      "sw": ""
+    },
+    {
+      "list_id": "comdom_quanitites",
+      "order": 3,
+      "en": "11 to 20",
+      "sw": ""
+    },
+    {
+      "list_id": "comdom_quanitites",
+      "order": 4,
+      "en": "21 to 30",
+      "sw": ""
+    },
+    {
+      "list_id": "comdom_quanitites",
+      "order": 5,
+      "en": "31 to 40",
+      "sw": ""
+    },
+    {
+      "list_id": "comdom_quanitites",
+      "order": 6,
+      "en": "41 to 50",
+      "sw": ""
+    },
+    {
+      "list_id": "comdom_quanitites",
+      "order": 7,
+      "en": "50+",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "depoprovera_quantities",
+      "order": 1,
+      "en": "3 Month Dose",
+      "sw": ""
+    },
+    {
+      "list_id": "depoprovera_quantities",
+      "order": 2,
+      "en": "6 Month Dose",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "cervical_symptoms",
+      "order": 1,
+      "en": "Vaginal Discharge",
+      "sw": ""
+    },
+    {
+      "list_id": "cervical_symptoms",
+      "order": 2,
+      "en": "Post-Coital Bleeding",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "infant_weights",
+      "order": 1,
+      "en": "No Previous Delivery",
+      "sw": ""
+    },
+    {
+      "list_id": "infant_weights",
+      "order": 2,
+      "en": "Unknown",
+      "sw": ""
+    },
+    {
+      "list_id": "infant_weights",
+      "order": 3,
+      "en": "<1kg",
+      "sw": ""
+    },
+    {
+      "list_id": "infant_weights",
+      "order": 4,
+      "en": "1kg",
+      "sw": ""
+    },
+    {
+      "list_id": "infant_weights",
+      "order": 5,
+      "en": "1.5kg",
+      "sw": ""
+    },
+    {
+      "list_id": "infant_weights",
+      "order": 6,
+      "en": "2kg",
+      "sw": ""
+    },
+    {
+      "list_id": "infant_weights",
+      "order": 7,
+      "en": "2.5kg",
+      "sw": ""
+    },
+    {
+      "list_id": "infant_weights",
+      "order": 8,
+      "en": "3kg",
+      "sw": ""
+    },
+    {
+      "list_id": "infant_weights",
+      "order": 9,
+      "en": "3.5kg",
+      "sw": ""
+    },
+    {
+      "list_id": "infant_weights",
+      "order": 10,
+      "en": "4kg+",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "hiv_statuses",
+      "order": 1,
+      "en": "Positive",
+      "sw": ""
+    },
+    {
+      "list_id": "hiv_statuses",
+      "order": 2,
+      "en": "Negative",
+      "sw": ""
+    },
+    {
+      "list_id": "hiv_statuses",
+      "order": 3,
+      "en": "Unknown",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 1,
+      "en": "None",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 2,
+      "en": "Abdominal Pain",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 3,
+      "en": "Vaginal Pain",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 4,
+      "en": "Vaginal Bleeding",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 5,
+      "en": "Loss of Fetal Movement",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 6,
+      "en": "Vaginal Leakage of Fluid",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 7,
+      "en": "Headache",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 8,
+      "en": "Blurred Vision",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 9,
+      "en": "Nausea or Vomiting",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 10,
+      "en": "Diarrhea",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 11,
+      "en": "Constipation",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 12,
+      "en": "Fever",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 13,
+      "en": "Contractions",
+      "sw": ""
+    },
+    {
+      "list_id": "anc_symptoms",
+      "order": 14,
+      "en": "Post-Coital Bleeding",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_stations",
+      "order": 1,
+      "en": "Not Examined",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_stations",
+      "order": 2,
+      "en": "High/Unengaged",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_stations",
+      "order": 3,
+      "en": -3,
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_stations",
+      "order": 4,
+      "en": -2,
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_stations",
+      "order": 5,
+      "en": -1,
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_stations",
+      "order": 6,
+      "en": 0,
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_stations",
+      "order": 7,
+      "en": 1,
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_stations",
+      "order": 8,
+      "en": 2,
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_stations",
+      "order": 9,
+      "en": 3,
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_movements",
+      "order": 1,
+      "en": "Too Early To Be Felt",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_movements",
+      "order": 2,
+      "en": "Felt By Mother",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_movements",
+      "order": 3,
+      "en": "Felt By Mother, Noted to be Abnormal",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_movements",
+      "order": 4,
+      "en": "Not Felt By Mother",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_heart_rates",
+      "order": 1,
+      "en": "Not Checked",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_heart_rates",
+      "order": 2,
+      "en": "Checked, But Unable To Hear",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_heart_rates",
+      "order": 3,
+      "en": "110s",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_heart_rates",
+      "order": 4,
+      "en": "120s",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_heart_rates",
+      "order": 5,
+      "en": "130s",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_heart_rates",
+      "order": 6,
+      "en": "140s",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_heart_rates",
+      "order": 7,
+      "en": "150s",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_heart_rates",
+      "order": 8,
+      "en": "160s",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_heart_rates",
+      "order": 9,
+      "en": "170s",
+      "sw": ""
+    },
+    {
+      "list_id": "fetal_heart_rates",
+      "order": 10,
+      "en": "180s",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "anemia_severities",
+      "order": 1,
+      "en": "<8.5g/dl",
+      "sw": ""
+    },
+    {
+      "list_id": "anemia_severities",
+      "order": 2,
+      "en": ">8.5g/dl",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "milk_types",
+      "order": 1,
+      "en": "Mother's Milk ONLY",
+      "sw": ""
+    },
+    {
+      "list_id": "milk_types",
+      "order": 2,
+      "en": "Mother's Milk + Formula",
+      "sw": ""
+    },
+    {
+      "list_id": "milk_types",
+      "order": 3,
+      "en": "Mother's Milk + Other",
+      "sw": ""
+    },
+    {
+      "list_id": "milk_types",
+      "order": 4,
+      "en": "Formula ONLY",
+      "sw": ""
+    },
+    {
+      "list_id": "milk_types",
+      "order": 5,
+      "en": "Formula + Other",
+      "sw": ""
+    },
+    {
+      "list_id": "milk_types",
+      "order": 6,
+      "en": "Other ONLY",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptive_sources",
+      "order": 1,
+      "en": "Clinic",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptive_sources",
+      "order": 2,
+      "en": "Community Based Distribution (CBD)",
+      "sw": ""
+    },
+    {
+      "list_id": "contraceptive_sources",
+      "order": 3,
+      "en": "Both",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "water_sodium_severities",
+      "order": 1,
+      "en": "severe",
+      "sw": ""
+    },
+    {
+      "list_id": "water_sodium_severities",
+      "order": 2,
+      "en": "mild",
+      "sw": ""
+    },
+    {
+      "list_id": "water_sodium_severities",
+      "order": 3,
+      "en": "uncertain",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "genders",
+      "order": 1,
+      "en": "Female",
+      "sw": ""
+    },
+    {
+      "list_id": "genders",
+      "order": 2,
+      "en": "Male",
+      "sw": ""
+    },
+    {
+      "list_id": "genders",
+      "order": 3,
+      "en": "Unknown",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "form_lists",
+      "order": 1,
+      "en": "#/forms/list",
+      "sw": ""
+    },
+    {
+      "list_id": "",
+      "order": "",
+      "en": "",
+      "sw": ""
+    },
+    {
+      "list_id": "delivery_type",
+      "order": 1,
+      "en": "Home delivery",
+      "sw": ""
+    },
+    {
+      "list_id": "delivery_type",
+      "order": 2,
+      "en": "Delivered by traditional birth attendant",
+      "sw": ""
+    },
+    {
+      "list_id": "delivery_type",
+      "order": 3,
+      "en": "Delivered in clinic",
+      "sw": ""
+    },
+    {
+      "list_id": "delivery_type",
+      "order": 4,
+      "en": "Delivered on the way to clinic",
+      "sw": ""
+    },
+    {
+      "list_id": "delivery_type",
+      "order": 5,
+      "en": "Delivered by skilled provider",
+      "sw": ""
+    }
+  ],
+  "settings": [
+    {
+      "setting": "form_id",
+      "value": "survey"
+    },
+    {
+      "setting": "form_version",
+      "value": 1
+    },
+    {
+      "setting": "form_title",
+      "value": "Survey"
+    }
+  ]
+}
