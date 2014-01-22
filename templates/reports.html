@@ -1,17 +1,3 @@
-<div id="reports-nav">
-<ul class="nav nav-tabs">
-  <li{?tab.districts} class="active"{/tab.districts}>
-    <a href="{baseURL}/facilities/districts"><i class="icon-building"></i> {@translate value="Districts"/}</a>
-  </li>
-  <li{?tab.health_centers} class="active"{/tab.health_centers}>
-    <a href="{baseURL}/facilities/health_centers"><i class="icon-plus-sign-alt"></i> {@translate value="Health Centers"/}</a>
-  </li>
-  <li{?tab.clinics} class="active"{/tab.clinics}>
-    <a href="{baseURL}/facilities/clinics"><i class="icon-user"></i> {@translate value="Clinics"/}</a>
-  </li>
-</ul>
-</div>
-
 <div id="reports">
   {>"loader.html"/}
 </div>
