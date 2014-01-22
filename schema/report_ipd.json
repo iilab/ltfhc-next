@@ -11,12 +11,12 @@
             "sw": "Waliolazwa Wodini",
             "en": "Those who are admitted in the ward"
         },
-        {
+        "acute_flacid_paralysis": {
             "line_number": "2",
             "sw": "Acute Flacid Paralysis",
             "en": "Acute Flacid Paralysis"
         },
-        {
+        "cholera": {
             "line_number": "3",
             "sw": "Cholera",
             "en": "Cholera"
