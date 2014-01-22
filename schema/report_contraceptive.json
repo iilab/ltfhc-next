@@ -1,398 +1,345 @@
-[
-  {
-    "line_number": "1",
-    "sw": "Sindano",
-    "en": "Injectable methods",
-    "id": "injectable_methods"
-  },
-  {
-    "line_number": "1a",
-    "sw": "Idaji ya Wateja wa Sindano",
-    "en": "1a Number of customers who use contraceptive  injection",
-    "id": "1a_number_of_customers_who_use_contraceptive__injection"
-  },
-  {
-    "line_number": "2",
-    "sw": "Vidonge",
-    "en": "2 Contraceptive pills",
-    "id": "2_contraceptive_pills"
-  },
-  {
-    "line_number": "2a",
-    "sw": "Idadi ya wateja wa Vidonge Kituoni",
-    "en": "2a The number of pills clients at the clinic",
-    "id": "2a_the_number_of_pills_clients_at_the_clinic"
-  },
-  {
-    "line_number": "2b",
-    "sw": "Idadi ya wateja wa vidonge wa CBD",
-    "en": "2b Number of pills clients through  CBD(Community Based Distribution)",
-    "id": "2b_number_of_pills_clients_through__cbd(community_based_distribution)"
-  },
-  {
-    "line_number": "2c",
-    "sw": "Jumla walochukua Vidonge Kituoni na CBD (2a+2b)",
-    "en": "The number of clients who were given pills at the clinic and through CBD(2a+2b)",
-    "id": "the_number_of_clients_who_were_given_pills_at_the_clinic_and_through_cbd(2a+2b)"
-  },
-  {
-    "line_number": "3",
-    "sw": "Kondom",
-    "en": "3 Condoms",
-    "id": "3_condoms"
-  },
-  {
-    "line_number": "3a",
-    "sw": "Idadi ya wateja waliochukua kondom Kituoni Me",
-    "en": "3a The number of Male clients who were given condoms at the clinic",
-    "id": "3a_the_
-number_of_male_clients_who_were_given_condoms_at_the_clinic"
-  },
-  {
-    "line_number": "3b",
-    "sw": "Idadi ya wateja waliochukua kondom Kituoni Ke",
-    "en": "3b The number of Female clients who were given condoms at the clinic",
-    "id": "3b_the_number_of_female_clients_who_were_given_condoms_at_the_clinic"
-  },
-  {
-    "line_number": "3c",
-    "sw": "Idadi ya wateja waliochukua kondom CBD Me",
-    "en": "3d Number of  male clients who were given condoms by CBD",
-    "id": "3d_number_of__male_clients_who_were_given_condoms_by_cbd"
-  },
-  {
-    "line_number": "3d",
-    "sw": "Idadi ya wateja waliochukua kondom CBD Ke",
-    "en": "3d Number of female clients who were given condoms by CBD",
-    "id": "3d_number_of_female_clients_who_were_given_condoms_by_cbd"
-  },
-  {
-    "line_number": "3e",
-    "sw": "Jumla ya Wateja waliochukua kondomu (kituoni na CBD) (3a+3b+3c+3d)",
-    "en": "3e Total Customers who given condoms at the clinic and CBD) (3a +3 b +3 c +3 d)",
-    "id": "3e_total_customers_who_given_condoms_at_the_clinic_and_cbd)_(3a_+3_b_+3_c_+3_d)"
-  },
-  {
-    "line_number": "3f",
-    "sw": "Jumla ya Wateja waliochukua njia za muda mfupi (1+2c+3c)",
-    "en": "3f Total Customers who took  short-term course (1 +2 c +3 c)",
-    "id": "3f_total_customers_who_took__short-term_course_(1_+2_c_+3_c)"
-  },
-  {
-    "line_number": "4",
-    "sw": "Njia za muda Mrefu na za kudumu za Uzazi wa Mpango",
-    "en": "Methods of long-term and permanent family planning",
-    "id": "methods_of_long-term_and_permanent_family_planning"
-  },
-  {
-    "line_number": "4",
-    "sw": "Kufunga Uzazi",
-    "en": "Sterilization",
-    "id": "sterilization"
-  },
-  {
-    "line_number": "4a",
-    "sw": "Kufunga Uzazi mama (ML/LA) - kituoni",
-    "en": "Women sterilization (ML / LA) - at the clinic",
-    "id": "women_sterilization_(ml_/_la)_-_at_the_clinic"
-  },
-  {
-    "line_number": "4b",
-    "sw": "Kufunga Uzazi mama (ML/LA) - outreach",
-    "en": "Women sterilization (ML / LA) - outreach",
-    "id": "women_sterilization_(ml_/_la)_-_outreach"
-  },
-  {
-    "line_number": "4c",
-    "sw": "Kufunga uzazi baba (NSV) - kituoni",
-    "en": "Men sterilization (NSV) -  at the clinic",
-    "id": "men_sterilization_(nsv)_-__at_the_clinic"
-  },
-  {
-    "line_number": "4d",
-    "sw": "Kufung uzazi baba (NSV) - outreach",
-    "en": "Men sterilization (NSV) - outreach",
-    "id": "men_sterilization_(nsv)_-_outreach"
-  },
-  {
-    "line_number": "5",
-    "sw": "Vipandikizi",
-    "en": "Implants",
-    "id": "implants"
-  },
-  {
-    "line_number": "5a",
-    "sw": "Kuweka vipandikizi - kituoni",
-    "en": "Those who put implants - at the clinic",
-    "id": "those_who_put_implants_-_at_the_clinic"
-  },
-  {
-    "line_number": "5b",
-    "sw": "Kuweka vipandikizi - outreach",
-    "en": "Those who put implants - at the clinic",
-    "id": "those_who_put_implants_-_at_the_clinic"
-  },
-  {
-    "line_number": "5c",
-    "sw": "Kuondoa vipandikizi",
-    "en": "Removing implants",
-    "id": "removing_implants"
-  },
-  {
-    "line_number": "6",
-    "sw": "Kitanzi (IUCD)",
-    "en": "Intrauterine methods(IUCD's)",
-    "id": "intrauterine_methods(iucd's)"
-  },
-  {
-    "line_number": "6a",
-    "sw": "Kuweka Kitanzi - kituoni",
-    "en": "Inserting IUD's(at the clinic)",
-    "id": "inserting_iud's(at_the_clinic)"
-  },
-  {
-    "line_number": "6b",
-    "sw": "Kuweka Kitanzi - outreach",
-    "en": "Inserting IUD's(outreach)",
-    "id": "inserting_iud's(outreach)"
-  },
-  {
-    "line_number": "6c",
-    "sw": "Kuondoa Kitanzi - kituoni"
-  },
-  {
-    "line_number": "6d",
-    "sw": "Kuondoa Kitanzi - outreach"
-  },
-  {
-    "line_number": "6e",
-    "sw": "Jumla ya Wateja waliochukua njia za muda mrefu na za Kudumu za Uzazi wa Mpango (4a+4b+4c+4d+5a+5b+6a+6b)",
-    "en": "Total number of client who used permanent contraceptive methods(4a+4b+4c+4d+5a+5b+6a+6b)",
-    "id": "total_number_of_client_who_used_permanent_contraceptive_methods(4a+4b+4c+4d+5a+5b+6a+6b)"
-  },
-  {
-    "line_number": "7",
-    "sw": "Njia Nyinginezo",
-    "en": "Other  methods",
-    "id": "other__methods"
-  },
-  {
-    "line_number": "7a",
-    "sw": "Njia za maumbile (mfano LAM, BOM, joto, kalenda)",
-    "en": "Natural ways(eg. LAM,BOM,body temperature and calender)",
-    "id": "natural_ways(eg._lam,bom,body_temperature_and_calender)"
-  },
-  {
-    "line_number": "7b",
-    "sw": "Njia nyingine",
-    "en": "Other methods",
-    "id": "other_methods"
-  },
-  {
-    "line_number": "7c",
-    "sw": "Jumla ya Njia Nyinginezo (7a+7b)",
-    "en": "Total number of clients who used other methods(7a+7b)",
-    "id": "total_number_of_clients_who_used_other_methods(7a+7b)"
-  },
-  {
-    "line_number": "8",
-    "sw": "Jumla ya Aina zote Uzazi wa Mpango",
-    "en": "Total number of types of contraceptives",
-    "id": "total_number_of_types_of_contraceptives"
-  },
-  {
-    "line_number": "8a",
-    "sw": "Jumla ya Wateja waliochukua njia zote za Uzazi Mpango (3f+6e+7c)",
-    "en": "Total number of clients who used all types of contraceptives(3f+6e+7c)",
-    "id": "total_number_of_clients_who_used_all_types_of_contraceptives(3f+6e+7c)"
-  },
-  {
-    "line_number": "9",
-    "sw": "Jumla ya Mizunguko ya Vidonge Iliyotolewa",
-    "en": "Total number of cycles distributed",
-    "id": "total_number_of_cycles_distributed"
-  },
-  {
-    "line_number": "9a",
-    "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) - Kituoni",
-    "en": "Cycles distributed at the Clinic",
-    "id": "cycles_distributed_at_the_clinic"
-  },
-  {
-    "line_number": "9b",
-    "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) - CBD",
-    "en": "Cycles distributed by CBD",
-    "id": "cycles_distributed_by_cbd"
-  },
-  {
-    "line_number": "9c",
-    "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) (Kituoni na CBD) (9a+9b)",
-    "en": "Total number of cycles distributed(at the clinic+CBD) (9a+9b",
-    "id": "total_number_of_cycles_distributed(at_the_clinic+cbd)_(9a+9b"
-  },
-  {
-    "line_number": "10",
-    "sw": "Kondomu zilizotolewa",
-    "en": "Condoms given out to clients",
-    "id": "condoms_given_out_to_clients"
-  },
-  {
-    "line_number": "10a",
-    "sw": "Idadi ya kondomu zilizogawiwa Kituoni Me",
-    "en": "Number of condoms given to male clients at the clinic",
-    "id": "number_of_condoms_given_to_male_clients_at_the_clinic"
-  },
-  {
-    "line_number": "10b",
-    "sw": "Idadi ya kondomu zilizogawiwa Kituoni Ke",
-    "en": "Number of condoms given to female clients at the clinic",
-    "id": "number_of_condoms_given_to_female_clients_at_the_clinic"
-  },
-  {
-    "line_number": "10c",
-    "sw": "Idadi ya kondomu zilizogawiwa CBD Me",
-    "en": "Number of condoms given to male clients  by CBD",
-    "id": "number_of_condoms_given_to_male_clients__by_cbd"
-  },
-  {
-    "line_number": "10d",
-    "sw": "Idadi ya kondomu zilizogawiwa CBD Ke",
-    "en": "Number of condoms given to female clients by CBD",
-    "id": "number_of_condoms_given_to_female_clients_by_cbd"
-  },
-  {
-    "line_number": "10e",
-    "sw": "Idadi ya kondomu zilizogawiwa kituoni na CBD (10a+10b+10c+10d)",
-    "en": "Total number of condoms given to clients from the clinic and by CBD(10a+10b+10c+10d)",
-    "id": "total_number_of_condoms_given_to_clients_from_the_clinic_and_by_cbd(10a+10b+10c+10d)"
-  },
-  {
-    "line_number": "11",
-    "sw": "Huduma baada ya mimba kuharibika (cPAC) Baada ya kujifungua",
-    "en": "Service after miscarriage (CPAC) After giving birth",
-    "id": "service_after_miscarriage_(cpac)_after_giving_birth"
-  },
-  {
-    "line_number": "11a",
-    "sw": "Waliopata huduma baada ya mimba kubaribika",
-    "en": "Those who got treatment after miscarriages",
-    "id": "those_who_got_treatment_after_miscarriages"
-  },
-  {
-    "line_number": "11b",
-    "sw": "Waliopata uzazi wa mpango baada ya mimba kubaribika",
-    "en": "Those who used contraception after miscarriage",
-    "id": "those_who_used_contraception_after_miscarriage"
-  },
-  {
-    "line_number": "11c",
-    "sw": "Waliopata njia ya uazazi wa mpango siku 42 baada ya kujifungua",
-    "en": "Those who used contraceptive methods 42 days after giving birth",
-    "id": "those_who_used_contraceptive_methods_42_days_after_giving_birth"
-  },
-  {
-    "line_number": "12",
-    "sw": "Wateja waliochunguzwa saratani",
-    "en": "clients  who screened for cancer",
-    "id": "clients__who_screened_for_cancer"
-  },
-  {
-    "line_number": "12a",
-    "sw": "waliochunguzwa tit",
-    "en": "Those Screened for breast diseases",
-    "id": "those_screened_for_breast_diseases"
-  },
-  {
-    "line_number": "12b",
-    "sw": "Waliogundulika na matatizo ya matiti (mfano: kutoka damu kwenye chuchu au uvimbe wa matiti)",
-    "en": "Detected to have  breast cancer symptoms (eg, bleeding or swelling of the breast nipples)",
-    "id": "detected_to_have__breast_cancer_symptoms_(eg,_bleeding_or_swelling_of_the_breast_nipples)"
-  },
-  {
-    "line_number": "12c",
-    "sw": "Waliochunguzwa Shingo ya mfuko wa uzazi",
-    "en": "Screened for cervical diseases",
-    "id": "screened_for_cervical_diseases"
-  },
-  {
-    "line_number": "12d",
-    "sw": "Waliogundulika na matatizo ya shingo ya mfuko wa uzazi (mfano: mchubuko au kidonda)",
-    "en": "Detected to have cervical diseases (eg, bruise or cervical ulcer)",
-    "id": "detected_to_have_cervical_diseases_(eg,_bruise_or_cervical_ulcer)"
-  },
-  {
-    "line_number": "12e",
-    "sw": "Waliodhamwa wana saratani ya shingo ya mfuko wa uzazi",
-    "en": "Detected to have cervical cancer symptoms",
-    "id": "detected_to_have_cervical_cancer_symptoms"
-  },
-  {
-    "line_number": "12f",
-    "sw": "Waliopewa huduma ya Cryotherapy",
-    "en": "Those who got Cryotherapy service",
-    "id": "those_who_got_cryotherapy_service"
-  },
-  {
-    "line_number": "13",
-    "sw": "PITC",
-    "en": "PITC",
-    "id": "pitc"
-  },
-  {
-    "line_number": "13a",
-    "sw": "Tayari wana uambukizo wa VVU",
-    "en": "Those who already have an HIV infection",
-    "id": "those_who_already_have_an_hiv_infection"
-  },
-  {
-    "line_number": "13b",
-    "sw": "Waliopata ushauri nasha juu ya VVU",
-    "en": "Those who got HIV counselling ",
-    "id": "those_who_got_hiv_counselling_"
-  },
-  {
-    "line_number": "13c",
-    "sw": "Wateja waliopima VVU",
-    "en": "Clients  who tested for HIV",
-    "id": "clients__who_tested_for_hiv"
-  },
-  {
-    "line_number": "13d",
-    "sw": "Wateja waliopata ushauri nasaha baada ya kupima",
-    "en": "Clients  who received post-test counseling",
-    "id": "clients__who_received_post-test_counseling"
-  },
-  {
-    "line_number": "13e",
-    "sw": "Wateja waliogundulika Positive (+)",
-    "en": "Customers who tested positive (+)",
-    "id": "customers_who_tested_positive_(+)"
-  },
-  {
-    "line_number": "13f",
-    "sw": "Wenza waliopima VVU",
-    "en": "Partners who tested for HIV",
-    "id": "partners_who_tested_for_hiv"
-  },
-  {
-    "line_number": "13g",
-    "sw": "Wenza Waliogundulika Positive (+)",
-    "en": "Partners Who tested Positive (+)",
-    "id": "partners_who_tested_positive_(+)"
-  },
-  {
-    "line_number": "13h",
-    "sw": "Wateja ambao matokeo ya vipimo vya VVU yanatofautiana",
-    "en": "Clients who tested HIV and got different results(discordant couple)",
-    "id": "clients_who_tested_hiv_and_got_different_results(discordant_couple)"
-  },
-  {
-    "line_number": "13i",
-    "sw": "Wateja waliopata rufaa kwenda CTC",
-    "en": "Clients  who were reffered to CTC",
-    "id": "clients__who_were_reffered_to_ctc"
-  },
-  {
-    "line_number": "13j",
-    "sw": "Wataja waliopata rufaa kwenda CTC"
-  },
+{
+    "collection": "reports",
+    "class": "schema",
+    "_id": "reports/schema/contraceptive",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Contraceptive",
+    "type": "object",
+    "properties": {
+        "injectable_methods": {
+            "line_number": "1",
+            "sw": "Sindano",
+            "en": "Injectable methods"
+        },
+        "number_of_customers_who_use_contraceptive__injection": {
+            "line_number": "1a",
+            "sw": "Idaji ya Wateja wa Sindano",
+            "en": "Number of customers who use contraceptive injection"
+        },
+        "contraceptive_pills": {
+            "line_number": "2",
+            "sw": "Vidonge",
+            "en": "Contraceptive pills"
+        },
+        "the_number_of_pills_clients_at_the_clinic": {
+            "line_number": "2a",
+            "sw": "Idadi ya wateja wa Vidonge Kituoni",
+            "en": "The number of pills clients at the clinic"
+        },
+        "number_of_pills_clients_through_cbd": {
+            "line_number": "2b",
+            "sw": "Idadi ya wateja wa vidonge wa CBD",
+            "en": "Number of pills clients through CBD(Community Based Distribution)"
+        },
+        "the_number_of_clients_who_were_given_pills_at_the_clinic_and_through_cbd": {
+            "line_number": "2c",
+            "sw": "Jumla walochukua Vidonge Kituoni na CBD (2a+2b)",
+            "en": "The number of clients who were given pills at the clinic and through CBD(2a+2b)"
+        },
+        "condoms": {
+            "line_number": "3",
+            "sw": "Kondom",
+            "en": "Condoms",
+        },
+        "the_number_of_male_clients_who_were_given_condoms_at_the_clinic": {
+            "line_number": "3a",
+            "sw": "Idadi ya wateja waliochukua kondom Kituoni Me",
+            "en": "3a The number of Male clients who were given condoms at the clinic",
+        },
+        "the_number_of_female_clients_who_were_given_condoms_at_the_clinic": {
+            "line_number": "3b",
+            "sw": "Idadi ya wateja waliochukua kondom Kituoni Ke",
+            "en": "3b The number of Female clients who were given condoms at the clinic",
+        },
+        "number_of__male_clients_who_were_given_condoms_by_cbd": {
+            "line_number": "3c",
+            "sw": "Idadi ya wateja waliochukua kondom CBD Me",
+            "en": "3d Number of  male clients who were given condoms by CBD",
+        },
+        "number_of_female_clients_who_were_given_condoms_by_cbd": {
+            "line_number": "3d",
+            "sw": "Idadi ya wateja waliochukua kondom CBD Ke",
+            "en": "3d Number of female clients who were given condoms by CBD",
+        },
+        "total_customers_who_given_condoms_at_the_clinic_and_cbd": {
+            "line_number": "3e",
+            "sw": "Jumla ya Wateja waliochukua kondomu (kituoni na CBD) (3a+3b+3c+3d)",
+            "en": "3e Total Customers who given condoms at the clinic and CBD (3a +3 b +3 c +3 d)",
+        },
+        "total_customers_who_took__short-term_course": {
+            "line_number": "3f",
+            "sw": "Jumla ya Wateja waliochukua njia za muda mfupi (1+2c+3c)",
+            "en": "3f Total Customers who took  short-term course (1 +2 c +3 c)",
+        },
+        "methods_of_long-term_and_permanent_family_planning": {
+            "line_number": "4",
+            "sw": "Njia za muda Mrefu na za kudumu za Uzazi wa Mpango",
+            "en": "Methods of long-term and permanent family planning",
+        },
+        "sterilization": {
+            "line_number": "4",
+            "sw": "Kufunga Uzazi",
+            "en": "Sterilization",
+        },
+        "women_sterilization_ml_la_at_the_clinic": {
+            "line_number": "4a",
+            "sw": "Kufunga Uzazi mama (ML/LA) - kituoni",
+            "en": "Women sterilization (ML / LA) - at the clinic",
+        },
+        "women_sterilization_ml_la_outreach": {
+            "line_number": "4b",
+            "sw": "Kufunga Uzazi mama (ML/LA) - outreach",
+            "en": "Women sterilization (ML / LA) - outreach",
+        },
+        "men_sterilization_nsv_at_the_clinic": {
+            "line_number": "4c",
+            "sw": "Kufunga uzazi baba (NSV) - kituoni",
+            "en": "Men sterilization (NSV) -  at the clinic",
+        },
+        "men_sterilization_nsv_outreach": {
+            "line_number": "4d",
+            "sw": "Kufung uzazi baba (NSV) - outreach",
+            "en": "Men sterilization (NSV) - outreach",
+        },
+        "implants": {
+            "line_number": "5",
+            "sw": "Vipandikizi",
+            "en": "Implants",
+        },
+        "those_who_put_implants_at_the_clinic": {
+            "line_number": "5a",
+            "sw": "Kuweka vipandikizi - kituoni",
+            "en": "Those who put implants - at the clinic",
+        },
+        "those_who_put_implants_outreach": {
+            "line_number": "5b",
+            "sw": "Kuweka vipandikizi - outreach",
+            "en": "Those who put implants - outreach",
+        },
+        "removing_implants": {
+            "line_number": "5c",
+            "sw": "Kuondoa vipandikizi",
+            "en": "Removing implants",
+        },
+        "intrauterine_methods_iucd": {
+            "line_number": "6",
+            "sw": "Kitanzi (IUCD)",
+            "en": "Intrauterine methods(IUCD)",
+        },
+        "inserting_iud_clinic": {
+            "line_number": "6a",
+            "sw": "Kuweka Kitanzi - kituoni",
+            "en": "Inserting IUD (at the clinic)",
+        },
+        "inserting_iud_outreach": {
+            "line_number": "6b",
+            "sw": "Kuweka Kitanzi - outreach",
+            "en": "Inserting IUD (outreach)",
+        },
+        "removing_iud_clinic": {
+            "line_number": "6c",
+            "sw": "Kuondoa Kitanzi - kituoni",
+            "en": "Removing IUD (at the clinic)"
+        },
+        "removing_iud_outreach": {
+            "line_number": "6d",
+            "sw": "Kuondoa Kitanzi - outreach",
+            "en": "Removing IUD (outreach)"
+        },
+        "total_number_of_client_who_used_permanent_contraceptive_methods": {
+            "line_number": "6e",
+            "sw": "Jumla ya Wateja waliochukua njia za muda mrefu na za Kudumu za Uzazi wa Mpango (4a+4b+4c+4d+5a+5b+6a+6b)",
+            "en": "Total number of client who used permanent contraceptive methods(4a+4b+4c+4d+5a+5b+6a+6b)",
+        },
+        "other_methods": {
+            "line_number": "7",
+            "sw": "Njia Nyinginezo",
+            "en": "Other methods",
+        },
+        "natural_ways": {
+            "line_number": "7a",
+            "sw": "Njia za maumbile (mfano LAM, BOM, joto, kalenda)",
+            "en": "Natural ways(eg. LAM,BOM,body temperature and calendar",
+        },
+        "other_methods": {
+            "line_number": "7b",
+            "sw": "Njia nyingine",
+            "en": "Other methods",
+        },
+        "total_number_of_clients_who_used_other_methods": {
+            "line_number": "7c",
+            "sw": "Jumla ya Njia Nyinginezo (7a+7b)",
+            "en": "Total number of clients who used other methods(7a+7b)",
+        },
+        "total_number_of_types_of_contraceptives": {
+            "line_number": "8",
+            "sw": "Jumla ya Aina zote Uzazi wa Mpango",
+            "en": "Total number of types of contraceptives",
+        },
+        "total_number_of_clients_who_used_all_types_of_contraceptives": {
+            "line_number": "8a",
+            "sw": "Jumla ya Wateja waliochukua njia zote za Uzazi Mpango (3f+6e+7c)",
+            "en": "Total number of clients who used all types of contraceptives(3f+6e+7c)",
+        },
+        "total_number_of_cycles_distributed": {
+            "line_number": "9",
+            "sw": "Jumla ya Mizunguko ya Vidonge Iliyotolewa",
+            "en": "Total number of cycles distributed",
+        },
+        "cycles_distributed_at_the_clinic": {
+            "line_number": "9a",
+            "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) - Kituoni",
+            "en": "Cycles distributed at the Clinic",
+        },
+        "cycles_distributed_by_cbd": {
+            "line_number": "9b",
+            "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) - CBD",
+            "en": "Cycles distributed by CBD",
+        },
+        "total_number_of_cycles_distributed": {
+            "line_number": "9c",
+            "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) (Kituoni na CBD) (9a+9b)",
+            "en": "Total number of cycles distributed(at the clinic+CBD) (9a+9b",
+        },
+        "condoms_given_out_to_clients": {
+            "line_number": "10",
+            "sw": "Kondomu zilizotolewa",
+            "en": "Condoms given out to clients",
+        },
+        "number_of_condoms_given_to_male_clients_at_the_clinic": {
+            "line_number": "10a",
+            "sw": "Idadi ya kondomu zilizogawiwa Kituoni Me",
+            "en": "Number of condoms given to male clients at the clinic",
+        },
+        "number_of_condoms_given_to_female_clients_at_the_clinic": {
+            "line_number": "10b",
+            "sw": "Idadi ya kondomu zilizogawiwa Kituoni Ke",
+            "en": "Number of condoms given to female clients at the clinic",
+        },
+        "number_of_condoms_given_to_male_clients_by_cbd": {
+            "line_number": "10c",
+            "sw": "Idadi ya kondomu zilizogawiwa CBD Me",
+            "en": "Number of condoms given to male clients by CBD",
+        },
+        "number_of_condoms_given_to_female_clients_by_cbd": {
+            "line_number": "10d",
+            "sw": "Idadi ya kondomu zilizogawiwa CBD Ke",
+            "en": "Number of condoms given to female clients by CBD",
+        },
+        "total_number_of_condoms_given_to_clients": {
+            "line_number": "10e",
+            "sw": "Idadi ya kondomu zilizogawiwa kituoni na CBD (10a+10b+10c+10d)",
+            "en": "Total number of condoms given to clients from the clinic and by CBD(10a+10b+10c+10d)",
+        },
+        "service_after_miscarriage_cpac_after_giving_birth": {
+            "line_number": "11",
+            "sw": "Huduma baada ya mimba kuharibika (cPAC) Baada ya kujifungua",
+            "en": "Service after miscarriage (CPAC) After giving birth",
+        },
+        "those_who_got_treatment_after_miscarriages": {
+            "line_number": "11a",
+            "sw": "Waliopata huduma baada ya mimba kubaribika",
+            "en": "Those who got treatment after miscarriages",
+        },
+        "those_who_used_contraception_after_miscarriage": {
+            "line_number": "11b",
+            "sw": "Waliopata uzazi wa mpango baada ya mimba kubaribika",
+            "en": "Those who used contraception after miscarriage",
+        },
+        "those_who_used_contraceptive_methods_42_days_after_giving_birth": {
+            "line_number": "11c",
+            "sw": "Waliopata njia ya uazazi wa mpango siku 42 baada ya kujifungua",
+            "en": "Those who used contraceptive methods 42 days after giving birth",
+        },
+        "clients_who_screened_for_cancer": {
+            "line_number": "12",
+            "sw": "Wateja waliochunguzwa saratani",
+            "en": "clients who screened for cancer",
+        },
+        "those_screened_for_breast_diseases": {
+            "line_number": "12a",
+            "sw": "waliochunguzwa tit",
+            "en": "Those Screened for breast diseases",
+        },
+        "detected_to_have_breast_cancer_symptoms": {
+            "line_number": "12b",
+            "sw": "Waliogundulika na matatizo ya matiti (mfano: kutoka damu kwenye chuchu au uvimbe wa matiti)",
+            "en": "Detected to have breast cancer symptoms (eg, bleeding or swelling of the breast nipples)",
+        },
+        "screened_for_cervical_diseases": {
+            "line_number": "12c",
+            "sw": "Waliochunguzwa Shingo ya mfuko wa uzazi",
+            "en": "Screened for cervical diseases",
+        },
+        "detected_to_have_cervical_diseases": {
+            "line_number": "12d",
+            "sw": "Waliogundulika na matatizo ya shingo ya mfuko wa uzazi (mfano: mchubuko au kidonda)",
+            "en": "Detected to have cervical diseases (eg, bruise or cervical ulcer)",
+        },
+        "detected_to_have_cervical_cancer_symptoms": {
+            "line_number": "12e",
+            "sw": "Waliodhamwa wana saratani ya shingo ya mfuko wa uzazi",
+            "en": "Detected to have cervical cancer symptoms",
+        },
+        "those_who_got_cryotherapy_service": {
+            "line_number": "12f",
+            "sw": "Waliopewa huduma ya Cryotherapy",
+            "en": "Those who got Cryotherapy service",
+        },
+        "pitc": {
+            "line_number": "13",
+            "sw": "PITC",
+            "en": "PITC",
+        },
+        "those_who_already_have_an_hiv_infection": {
+            "line_number": "13a",
+            "sw": "Tayari wana uambukizo wa VVU",
+            "en": "Those who already have an HIV infection",
+        },
+        "those_who_got_hiv_counseling": {
+            "line_number": "13b",
+            "sw": "Waliopata ushauri nasha juu ya VVU",
+            "en": "Those who got HIV counseling",
+        },
+        "clients_who_tested_for_hiv": {
+            "line_number": "13c",
+            "sw": "Wateja waliopima VVU",
+            "en": "Clients who tested for HIV",
+        },
+        "clients_who_received_post-test_counseling": {
+            "line_number": "13d",
+            "sw": "Wateja waliopata ushauri nasaha baada ya kupima",
+            "en": "Clients who received post-test counseling",
+        },
+        "customers_who_tested_positive": {
+            "line_number": "13e",
+            "sw": "Wateja waliogundulika Positive (+)",
+            "en": "Customers who tested positive (+)",
+        },
+        "partners_who_tested_for_hiv": {
+            "line_number": "13f",
+            "sw": "Wenza waliopima VVU",
+            "en": "Partners who tested for HIV",
+        },
+        "partners_who_tested_positive": {
+            "line_number": "13g",
+            "sw": "Wenza Waliogundulika Positive (+)",
+            "en": "Partners Who tested Positive (+)",
+        },
+        "discordant_couple": {
+            "line_number": "13h",
+            "sw": "Wateja ambao matokeo ya vipimo vya VVU yanatofautiana",
+            "en": "Clients who tested HIV and got different results(discordant couple)",
+        },
+        "clients_who_were_reffered_to_ctc": {
+            "line_number": "13i",
+            "sw": "Wateja waliopata rufaa kwenda CTC",
+            "en": "Clients who were reffered to CTC",
+        },
+        "NEED_TRANSLATION": {
+            "line_number": "13j",
+            "sw": "Wataja waliopata rufaa kwenda CTC",
+            "en": "NEED TRANSLATION"
+        },
+    }
+}
