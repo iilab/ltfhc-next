@@ -1,0 +1,55 @@
+{
+    "collection": "reports",
+    "class": "schema",
+    "_id": "reports/schema/contraceptive",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Contraceptive",
+    "type": "object",
+    "properties": {
+        {
+            "line_number": 1,
+            "sw": "Idadi ya wagonjwa waliotibiwa DTC(DTC-Idara ya magonjwa ya kuhara)",
+            "en": "Number of patients treated DTC(DTC-Diarrhoea and treatment centre)",
+            "id": "number_of_patients_treated_dtc(dtc-diarrhoea_and_treatment_centre)"
+        }, {
+            "line_number": 2,
+            "sw": "Idadi ya wagonjwa waliotibiwa DTC walio na upungufu mkubwa wa maji na churnvichumvi mwilini",
+            "en": "Number of DTC patients treated with acute shortage of water and Sodium cloride in the body",
+            "id": "number_of_dtc_patients_treated_with_acute_shortage_of_water_and_sodium_cloride_in_the_body"
+        }, {
+            "line_number": 3,
+            "sw": "Idadi ya wagonjwa waliotibiwa DTC walio na upungufu kiasi wa maji na chumvichumvi mwilini",
+            "en": "Number of DTC patients treated with little shortage of water and sodium cloride",
+            "id": "number_of_dtc_patients_treated_with_little_shortage_of_water_and_sodium_cloride"
+        }, {
+            "line_number": 4,
+            "sw": "Idadi ya wagonjwa walio na damu katika kinyesi",
+            "en": "Number of patients with blood in stool",
+            "id": "number_of_patients_with_blood_in_stool"
+        }, {
+            "line_number": 5,
+            "sw": "Idadi ya wagonjwa waliopewa zinki",
+            "en": "The number of patients who received zinc",
+            "id": "the_number_of_patients_who_received_zinc"
+        }, {
+            "line_number": 6,
+            "sw": "Idadi ya wagonjwa waliopatiwa paketi za ORS",
+            "en": "The number of patients who received a packet of ORS",
+            "id": "the_number_of_patients_who_received_a_packet_of_ors"
+        }, {
+            "line_number": 7,
+            "sw": "Idadi ya wagonjwa waliolazwa",
+            "en": "Number of  admitted patients",
+            "id": "number_of__admitted_patients"
+        }, {
+            "line_number": 8,
+            "sw": "Idadi ya wagonjwa waliopewa rufaa",
+            "en": "The number of refereed patients",
+            "id": "the_number_of_refereed_patients"
+        }, {
+            "line_number": 9,
+            "sw": "Idadi ya wagonjwa waliofia DTC",
+            "en": "The number of patients who died of DTC(Diarrhoea treatment Centre)",
+            "id": "the_number_of_patients_who_died_of_dtc(diarrhoea_treatment_centre)"
+        }
+    }
