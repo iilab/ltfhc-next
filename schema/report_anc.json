@@ -111,7 +111,7 @@
             "sw": "Umri chini ya miaka 20:",
             "en": "age less than 20 years",
             "field": {
-                "name": "anc_first_visit.patient_age",
+                "name": "patient.patient_age",
                 "type": "if",
                 "operation": "< 20"
             }
@@ -121,7 +121,7 @@
             "sw": "Umri zaidi ya miaka 35:",
             "en": "age over 35 years",
             "field": {
-                "name": "anc_first_visit.patient_age",
+                "name": "patient.patient_age",
                 "type": "if",
                 "operation": "> 35"
             }
@@ -140,7 +140,9 @@
             "sw": "Shinikizo Ia damu (BP => 140/90mm/hg):",
             "en": "blood pressure (BP => 140/90mm/hg):",
             "field": {
-                "name": "FIXME"
+                "name": ["anc_first_visit.bp_systolic", "anc_followup.bp_systolic", "anc_first_visit.bp_diastolic", "anc_followup.bp_diastolic"],
+                "operation": "((anc_first_visit.bp_systolic || anc_followup.bp_systolic) >= 140) && ((anc_first_visit.bp_diastolic || anc_followup.bp_diastolic) >= 90)",
+                "type": "sum"
             }
         },
         "heart_disease": {
@@ -148,12 +150,9 @@
             "sw": "Ugonjwa wa moyo:",
             "en": "Heart disease",
             "field": {
-                "name": [
-                    "anc_first_visit.pregnancy_diseases",
-                    "anc_followup.pregnancy_diseases"
-                ],
-                "operation": "Heart Disease",
-                "type": "sum"
+                "name": "anc_first_visit.pregnancy_diseases",
+                "operation": "== 'Heart Disease'",
+                "type": "count"
             }
         },
         "diabetes": {
@@ -161,11 +160,8 @@
             "sw": "Kisukari:",
             "en": "Diabetes",
             "field": {
-                "name": [
-                    "anc_first_visit.pregnancy_diseases",
-                    "anc_followup.pregnancy_diseases"
-                ],
-                "operation": "Diabetes",
+                "name": "anc_first_visit.pregnancy_diseases",
+                "operation": "== 'Diabetes'",
                 "type": "sum"
             }
         },
@@ -174,12 +170,10 @@
             "sw": "Kifua kikuu:",
             "en": "Tuberculosis",
             "field": {
-                "name": [
-                    "anc_first_visit.pregnancy_diseases",
-                    "anc_followup.pregnancy_diseases"
-                ],
-                "operation": "Tuberculosis",
-                "type": "sum"
+                "name": "anc_first_visit.pregnancy_diseases",
+
+                "operation": "== 'Tuberculosis'",
+                "type": "count"
             }
         },
         "those_who_tested_for_syphillus": {
@@ -187,7 +181,7 @@
             "sw": "Waliopima Kaswendwe:",
             "en": "Those who tested for Syphillus",
             "field": {
-                "name": "anc_first_visit.syphillus_test",
+                "name": ["anc_first_visit.syphillus_test", "anc_followup.syphillus_test"],
                 "type": "count"
             }
         },
@@ -196,7 +190,7 @@
             "sw": "Waliogundulika na maambukizi ya Kaswende:",
             "en": "Those who were infected with Syphillus",
             "field": {
-                "name": "anc_first_visit.syphillus_status",
+                "name": ["anc_first_visit.syphillus_status", "anc_followup.syphillus_status"],
                 "type": "count"
             }
         },
@@ -205,7 +199,7 @@
             "sw": "Waliopata matibabu ya Kaswende:",
             "en": "Those who got Syphillis treatment",
             "field": {
-                "name": "anc_first_visit.syphillus_treatment",
+                "name": ["anc_first_visit.syphillus_treatment", "anc_followup.syphillus_treatment"],
                 "type": "count"
             }
         },
@@ -214,7 +208,7 @@
             "sw": "Wenza/Waume waliopima Kaswende:",
             "en": "Patners/husbands who tested for Syphillis",
             "field": {
-                "name": "anc_first_visit.partner_syphillus_test",
+                "name": ["anc_first_visit.partner_syphillus_test", "anc_followup.partner_syphillus_test"],
                 "type": "count"
             }
         },
@@ -223,7 +217,7 @@
             "sw": "Wenza/Waume Waliogundulika na maambukizi ya Kaswende:",
             "en": "Patners/husbands who were infected with Syphilis",
             "field": {
-                "name": "anc_first_visit.partner_syphillus_status",
+                "name": ["anc_first_visit.partner_syphillus_status", "anc_followup.partner_syphillus_status"],
                 "type": "count"
             }
         },
@@ -232,7 +226,7 @@
             "sw": "Wenza/waume waliopata matibabu ya Kaswende:",
             "en": "Patners/husbands who got treatment for Syphilis",
             "field": {
-                "name": "anc_first_visit.partner_syphillus_treatment",
+                "name": ["anc_first_visit.partner_syphillus_treatment", "anc_followup.partner_syphillus_treatment"],
                 "type": "count"
             }
         },
@@ -241,7 +235,7 @@
             "sw": "Waliopatikana na magoniwa ya mambukizo ya ngono:",
             "en": "Pregnant women who were infected with STD's",
             "field": {
-                "name": "anc_first_visit.std_status",
+                "name": ["anc_first_visit.std_status", "anc_followup.std_status"],
                 "type": "count"
             }
         },
@@ -250,7 +244,7 @@
             "sw": "Wenzi/waume Waliopatikana na magonjwa ya mambukizo ya ngono:",
             "en": "Patners/husbands who were infected with STD's",
             "field": {
-                "name": "anc_first_visit.partner_std",
+                "name": ["anc_first_visit.partner_std", "anc_followup.partner_std"],
                 "type": "count"
             }
         },
@@ -259,16 +253,16 @@
             "sw": "Waliopata tiba sahihi ya magonjwa ya ngono:",
             "en": "Pregnant women who got appropriate treatment for STD's",
             "field": {
-                "name": "anc_first_visit.std_treatment",
+                "name": ["anc_first_visit.std_treatment", "anc_followup.std_treatment"],
                 "type": "count"
             }
         },
         "patners_who_got_approprite_treatment_for_stds": {
             "line_number": "4r",
             "sw": "Wenzi/waume waliooata tiba sahihi ya magoniwa ya ngono:",
-            "en": "Patners who got approprite treatment for STD's",
+            "en": "Patners who got appropriate treatment for STD's",
             "field": {
-                "name": "anc_first_visit.partner_std_treatment",
+                "name": ["anc_first_visit.partner_std_treatment", "anc_followup.partner_std_treatment"],
                 "type": "count"
             }
         },
@@ -282,7 +276,7 @@
             "sw": "Tayari wana maambukizi ya VVU kabla ya kuanza kliniki:",
             "en": "PW who were already infected by HIV before starting Clinic",
             "field": {
-                "name": "hiv_pregnancy_clinic.hiv_status",
+                "name": ["hiv_pregnancy_clinic.hiv_status_prior_firstvisit", "anc_followup.hiv_status_prior_firstvisit", "anc_first_visit.hiv_status_prior_firstvisit"],
                 "type": "count"
             }
         },
@@ -291,7 +285,7 @@
             "sw": "Wajawazito wote waliopata ushauri nasaha kabla ya kupima VVU kliniki:",
             "en": "PW who were counselled before testing for HIV",
             "field": {
-                "name": "hiv_pregnancy_clinic.counseled_hiv_prior_test",
+                "name": ["hiv_pregnancy_clinic.counseled_hiv_prior_test", "anc_first_visit.counseled_hiv_prior_test", "anc_followup.counseled_hiv_prior_test"],
                 "type": "count"
             }
         },
@@ -300,7 +294,7 @@
             "sw": "Wajawazito Waliopima VVU kipimo cha kwanza kliniki:",
             "en": "PW who tested for HIV for the first time at the clinic",
             "field": {
-                "name": "hiv_pregnancy_clinic.tested_hiv_firstvisit",
+                "name": ["hiv_pregnancy_clinic.tested_hiv_firstvisit", "anc_followup.tested_hiv_firstvisit", "anc_first_visit.tested_hiv_firstvisit"],
                 "type": "count"
             }
         },
@@ -309,7 +303,7 @@
             "sw": "Wajawazito Waliokutwa na VVU (positive) kipimo cha kwanza:",
             "en": "PW who tested positive by the first test",
             "field": {
-                "name": "hiv_pregnancy_clinic.first_hiv_status",
+                "name": ["hiv_pregnancy_clinic.first_hiv_status", "anc_first_visit.first_hiv_status", "anc_followup.first_hiv_status"],
                 "type": "count",
             }
         },
@@ -319,14 +313,12 @@
             "en": " PW below 25 years who tested for HIV for the first time at the clinic",
             "field": {
                 "name": [
-                    "hiv_pregnancy_clinic.patient_age",
-                    "hiv_pregnancy_clinic.tested_hiv_firstvisit"
+                    "patient.patient_age",
+                    "hiv_pregnancy_clinic.tested_hiv_firstvisit", "anc_first_visit.tested_hiv_firstvisit", "anc_followup.tested_hiv_firstvisit"
                 ],
                 "type": "count",
-                "operation": [
-                    "< 25",
-                    "and"
-                ]
+                "operation": "patient.patient_age < 25",
+
             }
         },
         "pw_below_25_years_who_tested_positive_by_the_first_test": {
@@ -335,15 +327,12 @@
             "en": "PW below 25 years who tested positive by the first test",
             "field": {
                 "name": [
-                    "hiv_pregnancy_clinic.patient_age",
-                    "hiv_pregnancy_clinic.first_hiv_status"
+                    "patient.patient_age",
+                    "hiv_pregnancy_clinic.first_hiv_status", "anc_followup.first_hiv_status", "anc_first_visit.first_hiv_status"
                 ],
                 "type": "count",
-                "operation": [
-                    "< 25",
-                    "and"
+                "operation": "patient.patient_age < 25"
 
-                ]
             }
         },
         "pw_who_were_counselled_after_testing_hiv": {
@@ -351,8 +340,9 @@
             "sw": "Wajawazito Waliopata Ushauri baada ya kupima:",
             "en": "PW who were counselled after testing HIV",
             "field": {
-                "name": "hiv_pregnancy_clinic.counseled_hiv_prior_test",
-                "type": "count false"
+                "name": ["hiv_pregnancy_clinic.counseled_hiv_prior_test", "anc_first_visit.counseled_hiv_prior_test", "anc_followup.counseled_hiv_prior_test"],
+                "operation": "== false",
+                "type": "count"
             }
         },
         "pw_who_tested_together_with_their_couple_together_at_the_clinic": {
@@ -360,7 +350,8 @@
             "sw": "Wajawazito waliopimwa VVU na wenza wao (Couple) kwa pamoja katika kliniki ya wajawazito:",
             "en": "PW who tested together with their couple together at the clinic",
             "field": {
-                "name": "hiv_pregnancy_clinic."
+                "name": ["hiv_pregnancy_clinic.partner_hiv", "anc_followup.partner_hiv", "anc_first_visit.partner_hiv"],
+                "type": "count"
             }
         },
         "pw_who_tested_hiv_by_the_second_test": {
@@ -368,166 +359,167 @@
             "sw": "Wajawazito waliopima VVU kipimo cha pili:",
             "en": "PW who tested HIV by the second test",
             "field": {
-                "name": "/visit/hivCounselingMother/FIXME"
-            }
-        },
-        "pw_who_tested_positive_by_the_second_test": {
-            "line_number": "5j",
-            "sw": "Wajawazito waliokutwa na maambukizi ya VVU kipimo cha pili:",
-            "en": "PW who tested positive by the second test",
-            "field": {
-                "name": "/visit/hivCounselingMother/FIXME"
-            }
-        },
-        "partners_husbands_who_tested_for_hiv_at_the_clinic": {
-            "line_number": "5k",
-            "sw": "Wenza waliopima VVU Kliniki ya wajawazito:",
-            "en": "Patners/husbands who tested for HIV at the clinic",
-            "field": {
-                "name": "/visit/hivCounselingMother/FIXME"
-            }
-        },
-        "partners_husbands_who_tested_positive_at_the_clinic": {
-            "line_number": "5l",
-            "sw": "Wenza waliogundulika kuwa na maambukizi ya VVU katika kliniki va wajawazito:",
-            "en": "Patners/husbands who tested positive at the clinic",
-            "field": {
-                "name": "/visit/hivCounselingMother/FIXME"
-            }
-        },
-        "discordant_couples": {
-            "line_number": "5m",
-            "sw": "Wajawazito na wenza waliopata majibu tofauti (discordant) baada ya kupima VVU kliniki",
-            "en": "Couples who have different HIV results after testing at the clinic(discordant couple)",
-            "field": {
-                "name": "/visit/hivCounselingMother/FIXME"
-            }
-        },
-        "pw_who_received_pmtct_combination_drugs": {
-            "line_number": "5n",
-            "sw": "Wajawazito waliopewa dawa za Mchanganyiko za PMTCT:",
-            "en": "PW who received PMTCT combination drugs:",
-            "field": {
-                "name": "/visit/hivCounselingMother/FIXME"
-            }
-        },
-        "pw_whi_are_using_art_drugs": {
-            "line_number": "5o",
-            "sw": "Wajawazito wanaotumia dawa za ART:",
-            "en": "PW whi are using ART drugs",
-            "field": {
-                "name": "/visit/hivCounselingMother/FIXME"
+                "name": ["hiv_pregnancy_clinic.second_hiv_test", "anc_first_visit.second_hiv_test", "anc_followup.second_hiv_test"],
+                "type": "count"
             },
-            "pw_who_were_given_ctx": {
-                "line_number": "5p",
-                "sw": "Wajawazito Waliopewa CTX:",
-                "en": "PW who were given CTX (Cotrimocxazole)",
+            "pw_who_tested_positive_by_the_second_test": {
+                "line_number": "5j",
+                "sw": "Wajawazito waliokutwa na maambukizi ya VVU kipimo cha pili:",
+                "en": "PW who tested positive by the second test",
+                "field": {
+                    "name": ["hiv_pregnancy_clinic.second_hiv_test", "anc_first_visit.second_hiv_test", "anc_followup.second_hiv_test"],
+                    "type": "count"
+                }
+            },
+            "partners_husbands_who_tested_for_hiv_at_the_clinic": {
+                "line_number": "5k",
+                "sw": "Wenza waliopima VVU Kliniki ya wajawazito:",
+                "en": "Patners/husbands who tested for HIV at the clinic",
                 "field": {
                     "name": "/visit/hivCounselingMother/FIXME"
                 }
             },
-            "pw_who_were_counselled_on_feeding_the_baby": {
-                "line_number": "5q",
-                "sw": "Waliopata ushauri iuu ya ulishaji wa mtoto:",
-                "en": "PW who were counselled on feeding the baby",
+            "partners_husbands_who_tested_positive_at_the_clinic": {
+                "line_number": "5l",
+                "sw": "Wenza waliogundulika kuwa na maambukizi ya VVU katika kliniki va wajawazito:",
+                "en": "Patners/husbands who tested positive at the clinic",
                 "field": {
                     "name": "/visit/hivCounselingMother/FIXME"
                 }
             },
-            "malaria": {
-                "line_number": "6",
-                "sw": "Malaria:",
-                "en": "Malaria",
-            },
-            "pw_given_a_voucher_for_hati_punguzo": {
-                "line_number": "6a",
-                "sw": "Waliopewa vocha ya hati punguzo:",
-                "en": "PW given a voucher for Hati Punguzo (vouchr for free mosquito net)",
+            "discordant_couples": {
+                "line_number": "5m",
+                "sw": "Wajawazito na wenza waliopata majibu tofauti (discordant) baada ya kupima VVU kliniki",
+                "en": "Couples who have different HIV results after testing at the clinic(discordant couple)",
                 "field": {
-                    "name": "/visit/anc_first_visit/malaria_net"
+                    "name": "/visit/hivCounselingMother/FIXME"
                 }
             },
-            "pw_tested_for_malaria": {
-                "line_number": "6b",
-                "sw": "Waliopima Malaria:",
-                "en": "PW tested for malaria",
+            "pw_who_received_pmtct_combination_drugs": {
+                "line_number": "5n",
+                "sw": "Wajawazito waliopewa dawa za Mchanganyiko za PMTCT:",
+                "en": "PW who received PMTCT combination drugs:",
                 "field": {
-                    "name": "/visit/anc_first_visit/malaria_test"
+                    "name": "/visit/hivCounselingMother/FIXME"
                 }
             },
-            "pw_tested_positive_for_malaria": {
-                "line_number": "6c",
-                "sw": "Waliopima Malaria positive:",
-                "en": "PW tested positive for Malaria",
+            "pw_whi_are_using_art_drugs": {
+                "line_number": "5o",
+                "sw": "Wajawazito wanaotumia dawa za ART:",
+                "en": "PW whi are using ART drugs",
                 "field": {
-                    "name": "/visit/anc_first_visit/malaria_test"
-                }
-            },
-            "pw_given_ipt1_preventive_treatment": {
-                "line_number": "6d",
-                "sw": "Waliopewa IPT1:",
-                "en": "PW given IPT1 (IPT--Intermittent Preventive Treatment)",
-                "field": {
-                    "name": "/visit/anc_first_visit/malaria_ipt1"
-                }
-            },
-            "pw_given_ipt2": {
-                "line_number": "6e",
-                "sw": "Waliopewa IPT2:",
-                "en": "PW given IPT2",
-                "field": {
-                    "name": "/visit/anc_first_visit/malaria_ipt2"
-                }
-            },
-            "other_services": {
-                "sw": "Huduma Nyingine:",
-                "en": "Other services",
-            },
-            "pw_given_enough_iron_folic_tablets": {
-                "line_number": "7",
-                "sw": "Waliopewa Iron/Folic vidonge vya kutosha:",
-                "en": "PW given enough Iron/Folic tablets",
-                "field": {
-                    "name": "/visit/anc_first_visit/iron_tablets"
-                }
-            },
-            "pw_given_antihelminths": {
-                "line_number": "8",
-                "sw": "Waliopewa Dawa za minyoo (Mebendazole / Albendazole):",
-                "en": "PW given antihelminths (Mebendazole/Albendazole)",
-                "field": {
-                    "name": "/visit/anc_first_visit/antihelminths"
-                }
-            },
-            "pw_who_were_given_refferals": {
-                "line_number": "9",
-                "sw": "Waliopewa Rufaa wakati wa uiauzito:",
-                "en": "PW who were given refferals",
-                "field": {
-                    "name": "/visit/anc_first_visit/refferal"
-                }
-            },
-            "pw_reffered_to_ctc": {
-                "line_number": "10",
-                "sw": "Waliopcwa Rufaa kwenda CTC:",
-                "en": "PW reffered to CTC (CTC-care and treatment center)",
-                "field": {
-                    "name": "/visit/anc_first_visit/referredCTC"
-                }
-            }
-        },
-        "definitions": {
-            "range_age": {
-                "below20": {
-                    "title": "Below 20 years old"
+                    "name": "/visit/hivCounselingMother/FIXME"
                 },
-                "above20": {
-                    "title": "Above 20 years old"
+                "pw_who_were_given_ctx": {
+                    "line_number": "5p",
+                    "sw": "Wajawazito Waliopewa CTX:",
+                    "en": "PW who were given CTX (Cotrimocxazole)",
+                    "field": {
+                        "name": "/visit/hivCounselingMother/FIXME"
+                    }
                 },
-                "total": {
-                    "title": "Total"
+                "pw_who_were_counselled_on_feeding_the_baby": {
+                    "line_number": "5q",
+                    "sw": "Waliopata ushauri iuu ya ulishaji wa mtoto:",
+                    "en": "PW who were counselled on feeding the baby",
+                    "field": {
+                        "name": "/visit/hivCounselingMother/FIXME"
+                    }
+                },
+                "malaria": {
+                    "line_number": "6",
+                    "sw": "Malaria:",
+                    "en": "Malaria",
+                },
+                "pw_given_a_voucher_for_hati_punguzo": {
+                    "line_number": "6a",
+                    "sw": "Waliopewa vocha ya hati punguzo:",
+                    "en": "PW given a voucher for Hati Punguzo (vouchr for free mosquito net)",
+                    "field": {
+                        "name": "/visit/anc_first_visit/malaria_net"
+                    }
+                },
+                "pw_tested_for_malaria": {
+                    "line_number": "6b",
+                    "sw": "Waliopima Malaria:",
+                    "en": "PW tested for malaria",
+                    "field": {
+                        "name": "/visit/anc_first_visit/malaria_test"
+                    }
+                },
+                "pw_tested_positive_for_malaria": {
+                    "line_number": "6c",
+                    "sw": "Waliopima Malaria positive:",
+                    "en": "PW tested positive for Malaria",
+                    "field": {
+                        "name": "/visit/anc_first_visit/malaria_test"
+                    }
+                },
+                "pw_given_ipt1_preventive_treatment": {
+                    "line_number": "6d",
+                    "sw": "Waliopewa IPT1:",
+                    "en": "PW given IPT1 (IPT--Intermittent Preventive Treatment)",
+                    "field": {
+                        "name": "/visit/anc_first_visit/malaria_ipt1"
+                    }
+                },
+                "pw_given_ipt2": {
+                    "line_number": "6e",
+                    "sw": "Waliopewa IPT2:",
+                    "en": "PW given IPT2",
+                    "field": {
+                        "name": "/visit/anc_first_visit/malaria_ipt2"
+                    }
+                },
+                "other_services": {
+                    "sw": "Huduma Nyingine:",
+                    "en": "Other services",
+                },
+                "pw_given_enough_iron_folic_tablets": {
+                    "line_number": "7",
+                    "sw": "Waliopewa Iron/Folic vidonge vya kutosha:",
+                    "en": "PW given enough Iron/Folic tablets",
+                    "field": {
+                        "name": "/visit/anc_first_visit/iron_tablets"
+                    }
+                },
+                "pw_given_antihelminths": {
+                    "line_number": "8",
+                    "sw": "Waliopewa Dawa za minyoo (Mebendazole / Albendazole):",
+                    "en": "PW given antihelminths (Mebendazole/Albendazole)",
+                    "field": {
+                        "name": "/visit/anc_first_visit/antihelminths"
+                    }
+                },
+                "pw_who_were_given_refferals": {
+                    "line_number": "9",
+                    "sw": "Waliopewa Rufaa wakati wa uiauzito:",
+                    "en": "PW who were given refferals",
+                    "field": {
+                        "name": "/visit/anc_first_visit/refferal"
+                    }
+                },
+                "pw_reffered_to_ctc": {
+                    "line_number": "10",
+                    "sw": "Waliopcwa Rufaa kwenda CTC:",
+                    "en": "PW reffered to CTC (CTC-care and treatment center)",
+                    "field": {
+                        "name": "/visit/anc_first_visit/referredCTC"
+                    }
+                }
+            },
+            "definitions": {
+                "range_age": {
+                    "below20": {
+                        "title": "Below 20 years old"
+                    },
+                    "above20": {
+                        "title": "Above 20 years old"
+                    },
+                    "total": {
+                        "title": "Total"
+                    }
                 }
             }
         }
     }
-}
