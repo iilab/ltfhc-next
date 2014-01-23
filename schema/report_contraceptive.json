@@ -9,142 +9,216 @@
         "injectable_methods": {
             "line_number": "1",
             "sw": "Sindano",
-            "en": "Injectable methods"
+            "en": "Injectable methods",
+            "header": true
         },
         "number_of_customers_who_use_contraceptive__injection": {
             "line_number": "1a",
             "sw": "Idaji ya Wateja wa Sindano",
-            "en": "Number of customers who use contraceptive injection"
+            "en": "Number of customers who use contraceptive injection",
+            "value": {
+                "field": "/visit/reproductive_counseling/contraception_current/depo_provera"
+            }
         },
         "contraceptive_pills": {
             "line_number": "2",
             "sw": "Vidonge",
-            "en": "Contraceptive pills"
+            "en": "Contraceptive pills",
+            "value": {
+                "field": "/visit/reproductive_counseling/contraception_current/pills"
+            }
         },
         "the_number_of_pills_clients_at_the_clinic": {
             "line_number": "2a",
             "sw": "Idadi ya wateja wa Vidonge Kituoni",
-            "en": "The number of pills clients at the clinic"
+            "en": "The number of pills clients at the clinic",
+            "value": {
+                "field": "/visit/reproductive_counseling/contraception_current/pills/Total"
+            }
         },
         "number_of_pills_clients_through_cbd": {
             "line_number": "2b",
             "sw": "Idadi ya wateja wa vidonge wa CBD",
-            "en": "Number of pills clients through CBD(Community Based Distribution)"
+            "en": "Number of pills clients through CBD(Community Based Distribution)",
+            "value": {
+                "field": "/visit/reproductive_counseling/"
+            }
         },
         "the_number_of_clients_who_were_given_pills_at_the_clinic_and_through_cbd": {
             "line_number": "2c",
             "sw": "Jumla walochukua Vidonge Kituoni na CBD (2a+2b)",
-            "en": "The number of clients who were given pills at the clinic and through CBD(2a+2b)"
+            "en": "The number of clients who were given pills at the clinic and through CBD(2a+2b)",
+            "value": {
+                "field": "line 2a+2b"
+            }
         },
         "condoms": {
             "line_number": "3",
             "sw": "Kondom",
             "en": "Condoms",
+            "heading": true
         },
         "the_number_of_male_clients_who_were_given_condoms_at_the_clinic": {
             "line_number": "3a",
             "sw": "Idadi ya wateja waliochukua kondom Kituoni Me",
-            "en": "3a The number of Male clients who were given condoms at the clinic",
+            "en": "The number of Male clients who were given condoms at the clinic",
+            "value": {
+                "field": "/visit/reproductive_counseling/male/condoms"
+            }
         },
         "the_number_of_female_clients_who_were_given_condoms_at_the_clinic": {
             "line_number": "3b",
             "sw": "Idadi ya wateja waliochukua kondom Kituoni Ke",
-            "en": "3b The number of Female clients who were given condoms at the clinic",
+            "en": "The number of Female clients who were given condoms at the clinic",
+            "value": {
+                "field": "/visit/reproductive_counseling/female/condoms"
+            }
         },
         "number_of__male_clients_who_were_given_condoms_by_cbd": {
             "line_number": "3c",
             "sw": "Idadi ya wateja waliochukua kondom CBD Me",
-            "en": "3d Number of  male clients who were given condoms by CBD",
+            "en": "Number of male clients who were given condoms by CBD",
+            "value": {
+                "field": "/visit/reproductive_counseling/male/condoms_cbd"
+            }
         },
         "number_of_female_clients_who_were_given_condoms_by_cbd": {
             "line_number": "3d",
             "sw": "Idadi ya wateja waliochukua kondom CBD Ke",
-            "en": "3d Number of female clients who were given condoms by CBD",
+            "en": "Number of female clients who were given condoms by CBD",
+            "value": {
+                "field": "/visit/reproductive_counseling/female/condoms_cbd"
+            }
         },
         "total_customers_who_given_condoms_at_the_clinic_and_cbd": {
             "line_number": "3e",
             "sw": "Jumla ya Wateja waliochukua kondomu (kituoni na CBD) (3a+3b+3c+3d)",
-            "en": "3e Total Customers who given condoms at the clinic and CBD (3a +3 b +3 c +3 d)",
+            "en": "Total Customers who given condoms at the clinic and CBD (3a+3b+3c+3d)",
+            "value": {
+                "field": "/visit/reproductive_counseling/condoms/total"
+            }
         },
-        "total_customers_who_took__short-term_course": {
+        "total_customers_who_took_short-term_course": {
             "line_number": "3f",
             "sw": "Jumla ya Wateja waliochukua njia za muda mfupi (1+2c+3c)",
-            "en": "3f Total Customers who took  short-term course (1 +2 c +3 c)",
+            "en": "Total Customers who took short-term course (1+2c+3c)",
+            "value": {
+                "field": "/visit/reproductive_counseling/???"
+            }
         },
         "methods_of_long-term_and_permanent_family_planning": {
             "line_number": "4",
             "sw": "Njia za muda Mrefu na za kudumu za Uzazi wa Mpango",
             "en": "Methods of long-term and permanent family planning",
+            "heading": true
         },
         "sterilization": {
             "line_number": "4",
             "sw": "Kufunga Uzazi",
             "en": "Sterilization",
+            "heading": true
         },
         "women_sterilization_ml_la_at_the_clinic": {
             "line_number": "4a",
             "sw": "Kufunga Uzazi mama (ML/LA) - kituoni",
             "en": "Women sterilization (ML / LA) - at the clinic",
+            "value": {
+                "field": "/visit/reproductive_counseling/female/sterilization"
+            }
         },
         "women_sterilization_ml_la_outreach": {
             "line_number": "4b",
             "sw": "Kufunga Uzazi mama (ML/LA) - outreach",
             "en": "Women sterilization (ML / LA) - outreach",
+            "value": {
+                "field": "/visit/reproductive_counseling/female/sterilization/outreach"
+            }
         },
         "men_sterilization_nsv_at_the_clinic": {
             "line_number": "4c",
             "sw": "Kufunga uzazi baba (NSV) - kituoni",
-            "en": "Men sterilization (NSV) -  at the clinic",
+            "en": "Men sterilization (NSV) - at the clinic",
+            "value": {
+                "field": "/visit/reproductive_counseling/male/sterilization/clinic"
+            }
         },
         "men_sterilization_nsv_outreach": {
             "line_number": "4d",
             "sw": "Kufung uzazi baba (NSV) - outreach",
             "en": "Men sterilization (NSV) - outreach",
+            "value": {
+                "field": "/visit/reproductive_counseling/male/sterilization/outreach"
+            }
         },
         "implants": {
             "line_number": "5",
             "sw": "Vipandikizi",
             "en": "Implants",
+            "heading": true
         },
         "those_who_put_implants_at_the_clinic": {
             "line_number": "5a",
             "sw": "Kuweka vipandikizi - kituoni",
             "en": "Those who put implants - at the clinic",
+            "value": {
+                "field": "/visit/reproductive_counseling/implants/clinic"
+            }
         },
         "those_who_put_implants_outreach": {
             "line_number": "5b",
             "sw": "Kuweka vipandikizi - outreach",
             "en": "Those who put implants - outreach",
+            "value": {
+                "field": "/visit/reproductive_counseling/implants/outreach"
+            }
         },
         "removing_implants": {
             "line_number": "5c",
             "sw": "Kuondoa vipandikizi",
             "en": "Removing implants",
+            "value": {
+                "field": "/visit/reproductive_counseling/implants/removal"
+            }
         },
         "intrauterine_methods_iucd": {
             "line_number": "6",
             "sw": "Kitanzi (IUCD)",
             "en": "Intrauterine methods(IUCD)",
+            "value": {
+                "field": "/visit/reproductive_counseling/contraception_current/IUD"
+            }
         },
         "inserting_iud_clinic": {
             "line_number": "6a",
             "sw": "Kuweka Kitanzi - kituoni",
             "en": "Inserting IUD (at the clinic)",
+            "value": {
+                "field": "/visit/reproductive_counseling/iud/insert/clinic"
+            }
         },
         "inserting_iud_outreach": {
             "line_number": "6b",
             "sw": "Kuweka Kitanzi - outreach",
             "en": "Inserting IUD (outreach)",
+            "value": {
+                "field": "/visit/reproductive_counseling/iud/insert/outreach"
+            }
         },
         "removing_iud_clinic": {
             "line_number": "6c",
             "sw": "Kuondoa Kitanzi - kituoni",
-            "en": "Removing IUD (at the clinic)"
+            "en": "Removing IUD (at the clinic)",
+            "value": {
+                "field": "/visit/reproductive_counseling/iud/removal/clinic"
+            }
         },
         "removing_iud_outreach": {
             "line_number": "6d",
             "sw": "Kuondoa Kitanzi - outreach",
-            "en": "Removing IUD (outreach)"
+            "en": "Removing IUD (outreach)",
+            "value": {
+                "field": "/visit/reproductive_counseling/"
+            }
         },
         "total_number_of_client_who_used_permanent_contraceptive_methods": {
             "line_number": "6e",
