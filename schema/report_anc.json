@@ -23,7 +23,9 @@
       "sw": "Umri wa mimba chini ya wiki 12 (<12weeks)",
       "en": "Gestational age below 12 weeks(<12weeks)",
       "value": {
-        "field": "/visit/anc_first_visit/gestational_age"
+        "field": "anc_first_visit.gestational_age",
+		"trigger": "< 12",
+		"group": "2a2b2c"
       }
     },
     "gestational_at_week_12_or_more": {
@@ -31,7 +33,9 @@
       "sw": "Umri wa mimba wiki 12 au zaidi (12+ weeks)",
       "en": "Gestational at week 12 or more (12+weeks)",
       "value": {
-        "field": "/visit/anc_first_visit/gestational_age"
+        "field": "/visit/anc_first_visit/gestational_age",
+		"trigger": "else",
+		"group": "2a2b2c"
       }
     },
     "total_attendance_of_first_visits(2a+2b)": {
@@ -39,7 +43,9 @@
       "sw": "Jumla ya hudhurio la Kwanza (2a+2b)",
       "en": "Total attendance of first visits(2a+2b)",
       "value": {
-        "field": "line 2a+2b"
+        "field": "line 2a+2b",
+		"trigger": "all",
+		"group": "2a2b2c"
       }
     },
     "clients_for_return_visits": {
