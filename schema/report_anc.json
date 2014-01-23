@@ -282,7 +282,7 @@
             "sw": "Tayari wana maambukizi ya VVU kabla ya kuanza kliniki:",
             "en": "PW who were already infected by HIV before starting Clinic",
             "field": {
-                "name": "hiv_counseling_mother.hiv_known_pre_clinic",
+                "name": "hiv_pregnancy_clinic.hiv_status",
                 "type": "count"
             }
         },
@@ -291,7 +291,7 @@
             "sw": "Wajawazito wote waliopata ushauri nasaha kabla ya kupima VVU kliniki:",
             "en": "PW who were counselled before testing for HIV",
             "field": {
-                "name": "hiv_counseling_mother.hiv_tested_pre_clinic",
+                "name": "hiv_pregnancy_clinic.counseled_hiv_prior_test",
                 "type": "count"
             }
         },
@@ -300,7 +300,7 @@
             "sw": "Wajawazito Waliopima VVU kipimo cha kwanza kliniki:",
             "en": "PW who tested for HIV for the first time at the clinic",
             "field": {
-                "name": "hiv_counseling_mother.first_visit",
+                "name": "hiv_pregnancy_clinic.tested_hiv_firstvisit",
                 "type": "count"
             }
         },
@@ -309,15 +309,8 @@
             "sw": "Wajawazito Waliokutwa na VVU (positive) kipimo cha kwanza:",
             "en": "PW who tested positive by the first test",
             "field": {
-                "name": [
-                    "hiv_counseling_mother.first_visit",
-                    "hiv_counseling_mother.hiv_status"
-                ],
+                "name": "hiv_pregnancy_clinic.first_hiv_status",
                 "type": "count",
-                "operation": [
-                    "and",
-                    "positive"
-                ]
             }
         },
         "pw_below_25_years_who_tested_for_hiv_for_the_first_time_at_the_clinic": {
@@ -326,16 +319,13 @@
             "en": " PW below 25 years who tested for HIV for the first time at the clinic",
             "field": {
                 "name": [
-                    "hiv_counseling_mother.patient_age",
-                    "hiv_counseling_mother.hiv_known_pre_clinic",
-                    "hiv_counseling_mother.hiv_status"
+                    "hiv_pregnancy_clinic.patient_age",
+                    "hiv_pregnancy_clinic.tested_hiv_firstvisit"
                 ],
                 "type": "count",
                 "operation": [
-                    "< 25", [
-                        "and",
-                        "positive"
-                    ]
+                    "< 25",
+                    "and"
                 ]
             }
         },
@@ -345,13 +335,14 @@
             "en": "PW below 25 years who tested positive by the first test",
             "field": {
                 "name": [
-                    "hiv_counseling_mother.patient_age",
-                    "hiv_counseling_mother.hiv_positive_first_test"
+                    "hiv_pregnancy_clinic.patient_age",
+                    "hiv_pregnancy_clinic.first_hiv_status"
                 ],
                 "type": "count",
                 "operation": [
                     "< 25",
                     "and"
+
                 ]
             }
         },
@@ -360,7 +351,8 @@
             "sw": "Wajawazito Waliopata Ushauri baada ya kupima:",
             "en": "PW who were counselled after testing HIV",
             "field": {
-                "name": "/visit/hivCounselingMother/FIXME"
+                "name": "hiv_pregnancy_clinic.counseled_hiv_prior_test",
+                "type": "count false"
             }
         },
         "pw_who_tested_together_with_their_couple_together_at_the_clinic": {
@@ -368,7 +360,7 @@
             "sw": "Wajawazito waliopimwa VVU na wenza wao (Couple) kwa pamoja katika kliniki ya wajawazito:",
             "en": "PW who tested together with their couple together at the clinic",
             "field": {
-                "name": "/visit/hivCounselingMother/FIXME"
+                "name": "hiv_pregnancy_clinic."
             }
         },
         "pw_who_tested_hiv_by_the_second_test": {
@@ -446,7 +438,7 @@
                 "line_number": "6",
                 "sw": "Malaria:",
                 "en": "Malaria",
-                },
+            },
             "pw_given_a_voucher_for_hati_punguzo": {
                 "line_number": "6a",
                 "sw": "Waliopewa vocha ya hati punguzo:",
@@ -490,7 +482,7 @@
             "other_services": {
                 "sw": "Huduma Nyingine:",
                 "en": "Other services",
-                },
+            },
             "pw_given_enough_iron_folic_tablets": {
                 "line_number": "7",
                 "sw": "Waliopewa Iron/Folic vidonge vya kutosha:",
