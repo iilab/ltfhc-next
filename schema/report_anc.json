@@ -1,96 +1,68 @@
 {
-    "collection": "reports",
-    "class": "schema",
-    "_id": "reports/schema/anc",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Report ANC",
-    "type": "object",
-    "properties": {
-        "number_of_expected_pregnant_women": {
-            "line_number": "1",
-            "sw": "Idadi ya Wajawazito Waliotegemewa",
-            "en": "Number of expected pregnant women"
-        },
-        "first_visit": {
-            "line_number": "2",
-            "sw": "Hudhurio la kwanza",
-            "en": "First visit"
-        },
-        "gestational_age_below_12_weeks": {
-            "line_number": "2a",
-            "sw": "Umri wa mimba chini ya wiki 12 (<12weeks)",
-            "en": "Gestational age below 12 weeks(<12weeks)",
-            "field": {
-                "name": "anc_first_visit.gestational_age",
-                "type": "if",
-                "operation": "<12"
-            }
-        },
-        "gestational_at_week_12_or_more": {
-            "line_number": "2b",
-            "sw": "Umri wa mimba wiki 12 au zaidi (12+ weeks)",
-            "en": "Gestational at week 12 or more (12+weeks)",
-            "field": {
-                "name": "anc_first_visit.gestational_age",
-                "type": "else"
-            }
-        },
-        "total_attendance_of_first_visits(2a+2b)": {
-            "line_number": "2c",
-            "sw": "Jumla ya hudhurio la Kwanza (2a+2b)",
-            "en": "Total attendance of first visits(2a+2b)",
-            "field": {
-                "name": "anc_first_visit.gestational_age",
-                "type": "sum"
-            }
-        },
+	"collection": "reports",
+	"class": "schema",
+	"_id": "reports/schema/anc",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Report ANC",
+	"type": "object",
+	"properties": {
+		"number_of_expected_pregnant_women": {
+			"line_number": "1",
+			"sw": "Idadi ya Wajawazito Waliotegemewa",
+			"en": "Number of expected pregnant women"
+		},
+		"first_visit": {
+			"line_number": "2",
+			"sw": "Hudhurio la kwanza",
+			"en": "First visit"
+		},
+		"gestational_age_below_12_weeks": {
+			"line_number": "2a",
+			"sw": "Umri wa mimba chini ya wiki 12 (<12weeks)",
+			"en": "Gestational age below 12 weeks(<12weeks)",
+			"operation": "anc_first_visit.gestational_age<12"
+		},
+		"gestational_at_week_12_or_more": {
+			"line_number": "2b",
+			"sw": "Umri wa mimba wiki 12 au zaidi (12+ weeks)",
+			"en": "Gestational at week 12 or more (12+weeks)",
+			"operation": "anc_first_visit.gestational_age>=12"
+		},
+		"total_attendance_of_first_visits(2a+2b)": {
+			"line_number": "2c",
+			"sw": "Jumla ya hudhurio la Kwanza (2a+2b)",
+			"en": "Total attendance of first visits(2a+2b)",
+			"operation": "anc_first_visit.gestational_age"
+		},
         "clients_for_return_visits": {
             "line_number": "2d",
             "sw": "Wateja wa marudio",
             "en": "clients for return visits",
-            "field": {
-                "name": "anc_followup.total_visits",
-                "type": "count"
-            }
+            "operation": "anc_followup.total_visits"
         },
         "fourth_visits_for_all_pregnant_women": {
             "line_number": "2e",
             "sw": "Hudhurio la nne wajawazito wote",
             "en": "Fourth visits for all pregnant women",
-            "field": {
-                "name": "anc_followup.fourth_visits",
-                "type": "count"
-            }
+            "operation": "anc_followup.fourth_visits"
         },
         "total_attendance": {
             "line_number": "2f",
             "sw": "Jumla ya Mahudhurio yote (2c+2d)",
             "en": "total attendance(2c+2d)",
-            "field": {
-                "name": [
-                    "anc_first_visit",
-                    "anc_followup"
-                ],
-                "type": "sum"
-            }
+            "operation": "anc_first_visit.gestational_age || anc_followup.total_visits"
         },
         "number_of_pregnant_women_tested_first_visit": {
             "line_number": "2g",
             "sw": "Idadi ya wajawazito waliopima damu hudhurio la kwanza",
             "en": "Number of pregnant women who tested during the first visit at the clinic",
-            "field": {
-                "name": "anc_first_visit.pregnancy_test",
-                "type": "count"
-            }
+            "operation": "anc_first_visit.pregnancy_test"
         },
         "pregnant_women_who_received_vaccination_of_tt2": {
             "line_number": "3",
             "sw": "Wajawazito waliopata Chanjo ya TT2+:",
             "en": "Pregnant women who received vaccination of TT2+",
-            "field": {
-                "name": "anc_first_visit.tt2plus_vaccine",
-                "type": "count"
-            }
+            "operation": "anc_first_visit.tt2plus_vaccine"
         },
         "risk_factors": {
             "line_number": "4",
@@ -652,13 +624,16 @@
         "definitions": {
             "range_age": {
                 "below20": {
-                    "title": "Below 20 years old"
+                    "title": "Below 20 years old",
+					"operation" : "patient.approxage < 20"
                 },
                 "above20": {
-                    "title": "Above 20 years old"
+                    "title": "Above 20 years old",
+					"operation" : "patient.approxage >= 20"
                 },
                 "total": {
-                    "title": "Total"
+                    "title": "Total",
+					"operation" : "true"
                 }
             }
         }
