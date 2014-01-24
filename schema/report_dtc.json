@@ -42,7 +42,7 @@
             "en": "The number of patients who received a packet of ORS",
             "id": "the_number_of_patients_who_received_a_packet_of_ors"
         }, 
-        "number_of__admitted_patients": {
+        "number_of_admitted_patients": {
             "line_number": 7,
             "sw": "Idadi ya wagonjwa waliolazwa",
             "en": "Number of admitted patients",
