@@ -1,2165 +1,372 @@
 [
-  {
-    "collection": "gender",
-    "class": "list",
-    "order": "1",
-    "item": "Male",
-    "_id": "9022034e7d5ecd0efab0762c5b10ca79"
-  },
-  {
-    "collection": "gender",
-    "class": "list",
-    "order": "2",
-    "item": "Female",
-"_id": "9022034e7d5ecd0efab0762c5b10d80b"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "1",
-    "item": "Other",
-    "_id": "9022034e7d5ecd0efab0762c5b111f15"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "2",
-    "item": "Body Aches",
-    "_id": "9022034e7d5ecd0efab0762c5b11268b"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "3",
-    "item": "Chills",
-    "_id": "9022034e7d5ecd0efab0762c5b113294"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "4",
-    "item": "Diarrhea",
-    "_id": "9022034e7d5ecd0efab0762c5b113535"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "5",
-    "item": "Fever",
-    "_id": "9022034e7d5ecd0efab0762c5b113cfb"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "6",
-    "item": "Headache",
-    "_id": "9022034e7d5ecd0efab0762c5b11414b"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "7",
-    "item": "Shortness of Breath",
-    "_id": "9022034e7d5ecd0efab0762c5b114622"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "8",
-    "item": "Nausea or Vomiting",
-    "_id": "9022034e7d5ecd0efab0762c5b114819"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "9",
-    "item": "Rigors",
-    "_id": "9022034e7d5ecd0efab0762c5b1151cf"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "10",
-    "item": "Night Sweats",
-    "_id": "9022034e7d5ecd0efab0762c5b1159c0"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "11",
-    "item": "Rash",
-    "_id": "9022034e7d5ecd0efab0762c5b1168f6"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "12",
-    "item": "Abdominal Pain",
-    "_id": "9022034e7d5ecd0efab0762c5b1169ff"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "13",
-    "item": "Cough",
-    "_id": "9022034e7d5ecd0efab0762c5b117320"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "14",
-    "item": "Difficultly with Urination",
-    "_id": "9022034e7d5ecd0efab0762c5b117a9e"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "15",
-    "item": "Weakness",
-    "_id": "9022034e7d5ecd0efab0762c5b11896d"
-  },
-  {
-    "collection": "symptoms",
-    "class": "list",
-    "order": "16",
-    "item": "Weight Loss",
-    "_id": "9022034e7d5ecd0efab0762c5b119154"
-  },
-  {
-    "collection": "Hist",
-    "class": "list",
-    "order": "1",
-    "item": "None",
-    "_id": "9022034e7d5ecd0efab0762c5b119f5c"
-  },
-  {
-    "collection": "Hist",
-    "class": "list",
-    "order": "2",
-    "item": "Other",
-    "_id": "9022034e7d5ecd0efab0762c5b119ffd"
-  },
-  {
-    "collection": "Hist",
-    "class": "list",
-    "order": "3",
-    "item": "Hypertension",
-    "_id": "9022034e7d5ecd0efab0762c5b11a7cd"
-  },
-  {
-    "collection": "Hist",
-    "class": "list",
-    "order": "4",
-    "item": "Diabetes",
-    "_id": "9022034e7d5ecd0efab0762c5b11b071"
-  },
-  {
-    "collection": "Hist",
-    "class": "list",
-    "order": "5",
-    "item": "Malaria",
-    "_id": "9022034e7d5ecd0efab0762c5b11b7bc"
-  },
-  {
-    "collection": "Hist",
-    "class": "list",
-    "order": "6",
-    "item": "Yellow Fever",
-    "_id": "9022034e7d5ecd0efab0762c5b11bf4e"
-  },
-  {
-    "collection": "Hist",
-    "class": "list",
-    "order": "7",
-    "item": "Cholera",
-    "_id": "9022034e7d5ecd0efab0762c5b11c42d"
-  },
-  {
-    "collection": "Hist",
-    "class": "list",
-    "order": "8",
-    "item": "Meningitis",
-    "_id": "9022034e7d5ecd0efab0762c5b11cead"
-  },
-  {
-    "collection": "Hist",
-    "class": "list",
-    "order": "9",
-    "item": "Sickle Cell",
-    "_id": "9022034e7d5ecd0efab0762c5b11d702"
-  },
-  {
-    "collection": "Hist",
-    "class": "list",
-    "order": "10",
-    "item": "Cancer",
-    "_id": "9022034e7d5ecd0efab0762c5b11df73"
-  },
-  {
-    "collection": "Hist",
-    "class": "list",
-    "order": "11",
-    "item": "Leprosy",
-    "_id": "9022034e7d5ecd0efab0762c5b11e8fb"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "1",
-    "item": "Other",
-    "_id": "9022034e7d5ecd0efab0762c5b11f4c7"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "2",
-    "item": "Skin Infection",
-    "_id": "9022034e7d5ecd0efab0762c5b12016e"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "3",
-    "item": "Osteomyelitis",
-    "_id": "9022034e7d5ecd0efab0762c5b120e58"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "4",
-    "item": "UTI",
-    "_id": "9022034e7d5ecd0efab0762c5b1213e1"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "5",
-    "item": "GI Disease Non-Infectious",
-    "_id": "9022034e7d5ecd0efab0762c5b122213"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "6",
-    "item": "Cardiovascular Disorder other",
-    "_id": "9022034e7d5ecd0efab0762c5b12291a"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "7",
-    "item": "Liver Disease Infectious",
-    "_id": "9022034e7d5ecd0efab0762c5b123074"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "8",
-    "item": "Liver Disease Non-Infectious",
-    "_id": "9022034e7d5ecd0efab0762c5b123f1a"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "9",
-    "item": "Peptic Ulcers",
-    "_id": "9022034e7d5ecd0efab0762c5b1246dd"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "10",
-    "item": "Pneumonia Mild/Moderate",
-    "_id": "9022034e7d5ecd0efab0762c5b12523f"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "11",
-    "item": "Pneumonia Severe",
-    "_id": "9022034e7d5ecd0efab0762c5b1260f9"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "12",
-    "item": "Asthma",
-    "_id": "9022034e7d5ecd0efab0762c5b1262f0"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "13",
-    "item": "Acute Flaccid Paralysis / Polio",
-    "_id": "9022034e7d5ecd0efab0762c5b126d39"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "14",
-    "item": "Cardiac Failure",
-    "_id": "9022034e7d5ecd0efab0762c5b1270ea"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "15",
-    "item": "Rheumatic Fever",
-    "_id": "9022034e7d5ecd0efab0762c5b1275f9"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "16",
-    "item": "Eye Infection Other",
-    "_id": "9022034e7d5ecd0efab0762c5b12823d"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "17",
-    "item": "Eye Infection Viral Keratoconjuctivitis",
-    "_id": "9022034e7d5ecd0efab0762c5b129211"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "18",
-    "item": "Eye Disease Non-Infectious",
-    "_id": "9022034e7d5ecd0efab0762c5b12939e"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "19",
-    "item": "Eye Infection Acute",
-    "_id": "9022034e7d5ecd0efab0762c5b12a01c"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "20",
-    "item": "Eye Infection Chronic",
-    "_id": "9022034e7d5ecd0efab0762c5b12aca9"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "21",
-    "item": "Ear Infection Acute",
-    "_id": "9022034e7d5ecd0efab0762c5b12b280"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "22",
-    "item": "Ear Infection Chronic",
-    "_id": "9022034e7d5ecd0efab0762c5b12b329"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "23",
-    "item": "Ear Disease Non-Infectious",
-    "_id": "9022034e7d5ecd0efab0762c5b12b7f1"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "24",
-    "item": "Cerebal Palsy",
-    "_id": "9022034e7d5ecd0efab0762c5b12be20"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "25",
-    "item": "Epilepsy",
-    "_id": "9022034e7d5ecd0efab0762c5b12c182"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "26",
-    "item": "Anemia Mild/Moderate",
-    "_id": "9022034e7d5ecd0efab0762c5b12c6ca"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "27",
-    "item": "Anemia Severe",
-    "_id": "9022034e7d5ecd0efab0762c5b12c75c"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "28",
-    "item": "Thyroid Disease",
-    "_id": "9022034e7d5ecd0efab0762c5b12cdec"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "29",
-    "item": "Sickle Cell",
-    "_id": "9022034e7d5ecd0efab0762c5b12dbcf"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "30",
-    "item": "Marasmus",
-    "_id": "9022034e7d5ecd0efab0762c5b12e2ac"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "31",
-    "item": "Kwashiorkor",
-    "_id": "9022034e7d5ecd0efab0762c5b12e93e"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "32",
-    "item": "Diabetes",
-    "_id": "9022034e7d5ecd0efab0762c5b12f1a7"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "33",
-    "item": "Schistosomiasis",
-    "_id": "9022034e7d5ecd0efab0762c5b12fdb4"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "34",
-    "item": "Louse Born Typhus",
-    "_id": "9022034e7d5ecd0efab0762c5b1301d9"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "35",
-    "item": "GUS",
-    "_id": "9022034e7d5ecd0efab0762c5b130bf9"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "36",
-    "item": "GUD",
-    "_id": "9022034e7d5ecd0efab0762c5b131557"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "37",
-    "item": "PID",
-    "_id": "9022034e7d5ecd0efab0762c5b131caa"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "38",
-    "item": "Tuberculosis",
-    "_id": "9022034e7d5ecd0efab0762c5b1327f7"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "39",
-    "item": "Cerebral Spinal Meningitis (CSM)",
-    "_id": "9022034e7d5ecd0efab0762c5b13328d"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "40",
-    "item": "Cholera",
-    "_id": "9022034e7d5ecd0efab0762c5b134278"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "41",
-    "item": "Diarrhea Acute (<14d)",
-    "_id": "9022034e7d5ecd0efab0762c5b134c43"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "42",
-    "item": "Diarrhea Chronic (>14d)",
-    "_id": "9022034e7d5ecd0efab0762c5b135c22"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "43",
-    "item": "Dysentery",
-    "_id": "9022034e7d5ecd0efab0762c5b13631c"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "44",
-    "item": "Leprosy",
-    "_id": "9022034e7d5ecd0efab0762c5b136f2c"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "45",
-    "item": "Malaria No Test",
-    "_id": "9022034e7d5ecd0efab0762c5b13795d"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "46",
-    "item": "Malaria Blood Side Positive",
-    "_id": "9022034e7d5ecd0efab0762c5b137afd"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "47",
-    "item": "Malaria mRDT Positive",
-    "_id": "9022034e7d5ecd0efab0762c5b137efa"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "48",
-    "item": "Malnutrition",
-    "_id": "9022034e7d5ecd0efab0762c5b138560"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "49",
-    "item": "Measles",
-    "_id": "9022034e7d5ecd0efab0762c5b138e27"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "50",
-    "item": "Plague",
-    "_id": "9022034e7d5ecd0efab0762c5b139dbc"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "51",
-    "item": "Rabies",
-    "_id": "9022034e7d5ecd0efab0762c5b139e41"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "52",
-    "item": "Typhoid",
-    "_id": "9022034e7d5ecd0efab0762c5b13a25f"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "53",
-    "item": "Yellow Fever",
-    "_id": "9022034e7d5ecd0efab0762c5b13ad70"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "54",
-    "item": "Respiratory Infection",
-    "_id": "9022034e7d5ecd0efab0762c5b13aded"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "55",
-    "item": "HIV, symptomsptomatic",
-    "_id": "9022034e7d5ecd0efab0762c5b13b21d"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "56",
-    "item": "Other STI",
-    "_id": "9022034e7d5ecd0efab0762c5b13b80e"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "57",
-    "item": "Neoplasm",
-    "_id": "9022034e7d5ecd0efab0762c5b13c4b8"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "58",
-    "item": "Hepatitis",
-    "_id": "9022034e7d5ecd0efab0762c5b13d221"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "59",
-    "item": "Soil transmitted helminths",
-    "_id": "9022034e7d5ecd0efab0762c5b13d360"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "60",
-    "item": "Lymphatic filairiasis",
-    "_id": "9022034e7d5ecd0efab0762c5b13d952"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "61",
-    "item": "Anthrax",
-    "_id": "9022034e7d5ecd0efab0762c5b13dbea"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "62",
-    "item": "Congenital Disorder",
-    "_id": "9022034e7d5ecd0efab0762c5b13deb6"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "63",
-    "item": "Gynecologic Disease",
-    "_id": "9022034e7d5ecd0efab0762c5b13e0ea"
-  },
-  {
-    "collection": "Disdia",
-    "class": "list",
-    "order": "64",
-    "item": "Tetanus",
-    "_id": "9022034e7d5ecd0efab0762c5b13ef02"
-  },
-  {
-    "collection": "yesno",
-    "class": "list",
-    "order": "1",
-    "item": "Yes",
-    "_id": "9022034e7d5ecd0efab0762c5b13f73f"
-  },
-  {
-    "collection": "yesno",
-    "class": "list",
-    "order": "2",
-    "item": "No",
-    "_id": "9022034e7d5ecd0efab0762c5b140339"
-  },
-  {
-    "collection": "referralloc",
-    "class": "list",
-    "order": "1",
-    "item": "Not Applicable",
-    "_id": "9022034e7d5ecd0efab0762c5b140400"
-  },
-  {
-    "collection": "referralloc",
-    "class": "list",
-    "order": "2",
-    "item": "Laboratory",
-    "_id": "9022034e7d5ecd0efab0762c5b14109e"
-  },
-  {
-    "collection": "referralloc",
-    "class": "list",
-    "order": "3",
-    "item": "Pharmacy",
-    "_id": "9022034e7d5ecd0efab0762c5b14207c"
-  },
-  {
-    "collection": "referralloc",
-    "class": "list",
-    "order": "4",
-    "item": "Antenatal Clinic",
-    "_id": "9022034e7d5ecd0efab0762c5b142e7b"
-  },
-  {
-    "collection": "referralloc",
-    "class": "list",
-    "order": "5",
-    "item": "TB / Leprosy Department",
-    "_id": "9022034e7d5ecd0efab0762c5b143941"
-  },
-  {
-    "collection": "referralloc",
-    "class": "list",
-    "order": "6",
-    "item": "CTC",
-    "_id": "9022034e7d5ecd0efab0762c5b143f01"
-  },
-  {
-    "collection": "referralloc",
-    "class": "list",
-    "order": "7",
-    "item": "Reproductive Counseling",
-    "_id": "9022034e7d5ecd0efab0762c5b14417f"
-  },
-  {
-    "collection": "referralloc",
-    "class": "list",
-    "order": "8",
-    "item": "Immunization",
-    "_id": "9022034e7d5ecd0efab0762c5b144b5d"
-  },
-  {
-    "collection": "injuries",
-    "class": "list",
-    "order": "1",
-    "item": "Animal Bite (suspected rabies)",
-    "_id": "9022034e7d5ecd0efab0762c5b144f3d"
-  },
-  {
-    "collection": "injuries",
-    "class": "list",
-    "order": "2",
-    "item": "Animal Bite (no rabies)",
-    "_id": "9022034e7d5ecd0efab0762c5b145de7"
-  },
-  {
-    "collection": "injuries",
-    "class": "list",
-    "order": "3",
-    "item": "Fracture",
-    "_id": "9022034e7d5ecd0efab0762c5b145ff8"
-  },
-  {
-    "collection": "injuries",
-    "class": "list",
-    "order": "4",
-    "item": "Concussion / Head Injury",
-    "_id": "9022034e7d5ecd0efab0762c5b146797"
-  },
-  {
-    "collection": "injuries",
-    "class": "list",
-    "order": "5",
-    "item": "Motor Vehicle Accident",
-    "_id": "9022034e7d5ecd0efab0762c5b146966"
-  },
-  {
-    "collection": "injuries",
-    "class": "list",
-    "order": "6",
-    "item": "Motorcycle Accident",
-    "_id": "9022034e7d5ecd0efab0762c5b1473ca"
-  },
-  {
-    "collection": "injuries",
-    "class": "list",
-    "order": "7",
-    "item": "Laceration",
-    "_id": "9022034e7d5ecd0efab0762c5b14756c"
-  },
-  {
-    "collection": "injuries",
-    "class": "list",
-    "order": "8",
-    "item": "Crush injury",
-    "_id": "9022034e7d5ecd0efab0762c5b147b7e"
-  },
-  {
-    "collection": "injuries",
-    "class": "list",
-    "order": "9",
-    "item": "Burn",
-    "_id": "9022034e7d5ecd0efab0762c5b148169"
-  },
-  {
-    "collection": "injuries",
-    "class": "list",
-    "order": "10",
-    "item": "Other",
-    "_id": "9022034e7d5ecd0efab0762c5b148234"
-  },
-  {
-    "collection": "injurytreatments",
-    "class": "list",
-    "order": "1",
-    "item": "None",
-    "_id": "9022034e7d5ecd0efab0762c5b148788"
-  },
-  {
-    "collection": "injurytreatments",
-    "class": "list",
-    "order": "2",
-    "item": "Wound Washout",
-    "_id": "9022034e7d5ecd0efab0762c5b148f98"
-  },
-  {
-    "collection": "injurytreatments",
-    "class": "list",
-    "order": "3",
-    "item": "Suture of Laceration",
-    "_id": "9022034e7d5ecd0efab0762c5b1498cb"
-  },
-  {
-    "collection": "injurytreatments",
-    "class": "list",
-    "order": "4",
-    "item": "Topical injurytreatmentsment of Burn",
-    "_id": "9022034e7d5ecd0efab0762c5b14a374"
-  },
-  {
-    "collection": "injurytreatments",
-    "class": "list",
-    "order": "5",
-    "item": "Bone Setting/Cast",
-    "_id": "9022034e7d5ecd0efab0762c5b14a8fb"
-  },
-  {
-    "collection": "injurytreatments",
-    "class": "list",
-    "order": "6",
-    "item": "Surgery",
-    "_id": "9022034e7d5ecd0efab0762c5b14ace9"
-  },
-  {
-    "collection": "injurytreatments",
-    "class": "list",
-    "order": "7",
-    "item": "Blood Transfusion",
-    "_id": "9022034e7d5ecd0efab0762c5b14b993"
-  },
-  {
-    "collection": "injurytreatments",
-    "class": "list",
-    "order": "8",
-    "item": "Antibiotics",
-    "_id": "9022034e7d5ecd0efab0762c5b14c5de"
-  },
-  {
-    "collection": "injurytreatments",
-    "class": "list",
-    "order": "9",
-    "item": "Antivenom",
-    "_id": "9022034e7d5ecd0efab0762c5b14c6e5"
-  },
-  {
-    "collection": "injurytreatments",
-    "class": "list",
-    "order": "10",
-    "item": "Other",
-    "_id": "9022034e7d5ecd0efab0762c5b14d258"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "1",
-    "item": "BCG",
-    "_id": "9022034e7d5ecd0efab0762c5b14dce1"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "2",
-    "item": "OPV-0",
-    "_id": "9022034e7d5ecd0efab0762c5b14ebf9"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "3",
-    "item": "OPV-1",
-    "_id": "9022034e7d5ecd0efab0762c5b14f398"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "4",
-    "item": "OPV-2",
-    "_id": "9022034e7d5ecd0efab0762c5b1500df"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "5",
-    "item": "OPV-3",
-    "_id": "9022034e7d5ecd0efab0762c5b150cb6"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "6",
-    "item": "DTP-HB",
-    "_id": "9022034e7d5ecd0efab0762c5b15190a"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "7",
-    "item": "DPT 1",
-    "_id": "9022034e7d5ecd0efab0762c5b152425"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "8",
-    "item": "DPT 2",
-    "_id": "9022034e7d5ecd0efab0762c5b152a04"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "9",
-    "item": "DPT 3",
-    "_id": "9022034e7d5ecd0efab0762c5b152f82"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "10",
-    "item": "Measles",
-    "_id": "9022034e7d5ecd0efab0762c5b153ed1"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "11",
-    "item": "Tentanus Toxoid 1",
-    "_id": "9022034e7d5ecd0efab0762c5b1543b0"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "12",
-    "item": "Tentanus Toxoid 2",
-    "_id": "9022034e7d5ecd0efab0762c5b154bb6"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "13",
-    "item": "Tentanus Toxoid 3",
-    "_id": "9022034e7d5ecd0efab0762c5b1559de"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "14",
-    "item": "Tentanus Toxoid 4",
-    "_id": "9022034e7d5ecd0efab0762c5b15648f"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "15",
-    "item": "Tentanus Toxoid 5",
-    "_id": "9022034e7d5ecd0efab0762c5b156b33"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "16",
-    "item": "Vitamin A",
-    "_id": "9022034e7d5ecd0efab0762c5b157432"
-  },
-  {
-    "collection": "immunizations",
-    "class": "list",
-    "order": "17",
-    "item": "Other",
-    "_id": "9022034e7d5ecd0efab0762c5b157e7a"
-  },
-  {
-    "collection": "immunizationeffects",
-    "class": "list",
-    "order": "1",
-    "item": "None",
-    "_id": "9022034e7d5ecd0efab0762c5b1582a5"
-  },
-  {
-    "collection": "immunizationeffects",
-    "class": "list",
-    "order": "2",
-    "item": "Shortness of Breath",
-    "_id": "9022034e7d5ecd0efab0762c5b158ecd"
-  },
-  {
-    "collection": "immunizationeffects",
-    "class": "list",
-    "order": "3",
-    "item": "Tongue Swelling",
-    "_id": "9022034e7d5ecd0efab0762c5b15950e"
-  },
-  {
-    "collection": "immunizationeffects",
-    "class": "list",
-    "order": "4",
-    "item": "Rash",
-    "_id": "9022034e7d5ecd0efab0762c5b1597db"
-  },
-  {
-    "collection": "immunizationeffects",
-    "class": "list",
-    "order": "5",
-    "item": "Fever",
-    "_id": "9022034e7d5ecd0efab0762c5b15a042"
-  },
-  {
-    "collection": "immunizationeffects",
-    "class": "list",
-    "order": "6",
-    "item": "Swelling at Injection Site",
-    "_id": "9022034e7d5ecd0efab0762c5b15a1f5"
-  },
-  {
-    "collection": "immunizationeffects",
-    "class": "list",
-    "order": "7",
-    "item": "Nausea or Vomiting",
-    "_id": "9022034e7d5ecd0efab0762c5b15aaa6"
-  },
-  {
-    "collection": "immunizationeffects",
-    "class": "list",
-    "order": "8",
-    "item": "Other",
-    "_id": "9022034e7d5ecd0efab0762c5b15b52f"
-  },
-  {
-    "collection": "yesnou",
-    "class": "list",
-    "order": "1",
-    "item": "Yes",
-    "_id": "9022034e7d5ecd0efab0762c5b15bdf7"
-  },
-  {
-    "collection": "yesnou",
-    "class": "list",
-    "order": "2",
-    "item": "No",
-    "_id": "9022034e7d5ecd0efab0762c5b15cde6"
-  },
-  {
-    "collection": "yesnou",
-    "class": "list",
-    "order": "3",
-    "item": "Unknown",
-    "_id": "9022034e7d5ecd0efab0762c5b15dc88"
-  },
-  {
-    "collection": "breast",
-    "class": "list",
-    "order": "1",
-    "item": "Breastfeeding Only",
-    "_id": "9022034e7d5ecd0efab0762c5b15ebe4"
-  },
-  {
-    "collection": "breast",
-    "class": "list",
-    "order": "2",
-    "item": "Formula Only",
-    "_id": "9022034e7d5ecd0efab0762c5b15ee8b"
-  },
-  {
-    "collection": "breast",
-    "class": "list",
-    "order": "3",
-    "item": "Breastfeeding and Formula",
-    "_id": "9022034e7d5ecd0efab0762c5b15f147"
-  },
-  {
-    "collection": "diag",
-    "class": "list",
-    "order": "1",
-    "item": "Unknown",
-    "_id": "9022034e7d5ecd0efab0762c5b15f486"
-  },
-  {
-    "collection": "diag",
-    "class": "list",
-    "order": "2",
-    "item": "Less Than 2 Month After Birth",
-    "_id": "9022034e7d5ecd0efab0762c5b15f6de"
-  },
-  {
-    "collection": "diag",
-    "class": "list",
-    "order": "3",
-    "item": "Between 2-18 Months After Birth",
-    "_id": "9022034e7d5ecd0efab0762c5b15f8ce"
-  },
-  {
-    "collection": "diag",
-    "class": "list",
-    "order": "4",
-    "item": "More Than 18 Months After Birth",
-    "_id": "9022034e7d5ecd0efab0762c5b15ffd0"
-  },
-  {
-    "collection": "mens",
-    "class": "list",
-    "order": "1",
-    "item": "None",
-    "_id": "9022034e7d5ecd0efab0762c5b160031"
-  },
-  {
-    "collection": "mens",
-    "class": "list",
-    "order": "2",
-    "item": "Irregular Menses",
-    "_id": "9022034e7d5ecd0efab0762c5b160102"
-  },
-  {
-    "collection": "mens",
-    "class": "list",
-    "order": "3",
-    "item": "Regular Menses Monthly",
-    "_id": "9022034e7d5ecd0efab0762c5b16023f"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "1",
-    "item": "None",
-    "_id": "9022034e7d5ecd0efab0762c5b16095d"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "2",
-    "item": "Fetal Death",
-    "_id": "9022034e7d5ecd0efab0762c5b161510"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "3",
-    "item": "Neonatal Death",
-    "_id": "9022034e7d5ecd0efab0762c5b161d89"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "4",
-    "item": "Neonatal Injury",
-    "_id": "9022034e7d5ecd0efab0762c5b162d3b"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "5",
-    "item": "Shoulder Dystocia",
-    "_id": "9022034e7d5ecd0efab0762c5b1637bb"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "6",
-    "item": "Obstructed Labor",
-    "_id": "9022034e7d5ecd0efab0762c5b163a7c"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "7",
-    "item": "Hemorrhage",
-    "_id": "9022034e7d5ecd0efab0762c5b1648ea"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "8",
-    "item": "Intra-uterine Infection",
-    "_id": "9022034e7d5ecd0efab0762c5b1652f6"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "9",
-    "item": "Cesarean Section",
-    "_id": "9022034e7d5ecd0efab0762c5b1662c0"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "10",
-    "item": "Seizure",
-    "_id": "9022034e7d5ecd0efab0762c5b166ab6"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "11",
-    "item": "Forceps/Vacuum",
-    "_id": "9022034e7d5ecd0efab0762c5b166db5"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "12",
-    "item": "Sepsis",
-    "_id": "9022034e7d5ecd0efab0762c5b167b00"
-  },
-  {
-    "collection": "pregc",
-    "class": "list",
-    "order": "13",
-    "item": "Other",
-    "_id": "9022034e7d5ecd0efab0762c5b16882e"
-  },
-  {
-    "collection": "marr",
-    "class": "list",
-    "order": "1",
-    "item": "Single",
-    "_id": "9022034e7d5ecd0efab0762c5b1688f6"
-  },
-  {
-    "collection": "marr",
-    "class": "list",
-    "order": "2",
-    "item": "Married",
-    "_id": "9022034e7d5ecd0efab0762c5b168eb0"
-  },
-  {
-    "collection": "marr",
-    "class": "list",
-    "order": "3",
-    "item": "Divorced",
-    "_id": "9022034e7d5ecd0efab0762c5b169c6c"
-  },
-  {
-    "collection": "marr",
-    "class": "list",
-    "order": "4",
-    "item": "Separated",
-    "_id": "9022034e7d5ecd0efab0762c5b16a9aa"
-  },
-  {
-    "collection": "marr",
-    "class": "list",
-    "order": "5",
-    "item": "Widowed",
-    "_id": "9022034e7d5ecd0efab0762c5b16b611"
-  },
-  {
-    "collection": "contra",
-    "class": "list",
-    "order": "1",
-    "item": "None",
-    "_id": "9022034e7d5ecd0efab0762c5b16c53d"
-  },
-  {
-    "collection": "contra",
-    "class": "list",
-    "order": "2",
-    "item": "Pills",
-    "_id": "9022034e7d5ecd0efab0762c5b16ca17"
-  },
-  {
-    "collection": "contra",
-    "class": "list",
-    "order": "3",
-    "item": "Condoms",
-    "_id": "9022034e7d5ecd0efab0762c5b16d5cc"
-  },
-  {
-    "collection": "contra",
-    "class": "list",
-    "order": "4",
-    "item": "IUD",
-    "_id": "9022034e7d5ecd0efab0762c5b16e542"
-  },
-  {
-    "collection": "contra",
-    "class": "list",
-    "order": "5",
-    "item": "Other Implants",
-    "_id": "9022034e7d5ecd0efab0762c5b16e55c"
-  },
-  {
-    "collection": "contra",
-    "class": "list",
-    "order": "6",
-    "item": "Depo Provera",
-    "_id": "9022034e7d5ecd0efab0762c5b16f01a"
-  },
-  {
-    "collection": "contra",
-    "class": "list",
-    "order": "7",
-    "item": "Sterilization",
-    "_id": "9022034e7d5ecd0efab0762c5b16fc2d"
-  },
-  {
-    "collection": "contra",
-    "class": "list",
-    "order": "8",
-    "item": "Natural ways",
-    "_id": "9022034e7d5ecd0efab0762c5b170457"
-  },
-  {
-    "collection": "contra",
-    "class": "list",
-    "order": "9",
-    "item": "Other",
-    "_id": "9022034e7d5ecd0efab0762c5b170c0f"
-  },
-  {
-    "collection": "fert",
-    "class": "list",
-    "order": "1",
-    "item": "Desires Pregnancy Now",
-    "_id": "9022034e7d5ecd0efab0762c5b171693"
-  },
-  {
-    "collection": "fert",
-    "class": "list",
-    "order": "2",
-    "item": "Desires Contraception Now",
-    "_id": "9022034e7d5ecd0efab0762c5b1721de"
-  },
-  {
-    "collection": "fert",
-    "class": "list",
-    "order": "3",
-    "item": "Desires Future Pregnancy",
-    "_id": "9022034e7d5ecd0efab0762c5b172613"
-  },
-  {
-    "collection": "HIVrisks",
-    "class": "list",
-    "order": "1",
-    "item": "Patient Known to Have HIV",
-    "_id": "9022034e7d5ecd0efab0762c5b173027"
-  },
-  {
-    "collection": "HIVrisks",
-    "class": "list",
-    "order": "2",
-    "item": "Partner or Previous Partner Known to Have HIV",
-    "_id": "9022034e7d5ecd0efab0762c5b173c2e"
-  },
-  {
-    "collection": "HIVrisks",
-    "class": "list",
-    "order": "3",
-    "item": "History of Sexual Assult",
-    "_id": "9022034e7d5ecd0efab0762c5b174344"
-  },
-  {
-    "collection": "HIVrisks",
-    "class": "list",
-    "order": "4",
-    "item": "Desires HIV Testing",
-    "_id": "9022034e7d5ecd0efab0762c5b17471c"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "1",
-    "item": "Not Applicable",
-    "_id": "9022034e7d5ecd0efab0762c5b17535c"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "2",
-    "item": "1 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b1754f8"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "3",
-    "item": "2 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b176051"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "4",
-    "item": "3 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b17654b"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "5",
-    "item": "4 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b177344"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "6",
-    "item": "5 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b1782c9"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "7",
-    "item": "6 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b178f1b"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "8",
-    "item": "7 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b179378"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "9",
-    "item": "8 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b179ccb"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "10",
-    "item": "9 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b17a414"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "11",
-    "item": "10 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b17b2c6"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "12",
-    "item": "11 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b17b675"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "13",
-    "item": "12 Month Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b17b692"
-  },
-  {
-    "collection": "pillq",
-    "class": "list",
-    "order": "14",
-    "item": "More Than One Year Supply",
-    "_id": "9022034e7d5ecd0efab0762c5b17c561"
-  },
-  {
-    "collection": "condomq",
-    "class": "list",
-    "order": "1",
-    "item": "Not Applicable",
-    "_id": "9022034e7d5ecd0efab0762c5b17c777"
-  },
-  {
-    "collection": "condomq",
-    "class": "list",
-    "order": "2",
-    "item": "1 to 10",
-    "_id": "9022034e7d5ecd0efab0762c5b17d52b"
-  },
-  {
-    "collection": "condomq",
-    "class": "list",
-    "order": "3",
-    "item": "11 to 20",
-    "_id": "9022034e7d5ecd0efab0762c5b17d6fb"
-  },
-  {
-    "collection": "condomq",
-    "class": "list",
-    "order": "4",
-    "item": "21 to 30",
-    "_id": "9022034e7d5ecd0efab0762c5b17dffa"
-  },
-  {
-    "collection": "condomq",
-    "class": "list",
-    "order": "5",
-    "item": "31 to 40",
-    "_id": "9022034e7d5ecd0efab0762c5b17e8fd"
-  },
-  {
-    "collection": "condomq",
-    "class": "list",
-    "order": "6",
-    "item": "41 to 50",
-    "_id": "9022034e7d5ecd0efab0762c5b17f23d"
-  },
-  {
-    "collection": "condomq",
-    "class": "list",
-    "order": "7",
-    "item": "50+",
-    "_id": "9022034e7d5ecd0efab0762c5b17f96a"
-  },
-  {
-    "collection": "depopro",
-    "class": "list",
-    "order": "1",
-    "item": "3 Month Dose",
-    "_id": "9022034e7d5ecd0efab0762c5b1808a8"
-  },
-  {
-    "collection": "depopro",
-    "class": "list",
-    "order": "2",
-    "item": "6 Month Dose",
-    "_id": "9022034e7d5ecd0efab0762c5b180e88"
-  },
-  {
-    "collection": "cervic",
-    "class": "list",
-    "order": "1",
-    "item": "Vaginal Discharge",
-    "_id": "9022034e7d5ecd0efab0762c5b181c27"
-  },
-  {
-    "collection": "cervic",
-    "class": "list",
-    "order": "2",
-    "item": "Post-Coital Bleeding",
-    "_id": "9022034e7d5ecd0efab0762c5b181ea3"
-  },
-  {
-    "collection": "heavy",
-    "class": "list",
-    "order": "1",
-    "item": "No Previous Delivery",
-    "_id": "9022034e7d5ecd0efab0762c5b181ec2"
-  },
-  {
-    "collection": "heavy",
-    "class": "list",
-    "order": "2",
-    "item": "Unknown",
-    "_id": "9022034e7d5ecd0efab0762c5b1827c0"
-  },
-  {
-    "collection": "heavy",
-    "class": "list",
-    "order": "3",
-    "item": "<1kg",
-    "_id": "9022034e7d5ecd0efab0762c5b182dd3"
-  },
-  {
-    "collection": "heavy",
-    "class": "list",
-    "order": "4",
-    "item": "1kg",
-    "_id": "9022034e7d5ecd0efab0762c5b183193"
-  },
-  {
-    "collection": "heavy",
-    "class": "list",
-    "order": "5",
-    "item": "1.5kg",
-    "_id": "9022034e7d5ecd0efab0762c5b183dfe"
-  },
-  {
-    "collection": "heavy",
-    "class": "list",
-    "order": "6",
-    "item": "2kg",
-    "_id": "9022034e7d5ecd0efab0762c5b183eed"
-  },
-  {
-    "collection": "heavy",
-    "class": "list",
-    "order": "7",
-    "item": "2.5kg",
-    "_id": "9022034e7d5ecd0efab0762c5b1842c7"
-  },
-  {
-    "collection": "heavy",
-    "class": "list",
-    "order": "8",
-    "item": "3kg",
-    "_id": "9022034e7d5ecd0efab0762c5b18476f"
-  },
-  {
-    "collection": "heavy",
-    "class": "list",
-    "order": "9",
-    "item": "3.5kg",
-    "_id": "9022034e7d5ecd0efab0762c5b184971"
-  },
-  {
-    "collection": "heavy",
-    "class": "list",
-    "order": "10",
-    "item": "4kg+",
-    "_id": "9022034e7d5ecd0efab0762c5b185040"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "1",
-    "item": "Unknown",
-    "_id": "9022034e7d5ecd0efab0762c5b1851f8"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "2",
-    "item": "None",
-    "_id": "9022034e7d5ecd0efab0762c5b185865"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "3",
-    "item": "Fetal Death",
-    "_id": "9022034e7d5ecd0efab0762c5b1866e5"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "4",
-    "item": "Neonatal Death",
-    "_id": "9022034e7d5ecd0efab0762c5b186cd7"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "5",
-    "item": "Neonatal Injury",
-    "_id": "9022034e7d5ecd0efab0762c5b18746b"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "6",
-    "item": "Shoulder Dystocia",
-    "_id": "9022034e7d5ecd0efab0762c5b1880d3"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "7",
-    "item": "Obstructed Labor",
-    "_id": "9022034e7d5ecd0efab0762c5b18840c"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "8",
-    "item": "Hemorrhage",
-    "_id": "9022034e7d5ecd0efab0762c5b188de7"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "9",
-    "item": "Sepsis",
-    "_id": "9022034e7d5ecd0efab0762c5b189a14"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "10",
-    "item": "Cesarean Section",
-    "_id": "9022034e7d5ecd0efab0762c5b18a0e3"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "11",
-    "item": "Eclampsia",
-    "_id": "9022034e7d5ecd0efab0762c5b18b044"
-  },
-  {
-    "collection": "pregcomps",
-    "class": "list",
-    "order": "12",
-    "item": "Forceps/Vacuum",
-    "_id": "9022034e7d5ecd0efab0762c5b18bf2b"
-  },
-  {
-    "collection": "HIVstat",
-    "class": "list",
-    "order": "1",
-    "item": "Positive",
-    "_id": "9022034e7d5ecd0efab0762c5b18c806"
-  },
-  {
-    "collection": "HIVstat",
-    "class": "list",
-    "order": "2",
-    "item": "Negative",
-    "_id": "9022034e7d5ecd0efab0762c5b18c8b2"
-  },
-  {
-    "collection": "HIVstat",
-    "class": "list",
-    "order": "3",
-    "item": "Unknown",
-    "_id": "9022034e7d5ecd0efab0762c5b18c8d1"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "1",
-    "item": "None",
-    "_id": "9022034e7d5ecd0efab0762c5b18cef0"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "2",
-    "item": "Abdominal Pain",
-    "_id": "9022034e7d5ecd0efab0762c5b18d20c"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "3",
-    "item": "Vaginal Pain",
-    "_id": "9022034e7d5ecd0efab0762c5b18d2ee"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "4",
-    "item": "Vaginal Bleeding",
-    "_id": "9022034e7d5ecd0efab0762c5b18da9e"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "5",
-    "item": "Loss of Fetal Movement",
-    "_id": "9022034e7d5ecd0efab0762c5b18dd13"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "6",
-    "item": "Vaginal Leakage of Fluid",
-    "_id": "9022034e7d5ecd0efab0762c5b18e99f"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "7",
-    "item": "Headache",
-    "_id": "9022034e7d5ecd0efab0762c5b18ede5"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "8",
-    "item": "Blurred Vision",
-    "_id": "9022034e7d5ecd0efab0762c5b18eeb3"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "9",
-    "item": "Nausea or Vomiting",
-    "_id": "9022034e7d5ecd0efab0762c5b18f0ec"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "10",
-    "item": "Diarrhea",
-    "_id": "9022034e7d5ecd0efab0762c5b18fb00"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "11",
-    "item": "Constipation",
-    "_id": "9022034e7d5ecd0efab0762c5b19020d"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "12",
-    "item": "Fever",
-    "_id": "9022034e7d5ecd0efab0762c5b190b77"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "13",
-    "item": "Contractions",
-    "_id": "9022034e7d5ecd0efab0762c5b191b2f"
-  },
-  {
-    "collection": "symptomsptos",
-    "class": "list",
-    "order": "14",
-    "item": "Post-Coital Bleeding",
-    "_id": "9022034e7d5ecd0efab0762c5b1929fd"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "1",
-    "item": "None",
-    "_id": "9022034e7d5ecd0efab0762c5b192ea8"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "2",
-    "item": "Other",
-    "_id": "9022034e7d5ecd0efab0762c5b193711"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "3",
-    "item": "Abdominal Pain",
-    "_id": "9022034e7d5ecd0efab0762c5b193da6"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "4",
-    "item": "Vaginal Bleeding",
-    "_id": "9022034e7d5ecd0efab0762c5b19473f"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "5",
-    "item": "Loss of Fetal Movement",
-    "_id": "9022034e7d5ecd0efab0762c5b1947ad"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "6",
-    "item": "Vaginal Leakage of Fluid",
-    "_id": "9022034e7d5ecd0efab0762c5b19535b"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "7",
-    "item": "Headache",
-    "_id": "9022034e7d5ecd0efab0762c5b1957e6"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "8",
-    "item": "Blurred Vision",
-    "_id": "9022034e7d5ecd0efab0762c5b1966a8"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "9",
-    "item": "Nausea or Vomiting",
-    "_id": "9022034e7d5ecd0efab0762c5b197237"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "10",
-    "item": "Diarrhea",
-    "_id": "9022034e7d5ecd0efab0762c5b19802c"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "11",
-    "item": "Constipation",
-    "_id": "9022034e7d5ecd0efab0762c5b19818d"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "12",
-    "item": "Fever",
-    "_id": "9022034e7d5ecd0efab0762c5b1988b3"
-  },
-  {
-    "collection": "symptomsptoms",
-    "class": "list",
-    "order": "13",
-    "item": "Contractions",
-    "_id": "9022034e7d5ecd0efab0762c5b198da0"
-  },
-  {
-    "collection": "fetalstation",
-    "class": "list",
-    "order": "1",
-    "item": "Not Examined",
-    "_id": "9022034e7d5ecd0efab0762c5b1999cd"
-  },
-  {
-    "collection": "fetalstation",
-    "class": "list",
-    "order": "2",
-    "item": "High/Unengaged",
-    "_id": "9022034e7d5ecd0efab0762c5b199bce"
-  },
-  {
-    "collection": "fetalstation",
-    "class": "list",
-    "order": "3",
-    "item": "-3",
-    "_id": "9022034e7d5ecd0efab0762c5b19a5c3"
-  },
-  {
-    "collection": "fetalstation",
-    "class": "list",
-    "order": "4",
-    "item": "-2",
-    "_id": "9022034e7d5ecd0efab0762c5b19b21a"
-  },
-  {
-    "collection": "fetalstation",
-    "class": "list",
-    "order": "5",
-    "item": "-1",
-    "_id": "9022034e7d5ecd0efab0762c5b19be8d"
-  },
-  {
-    "collection": "fetalstation",
-    "class": "list",
-    "order": "6",
-    "item": "0",
-    "_id": "9022034e7d5ecd0efab0762c5b19cc5d"
-  },
-  {
-    "collection": "fetalstation",
-    "class": "list",
-    "order": "7",
-    "item": "1",
-    "_id": "9022034e7d5ecd0efab0762c5b19d66b"
-  },
-  {
-    "collection": "fetalstation",
-    "class": "list",
-    "order": "8",
-    "item": "2",
-    "_id": "9022034e7d5ecd0efab0762c5b19df31"
-  },
-  {
-    "collection": "fetalstation",
-    "class": "list",
-    "order": "9",
-    "item": "3",
-    "_id": "9022034e7d5ecd0efab0762c5b19e2fc"
-  },
-  {
-    "collection": "fetalmove",
-    "class": "list",
-    "order": "1",
-    "item": "Too Early To Be Felt",
-    "_id": "9022034e7d5ecd0efab0762c5b19f261"
-  },
-  {
-    "collection": "fetalmove",
-    "class": "list",
-    "order": "2",
-    "item": "Felt By Mother",
-    "_id": "9022034e7d5ecd0efab0762c5b19f75c"
-  },
-  {
-    "collection": "fetalmove",
-    "class": "list",
-    "order": "3",
-    "item": "Felt By Mother, Noted to be Abnormal",
-    "_id": "9022034e7d5ecd0efab0762c5b19f7d2"
-  },
-  {
-    "collection": "fetalmove",
-    "class": "list",
-    "order": "4",
-    "item": "Not Felt By Mother",
-    "_id": "9022034e7d5ecd0efab0762c5b19fdea"
-  },
-  {
-    "collection": "fetalhr",
-    "class": "list",
-    "order": "1",
-    "item": "Not Checked",
-    "_id": "9022034e7d5ecd0efab0762c5b1a031f"
-  },
-  {
-    "collection": "fetalhr",
-    "class": "list",
-    "order": "2",
-    "item": "Checked, But Unable To Hear",
-    "_id": "9022034e7d5ecd0efab0762c5b1a03d3"
-  },
-  {
-    "collection": "fetalhr",
-    "class": "list",
-    "order": "3",
-    "item": "110s",
-    "_id": "9022034e7d5ecd0efab0762c5b1a0de9"
-  },
-  {
-    "collection": "fetalhr",
-    "class": "list",
-    "order": "4",
-    "item": "120s",
-    "_id": "9022034e7d5ecd0efab0762c5b1a1a91"
-  },
-  {
-    "collection": "fetalhr",
-    "class": "list",
-    "order": "5",
-    "item": "130s",
-    "_id": "9022034e7d5ecd0efab0762c5b1a26e1"
-  },
-  {
-    "collection": "fetalhr",
-    "class": "list",
-    "order": "6",
-    "item": "140s",
-    "_id": "9022034e7d5ecd0efab0762c5b1a2b9a"
-  },
-  {
-    "collection": "fetalhr",
-    "class": "list",
-    "order": "7",
-    "item": "150s",
-    "_id": "9022034e7d5ecd0efab0762c5b1a2ee8"
-  },
-  {
-    "collection": "fetalhr",
-    "class": "list",
-    "order": "8",
-    "item": "160s",
-    "_id": "9022034e7d5ecd0efab0762c5b1a3e9f"
-  },
-  {
-    "collection": "fetalhr",
-    "class": "list",
-    "order": "9",
-    "item": "170s",
-    "_id": "9022034e7d5ecd0efab0762c5b1a4dd4"
-  },
-  {
-    "collection": "fetalhr",
-    "class": "list",
-    "order": "10",
-    "item": "180s",
-    "_id": "9022034e7d5ecd0efab0762c5b1a4e94"
-  },
-  {
-    "collection": "anemia",
-    "class": "list",
-    "order": "1",
-    "item": "<8.5g/dl",
-    "_id": "9022034e7d5ecd0efab0762c5b1a5d8d"
-  },
-  {
-    "collection": "anemia",
-    "class": "list",
-    "order": "2",
-    "item": ">8.5g/dl",
-    "_id": "9022034e7d5ecd0efab0762c5b1a5dba"
-  },
-  {
-    "collection": "milktype",
-    "class": "list",
-    "order": "1",
-    "item": "Mother's Milk ONLY",
-    "_id": "9022034e7d5ecd0efab0762c5b1a5f96"
-  },
-  {
-    "collection": "milktype",
-    "class": "list",
-    "order": "2",
-    "item": "Mother's Milk + Formula",
-    "_id": "9022034e7d5ecd0efab0762c5b1a636c"
-  },
-  {
-    "collection": "milktype",
-    "class": "list",
-    "order": "3",
-    "item": "Mother's Milk + Other",
-    "_id": "9022034e7d5ecd0efab0762c5b1a638e"
-  },
-  {
-    "collection": "milktype",
-    "class": "list",
-    "order": "4",
-    "item": "Formula ONLY",
-    "_id": "9022034e7d5ecd0efab0762c5b1a66ea"
-  },
-  {
-    "collection": "milktype",
-    "class": "list",
-    "order": "5",
-    "item": "Formula + Other",
-    "_id": "9022034e7d5ecd0efab0762c5b1a6a84"
-  },
-  {
-    "collection": "milktype",
-    "class": "list",
-    "order": "6",
-    "item": "Other ONLY",
-    "_id": "9022034e7d5ecd0efab0762c5b1a6fe3"
-  },
-  {
-    "collection": "contrasource",
-    "class": "list",
-    "order": "1",
-    "item": "Clinic",
-    "_id": "9022034e7d5ecd0efab0762c5b1a70d7"
-  },
-  {
-    "collection": "contrasource",
-    "class": "list",
-    "order": "2",
-    "item": "Community Based Distribution (CBD)",
-    "_id": "9022034e7d5ecd0efab0762c5b1a804e"
-  },
-  {
-    "collection": "contrasource",
-    "class": "list",
-    "order": "3",
-    "item": "Both",
-    "_id": "9022034e7d5ecd0efab0762c5b1a8f35"
-  },
-  {
-    "collection": "watsodium",
-    "class": "list",
-    "order": "1",
-    "item": "severe",
-    "_id": "9022034e7d5ecd0efab0762c5b1a9662"
-  },
-  {
-    "collection": "watsodium",
-    "class": "list",
-    "order": "2",
-    "item": "mild",
-    "_id": "9022034e7d5ecd0efab0762c5b1a9d64"
-  },
-  {
-    "collection": "watsodium",
-    "class": "list",
-    "order": "3",
-    "item": "uncertain",
-    "_id": "9022034e7d5ecd0efab0762c5b1aa0e5"
-  }
+{"collection":"lists","list_id":"symptoms","order":"1","en":"Other","_id":"9022034e7d5ecd0efab0762c5b7ee5d6"},
+{"collection":"lists","list_id":"symptoms","order":"2","en":"Body Aches","_id":"9022034e7d5ecd0efab0762c5b7ef230"},
+{"collection":"lists","list_id":"symptoms","order":"3","en":"Chills","_id":"9022034e7d5ecd0efab0762c5b7ef9cb"},
+{"collection":"lists","list_id":"symptoms","order":"4","en":"Diarrhea","_id":"9022034e7d5ecd0efab0762c5b7efd20"},
+{"collection":"lists","list_id":"symptoms","order":"5","en":"Fever","_id":"9022034e7d5ecd0efab0762c5b7f08df"},
+{"collection":"lists","list_id":"symptoms","order":"6","en":"Headache","_id":"9022034e7d5ecd0efab0762c5b7f0c04"},
+{"collection":"lists","list_id":"symptoms","order":"7","en":"Shortness of Breath","_id":"9022034e7d5ecd0efab0762c5b7f1761"},
+{"collection":"lists","list_id":"symptoms","order":"8","en":"Nausea or Vomiting","_id":"9022034e7d5ecd0efab0762c5b7f26a0"},
+{"collection":"lists","list_id":"symptoms","order":"9","en":"Rigors","_id":"9022034e7d5ecd0efab0762c5b7f2f26"},
+{"collection":"lists","list_id":"symptoms","order":"10","en":"Night Sweats","_id":"9022034e7d5ecd0efab0762c5b7f3afc"},
+{"collection":"lists","list_id":"symptoms","order":"11","en":"Rash","_id":"9022034e7d5ecd0efab0762c5b7f42a1"},
+{"collection":"lists","list_id":"symptoms","order":"12","en":"Abdominal Pain","_id":"9022034e7d5ecd0efab0762c5b7f4f28"},
+{"collection":"lists","list_id":"symptoms","order":"13","en":"Cough","_id":"9022034e7d5ecd0efab0762c5b7f5e6f"},
+{"collection":"lists","list_id":"symptoms","order":"14","en":"Difficultly with Urination","_id":"9022034e7d5ecd0efab0762c5b7f683b"},
+{"collection":"lists","list_id":"symptoms","order":"15","en":"Weakness","_id":"9022034e7d5ecd0efab0762c5b7f72f5"},
+{"collection":"lists","list_id":"symptoms","order":"16","en":"Weight Loss","_id":"9022034e7d5ecd0efab0762c5b7f82df"},
+{"collection":"lists","list_id":"histories","order":"1","en":"None","_id":"9022034e7d5ecd0efab0762c5b7f8f97"},
+{"collection":"lists","list_id":"histories","order":"2","en":"Other","_id":"9022034e7d5ecd0efab0762c5b7f9cdf"},
+{"collection":"lists","list_id":"histories","order":"3","en":"Hypertension","_id":"9022034e7d5ecd0efab0762c5b7fa331"},
+{"collection":"lists","list_id":"histories","order":"4","en":"Diabetes","_id":"9022034e7d5ecd0efab0762c5b7faeef"},
+{"collection":"lists","list_id":"histories","order":"5","en":"Malaria","_id":"9022034e7d5ecd0efab0762c5b7fbbf5"},
+{"collection":"lists","list_id":"histories","order":"6","en":"Yellow Fever","_id":"9022034e7d5ecd0efab0762c5b7fbde8"},
+{"collection":"lists","list_id":"histories","order":"7","en":"Cholera","_id":"9022034e7d5ecd0efab0762c5b7fcb73"},
+{"collection":"lists","list_id":"histories","order":"8","en":"Meningitis","_id":"9022034e7d5ecd0efab0762c5b7fd414"},
+{"collection":"lists","list_id":"histories","order":"9","en":"Sickle Cell","_id":"9022034e7d5ecd0efab0762c5b7fd5ab"},
+{"collection":"lists","list_id":"histories","order":"10","en":"Cancer","_id":"9022034e7d5ecd0efab0762c5b7fd60f"},
+{"collection":"lists","list_id":"histories","order":"11","en":"Leprosy","_id":"9022034e7d5ecd0efab0762c5b7fdd3e"},
+{"collection":"lists","list_id":"diseases","order":"1","en":"Other","_id":"9022034e7d5ecd0efab0762c5b7fdf27"},
+{"collection":"lists","list_id":"diseases","order":"2","en":"Skin Infection - Fungal","_id":"9022034e7d5ecd0efab0762c5b7feac6"},
+{"collection":"lists","list_id":"diseases","order":"3","en":"Skin Infection - Non-fungal","_id":"9022034e7d5ecd0efab0762c5b7ff3b3"},
+{"collection":"lists","list_id":"diseases","order":"4","en":"Skin Diseases - Non-infectious","_id":"9022034e7d5ecd0efab0762c5b800243"},
+{"collection":"lists","list_id":"diseases","order":"5","en":"Osteomyelitis","_id":"9022034e7d5ecd0efab0762c5b800330"},
+{"collection":"lists","list_id":"diseases","order":"6","en":"UTI","_id":"9022034e7d5ecd0efab0762c5b800b8d"},
+{"collection":"lists","list_id":"diseases","order":"7","en":"GI Disease Non-Infectious","_id":"9022034e7d5ecd0efab0762c5b801631"},
+{"collection":"lists","list_id":"diseases","order":"8","en":"Cardiovascular Disorder other","_id":"9022034e7d5ecd0efab0762c5b80212c"},
+{"collection":"lists","list_id":"diseases","order":"9","en":"Liver Disease Infectious","_id":"9022034e7d5ecd0efab0762c5b802ac2"},
+{"collection":"lists","list_id":"diseases","order":"10","en":"Liver Disease Non-Infectious","_id":"9022034e7d5ecd0efab0762c5b80309a"},
+{"collection":"lists","list_id":"diseases","order":"11","en":"Peptic Ulcers","_id":"9022034e7d5ecd0efab0762c5b803a12"},
+{"collection":"lists","list_id":"diseases","order":"12","en":"Pneumonia Mild/Moderate","_id":"9022034e7d5ecd0efab0762c5b804877"},
+{"collection":"lists","list_id":"diseases","order":"13","en":"Pneumonia Severe","_id":"9022034e7d5ecd0efab0762c5b80520c"},
+{"collection":"lists","list_id":"diseases","order":"14","en":"Asthma","_id":"9022034e7d5ecd0efab0762c5b80602c"},
+{"collection":"lists","list_id":"diseases","order":"15","en":"Acute Flaccid Paralysis / Polio","_id":"9022034e7d5ecd0efab0762c5b806b7d"},
+{"collection":"lists","list_id":"diseases","order":"16","en":"Cardiac Failure","_id":"9022034e7d5ecd0efab0762c5b807324"},
+{"collection":"lists","list_id":"diseases","order":"17","en":"Rheumatic Fever","_id":"9022034e7d5ecd0efab0762c5b8082c9"},
+{"collection":"lists","list_id":"diseases","order":"18","en":"Eye Infection Other","_id":"9022034e7d5ecd0efab0762c5b808cd6"},
+{"collection":"lists","list_id":"diseases","order":"19","en":"Eye Infection Viral Keratoconjuctivitis","_id":"9022034e7d5ecd0efab0762c5b808ed9"},
+{"collection":"lists","list_id":"diseases","order":"20","en":"Eye Disease Non-Infectious","_id":"9022034e7d5ecd0efab0762c5b8091b0"},
+{"collection":"lists","list_id":"diseases","order":"21","en":"Eye Infection Acute","_id":"9022034e7d5ecd0efab0762c5b8097bd"},
+{"collection":"lists","list_id":"diseases","order":"22","en":"Eye Infection Chronic","_id":"9022034e7d5ecd0efab0762c5b8098b3"},
+{"collection":"lists","list_id":"diseases","order":"23","en":"Ear Infection Acute","_id":"9022034e7d5ecd0efab0762c5b80a11c"},
+{"collection":"lists","list_id":"diseases","order":"24","en":"Ear Infection Chronic","_id":"9022034e7d5ecd0efab0762c5b80b0dd"},
+{"collection":"lists","list_id":"diseases","order":"25","en":"Ear Disease Non-Infectious","_id":"9022034e7d5ecd0efab0762c5b80ba4c"},
+{"collection":"lists","list_id":"diseases","order":"26","en":"Cerebal Palsy","_id":"9022034e7d5ecd0efab0762c5b80c68f"},
+{"collection":"lists","list_id":"diseases","order":"27","en":"Epilepsy","_id":"9022034e7d5ecd0efab0762c5b80d624"},
+{"collection":"lists","list_id":"diseases","order":"28","en":"Anemia Mild/Moderate","_id":"9022034e7d5ecd0efab0762c5b80df26"},
+{"collection":"lists","list_id":"diseases","order":"29","en":"Anemia Severe","_id":"9022034e7d5ecd0efab0762c5b80e847"},
+{"collection":"lists","list_id":"diseases","order":"30","en":"Thyroid Disease","_id":"9022034e7d5ecd0efab0762c5b80ec32"},
+{"collection":"lists","list_id":"diseases","order":"31","en":"Sickle Cell","_id":"9022034e7d5ecd0efab0762c5b80f0cb"},
+{"collection":"lists","list_id":"diseases","order":"32","en":"Marasmus","_id":"9022034e7d5ecd0efab0762c5b80f3eb"},
+{"collection":"lists","list_id":"diseases","order":"33","en":"Kwashiorkor","_id":"9022034e7d5ecd0efab0762c5b81020e"},
+{"collection":"lists","list_id":"diseases","order":"34","en":"Diabetes","_id":"9022034e7d5ecd0efab0762c5b810bee"},
+{"collection":"lists","list_id":"diseases","order":"35","en":"Schistosomiasis","_id":"9022034e7d5ecd0efab0762c5b810dc5"},
+{"collection":"lists","list_id":"diseases","order":"36","en":"Louse Born Typhus","_id":"9022034e7d5ecd0efab0762c5b811b8b"},
+{"collection":"lists","list_id":"diseases","order":"37","en":"GUS","_id":"9022034e7d5ecd0efab0762c5b812364"},
+{"collection":"lists","list_id":"diseases","order":"38","en":"GUD","_id":"9022034e7d5ecd0efab0762c5b813101"},
+{"collection":"lists","list_id":"diseases","order":"39","en":"GDS","_id":"9022034e7d5ecd0efab0762c5b81406c"},
+{"collection":"lists","list_id":"diseases","order":"40","en":"PID","_id":"9022034e7d5ecd0efab0762c5b8149db"},
+{"collection":"lists","list_id":"diseases","order":"41","en":"Tuberculosis","_id":"9022034e7d5ecd0efab0762c5b815496"},
+{"collection":"lists","list_id":"diseases","order":"42","en":"Cerebral Spinal Meningitis (CSM)","_id":"9022034e7d5ecd0efab0762c5b815f23"},
+{"collection":"lists","list_id":"diseases","order":"43","en":"Cholera","_id":"9022034e7d5ecd0efab0762c5b81658a"},
+{"collection":"lists","list_id":"diseases","order":"44","en":"Diarrhea Acute (<14d)","_id":"9022034e7d5ecd0efab0762c5b817184"},
+{"collection":"lists","list_id":"diseases","order":"45","en":"Diarrhea Chronic (>14d)","_id":"9022034e7d5ecd0efab0762c5b817a61"},
+{"collection":"lists","list_id":"diseases","order":"46","en":"Dysentery","_id":"9022034e7d5ecd0efab0762c5b8181d0"},
+{"collection":"lists","list_id":"diseases","order":"47","en":"Influenza","_id":"9022034e7d5ecd0efab0762c5b818dcb"},
+{"collection":"lists","list_id":"diseases","order":"48","en":"Leprosy","_id":"9022034e7d5ecd0efab0762c5b8190a6"},
+{"collection":"lists","list_id":"diseases","order":"49","en":"Malaria No Test","_id":"9022034e7d5ecd0efab0762c5b819e71"},
+{"collection":"lists","list_id":"diseases","order":"50","en":"Malaria Blood Side Positive","_id":"9022034e7d5ecd0efab0762c5b81ab36"},
+{"collection":"lists","list_id":"diseases","order":"51","en":"Malaria mRDT Positive","_id":"9022034e7d5ecd0efab0762c5b81b6bb"},
+{"collection":"lists","list_id":"diseases","order":"52","en":"Malnutrition","_id":"9022034e7d5ecd0efab0762c5b81c097"},
+{"collection":"lists","list_id":"diseases","order":"53","en":"Measles","_id":"9022034e7d5ecd0efab0762c5b81cb4e"},
+{"collection":"lists","list_id":"diseases","order":"54","en":"Plague","_id":"9022034e7d5ecd0efab0762c5b81d835"},
+{"collection":"lists","list_id":"diseases","order":"55","en":"Rabies","_id":"9022034e7d5ecd0efab0762c5b81e3f1"},
+{"collection":"lists","list_id":"diseases","order":"56","en":"Typhoid","_id":"9022034e7d5ecd0efab0762c5b81f05f"},
+{"collection":"lists","list_id":"diseases","order":"57","en":"Yellow Fever","_id":"9022034e7d5ecd0efab0762c5b81f19a"},
+{"collection":"lists","list_id":"diseases","order":"58","en":"Respiratory Infection","_id":"9022034e7d5ecd0efab0762c5b81f2ef"},
+{"collection":"lists","list_id":"diseases","order":"59","en":"Respiratory Infection - Acute","_id":"9022034e7d5ecd0efab0762c5b8202be"},
+{"collection":"lists","list_id":"diseases","order":"60","en":"HIV, Symptomatic","_id":"9022034e7d5ecd0efab0762c5b820756"},
+{"collection":"lists","list_id":"diseases","order":"61","en":"Other STI","_id":"9022034e7d5ecd0efab0762c5b820f1c"},
+{"collection":"lists","list_id":"diseases","order":"62","en":"Neoplasm","_id":"9022034e7d5ecd0efab0762c5b821952"},
+{"collection":"lists","list_id":"diseases","order":"63","en":"Hepatitis","_id":"9022034e7d5ecd0efab0762c5b821d61"},
+{"collection":"lists","list_id":"diseases","order":"64","en":"Soil transmitted helminths","_id":"9022034e7d5ecd0efab0762c5b822d55"},
+{"collection":"lists","list_id":"diseases","order":"65","en":"Lymphatic filairiasis","_id":"9022034e7d5ecd0efab0762c5b8238f8"},
+{"collection":"lists","list_id":"diseases","order":"66","en":"Anthrax","_id":"9022034e7d5ecd0efab0762c5b8243e6"},
+{"collection":"lists","list_id":"diseases","order":"67","en":"Congenital Disorder","_id":"9022034e7d5ecd0efab0762c5b824bc1"},
+{"collection":"lists","list_id":"diseases","order":"68","en":"Gynecologic Disease","_id":"9022034e7d5ecd0efab0762c5b82504e"},
+{"collection":"lists","list_id":"diseases","order":"69","en":"Tetanus","_id":"9022034e7d5ecd0efab0762c5b825ef0"},
+{"collection":"lists","list_id":"diseases","order":"70","en":"Trachoma","_id":"9022034e7d5ecd0efab0762c5b826af7"},
+{"collection":"lists","list_id":"diseases","order":"71","en":"Onchocerciasis","_id":"9022034e7d5ecd0efab0762c5b82746a"},
+{"collection":"lists","list_id":"diseases","order":"72","en":"Trypanosumiasis","_id":"9022034e7d5ecd0efab0762c5b82827e"},
+{"collection":"lists","list_id":"diseases","order":"73","en":"Viral Haemorrhagic Fevers","_id":"9022034e7d5ecd0efab0762c5b828a41"},
+{"collection":"lists","list_id":"diseases","order":"74","en":"Intestinal Worms","_id":"9022034e7d5ecd0efab0762c5b828afe"},
+{"collection":"lists","list_id":"diseases","order":"75","en":"Cataract","_id":"9022034e7d5ecd0efab0762c5b829a14"},
+{"collection":"lists","list_id":"referral_locations","order":"1","en":"Not Applicable","_id":"9022034e7d5ecd0efab0762c5b829d36"},
+{"collection":"lists","list_id":"referral_locations","order":"2","en":"Laboratory","_id":"9022034e7d5ecd0efab0762c5b829ffe"},
+{"collection":"lists","list_id":"referral_locations","order":"3","en":"Pharmacy","_id":"9022034e7d5ecd0efab0762c5b82a60e"},
+{"collection":"lists","list_id":"referral_locations","order":"4","en":"Antenatal Clinic","_id":"9022034e7d5ecd0efab0762c5b82aa1c"},
+{"collection":"lists","list_id":"referral_locations","order":"5","en":"TB / Leprosy Department","_id":"9022034e7d5ecd0efab0762c5b82ac6e"},
+{"collection":"lists","list_id":"referral_locations","order":"6","en":"CTC","_id":"9022034e7d5ecd0efab0762c5b82b7cb"},
+{"collection":"lists","list_id":"referral_locations","order":"7","en":"Reproductive Counseling","_id":"9022034e7d5ecd0efab0762c5b82c701"},
+{"collection":"lists","list_id":"referral_locations","order":"8","en":"Immunization","_id":"9022034e7d5ecd0efab0762c5b82d672"},
+{"collection":"lists","list_id":"injuries","order":"1","en":"Animal Bite (suspected rabies)","_id":"9022034e7d5ecd0efab0762c5b82dbef"},
+{"collection":"lists","list_id":"injuries","order":"2","en":"Animal Bite (no rabies)","_id":"9022034e7d5ecd0efab0762c5b82e0a5"},
+{"collection":"lists","list_id":"injuries","order":"3","en":"Fracture","_id":"9022034e7d5ecd0efab0762c5b82e730"},
+{"collection":"lists","list_id":"injuries","order":"4","en":"Concussion / Head Injury","_id":"9022034e7d5ecd0efab0762c5b82ed90"},
+{"collection":"lists","list_id":"injuries","order":"5","en":"Motor Vehicle Accident","_id":"9022034e7d5ecd0efab0762c5b82f982"},
+{"collection":"lists","list_id":"injuries","order":"6","en":"Motorcycle Accident","_id":"9022034e7d5ecd0efab0762c5b82fbcf"},
+{"collection":"lists","list_id":"injuries","order":"7","en":"Laceration","_id":"9022034e7d5ecd0efab0762c5b830b07"},
+{"collection":"lists","list_id":"injuries","order":"8","en":"Crush injury","_id":"9022034e7d5ecd0efab0762c5b831160"},
+{"collection":"lists","list_id":"injuries","order":"9","en":"Burn","_id":"9022034e7d5ecd0efab0762c5b83155b"},
+{"collection":"lists","list_id":"injuries","order":"10","en":"Other","_id":"9022034e7d5ecd0efab0762c5b831984"},
+{"collection":"lists","list_id":"injury_treatments","order":"1","en":"None","_id":"9022034e7d5ecd0efab0762c5b832825"},
+{"collection":"lists","list_id":"injury_treatments","order":"2","en":"Wound Washout","_id":"9022034e7d5ecd0efab0762c5b8329c1"},
+{"collection":"lists","list_id":"injury_treatments","order":"3","en":"Suture of Laceration","_id":"9022034e7d5ecd0efab0762c5b8330cf"},
+{"collection":"lists","list_id":"injury_treatments","order":"4","en":"Topical Treatment of Burn","_id":"9022034e7d5ecd0efab0762c5b8330d6"},
+{"collection":"lists","list_id":"injury_treatments","order":"5","en":"Bone Setting/Cast","_id":"9022034e7d5ecd0efab0762c5b83353d"},
+{"collection":"lists","list_id":"injury_treatments","order":"6","en":"Surgery","_id":"9022034e7d5ecd0efab0762c5b833cd5"},
+{"collection":"lists","list_id":"injury_treatments","order":"7","en":"Blood Transfusion","_id":"9022034e7d5ecd0efab0762c5b834c0a"},
+{"collection":"lists","list_id":"injury_treatments","order":"8","en":"Antibiotics","_id":"9022034e7d5ecd0efab0762c5b835335"},
+{"collection":"lists","list_id":"injury_treatments","order":"9","en":"Antivenom","_id":"9022034e7d5ecd0efab0762c5b835462"},
+{"collection":"lists","list_id":"injury_treatments","order":"10","en":"Other","_id":"9022034e7d5ecd0efab0762c5b8362d3"},
+{"collection":"lists","list_id":"immunizations","order":"1","en":"BCG","_id":"9022034e7d5ecd0efab0762c5b836d19"},
+{"collection":"lists","list_id":"immunizations","order":"2","en":"OPV-0","_id":"9022034e7d5ecd0efab0762c5b837343"},
+{"collection":"lists","list_id":"immunizations","order":"3","en":"OPV-1","_id":"9022034e7d5ecd0efab0762c5b8376ad"},
+{"collection":"lists","list_id":"immunizations","order":"4","en":"OPV-2","_id":"9022034e7d5ecd0efab0762c5b837c7c"},
+{"collection":"lists","list_id":"immunizations","order":"5","en":"OPV-3","_id":"9022034e7d5ecd0efab0762c5b837eb2"},
+{"collection":"lists","list_id":"immunizations","order":"6","en":"DTP-HB","_id":"9022034e7d5ecd0efab0762c5b8382eb"},
+{"collection":"lists","list_id":"immunizations","order":"7","en":"DPT 1","_id":"9022034e7d5ecd0efab0762c5b8388a6"},
+{"collection":"lists","list_id":"immunizations","order":"8","en":"DPT 2","_id":"9022034e7d5ecd0efab0762c5b838b93"},
+{"collection":"lists","list_id":"immunizations","order":"9","en":"DPT 3","_id":"9022034e7d5ecd0efab0762c5b8392fd"},
+{"collection":"lists","list_id":"immunizations","order":"10","en":"Measles","_id":"9022034e7d5ecd0efab0762c5b839930"},
+{"collection":"lists","list_id":"immunizations","order":"11","en":"Tentanus Toxoid 1","_id":"9022034e7d5ecd0efab0762c5b839fce"},
+{"collection":"lists","list_id":"immunizations","order":"12","en":"Tentanus Toxoid 2","_id":"9022034e7d5ecd0efab0762c5b83ab1c"},
+{"collection":"lists","list_id":"immunizations","order":"13","en":"Tentanus Toxoid 3","_id":"9022034e7d5ecd0efab0762c5b83b5a7"},
+{"collection":"lists","list_id":"immunizations","order":"14","en":"Tentanus Toxoid 4","_id":"9022034e7d5ecd0efab0762c5b83c30b"},
+{"collection":"lists","list_id":"immunizations","order":"15","en":"Tentanus Toxoid 5","_id":"9022034e7d5ecd0efab0762c5b83caa8"},
+{"collection":"lists","list_id":"immunizations","order":"16","en":"Vitamin A","_id":"9022034e7d5ecd0efab0762c5b83d2af"},
+{"collection":"lists","list_id":"immunizations","order":"17","en":"Other","_id":"9022034e7d5ecd0efab0762c5b83d3c8"},
+{"collection":"lists","list_id":"immunization_effects","order":"1","en":"None","_id":"9022034e7d5ecd0efab0762c5b83db28"},
+{"collection":"lists","list_id":"immunization_effects","order":"2","en":"Shortness of Breath","_id":"9022034e7d5ecd0efab0762c5b83e2f5"},
+{"collection":"lists","list_id":"immunization_effects","order":"3","en":"Tongue Swelling","_id":"9022034e7d5ecd0efab0762c5b83e825"},
+{"collection":"lists","list_id":"immunization_effects","order":"4","en":"Rash","_id":"9022034e7d5ecd0efab0762c5b83f24f"},
+{"collection":"lists","list_id":"immunization_effects","order":"5","en":"Fever","_id":"9022034e7d5ecd0efab0762c5b83fdd6"},
+{"collection":"lists","list_id":"immunization_effects","order":"6","en":"Swelling at Injection Site","_id":"9022034e7d5ecd0efab0762c5b840683"},
+{"collection":"lists","list_id":"immunization_effects","order":"7","en":"Nausea or Vomiting","_id":"9022034e7d5ecd0efab0762c5b84103f"},
+{"collection":"lists","list_id":"immunization_effects","order":"8","en":"Other","_id":"9022034e7d5ecd0efab0762c5b841668"},
+{"collection":"lists","list_id":"hiv_diagnosis_times","order":"1","en":"Unknown","_id":"9022034e7d5ecd0efab0762c5b8419f6"},
+{"collection":"lists","list_id":"hiv_diagnosis_times","order":"2","en":"Less Than 2 Month After Birth","_id":"9022034e7d5ecd0efab0762c5b8428db"},
+{"collection":"lists","list_id":"hiv_diagnosis_times","order":"3","en":"Between 2-18 Months After Birth","_id":"9022034e7d5ecd0efab0762c5b842d9d"},
+{"collection":"lists","list_id":"hiv_diagnosis_times","order":"4","en":"More Than 18 Months After Birth","_id":"9022034e7d5ecd0efab0762c5b843678"},
+{"collection":"lists","list_id":"menses_regularity","order":"1","en":"None","_id":"9022034e7d5ecd0efab0762c5b843a4c"},
+{"collection":"lists","list_id":"menses_regularity","order":"2","en":"Irregular Menses","_id":"9022034e7d5ecd0efab0762c5b84463a"},
+{"collection":"lists","list_id":"menses_regularity","order":"3","en":"Regular Menses Monthly","_id":"9022034e7d5ecd0efab0762c5b845402"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"1","en":"None","_id":"9022034e7d5ecd0efab0762c5b845d1c"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"2","en":"Fetal Death","_id":"9022034e7d5ecd0efab0762c5b84630c"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"3","en":"Neonatal Death","_id":"9022034e7d5ecd0efab0762c5b84647a"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"4","en":"Neonatal Injury","_id":"9022034e7d5ecd0efab0762c5b846afb"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"5","en":"Neonatal Tetanus","_id":"9022034e7d5ecd0efab0762c5b847987"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"6","en":"Neonatal Sepsis","_id":"9022034e7d5ecd0efab0762c5b84802f"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"7","en":"Birth Asphyxia","_id":"9022034e7d5ecd0efab0762c5b848efa"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"8","en":"Shoulder Dystocia","_id":"9022034e7d5ecd0efab0762c5b849bed"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"9","en":"Obstructed Labor","_id":"9022034e7d5ecd0efab0762c5b84a5f4"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"10","en":"TB","_id":"9022034e7d5ecd0efab0762c5b84b23a"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"11","en":"Diabetes","_id":"9022034e7d5ecd0efab0762c5b84bf7c"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"12","en":"Hemorrhage","_id":"9022034e7d5ecd0efab0762c5b84c899"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"13","en":"Intra-uterine Infection","_id":"9022034e7d5ecd0efab0762c5b84cbc4"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"14","en":"Cesarean Section","_id":"9022034e7d5ecd0efab0762c5b84cfdc"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"15","en":"Seizure","_id":"9022034e7d5ecd0efab0762c5b84d6f7"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"16","en":"Forceps/Vacuum","_id":"9022034e7d5ecd0efab0762c5b84e34a"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"17","en":"Sepsis","_id":"9022034e7d5ecd0efab0762c5b84e701"},
+{"collection":"lists","list_id":"pregnancy_complications","order":"18","en":"Other","_id":"9022034e7d5ecd0efab0762c5b84f0de"},
+{"collection":"lists","list_id":"marital_statuses","order":"1","en":"Single","_id":"9022034e7d5ecd0efab0762c5b84f5d6"},
+{"collection":"lists","list_id":"marital_statuses","order":"2","en":"Married","_id":"9022034e7d5ecd0efab0762c5b84f782"},
+{"collection":"lists","list_id":"marital_statuses","order":"3","en":"Divorced","_id":"9022034e7d5ecd0efab0762c5b8500a0"},
+{"collection":"lists","list_id":"marital_statuses","order":"4","en":"Separated","_id":"9022034e7d5ecd0efab0762c5b8507ec"},
+{"collection":"lists","list_id":"marital_statuses","order":"5","en":"Widowed","_id":"9022034e7d5ecd0efab0762c5b851170"},
+{"collection":"lists","list_id":"contraceptives","order":"1","en":"None","_id":"9022034e7d5ecd0efab0762c5b851562"},
+{"collection":"lists","list_id":"contraceptives","order":"2","en":"Pills","_id":"9022034e7d5ecd0efab0762c5b852178"},
+{"collection":"lists","list_id":"contraceptives","order":"3","en":"Condoms","_id":"9022034e7d5ecd0efab0762c5b8526d7"},
+{"collection":"lists","list_id":"contraceptives","order":"4","en":"IUD","_id":"9022034e7d5ecd0efab0762c5b85291c"},
+{"collection":"lists","list_id":"contraceptives","order":"5","en":"Other Implants","_id":"9022034e7d5ecd0efab0762c5b8536a3"},
+{"collection":"lists","list_id":"contraceptives","order":"6","en":"Depo Provera","_id":"9022034e7d5ecd0efab0762c5b8540e0"},
+{"collection":"lists","list_id":"contraceptives","order":"7","en":"Sterilization","_id":"9022034e7d5ecd0efab0762c5b854c1f"},
+{"collection":"lists","list_id":"contraceptives","order":"8","en":"Natural ways","_id":"9022034e7d5ecd0efab0762c5b855590"},
+{"collection":"lists","list_id":"contraceptives","order":"9","en":"Other","_id":"9022034e7d5ecd0efab0762c5b8560a4"},
+{"collection":"lists","list_id":"fertility_desires","order":"1","en":"Desires Pregnancy Now","_id":"9022034e7d5ecd0efab0762c5b856552"},
+{"collection":"lists","list_id":"fertility_desires","order":"2","en":"Desires Contraception Now","_id":"9022034e7d5ecd0efab0762c5b856e0b"},
+{"collection":"lists","list_id":"fertility_desires","order":"3","en":"Desires Future Pregnancy","_id":"9022034e7d5ecd0efab0762c5b857925"},
+{"collection":"lists","list_id":"hiv_risks","order":"1","en":"Patient Known to Have HIV","_id":"9022034e7d5ecd0efab0762c5b8584b3"},
+{"collection":"lists","list_id":"hiv_risks","order":"2","en":"Partner or Previous Partner Known to Have HIV","_id":"9022034e7d5ecd0efab0762c5b85912f"},
+{"collection":"lists","list_id":"hiv_risks","order":"3","en":"History of Sexual Assult","_id":"9022034e7d5ecd0efab0762c5b85a0df"},
+{"collection":"lists","list_id":"hiv_risks","order":"4","en":"Desires HIV Testing","_id":"9022034e7d5ecd0efab0762c5b85aa87"},
+{"collection":"lists","list_id":"drug_quantities","order":"1","en":"Not Applicable","_id":"9022034e7d5ecd0efab0762c5b85b708"},
+{"collection":"lists","list_id":"drug_quantities","order":"2","en":"1 Month Supply","_id":"9022034e7d5ecd0efab0762c5b85c4de"},
+{"collection":"lists","list_id":"drug_quantities","order":"3","en":"2 Month Supply","_id":"9022034e7d5ecd0efab0762c5b85ca10"},
+{"collection":"lists","list_id":"drug_quantities","order":"4","en":"3 Month Supply","_id":"9022034e7d5ecd0efab0762c5b85d516"},
+{"collection":"lists","list_id":"drug_quantities","order":"5","en":"4 Month Supply","_id":"9022034e7d5ecd0efab0762c5b85dd8e"},
+{"collection":"lists","list_id":"drug_quantities","order":"6","en":"5 Month Supply","_id":"9022034e7d5ecd0efab0762c5b85e3ac"},
+{"collection":"lists","list_id":"drug_quantities","order":"7","en":"6 Month Supply","_id":"9022034e7d5ecd0efab0762c5b85f197"},
+{"collection":"lists","list_id":"drug_quantities","order":"8","en":"7 Month Supply","_id":"9022034e7d5ecd0efab0762c5b85fc74"},
+{"collection":"lists","list_id":"drug_quantities","order":"9","en":"8 Month Supply","_id":"9022034e7d5ecd0efab0762c5b860638"},
+{"collection":"lists","list_id":"drug_quantities","order":"10","en":"9 Month Supply","_id":"9022034e7d5ecd0efab0762c5b860fa3"},
+{"collection":"lists","list_id":"drug_quantities","order":"11","en":"10 Month Supply","_id":"9022034e7d5ecd0efab0762c5b861174"},
+{"collection":"lists","list_id":"drug_quantities","order":"12","en":"11 Month Supply","_id":"9022034e7d5ecd0efab0762c5b8612f3"},
+{"collection":"lists","list_id":"drug_quantities","order":"13","en":"12 Month Supply","_id":"9022034e7d5ecd0efab0762c5b86141a"},
+{"collection":"lists","list_id":"drug_quantities","order":"14","en":"More Than One Year Supply","_id":"9022034e7d5ecd0efab0762c5b862259"},
+{"collection":"lists","list_id":"comdom_quanitites","order":"1","en":"Not Applicable","_id":"9022034e7d5ecd0efab0762c5b862f7b"},
+{"collection":"lists","list_id":"comdom_quanitites","order":"2","en":"1 to 10","_id":"9022034e7d5ecd0efab0762c5b863830"},
+{"collection":"lists","list_id":"comdom_quanitites","order":"3","en":"11 to 20","_id":"9022034e7d5ecd0efab0762c5b864306"},
+{"collection":"lists","list_id":"comdom_quanitites","order":"4","en":"21 to 30","_id":"9022034e7d5ecd0efab0762c5b864ba3"},
+{"collection":"lists","list_id":"comdom_quanitites","order":"5","en":"31 to 40","_id":"9022034e7d5ecd0efab0762c5b86533b"},
+{"collection":"lists","list_id":"comdom_quanitites","order":"6","en":"41 to 50","_id":"9022034e7d5ecd0efab0762c5b8660d0"},
+{"collection":"lists","list_id":"comdom_quanitites","order":"7","en":"50+","_id":"9022034e7d5ecd0efab0762c5b866ab9"},
+{"collection":"lists","list_id":"depoprovera_quantities","order":"1","en":"3 Month Dose","_id":"9022034e7d5ecd0efab0762c5b86769c"},
+{"collection":"lists","list_id":"depoprovera_quantities","order":"2","en":"6 Month Dose","_id":"9022034e7d5ecd0efab0762c5b8676fb"},
+{"collection":"lists","list_id":"cervical_symptoms","order":"1","en":"Vaginal Discharge","_id":"9022034e7d5ecd0efab0762c5b867c30"},
+{"collection":"lists","list_id":"cervical_symptoms","order":"2","en":"Post-Coital Bleeding","_id":"9022034e7d5ecd0efab0762c5b8680ed"},
+{"collection":"lists","list_id":"infant_weights","order":"1","en":"No Previous Delivery","_id":"9022034e7d5ecd0efab0762c5b868e56"},
+{"collection":"lists","list_id":"infant_weights","order":"2","en":"Unknown","_id":"9022034e7d5ecd0efab0762c5b8697ad"},
+{"collection":"lists","list_id":"infant_weights","order":"3","en":"<1kg","_id":"9022034e7d5ecd0efab0762c5b86a3bf"},
+{"collection":"lists","list_id":"infant_weights","order":"4","en":"1kg","_id":"9022034e7d5ecd0efab0762c5b86b014"},
+{"collection":"lists","list_id":"infant_weights","order":"5","en":"1.5kg","_id":"9022034e7d5ecd0efab0762c5b86b143"},
+{"collection":"lists","list_id":"infant_weights","order":"6","en":"2kg","_id":"9022034e7d5ecd0efab0762c5b86b850"},
+{"collection":"lists","list_id":"infant_weights","order":"7","en":"2.5kg","_id":"9022034e7d5ecd0efab0762c5b86c47f"},
+{"collection":"lists","list_id":"infant_weights","order":"8","en":"3kg","_id":"9022034e7d5ecd0efab0762c5b86d0e6"},
+{"collection":"lists","list_id":"infant_weights","order":"9","en":"3.5kg","_id":"9022034e7d5ecd0efab0762c5b86df2f"},
+{"collection":"lists","list_id":"infant_weights","order":"10","en":"4kg+","_id":"9022034e7d5ecd0efab0762c5b86e4b3"},
+{"collection":"lists","list_id":"hiv_statuses","order":"1","en":"Positive","_id":"9022034e7d5ecd0efab0762c5b86e9f0"},
+{"collection":"lists","list_id":"hiv_statuses","order":"2","en":"Negative","_id":"9022034e7d5ecd0efab0762c5b86eb2e"},
+{"collection":"lists","list_id":"hiv_statuses","order":"3","en":"Unknown","_id":"9022034e7d5ecd0efab0762c5b86efd2"},
+{"collection":"lists","list_id":"anc_symptoms","order":"1","en":"None","_id":"9022034e7d5ecd0efab0762c5b86f295"},
+{"collection":"lists","list_id":"anc_symptoms","order":"2","en":"Abdominal Pain","_id":"9022034e7d5ecd0efab0762c5b8701fa"},
+{"collection":"lists","list_id":"anc_symptoms","order":"3","en":"Vaginal Pain","_id":"9022034e7d5ecd0efab0762c5b870e66"},
+{"collection":"lists","list_id":"anc_symptoms","order":"4","en":"Vaginal Bleeding","_id":"9022034e7d5ecd0efab0762c5b8719f7"},
+{"collection":"lists","list_id":"anc_symptoms","order":"5","en":"Loss of Fetal Movement","_id":"9022034e7d5ecd0efab0762c5b8723c3"},
+{"collection":"lists","list_id":"anc_symptoms","order":"6","en":"Vaginal Leakage of Fluid","_id":"9022034e7d5ecd0efab0762c5b872523"},
+{"collection":"lists","list_id":"anc_symptoms","order":"7","en":"Headache","_id":"9022034e7d5ecd0efab0762c5b872607"},
+{"collection":"lists","list_id":"anc_symptoms","order":"8","en":"Blurred Vision","_id":"9022034e7d5ecd0efab0762c5b872871"},
+{"collection":"lists","list_id":"anc_symptoms","order":"9","en":"Nausea or Vomiting","_id":"9022034e7d5ecd0efab0762c5b873526"},
+{"collection":"lists","list_id":"anc_symptoms","order":"10","en":"Diarrhea","_id":"9022034e7d5ecd0efab0762c5b874445"},
+{"collection":"lists","list_id":"anc_symptoms","order":"11","en":"Constipation","_id":"9022034e7d5ecd0efab0762c5b874822"},
+{"collection":"lists","list_id":"anc_symptoms","order":"12","en":"Fever","_id":"9022034e7d5ecd0efab0762c5b874cd7"},
+{"collection":"lists","list_id":"anc_symptoms","order":"13","en":"Contractions","_id":"9022034e7d5ecd0efab0762c5b875194"},
+{"collection":"lists","list_id":"anc_symptoms","order":"14","en":"Post-Coital Bleeding","_id":"9022034e7d5ecd0efab0762c5b875321"},
+{"collection":"lists","list_id":"fetal_stations","order":"1","en":"Not Examined","_id":"9022034e7d5ecd0efab0762c5b87536d"},
+{"collection":"lists","list_id":"fetal_stations","order":"2","en":"High/Unengaged","_id":"9022034e7d5ecd0efab0762c5b875886"},
+{"collection":"lists","list_id":"fetal_stations","order":"3","en":"-3","_id":"9022034e7d5ecd0efab0762c5b8761c8"},
+{"collection":"lists","list_id":"fetal_stations","order":"4","en":"-2","_id":"9022034e7d5ecd0efab0762c5b876bba"},
+{"collection":"lists","list_id":"fetal_stations","order":"5","en":"-1","_id":"9022034e7d5ecd0efab0762c5b876c0a"},
+{"collection":"lists","list_id":"fetal_stations","order":"6","en":"0","_id":"9022034e7d5ecd0efab0762c5b877b42"},
+{"collection":"lists","list_id":"fetal_stations","order":"7","en":"1","_id":"9022034e7d5ecd0efab0762c5b877bbf"},
+{"collection":"lists","list_id":"fetal_stations","order":"8","en":"2","_id":"9022034e7d5ecd0efab0762c5b87814f"},
+{"collection":"lists","list_id":"fetal_stations","order":"9","en":"3","_id":"9022034e7d5ecd0efab0762c5b8788e9"},
+{"collection":"lists","list_id":"fetal_movements","order":"1","en":"Too Early To Be Felt","_id":"9022034e7d5ecd0efab0762c5b8796d4"},
+{"collection":"lists","list_id":"fetal_movements","order":"2","en":"Felt By Mother","_id":"9022034e7d5ecd0efab0762c5b87a036"},
+{"collection":"lists","list_id":"fetal_movements","order":"3","en":"Felt By Mother, Noted to be Abnormal","_id":"9022034e7d5ecd0efab0762c5b87a987"},
+{"collection":"lists","list_id":"fetal_movements","order":"4","en":"Not Felt By Mother","_id":"9022034e7d5ecd0efab0762c5b87b096"},
+{"collection":"lists","list_id":"fetal_heart_rates","order":"1","en":"Not Checked","_id":"9022034e7d5ecd0efab0762c5b87b0d7"},
+{"collection":"lists","list_id":"fetal_heart_rates","order":"2","en":"Checked, But Unable To Hear","_id":"9022034e7d5ecd0efab0762c5b87c02e"},
+{"collection":"lists","list_id":"fetal_heart_rates","order":"3","en":"110s","_id":"9022034e7d5ecd0efab0762c5b87cd72"},
+{"collection":"lists","list_id":"fetal_heart_rates","order":"4","en":"120s","_id":"9022034e7d5ecd0efab0762c5b87ce5d"},
+{"collection":"lists","list_id":"fetal_heart_rates","order":"5","en":"130s","_id":"9022034e7d5ecd0efab0762c5b87d880"},
+{"collection":"lists","list_id":"fetal_heart_rates","order":"6","en":"140s","_id":"9022034e7d5ecd0efab0762c5b87db58"},
+{"collection":"lists","list_id":"fetal_heart_rates","order":"7","en":"150s","_id":"9022034e7d5ecd0efab0762c5b87e2e1"},
+{"collection":"lists","list_id":"fetal_heart_rates","order":"8","en":"160s","_id":"9022034e7d5ecd0efab0762c5b87e6b4"},
+{"collection":"lists","list_id":"fetal_heart_rates","order":"9","en":"170s","_id":"9022034e7d5ecd0efab0762c5b87f259"},
+{"collection":"lists","list_id":"fetal_heart_rates","order":"10","en":"180s","_id":"9022034e7d5ecd0efab0762c5b87f906"},
+{"collection":"lists","list_id":"anemia_severities","order":"1","en":"<8.5g/dl","_id":"9022034e7d5ecd0efab0762c5b8804b7"},
+{"collection":"lists","list_id":"anemia_severities","order":"2","en":">8.5g/dl","_id":"9022034e7d5ecd0efab0762c5b880dec"},
+{"collection":"lists","list_id":"milk_types","order":"1","en":"Mother's Milk ONLY","_id":"9022034e7d5ecd0efab0762c5b88129e"},
+{"collection":"lists","list_id":"milk_types","order":"2","en":"Mother's Milk + Formula","_id":"9022034e7d5ecd0efab0762c5b88219d"},
+{"collection":"lists","list_id":"milk_types","order":"3","en":"Mother's Milk + Other","_id":"9022034e7d5ecd0efab0762c5b882467"},
+{"collection":"lists","list_id":"milk_types","order":"4","en":"Formula ONLY","_id":"9022034e7d5ecd0efab0762c5b882b01"},
+{"collection":"lists","list_id":"milk_types","order":"5","en":"Formula + Other","_id":"9022034e7d5ecd0efab0762c5b8835cb"},
+{"collection":"lists","list_id":"milk_types","order":"6","en":"Other ONLY","_id":"9022034e7d5ecd0efab0762c5b883dd2"},
+{"collection":"lists","list_id":"contraceptive_sources","order":"1","en":"Clinic","_id":"9022034e7d5ecd0efab0762c5b883ee9"},
+{"collection":"lists","list_id":"contraceptive_sources","order":"2","en":"Community Based Distribution (CBD)","_id":"9022034e7d5ecd0efab0762c5b884672"},
+{"collection":"lists","list_id":"contraceptive_sources","order":"3","en":"Both","_id":"9022034e7d5ecd0efab0762c5b88496d"},
+{"collection":"lists","list_id":"water_sodium_severities","order":"1","en":"severe","_id":"9022034e7d5ecd0efab0762c5b884f51"},
+{"collection":"lists","list_id":"water_sodium_severities","order":"2","en":"mild","_id":"9022034e7d5ecd0efab0762c5b885a26"},
+{"collection":"lists","list_id":"water_sodium_severities","order":"3","en":"uncertain","_id":"9022034e7d5ecd0efab0762c5b8865c0"},
+{"collection":"lists","list_id":"genders","order":"1","en":"Female","_id":"9022034e7d5ecd0efab0762c5b8866fe"},
+{"collection":"lists","list_id":"genders","order":"2","en":"Male","_id":"9022034e7d5ecd0efab0762c5b886b2c"},
+{"collection":"lists","list_id":"genders","order":"3","en":"Unknown","_id":"9022034e7d5ecd0efab0762c5b887045"},
+{"collection":"lists","list_id":"form_lists","order":"1","en":"#/forms/list","_id":"9022034e7d5ecd0efab0762c5b8875c4"},
+{"collection":"lists","list_id":"delivery_type","order":"1","en":"Home delivery","_id":"9022034e7d5ecd0efab0762c5b8879d5"},
+{"collection":"lists","list_id":"delivery_type","order":"2","en":"Delivered by traditional birth attendant","_id":"9022034e7d5ecd0efab0762c5b888066"},
+{"collection":"lists","list_id":"delivery_type","order":"3","en":"Delivered in clinic","_id":"9022034e7d5ecd0efab0762c5b88851f"},
+{"collection":"lists","list_id":"delivery_type","order":"4","en":"Delivered on the way to clinic","_id":"9022034e7d5ecd0efab0762c5b888bad"},
+{"collection":"lists","list_id":"delivery_type","order":"5","en":"Delivered by skilled provider","_id":"9022034e7d5ecd0efab0762c5b889a5d"},
+{"collection":"lists","list_id":"delivery_mode","order":"1","en":"Vaginal","_id":"9022034e7d5ecd0efab0762c5b88a88c"},
+{"collection":"lists","list_id":"delivery_mode","order":"2","en":"C-section","_id":"9022034e7d5ecd0efab0762c5b88ad32"},
+{"collection":"lists","list_id":"delivery_mode","order":"3","en":"Vacuum","_id":"9022034e7d5ecd0efab0762c5b88af4d"},
+{"collection":"lists","list_id":"delivery_mode","order":"4","en":"Breech","_id":"9022034e7d5ecd0efab0762c5b88b1c1"},
+{"collection":"lists","list_id":"delivery_mode","order":"5","en":"Other","_id":"9022034e7d5ecd0efab0762c5b88bdf3"},
+{"collection":"lists","list_id":"prenatal_prob","order":"1","en":"APH","_id":"9022034e7d5ecd0efab0762c5b88c6c2"},
+{"collection":"lists","list_id":"prenatal_prob","order":"2","en":"PROM","_id":"9022034e7d5ecd0efab0762c5b88cfad"},
+{"collection":"lists","list_id":"prenatal_prob","order":"3","en":"high BP","_id":"9022034e7d5ecd0efab0762c5b88dbe4"},
+{"collection":"lists","list_id":"prenatal_prob","order":"4","en":"eclampsia","_id":"9022034e7d5ecd0efab0762c5b88e865"},
+{"collection":"lists","list_id":"prenatal_prob","order":"5","en":"pre-eclampsia","_id":"9022034e7d5ecd0efab0762c5b88f1a8"},
+{"collection":"lists","list_id":"prenatal_prob","order":"6","en":"anemia","_id":"9022034e7d5ecd0efab0762c5b88ffd7"},
+{"collection":"lists","list_id":"prenatal_prob","order":"7","en":"malaria","_id":"9022034e7d5ecd0efab0762c5b8905c8"},
+{"collection":"lists","list_id":"prenatal_prob","order":"8","en":"HIV","_id":"9022034e7d5ecd0efab0762c5b8911c1"},
+{"collection":"lists","list_id":"prenatal_prob","order":"9","en":"HIV stage III or stage IV","_id":"9022034e7d5ecd0efab0762c5b891e00"},
+{"collection":"lists","list_id":"prenatal_prob","order":"10","en":"ectopic pregnancy ","_id":"9022034e7d5ecd0efab0762c5b8923c2"},
+{"collection":"lists","list_id":"prenatal_prob","order":"11","en":"abortion complications","_id":"9022034e7d5ecd0efab0762c5b89272d"},
+{"collection":"lists","list_id":"prenatal_prob","order":"12","en":"other","_id":"9022034e7d5ecd0efab0762c5b892ef8"},
+{"collection":"lists","list_id":"birth_comp","order":"1","en":"PPH","_id":"9022034e7d5ecd0efab0762c5b893b9b"},
+{"collection":"lists","list_id":"birth_comp","order":"2","en":"eclampsia","_id":"9022034e7d5ecd0efab0762c5b893f0e"},
+{"collection":"lists","list_id":"birth_comp","order":"3","en":"pre-eclapmsia","_id":"9022034e7d5ecd0efab0762c5b8944b4"},
+{"collection":"lists","list_id":"birth_comp","order":"4","en":"obstructed labor","_id":"9022034e7d5ecd0efab0762c5b895490"},
+{"collection":"lists","list_id":"birth_comp","order":"5","en":"retained placenta","_id":"9022034e7d5ecd0efab0762c5b895bd5"},
+{"collection":"lists","list_id":"birth_comp","order":"6","en":"ruptured uterus","_id":"9022034e7d5ecd0efab0762c5b895e83"},
+{"collection":"lists","list_id":"birth_comp","order":"7","en":"sepsis/infection","_id":"9022034e7d5ecd0efab0762c5b896183"},
+{"collection":"lists","list_id":"birth_comp","order":"8","en":"other","_id":"9022034e7d5ecd0efab0762c5b8962b8"},
+{"collection":"lists","list_id":"birth_comp","order":"9","en":"given IV antibiotics","_id":"9022034e7d5ecd0efab0762c5b896c6f"},
+{"collection":"lists","list_id":"birth_comp","order":"10","en":"given uterotonics","_id":"9022034e7d5ecd0efab0762c5b897164"},
+{"collection":"lists","list_id":"birth_comp","order":"11","en":"given blood transfusion","_id":"9022034e7d5ecd0efab0762c5b897886"},
+{"collection":"lists","list_id":"birth_comp","order":"12","en":"placenta removed by hand","_id":"9022034e7d5ecd0efab0762c5b89827a"},
+{"collection":"lists","list_id":"birth_comp","order":"13","en":"MVA needed","_id":"9022034e7d5ecd0efab0762c5b898bb9"},
+{"collection":"lists","list_id":"postnatal_mother_diagnoses","order":"1","en":"severe anemia (Hb<8.5)","_id":"9022034e7d5ecd0efab0762c5b899736"},
+{"collection":"lists","list_id":"postnatal_mother_diagnoses","order":"2","en":" mental disorder","_id":"9022034e7d5ecd0efab0762c5b899863"},
+{"collection":"lists","list_id":"postnatal_mother_diagnoses","order":"3","en":"gaping or infected perineum ","_id":"9022034e7d5ecd0efab0762c5b8998d2"},
+{"collection":"lists","list_id":"postnatal_mother_diagnoses","order":"4","en":"fistula","_id":"9022034e7d5ecd0efab0762c5b89a63c"},
+{"collection":"lists","list_id":"immunizations_postnatal","order":"1","en":"BCG","_id":"9022034e7d5ecd0efab0762c5b89a667"},
+{"collection":"lists","list_id":"immunizations_postnatal","order":"2","en":"OPV-0","_id":"9022034e7d5ecd0efab0762c5b89aa6d"},
+{"collection":"lists","list_id":"postnatal_child_diagnoses","order":"1","en":"septicemia","_id":"9022034e7d5ecd0efab0762c5b89b4a0"},
+{"collection":"lists","list_id":"postnatal_child_diagnoses","order":"2","en":"umbilical cord infection","_id":"9022034e7d5ecd0efab0762c5b89b55b"},
+{"collection":"lists","list_id":"postnatal_child_diagnoses","order":"3","en":"severe anemia (Hb<10)","_id":"9022034e7d5ecd0efab0762c5b89bef5"},
+{"collection":"lists","list_id":"postnatal_child_diagnoses","order":"4","en":"skin infection","_id":"9022034e7d5ecd0efab0762c5b89c0fe"},
+{"collection":"lists","list_id":"postnatal_child_diagnoses","order":"5","en":"neonatal death","_id":"9022034e7d5ecd0efab0762c5b89cf2b"},
+{"collection":"lists","list_id":"leprosy_diagnoses","order":"1","en":"tb","_id":"9022034e7d5ecd0efab0762c5b89ded2"},
+{"collection":"lists","list_id":"leprosy_diagnoses","order":"2","en":"leprosy","_id":"9022034e7d5ecd0efab0762c5b89e781"},
+{"collection":"lists","list_id":"leprosy_classifications","order":"1","en":"MB (A)","_id":"9022034e7d5ecd0efab0762c5b89eef7"},
+{"collection":"lists","list_id":"leprosy_classifications","order":"2","en":"MB (C)","_id":"9022034e7d5ecd0efab0762c5b89f55e"},
+{"collection":"lists","list_id":"leprosy_classifications","order":"3","en":"PB (A)","_id":"9022034e7d5ecd0efab0762c5b89ff7c"},
+{"collection":"lists","list_id":"leprosy_classifications","order":"4","en":"PB (C)","_id":"9022034e7d5ecd0efab0762c5b8a0221"},
+{"collection":"lists","list_id":"leprosy_statuses","order":"1","en":"Return after default","_id":"9022034e7d5ecd0efab0762c5b8a0741"},
+{"collection":"lists","list_id":"leprosy_statuses","order":"2","en":"Relapse after MDT","_id":"9022034e7d5ecd0efab0762c5b8a1187"},
+{"collection":"lists","list_id":"leprosy_statuses","order":"3","en":"Relapse after DDS/other","_id":"9022034e7d5ecd0efab0762c5b8a17aa"},
+{"collection":"lists","list_id":"leprosy_disabilities","order":"1","en":"Grade 0","_id":"9022034e7d5ecd0efab0762c5b8a1954"},
+{"collection":"lists","list_id":"leprosy_disabilities","order":"2","en":"Grade 1","_id":"9022034e7d5ecd0efab0762c5b8a24f2"},
+{"collection":"lists","list_id":"leprosy_disabilities","order":"3","en":"Grade 2","_id":"9022034e7d5ecd0efab0762c5b8a2f8b"},
+{"collection":"lists","list_id":"leprosy_results","order":"1","en":"Treatment completed","_id":"9022034e7d5ecd0efab0762c5b8a375c"},
+{"collection":"lists","list_id":"leprosy_results","order":"2","en":"Died","_id":"9022034e7d5ecd0efab0762c5b8a44ec"},
+{"collection":"lists","list_id":"leprosy_results","order":"3","en":"Transferred out","_id":"9022034e7d5ecd0efab0762c5b8a4729"},
+{"collection":"lists","list_id":"leprosy_results","order":"4","en":"Defaulter","_id":"9022034e7d5ecd0efab0762c5b8a4d27"},
+{"collection":"lists","list_id":"leprosy_results","order":"5","en":"Not applicable","_id":"9022034e7d5ecd0efab0762c5b8a5616"},
+{"collection":"lists","list_id":"tb_classifications","order":"1","en":"AFB+","_id":"9022034e7d5ecd0efab0762c5b8a5707"},
+{"collection":"lists","list_id":"tb_classifications","order":"2","en":"AFB-","_id":"9022034e7d5ecd0efab0762c5b8a6693"},
+{"collection":"lists","list_id":"tb_classifications","order":"3","en":"Extra-pulmonary","_id":"9022034e7d5ecd0efab0762c5b8a6d56"},
+{"collection":"lists","list_id":"tb_regimens","order":"1","en":"2RHZE/4RH","_id":"9022034e7d5ecd0efab0762c5b8a6f60"},
+{"collection":"lists","list_id":"tb_regimens","order":"2","en":"2RHZ/4RH","_id":"9022034e7d5ecd0efab0762c5b8a7a88"},
+{"collection":"lists","list_id":"tb_regimens","order":"3","en":"2SRHZE/1RHZE/5RH3E3","_id":"9022034e7d5ecd0efab0762c5b8a8541"},
+{"collection":"lists","list_id":"tb_regimens","order":"4","en":"2SRHZE/1RHZE/5RHE","_id":"9022034e7d5ecd0efab0762c5b8a951b"},
+{"collection":"lists","list_id":"tb_regimens","order":"5","en":"2RHZE/6EH","_id":"9022034e7d5ecd0efab0762c5b8aa409"},
+{"collection":"lists","list_id":"tb_regimens","order":"6","en":"health facility DOT","_id":"9022034e7d5ecd0efab0762c5b8aabe6"},
+{"collection":"lists","list_id":"tb_regimens","order":"7","en":"home-based DOT","_id":"9022034e7d5ecd0efab0762c5b8abab8"},
+{"collection":"lists","list_id":"pregnancy_diseases","order":"1","en":"Tuberculosis","_id":"9022034e7d5ecd0efab0762c5b8ac023"},
+{"collection":"lists","list_id":"pregnancy_diseases","order":"2","en":"Diabetes","_id":"9022034e7d5ecd0efab0762c5b8acd21"},
+{"collection":"lists","list_id":"pregnancy_diseases","order":"3","en":"Heart Disease","_id":"9022034e7d5ecd0efab0762c5b8adbdd"}
 ]
