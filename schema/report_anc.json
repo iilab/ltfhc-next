@@ -9,12 +9,12 @@
         "number_of_expected_pregnant_women": {
             "line_number": "1",
             "sw": "Idadi ya Wajawazito Waliotegemewa",
-            "en": "Number of expected pregnant women",
+            "en": "Number of expected pregnant women"
         },
         "first_visit": {
             "line_number": "2",
             "sw": "Hudhurio la kwanza",
-            "en": "First visit",
+            "en": "First visit"
         },
         "gestational_age_below_12_weeks": {
             "line_number": "2a",
@@ -95,7 +95,7 @@
         "risk_factors": {
             "line_number": "4",
             "sw": "Vidokezo vya Hatari:",
-            "en": "Risk factors",
+            "en": "Risk factors"
         },
         "conceived_more_than_four_times": {
             "line_number": "4a",
@@ -275,7 +275,7 @@
         "pmtct": {
             "line_number": "5",
             "sw": "PMTCT:",
-            "en": "PMTCT",
+            "en": "PMTCT"
         },
         "pw_who_were_already_infected_by_hiv_before_starting_clinic": {
             "line_number": "5a",
@@ -445,7 +445,7 @@
             "malaria": {
                 "line_number": "6",
                 "sw": "Malaria:",
-                "en": "Malaria",
+                "en": "Malaria"
                 },
             "pw_given_a_voucher_for_hati_punguzo": {
                 "line_number": "6a",
@@ -489,7 +489,7 @@
             },
             "other_services": {
                 "sw": "Huduma Nyingine:",
-                "en": "Other services",
+                "en": "Other services"
                 },
             "pw_given_enough_iron_folic_tablets": {
                 "line_number": "7",
