@@ -48,8 +48,8 @@
         },
         "Relapsing_Fever": {
             "line_number": "9",
-            "sw": "Relapsing Fever (Louse borne Typhus)",
-            "en": "Relapsing Fever (Louse borne Typhus)"
+            "sw": "Relapsing Fever Louse borne Typhus",
+            "en": "Relapsing Fever Louse borne Typhus"
         },
         "Typhoid": {
             "line_number": "10",
@@ -58,13 +58,13 @@
         },
         "Diarrhea_Acute": {
             "line_number": "11",
-            "sw": "Diarrhea Acute (<14days)",
-            "en": "Diarrhea Acute (<14days)"
+            "sw": "Diarrhea Acute <14days",
+            "en": "Diarrhea Acute <14days"
         },
         "Diarrhea_Chronic": {
             "line_number": "1",
-            "sw": "Diarrhea Chronic (>or= 14days)",
-            "en": "Diarrhea Chronic (>or= 14days)"
+            "sw": "Diarrhea Chronic >or= 14days",
+            "en": "Diarrhea Chronic >or= 14days"
         },
         "Malaria_Severe/Complicated_Blood_Side_Positive": {
             "line_number": "13a",
@@ -78,8 +78,8 @@
         },
         "Malaria_Severe/Complicated_Clinical": {
             "line_number": "13c",
-            "sw": "Malaria Severe/Complicated Clinical (no test)",
-            "en": "Maleria Severe/Complicated Clinical (no test)"
+            "sw": "Malaria Severe/Complicated Clinical no test",
+            "en": "Maleria Severe/Complicated Clinical no test"
         },
         "Schistosomiasis": {
             "line_number": "14",
@@ -88,28 +88,28 @@
         },
         "STI_Genital_Discharge_Syndrome": {
             "line_number": "15",
-            "sw": "STI Genital Discharge Syndrome (GDS)",
-            "en": "STI Genital Discharge Syndrome (GDS)"
+            "sw": "STI Genital Discharge Syndrome GDS",
+            "en": "STI Genital Discharge Syndrome GDS"
         },
         "STI_Genital_Ulcer_Diseases": {
             "line_number": "16",
-            "sw": "STI Genital Ulcer Diseases (GUD)",
-            "en": "STI Genital Ulcer Diseases (GUD)"
+            "sw": "STI Genital Ulcer Diseases GUD",
+            "en": "STI Genital Ulcer Diseases GUD"
         },
         "STI_Pelvic_Inflammatory_Diseases": {
             "line_number": "17",
-            "sw": "STI Pelvic Inflammatory diseases (PID)",
-            "en": "STI Pelvic Inflammatory diseases (PID)"
+            "sw": "STI Pelvic Inflammatory diseases PID",
+            "en": "STI Pelvic Inflammatory diseases PID"
         },
         "Sexually_Transmitted_Infection": {
             "line_number": "18",
-            "sw": "Sexually Transmitted Infection, Other",
-            "en": "Sexually Transmitted Infection, Other"
+            "sw": "Sexually Transmitted Infection Other",
+            "en": "Sexually Transmitted Infection Other"
         },
         "Gynaecological_Diseases": {
             "line_number": "19",
-            "sw": "Gynaecological diseases, Other",
-            "en": "Gynaecological diseases, Other"
+            "sw": "Gynaecological diseases Other",
+            "en": "Gynaecological diseases Other"
         },
         "Tuberculosis": {
             "line_number": "20",
@@ -143,8 +143,8 @@
         },
         "Marasmic_Kwashiorkor": {
             "line_number": "26",
-            "sw": "Marasmic - kwashiorkor",
-            "en": "Marasmic - kwashiorkor"
+            "sw": "Marasmic_kwashiorkor",
+            "en": "Marasmic_kwashiorkor"
         },
         "Moderate_Malnutrition": {
             "line_number": "27",
@@ -153,8 +153,8 @@
         },
         "Nutritional_Disoders_Other": {
             "line_number": "28",
-            "sw": "Nutritional Disorders, Other",
-            "en": "Nutritional Disorders, Other"
+            "sw": "Nutritional Disorders Other",
+            "en": "Nutritional Disorders Other"
         },
         "Thyroid_Diseases": {
             "line_number": "29",
@@ -168,13 +168,13 @@
         },
         "Anaemia_Mild/Moderate": {
             "line_number": "31",
-            "sw": "Anaemia, Mild/Moderate",
-            "en": "Anaemia, Mild/Moderate"
+            "sw": "Anaemia Mild/Moderate",
+            "en": "Anaemia Mild/Moderate"
         },
         "Anaemia_Severe": {
             "line_number": "32",
-            "sw": "Anaemia, Severe",
-            "en": "Anaemia, Severe"
+            "sw": "Anaemia Severe",
+            "en": "Anaemia Severe"
         },
         "Psychoses": {
             "line_number": "33",
@@ -198,33 +198,33 @@
         },
         "Ear_Diseases_Non-infectious": {
             "line_number": "37",
-            "sw": "Ear Diseases, non-infectious",
-            "en": "Ear Diseases, non-infectious"
+            "sw": "Ear Diseases non-infectious",
+            "en": "Ear Diseases non-infectious"
         },
         "Ear_Infection_Acute": {
             "line_number": "38",
-            "sw": "Ear infection, Acute",
-            "en": "Ear infection, Acute"
+            "sw": "Ear infection Acute",
+            "en": "Ear infection Acute"
         },
         "Ear_Infection_Chronic": {
             "line_number": "39",
-            "sw": "Ear Infection, Chronic",
-            "en": "Ear Infection, Chronic"
+            "sw": "Ear Infection Chronic",
+            "en": "Ear Infection Chronic"
         },
         "Eye_Infections_Viral_Keratoconjunctivitis": {
             "line_number": "40",
-            "sw": "Eye Infections, Viral Keratoconjunctivitis",
-            "en": "Eye Infections, Viral Keratoconjunctivitis"
+            "sw": "Eye Infections Viral Keratoconjunctivitis",
+            "en": "Eye Infections Viral Keratoconjunctivitis"
         },
         "Eye_Infections_Other": {
             "line_number": "41",
-            "sw": "Eye Infections, Other",
-            "en": "Eye Infections, Other"
+            "sw": "Eye Infections Other",
+            "en": "Eye Infections Other"
         },
         "Eye_Diseases_Non-infectious": {
             "line_number": "42",
-            "sw": "Eye Diseases, Non-infectious",
-            "en": "Eye Diseases, Non-infectious"
+            "sw": "Eye Diseases Non-infectious",
+            "en": "Eye Diseases Non-infectious"
         },
         "Cardiac_Failure": {
             "line_number": "43",
@@ -233,8 +233,8 @@
         },
         "Hypertension_Severe": {
             "line_number": "44",
-            "sw": "Hypertension, severe",
-            "en": "Hypertension, severe"
+            "sw": "Hypertension severe",
+            "en": "Hypertension severe"
         },
         "Rheumatic_Fever": {
             "line_number": "45",
@@ -243,18 +243,18 @@
         },
         "Cardiovascular_Disorders_Other": {
             "line_number": "46",
-            "sw": "Cardiovascular Disorders, Other",
-            "en": "Cardiovascular Disorders, Other"
+            "sw": "Cardiovascular Disorders Other",
+            "en": "Cardiovascular Disorders Other"
         },
         "Broncial_Asthma_Severe": {
             "line_number": "47",
-            "sw": "Broncial Asthma, Severe",
-            "en": "Broncial Asthma, Severe"
+            "sw": "Broncial Asthma Severe",
+            "en": "Broncial Asthma Severe"
         },
         "Upper_Respiratory_Infections": {
             "line_number": "48",
-            "sw": "Upper Respiratory Infections (Pharyngitis, Tonsillitis, Rhinitis)",
-            "en": "Upper Respiratory Infections (Pharyngitis, Tonsillitis, Rhinitis)"
+            "sw": "Upper Respiratory Infections Pharyngitis/Tonsillitis/Rhinitis",
+            "en": "Upper Respiratory Infections Pharyngitis/Tonsillitis/Rhinitis"
         },
         "Pneumonia": {
             "line_number": "49",
@@ -263,13 +263,13 @@
         },
         "Pneumonia_Severe": {
             "line_number": "50",
-            "sw": "Pneumonia, Severe",
-            "en": "Pneumonia, Severe"
+            "sw": "Pneumonia Severe",
+            "en": "Pneumonia Severe"
         },
         "Respiratory_System_Disorders_Other": {
             "line_number": "51",
-            "sw": "Respiratory System disorders, Other",
-            "en": "Respiratory System disorders, Other"
+            "sw": "Respiratory System disorders Other",
+            "en": "Respiratory System disorders Other"
         },
         "Peptic_Ulcers": {
             "line_number": "52",
@@ -278,18 +278,18 @@
         },
         "Liver_Diseases_Non-infectious": {
             "line_number": "53",
-            "sw": "Liver diseases, Non-infectious",
-            "en": "Liver diseases, Non-infectious"
+            "sw": "Liver diseases Non-infectious",
+            "en": "Liver diseases Non-infectious"
         },
         "Gastrointestinal_Disease_Other_Non-infectious": {
             "line_number": "54",
-            "sw": "Gastrointestinal diseases, Other non-infectious",
-            "en": "Gastrointestinal diseases, Other non-infectious"
+            "sw": "Gastrointestinal diseases Other non-infectious",
+            "en": "Gastrointestinal diseases Other non-infectious"
         },
         "Urinary_Tract_Infections": {
             "line_number": "55",
-            "sw": "Urinary Tract Infections (UTI)",
-            "en": "Urinary Tract Infections (UTI)"
+            "sw": "Urinary Tract Infections UTI",
+            "en": "Urinary Tract Infections UTI"
         },
         "Nephrotic_Syndrome": {
             "line_number": "56",
@@ -308,8 +308,8 @@
         },
         "Skin_Diseases_Non-infectious": {
             "line_number": "59",
-            "sw": "Skin diseases, Non-infectious",
-            "en": "Skin diseases, Non-infectious"
+            "sw": "Skin diseases Non-infectious",
+            "en": "Skin diseases Non-infectious"
         },
         "Osteomyelitis": {
             "line_number": "60",
@@ -333,8 +333,8 @@
         },
         "Neonatal_Septicaemia": {
             "line_number": "64",
-            "sw": "Neonatal Septicaemia (Local infections)",
-            "en": "Neonatal Septicaemia (Local infections)"
+            "sw": "Neonatal Septicaemia Local infections",
+            "en": "Neonatal Septicaemia Local infections"
         },
         "Road_Traffic_Accidents": {
             "line_number": "65",
@@ -358,18 +358,18 @@
         },
         "Animal_Bites_Suspected_Rabies": {
             "line_number": "69",
-            "sw": "Animal Bites (Suspected Rabies)",
-            "en": "Animal Bites (Suspected Rabies)"
+            "sw": "Animal Bites Suspected Rabies",
+            "en": "Animal Bites Suspected Rabies"
         },
         "Animal_Bites_No_Suspected_Rabies": {
             "line_number": "70",
-            "sw": "Animal Bites (No suspected Rabies)",
-            "en": "Animal Bites (No suspected Rabies)"
+            "sw": "Animal Bites No suspected Rabies",
+            "en": "Animal Bites No suspected Rabies"
         },
         "HIV_Infection_Symptomatic": {
             "line_number": "71",
-            "sw": "HIV infection, Symptomatic",
-            "en": "HIV infection, Symptomatic"
+            "sw": "HIV infection Symptomatic",
+            "en": "HIV infection Symptomatic"
         },
         "Congenital_Disorders": {
             "line_number": "72",
@@ -403,8 +403,8 @@
         },
         "Diagnoses_Other": {
             "line_number": "78",
-            "sw": "Diagnoses, Other",
-            "en": "Diagnoses, Other"
+            "sw": "Diagnoses Other",
+            "en": "Diagnoses Other"
         }
     }
 }
