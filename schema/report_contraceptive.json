@@ -16,9 +16,9 @@
             "sw": "Idaji ya Wateja wa Sindano",
             "en": "Number of customers who use contraceptive injection",
             "value": {
-                    "name": "reproductive_counseling.contraception_current",
-                    "operation": "== 'Depo Provera",
-                    "type":"count"
+                "name": "reproductive_counseling.contraception_current",
+                "operation": "== 'Depo Provera",
+                "type": "count"
             }
         },
         "contraceptive_pills": {
@@ -286,21 +286,21 @@
             "sw": "Idadi ya kondomu zilizogawiwa Kituoni Me",
             "en": "Number of condoms given to male clients at the clinic"
         },
-    "number_of_condoms_given_to_female_clients_at_the_clinic": {
-        "line_number": "10b",
-        "sw": "Idadi ya kondomu zilizogawiwa Kituoni Ke",
-        "en": "Number of condoms given to female clients at the clinic"
-    },
-    "number_of_condoms_given_to_male_clients_by_cbd": {
-        "line_number": "10c",
-        "sw": "Idadi ya kondomu zilizogawiwa CBD Me",
-        "en": "Number of condoms given to male clients by CBD"
-    },
-    "number_of_condoms_given_to_female_clients_by_cbd": {
-        "line_number": "10d",
-        "sw": "Idadi ya kondomu zilizogawiwa CBD Ke",
-        "en": "Number of condoms given to female clients by CBD"
-    },
+        "number_of_condoms_given_to_female_clients_at_the_clinic": {
+            "line_number": "10b",
+            "sw": "Idadi ya kondomu zilizogawiwa Kituoni Ke",
+            "en": "Number of condoms given to female clients at the clinic"
+        },
+        "number_of_condoms_given_to_male_clients_by_cbd": {
+            "line_number": "10c",
+            "sw": "Idadi ya kondomu zilizogawiwa CBD Me",
+            "en": "Number of condoms given to male clients by CBD"
+        },
+        "number_of_condoms_given_to_female_clients_by_cbd": {
+            "line_number": "10d",
+            "sw": "Idadi ya kondomu zilizogawiwa CBD Ke",
+            "en": "Number of condoms given to female clients by CBD"
+        },
         "total_number_of_condoms_given_to_clients": {
             "line_number": "10e",
             "sw": "Idadi ya kondomu zilizogawiwa kituoni na CBD (10a+10b+10c+10d)",
