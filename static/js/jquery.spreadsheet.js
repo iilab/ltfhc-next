@@ -15,7 +15,7 @@
             thead_tr.append(th);
         });
 
-        return thead;
+        return thead_tr;
     };
 
 
@@ -87,7 +87,24 @@
     var createBody = function (columns, data) {
         var tbody = $('<tbody/>');
         _.each(data, function (doc) {
-            var tr = createRow(columns, doc);
+            var tr
+		    if (doc.header) {
+				heading = columns
+				for (col in heading) {
+					console.log(heading[col].property[0])
+					var val = doc[heading[col].property[0]]
+					if (heading[col].property[0] != "total") {
+						heading[col].label = val
+					} else {
+						heading[col].label = ""
+					}
+						
+				}
+//				heading.line_number.label = doc.line_number
+				tr = createHeadings(heading)
+			} else {
+	            tr = createRow(columns, doc);	
+			}
             tbody.append(tr);
         });
         return tbody;
@@ -956,7 +973,7 @@
             + '</div>';
 
         table = $('<table class="spreadsheet"></table>');
-        thead = createHeadings(options.columns);
+        thead = $('<thead/>').append(createHeadings(options.columns));
         tbody = createBody(options.columns, options.data);
 
         table.append(thead).append(tbody);
