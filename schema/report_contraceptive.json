@@ -15,43 +15,30 @@
             "line_number": "1a",
             "sw": "Idaji ya Wateja wa Sindano",
             "en": "Number of customers who use contraceptive injection",
-            "value": {
-                "name": "reproductive_counseling.contraception_current",
-                "operation": "== 'Depo Provera",
-                "type": "count"
-            }
-        },
+            "condition": "reproductive_counseling.contraception_current == 'Depo Provera'"
+		},
         "contraceptive_pills": {
             "line_number": "2",
             "sw": "Vidonge",
             "en": "Contraceptive pills",
-            "value": {
-                "field": "/visit/reproductive_counseling/contraception_current/pills"
-            }
         },
         "the_number_of_pills_clients_at_the_clinic": {
             "line_number": "2a",
             "sw": "Idadi ya wateja wa Vidonge Kituoni",
             "en": "The number of pills clients at the clinic",
-            "value": {
-                "field": "/visit/reproductive_counseling/contraception_current/pills/Total"
-            }
+            "condition": "reproductive_counseling.contraception_current == 'Pills' && !(reproductive_counseling.distribution == 'CBD')"
         },
         "number_of_pills_clients_through_cbd": {
             "line_number": "2b",
             "sw": "Idadi ya wateja wa vidonge wa CBD",
             "en": "Number of pills clients through CBD(Community Based Distribution)",
-            "value": {
-                "field": "/visit/reproductive_counseling/"
-            }
+            "condition": "reproductive_counseling.contraception_current == 'Pills' && reproductive_counseling.distribution == 'CBD'"
         },
         "the_number_of_clients_who_were_given_pills_at_the_clinic_and_through_cbd": {
             "line_number": "2c",
             "sw": "Jumla walochukua Vidonge Kituoni na CBD (2a+2b)",
             "en": "The number of clients who were given pills at the clinic and through CBD(2a+2b)",
-            "value": {
-                "field": "line 2a+2b"
-            }
+            "condition": "reproductive_counseling.contraception_current == 'Pills'"
         },
         "condoms": {
             "line_number": "3",
@@ -416,5 +403,21 @@
             "sw": "Wataja waliopata rufaa kwenda CTC",
             "en": "NEED TRANSLATION"
         },
-    }
+    },
+	"definitions": {
+		"columns": {
+			"below20": {
+				"title": "Below 20 years old",
+				"condition": "patient.approxage < 20"
+			},
+			"above20": {
+				"title": "Above 20 years old",
+				"condition": "patient.approxage >= 20"
+			},
+			"total": {
+				"title": "Total",
+				"condition": "true"
+			}
+		}
+	}
 }

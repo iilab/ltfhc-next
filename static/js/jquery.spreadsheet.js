@@ -91,7 +91,7 @@
 		    if (doc.header) {
 				heading = columns
 				for (col in heading) {
-					console.log(heading[col].property[0])
+//					console.log(heading[col].property[0])
 					var val = doc[heading[col].property[0]]
 					if (heading[col].property[0] != "total") {
 						heading[col].label = val
@@ -100,7 +100,6 @@
 					}
 						
 				}
-//				heading.line_number.label = doc.line_number
 				tr = createHeadings(heading)
 			} else {
 	            tr = createRow(columns, doc);	
