@@ -1,85 +1,84 @@
 {
-  "collection": "forms",
-  "class": "schema",
-  "parent": "visit",
-  "_id": "forms/schema/visit/diseasediagnosis",
-  "formname": "Disease Diagnosis",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "title": "Disease Diagnosis",
-  "properties": {
-    "complaint": {
-      "title": "Chief complaint",
-      "$ref": "complaints.json/#complaint"
+    "collection": "forms",
+    "class": "schema",
+    "parent": "visit",
+    "_id": "forms/schema/visit/diseasediagnosis",
+    "formname": "Disease Diagnosis",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Disease Diagnosis",
+    "properties": {
+        "complaint": {
+            "title": "Chief complaint"
+        },
+        "othercomplaint": {
+            "title": "If Chief Complaint not listed above, please write in:",
+            "type": "string"
+        },
+        "symptoms": {
+            "title": "Chief complaint",
+            "$ref": "../_list/show_list/view_list?l=symptoms/#thelist"
+        },
+        "othersymptoms": {
+            "title": "Other Symptoms",
+            "type": "string"
+        },
+        "history": {
+            "title": "History",
+            "$ref": "../_list/show_list/view_list?l=histories/#thelist"
+        },
+        "examnotes": {
+            "title": "Examination Notes",
+            "type": "string"
+        },
+        "testmethods": {
+            "title": "Testing Methods",
+            "type": "string"
+        },
+        "diseasediagnosis": {
+            "title": "Disease Diagnosis",
+            "$ref": "../_list/show_list/view_list?l=disesases/#thelist"
+        },
+        "otherdisease": {
+            "title": "Other Disease Diagnosis:",
+            "type": "string"
+        },
+        "treatment": {
+            "title": "treatment",
+            "type": "string"
+        },
+        "admission": {
+            "title": "Admission required?",
+            "type": "boolean",
+            "enum": [
+                true,
+                false
+            ],
+            "default": false
+        },
+        "mortality": {
+            "title": "Did Disease lead to death?",
+            "type": "boolean",
+            "enum": [
+                true,
+                false
+            ],
+            "default": false
+        },
+        "referral": {
+            "title": "Is referral required?",
+            "type": "boolean",
+            "enum": [
+                true,
+                false
+            ],
+            "default": false
+        }
     },
-    "othercomplaint": {
-      "title": "If Chief Complaint not listed above, please write in:",
-      "type": "string"
-    },
-    "symptoms": {
-      "title": "Chief complaint",
-      "$ref": "symptoms/#symptoms"
-    },
-    "othersymptoms": {
-      "title": "Other Symptoms",
-      "type": "string"
-    },
-    "history": {
-      "title": "Chief complaint",
-      "$ref": "symptoms/#symptoms"
-    },
-    "examnotes": {
-      "title": "Examination Notes",
-      "type": "string"
-    },
-    "testmethods": {
-      "title": "Testing Methods",
-      "type": "string"
-    },
-    "diseasediagnosis": {
-      "title": "Disease Diagnosis",
-      "$ref": "diseases/#disease"
-    },
-    "otherdisease": {
-      "title": "Other Disease Diagnosis:",
-      "type": "string"
-    },
-    "treatment": {
-      "title": "treatment",
-      "type": "string"
-    },
-    "admission": {
-      "title": "Admission required?",
-      "type": "boolean",
-      "enum": [
-        true,
-        false
-      ],
-      "default": false
-    },
-    "mortality": {
-      "title": "Did Disease lead to death?",
-      "type": "boolean",
-      "enum": [
-        true,
-        false
-      ],
-      "default": false
-    },
-    "referral": {
-      "title": "Is referral required?",
-      "type": "boolean",
-      "enum": [
-        true,
-        false
-      ],
-      "default": false
-    }
-  },
-  "required": [
-    "complaint",
-    "symptoms",
-    "examnotes",
-    "diseasediagnosis"
-  ]
+    "required": [
+        "complaint",
+        "symptoms",
+        "examnotes",
+        "diseasediagnosis"
+    ]
 }

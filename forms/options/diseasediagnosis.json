@@ -1,4 +1,12 @@
 {
+    "fields": {
+        "complaint": {
+            "options": {
+                "type": "select",
+                "dataSource": "../_list/show_list2/view_list?l=symptoms"
+            }
+        }
+    },
     "renderForm": true,
     "form": {
         "attributes": {
@@ -10,5 +18,6 @@
             "reset": {}
         }
     },
+
     "focus": true
 }
