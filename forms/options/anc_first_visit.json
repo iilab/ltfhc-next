@@ -1,19 +1,498 @@
 {
+  "schema": {
+    "title": "First Antenatal Visit",
+    "_id": "anc_first_visit",
+    "type": "object",
+    "properties": {
+      "last_menstrual_period": {
+        "type": "number"
+      },
+      "due_date": {
+        "type": "number"
+      },
+      "gestational_age": {
+        "type": "number"
+      },
+      "number_pregnancy": {
+        "type": "number"
+      },
+      "pregnancy_test": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "number_full_term_delivery": {
+        "type": "number"
+      },
+      "number_pre_term_delivery": {
+        "type": "number"
+      },
+      "number_miscarriage_abortion": {
+        "type": "number"
+      },
+      "number_live_birth": {
+        "type": "number"
+      },
+      "weight_heaviest_infant": {
+        "type": "string",
+        "enum": [
+          "No Previous Delivery",
+          "Unknown",
+          "<1kg",
+          "1kg",
+          "1.5kg",
+          "2kg",
+          "2.5kg",
+          "3kg",
+          "3.5kg",
+          "4kg+"
+        ]
+      },
+      "pregnancy_complications0": {
+        "type": "string"
+      },
+      "pregnancy_complications1": {
+        "type": "string"
+      },
+      "pregnancy_complications2": {
+        "type": "string"
+      },
+      "pregnancy_complications3": {
+        "type": "string"
+      },
+      "pregnancy_complications4": {
+        "type": "string"
+      },
+      "pregnancy_complications5": {
+        "type": "string"
+      },
+      "pregnancy_complications6": {
+        "type": "string"
+      },
+      "pregnancy_complications7": {
+        "type": "string"
+      },
+      "pregnancy_complications8": {
+        "type": "string"
+      },
+      "pregnancy_complications9": {
+        "type": "string"
+      },
+      "pregnancy_complications10": {
+        "type": "string"
+      },
+      "pregnancy_complications11": {
+        "type": "string"
+      },
+      "pregnancy_complications12": {
+        "type": "string"
+      },
+      "pregnancy_complications13": {
+        "type": "string"
+      },
+      "pregnancy_complications14": {
+        "type": "string"
+      },
+      "pregnancy_complications15": {
+        "type": "string"
+      },
+      "other_pregnancy_complications": {
+        "type": "string"
+      },
+      "std_status": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "std_treatment": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "hiv_status": {
+        "type": "string",
+        "enum": [
+          "Positive",
+          "Negative",
+          "Unknown"
+        ]
+      },
+      "syphillus_status": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "syphillus_treatment": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "partner_std": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "partner_std_treatment": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "partner_syphillus": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "partner_syphillus_treatment": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "bp_systolic": {
+        "type": "number"
+      },
+      "bp_diastolic": {
+        "type": "number"
+      },
+      "anemia_severe": {
+        "type": "string",
+        "enum": [
+          "<8.5g/dl",
+          ">8.5g/dl"
+        ]
+      },
+      "symptoms0": {
+        "type": "string"
+      },
+      "symptoms1": {
+        "type": "string"
+      },
+      "symptoms2": {
+        "type": "string"
+      },
+      "symptoms3": {
+        "type": "string"
+      },
+      "symptoms4": {
+        "type": "string"
+      },
+      "symptoms5": {
+        "type": "string"
+      },
+      "symptoms6": {
+        "type": "string"
+      },
+      "symptoms7": {
+        "type": "string"
+      },
+      "symptoms8": {
+        "type": "string"
+      },
+      "symptoms9": {
+        "type": "string"
+      },
+      "symptoms10": {
+        "type": "string"
+      },
+      "symptoms11": {
+        "type": "string"
+      },
+      "symptoms12": {
+        "type": "string"
+      },
+      "symptoms13": {
+        "type": "string"
+      },
+      "other_symptoms": {
+        "type": "string"
+      },
+      "fundal_height": {
+        "type": "number"
+      },
+      "fetal_heart_rate": {
+        "type": "number"
+      },
+      "treatment_given": {
+        "type": "string"
+      },
+      "notes": {
+        "type": "string"
+      },
+      "admission": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "in_labor": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    }
+  },
+  "options": {
     "fields": {
-        "notes": {
-            "type": "textarea"
-        }
-    },
-    "renderForm": true,
-    "form": {
-        "attributes": {
-            "action": "/todo",
-            "method": "post"
-        },
-        "buttons": {
-            "submit": {},
-            "reset": {}
-        }
-    },
-    "focus": true
+      "last_menstrual_period": {
+        "label": "Date of Last Menstrual Period:",
+        "type": "number"
+      },
+      "due_date": {
+        "label": "Expected Due Date:",
+        "type": "number"
+      },
+      "gestational_age": {
+        "label": "Approximate Estiamted Gestational Age (weeks):",
+        "type": "number"
+      },
+      "number_pregnancy": {
+        "label": "Pregnancy Number:",
+        "type": "number"
+      },
+      "pregnancy_test": {
+        "label": "Positive Pregnancy Test?",
+        "type": "radio"
+      },
+      "number_full_term_delivery": {
+        "label": "Number of Previous Full Term Deliveries:",
+        "type": "number"
+      },
+      "number_pre_term_delivery": {
+        "label": "Number of Previous Preterm Deliveries:",
+        "type": "number"
+      },
+      "number_miscarriage_abortion": {
+        "label": "Number of Previous Miscarriages/Abortions:",
+        "type": "number"
+      },
+      "number_live_birth": {
+        "label": "Number of Previous Live Births",
+        "type": "number"
+      },
+      "weight_heaviest_infant": {
+        "label": "Approximate Weight of Heaviest Infant Previously Delivered:",
+        "type": "select"
+      },
+      "pregnancy_complications0": {
+        "label": "Complications in Previous Pregnancies:",
+        "type": "checkbox",
+        "rightLabel": "None"
+      },
+      "pregnancy_complications1": {
+        "type": "checkbox",
+        "rightLabel": "Fetal Death"
+      },
+      "pregnancy_complications2": {
+        "type": "checkbox",
+        "rightLabel": "Neonatal Death"
+      },
+      "pregnancy_complications3": {
+        "type": "checkbox",
+        "rightLabel": "Neonatal Injury"
+      },
+      "pregnancy_complications4": {
+        "type": "checkbox",
+        "rightLabel": "Neonatal Tetanus"
+      },
+      "pregnancy_complications5": {
+        "type": "checkbox",
+        "rightLabel": "Neonatal Sepsis"
+      },
+      "pregnancy_complications6": {
+        "type": "checkbox",
+        "rightLabel": "Birth Asphyxia"
+      },
+      "pregnancy_complications7": {
+        "type": "checkbox",
+        "rightLabel": "Shoulder Dystocia"
+      },
+      "pregnancy_complications8": {
+        "type": "checkbox",
+        "rightLabel": "Obstructed Labor"
+      },
+      "pregnancy_complications9": {
+        "type": "checkbox",
+        "rightLabel": "Hemorrhage"
+      },
+      "pregnancy_complications10": {
+        "type": "checkbox",
+        "rightLabel": "Intra-uterine Infection"
+      },
+      "pregnancy_complications11": {
+        "type": "checkbox",
+        "rightLabel": "Cesarean Section"
+      },
+      "pregnancy_complications12": {
+        "type": "checkbox",
+        "rightLabel": "Seizure"
+      },
+      "pregnancy_complications13": {
+        "type": "checkbox",
+        "rightLabel": "Forceps/Vacuum"
+      },
+      "pregnancy_complications14": {
+        "type": "checkbox",
+        "rightLabel": "Sepsis"
+      },
+      "pregnancy_complications15": {
+        "type": "checkbox",
+        "rightLabel": "Other"
+      },
+      "other_pregnancy_complications": {
+        "label": "If Other Pregnancy Complciation, Please Describe:"
+      },
+      "std_status": {
+        "label": "Infected with STD",
+        "type": "radio"
+      },
+      "std_treatment": {
+        "label": "Being treated for STD",
+        "type": "radio"
+      },
+      "hiv_status": {
+        "label": "HIV Status:",
+        "type": "select"
+      },
+      "syphillus_status": {
+        "label": "Infected with Syphillus",
+        "type": "radio"
+      },
+      "syphillus_treatment": {
+        "label": "Being treated for Syphillus",
+        "type": "radio"
+      },
+      "partner_std": {
+        "label": "Partner infected with STD",
+        "type": "radio"
+      },
+      "partner_std_treatment": {
+        "label": "Partner being treated for STD",
+        "type": "radio"
+      },
+      "partner_syphillus": {
+        "label": "Partner infected with Syphillus",
+        "type": "radio"
+      },
+      "partner_syphillus_treatment": {
+        "label": "Partner being treated for Syphillus",
+        "type": "radio"
+      },
+      "bp_systolic": {
+        "label": "BP Systolic",
+        "type": "number"
+      },
+      "bp_diastolic": {
+        "label": "BP Diastolic",
+        "type": "number"
+      },
+      "anemia_severe": {
+        "label": "Severe Anemia?",
+        "type": "select"
+      },
+      "symptoms0": {
+        "label": "Symptoms:",
+        "type": "checkbox",
+        "rightLabel": "None"
+      },
+      "symptoms1": {
+        "type": "checkbox",
+        "rightLabel": "Abdominal Pain"
+      },
+      "symptoms2": {
+        "type": "checkbox",
+        "rightLabel": "Vaginal Pain"
+      },
+      "symptoms3": {
+        "type": "checkbox",
+        "rightLabel": "Vaginal Bleeding"
+      },
+      "symptoms4": {
+        "type": "checkbox",
+        "rightLabel": "Loss of Fetal Movement"
+      },
+      "symptoms5": {
+        "type": "checkbox",
+        "rightLabel": "Vaginal Leakage of Fluid"
+      },
+      "symptoms6": {
+        "type": "checkbox",
+        "rightLabel": "Headache"
+      },
+      "symptoms7": {
+        "type": "checkbox",
+        "rightLabel": "Blurred Vision"
+      },
+      "symptoms8": {
+        "type": "checkbox",
+        "rightLabel": "Nausea or Vomiting"
+      },
+      "symptoms9": {
+        "type": "checkbox",
+        "rightLabel": "Diarrhea"
+      },
+      "symptoms10": {
+        "type": "checkbox",
+        "rightLabel": "Constipation"
+      },
+      "symptoms11": {
+        "type": "checkbox",
+        "rightLabel": "Fever"
+      },
+      "symptoms12": {
+        "type": "checkbox",
+        "rightLabel": "Contractions"
+      },
+      "symptoms13": {
+        "type": "checkbox",
+        "rightLabel": "Post-Coital Bleeding"
+      },
+      "other_symptoms": {
+        "label": "If Other Symptom, Please Describe:"
+      },
+      "fundal_height": {
+        "label": "Fundal Height (cm):",
+        "type": "number"
+      },
+      "fetal_heart_rate": {
+        "label": "Fetal Heart Rate (Beats Per Minute):",
+        "type": "number"
+      },
+      "treatment_given": {
+        "label": "If Any Treatment Given, Please Describe:",
+        "type": "textarea"
+      },
+      "notes": {
+        "label": "Examination Notes:",
+        "type": "textarea"
+      },
+      "admission": {
+        "label": "Admission Required Today?",
+        "type": "radio"
+      },
+      "in_labor": {
+        "label": "Laboring Now?",
+        "type": "radio"
+      }
+    }
+  }
 }
