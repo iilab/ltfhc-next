@@ -4,7 +4,7 @@
 	"description": "Medical Record for LTFHC",
 	"attachments": ["static", "forms", "schema"],
 	"load": "lib/app",
-	"modules": ["lib"],
+	"modules": ["lib", "views"],
     "dust": {
         "templates": "templates"
     },
