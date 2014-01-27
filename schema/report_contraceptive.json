@@ -55,28 +55,28 @@
             "line_number": "3b",
             "sw": "Idadi ya wateja waliochukua kondom Kituoni Ke",
             "en": "The number of Female clients who were given condoms at the clinic",
-            "condition": "reproductive_counseling.female/condoms"
+            "condition": "patient.gender == 'female' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'Clinic'"
 
         },
         "number_of__male_clients_who_were_given_condoms_by_cbd": {
             "line_number": "3c",
             "sw": "Idadi ya wateja waliochukua kondom CBD Me",
             "en": "Number of male clients who were given condoms by CBD",
-            "condition": "reproductive_counseling.male/condoms_cbd"
+            "condition": "patient.gender == 'male' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'CBD'"
 
         },
         "number_of_female_clients_who_were_given_condoms_by_cbd": {
             "line_number": "3d",
             "sw": "Idadi ya wateja waliochukua kondom CBD Ke",
             "en": "Number of female clients who were given condoms by CBD",
-            "condition": "reproductive_counseling.female/condoms_cbd"
+            "condition": "patient.gender == 'female' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'CBD'"
 
         },
         "total_customers_who_given_condoms_at_the_clinic_and_cbd": {
             "line_number": "3e",
             "sw": "Jumla ya Wateja waliochukua kondomu (kituoni na CBD) (3a+3b+3c+3d)",
             "en": "Total Customers who given condoms at the clinic and CBD (3a+3b+3c+3d)",
-            "condition": "reproductive_counseling.condoms/total"
+            "condition": "reproductive_counseling.contraception_current == 'Condoms'"
 
         },
         "total_customers_who_took_short-term_course": {
@@ -100,28 +100,28 @@
             "line_number": "4a",
             "sw": "Kufunga Uzazi mama (ML/LA) - kituoni",
             "en": "Women sterilization (ML / LA) - at the clinic",
-            "condition": "reproductive_counseling.female/sterilization"
+            "condition": "patient.gender == 'female' && reproductive_counseling.contraception_dispensed == 'Sterilization' && reproductive_counseling.contraception_source == 'Clinic'"
 
         },
         "women_sterilization_ml_la_outreach": {
             "line_number": "4b",
             "sw": "Kufunga Uzazi mama (ML/LA) - outreach",
             "en": "Women sterilization (ML / LA) - outreach",
-            "condition": "reproductive_counseling.female/sterilization/outreach"
+            "condition": "patient.gender == 'female' && reproductive_counseling.contraception_dispensed == 'Sterilization' && reproductive_counseling.contraception_source == 'outreach'"
 
         },
         "men_sterilization_nsv_at_the_clinic": {
             "line_number": "4c",
             "sw": "Kufunga uzazi baba (NSV) - kituoni",
             "en": "Men sterilization (NSV) - at the clinic",
-            "condition": "reproductive_counseling.male/sterilization/clinic"
+            "condition": "patient.gender == 'male' && reproductive_counseling.contraception_dispensed == 'Sterilization' && reproductive_counseling.contraception_source == 'Clinic'"
 
         },
         "men_sterilization_nsv_outreach": {
             "line_number": "4d",
             "sw": "Kufung uzazi baba (NSV) - outreach",
             "en": "Men sterilization (NSV) - outreach",
-            "condition": "reproductive_counseling.male/sterilization/outreach"
+            "condition": "patient.gender == 'male' && reproductive_counseling.contraception_dispensed == 'Sterilization' && reproductive_counseling.contraception_source == 'outreach'"
 
         },
         "implants": {
