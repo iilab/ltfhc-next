@@ -1,0 +1,498 @@
+{
+  "schema": {
+    "title": "Disease Diagnosis",
+    "_id": "diseaseDiagnosis",
+    "type": "object",
+    "properties": {
+      "complaint0": {
+        "type": "string"
+      },
+      "complaint1": {
+        "type": "string"
+      },
+      "complaint2": {
+        "type": "string"
+      },
+      "complaint3": {
+        "type": "string"
+      },
+      "complaint4": {
+        "type": "string"
+      },
+      "complaint5": {
+        "type": "string"
+      },
+      "complaint6": {
+        "type": "string"
+      },
+      "complaint7": {
+        "type": "string"
+      },
+      "complaint8": {
+        "type": "string"
+      },
+      "complaint9": {
+        "type": "string"
+      },
+      "complaint10": {
+        "type": "string"
+      },
+      "complaint11": {
+        "type": "string"
+      },
+      "complaint12": {
+        "type": "string"
+      },
+      "complaint13": {
+        "type": "string"
+      },
+      "complaint14": {
+        "type": "string"
+      },
+      "complaint15": {
+        "type": "string"
+      },
+      "complaint_other": {
+        "type": "string"
+      },
+      "symptom0": {
+        "type": "string"
+      },
+      "symptom1": {
+        "type": "string"
+      },
+      "symptom2": {
+        "type": "string"
+      },
+      "symptom3": {
+        "type": "string"
+      },
+      "symptom4": {
+        "type": "string"
+      },
+      "symptom5": {
+        "type": "string"
+      },
+      "symptom6": {
+        "type": "string"
+      },
+      "symptom7": {
+        "type": "string"
+      },
+      "symptom8": {
+        "type": "string"
+      },
+      "symptom9": {
+        "type": "string"
+      },
+      "symptom10": {
+        "type": "string"
+      },
+      "symptom11": {
+        "type": "string"
+      },
+      "symptom12": {
+        "type": "string"
+      },
+      "symptom13": {
+        "type": "string"
+      },
+      "symptom14": {
+        "type": "string"
+      },
+      "symptom15": {
+        "type": "string"
+      },
+      "symptom_other": {
+        "type": "string"
+      },
+      "history0": {
+        "type": "string"
+      },
+      "history1": {
+        "type": "string"
+      },
+      "history2": {
+        "type": "string"
+      },
+      "history3": {
+        "type": "string"
+      },
+      "history4": {
+        "type": "string"
+      },
+      "history5": {
+        "type": "string"
+      },
+      "history6": {
+        "type": "string"
+      },
+      "history7": {
+        "type": "string"
+      },
+      "history8": {
+        "type": "string"
+      },
+      "history9": {
+        "type": "string"
+      },
+      "history10": {
+        "type": "string"
+      },
+      "history_other": {
+        "type": "string"
+      },
+      "note": {
+        "type": "string"
+      },
+      "testing_method": {
+        "type": "string"
+      },
+      "diagnosis": {
+        "type": "string",
+        "enum": [
+          "Other",
+          "Skin Infection - Fungal",
+          "Skin Infection - Non-fungal",
+          "Skin Diseases - Non-infectious",
+          "Osteomyelitis",
+          "UTI",
+          "GI Disease Non-Infectious",
+          "Cardiovascular Disorder other",
+          "Liver Disease Infectious",
+          "Liver Disease Non-Infectious",
+          "Peptic Ulcers",
+          "Pneumonia Mild/Moderate",
+          "Pneumonia Severe",
+          "Asthma",
+          "Acute Flaccid Paralysis / Polio",
+          "Cardiac Failure",
+          "Rheumatic Fever",
+          "Eye Infection Other",
+          "Eye Infection Viral Keratoconjuctivitis",
+          "Eye Disease Non-Infectious",
+          "Eye Infection Acute",
+          "Eye Infection Chronic",
+          "Ear Infection Acute",
+          "Ear Infection Chronic",
+          "Ear Disease Non-Infectious",
+          "Cerebal Palsy",
+          "Epilepsy",
+          "Anemia Mild/Moderate",
+          "Anemia Severe",
+          "Thyroid Disease",
+          "Sickle Cell",
+          "Marasmus",
+          "Kwashiorkor",
+          "Diabetes",
+          "Schistosomiasis",
+          "Louse Born Typhus",
+          "GUS",
+          "GUD",
+          "GDS",
+          "PID",
+          "Tuberculosis",
+          "Cerebral Spinal Meningitis (CSM)",
+          "Cholera",
+          "Diarrhea Acute (<14d)",
+          "Diarrhea Chronic (>14d)",
+          "Dysentery",
+          "Influenza",
+          "Leprosy",
+          "Malaria No Test",
+          "Malaria Blood Side Positive",
+          "Malaria mRDT Positive",
+          "Malnutrition",
+          "Measles",
+          "Plague",
+          "Rabies",
+          "Typhoid",
+          "Yellow Fever",
+          "Respiratory Infection",
+          "Respiratory Infection - Acute",
+          "HIV, Symptomatic",
+          "Other STI",
+          "Neoplasm",
+          "Hepatitis",
+          "Soil transmitted helminths",
+          "Lymphatic filairiasis",
+          "Anthrax",
+          "Congenital Disorder",
+          "Gynecologic Disease",
+          "Tetanus",
+          "Trachoma",
+          "Onchocerciasis",
+          "Trypanosumiasis",
+          "Viral Haemorrhagic Fevers",
+          "Intestinal Worms",
+          "Cataract"
+        ]
+      },
+      "diagnosis_other": {
+        "type": "string"
+      },
+      "treatment": {
+        "type": "string"
+      },
+      "admission": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "disease_mortality": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "referral": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "referral_location": {
+        "type": "string",
+        "enum": [
+          "Not Applicable",
+          "Laboratory",
+          "Pharmacy",
+          "Antenatal Clinic",
+          "TB / Leprosy Department",
+          "CTC",
+          "Reproductive Counseling",
+          "Immunization"
+        ]
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "complaint0": {
+        "label": "Chief Complaint:",
+        "type": "checkbox",
+        "rightLabel": "Other"
+      },
+      "complaint1": {
+        "type": "checkbox",
+        "rightLabel": "Body Aches"
+      },
+      "complaint2": {
+        "type": "checkbox",
+        "rightLabel": "Chills"
+      },
+      "complaint3": {
+        "type": "checkbox",
+        "rightLabel": "Diarrhea"
+      },
+      "complaint4": {
+        "type": "checkbox",
+        "rightLabel": "Fever"
+      },
+      "complaint5": {
+        "type": "checkbox",
+        "rightLabel": "Headache"
+      },
+      "complaint6": {
+        "type": "checkbox",
+        "rightLabel": "Shortness of Breath"
+      },
+      "complaint7": {
+        "type": "checkbox",
+        "rightLabel": "Nausea or Vomiting"
+      },
+      "complaint8": {
+        "type": "checkbox",
+        "rightLabel": "Rigors"
+      },
+      "complaint9": {
+        "type": "checkbox",
+        "rightLabel": "Night Sweats"
+      },
+      "complaint10": {
+        "type": "checkbox",
+        "rightLabel": "Rash"
+      },
+      "complaint11": {
+        "type": "checkbox",
+        "rightLabel": "Abdominal Pain"
+      },
+      "complaint12": {
+        "type": "checkbox",
+        "rightLabel": "Cough"
+      },
+      "complaint13": {
+        "type": "checkbox",
+        "rightLabel": "Difficultly with Urination"
+      },
+      "complaint14": {
+        "type": "checkbox",
+        "rightLabel": "Weakness"
+      },
+      "complaint15": {
+        "type": "checkbox",
+        "rightLabel": "Weight Loss"
+      },
+      "complaint_other": {
+        "label": "Other Complaint:"
+      },
+      "symptom0": {
+        "label": "Symptoms:",
+        "type": "checkbox",
+        "rightLabel": "Other"
+      },
+      "symptom1": {
+        "type": "checkbox",
+        "rightLabel": "Body Aches"
+      },
+      "symptom2": {
+        "type": "checkbox",
+        "rightLabel": "Chills"
+      },
+      "symptom3": {
+        "type": "checkbox",
+        "rightLabel": "Diarrhea"
+      },
+      "symptom4": {
+        "type": "checkbox",
+        "rightLabel": "Fever"
+      },
+      "symptom5": {
+        "type": "checkbox",
+        "rightLabel": "Headache"
+      },
+      "symptom6": {
+        "type": "checkbox",
+        "rightLabel": "Shortness of Breath"
+      },
+      "symptom7": {
+        "type": "checkbox",
+        "rightLabel": "Nausea or Vomiting"
+      },
+      "symptom8": {
+        "type": "checkbox",
+        "rightLabel": "Rigors"
+      },
+      "symptom9": {
+        "type": "checkbox",
+        "rightLabel": "Night Sweats"
+      },
+      "symptom10": {
+        "type": "checkbox",
+        "rightLabel": "Rash"
+      },
+      "symptom11": {
+        "type": "checkbox",
+        "rightLabel": "Abdominal Pain"
+      },
+      "symptom12": {
+        "type": "checkbox",
+        "rightLabel": "Cough"
+      },
+      "symptom13": {
+        "type": "checkbox",
+        "rightLabel": "Difficultly with Urination"
+      },
+      "symptom14": {
+        "type": "checkbox",
+        "rightLabel": "Weakness"
+      },
+      "symptom15": {
+        "type": "checkbox",
+        "rightLabel": "Weight Loss"
+      },
+      "symptom_other": {
+        "label": "Other Symptoms:",
+        "type": "textarea"
+      },
+      "history0": {
+        "label": "History:",
+        "type": "checkbox",
+        "rightLabel": "None"
+      },
+      "history1": {
+        "type": "checkbox",
+        "rightLabel": "Other"
+      },
+      "history2": {
+        "type": "checkbox",
+        "rightLabel": "Hypertension"
+      },
+      "history3": {
+        "type": "checkbox",
+        "rightLabel": "Diabetes"
+      },
+      "history4": {
+        "type": "checkbox",
+        "rightLabel": "Malaria"
+      },
+      "history5": {
+        "type": "checkbox",
+        "rightLabel": "Yellow Fever"
+      },
+      "history6": {
+        "type": "checkbox",
+        "rightLabel": "Cholera"
+      },
+      "history7": {
+        "type": "checkbox",
+        "rightLabel": "Meningitis"
+      },
+      "history8": {
+        "type": "checkbox",
+        "rightLabel": "Sickle Cell"
+      },
+      "history9": {
+        "type": "checkbox",
+        "rightLabel": "Cancer"
+      },
+      "history10": {
+        "type": "checkbox",
+        "rightLabel": "Leprosy"
+      },
+      "history_other": {
+        "label": "Other Past History:",
+        "type": "textarea"
+      },
+      "note": {
+        "label": "Examination Notes:",
+        "type": "textarea"
+      },
+      "testing_method": {
+        "label": "Tested By Following Method:",
+        "type": "textarea"
+      },
+      "diagnosis": {
+        "label": "Disease Diagnosis:",
+        "type": "select"
+      },
+      "diagnosis_other": {
+        "label": "Other Disease Diagnosis:"
+      },
+      "treatment": {
+        "label": "Treatment:",
+        "type": "textarea"
+      },
+      "admission": {
+        "label": "Admission Required?",
+        "type": "radio"
+      },
+      "disease_mortality": {
+        "label": "Did Disease Lead To Death?",
+        "type": "radio"
+      },
+      "referral": {
+        "label": "Referral?",
+        "type": "radio"
+      },
+      "referral_location": {
+        "label": "If Yes, Referral Location:",
+        "type": "select"
+      }
+    }
+  }
+}
