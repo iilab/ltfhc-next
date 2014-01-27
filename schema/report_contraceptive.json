@@ -133,78 +133,81 @@
             "line_number": "5a",
             "sw": "Kuweka vipandikizi - kituoni",
             "en": "Those who put implants - at the clinic",
-            "condition": "reproductive_counseling.implants/clinic"
+            "condition": "reproductive_counseling.contraception_source == 'Other Implants' && reproductive_counseling.contraception_source == 'Clinic'"
 
         },
         "those_who_put_implants_outreach": {
             "line_number": "5b",
             "sw": "Kuweka vipandikizi - outreach",
             "en": "Those who put implants - outreach",
-            "condition": "reproductive_counseling.implants/outreach"
+            "condition": "reproductive_counseling.contraception_source == 'Other Implants' && reproductive_counseling.contraception_source == 'outreach'"
 
         },
         "removing_implants": {
             "line_number": "5c",
             "sw": "Kuondoa vipandikizi",
             "en": "Removing implants",
-            "condition": "reproductive_counseling.implants/removal"
+            "condition": "reproductive_counseling.contraception_source == 'Remove IUD'"
 
         },
         "intrauterine_methods_iucd": {
             "line_number": "6",
             "sw": "Kitanzi (IUCD)",
             "en": "Intrauterine methods(IUCD)",
-            "condition": "reproductive_counseling.contraception_current/IUD"
-
         },
         "inserting_iud_clinic": {
             "line_number": "6a",
             "sw": "Kuweka Kitanzi - kituoni",
             "en": "Inserting IUD (at the clinic)",
-            "condition": "reproductive_counseling.iud/insert/clinic"
+            "condition": "reproductive_counseling.contraception_source == 'IUD' && reproductive_counseling.contraception_source == 'Clinic'"
         },
         "inserting_iud_outreach": {
             "line_number": "6b",
             "sw": "Kuweka Kitanzi - outreach",
             "en": "Inserting IUD (outreach)",
-            "condition": "reproductive_counseling.iud/insert/outreach"
+            "condition": "reproductive_counseling.contraception_source == 'IUD' && reproductive_counseling.contraception_source == 'outreach'"
         },
         "removing_iud_clinic": {
             "line_number": "6c",
             "sw": "Kuondoa Kitanzi - kituoni",
             "en": "Removing IUD (at the clinic)",
-            "condition": "reproductive_counseling.iud/removal/clinic"
+            "condition": "reproductive_counseling.contraception_source == 'Remove IUD' && reproductive_counseling.contraception_source == 'Clinic'"
         },
         "removing_iud_outreach": {
             "line_number": "6d",
             "sw": "Kuondoa Kitanzi - outreach",
             "en": "Removing IUD (outreach)",
-            "condition": "reproductive_counseling."
+            "condition": "reproductive_counseling.contraception_source == 'Remove IUD' && reproductive_counseling.contraception_source == 'outreach'"
         },
         "total_number_of_client_who_used_permanent_contraceptive_methods": {
             "line_number": "6e",
             "sw": "Jumla ya Wateja waliochukua njia za muda mrefu na za Kudumu za Uzazi wa Mpango (4a+4b+4c+4d+5a+5b+6a+6b)",
             "en": "Total number of client who used permanent contraceptive methods(4a+4b+4c+4d+5a+5b+6a+6b)"
+            "condition": "reproductive_counseling.contraception_source == 'Sterilization'"
         },
         "other_methods": {
             "line_number": "7",
             "sw": "Njia Nyinginezo",
             "en": "Other methods"
+             
         },
         "natural_ways": {
             "line_number": "7a",
             "sw": "Njia za maumbile (mfano LAM, BOM, joto, kalenda)",
             "en": "Natural ways(eg. LAM,BOM,body temperature and calendar"
+            "condition": "reproductive_counseling.contraception_source == 'Natural ways'"
         },
         "other_methods": {
             "line_number": "7b",
             "sw": "Njia nyingine",
             "en": "Other methods"
+            "condition": "reproductive_counseling.contraception_source == 'Other'"
         },
         "total_number_of_clients_who_used_other_methods": {
             "line_number": "7c",
             "sw": "Jumla ya Njia Nyinginezo (7a+7b)",
             "en": "Total number of clients who used other methods(7a+7b)"
+            "condition": "reproductive_counseling.contraception_source == 'Natural ways' && reproductive_counseling.contraception_source == 'Other'"
         },
         "total_number_of_types_of_contraceptives": {
             "line_number": "8",
@@ -245,26 +248,31 @@
             "line_number": "10a",
             "sw": "Idadi ya kondomu zilizogawiwa Kituoni Me",
             "en": "Number of condoms given to male clients at the clinic"
+            "condition": "patient.gender == 'male' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'Clinic'"
         },
         "number_of_condoms_given_to_female_clients_at_the_clinic": {
             "line_number": "10b",
             "sw": "Idadi ya kondomu zilizogawiwa Kituoni Ke",
             "en": "Number of condoms given to female clients at the clinic"
+            "condition": "patient.gender == 'female' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'Clinic'"    
         },
         "number_of_condoms_given_to_male_clients_by_cbd": {
             "line_number": "10c",
             "sw": "Idadi ya kondomu zilizogawiwa CBD Me",
             "en": "Number of condoms given to male clients by CBD"
+            "condition": "patient.gender == 'male' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'CBD'"    
         },
         "number_of_condoms_given_to_female_clients_by_cbd": {
             "line_number": "10d",
             "sw": "Idadi ya kondomu zilizogawiwa CBD Ke",
             "en": "Number of condoms given to female clients by CBD"
+            "condition": "patient.gender == 'female' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'CBD'"    
         },
         "total_number_of_condoms_given_to_clients": {
             "line_number": "10e",
             "sw": "Idadi ya kondomu zilizogawiwa kituoni na CBD (10a+10b+10c+10d)",
             "en": "Total number of condoms given to clients from the clinic and by CBD(10a+10b+10c+10d)",
+            "condition": "reproductive_counseling.contraception_current == 'Condoms'"    
         },
         "service_after_miscarriage_cpac_after_giving_birth": {
             "line_number": "11",
