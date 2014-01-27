@@ -283,6 +283,7 @@
             "line_number": "11a",
             "sw": "Waliopata huduma baada ya mimba kubaribika",
             "en": "Those who got treatment after miscarriages",
+            "condition": "postnatal.family_planning_method_after_miscarriage == true"
         },
         "those_who_used_contraception_after_miscarriage": {
             "line_number": "11b",
@@ -293,6 +294,7 @@
             "line_number": "11c",
             "sw": "Waliopata njia ya uazazi wa mpango siku 42 baada ya kujifungua",
             "en": "Those who used contraceptive methods 42 days after giving birth",
+            "condition": "postnatal.contraception_within_40_days == true"
         },
         "clients_who_screened_for_cancer": {
             "line_number": "12",
