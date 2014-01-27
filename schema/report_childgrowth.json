@@ -337,11 +337,11 @@
     },
     "definitions": {
         "columns": {
-            "below20": {
+            "male": {
                 "title": "Males",
                 "condition": "patient.gender == 'Male'"
             },
-            "above20": {
+            "female": {
                 "title": "Above 20 years old",
                 "condition": "patient.gender == 'Female'"
             },
