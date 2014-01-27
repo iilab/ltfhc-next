@@ -134,6 +134,7 @@
             "sw": "Waliopima VVU wakati wa postnatal (ndani ya siku 42 tangu kujifungua)",
             "en": "Those tested for HIV during postnatal ( within 42 days from delivery )",
             "id": "those_tested_for_hiv_during_postnatal_(_within_42_days_from_delivery_)"
+            "condition": "hiv_counseling_mother.hiv_test_post_labor == 'yes'"
         }, 
         "those_who_were_found_hiv_positive_during_postnatal_within_42_days_from_delivery": {
             "line_number": "11c",
@@ -194,18 +195,21 @@
             "sw": "Idadi ya watoto waliopewa BCG",
             "en": "Number of children who received BCG",
             "id": "number_of_children_who_received_bcg"
+            "condition": "postnatal.bcg_opv == 'BCG'"
         }, 
         "number_of_children_who_received_opv_0": {
             "line_number": "13b",
             "sw": "Idadi ya watoto waliopewa OPV 0",
             "en": "Number of children who received OPV 0",
             "id": "number_of_children_who_received_opv_0"
+            "condition": "postnatal.bcg_opv == 'OPV-0'"
         }, 
         "the_number_of_children_born_with_a_low_weight_were_given_kmc": {
             "line_number": "13c",
             "sw": "Idadi ya watoto waliozaliwa na uzito wa < 2.5kg wakapatiwa KMC",
             "en": "The number of children born with a weight of < 2.5 kg were given KMC",
             "id": "the_number_of_children_born_with_a_weight_of_<_2.5_kg_were_given_kmc"
+            "condition": "postnatal.less_than_2.5kg == true"
         }, 
         "number_of_children_at_home_under_the_born_low_weight": {
             "line_number": "13d",
@@ -218,12 +222,14 @@
             "sw": "Idadi ya watoto waliozaliwa nyumbani walioanzishiwa huduma ya kangaroo (KMC)",
             "en": "Number of babies born at home were started on kangaroo care ( KMC )",
             "id": "number_of_babies_born_at_home_were_started_on_kangaroo_care_(_kmc_)"
+            "condition": "postnatal.kangaroo_care == true"
         }, 
         "with_severe_anemia": {
             "line_number": "13f",
             "sw": "Wenye upungufu mkubwa wa damu (Hb < 10 g/dl au viganja vyeupe sana)",
             "en": "With severe anemia ( Hb < 10 g / dl or very white hands )",
             "id": "with_severe_anemia_(_hb_<_10_g_/_dl_or_very_white_hands_)"
+            "condition": "postnatal.child_diagnoses == 'severe anemia (HB<10)'"
         }, 
         "infections_of_the_child": {
             "line_number": "14",
@@ -236,30 +242,35 @@
             "sw": "Watoto wenye uambukizo mkali (septicaemia)",
             "en": "Children with severe infections ( septicemia )",
             "id": "children_with_severe_infections_(_septicemia_)"
+            "condition": "postnatal.child_diagnoses == 'septicemia'"
         }, 
         "children_with_umbilical_cord_infection": {
             "line_number": "14b",
             "sw": "Watoto wenye uambukizo kwenye kitovu",
             "en": "Children with umbilical cord infection",
             "id": "children_with_umbilical_cord_infection"
+            "condition": "postnatal.child_diagnoses == 'umbilical cord infection'"
         }, 
         "children_with_skin_infection": {
             "line_number": "14c",
             "sw": "Watoto wenye uambukizo kwenye ngozi",
             "en": "Children with skin infection",
             "id": "children_with_skin_infection"
+            "condition": "postnatal.child_diagnoses == 'skin infection'"
         }, 
         "deaths_of_infants_born_at_home_prenatal_and_neonatal": {
             "line_number": "15",
             "sw": "Vifo vya watoto wachanga waliozaliwa nyumbani (perinatal); neonatal",
             "en": "Deaths of infants born at home ( perinatal ) , neonatal",
             "id": "deaths_of_infants_born_at_home_(_perinatal_)_,_neonatal"
+            "condition": "postnatal.child_diagnoses == 'neonatal death'"
         }, 
         "those_received_methods_of_family_planning_after_miscarriage": {
             "line_number": "16",
             "sw": "Waliopata njia za Uzazi wa mpango baada ya mimba kuharibika",
             "en": "Those received methods of Family Planning after miscarriage",
             "id": "those_received_methods_of_family_planning_after_miscarriage"
+            "condition": "postnatal.family_planning_method_after_miscarriage == true"
         }, 
         "infant_feeding": {
             "line_number": "17",
@@ -272,17 +283,20 @@
             "sw": "Watoto wachanga wanaonyonya maziwa ya mama pekee (EBF)",
             "en": "Infants who are breastfed exclusively breastfed ( EBF )",
             "id": "infants_who_are_breastfed_exclusively_breastfed_(_ebf_)"
+            "condition": "postnatal.milk_type == 'Mother's Milk ONLY'"
         }, 
         "infants_who_drik_milk_substitute_rf": {
             "line_number": "17b",
             "sw": "Watoto wachanga wanaonyweshwa maziwa mbadala (RF)",
             "en": "Infants who drink milk substitute ( RF )",
             "id": "infants_who_drink_milk_substitute_(_rf_)"
+            "condition": "postnatal.milk_type == 'Formula ONLY'"
         }, 
         "infants_who_drink_breast_milk_and_other_food_access_mf": {
             "line_number": "17c",
             "sw": "Watoto wachanga wanaonyweshwa maziwa ya mama na kupatiwa chakula kingine (MF)",
             "en": "Infants who drink breast milk and other food access ( MF )",
             "id": "infants_who_drink_breast_milk_and_other_food_access_(_mf_)"
+            "condition": "postnatal.milk_type == 'Mother's Milk + Other'"
         }
     }
