@@ -127,27 +127,27 @@
         "growth_attendance_of_24_month_old_baby": {
             "line_number": "7",
             "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 24",
-            "en": "growth attendance of 24 month old baby"
+            "en": "Growth attendance of 24 month old baby"
         },
         "ratio_of_weight_by_age": {
             "line_number": "7b",
             "sw": "Uwaino wa uzito kwa umri",
-            "en": "ratio of weight by age"
+            "en": "Ratio of weight by age"
         },
         "growth_attendance_of_36_month_old_baby": {
             "line_number": "8",
             "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 36",
-            "en": "growth attendance of 36 month old baby"
+            "en": "Growth attendance of 36 month old baby"
         },
         "growth_attendance_of_48_month_old_baby": {
             "line_number": "9",
             "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 48",
-            "en": "growth attendance of 48 month old baby"
+            "en": "Growth attendance of 48 month old baby"
         },
         "growth_attendance_of_59_month_old_baby": {
             "line_number": "10",
             "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 59",
-            "en": "growth attendance of 59 month old baby"
+            "en": "Growth attendance of 59 month old baby"
         },
         "additional_vitamin_a": {
             "line_number": "11",
@@ -334,5 +334,22 @@
             "en": "Children who received a bed net voucher",
             "condition": "well_child_visit.bed_net_voucher"
         }
+    },
+    "definitions": {
+        "columns": {
+            "below20": {
+                "title": "Males",
+                "condition": "patient.gender == 'Male'"
+            },
+            "above20": {
+                "title": "Above 20 years old",
+                "condition": "patient.gender == 'Female'"
+            },
+            "total": {
+                "title": "Total",
+                "condition": "true"
+            }
+        }
     }
+
 }
