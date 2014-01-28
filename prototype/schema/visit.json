@@ -1,0 +1,19 @@
+{
+  "title": "Patient Intake",
+  "_id": "visit",
+  "type": "object",
+  "properties": {
+    "clinic": {
+      "type": "string"
+    },
+    "clinician": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "form_list0": {
+      "type": "string"
+    }
+  }
+}
