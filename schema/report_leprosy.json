@@ -10,153 +10,115 @@
             "title": "Total (a)",
             "type": "number",
             "line_number": "1",
-            "value": {
-                "field": "/visit/leprosy_tb/classification"
-            }
+            "condition": "/visit/leprosy_tb/classification"
         },
         "newly_registered": {
             "title": "New",
             "type": "number",
             "line_number": "2a",
-            "value": {
-                "field": "/visit/leprosy_tb/patient_count"
-            }
+            "condition": "/visit/leprosy_tb/patient_count"
         },
         "return_after_default": {
             "title": "Return after Default",
             "type": "number",
             "line_number": "2b",
-            "value": {
-                "field": "/visit/leprosy_tb/leprosy_status"
-            }
+            "condition": "/visit/leprosy_tb/leprosy_status"
         },
         "relapse_after_MDT": {
             "title": "Relapse after MDT",
             "type": "number",
             "line_number": "2c",
-            "value": {
-                "field": "/visit/leprosy_tb/leprosy_status"
-            }
+            "condition": "/visit/leprosy_tb/leprosy_status"
         },
         "relapse_after_dds": {
             "title": "Relapse after DDS/Others",
             "type": "number",
             "line_number": "2d",
-            "value": {
-                "field": "/visit/leprosy_tb/leprosy_status"
-            }
+            "condition": "/visit/leprosy_tb/leprosy_status"
         },
         "total_notifications": {
             "title": "Total Notifications (b)",
             "type": "number",
             "line_number": "2e",
-            "value": {
-                "field": "/visit/leprosy_tb/leprosy_status"
-            }
+            "condition": "/visit/leprosy_tb/leprosy_status"
         },
         "1mb": {
             "title": "1MB",
             "type": "number",
             "line_number": "3a",
-            "value": {
-                "field": "/visit/leprosy_tb/classification"
-            }
+            "condition": "/visit/leprosy_tb/classification"
         },
         "1pb": {
             "title": "1PB",
             "type": "number",
             "line_number": "3b",
-            "value": {
-                "field": "/visit/leprosy_tb/classification"
-            }
+            "condition": "/visit/leprosy_tb/classification"
         },
         "disability_grade_0": {
             "title": "Grade 0",
             "type": "number",
             "line_number": "4a",
-            "value": {
-                "field": "/visit/leprosy_tb/disability_grade"
-            }
+            "condition": "/visit/leprosy_tb/disability_grade"
         },
         "disability_grade_1": {
             "title": "Grade 1",
             "type": "number",
             "line_number": "4b",
-            "value": {
-                "field": "/visit/leprosy_tb/disability_grade"
-            }
+            "condition": "/visit/leprosy_tb/disability_grade"
         },
         "disability_grade_2": {
             "title": "Grade 2",
             "type": "number",
             "line_number": "4c",
-            "value": {
-                "field": "/visit/leprosy_tb/disability_grade"
-            }
+            "condition": "/visit/leprosy_tb/disability_grade"
         },
         "disability_grade_total": {
             "title": "Total",
             "type": "number",
             "line_number": "4d",
-            "value": {
-                "field": "/visit/leprosy_tb/disability_grade"
-            }
+            "condition": "/visit/leprosy_tb/disability_grade"
         },
         "treatment_completed": {
             "title": "Treatment Completed",
             "type": "number",
             "line_number": "5a",
-            "value": {
-                "field": "/visit/leprosy_tb/end_result"
-            }
+            "condition": "/visit/leprosy_tb/end_result"
         },
         "died": {
             "title": "Died",
             "type": "number",
             "line_number": "5b",
-            "value": {
-                "field": "/visit/leprosy_tb/end_result"
-            }
+            "condition": "/visit/leprosy_tb/end_result"
         },
         "transferred_out": {
             "title": "Transferred Out",
             "type": "number",
             "line_number": "5c",
-            "value": {
-                "field": "/visit/leprosy_tb/end_result"
-            }
+            "condition": "/visit/leprosy_tb/end_result"
         },
         "defaulter": {
             "title": "Defaulter",
             "type": "number",
             "line_number": "5d",
-            "value": {
-                "field": "/visit/leprosy_tb/end_result"
-            }
+            "condition": "/visit/leprosy_tb/end_result"
         },
         "total_c": {
             "title": "Total (c)",
             "type": "number",
             "line_number": "5e",
-            "value": {
-                "field": "/visit/leprosy_tb/end_result"
-            }
+            "condition": "/visit/leprosy_tb/end_result"
         },
         "registered_at_end_of_quarter": {
             "title": "(a) + (b) - (c)",
             "type": "number",
             "line_number": "6",
-            "value": {
-                "field": "/visit/leprosy_tb/patient_count"
-            }
+            "condition": "/visit/leprosy_tb/patient_count"
         },
         "corticosteroids": {
             "title": "Patients who started corticosteroids in the quarter",
             "type": "number",
             "line_number": "7",
-            "value": {
-                "field": "/visit/leprosy_tb/corticosteroids"
-            }
+            "condition": "/visit/leprosy_tb/corticosteroids"
         }
     },
     "definitions": {
