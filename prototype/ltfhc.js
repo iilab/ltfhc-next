@@ -13,7 +13,7 @@ $(document).ready(function() {
         {
             if (typeof(resource) == "string")
             {
-                resource = "../prototype/" + resource + ".json"
+                resource = "./schema/" + resource + ".json"
             }
 
             return this.base(resource, successCallback, errorCallback);
