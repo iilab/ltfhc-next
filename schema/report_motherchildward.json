@@ -7,566 +7,455 @@
     "type": "object",
     "properties": {
 
-        "those_who_were_expected_to_deliver": {
+        {
             "line_number": "1",
             "sw": "Waliotarajiwa kujifungua",
             "en": "Those who were expected to deliver",
             "id": "those_who_were_expected_to_deliver"
-        }, 
-        "reprot_for_mothers_who_delivered": {
+        }, {
             "line_number": "2",
             "sw": "Taarifa ya Waliojifungua",
             "en": "Report for mothers who delivered",
-            "id": "report_for_mothers_who_delivered
-        }, 
-        "those_who_delivered_at_the_clinic": {
+            "id": "report_for_mothers_who_delivered"
+        }, {
             "line_number": "2a",
             "sw": "Waliojifungulia katika kituo cha kutolea huduma za afya",
             "en": "Those who delivered at the clinic",
             "id": "those_who_delivered_at_the_clinic"
-            "condition": "delivery_record.delivery_location == 'Delivered in clinic'"
-        }, 
-        "those_who_delivered_on_while_on_their_way_to_the_clinic": {
+        }, {
             "line_number": "2b",
             "sw": "Waliojifungua kabla ya kufika kituoni (BBA)",
             "en": "Those who delivered on while on their way to the clinic (BBA)",
             "id": "those_who_delivered_on_while_on_their_way_to_the_clinic_(bba)"
-            "condition": "delivery_record.delivery_location == 'Delivered on the way to clinic'"
-        }, 
-        "those_helped_to_deliver_by_traditional_birth_attendants_tba": {
+        }, {
             "line_number": "2c",
             "sw": "Waliozalishwa na wakunga wa jadi (TBA)",
             "en": "Those helped to deliver by traditional birth attendants (TBA)",
             "id": "those_helped_to_deliver_by_traditional_birth_attendants_(tba)"
-            "condition": "delivery_record.delivery_location == 'Delivered by traditional birth attendant'"
-        }, 
-        "home_delivery": {
+        }, {
             "line_number": "2d",
             "sw": "Waliojifungua nyumbani (H)",
             "en": "Home delivery (H)",
             "id": "home_delivery_(h)"
-            "condition": "delivery_record.delivery_location == 'Home delivery'"
-        }, 
-        "total_giving_birth": {
+        }, {
             "line_number": "2e",
             "sw": "Jumla waliojifungua (2a+2b+2c+2d)",
             "en": "Total giving birth (2a +2 b +2 c +2 d)",
             "id": "total_giving_birth_(2a_+2_b_+2_c_+2_d)"
-            "condition": "delivery_record.delivery_location == 'Delivered in clinic' && delivery_record.delivery_location == 'Delivered on the way to clinic' && delivery_record.delivery_location == 'Delivered by traditional birth attendant' && delivery_record.delivery_location == 'Home delivery'"
-        }, 
-        "those_who_were_helped_to_deliver_by_skilled_providers": {
+        }, {
             "line_number": "2f",
             "sw": "Waliozalishwa na watoa huduma wanye ujuzi",
             "en": "Those who were helped to deliver by skilled providers",
             "id": "those_who_were_helped_to_deliver_by_skilled_providers"
-            "condidion": "delivery_record.delivery_location == 'Delivered by skilled provider'"
-        }, 
-        "percentage_of_all_who_delivered_at_the_clinic": {
+        }, {
             "line_number": "2g",
             "sw": "Asilimia ya waliojifungulia katika vituo vya kutolea huduma za afya (2a/1) x 100",
             "en": "Percentage of all who delivered at the Clinic (2a / 1) x 100",
             "id": "percentage_of_all_who_delivered_at_the_clinic_(2a_/_1)_x_100"
-        }, 
-        "clinic_reports_on_different_methods_of_methods_of_delivery": {
+        }, {
             "line_number": "3",
             "sw": "Taarifa ya njia za kujifungua kutoka vituo vya kutolea huduma za afya",
-            "en": "Clinic reports on different methods of methods of delivery",
-            "id": "clinic_reports_on_different_methods_of_methods_of_delivery"
-        }, 
-        "normal_delivery_kw": {
+            "en": "Clinic  reports on different methods of  methods of delivery",
+            "id": "clinic__reports_on_different_methods_of__methods_of_delivery"
+        }, {
             "line_number": "3a",
             "sw": "Waliojifungua Kawaida (KW)",
-            "en": "Normal delivery (KW)",
-            "id": "normal_delivery_(kw)"
-            "condition": "delivery_record.delivery_mode == 'Vaginal'"
-        }, 
-        "vacuum_vm_delivery": {
+            "en": " Normal delivery (KW)",
+            "id": "_normal_delivery_(kw)"
+        }, {
             "line_number": "3b",
             "sw": "Waliojifungua kwa Vacuum (VM)",
-            "en": "Vacuum (VM) delivery",
-            "id": "vacuum_(vm)_delivery"
-            "condition": "delivery_record.delivery_mode == 'Vacuum'"
-        }, 
-        "breech_delivery": {
+            "en": " Vacuum (VM) delivery",
+            "id": "_vacuum_(vm)_delivery"
+        }, {
             "line_number": "3c",
             "sw": "Breech Delivery",
             "en": "breech Delivery",
             "id": "breech_delivery"
-            "condition": "delivery_record.delivery_mode == 'Breech'"
-        }, 
-        "caesarian_section_cs_delivery": {
+        }, {
             "line_number": "3d",
             "sw": "Waliojifungua kwa Caesarian Section (CS)",
-            "en": "Caesarian Section (CS) delivery",
-            "id": "caesarian_section_(cs)_delivery"
-            "condition": "delivery_record.delivery_mode == 'C-section'"
-        }, 
-        "delivery_through_other_ways": {
+            "en": " Caesarian Section (CS) delivery",
+            "id": "_caesarian_section_(cs)_delivery"
+        }, {
             "line_number": "3e",
             "sw": "Waliojifungua kwa njia nyingizezo",
             "en": "Delivery through other ways",
             "id": "delivery_through_other_ways"
-            "condition": "delivery_record.delivery_mode == 'Other'"
-        }, 
-        "total": {
+        }, {
             "line_number": "3f",
             "sw": "Jumla (3a+3b+3c+3d+3e)",
             "en": "Total (3a +3 b +3 c +3 d +3 e)",
             "id": "total_(3a_+3_b_+3_c_+3_d_+3_e)"
-            "condition": "delivery_record.delivery_mode == 'Vaginal' && delivery_record.delivery_mode == 'Vacuum' && delivery_record.delivery_mode == 'Breech' && delivery_record.delivery_mode == 'C-section' && delivery_record.delivery_mode == 'Other'"
-        }, 
-        "the_number_of_pregnant_women_who_underwent_amtsl": {
+        }, {
             "line_number": "3g",
             "sw": "Idadi ya wajawazito walio fanyiwa AMTSL",
             "en": "The number of pregnant women who underwent AMTSL",
             "id": "the_number_of_pregnant_women_who_underwent_amtsl"
-        }, 
-        "prenatal_problems": {
+        }, {
             "line_number": "4",
             "sw": "Matatizo kabla ya kujifungua",
             "en": "Prenatal problems",
             "id": "prenatal_problems"
-        }, 
-        "aph": {
+        }, {
             "line_number": "4a",
             "sw": "APH",
             "en": "APH",
             "id": "aph"
-            "condition": "delivery_record.prenatal_problems == 'APH'"
-        }, 
-        "pre_mature_rupture_of_membrane_prom": {
+        }, {
             "line_number": "4b",
             "sw": "Pre-mature Rupture of Membrane (PROM)",
             "en": "Pre-mature rupture of membrane (PROM)",
             "id": "pre-mature_rupture_of_membrane_(prom)"
-            "condition": "delivery_record.prenatal_problems == 'PROM'"
-        }, 
-        "high_bp": {
+        }, {
             "line_number": "4c",
             "sw": "High BP",
             "en": "high BP",
             "id": "high_bp"
-            "condition": "delivery_record.prenatal_problems == 'high BP'"
-        }, 
-        "eclampsia": {
+        }, {
             "line_number": "4d",
             "sw": "Eclampsia",
             "en": "eclampsia",
             "id": "eclampsia"
-            "condition": "delivery_record.prenatal_problems == 'eclampsia'"
-        }, 
-        "anaemia": {
+        }, {
             "line_number": "4e",
             "sw": "Anaemia",
             "en": "Anaemia",
             "id": "anaemia"
-            "condition": "delivery_record.prenatal_problems == 'anemia'"
-        }, 
-        "malaria": {
+        }, {
             "line_number": "4f",
             "sw": "Malaria",
             "en": "malaria",
             "id": "malaria"
-            "condition": "delivery_record.prenatal_problems == 'malaria'"
-        }, 
-        "hiv_stage_iii_or_iv": {
+        }, {
             "line_number": "4g",
             "sw": "HIV+ stage III or IV",
             "en": "HIV + stage III or IV",
             "id": "hiv_+_stage_iii_or_iv"
-            "condition": "delivery_record.prenatal_problems == 'HIV stage III or stage IV'"
-        }, 
-        "eptopic_pregnancy": {
+        }, {
             "line_number": "4h",
             "sw": "Ectopic Pregnancy",
             "en": "ectopic Pregnancy",
             "id": "ectopic_pregnancy"
-            "condition": "delivery_record.prenatal_problems == 'ectopic pregnancy'"
-        }, 
-        "abortion_or_abortion_complications": {
+        }, {
             "line_number": "4i",
             "sw": "Abortion / Abortion Complications",
             "en": "Abortion / Abortion Complications",
-            "id": "abortion_or_abortion_complications"
-            "condition": "delivery_record.prenatal_problems == 'abortion complications'"
-        }, 
-        "other": {
+            "id": "abortion_/_abortion_complications"
+        }, {
             "line_number": "4j",
             "sw": "Mengineyo",
             "en": "Other",
             "id": "other"
-            "condition": "delivery_record.prenatal_problems == 'other'"
-        }, 
-        "total_impaired_prenatal": {
+        }, {
             "line_number": "4k",
             "sw": "Jumla wenye matatizo kabla ya kujifungua (4a+4b+4c+4d+4e+4f+4h+4i+4j+4k)",
             "en": "Total impaired prenatal (4a +4 b +4 c +4 d +4 e +4 f +4 h +4 i +4 j +4 k)",
             "id": "total_impaired_prenatal_(4a_+4_b_+4_c_+4_d_+4_e_+4_f_+4_h_+4_i_+4_j_+4_k)"
-        }, 
-        "waliokeketwa_fgm": {
+        }, {
             "line_number": "5",
             "sw": "Waliokeketwa (FGM)",
             "en": "Waliokeketwa (FGM)",
             "id": "waliokeketwa_(fgm)"
-        }, 
-        "complications_during_and_after_childbirth": {
+        }, {
             "line_number": "6",
             "sw": "Matatizo wakati na baada ya kujifungua",
             "en": "Complications during and after childbirth",
             "id": "complications_during_and_after_childbirth"
-        }, 
-        "pph": {
+        }, {
             "line_number": "6a",
             "sw": "PPH",
             "en": "PPH",
             "id": "pph"
-        }, 
-        "eclampsia": {
+        }, {
             "line_number": "6b",
             "sw": "Eclampsia",
             "en": "eclampsia",
             "id": "eclampsia"
-        }, 
-        "obstructed_labour": {
+        }, {
             "line_number": "6c",
             "sw": "Obstructed Labour",
             "en": "Obstructed Labour",
             "id": "obstructed_labour"
-        }, 
-        "retained_placenta": {
+        }, {
             "line_number": "6d",
             "sw": "Retained Placenta",
             "en": "Retained Placenta",
             "id": "retained_placenta"
-        }, 
-        "tear_third_degree_tear": {
+        }, {
             "line_number": "6e",
             "sw": "Tear (Third Degree Tear)",
             "en": "Tear (Third Degree Tear)",
             "id": "tear_(third_degree_tear)"
-        }, 
-        "ruptured_uterus": {
+        }, {
             "line_number": "6f",
             "sw": "Ruptured Uterus",
             "en": "Ruptured Uterus",
             "id": "ruptured_uterus"
-        }, 
-        "infection_or_sepsis": {
+        }, {
             "line_number": "6g",
             "sw": "Uambukizo / Sepsis",
             "en": "infenction/sepsis",
             "id": "infenction/sepsis"
-        }, 
-        "other": {
+        }, {
             "line_number": "6h",
             "sw": "Mengineyo",
             "en": "other",
             "id": "other"
-        }, 
-        "total_complications_after_childbirth": {
+        }, {
             "line_number": "6i",
             "sw": "Jumla ya matatizo baada ya kujifungua (6a+6b+6c+6d+6e+6f+6g+6h)",
             "en": "Total complications after childbirth (6a +6 b +6 +6 c d e +6 +6 +6 G+ f 6h)",
             "id": "total_complications_after_childbirth_(6a_+6_b_+6_+6_c_d_e_+6_+6_+6_g+_f_6h)"
-        }, 
-        "emoc": {
+        }, {
             "line_number": "7",
             "sw": "EmOC",
             "en": "EmOC",
             "id": "emoc"
-        }, 
-        "given_iv_antibiotics": {
+        }, {
             "line_number": "7a",
             "sw": "Amepewa (IV) Antibiotiki",
-            "en": "given (IV) antibiotics",
-            "id": "given_(iv)_antibiotics"
-        }, 
-        "given_iv_uterontonic": {
+            "en": " given (IV) antibiotics",
+            "id": "_given_(iv)_antibiotics"
+        }, {
             "line_number": "7b",
             "sw": "Amepewa (IV) Uterotonic",
             "en": "given (IV) Uterotonic",
             "id": "given_(iv)_uterotonic"
-        }, 
-        "given_iv_anticonvulsants": {
+        }, {
             "line_number": "7c",
             "sw": "Amepewa (IV) Anticonvulsants",
             "en": "given (IV) Anticonvulsants",
             "id": "given_(iv)_anticonvulsants"
-        }, 
-        "placenta_has_been_dismissed_by_hand": {
+        }, {
             "line_number": "7d",
             "sw": "Ameondolewa kondo la nyuma kwa mkono",
             "en": "Placenta has been dismissed by hand",
             "id": "placenta_has_been_dismissed_by_hand"
-        }, 
-        "those_who_did_mva": {
+        }, {
             "line_number": "7e",
             "sw": "Amefanyiwa MVA",
-            "en": "Those who did MVA",
-            "id": "those_who_did_mva"
-        },
-        "those_who_got_blood_transfusion": {
+            "en": "Those who did  MVA",
+            "id": "those_who_did__mva"
+        }, {
             "line_number": "7f",
             "sw": "Ameongezewa Damu",
             "en": "Those who got blood transfusion",
             "id": "those_who_got_blood_transfusion"
-        }, 
-        "pmtct": {
+        }, {
             "line_number": "8",
             "sw": "PMTCT",
             "en": "PMTCT",
             "id": "pmtct"
-        }, 
-        "total_who_tested_hiv_anc": {
+        }, {
             "line_number": "8a",
             "sw": "Jumla waliopimwa VVU ANC",
-            "en": "Total who tested HIV ANC",
-            "id": "total_who_tested_hiv_anc"
-        }, 
-        "those_who_were_found_positive_at_anc": {
+            "en": "Total who tested HIV  ANC",
+            "id": "total_who_tested_hiv__anc"
+        }, {
             "line_number": "8b",
             "sw": "Waliogundulika Positive kutoka ANC",
             "en": "Those who were found positive at ANC",
             "id": "those_who_were_found_positive_at_anc"
-        }, 
-        "those_who_started_using_arv_during_pregnancy_at_anc": {
+        }, {
             "line_number": "8c",
             "sw": "Walioanzishiwa dawa za ARV wakati wa ajauzito (ANC)",
             "en": "Those who started using ARV during pregnancy at ANC",
             "id": "those_who_started_using_arv_during_pregnancy_at_anc"
-        }, 
-        "those_who_started_using_art_treatment_during_pregnancy_anc": {
+        }, {
             "line_number": "8d",
             "sw": "Walioanza matibabu ya ART wakati wa ujauzito (ANC)",
-            "en": "Those who started using ART treatment during pregnancy (ANC)",
-            "id": "those_who_started_using_art_treatment_during_pregnancy_(anc)"
-        }, 
-        "total_number_of_clients_who_tested_for_hiv_during_and_after_childbirth": {
+            "en": "Those who started  using ART  treatment during pregnancy (ANC)",
+            "id": "those_who_started__using_art__treatment_during_pregnancy_(anc)"
+        }, {
             "line_number": "8e ",
             "sw": "Jumla waliopimwa VVU wakati na baada ya kujifungua",
             "en": "Total number of clients who tested for HIV during and after childbirth",
             "id": "total_number_of_clients_who_tested_for_hiv_during_and_after_childbirth"
-        }, 
-        "those_tested_positive_during_and_after_childbirth": {
+        }, {
             "line_number": "8f",
             "sw": "Waliogundulika Positive wakati na baada ya kujifungua",
             "en": "Those tested positive during and after childbirth",
             "id": "those_tested_positive_during_and_after_childbirth"
-        }, 
-        "those_who_started_using_arvs_during_labor_and_delivery{
+        }, {
             "line_number": "8g",
             "sw": "Walioanzishiwa dawa za ARV wakati wa uchungu na kujifungua",
             "en": "Those who started using ARV's during labor and delivery",
-            "id": "those_who_started_using_arvs_during_labor_and_delivery"
-        }, 
-        "those_who_started_art_treatment_during_labor_and_delivery": {
+            "id": "those_who_started_using_arv's_during_labor_and_delivery"
+        }, {
             "line_number": "8h",
             "sw": "Walioanza matibabu ya ART wakati wa uchungu na kujifungua",
-            "en": "Those who started ART treatment during labor and delivery",
-            "id": "those_who_started_art_treatment_during_labor_and_delivery"
-        }, 
-        "total_clients_with_hiv": {
+            "en": "Those who started  ART treatment during labor and delivery",
+            "id": "those_who_started__art_treatment_during_labor_and_delivery"
+        }, {
             "line_number": "8i",
             "sw": "Jumla Walio na VVU (8b+8f)",
-            "en": "Total Clients with HIV (8b +8 f)",
-            "id": "total_clients_with_hiv_(8b_+8_f)"
-        }, 
-        "mothers_who_chose_to_breastfeed_only_ebf": {
+            "en": " Total Clients with HIV (8b +8 f)",
+            "id": "_total_clients_with_hiv_(8b_+8_f)"
+        }, {
             "line_number": "8j",
             "sw": "Waliochagua kunyonyesha maziwa ya mama pekee (EBF)",
-            "en": "Mothers who chose to breastfeed only (EBF)",
-            "id": "mothers_who_chose_to_breastfeed_only_(ebf)"
-        }, 
-        "mothers_who_chose_to_feed_milk_substitute_rf": {
+            "en": "Mothers  who chose to  breastfeed only (EBF)",
+            "id": "mothers__who_chose_to__breastfeed_only_(ebf)"
+        }, {
             "line_number": "8k",
             "sw": "Waliochagua ulishaji wa maziwa mbadala (RF)",
-            "en": "Mothers who chose to feeding milk substitute (RF)",
-            "id": "mothers_who_chose_to_feeding_milk_substitute_(rf)"
-        }, 
-        "those_given_arv_prophylaxis_tail_when_discharged": {
+            "en": "Mothers who chose to  feeding milk substitute (RF)",
+            "id": "mothers_who_chose_to__feeding_milk_substitute_(rf)"
+        }, {
             "line_number": "8l",
             "sw": "Waliopewa ARV Prophylaxis (tail) wakati wa kuruhusiwa",
-            "en": "Those given ARV prophylaxis (tail) when discharged",
-            "id": "those_given_arv_prophylaxis_(tail)_when_discharged"
-        }, 
-        "those_given_referral_to_clinical_care_and_treatment_center_ctc": {
+            "en": "Those given  ARV prophylaxis (tail) when discharged",
+            "id": "those_given__arv_prophylaxis_(tail)_when_discharged"
+        }, {
             "line_number": "8m",
             "sw": "Waliopata rufaa kwenda kliniki ya huduma na matibabu ya wenye VVU (CTC)",
-            "en": "Those given referral to clinical care and treatment center (CTC)",
-            "id": "those_given_referral_to_clinical_care_and_treatment_center_(ctc)"
-        }, 
-        "total_hiv_positive_mothers_who_are_younger_than_20_years": {
+            "en": "Those given  referral to clinical care and treatment  center (CTC)",
+            "id": "those_given__referral_to_clinical_care_and_treatment__center_(ctc)"
+        }, {
             "line_number": "8n",
             "sw": "Jumla ya akina mama walio na VVU wenye umri chini ya miaka 20",
             "en": "Total HIV-positive mothers who are younger than 20 years",
             "id": "total_hiv-positive_mothers_who_are_younger_than_20_years"
-        }, 
-        "9_children_single_birth": {
+        }, {
             "line_number": "9",
             "sw": "Watoto Waliozaliwa mmoja",
             "en": "9 children single birth",
             "id": "9_children_single_birth"
-        }, 
-        "9a_total_children_born_alive": {
+        }, {
             "line_number": "9a",
             "sw": "Jumla ya watoto waliozaliwa hai",
-            "en": "Total children born alive",
-            "id": "total_children_born_alive"
-        }, 
-        "9b_live_births_weight_low": {
+            "en": "9a Total children born alive",
+            "id": "9a_total_children_born_alive"
+        }, {
             "line_number": "9b",
             "sw": "Waliozaliwa hai Uzito <2.5kg",
             "en": "9b live births Weight < 2.5kg",
             "id": "9b_live_births_weight_<_2.5kg"
-        }, 
-        "9c_live_births_weight_high": {
+        }, {
             "line_number": "9c",
             "sw": "Waliozaliwa hai Uzito =>2.5kg",
             "en": "9c live births Weight = > 2.5kg",
             "id": "9c_live_births_weight_=_>_2.5kg"
-        }, 
-        "9d_macerated_dead_births_msb": {
+        }, {
             "line_number": "9d",
             "sw": "Waliozaliwa wafu Macerated (MSB)",
             "en": "9D macerated dead births ( MSB )",
             "id": "9d_macerated_dead_births_(_msb_)"
-        }, 
-        "fresh_dead_births_9e_msb":{
+        }, {
             "line_number": "9e",
             "sw": "Waliozaliwa wafu Fresh (MSB)",
             "en": "Fresh dead births 9e ( MSB )",
             "id": "fresh_dead_births_9e_(_msb_)"
-        }, 
-        "9f_births_to_mothers_with_hiv": {
+        }, {
             "line_number": "9f",
             "sw": "Waliozaliwa na mama wenye VVU",
             "en": "9F births to mothers with HIV",
             "id": "9f_births_to_mothers_with_hiv"
-        }, 
-        "9g_children_given_arv_drugs": {
+        }, {
             "line_number": "9g",
             "sw": "Waliopewa dawa za ARV",
             "en": "9g Children given ARV drugs",
             "id": "9g_children_given_arv_drugs"
-        }, 
-        "9h_total_babies_born_alive_and_dead": {
+        }, {
             "line_number": "9h",
             "sw": "Jumla ya watoto waliozaliwa (hai na wafu) (9a+9d+9e)",
             "en": "9h Total babies born ( alive and dead ) ( 9a +9 +9 d e )",
             "id": "9h_total_babies_born_(_alive_and_dead_)_(_9a_+9_+9_d_e_)"
-        }, 
-        "children_9i_apgar_score_less_than_7_at_5_minutes": {
+        }, {
             "line_number": "9i",
             "sw": "Watoto wenye APGAR Score chini ya 7 katika dakika 5",
             "en": "Children 9i Apgar Score less than 7 at 5 minutes",
             "id": "children_9i_apgar_score_less_than_7_at_5_minutes"
-        }, 
-        "10_twin_births": {
+        }, {
             "line_number": "10",
             "sw": "Watoto Waliozaliwa mapacha",
-            "en": "10 Twin births",
-            "id": "10_twin_births"
-        }, 
-        "10a_total_children_born_alive": {
+            "en": "10  Twin births",
+            "id": "10__twin_births"
+        }, {
             "line_number": "10a",
             "sw": "Jumla ya watoto waliozaliwa hai",
             "en": "10a Total children born alive",
             "id": "10a_total_children_born_alive"
-        }, 
-        "10b_live_births_weight_low": {
+        }, {
             "line_number": "10b",
             "sw": "Waliozaliwa hai Uzito <2.5kg",
             "en": "10b live births Weight < 2.5kg",
             "id": "10b_live_births_weight_<_2.5kg"
-        }, 
-        "10c_live_births_weight_high": {
+        }, {
             "line_number": "10c",
             "sw": "Waliozaliwa hai Uzito =>2.5kg",
             "en": "10c live births Weight = > 2.5kg",
             "id": "10c_live_births_weight_=_>_2.5kg"
-        }, 
-        "10d_macerated_dead_births_msb":{
+        }, {
             "line_number": "10d",
             "sw": "Waliozaliwa wafu Macerated (MSB)",
             "en": "10d macerated dead births ( MSB )",
             "id": "10d_macerated_dead_births_(_msb_)"
-        }, 
-        "fresh_dead_births_10e_msb": {
+        }, {
             "line_number": "10e",
             "sw": "Waliozaliwa wafu Fresh (MSB)",
             "en": "Fresh dead births 10E ( MSB )",
             "id": "fresh_dead_births_10e_(_msb_)"
-        }, 
-        "10f_births_to_mothers_with_hiv": {
+        }, {
             "line_number": "10f",
             "sw": "Waliozaliwa na mama wenye VVU",
             "en": "10F births to mothers with HIV",
             "id": "10f_births_to_mothers_with_hiv"
-        }, 
-        "10g_children_given_arvs": {
+        }, {
             "line_number": "10g",
             "sw": "Waliopewa dawa za ARV",
             "en": "10g Children given ARV's",
             "id": "10g_children_given_arv's"
-        }, 
-        "10h_total_babies_born_alive_and_dead": {
+        }, {
             "line_number": "10h",
             "sw": "Jumla ya watoto waliozaliwa (hai na wafu) (9a+9d+9e)",
             "en": "10h Total babies born ( alive and dead ) ( 9a +9 +9 d e )",
             "id": "10h_total_babies_born_(_alive_and_dead_)_(_9a_+9_+9_d_e_)"
-        }, 
-        "children_with_apgar_score_less_than_7_at_5_minutes": {
+        }, {
             "line_number": "10i",
             "sw": "Watoto wenye APGAR Score chini ya 7 katika dakika 5",
             "en": "Children with Apgar Score less than 7 at 5 minutes",
             "id": "children_with_apgar_score_less_than_7_at_5_minutes"
-        }, 
-        "11_children_who_were_assisted_to_breath": {
+        }, {
             "line_number": "11",
             "sw": "Watoto waliosaidiwa kupumua",
             "en": "11 children who were assisted to breath",
             "id": "11_children_who_were_assisted_to_breath"
-        }, 
-        "11a_number_of_children_assisted_to_breathe_stimulation": {
+        }, {
             "line_number": "11a",
             "sw": "Idadi ya Watoto Waliosaidiwa Kupumua - stimulation",
             "en": "11a Number of Children assisted to beathe - stimulation",
-            "id": "11a_number_of_children_assisted_to_beathe_stimulation"
-        }, 
-        "11b_number_of_children_assisted_to_breath_suction": {
+            "id": "11a_number_of_children_assisted_to_beathe_-_stimulation"
+        }, {
             "line_number": "11b",
             "sw": "Idadi ya Watoto Waliosaidiwa Kupumua - suction",
             "en": "11b Number of children assisted to breathe - suction",
-            "id": "11b_number_of_children_assisted_to_breathe_suction"
-        }, 
-        "11c_number_of_children_who_were_assisted_to_breathe_bag_and_mask": {
+            "id": "11b_number_of_children_assisted_to_breathe_-_suction"
+        }, {
             "line_number": "11c",
             "sw": "Idadi ya Watoto Waliosaidiwa Kupumua - bag and mask",
             "en": "11c Number of Children who were assisted to breathe - bag and mask",
-            "id": "11c_number_of_children_who_were_assisted_to_breathe_bag_and_mask"
-        }, 
-        "12_other_services": {
+            "id": "11c_number_of_children_who_were_assisted_to_breathe_-_bag_and_mask"
+        }, {
             "line_number": "12",
             "sw": "Huduma nyinginezo",
             "en": "12 Other Services",
             "id": "12_other_services"
-        }, 
-        "12_the_number_of_children_who_were_breastfed_hour_after_birth": {
+        }, {
             "line_number": "12",
             "sw": "idadi ya Watoto walionyonyeshwa saa moja baada ya kuzaliwa",
             "en": "12 the number of children who were breastfed hour after birth",
             "id": "12_the_number_of_children_who_were_breastfed_hour_after_birth"
-        }, 
-        "13_those_assessed_24_hours_after_birth": {
+        }, {
             "line_number": "13",
             "sw": "Waliofanyiwa tathmini masaa 24 baada ya kuzaliwa",
-            "en": "13 Those assessed 24 hours after birth",
-            "id": "13_those_assessed_24_hours_after_birth"
-        }, 
-        "14_mother_and_child_given_referral": {
+            "en": "13 Those  assessed 24 hours after birth",
+            "id": "13_those__assessed_24_hours_after_birth"
+        }, {
             "line_number": "14",
             "sw": "Mama na Mtoto waliopewa rufaa",
-            "en": "14 mother and child given referral",
-            "id": "14_mother_and_child_given_referral"
+            "en": "14 mother and child  given referral",
+            "id": "14_mother_and_child__given_referral"
         }
     }

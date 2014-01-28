@@ -1,0 +1,3061 @@
+[
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 2
+  },
+  {
+    "list_id": "symptoms",
+    "order": 1,
+    "en": "Other",
+    "sw": "",
+    "_rowNum": 3
+  },
+  {
+    "list_id": "symptoms",
+    "order": 2,
+    "en": "Body Aches",
+    "sw": "",
+    "_rowNum": 4
+  },
+  {
+    "list_id": "symptoms",
+    "order": 3,
+    "en": "Chills",
+    "sw": "",
+    "_rowNum": 5
+  },
+  {
+    "list_id": "symptoms",
+    "order": 4,
+    "en": "Diarrhea",
+    "sw": "",
+    "_rowNum": 6
+  },
+  {
+    "list_id": "symptoms",
+    "order": 5,
+    "en": "Fever",
+    "sw": "",
+    "_rowNum": 7
+  },
+  {
+    "list_id": "symptoms",
+    "order": 6,
+    "en": "Headache",
+    "sw": "",
+    "_rowNum": 8
+  },
+  {
+    "list_id": "symptoms",
+    "order": 7,
+    "en": "Shortness of Breath",
+    "sw": "",
+    "_rowNum": 9
+  },
+  {
+    "list_id": "symptoms",
+    "order": 8,
+    "en": "Nausea or Vomiting",
+    "sw": "",
+    "_rowNum": 10
+  },
+  {
+    "list_id": "symptoms",
+    "order": 9,
+    "en": "Rigors",
+    "sw": "",
+    "_rowNum": 11
+  },
+  {
+    "list_id": "symptoms",
+    "order": 10,
+    "en": "Night Sweats",
+    "sw": "",
+    "_rowNum": 12
+  },
+  {
+    "list_id": "symptoms",
+    "order": 11,
+    "en": "Rash",
+    "sw": "",
+    "_rowNum": 13
+  },
+  {
+    "list_id": "symptoms",
+    "order": 12,
+    "en": "Abdominal Pain",
+    "sw": "",
+    "_rowNum": 14
+  },
+  {
+    "list_id": "symptoms",
+    "order": 13,
+    "en": "Cough",
+    "sw": "",
+    "_rowNum": 15
+  },
+  {
+    "list_id": "symptoms",
+    "order": 14,
+    "en": "Difficultly with Urination",
+    "sw": "",
+    "_rowNum": 16
+  },
+  {
+    "list_id": "symptoms",
+    "order": 15,
+    "en": "Weakness",
+    "sw": "",
+    "_rowNum": 17
+  },
+  {
+    "list_id": "symptoms",
+    "order": 16,
+    "en": "Weight Loss",
+    "sw": "",
+    "_rowNum": 18
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 19
+  },
+  {
+    "list_id": "histories",
+    "order": 1,
+    "en": "None",
+    "sw": "",
+    "_rowNum": 20
+  },
+  {
+    "list_id": "histories",
+    "order": 2,
+    "en": "Other",
+    "sw": "",
+    "_rowNum": 21
+  },
+  {
+    "list_id": "histories",
+    "order": 3,
+    "en": "Hypertension",
+    "sw": "",
+    "_rowNum": 22
+  },
+  {
+    "list_id": "histories",
+    "order": 4,
+    "en": "Diabetes",
+    "sw": "",
+    "_rowNum": 23
+  },
+  {
+    "list_id": "histories",
+    "order": 5,
+    "en": "Malaria",
+    "sw": "",
+    "_rowNum": 24
+  },
+  {
+    "list_id": "histories",
+    "order": 6,
+    "en": "Yellow Fever",
+    "sw": "",
+    "_rowNum": 25
+  },
+  {
+    "list_id": "histories",
+    "order": 7,
+    "en": "Cholera",
+    "sw": "",
+    "_rowNum": 26
+  },
+  {
+    "list_id": "histories",
+    "order": 8,
+    "en": "Meningitis",
+    "sw": "",
+    "_rowNum": 27
+  },
+  {
+    "list_id": "histories",
+    "order": 9,
+    "en": "Sickle Cell",
+    "sw": "",
+    "_rowNum": 28
+  },
+  {
+    "list_id": "histories",
+    "order": 10,
+    "en": "Cancer",
+    "sw": "",
+    "_rowNum": 29
+  },
+  {
+    "list_id": "histories",
+    "order": 11,
+    "en": "Leprosy",
+    "sw": "",
+    "_rowNum": 30
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 31
+  },
+  {
+    "list_id": "referral_locations",
+    "order": 1,
+    "en": "Not Applicable",
+    "sw": "",
+    "_rowNum": 32
+  },
+  {
+    "list_id": "referral_locations",
+    "order": 2,
+    "en": "Laboratory",
+    "sw": "",
+    "_rowNum": 33
+  },
+  {
+    "list_id": "referral_locations",
+    "order": 3,
+    "en": "Pharmacy",
+    "sw": "",
+    "_rowNum": 34
+  },
+  {
+    "list_id": "referral_locations",
+    "order": 4,
+    "en": "Antenatal Clinic",
+    "sw": "",
+    "_rowNum": 35
+  },
+  {
+    "list_id": "referral_locations",
+    "order": 5,
+    "en": "TB / Leprosy Department",
+    "sw": "",
+    "_rowNum": 36
+  },
+  {
+    "list_id": "referral_locations",
+    "order": 6,
+    "en": "CTC",
+    "sw": "",
+    "_rowNum": 37
+  },
+  {
+    "list_id": "referral_locations",
+    "order": 7,
+    "en": "Reproductive Counseling",
+    "sw": "",
+    "_rowNum": 38
+  },
+  {
+    "list_id": "referral_locations",
+    "order": 8,
+    "en": "Immunization",
+    "sw": "",
+    "_rowNum": 39
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 40
+  },
+  {
+    "list_id": "injuries",
+    "order": 1,
+    "en": "Animal Bite (suspected rabies)",
+    "sw": "",
+    "_rowNum": 41
+  },
+  {
+    "list_id": "injuries",
+    "order": 2,
+    "en": "Animal Bite (no rabies)",
+    "sw": "",
+    "_rowNum": 42
+  },
+  {
+    "list_id": "injuries",
+    "order": 3,
+    "en": "Fracture",
+    "sw": "",
+    "_rowNum": 43
+  },
+  {
+    "list_id": "injuries",
+    "order": 4,
+    "en": "Concussion / Head Injury",
+    "sw": "",
+    "_rowNum": 44
+  },
+  {
+    "list_id": "injuries",
+    "order": 5,
+    "en": "Motor Vehicle Accident",
+    "sw": "",
+    "_rowNum": 45
+  },
+  {
+    "list_id": "injuries",
+    "order": 6,
+    "en": "Motorcycle Accident",
+    "sw": "",
+    "_rowNum": 46
+  },
+  {
+    "list_id": "injuries",
+    "order": 7,
+    "en": "Laceration",
+    "sw": "",
+    "_rowNum": 47
+  },
+  {
+    "list_id": "injuries",
+    "order": 8,
+    "en": "Crush injury",
+    "sw": "",
+    "_rowNum": 48
+  },
+  {
+    "list_id": "injuries",
+    "order": 9,
+    "en": "Burn",
+    "sw": "",
+    "_rowNum": 49
+  },
+  {
+    "list_id": "injuries",
+    "order": 10,
+    "en": "Other",
+    "sw": "",
+    "_rowNum": 50
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 51
+  },
+  {
+    "list_id": "injury_treatments",
+    "order": 1,
+    "en": "None",
+    "sw": "",
+    "_rowNum": 52
+  },
+  {
+    "list_id": "injury_treatments",
+    "order": 2,
+    "en": "Wound Washout",
+    "sw": "",
+    "_rowNum": 53
+  },
+  {
+    "list_id": "injury_treatments",
+    "order": 3,
+    "en": "Suture of Laceration",
+    "sw": "",
+    "_rowNum": 54
+  },
+  {
+    "list_id": "injury_treatments",
+    "order": 4,
+    "en": "Topical Treatment of Burn",
+    "sw": "",
+    "_rowNum": 55
+  },
+  {
+    "list_id": "injury_treatments",
+    "order": 5,
+    "en": "Bone Setting/Cast",
+    "sw": "",
+    "_rowNum": 56
+  },
+  {
+    "list_id": "injury_treatments",
+    "order": 6,
+    "en": "Surgery",
+    "sw": "",
+    "_rowNum": 57
+  },
+  {
+    "list_id": "injury_treatments",
+    "order": 7,
+    "en": "Blood Transfusion",
+    "sw": "",
+    "_rowNum": 58
+  },
+  {
+    "list_id": "injury_treatments",
+    "order": 8,
+    "en": "Antibiotics",
+    "sw": "",
+    "_rowNum": 59
+  },
+  {
+    "list_id": "injury_treatments",
+    "order": 9,
+    "en": "Antivenom",
+    "sw": "",
+    "_rowNum": 60
+  },
+  {
+    "list_id": "injury_treatments",
+    "order": 10,
+    "en": "Other",
+    "sw": "",
+    "_rowNum": 61
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 62
+  },
+  {
+    "list_id": "immunizations",
+    "order": 1,
+    "en": "BCG",
+    "sw": "",
+    "_rowNum": 63
+  },
+  {
+    "list_id": "immunizations",
+    "order": 2,
+    "en": "OPV-0",
+    "sw": "",
+    "_rowNum": 64
+  },
+  {
+    "list_id": "immunizations",
+    "order": 3,
+    "en": "OPV-1",
+    "sw": "",
+    "_rowNum": 65
+  },
+  {
+    "list_id": "immunizations",
+    "order": 4,
+    "en": "OPV-2",
+    "sw": "",
+    "_rowNum": 66
+  },
+  {
+    "list_id": "immunizations",
+    "order": 5,
+    "en": "OPV-3",
+    "sw": "",
+    "_rowNum": 67
+  },
+  {
+    "list_id": "immunizations",
+    "order": 6,
+    "en": "DTP-HB",
+    "sw": "",
+    "_rowNum": 68
+  },
+  {
+    "list_id": "immunizations",
+    "order": 7,
+    "en": "DPT 1",
+    "sw": "",
+    "_rowNum": 69
+  },
+  {
+    "list_id": "immunizations",
+    "order": 8,
+    "en": "DPT 2",
+    "sw": "",
+    "_rowNum": 70
+  },
+  {
+    "list_id": "immunizations",
+    "order": 9,
+    "en": "DPT 3",
+    "sw": "",
+    "_rowNum": 71
+  },
+  {
+    "list_id": "immunizations",
+    "order": 10,
+    "en": "Measles",
+    "sw": "",
+    "_rowNum": 72
+  },
+  {
+    "list_id": "immunizations",
+    "order": 11,
+    "en": "PENTA",
+    "sw": "",
+    "_rowNum": 73
+  },
+  {
+    "list_id": "immunizations",
+    "order": 12,
+    "en": "Tentanus Toxoid 1",
+    "sw": "",
+    "_rowNum": 74
+  },
+  {
+    "list_id": "immunizations",
+    "order": 13,
+    "en": "Tentanus Toxoid 2",
+    "sw": "",
+    "_rowNum": 75
+  },
+  {
+    "list_id": "immunizations",
+    "order": 14,
+    "en": "Tentanus Toxoid 3",
+    "sw": "",
+    "_rowNum": 76
+  },
+  {
+    "list_id": "immunizations",
+    "order": 15,
+    "en": "Tentanus Toxoid 4",
+    "sw": "",
+    "_rowNum": 77
+  },
+  {
+    "list_id": "immunizations",
+    "order": 16,
+    "en": "Tentanus Toxoid 5",
+    "sw": "",
+    "_rowNum": 78
+  },
+  {
+    "list_id": "immunizations",
+    "order": 17,
+    "en": "Vitamin A",
+    "sw": "",
+    "_rowNum": 79
+  },
+  {
+    "list_id": "immunizations",
+    "order": 18,
+    "en": "Other",
+    "sw": "",
+    "_rowNum": 80
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 81
+  },
+  {
+    "list_id": "immunization_effects",
+    "order": 1,
+    "en": "None",
+    "sw": "",
+    "_rowNum": 82
+  },
+  {
+    "list_id": "immunization_effects",
+    "order": 2,
+    "en": "Shortness of Breath",
+    "sw": "",
+    "_rowNum": 83
+  },
+  {
+    "list_id": "immunization_effects",
+    "order": 3,
+    "en": "Tongue Swelling",
+    "sw": "",
+    "_rowNum": 84
+  },
+  {
+    "list_id": "immunization_effects",
+    "order": 4,
+    "en": "Rash",
+    "sw": "",
+    "_rowNum": 85
+  },
+  {
+    "list_id": "immunization_effects",
+    "order": 5,
+    "en": "Fever",
+    "sw": "",
+    "_rowNum": 86
+  },
+  {
+    "list_id": "immunization_effects",
+    "order": 6,
+    "en": "Swelling at Injection Site",
+    "sw": "",
+    "_rowNum": 87
+  },
+  {
+    "list_id": "immunization_effects",
+    "order": 7,
+    "en": "Nausea or Vomiting",
+    "sw": "",
+    "_rowNum": 88
+  },
+  {
+    "list_id": "immunization_effects",
+    "order": 8,
+    "en": "Other",
+    "sw": "",
+    "_rowNum": 89
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 90
+  },
+  {
+    "list_id": "hiv_diagnosis_times",
+    "order": 1,
+    "en": "Unknown",
+    "sw": "",
+    "_rowNum": 91
+  },
+  {
+    "list_id": "hiv_diagnosis_times",
+    "order": 2,
+    "en": "Less Than 2 Month After Birth",
+    "sw": "",
+    "_rowNum": 92
+  },
+  {
+    "list_id": "hiv_diagnosis_times",
+    "order": 3,
+    "en": "Between 2-18 Months After Birth",
+    "sw": "",
+    "_rowNum": 93
+  },
+  {
+    "list_id": "hiv_diagnosis_times",
+    "order": 4,
+    "en": "More Than 18 Months After Birth",
+    "sw": "",
+    "_rowNum": 94
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 95
+  },
+  {
+    "list_id": "menses_regularity",
+    "order": 1,
+    "en": "None",
+    "sw": "",
+    "_rowNum": 96
+  },
+  {
+    "list_id": "menses_regularity",
+    "order": 2,
+    "en": "Irregular Menses",
+    "sw": "",
+    "_rowNum": 97
+  },
+  {
+    "list_id": "menses_regularity",
+    "order": 3,
+    "en": "Regular Menses Monthly",
+    "sw": "",
+    "_rowNum": 98
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 99
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 1,
+    "en": "None",
+    "sw": "",
+    "_rowNum": 100
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 2,
+    "en": "Fetal Death",
+    "sw": "",
+    "_rowNum": 101
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 3,
+    "en": "Neonatal Death",
+    "sw": "",
+    "_rowNum": 102
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 4,
+    "en": "Neonatal Injury",
+    "sw": "",
+    "_rowNum": 103
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 5,
+    "en": "Neonatal Tetanus",
+    "sw": "",
+    "_rowNum": 104
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 6,
+    "en": "Neonatal Sepsis",
+    "sw": "",
+    "_rowNum": 105
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 7,
+    "en": "Birth Asphyxia",
+    "sw": "",
+    "_rowNum": 106
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 8,
+    "en": "Shoulder Dystocia",
+    "sw": "",
+    "_rowNum": 107
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 9,
+    "en": "Obstructed Labor",
+    "sw": "",
+    "_rowNum": 108
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 10,
+    "en": "TB",
+    "sw": "",
+    "_rowNum": 109
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 11,
+    "en": "Diabetes",
+    "sw": "",
+    "_rowNum": 110
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 12,
+    "en": "Hemorrhage",
+    "sw": "",
+    "_rowNum": 111
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 13,
+    "en": "Intra-uterine Infection",
+    "sw": "",
+    "_rowNum": 112
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 14,
+    "en": "Cesarean Section",
+    "sw": "",
+    "_rowNum": 113
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 15,
+    "en": "Seizure",
+    "sw": "",
+    "_rowNum": 114
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 16,
+    "en": "Forceps/Vacuum",
+    "sw": "",
+    "_rowNum": 115
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 17,
+    "en": "Sepsis",
+    "sw": "",
+    "_rowNum": 116
+  },
+  {
+    "list_id": "pregnancy_complications",
+    "order": 18,
+    "en": "Other",
+    "sw": "",
+    "_rowNum": 117
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 118
+  },
+  {
+    "list_id": "marital_statuses",
+    "order": 1,
+    "en": "Single",
+    "sw": "",
+    "_rowNum": 119
+  },
+  {
+    "list_id": "marital_statuses",
+    "order": 2,
+    "en": "Married",
+    "sw": "",
+    "_rowNum": 120
+  },
+  {
+    "list_id": "marital_statuses",
+    "order": 3,
+    "en": "Divorced",
+    "sw": "",
+    "_rowNum": 121
+  },
+  {
+    "list_id": "marital_statuses",
+    "order": 4,
+    "en": "Separated",
+    "sw": "",
+    "_rowNum": 122
+  },
+  {
+    "list_id": "marital_statuses",
+    "order": 5,
+    "en": "Widowed",
+    "sw": "",
+    "_rowNum": 123
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 124
+  },
+  {
+    "list_id": "contraceptives",
+    "order": 1,
+    "en": "None",
+    "sw": "",
+    "_rowNum": 125
+  },
+  {
+    "list_id": "contraceptives",
+    "order": 2,
+    "en": "Pills",
+    "sw": "",
+    "_rowNum": 126
+  },
+  {
+    "list_id": "contraceptives",
+    "order": 3,
+    "en": "Condoms",
+    "sw": "",
+    "_rowNum": 127
+  },
+  {
+    "list_id": "contraceptives",
+    "order": 4,
+    "en": "IUD",
+    "sw": "",
+    "_rowNum": 128
+  },
+  {
+    "list_id": "contraceptives",
+    "order": 5,
+    "en": "Remove IUD",
+    "sw": "",
+    "_rowNum": 129
+  },
+  {
+    "list_id": "contraceptives",
+    "order": 6,
+    "en": "Other Implants",
+    "sw": "",
+    "_rowNum": 130
+  },
+  {
+    "list_id": "contraceptives",
+    "order": 7,
+    "en": "Depo Provera",
+    "sw": "",
+    "_rowNum": 131
+  },
+  {
+    "list_id": "contraceptives",
+    "order": 8,
+    "en": "Sterilization",
+    "sw": "",
+    "_rowNum": 132
+  },
+  {
+    "list_id": "contraceptives",
+    "order": 9,
+    "en": "Natural ways",
+    "sw": "",
+    "_rowNum": 133
+  },
+  {
+    "list_id": "contraceptives",
+    "order": 10,
+    "en": "Other",
+    "sw": "",
+    "_rowNum": 134
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 135
+  },
+  {
+    "list_id": "fertility_desires",
+    "order": 1,
+    "en": "Desires Pregnancy Now",
+    "sw": "",
+    "_rowNum": 136
+  },
+  {
+    "list_id": "fertility_desires",
+    "order": 2,
+    "en": "Desires Contraception Now",
+    "sw": "",
+    "_rowNum": 137
+  },
+  {
+    "list_id": "fertility_desires",
+    "order": 3,
+    "en": "Desires Future Pregnancy",
+    "sw": "",
+    "_rowNum": 138
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 139
+  },
+  {
+    "list_id": "hiv_risks",
+    "order": 1,
+    "en": "Patient Known to Have HIV",
+    "sw": "",
+    "_rowNum": 140
+  },
+  {
+    "list_id": "hiv_risks",
+    "order": 2,
+    "en": "Partner or Previous Partner Known to Have HIV",
+    "sw": "",
+    "_rowNum": 141
+  },
+  {
+    "list_id": "hiv_risks",
+    "order": 3,
+    "en": "History of Sexual Assult",
+    "sw": "",
+    "_rowNum": 142
+  },
+  {
+    "list_id": "hiv_risks",
+    "order": 4,
+    "en": "Desires HIV Testing",
+    "sw": "",
+    "_rowNum": 143
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 144
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 1,
+    "en": "Not Applicable",
+    "sw": "",
+    "_rowNum": 145
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 2,
+    "en": "1 Month Supply",
+    "sw": "",
+    "_rowNum": 146
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 3,
+    "en": "2 Month Supply",
+    "sw": "",
+    "_rowNum": 147
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 4,
+    "en": "3 Month Supply",
+    "sw": "",
+    "_rowNum": 148
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 5,
+    "en": "4 Month Supply",
+    "sw": "",
+    "_rowNum": 149
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 6,
+    "en": "5 Month Supply",
+    "sw": "",
+    "_rowNum": 150
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 7,
+    "en": "6 Month Supply",
+    "sw": "",
+    "_rowNum": 151
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 8,
+    "en": "7 Month Supply",
+    "sw": "",
+    "_rowNum": 152
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 9,
+    "en": "8 Month Supply",
+    "sw": "",
+    "_rowNum": 153
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 10,
+    "en": "9 Month Supply",
+    "sw": "",
+    "_rowNum": 154
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 11,
+    "en": "10 Month Supply",
+    "sw": "",
+    "_rowNum": 155
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 12,
+    "en": "11 Month Supply",
+    "sw": "",
+    "_rowNum": 156
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 13,
+    "en": "12 Month Supply",
+    "sw": "",
+    "_rowNum": 157
+  },
+  {
+    "list_id": "drug_quantities",
+    "order": 14,
+    "en": "More Than One Year Supply",
+    "sw": "",
+    "_rowNum": 158
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 159
+  },
+  {
+    "list_id": "comdom_quanitites",
+    "order": 1,
+    "en": "Not Applicable",
+    "sw": "",
+    "_rowNum": 160
+  },
+  {
+    "list_id": "comdom_quanitites",
+    "order": 2,
+    "en": "1 to 10",
+    "sw": "",
+    "_rowNum": 161
+  },
+  {
+    "list_id": "comdom_quanitites",
+    "order": 3,
+    "en": "11 to 20",
+    "sw": "",
+    "_rowNum": 162
+  },
+  {
+    "list_id": "comdom_quanitites",
+    "order": 4,
+    "en": "21 to 30",
+    "sw": "",
+    "_rowNum": 163
+  },
+  {
+    "list_id": "comdom_quanitites",
+    "order": 5,
+    "en": "31 to 40",
+    "sw": "",
+    "_rowNum": 164
+  },
+  {
+    "list_id": "comdom_quanitites",
+    "order": 6,
+    "en": "41 to 50",
+    "sw": "",
+    "_rowNum": 165
+  },
+  {
+    "list_id": "comdom_quanitites",
+    "order": 7,
+    "en": "50+",
+    "sw": "",
+    "_rowNum": 166
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 167
+  },
+  {
+    "list_id": "depoprovera_quantities",
+    "order": 1,
+    "en": "3 Month Dose",
+    "sw": "",
+    "_rowNum": 168
+  },
+  {
+    "list_id": "depoprovera_quantities",
+    "order": 2,
+    "en": "6 Month Dose",
+    "sw": "",
+    "_rowNum": 169
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 170
+  },
+  {
+    "list_id": "cervical_symptoms",
+    "order": 1,
+    "en": "Vaginal Discharge",
+    "sw": "",
+    "_rowNum": 171
+  },
+  {
+    "list_id": "cervical_symptoms",
+    "order": 2,
+    "en": "Post-Coital Bleeding",
+    "sw": "",
+    "_rowNum": 172
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 173
+  },
+  {
+    "list_id": "infant_weights",
+    "order": 1,
+    "en": "No Previous Delivery",
+    "sw": "",
+    "_rowNum": 174
+  },
+  {
+    "list_id": "infant_weights",
+    "order": 2,
+    "en": "Unknown",
+    "sw": "",
+    "_rowNum": 175
+  },
+  {
+    "list_id": "infant_weights",
+    "order": 3,
+    "en": "<1kg",
+    "sw": "",
+    "_rowNum": 176
+  },
+  {
+    "list_id": "infant_weights",
+    "order": 4,
+    "en": "1kg",
+    "sw": "",
+    "_rowNum": 177
+  },
+  {
+    "list_id": "infant_weights",
+    "order": 5,
+    "en": "1.5kg",
+    "sw": "",
+    "_rowNum": 178
+  },
+  {
+    "list_id": "infant_weights",
+    "order": 6,
+    "en": "2kg",
+    "sw": "",
+    "_rowNum": 179
+  },
+  {
+    "list_id": "infant_weights",
+    "order": 7,
+    "en": "2.5kg",
+    "sw": "",
+    "_rowNum": 180
+  },
+  {
+    "list_id": "infant_weights",
+    "order": 8,
+    "en": "3kg",
+    "sw": "",
+    "_rowNum": 181
+  },
+  {
+    "list_id": "infant_weights",
+    "order": 9,
+    "en": "3.5kg",
+    "sw": "",
+    "_rowNum": 182
+  },
+  {
+    "list_id": "infant_weights",
+    "order": 10,
+    "en": "4kg+",
+    "sw": "",
+    "_rowNum": 183
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 184
+  },
+  {
+    "list_id": "hiv_statuses",
+    "order": 1,
+    "en": "Positive",
+    "sw": "",
+    "_rowNum": 185
+  },
+  {
+    "list_id": "hiv_statuses",
+    "order": 2,
+    "en": "Negative",
+    "sw": "",
+    "_rowNum": 186
+  },
+  {
+    "list_id": "hiv_statuses",
+    "order": 3,
+    "en": "Unknown",
+    "sw": "",
+    "_rowNum": 187
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 188
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 1,
+    "en": "None",
+    "sw": "",
+    "_rowNum": 189
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 2,
+    "en": "Abdominal Pain",
+    "sw": "",
+    "_rowNum": 190
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 3,
+    "en": "Vaginal Pain",
+    "sw": "",
+    "_rowNum": 191
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 4,
+    "en": "Vaginal Bleeding",
+    "sw": "",
+    "_rowNum": 192
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 5,
+    "en": "Loss of Fetal Movement",
+    "sw": "",
+    "_rowNum": 193
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 6,
+    "en": "Vaginal Leakage of Fluid",
+    "sw": "",
+    "_rowNum": 194
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 7,
+    "en": "Headache",
+    "sw": "",
+    "_rowNum": 195
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 8,
+    "en": "Blurred Vision",
+    "sw": "",
+    "_rowNum": 196
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 9,
+    "en": "Nausea or Vomiting",
+    "sw": "",
+    "_rowNum": 197
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 10,
+    "en": "Diarrhea",
+    "sw": "",
+    "_rowNum": 198
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 11,
+    "en": "Constipation",
+    "sw": "",
+    "_rowNum": 199
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 12,
+    "en": "Fever",
+    "sw": "",
+    "_rowNum": 200
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 13,
+    "en": "Contractions",
+    "sw": "",
+    "_rowNum": 201
+  },
+  {
+    "list_id": "anc_symptoms",
+    "order": 14,
+    "en": "Post-Coital Bleeding",
+    "sw": "",
+    "_rowNum": 202
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 203
+  },
+  {
+    "list_id": "fetal_stations",
+    "order": 1,
+    "en": "Not Examined",
+    "sw": "",
+    "_rowNum": 204
+  },
+  {
+    "list_id": "fetal_stations",
+    "order": 2,
+    "en": "High/Unengaged",
+    "sw": "",
+    "_rowNum": 205
+  },
+  {
+    "list_id": "fetal_stations",
+    "order": 3,
+    "en": -3,
+    "sw": "",
+    "_rowNum": 206
+  },
+  {
+    "list_id": "fetal_stations",
+    "order": 4,
+    "en": -2,
+    "sw": "",
+    "_rowNum": 207
+  },
+  {
+    "list_id": "fetal_stations",
+    "order": 5,
+    "en": -1,
+    "sw": "",
+    "_rowNum": 208
+  },
+  {
+    "list_id": "fetal_stations",
+    "order": 6,
+    "en": 0,
+    "sw": "",
+    "_rowNum": 209
+  },
+  {
+    "list_id": "fetal_stations",
+    "order": 7,
+    "en": 1,
+    "sw": "",
+    "_rowNum": 210
+  },
+  {
+    "list_id": "fetal_stations",
+    "order": 8,
+    "en": 2,
+    "sw": "",
+    "_rowNum": 211
+  },
+  {
+    "list_id": "fetal_stations",
+    "order": 9,
+    "en": 3,
+    "sw": "",
+    "_rowNum": 212
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 213
+  },
+  {
+    "list_id": "fetal_movements",
+    "order": 1,
+    "en": "Too Early To Be Felt",
+    "sw": "",
+    "_rowNum": 214
+  },
+  {
+    "list_id": "fetal_movements",
+    "order": 2,
+    "en": "Felt By Mother",
+    "sw": "",
+    "_rowNum": 215
+  },
+  {
+    "list_id": "fetal_movements",
+    "order": 3,
+    "en": "Felt By Mother, Noted to be Abnormal",
+    "sw": "",
+    "_rowNum": 216
+  },
+  {
+    "list_id": "fetal_movements",
+    "order": 4,
+    "en": "Not Felt By Mother",
+    "sw": "",
+    "_rowNum": 217
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 218
+  },
+  {
+    "list_id": "fetal_heart_rates",
+    "order": 1,
+    "en": "Not Checked",
+    "sw": "",
+    "_rowNum": 219
+  },
+  {
+    "list_id": "fetal_heart_rates",
+    "order": 2,
+    "en": "Checked, But Unable To Hear",
+    "sw": "",
+    "_rowNum": 220
+  },
+  {
+    "list_id": "fetal_heart_rates",
+    "order": 3,
+    "en": "110s",
+    "sw": "",
+    "_rowNum": 221
+  },
+  {
+    "list_id": "fetal_heart_rates",
+    "order": 4,
+    "en": "120s",
+    "sw": "",
+    "_rowNum": 222
+  },
+  {
+    "list_id": "fetal_heart_rates",
+    "order": 5,
+    "en": "130s",
+    "sw": "",
+    "_rowNum": 223
+  },
+  {
+    "list_id": "fetal_heart_rates",
+    "order": 6,
+    "en": "140s",
+    "sw": "",
+    "_rowNum": 224
+  },
+  {
+    "list_id": "fetal_heart_rates",
+    "order": 7,
+    "en": "150s",
+    "sw": "",
+    "_rowNum": 225
+  },
+  {
+    "list_id": "fetal_heart_rates",
+    "order": 8,
+    "en": "160s",
+    "sw": "",
+    "_rowNum": 226
+  },
+  {
+    "list_id": "fetal_heart_rates",
+    "order": 9,
+    "en": "170s",
+    "sw": "",
+    "_rowNum": 227
+  },
+  {
+    "list_id": "fetal_heart_rates",
+    "order": 10,
+    "en": "180s",
+    "sw": "",
+    "_rowNum": 228
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 229
+  },
+  {
+    "list_id": "anemia_severities",
+    "order": 1,
+    "en": "<8.5g/dl",
+    "sw": "",
+    "_rowNum": 230
+  },
+  {
+    "list_id": "anemia_severities",
+    "order": 2,
+    "en": ">8.5g/dl",
+    "sw": "",
+    "_rowNum": 231
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 232
+  },
+  {
+    "list_id": "milk_types",
+    "order": 1,
+    "en": "Mother's Milk ONLY",
+    "sw": "",
+    "_rowNum": 233
+  },
+  {
+    "list_id": "milk_types",
+    "order": 2,
+    "en": "Mother's Milk + Formula",
+    "sw": "",
+    "_rowNum": 234
+  },
+  {
+    "list_id": "milk_types",
+    "order": 3,
+    "en": "Mother's Milk + Other",
+    "sw": "",
+    "_rowNum": 235
+  },
+  {
+    "list_id": "milk_types",
+    "order": 4,
+    "en": "Formula ONLY",
+    "sw": "",
+    "_rowNum": 236
+  },
+  {
+    "list_id": "milk_types",
+    "order": 5,
+    "en": "Formula + Other",
+    "sw": "",
+    "_rowNum": 237
+  },
+  {
+    "list_id": "milk_types",
+    "order": 6,
+    "en": "Other ONLY",
+    "sw": "",
+    "_rowNum": 238
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 239
+  },
+  {
+    "list_id": "contraceptive_sources",
+    "order": 1,
+    "en": "Clinic",
+    "sw": "",
+    "_rowNum": 240
+  },
+  {
+    "list_id": "contraceptive_sources",
+    "order": 2,
+    "en": "Community Based Distribution (CBD)",
+    "sw": "",
+    "_rowNum": 241
+  },
+  {
+    "list_id": "contraceptive_sources",
+    "order": 3,
+    "en": "Outreach",
+    "sw": "",
+    "_rowNum": 242
+  },
+  {
+    "list_id": "contraceptive_sources",
+    "order": 4,
+    "en": "Both",
+    "sw": "",
+    "_rowNum": 243
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 244
+  },
+  {
+    "list_id": "water_sodium_severities",
+    "order": 1,
+    "en": "severe",
+    "sw": "",
+    "_rowNum": 245
+  },
+  {
+    "list_id": "water_sodium_severities",
+    "order": 2,
+    "en": "mild",
+    "sw": "",
+    "_rowNum": 246
+  },
+  {
+    "list_id": "water_sodium_severities",
+    "order": 3,
+    "en": "uncertain",
+    "sw": "",
+    "_rowNum": 247
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 248
+  },
+  {
+    "list_id": "genders",
+    "order": 1,
+    "en": "Female",
+    "sw": "",
+    "_rowNum": 249
+  },
+  {
+    "list_id": "genders",
+    "order": 2,
+    "en": "Male",
+    "sw": "",
+    "_rowNum": 250
+  },
+  {
+    "list_id": "genders",
+    "order": 3,
+    "en": "Unknown",
+    "sw": "",
+    "_rowNum": 251
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 252
+  },
+  {
+    "list_id": "form_lists",
+    "order": 1,
+    "en": "#/forms/list",
+    "sw": "",
+    "_rowNum": 253
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 254
+  },
+  {
+    "list_id": "delivery_type",
+    "order": 1,
+    "en": "Home delivery",
+    "sw": "",
+    "_rowNum": 255
+  },
+  {
+    "list_id": "delivery_type",
+    "order": 2,
+    "en": "Delivered by traditional birth attendant",
+    "sw": "",
+    "_rowNum": 256
+  },
+  {
+    "list_id": "delivery_type",
+    "order": 3,
+    "en": "Delivered in clinic",
+    "sw": "",
+    "_rowNum": 257
+  },
+  {
+    "list_id": "delivery_type",
+    "order": 4,
+    "en": "Delivered on the way to clinic",
+    "sw": "",
+    "_rowNum": 258
+  },
+  {
+    "list_id": "delivery_type",
+    "order": 5,
+    "en": "Delivered by skilled provider",
+    "sw": "",
+    "_rowNum": 259
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 260
+  },
+  {
+    "list_id": "delivery_mode",
+    "order": 1,
+    "en": "Vaginal",
+    "sw": "",
+    "_rowNum": 261
+  },
+  {
+    "list_id": "delivery_mode",
+    "order": 2,
+    "en": "C-section",
+    "sw": "",
+    "_rowNum": 262
+  },
+  {
+    "list_id": "delivery_mode",
+    "order": 3,
+    "en": "Vacuum",
+    "sw": "",
+    "_rowNum": 263
+  },
+  {
+    "list_id": "delivery_mode",
+    "order": 4,
+    "en": "Breech",
+    "sw": "",
+    "_rowNum": 264
+  },
+  {
+    "list_id": "delivery_mode",
+    "order": 5,
+    "en": "Other",
+    "sw": "",
+    "_rowNum": 265
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 266
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 1,
+    "en": "APH",
+    "sw": "",
+    "_rowNum": 267
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 2,
+    "en": "PROM",
+    "sw": "",
+    "_rowNum": 268
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 3,
+    "en": "high BP",
+    "sw": "",
+    "_rowNum": 269
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 4,
+    "en": "eclampsia",
+    "sw": "",
+    "_rowNum": 270
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 5,
+    "en": "pre-eclampsia",
+    "sw": "",
+    "_rowNum": 271
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 6,
+    "en": "anemia",
+    "sw": "",
+    "_rowNum": 272
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 7,
+    "en": "malaria",
+    "sw": "",
+    "_rowNum": 273
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 8,
+    "en": "HIV",
+    "sw": "",
+    "_rowNum": 274
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 9,
+    "en": "HIV stage III or stage IV",
+    "sw": "",
+    "_rowNum": 275
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 10,
+    "en": "ectopic pregnancy",
+    "sw": "",
+    "_rowNum": 276
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 11,
+    "en": "abortion complications",
+    "sw": "",
+    "_rowNum": 277
+  },
+  {
+    "list_id": "prenatal_prob",
+    "order": 12,
+    "en": "other",
+    "sw": "",
+    "_rowNum": 278
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 279
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 1,
+    "en": "PPH",
+    "sw": "",
+    "_rowNum": 280
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 2,
+    "en": "eclampsia",
+    "sw": "",
+    "_rowNum": 281
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 3,
+    "en": "pre-eclapmsia",
+    "sw": "",
+    "_rowNum": 282
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 4,
+    "en": "obstructed labor",
+    "sw": "",
+    "_rowNum": 283
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 5,
+    "en": "retained placenta",
+    "sw": "",
+    "_rowNum": 284
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 6,
+    "en": "ruptured uterus",
+    "sw": "",
+    "_rowNum": 285
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 7,
+    "en": "sepsis/infection",
+    "sw": "",
+    "_rowNum": 286
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 8,
+    "en": "other",
+    "sw": "",
+    "_rowNum": 287
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 9,
+    "en": "given IV antibiotics",
+    "sw": "",
+    "_rowNum": 288
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 10,
+    "en": "given uterotonics",
+    "sw": "",
+    "_rowNum": 289
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 11,
+    "en": "given blood transfusion",
+    "sw": "",
+    "_rowNum": 290
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 12,
+    "en": "placenta removed by hand",
+    "sw": "",
+    "_rowNum": 291
+  },
+  {
+    "list_id": "birth_comp",
+    "order": 13,
+    "en": "MVA needed",
+    "sw": "",
+    "_rowNum": 292
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 293
+  },
+  {
+    "list_id": "postnatal_mother_diagnoses",
+    "order": 1,
+    "en": "severe anemia (Hb<8.5)",
+    "sw": "",
+    "_rowNum": 294
+  },
+  {
+    "list_id": "postnatal_mother_diagnoses",
+    "order": 2,
+    "en": "mental disorder",
+    "sw": "",
+    "_rowNum": 295
+  },
+  {
+    "list_id": "postnatal_mother_diagnoses",
+    "order": 3,
+    "en": "gaping or infected perineum",
+    "sw": "",
+    "_rowNum": 296
+  },
+  {
+    "list_id": "postnatal_mother_diagnoses",
+    "order": 4,
+    "en": "fistula",
+    "sw": "",
+    "_rowNum": 297
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 298
+  },
+  {
+    "list_id": "immunizations_postnatal",
+    "order": 1,
+    "en": "BCG",
+    "sw": "",
+    "_rowNum": 299
+  },
+  {
+    "list_id": "immunizations_postnatal",
+    "order": 2,
+    "en": "OPV-0",
+    "sw": "",
+    "_rowNum": 300
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 301
+  },
+  {
+    "list_id": "postnatal_child_diagnoses",
+    "order": 1,
+    "en": "septicemia",
+    "sw": "",
+    "_rowNum": 302
+  },
+  {
+    "list_id": "postnatal_child_diagnoses",
+    "order": 2,
+    "en": "umbilical cord infection",
+    "sw": "",
+    "_rowNum": 303
+  },
+  {
+    "list_id": "postnatal_child_diagnoses",
+    "order": 3,
+    "en": "severe anemia (Hb<10)",
+    "sw": "",
+    "_rowNum": 304
+  },
+  {
+    "list_id": "postnatal_child_diagnoses",
+    "order": 4,
+    "en": "skin infection",
+    "sw": "",
+    "_rowNum": 305
+  },
+  {
+    "list_id": "postnatal_child_diagnoses",
+    "order": 5,
+    "en": "neonatal death",
+    "sw": "",
+    "_rowNum": 306
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 307
+  },
+  {
+    "list_id": "leprosy_diagnoses",
+    "order": 1,
+    "en": "tb",
+    "sw": "",
+    "_rowNum": 308
+  },
+  {
+    "list_id": "leprosy_diagnoses",
+    "order": 2,
+    "en": "leprosy",
+    "sw": "",
+    "_rowNum": 309
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 310
+  },
+  {
+    "list_id": "leprosy_classifications",
+    "order": 1,
+    "en": "MB (A)",
+    "sw": "",
+    "_rowNum": 311
+  },
+  {
+    "list_id": "leprosy_classifications",
+    "order": 2,
+    "en": "MB (C)",
+    "sw": "",
+    "_rowNum": 312
+  },
+  {
+    "list_id": "leprosy_classifications",
+    "order": 3,
+    "en": "PB (A)",
+    "sw": "",
+    "_rowNum": 313
+  },
+  {
+    "list_id": "leprosy_classifications",
+    "order": 4,
+    "en": "PB (C)",
+    "sw": "",
+    "_rowNum": 314
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 315
+  },
+  {
+    "list_id": "leprosy_statuses",
+    "order": 1,
+    "en": "Return after default",
+    "sw": "",
+    "_rowNum": 316
+  },
+  {
+    "list_id": "leprosy_statuses",
+    "order": 2,
+    "en": "Relapse after MDT",
+    "sw": "",
+    "_rowNum": 317
+  },
+  {
+    "list_id": "leprosy_statuses",
+    "order": 3,
+    "en": "Relapse after DDS/other",
+    "sw": "",
+    "_rowNum": 318
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 319
+  },
+  {
+    "list_id": "leprosy_disabilities",
+    "order": 1,
+    "en": "Grade 0",
+    "sw": "",
+    "_rowNum": 320
+  },
+  {
+    "list_id": "leprosy_disabilities",
+    "order": 2,
+    "en": "Grade 1",
+    "sw": "",
+    "_rowNum": 321
+  },
+  {
+    "list_id": "leprosy_disabilities",
+    "order": 3,
+    "en": "Grade 2",
+    "sw": "",
+    "_rowNum": 322
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 323
+  },
+  {
+    "list_id": "leprosy_results",
+    "order": 1,
+    "en": "Treatment completed",
+    "sw": "",
+    "_rowNum": 324
+  },
+  {
+    "list_id": "leprosy_results",
+    "order": 2,
+    "en": "Died",
+    "sw": "",
+    "_rowNum": 325
+  },
+  {
+    "list_id": "leprosy_results",
+    "order": 3,
+    "en": "Transferred out",
+    "sw": "",
+    "_rowNum": 326
+  },
+  {
+    "list_id": "leprosy_results",
+    "order": 4,
+    "en": "Defaulter",
+    "sw": "",
+    "_rowNum": 327
+  },
+  {
+    "list_id": "leprosy_results",
+    "order": 5,
+    "en": "Not applicable",
+    "sw": "",
+    "_rowNum": 328
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 329
+  },
+  {
+    "list_id": "tb_classifications",
+    "order": 1,
+    "en": "AFB+",
+    "sw": "",
+    "_rowNum": 330
+  },
+  {
+    "list_id": "tb_classifications",
+    "order": 2,
+    "en": "AFB-",
+    "sw": "",
+    "_rowNum": 331
+  },
+  {
+    "list_id": "tb_classifications",
+    "order": 3,
+    "en": "Extra-pulmonary",
+    "sw": "",
+    "_rowNum": 332
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 333
+  },
+  {
+    "list_id": "tb_regimens",
+    "order": 1,
+    "en": "2RHZE/4RH",
+    "sw": "",
+    "_rowNum": 334
+  },
+  {
+    "list_id": "tb_regimens",
+    "order": 2,
+    "en": "2RHZ/4RH",
+    "sw": "",
+    "_rowNum": 335
+  },
+  {
+    "list_id": "tb_regimens",
+    "order": 3,
+    "en": "2SRHZE/1RHZE/5RH3E3",
+    "sw": "",
+    "_rowNum": 336
+  },
+  {
+    "list_id": "tb_regimens",
+    "order": 4,
+    "en": "2SRHZE/1RHZE/5RHE",
+    "sw": "",
+    "_rowNum": 337
+  },
+  {
+    "list_id": "tb_regimens",
+    "order": 5,
+    "en": "2RHZE/6EH",
+    "sw": "",
+    "_rowNum": 338
+  },
+  {
+    "list_id": "tb_regimens",
+    "order": 6,
+    "en": "health facility DOT",
+    "sw": "",
+    "_rowNum": 339
+  },
+  {
+    "list_id": "tb_regimens",
+    "order": 7,
+    "en": "home-based DOT",
+    "sw": "",
+    "_rowNum": 340
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 341
+  },
+  {
+    "list_id": "pregnancy_diseases",
+    "order": 1,
+    "en": "Tuberculosis",
+    "sw": "",
+    "_rowNum": 342
+  },
+  {
+    "list_id": "pregnancy_diseases",
+    "order": 2,
+    "en": "Diabetes",
+    "sw": "",
+    "_rowNum": 343
+  },
+  {
+    "list_id": "pregnancy_diseases",
+    "order": 3,
+    "en": "Heart Disease",
+    "sw": "",
+    "_rowNum": 344
+  },
+  {
+    "list_id": "",
+    "order": "",
+    "en": "",
+    "sw": "",
+    "_rowNum": 345
+  },
+  {
+    "list_id": "diseases",
+    "order": 1,
+    "en": "Acute Flacid Paralysis",
+    "sw": "",
+    "_rowNum": 346
+  },
+  {
+    "list_id": "diseases",
+    "order": 2,
+    "en": "Cholera",
+    "sw": "",
+    "_rowNum": 347
+  },
+  {
+    "list_id": "diseases",
+    "order": 3,
+    "en": "Dysentery",
+    "sw": "",
+    "_rowNum": 348
+  },
+  {
+    "list_id": "diseases",
+    "order": 4,
+    "en": "Measles",
+    "sw": "",
+    "_rowNum": 349
+  },
+  {
+    "list_id": "diseases",
+    "order": 5,
+    "en": "Meningitis",
+    "sw": "",
+    "_rowNum": 350
+  },
+  {
+    "list_id": "diseases",
+    "order": 6,
+    "en": "Neonatal Tetanus",
+    "sw": "",
+    "_rowNum": 351
+  },
+  {
+    "list_id": "diseases",
+    "order": 7,
+    "en": "Plague",
+    "sw": "",
+    "_rowNum": 352
+  },
+  {
+    "list_id": "diseases",
+    "order": 8,
+    "en": "Relapsing Fever (Louse borne typhus)",
+    "sw": "",
+    "_rowNum": 353
+  },
+  {
+    "list_id": "diseases",
+    "order": 9,
+    "en": "Yellow Fever",
+    "sw": "",
+    "_rowNum": 354
+  },
+  {
+    "list_id": "diseases",
+    "order": 10,
+    "en": "Influenza",
+    "sw": "",
+    "_rowNum": 355
+  },
+  {
+    "list_id": "diseases",
+    "order": 11,
+    "en": "Typhoid",
+    "sw": "",
+    "_rowNum": 356
+  },
+  {
+    "list_id": "diseases",
+    "order": 12,
+    "en": "Rabies/Suspected rabies bites",
+    "sw": "",
+    "_rowNum": 357
+  },
+  {
+    "list_id": "diseases",
+    "order": 13,
+    "en": "Trachoma",
+    "sw": "",
+    "_rowNum": 358
+  },
+  {
+    "list_id": "diseases",
+    "order": 14,
+    "en": "Onchocerciasis",
+    "sw": "",
+    "_rowNum": 359
+  },
+  {
+    "list_id": "diseases",
+    "order": 15,
+    "en": "Trypanosomiasis",
+    "sw": "",
+    "_rowNum": 360
+  },
+  {
+    "list_id": "diseases",
+    "order": 16,
+    "en": "Viral haemorrhagic fevers",
+    "sw": "",
+    "_rowNum": 361
+  },
+  {
+    "list_id": "diseases",
+    "order": 17,
+    "en": "Keratoconjuctivitis",
+    "sw": "",
+    "_rowNum": 362
+  },
+  {
+    "list_id": "diseases",
+    "order": 18,
+    "en": "Diarrhea, Acute (< 14 days)",
+    "sw": "",
+    "_rowNum": 363
+  },
+  {
+    "list_id": "diseases",
+    "order": 19,
+    "en": "Diarrhea, Chronic (.> 14 days)",
+    "sw": "",
+    "_rowNum": 364
+  },
+  {
+    "list_id": "diseases",
+    "order": 20,
+    "en": "Malaria",
+    "sw": "",
+    "_rowNum": 365
+  },
+  {
+    "list_id": "diseases",
+    "order": 21,
+    "en": "Blood Slide positive",
+    "sw": "",
+    "_rowNum": 366
+  },
+  {
+    "list_id": "diseases",
+    "order": 22,
+    "en": "mRDT postivie",
+    "sw": "",
+    "_rowNum": 367
+  },
+  {
+    "list_id": "diseases",
+    "order": 23,
+    "en": "Clinical (No Test)",
+    "sw": "",
+    "_rowNum": 368
+  },
+  {
+    "list_id": "diseases",
+    "order": 24,
+    "en": "In Pregnancy",
+    "sw": "",
+    "_rowNum": 369
+  },
+  {
+    "list_id": "diseases",
+    "order": 25,
+    "en": "Schistosomiasis",
+    "sw": "",
+    "_rowNum": 370
+  },
+  {
+    "list_id": "diseases",
+    "order": 26,
+    "en": "STI Genital Discharge Syndrome (GDS)",
+    "sw": "",
+    "_rowNum": 371
+  },
+  {
+    "list_id": "diseases",
+    "order": 27,
+    "en": "STI Genital Ulcer Diseases (GUD)",
+    "sw": "",
+    "_rowNum": 372
+  },
+  {
+    "list_id": "diseases",
+    "order": 28,
+    "en": "STI Pelvic Inflammatory Diseases (PID)",
+    "sw": "",
+    "_rowNum": 373
+  },
+  {
+    "list_id": "diseases",
+    "order": 29,
+    "en": "Sexually Transmitted Infections, Other",
+    "sw": "",
+    "_rowNum": 374
+  },
+  {
+    "list_id": "diseases",
+    "order": 30,
+    "en": "Tuberculosis",
+    "sw": "",
+    "_rowNum": 375
+  },
+  {
+    "list_id": "diseases",
+    "order": 31,
+    "en": "Leprosy",
+    "sw": "",
+    "_rowNum": 376
+  },
+  {
+    "list_id": "diseases",
+    "order": 32,
+    "en": "Intestinal Worms",
+    "sw": "",
+    "_rowNum": 377
+  },
+  {
+    "list_id": "diseases",
+    "order": 33,
+    "en": "Anaemia, Mild / Moderate",
+    "sw": "",
+    "_rowNum": 378
+  },
+  {
+    "list_id": "diseases",
+    "order": 34,
+    "en": "Anaemia, Severe",
+    "sw": "",
+    "_rowNum": 379
+  },
+  {
+    "list_id": "diseases",
+    "order": 35,
+    "en": "Sickle cell Disease",
+    "sw": "",
+    "_rowNum": 380
+  },
+  {
+    "list_id": "diseases",
+    "order": 36,
+    "en": "HIV Positive",
+    "sw": "",
+    "_rowNum": 381
+  },
+  {
+    "list_id": "diseases",
+    "order": 37,
+    "en": "HIV Infection, Symptomatic",
+    "sw": "",
+    "_rowNum": 382
+  },
+  {
+    "list_id": "diseases",
+    "order": 38,
+    "en": "Ear Infection, Acute",
+    "sw": "",
+    "_rowNum": 383
+  },
+  {
+    "list_id": "diseases",
+    "order": 39,
+    "en": "Ear Infection, Chronic",
+    "sw": "",
+    "_rowNum": 384
+  },
+  {
+    "list_id": "diseases",
+    "order": 40,
+    "en": "Eye Infection",
+    "sw": "",
+    "_rowNum": 385
+  },
+  {
+    "list_id": "diseases",
+    "order": 41,
+    "en": "Cataract",
+    "sw": "",
+    "_rowNum": 386
+  },
+  {
+    "list_id": "diseases",
+    "order": 42,
+    "en": "Eye Diseases, Other non-infectious",
+    "sw": "",
+    "_rowNum": 387
+  },
+  {
+    "list_id": "diseases",
+    "order": 43,
+    "en": "Skin Infection, Non-Fungal",
+    "sw": "",
+    "_rowNum": 388
+  },
+  {
+    "list_id": "diseases",
+    "order": 44,
+    "en": "Skin Infection, Fungal",
+    "sw": "",
+    "_rowNum": 389
+  },
+  {
+    "list_id": "diseases",
+    "order": 45,
+    "en": "Skin Diseases, Non-infectious",
+    "sw": "",
+    "_rowNum": 390
+  },
+  {
+    "list_id": "diseases",
+    "order": 46,
+    "en": "Fungal Infection, Non-skin",
+    "sw": "",
+    "_rowNum": 391
+  },
+  {
+    "list_id": "diseases",
+    "order": 47,
+    "en": "Osteomyelitis",
+    "sw": "",
+    "_rowNum": 392
+  },
+  {
+    "list_id": "diseases",
+    "order": 48,
+    "en": "Neonatal sepsis",
+    "sw": "",
+    "_rowNum": 393
+  },
+  {
+    "list_id": "diseases",
+    "order": 49,
+    "en": "Low birth weight and Prematurity complications",
+    "sw": "",
+    "_rowNum": 394
+  },
+  {
+    "list_id": "diseases",
+    "order": 50,
+    "en": "Birth asphyxia",
+    "sw": "",
+    "_rowNum": 395
+  },
+  {
+    "list_id": "diseases",
+    "order": 51,
+    "en": "Acute Respiratory Infection (ARI)",
+    "sw": "",
+    "_rowNum": 396
+  },
+  {
+    "list_id": "diseases",
+    "order": 52,
+    "en": "Pneumonia, Non-Severe",
+    "sw": "",
+    "_rowNum": 397
+  },
+  {
+    "list_id": "diseases",
+    "order": 53,
+    "en": "Cerebral palsy",
+    "sw": "",
+    "_rowNum": 398
+  },
+  {
+    "list_id": "diseases",
+    "order": 54,
+    "en": "Pneumonia, Severe",
+    "sw": "",
+    "_rowNum": 399
+  },
+  {
+    "list_id": "diseases",
+    "order": 55,
+    "en": "Upper Respiratory Infections (Pharyngitis, Tonsillitis, Rhinitis)",
+    "sw": "",
+    "_rowNum": 400
+  },
+  {
+    "list_id": "diseases",
+    "order": 56,
+    "en": "Urinary Tract Infections (UTI)",
+    "sw": "",
+    "_rowNum": 401
+  },
+  {
+    "list_id": "diseases",
+    "order": 57,
+    "en": "Gynaecological diseases, Other",
+    "sw": "",
+    "_rowNum": 402
+  },
+  {
+    "list_id": "diseases",
+    "order": 58,
+    "en": "Kwashiokor",
+    "sw": "",
+    "_rowNum": 403
+  },
+  {
+    "list_id": "diseases",
+    "order": 59,
+    "en": "Marasmus",
+    "sw": "",
+    "_rowNum": 404
+  },
+  {
+    "list_id": "diseases",
+    "order": 60,
+    "en": "Marasmic Kwashiokor",
+    "sw": "",
+    "_rowNum": 405
+  },
+  {
+    "list_id": "diseases",
+    "order": 61,
+    "en": "Moderate Malnutrition",
+    "sw": "",
+    "_rowNum": 406
+  },
+  {
+    "list_id": "diseases",
+    "order": 62,
+    "en": "Vitamin A Deficiency",
+    "sw": "",
+    "_rowNum": 407
+  },
+  {
+    "list_id": "diseases",
+    "order": 63,
+    "en": "Other Nutritional Disorders",
+    "sw": "",
+    "_rowNum": 408
+  },
+  {
+    "list_id": "diseases",
+    "order": 64,
+    "en": "Caries",
+    "sw": "",
+    "_rowNum": 409
+  },
+  {
+    "list_id": "diseases",
+    "order": 65,
+    "en": "Periodontal Diseases",
+    "sw": "",
+    "_rowNum": 410
+  },
+  {
+    "list_id": "diseases",
+    "order": 66,
+    "en": "Dental Emergency Care",
+    "sw": "",
+    "_rowNum": 411
+  },
+  {
+    "list_id": "diseases",
+    "order": 67,
+    "en": "Dental Conditions, Other",
+    "sw": "",
+    "_rowNum": 412
+  },
+  {
+    "list_id": "diseases",
+    "order": 68,
+    "en": "Fractures / Dislocations",
+    "sw": "",
+    "_rowNum": 413
+  },
+  {
+    "list_id": "diseases",
+    "order": 69,
+    "en": "Burn",
+    "sw": "",
+    "_rowNum": 414
+  },
+  {
+    "list_id": "diseases",
+    "order": 70,
+    "en": "Poisoning",
+    "sw": "",
+    "_rowNum": 415
+  },
+  {
+    "list_id": "diseases",
+    "order": 71,
+    "en": "Road Traffic Accidents",
+    "sw": "",
+    "_rowNum": 416
+  },
+  {
+    "list_id": "diseases",
+    "order": 72,
+    "en": "Pregnancy complications",
+    "sw": "",
+    "_rowNum": 417
+  },
+  {
+    "list_id": "diseases",
+    "order": 73,
+    "en": "Abortion",
+    "sw": "",
+    "_rowNum": 418
+  },
+  {
+    "list_id": "diseases",
+    "order": 74,
+    "en": "Snake and Insect Bites",
+    "sw": "",
+    "_rowNum": 419
+  },
+  {
+    "list_id": "diseases",
+    "order": 75,
+    "en": "Emergencies, Other",
+    "sw": "",
+    "_rowNum": 420
+  },
+  {
+    "list_id": "diseases",
+    "order": 76,
+    "en": "Surgical conditions, other",
+    "sw": "",
+    "_rowNum": 421
+  },
+  {
+    "list_id": "diseases",
+    "order": 77,
+    "en": "Epilepsy",
+    "sw": "",
+    "_rowNum": 422
+  },
+  {
+    "list_id": "diseases",
+    "order": 78,
+    "en": "Psychoses",
+    "sw": "",
+    "_rowNum": 423
+  },
+  {
+    "list_id": "diseases",
+    "order": 79,
+    "en": "Neurosis",
+    "sw": "",
+    "_rowNum": 424
+  },
+  {
+    "list_id": "diseases",
+    "order": 80,
+    "en": "Mental conditions, Other",
+    "sw": "",
+    "_rowNum": 425
+  },
+  {
+    "list_id": "diseases",
+    "order": 81,
+    "en": "Hypertension",
+    "sw": "",
+    "_rowNum": 426
+  },
+  {
+    "list_id": "diseases",
+    "order": 82,
+    "en": "Rheumatic Fever",
+    "sw": "",
+    "_rowNum": 427
+  },
+  {
+    "list_id": "diseases",
+    "order": 83,
+    "en": "Cardiovascular Diseases, Other",
+    "sw": "",
+    "_rowNum": 428
+  },
+  {
+    "list_id": "diseases",
+    "order": 84,
+    "en": "Bronchial Asthma",
+    "sw": "",
+    "_rowNum": 429
+  },
+  {
+    "list_id": "diseases",
+    "order": 85,
+    "en": "Peptic Ulcers",
+    "sw": "",
+    "_rowNum": 430
+  },
+  {
+    "list_id": "diseases",
+    "order": 86,
+    "en": "GIT Diseases, Other Non-infectious",
+    "sw": "",
+    "_rowNum": 431
+  },
+  {
+    "list_id": "diseases",
+    "order": 87,
+    "en": "Diabetes Mellitus",
+    "sw": "",
+    "_rowNum": 432
+  },
+  {
+    "list_id": "diseases",
+    "order": 88,
+    "en": "Rheumatoid and Joint Diseases",
+    "sw": "",
+    "_rowNum": 433
+  },
+  {
+    "list_id": "diseases",
+    "order": 89,
+    "en": "Thyroid Diseases",
+    "sw": "",
+    "_rowNum": 434
+  },
+  {
+    "list_id": "diseases",
+    "order": 90,
+    "en": "Neoplasms",
+    "sw": "",
+    "_rowNum": 435
+  },
+  {
+    "list_id": "diseases",
+    "order": 91,
+    "en": "Ill Defined Symptoms (no Diagnosis)",
+    "sw": "",
+    "_rowNum": 436
+  },
+  {
+    "list_id": "diseases",
+    "order": 92,
+    "en": "Diagnoses, Other",
+    "sw": "",
+    "_rowNum": 437
+  },
+  {
+    "list_id": "diseases",
+    "order": 93,
+    "en": "Waliopewa Rufaa",
+    "sw": "",
+    "_rowNum": 438
+  }
+]

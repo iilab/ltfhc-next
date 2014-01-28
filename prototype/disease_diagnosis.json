@@ -1,7 +1,7 @@
 {
   "schema": {
     "title": "Disease Diagnosis",
-    "_id": "diseaseDiagnosis",
+    "_id": "disease_diagnosis",
     "type": "object",
     "properties": {
       "complaint0": {
@@ -151,81 +151,99 @@
       "diagnosis": {
         "type": "string",
         "enum": [
-          "Other",
-          "Skin Infection - Fungal",
-          "Skin Infection - Non-fungal",
-          "Skin Diseases - Non-infectious",
-          "Osteomyelitis",
-          "UTI",
-          "GI Disease Non-Infectious",
-          "Cardiovascular Disorder other",
-          "Liver Disease Infectious",
-          "Liver Disease Non-Infectious",
-          "Peptic Ulcers",
-          "Pneumonia Mild/Moderate",
-          "Pneumonia Severe",
-          "Asthma",
-          "Acute Flaccid Paralysis / Polio",
-          "Cardiac Failure",
-          "Rheumatic Fever",
-          "Eye Infection Other",
-          "Eye Infection Viral Keratoconjuctivitis",
-          "Eye Disease Non-Infectious",
-          "Eye Infection Acute",
-          "Eye Infection Chronic",
-          "Ear Infection Acute",
-          "Ear Infection Chronic",
-          "Ear Disease Non-Infectious",
-          "Cerebal Palsy",
-          "Epilepsy",
-          "Anemia Mild/Moderate",
-          "Anemia Severe",
-          "Thyroid Disease",
-          "Sickle Cell",
-          "Marasmus",
-          "Kwashiorkor",
-          "Diabetes",
-          "Schistosomiasis",
-          "Louse Born Typhus",
-          "GUS",
-          "GUD",
-          "GDS",
-          "PID",
-          "Tuberculosis",
-          "Cerebral Spinal Meningitis (CSM)",
+          "Acute Flacid Paralysis",
           "Cholera",
-          "Diarrhea Acute (<14d)",
-          "Diarrhea Chronic (>14d)",
           "Dysentery",
-          "Influenza",
-          "Leprosy",
-          "Malaria No Test",
-          "Malaria Blood Side Positive",
-          "Malaria mRDT Positive",
-          "Malnutrition",
           "Measles",
+          "Meningitis",
+          "Neonatal Tetanus",
           "Plague",
-          "Rabies",
-          "Typhoid",
+          "Relapsing Fever (Louse borne typhus)",
           "Yellow Fever",
-          "Respiratory Infection",
-          "Respiratory Infection - Acute",
-          "HIV, Symptomatic",
-          "Other STI",
-          "Neoplasm",
-          "Hepatitis",
-          "Soil transmitted helminths",
-          "Lymphatic filairiasis",
-          "Anthrax",
-          "Congenital Disorder",
-          "Gynecologic Disease",
-          "Tetanus",
+          "Influenza",
+          "Typhoid",
+          "Rabies/Suspected rabies bites",
           "Trachoma",
           "Onchocerciasis",
-          "Trypanosumiasis",
-          "Viral Haemorrhagic Fevers",
+          "Trypanosomiasis",
+          "Viral haemorrhagic fevers",
+          "Keratoconjuctivitis",
+          "Diarrhea, Acute (< 14 days)",
+          "Diarrhea, Chronic (.> 14 days)",
+          "Malaria",
+          "Blood Slide positive",
+          "mRDT postivie",
+          "Clinical (No Test)",
+          "In Pregnancy",
+          "Schistosomiasis",
+          "STI Genital Discharge Syndrome (GDS)",
+          "STI Genital Ulcer Diseases (GUD)",
+          "STI Pelvic Inflammatory Diseases (PID)",
+          "Sexually Transmitted Infections, Other",
+          "Tuberculosis",
+          "Leprosy",
           "Intestinal Worms",
-          "Cataract"
+          "Anaemia, Mild / Moderate",
+          "Anaemia, Severe",
+          "Sickle cell Disease",
+          "HIV Positive",
+          "HIV Infection, Symptomatic",
+          "Ear Infection, Acute",
+          "Ear Infection, Chronic",
+          "Eye Infection",
+          "Cataract",
+          "Eye Diseases, Other non-infectious",
+          "Skin Infection, Non-Fungal",
+          "Skin Infection, Fungal",
+          "Skin Diseases, Non-infectious",
+          "Fungal Infection, Non-skin",
+          "Osteomyelitis",
+          "Neonatal sepsis",
+          "Low birth weight and Prematurity complications",
+          "Birth asphyxia",
+          "Acute Respiratory Infection (ARI)",
+          "Pneumonia, Non-Severe",
+          "Cerebral palsy",
+          "Pneumonia, Severe",
+          "Upper Respiratory Infections (Pharyngitis, Tonsillitis, Rhinitis)",
+          "Urinary Tract Infections (UTI)",
+          "Gynaecological diseases, Other",
+          "Kwashiokor",
+          "Marasmus",
+          "Marasmic Kwashiokor",
+          "Moderate Malnutrition",
+          "Vitamin A Deficiency",
+          "Other Nutritional Disorders",
+          "Caries",
+          "Periodontal Diseases",
+          "Dental Emergency Care",
+          "Dental Conditions, Other",
+          "Fractures / Dislocations",
+          "Burn",
+          "Poisoning",
+          "Road Traffic Accidents",
+          "Pregnancy complications",
+          "Abortion",
+          "Snake and Insect Bites",
+          "Emergencies, Other",
+          "Surgical conditions, other",
+          "Epilepsy",
+          "Psychoses",
+          "Neurosis",
+          "Mental conditions, Other",
+          "Hypertension",
+          "Rheumatic Fever",
+          "Cardiovascular Diseases, Other",
+          "Bronchial Asthma",
+          "Peptic Ulcers",
+          "GIT Diseases, Other Non-infectious",
+          "Diabetes Mellitus",
+          "Rheumatoid and Joint Diseases",
+          "Thyroid Diseases",
+          "Neoplasms",
+          "Ill Defined Symptoms (no Diagnosis)",
+          "Diagnoses, Other",
+          "Waliopewa Rufaa"
         ]
       },
       "diagnosis_other": {
@@ -273,7 +291,7 @@
   "options": {
     "fields": {
       "complaint0": {
-        "label": "Chief Complaint:",
+        "label": "Chief Complaint: (Lalamiko kuu)",
         "type": "checkbox",
         "rightLabel": "Other"
       },
@@ -338,10 +356,10 @@
         "rightLabel": "Weight Loss"
       },
       "complaint_other": {
-        "label": "Other Complaint:"
+        "label": "Other Complaint: (Kuu nyingine)"
       },
       "symptom0": {
-        "label": "Symptoms:",
+        "label": "Symptoms: (Dalili)",
         "type": "checkbox",
         "rightLabel": "Other"
       },
@@ -406,11 +424,11 @@
         "rightLabel": "Weight Loss"
       },
       "symptom_other": {
-        "label": "Other Symptoms:",
+        "label": "Other Symptoms: (Dalili nyingine)",
         "type": "textarea"
       },
       "history0": {
-        "label": "History:",
+        "label": "History: (Historia ya zamani)",
         "type": "checkbox",
         "rightLabel": "None"
       },
@@ -455,7 +473,7 @@
         "rightLabel": "Leprosy"
       },
       "history_other": {
-        "label": "Other Past History:",
+        "label": "Other Past History: (Historia ya zamani nyingine)",
         "type": "textarea"
       },
       "note": {
@@ -463,18 +481,18 @@
         "type": "textarea"
       },
       "testing_method": {
-        "label": "Tested By Following Method:",
+        "label": "Tested By Following Method: (Amepimwa kwa njia zifuatazo)",
         "type": "textarea"
       },
       "diagnosis": {
-        "label": "Disease Diagnosis:",
+        "label": "Disease Diagnosis: (Utambuzi wa ugonjwa)",
         "type": "select"
       },
       "diagnosis_other": {
-        "label": "Other Disease Diagnosis:"
+        "label": "Other Disease Diagnosis: (Utambuzi wa ugonjwa nyingine)"
       },
       "treatment": {
-        "label": "Treatment:",
+        "label": "Treatment: (Matibabu)",
         "type": "textarea"
       },
       "admission": {
@@ -482,7 +500,7 @@
         "type": "radio"
       },
       "disease_mortality": {
-        "label": "Did Disease Lead To Death?",
+        "label": "Did Disease Lead To Death? (Je ugonjwa ulisababisha kifo?)",
         "type": "radio"
       },
       "referral": {
