@@ -17,43 +17,49 @@
             "line_number": "2",
             "sw": "Taarifa ya Waliojifungua",
             "en": "Report for mothers who delivered",
-            "id": "report_for_mothers_who_delivered"
+            "id": "report_for_mothers_who_delivered
         }, 
         "those_who_delivered_at_the_clinic": {
             "line_number": "2a",
             "sw": "Waliojifungulia katika kituo cha kutolea huduma za afya",
             "en": "Those who delivered at the clinic",
             "id": "those_who_delivered_at_the_clinic"
+            "condition": "delivery_record.delivery_location == 'Delivered in clinic'"
         }, 
         "those_who_delivered_on_while_on_their_way_to_the_clinic": {
             "line_number": "2b",
             "sw": "Waliojifungua kabla ya kufika kituoni (BBA)",
             "en": "Those who delivered on while on their way to the clinic (BBA)",
             "id": "those_who_delivered_on_while_on_their_way_to_the_clinic_(bba)"
+            "condition": "delivery_record.delivery_location == 'Delivered on the way to clinic'"
         }, 
         "those_helped_to_deliver_by_traditional_birth_attendants_tba": {
             "line_number": "2c",
             "sw": "Waliozalishwa na wakunga wa jadi (TBA)",
             "en": "Those helped to deliver by traditional birth attendants (TBA)",
             "id": "those_helped_to_deliver_by_traditional_birth_attendants_(tba)"
+            "condition": "delivery_record.delivery_location == 'Delivered by traditional birth attendant'"
         }, 
         "home_delivery": {
             "line_number": "2d",
             "sw": "Waliojifungua nyumbani (H)",
             "en": "Home delivery (H)",
             "id": "home_delivery_(h)"
+            "condition": "delivery_record.delivery_location == 'Home delivery'"
         }, 
         "total_giving_birth": {
             "line_number": "2e",
             "sw": "Jumla waliojifungua (2a+2b+2c+2d)",
             "en": "Total giving birth (2a +2 b +2 c +2 d)",
             "id": "total_giving_birth_(2a_+2_b_+2_c_+2_d)"
+            "condition": "delivery_record.delivery_location == 'Delivered in clinic' && delivery_record.delivery_location == 'Delivered on the way to clinic' && delivery_record.delivery_location == 'Delivered by traditional birth attendant' && delivery_record.delivery_location == 'Home delivery'"
         }, 
         "those_who_were_helped_to_deliver_by_skilled_providers": {
             "line_number": "2f",
             "sw": "Waliozalishwa na watoa huduma wanye ujuzi",
             "en": "Those who were helped to deliver by skilled providers",
             "id": "those_who_were_helped_to_deliver_by_skilled_providers"
+            "condidion": "delivery_record.delivery_location == 'Delivered by skilled provider'"
         }, 
         "percentage_of_all_who_delivered_at_the_clinic": {
             "line_number": "2g",
@@ -72,36 +78,42 @@
             "sw": "Waliojifungua Kawaida (KW)",
             "en": "Normal delivery (KW)",
             "id": "normal_delivery_(kw)"
+            "condition": "delivery_record.delivery_mode == 'Vaginal'"
         }, 
         "vacuum_vm_delivery": {
             "line_number": "3b",
             "sw": "Waliojifungua kwa Vacuum (VM)",
             "en": "Vacuum (VM) delivery",
             "id": "vacuum_(vm)_delivery"
+            "condition": "delivery_record.delivery_mode == 'Vacuum'"
         }, 
         "breech_delivery": {
             "line_number": "3c",
             "sw": "Breech Delivery",
             "en": "breech Delivery",
             "id": "breech_delivery"
+            "condition": "delivery_record.delivery_mode == 'Breech'"
         }, 
         "caesarian_section_cs_delivery": {
             "line_number": "3d",
             "sw": "Waliojifungua kwa Caesarian Section (CS)",
             "en": "Caesarian Section (CS) delivery",
             "id": "caesarian_section_(cs)_delivery"
+            "condition": "delivery_record.delivery_mode == 'C-section'"
         }, 
         "delivery_through_other_ways": {
             "line_number": "3e",
             "sw": "Waliojifungua kwa njia nyingizezo",
             "en": "Delivery through other ways",
             "id": "delivery_through_other_ways"
+            "condition": "delivery_record.delivery_mode == 'Other'"
         }, 
         "total": {
             "line_number": "3f",
             "sw": "Jumla (3a+3b+3c+3d+3e)",
             "en": "Total (3a +3 b +3 c +3 d +3 e)",
             "id": "total_(3a_+3_b_+3_c_+3_d_+3_e)"
+            "condition": "delivery_record.delivery_mode == 'Vaginal' && delivery_record.delivery_mode == 'Vacuum' && delivery_record.delivery_mode == 'Breech' && delivery_record.delivery_mode == 'C-section' && delivery_record.delivery_mode == 'Other'"
         }, 
         "the_number_of_pregnant_women_who_underwent_amtsl": {
             "line_number": "3g",
@@ -120,60 +132,70 @@
             "sw": "APH",
             "en": "APH",
             "id": "aph"
+            "condition": "delivery_record.prenatal_problems == 'APH'"
         }, 
         "pre_mature_rupture_of_membrane_prom": {
             "line_number": "4b",
             "sw": "Pre-mature Rupture of Membrane (PROM)",
             "en": "Pre-mature rupture of membrane (PROM)",
             "id": "pre-mature_rupture_of_membrane_(prom)"
+            "condition": "delivery_record.prenatal_problems == 'PROM'"
         }, 
         "high_bp": {
             "line_number": "4c",
             "sw": "High BP",
             "en": "high BP",
             "id": "high_bp"
+            "condition": "delivery_record.prenatal_problems == 'high BP'"
         }, 
         "eclampsia": {
             "line_number": "4d",
             "sw": "Eclampsia",
             "en": "eclampsia",
             "id": "eclampsia"
+            "condition": "delivery_record.prenatal_problems == 'eclampsia'"
         }, 
         "anaemia": {
             "line_number": "4e",
             "sw": "Anaemia",
             "en": "Anaemia",
             "id": "anaemia"
+            "condition": "delivery_record.prenatal_problems == 'anemia'"
         }, 
         "malaria": {
             "line_number": "4f",
             "sw": "Malaria",
             "en": "malaria",
             "id": "malaria"
+            "condition": "delivery_record.prenatal_problems == 'malaria'"
         }, 
         "hiv_stage_iii_or_iv": {
             "line_number": "4g",
             "sw": "HIV+ stage III or IV",
             "en": "HIV + stage III or IV",
             "id": "hiv_+_stage_iii_or_iv"
+            "condition": "delivery_record.prenatal_problems == 'HIV stage III or stage IV'"
         }, 
         "eptopic_pregnancy": {
             "line_number": "4h",
             "sw": "Ectopic Pregnancy",
             "en": "ectopic Pregnancy",
             "id": "ectopic_pregnancy"
+            "condition": "delivery_record.prenatal_problems == 'ectopic pregnancy'"
         }, 
         "abortion_or_abortion_complications": {
             "line_number": "4i",
             "sw": "Abortion / Abortion Complications",
             "en": "Abortion / Abortion Complications",
             "id": "abortion_or_abortion_complications"
+            "condition": "delivery_record.prenatal_problems == 'abortion complications'"
         }, 
         "other": {
             "line_number": "4j",
             "sw": "Mengineyo",
             "en": "Other",
             "id": "other"
+            "condition": "delivery_record.prenatal_problems == 'other'"
         }, 
         "total_impaired_prenatal": {
             "line_number": "4k",
