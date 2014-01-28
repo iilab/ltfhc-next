@@ -1,0 +1,98 @@
+{
+  "schema": {
+    "title": "Diarrhea Treatment",
+    "_id": "diarrhea",
+    "type": "object",
+    "properties": {
+      "duration": {
+        "type": "number"
+      },
+      "water_sodium_imbalance": {
+        "type": "string",
+        "enum": [
+          "severe",
+          "mild",
+          "uncertain"
+        ]
+      },
+      "given_ors": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "given_zinc": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "blood_in_stool": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "admission": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "referral": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "diarrhea_mortality": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "duration": {
+        "label": "Duration of diarrhea (days)",
+        "type": "number"
+      },
+      "water_sodium_imbalance": {
+        "label": "Water shortage/sodium imbalance",
+        "type": "select"
+      },
+      "given_ors": {
+        "label": "ORS given",
+        "type": "radio"
+      },
+      "given_zinc": {
+        "label": "Zinc given?",
+        "type": "radio"
+      },
+      "blood_in_stool": {
+        "label": "Blood in stool?",
+        "type": "radio"
+      },
+      "admission": {
+        "label": "Admission required?",
+        "type": "radio"
+      },
+      "referral": {
+        "label": "Referral required?",
+        "type": "radio"
+      },
+      "diarrhea_mortality": {
+        "label": "Death due to diarrhea?",
+        "type": "radio"
+      }
+    }
+  }
+}

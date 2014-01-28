@@ -1,0 +1,104 @@
+{
+  "schema": {
+    "title": "Patient Information",
+    "_id": "patient",
+    "type": "object",
+    "properties": {
+      "first_name": {
+        "type": "string",
+        "required": true
+      },
+      "last_name": {
+        "type": "string"
+      },
+      "gender": {
+        "type": "string",
+        "enum": [
+          "Female",
+          "Male",
+          "Unknown"
+        ]
+      },
+      "clinic_id": {
+        "type": "string"
+      },
+      "government_id": {
+        "type": "string"
+      },
+      "hiv_id": {
+        "type": "string"
+      },
+      "phone": {
+        "type": "number"
+      },
+      "hometown": {
+        "type": "string"
+      },
+      "village": {
+        "type": "string"
+      },
+      "birthdate": {
+        "type": "string"
+      },
+      "patient_age": {
+        "type": "number"
+      },
+      "medication_allergy": {
+        "type": "string"
+      },
+      "note": {
+        "type": "string"
+      }
+    },
+    "description": "Enter Patient demographic information"
+  },
+  "options": {
+    "fields": {
+      "first_name": {
+        "label": "First Name: (Jina la kwanza)"
+      },
+      "last_name": {
+        "label": "Last Name: (Jina la mwisho)"
+      },
+      "gender": {
+        "label": "Gender: (Jinsia)",
+        "type": "select"
+      },
+      "clinic_id": {
+        "label": "Clinic ID: (Namba ya utambulishi ya kliniki)"
+      },
+      "government_id": {
+        "label": "Government ID: (Namba ya utambulishi ya Serikali)"
+      },
+      "hiv_id": {
+        "label": "HIV ID: (Kitambulisho cha VVU)"
+      },
+      "phone": {
+        "label": "Phone: (Namba ya simu)",
+        "type": "number"
+      },
+      "hometown": {
+        "label": "Hometown:"
+      },
+      "village": {
+        "label": "What village do you live in? (Unaishi katika kijiji gani?)"
+      },
+      "birthdate": {
+        "label": "Birth Date: (Tarehe ya kuzaliwa)",
+        "type": "date"
+      },
+      "patient_age": {
+        "label": "Patient Age: (Umri wa mgonjwa)",
+        "type": "number"
+      },
+      "medication_allergy": {
+        "label": "Medication Allergies:",
+        "type": "textarea"
+      },
+      "note": {
+        "label": "Other Patient Notes: (Maelezo mengine husika)",
+        "type": "textarea"
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schema": {
+    "title": "HIV in Pregnancy",
+    "_id": "hiv_pregnancy_clinic",
+    "type": "object",
+    "properties": {
+      "hiv_status_prior_firstvisit": {
+        "type": "string",
+        "enum": [
+          "Positive",
+          "Negative",
+          "Unknown"
+        ]
+      },
+      "tested_hiv_firstvisit": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "counseled_hiv_prior_test": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "first_hiv_status": {
+        "type": "string",
+        "enum": [
+          "Positive",
+          "Negative",
+          "Unknown"
+        ]
+      },
+      "second_hiv_test": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "partner_hiv": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "partner_positive": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "discordant_couple": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "combo_drugs": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "art_drugs": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "ctx_given": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "counsel_feeding": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      },
+      "referred_ctc": {
+        "type": "string",
+        "enum": [
+          "Yes",
+          "No",
+          "Unknown"
+        ]
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "hiv_status_prior_firstvisit": {
+        "label": "HIV Status prior to first visit (Hadhi ya VVU)",
+        "type": "select"
+      },
+      "tested_hiv_firstvisit": {
+        "label": "Tested for HIV on first visit?",
+        "type": "radio"
+      },
+      "counseled_hiv_prior_test": {
+        "label": "Counseled before tested for HIV?",
+        "type": "radio"
+      },
+      "first_hiv_status": {
+        "label": "Result if tested for HIV on first visit",
+        "type": "select"
+      },
+      "second_hiv_test": {
+        "label": "Tested positive by second HIV test?",
+        "type": "radio"
+      },
+      "partner_hiv": {
+        "label": "Partner tested for HIV in clinic?",
+        "type": "radio"
+      },
+      "partner_positive": {
+        "label": "Partner tested positive for HIV?",
+        "type": "radio"
+      },
+      "discordant_couple": {
+        "label": "Discordant couple?",
+        "type": "radio"
+      },
+      "combo_drugs": {
+        "label": "Patient recieved PMCTC combo drugs?",
+        "type": "radio"
+      },
+      "art_drugs": {
+        "label": "Patient using ART?",
+        "type": "radio"
+      },
+      "ctx_given": {
+        "label": "Patient given CTX?",
+        "type": "radio"
+      },
+      "counsel_feeding": {
+        "label": "Counseled on how to feed the baby?",
+        "type": "radio"
+      },
+      "referred_ctc": {
+        "label": "Mother Referred To CTC? (Mama alipewa rufaa kwenda CTC?)",
+        "type": "radio"
+      }
+    }
+  }
+}
