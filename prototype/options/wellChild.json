@@ -1,161 +1,99 @@
 {
-  "schema": {
-    "title": "Well Child Visit",
-    "_id": "wellChild",
-    "type": "object",
-    "properties": {
-      "height": {
-        "type": "number"
-      },
-      "weight": {
-        "type": "number"
-      },
-      "milk_type": {
-        "type": "string",
-        "enum": [
-          "Mother's Milk ONLY",
-          "Mother's Milk + Formula",
-          "Mother's Milk + Other",
-          "Formula ONLY",
-          "Formula + Other",
-          "Other ONLY"
-        ]
-      },
-      "mother_hiv": {
-        "type": "string",
-        "enum": [
-          "Positive",
-          "Negative",
-          "Unknown"
-        ]
-      },
-      "child_hiv": {
-        "type": "string",
-        "enum": [
-          "Positive",
-          "Negative",
-          "Unknown"
-        ]
-      },
-      "child_hiv_possible": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "child_hiv_pcr": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "given_extra_vitamin_a": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "given_arv": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "given_arv_prophylaxis": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "given_bed_net_voucher": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "given_mebendazole": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "moved_to_ctc": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "notes": {
-        "type": "string"
-      }
+  "renderForm": true,
+  "form": {
+    "buttons": {
+      "submit": {},
+      "reset": {}
     }
   },
-  "options": {
-    "fields": {
-      "height": {
-        "label": "Height in cm:",
-        "type": "number"
-      },
-      "weight": {
-        "label": "Weight in kg:",
-        "type": "number"
-      },
-      "milk_type": {
-        "label": "Milk Type",
-        "type": "select"
-      },
-      "mother_hiv": {
-        "label": "Mother HIV Positive",
-        "type": "select"
-      },
-      "child_hiv": {
-        "label": "Child HIV Positive",
-        "type": "select"
-      },
-      "child_hiv_possible": {
-        "label": "Is HIV infection possible?",
-        "type": "radio"
-      },
-      "child_hiv_pcr": {
-        "label": "HIV Test with PCR",
-        "type": "radio"
-      },
-      "given_extra_vitamin_a": {
-        "label": "Given extra Vitamin A",
-        "type": "radio"
-      },
-      "given_arv": {
-        "label": "Given Cotrimoxazole I ARV",
-        "type": "radio"
-      },
-      "given_arv_prophylaxis": {
-        "label": "Given ARV Prophylaxis",
-        "type": "radio"
-      },
-      "given_bed_net_voucher": {
-        "label": "Given Bed Net Vouchers",
-        "type": "radio"
-      },
-      "given_mebendazole": {
-        "label": "Given Mebendazole/Albendazole",
-        "type": "radio"
-      },
-      "moved_to_ctc": {
-        "label": "Moved from clinic care and treatment of HIV-positive (CTC)",
-        "type": "radio"
-      },
-      "notes": {
-        "label": "Notes:",
-        "type": "textarea"
-      }
+  "fields": {
+    "height": {
+      "label": "Height in cm:",
+      "type": "number"
+    },
+    "weight": {
+      "label": "Weight in kg:",
+      "type": "number"
+    },
+    "milk_type": {
+      "label": "Milk Type",
+      "type": "select"
+    },
+    "mother_hiv": {
+      "label": "Mother HIV Positive",
+      "type": "select"
+    },
+    "child_hiv": {
+      "label": "Child HIV Positive",
+      "type": "select"
+    },
+    "child_hiv_possible": {
+      "label": "Is HIV infection possible?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "child_hiv_pcr": {
+      "label": "HIV Test with PCR",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "given_extra_vitamin_a": {
+      "label": "Given extra Vitamin A",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "given_arv": {
+      "label": "Given Cotrimoxazole I ARV",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "given_arv_prophylaxis": {
+      "label": "Given ARV Prophylaxis",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "given_bed_net_voucher": {
+      "label": "Given Bed Net Vouchers",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "given_mebendazole": {
+      "label": "Given Mebendazole/Albendazole",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "moved_to_ctc": {
+      "label": "Moved from clinic care and treatment of HIV-positive (CTC)",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "notes": {
+      "label": "Notes:",
+      "type": "textarea"
     }
   }
 }

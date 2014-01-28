@@ -1,40 +1,27 @@
 {
-  "schema": {
-    "title": "Patient Intake",
-    "_id": "visit",
-    "type": "object",
-    "properties": {
-      "clinic": {
-        "type": "string"
-      },
-      "clinician": {
-        "type": "string"
-      },
-      "note": {
-        "type": "string"
-      },
-      "form_list0": {
-        "type": "string"
-      }
+  "renderForm": true,
+  "form": {
+    "buttons": {
+      "submit": {},
+      "reset": {}
     }
   },
-  "options": {
-    "fields": {
-      "clinic": {
-        "label": "Clinic:"
-      },
-      "clinician": {
-        "label": "Clinician:"
-      },
-      "note": {
-        "label": "Notes:",
-        "type": "textarea"
-      },
-      "form_list0": {
-        "label": "Reason For Visit:",
-        "type": "checkbox",
-        "rightLabel": "#/forms/list"
-      }
+  "fields": {
+    "clinic": {
+      "label": "Clinic:"
+    },
+    "clinician": {
+      "label": "Clinician:"
+    },
+    "note": {
+      "label": "Notes:",
+      "type": "textarea"
+    },
+    "form_list0": {
+      "label": "Reason For Visit:",
+      "type": "checkbox",
+      "rightLabel": "#/forms/list",
+      "name": "form_list[]"
     }
   }
 }

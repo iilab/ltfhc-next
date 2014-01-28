@@ -1,185 +1,124 @@
 {
-  "schema": {
-    "title": "Immunization/Post-Immunization",
-    "_id": "immunization",
-    "type": "object",
-    "properties": {
-      "vaccine_dispensed0": {
-        "type": "string"
-      },
-      "vaccine_dispensed1": {
-        "type": "string"
-      },
-      "vaccine_dispensed2": {
-        "type": "string"
-      },
-      "vaccine_dispensed3": {
-        "type": "string"
-      },
-      "vaccine_dispensed4": {
-        "type": "string"
-      },
-      "vaccine_dispensed5": {
-        "type": "string"
-      },
-      "vaccine_dispensed6": {
-        "type": "string"
-      },
-      "vaccine_dispensed7": {
-        "type": "string"
-      },
-      "vaccine_dispensed8": {
-        "type": "string"
-      },
-      "vaccine_dispensed9": {
-        "type": "string"
-      },
-      "vaccine_dispensed10": {
-        "type": "string"
-      },
-      "vaccine_dispensed11": {
-        "type": "string"
-      },
-      "vaccine_dispensed12": {
-        "type": "string"
-      },
-      "vaccine_dispensed13": {
-        "type": "string"
-      },
-      "vaccine_dispensed14": {
-        "type": "string"
-      },
-      "vaccine_dispensed15": {
-        "type": "string"
-      },
-      "vaccine_dispensed16": {
-        "type": "string"
-      },
-      "vaccine_effect": {
-        "type": "string",
-        "enum": [
-          "None",
-          "Shortness of Breath",
-          "Tongue Swelling",
-          "Rash",
-          "Fever",
-          "Swelling at Injection Site",
-          "Nausea or Vomiting",
-          "Other"
-        ]
-      },
-      "vaccine_other_reaction": {
-        "type": "string"
-      },
-      "anaphylaxis": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "side_effect_counseling": {
-        "type": "string"
-      },
-      "pregnant": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      }
+  "renderForm": true,
+  "form": {
+    "buttons": {
+      "submit": {},
+      "reset": {}
     }
   },
-  "options": {
-    "fields": {
-      "vaccine_dispensed0": {
-        "label": "Medication Dispensed:",
-        "type": "checkbox",
-        "rightLabel": "BCG"
-      },
-      "vaccine_dispensed1": {
-        "type": "checkbox",
-        "rightLabel": "OPV-0"
-      },
-      "vaccine_dispensed2": {
-        "type": "checkbox",
-        "rightLabel": "OPV-1"
-      },
-      "vaccine_dispensed3": {
-        "type": "checkbox",
-        "rightLabel": "OPV-2"
-      },
-      "vaccine_dispensed4": {
-        "type": "checkbox",
-        "rightLabel": "OPV-3"
-      },
-      "vaccine_dispensed5": {
-        "type": "checkbox",
-        "rightLabel": "DTP-HB"
-      },
-      "vaccine_dispensed6": {
-        "type": "checkbox",
-        "rightLabel": "DPT 1"
-      },
-      "vaccine_dispensed7": {
-        "type": "checkbox",
-        "rightLabel": "DPT 2"
-      },
-      "vaccine_dispensed8": {
-        "type": "checkbox",
-        "rightLabel": "DPT 3"
-      },
-      "vaccine_dispensed9": {
-        "type": "checkbox",
-        "rightLabel": "Measles"
-      },
-      "vaccine_dispensed10": {
-        "type": "checkbox",
-        "rightLabel": "Tentanus Toxoid 1"
-      },
-      "vaccine_dispensed11": {
-        "type": "checkbox",
-        "rightLabel": "Tentanus Toxoid 2"
-      },
-      "vaccine_dispensed12": {
-        "type": "checkbox",
-        "rightLabel": "Tentanus Toxoid 3"
-      },
-      "vaccine_dispensed13": {
-        "type": "checkbox",
-        "rightLabel": "Tentanus Toxoid 4"
-      },
-      "vaccine_dispensed14": {
-        "type": "checkbox",
-        "rightLabel": "Tentanus Toxoid 5"
-      },
-      "vaccine_dispensed15": {
-        "type": "checkbox",
-        "rightLabel": "Vitamin A"
-      },
-      "vaccine_dispensed16": {
-        "type": "checkbox",
-        "rightLabel": "Other"
-      },
-      "vaccine_effect": {
-        "label": "Immediate Effect of Vaccination:",
-        "type": "select"
-      },
-      "vaccine_other_reaction": {
-        "label": "If Other Vaccine Reaction, Please Describe:"
-      },
-      "anaphylaxis": {
-        "label": "Anaphylaxis Present?",
-        "type": "radio"
-      },
-      "side_effect_counseling": {
-        "label": "Describe Any Counseling Given Regarding Side-Effects:",
-        "type": "textarea"
-      },
-      "pregnant": {
-        "label": "Pregnant?",
-        "type": "radio"
-      }
+  "fields": {
+    "vaccine_dispensed0": {
+      "label": "Medication Dispensed:",
+      "type": "checkbox",
+      "rightLabel": "BCG",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed1": {
+      "type": "checkbox",
+      "rightLabel": "OPV-0",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed2": {
+      "type": "checkbox",
+      "rightLabel": "OPV-1",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed3": {
+      "type": "checkbox",
+      "rightLabel": "OPV-2",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed4": {
+      "type": "checkbox",
+      "rightLabel": "OPV-3",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed5": {
+      "type": "checkbox",
+      "rightLabel": "DTP-HB",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed6": {
+      "type": "checkbox",
+      "rightLabel": "DPT 1",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed7": {
+      "type": "checkbox",
+      "rightLabel": "DPT 2",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed8": {
+      "type": "checkbox",
+      "rightLabel": "DPT 3",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed9": {
+      "type": "checkbox",
+      "rightLabel": "Measles",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed10": {
+      "type": "checkbox",
+      "rightLabel": "Tentanus Toxoid 1",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed11": {
+      "type": "checkbox",
+      "rightLabel": "Tentanus Toxoid 2",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed12": {
+      "type": "checkbox",
+      "rightLabel": "Tentanus Toxoid 3",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed13": {
+      "type": "checkbox",
+      "rightLabel": "Tentanus Toxoid 4",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed14": {
+      "type": "checkbox",
+      "rightLabel": "Tentanus Toxoid 5",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed15": {
+      "type": "checkbox",
+      "rightLabel": "Vitamin A",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_dispensed16": {
+      "type": "checkbox",
+      "rightLabel": "Other",
+      "name": "vaccine_dispensed[]"
+    },
+    "vaccine_effect": {
+      "label": "Immediate Effect of Vaccination:",
+      "type": "select"
+    },
+    "vaccine_other_reaction": {
+      "label": "If Other Vaccine Reaction, Please Describe:"
+    },
+    "anaphylaxis": {
+      "label": "Anaphylaxis Present?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "side_effect_counseling": {
+      "label": "Describe Any Counseling Given Regarding Side-Effects:",
+      "type": "textarea"
+    },
+    "pregnant": {
+      "label": "Pregnant?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
     }
   }
 }
