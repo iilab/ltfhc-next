@@ -1,0 +1,19 @@
+{
+  "name": "alpacajs",
+  "version": "1.1.1-kanso.2",
+  "description": "Alpaca JS Library (http://alpacajs.org)",
+  "categories": ["frontend"],
+  "maintainers": [
+    {
+      "name": "Aaron Huslage",
+      "url": "http://iilab.org"
+    }
+  ],
+  "url": "http://github.com/iilab/kanso-alpacajs",
+  "attachments": ["alpacajs/js", "alpacajs/css"], 
+  "dependencies": {
+    "attachments": null,
+    "jquery": null,
+    "bootstrap": null
+  }
+}
