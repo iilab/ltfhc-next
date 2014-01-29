@@ -1,252 +1,252 @@
 {
-	"title": "First Antenatal Visit",
-	"_id": "anc_first_visit",
-	"type": "object",
-	"properties": {
-		"last_menstrual_period": {
-			"type": "number"
-		},
-		"due_date": {
-			"type": "number"
-		},
-		"gestational_age": {
-			"type": "number"
-		},
-		"number_pregnancy": {
-			"type": "number"
-		},
-		"pregnancy_test": {
-			"type": "string",
-			"enum": [
-				"Yes",
-				"No"
-			]
-		},
-		"number_full_term_delivery": {
-			"type": "number"
-		},
-		"number_pre_term_delivery": {
-			"type": "number"
-		},
-		"number_miscarriage_abortion": {
-			"type": "number"
-		},
-		"number_live_birth": {
-			"type": "number"
-		},
-		"weight_heaviest_infant": {
-			"type": "string",
-			"enum": [
-				"No Previous Delivery",
-				"Unknown",
-				"<1kg",
-				"1kg",
-				"1.5kg",
-				"2kg",
-				"2.5kg",
-				"3kg",
-				"3.5kg",
-				"4kg+"
-			]
-		},
-		"pregnancy_complications0": {
-			"type": "string"
-		},
-		"pregnancy_complications1": {
-			"type": "string"
-		},
-		"pregnancy_complications2": {
-			"type": "string"
-		},
-		"pregnancy_complications3": {
-			"type": "string"
-		},
-		"pregnancy_complications4": {
-			"type": "string"
-		},
-		"pregnancy_complications5": {
-			"type": "string"
-		},
-		"pregnancy_complications6": {
-			"type": "string"
-		},
-		"pregnancy_complications7": {
-			"type": "string"
-		},
-		"pregnancy_complications8": {
-			"type": "string"
-		},
-		"pregnancy_complications9": {
-			"type": "string"
-		},
-		"pregnancy_complications10": {
-			"type": "string"
-		},
-		"pregnancy_complications11": {
-			"type": "string"
-		},
-		"pregnancy_complications12": {
-			"type": "string"
-		},
-		"pregnancy_complications13": {
-			"type": "string"
-		},
-		"pregnancy_complications14": {
-			"type": "string"
-		},
-		"pregnancy_complications15": {
-			"type": "string"
-		},
-		"other_pregnancy_complications": {
-			"type": "string"
-		},
-		"std_status": {
-			"type": "string",
-			"enum": [
-				"Yes",
-				"No"
-			]
-		},
-		"std_treatment": {
-			"type": "string",
-			"enum": [
-				"Yes",
-				"No"
-			]
-		},
-		"hiv_status": {
-			"type": "string",
-			"enum": [
-				"Positive",
-				"Negative",
-				"Unknown"
-			]
-		},
-		"syphillus_status": {
-			"type": "string",
-			"enum": [
-				"Yes",
-				"No"
-			]
-		},
-		"syphillus_treatment": {
-			"type": "string",
-			"enum": [
-				"Yes",
-				"No"
-			]
-		},
-		"partner_std": {
-			"type": "string",
-			"enum": [
-				"Yes",
-				"No"
-			]
-		},
-		"partner_std_treatment": {
-			"type": "string",
-			"enum": [
-				"Yes",
-				"No"
-			]
-		},
-		"partner_syphillus": {
-			"type": "string",
-			"enum": [
-				"Yes",
-				"No"
-			]
-		},
-		"partner_syphillus_treatment": {
-			"type": "string",
-			"enum": [
-				"Yes",
-				"No"
-			]
-		},
-		"bp_systolic": {
-			"type": "number"
-		},
-		"bp_diastolic": {
-			"type": "number"
-		},
-		"anemia_severe": {
-			"type": "string",
-			"enum": [
-				"<8.5g/dl",
-				">8.5g/dl"
-			]
-		},
-		"symptoms0": {
-			"type": "string"
-		},
-		"symptoms1": {
-			"type": "string"
-		},
-		"symptoms2": {
-			"type": "string"
-		},
-		"symptoms3": {
-			"type": "string"
-		},
-		"symptoms4": {
-			"type": "string"
-		},
-		"symptoms5": {
-			"type": "string"
-		},
-		"symptoms6": {
-			"type": "string"
-		},
-		"symptoms7": {
-			"type": "string"
-		},
-		"symptoms8": {
-			"type": "string"
-		},
-		"symptoms9": {
-			"type": "string"
-		},
-		"symptoms10": {
-			"type": "string"
-		},
-		"symptoms11": {
-			"type": "string"
-		},
-		"symptoms12": {
-			"type": "string"
-		},
-		"symptoms13": {
-			"type": "string"
-		},
-		"other_symptoms": {
-			"type": "string"
-		},
-		"fundal_height": {
-			"type": "number"
-		},
-		"fetal_heart_rate": {
-			"type": "number"
-		},
-		"treatment_given": {
-			"type": "string"
-		},
-		"notes": {
-			"type": "string"
-		},
-		"admission": {
-			"type": "string",
-			"enum": [
-				"Yes",
-				"No"
-			]
-		},
-		"in_labor": {
-			"type": "string",
-			"enum": [
-				"Yes",
-				"No"
-			]
-		}
-	}
+  "title": "First Antenatal Visit",
+  "_id": "anc_first_visit",
+  "type": "object",
+  "properties": {
+    "last_menstrual_period": {
+      "type": "number"
+    },
+    "due_date": {
+      "type": "number"
+    },
+    "gestational_age": {
+      "type": "number"
+    },
+    "number_pregnancy": {
+      "type": "number"
+    },
+    "pregnancy_test": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "number_full_term_delivery": {
+      "type": "number"
+    },
+    "number_pre_term_delivery": {
+      "type": "number"
+    },
+    "number_miscarriage_abortion": {
+      "type": "number"
+    },
+    "number_live_birth": {
+      "type": "number"
+    },
+    "weight_heaviest_infant": {
+      "type": "string",
+      "enum": [
+        "No Previous Delivery",
+        "Unknown",
+        "<1kg",
+        "1kg",
+        "1.5kg",
+        "2kg",
+        "2.5kg",
+        "3kg",
+        "3.5kg",
+        "4kg+"
+      ]
+    },
+    "pregnancy_complications0": {
+      "type": "string"
+    },
+    "pregnancy_complications1": {
+      "type": "string"
+    },
+    "pregnancy_complications2": {
+      "type": "string"
+    },
+    "pregnancy_complications3": {
+      "type": "string"
+    },
+    "pregnancy_complications4": {
+      "type": "string"
+    },
+    "pregnancy_complications5": {
+      "type": "string"
+    },
+    "pregnancy_complications6": {
+      "type": "string"
+    },
+    "pregnancy_complications7": {
+      "type": "string"
+    },
+    "pregnancy_complications8": {
+      "type": "string"
+    },
+    "pregnancy_complications9": {
+      "type": "string"
+    },
+    "pregnancy_complications10": {
+      "type": "string"
+    },
+    "pregnancy_complications11": {
+      "type": "string"
+    },
+    "pregnancy_complications12": {
+      "type": "string"
+    },
+    "pregnancy_complications13": {
+      "type": "string"
+    },
+    "pregnancy_complications14": {
+      "type": "string"
+    },
+    "pregnancy_complications15": {
+      "type": "string"
+    },
+    "other_pregnancy_complications": {
+      "type": "string"
+    },
+    "std_status": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "std_treatment": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "hiv_status": {
+      "type": "string",
+      "enum": [
+        "Positive",
+        "Negative",
+        "Unknown"
+      ]
+    },
+    "syphillus_status": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "syphillus_treatment": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "partner_std": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "partner_std_treatment": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "partner_syphillus": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "partner_syphillus_treatment": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "bp_systolic": {
+      "type": "number"
+    },
+    "bp_diastolic": {
+      "type": "number"
+    },
+    "anemia_severe": {
+      "type": "string",
+      "enum": [
+        "<8.5g/dl",
+        ">8.5g/dl"
+      ]
+    },
+    "symptoms0": {
+      "type": "string"
+    },
+    "symptoms1": {
+      "type": "string"
+    },
+    "symptoms2": {
+      "type": "string"
+    },
+    "symptoms3": {
+      "type": "string"
+    },
+    "symptoms4": {
+      "type": "string"
+    },
+    "symptoms5": {
+      "type": "string"
+    },
+    "symptoms6": {
+      "type": "string"
+    },
+    "symptoms7": {
+      "type": "string"
+    },
+    "symptoms8": {
+      "type": "string"
+    },
+    "symptoms9": {
+      "type": "string"
+    },
+    "symptoms10": {
+      "type": "string"
+    },
+    "symptoms11": {
+      "type": "string"
+    },
+    "symptoms12": {
+      "type": "string"
+    },
+    "symptoms13": {
+      "type": "string"
+    },
+    "other_symptoms": {
+      "type": "string"
+    },
+    "fundal_height": {
+      "type": "number"
+    },
+    "fetal_heart_rate": {
+      "type": "number"
+    },
+    "treatment_given": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "admission": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "in_labor": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    }
+  }
 }
