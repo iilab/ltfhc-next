@@ -1,0 +1,92 @@
+{
+  "fields": {
+    "height": {
+      "label": "Height in cm:",
+      "type": "number"
+    },
+    "weight": {
+      "label": "Weight in kg:",
+      "type": "number"
+    },
+    "milk_type": {
+      "label": "Milk Type",
+      "type": "select"
+    },
+    "mother_hiv": {
+      "label": "Mother HIV Positive",
+      "type": "select"
+    },
+    "child_hiv": {
+      "label": "Child HIV Positive",
+      "type": "select"
+    },
+    "child_hiv_possible": {
+      "label": "Is HIV infection possible?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "child_hiv_pcr": {
+      "label": "HIV Test with PCR",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "given_extra_vitamin_a": {
+      "label": "Given extra Vitamin A",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "given_arv": {
+      "label": "Given Cotrimoxazole I ARV",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "given_arv_prophylaxis": {
+      "label": "Given ARV Prophylaxis",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "given_bed_net_voucher": {
+      "label": "Given Bed Net Vouchers",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "given_mebendazole": {
+      "label": "Given Mebendazole/Albendazole",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "moved_to_ctc": {
+      "label": "Moved from clinic care and treatment of HIV-positive (CTC)",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "notes": {
+      "label": "Notes:",
+      "type": "textarea"
+    }
+  }
+}

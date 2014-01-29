@@ -1,7 +1,0 @@
-{
-    "fields": {
-        "notes": {
-            "type": "textarea"
-        }
-    }
-}

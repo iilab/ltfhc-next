@@ -1,0 +1,52 @@
+{
+    "fields": {
+        "clinic": {
+            "label": "Clinic:"
+        },
+        "clinician": {
+            "label": "Clinician:"
+        },
+        "note": {
+            "label": "Notes:",
+            "type": "textarea"
+        }
+    },
+    "definitions": {
+        "schema": {
+            "parent": {
+                "visit": {
+                    "list": {
+                        "label": "Reason for Visit:",
+                        "type": "select",
+                        "multiple": true,
+                        "optionLabels": [
+                            "Bodily Injury",
+                            "Disease Diagnosis",
+                            "Immunization"
+                        ]
+                    },
+                    "subforms": {
+                        "fields": {
+                            "bodilyinjury": {
+                                "dependencies": {
+                                    "#reasons": "bodilyinjury"
+                                }
+                            },
+                            "diseasediagnosis": {
+                                "dependencies": {
+                                    "#reasons": "diseasediagnosis"
+                                }
+                            },
+                            "immunization": {
+                                "dependencies": {
+                                    "#reasons": "immunization"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

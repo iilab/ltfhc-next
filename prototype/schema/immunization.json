@@ -1,0 +1,91 @@
+{
+  "title": "Immunization/Post-Immunization",
+  "_id": "immunization",
+  "type": "object",
+  "properties": {
+    "vaccine_dispensed0": {
+      "type": "string"
+    },
+    "vaccine_dispensed1": {
+      "type": "string"
+    },
+    "vaccine_dispensed2": {
+      "type": "string"
+    },
+    "vaccine_dispensed3": {
+      "type": "string"
+    },
+    "vaccine_dispensed4": {
+      "type": "string"
+    },
+    "vaccine_dispensed5": {
+      "type": "string"
+    },
+    "vaccine_dispensed6": {
+      "type": "string"
+    },
+    "vaccine_dispensed7": {
+      "type": "string"
+    },
+    "vaccine_dispensed8": {
+      "type": "string"
+    },
+    "vaccine_dispensed9": {
+      "type": "string"
+    },
+    "vaccine_dispensed10": {
+      "type": "string"
+    },
+    "vaccine_dispensed11": {
+      "type": "string"
+    },
+    "vaccine_dispensed12": {
+      "type": "string"
+    },
+    "vaccine_dispensed13": {
+      "type": "string"
+    },
+    "vaccine_dispensed14": {
+      "type": "string"
+    },
+    "vaccine_dispensed15": {
+      "type": "string"
+    },
+    "vaccine_dispensed16": {
+      "type": "string"
+    },
+    "vaccine_effect": {
+      "type": "string",
+      "enum": [
+        "None",
+        "Shortness of Breath",
+        "Tongue Swelling",
+        "Rash",
+        "Fever",
+        "Swelling at Injection Site",
+        "Nausea or Vomiting",
+        "Other"
+      ]
+    },
+    "vaccine_other_reaction": {
+      "type": "string"
+    },
+    "anaphylaxis": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "side_effect_counseling": {
+      "type": "string"
+    },
+    "pregnant": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    }
+  }
+}
