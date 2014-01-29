@@ -1,14 +1,31 @@
 {
-    "renderForm": true,
-    "form": {
-        "attributes": {
-            "action": "/todo",
-            "method": "post"
+    "fields": {
+        "othercomplaint": {
+            "type": "textarea"
         },
-        "buttons": {
-            "submit": {},
-            "reset": {}
+        "othersymptoms": {
+            "type": "textarea"
+        },
+        "examnotes": {
+            "type": "textarea"
+        },
+        "otherdisease": {
+            "type": "textarea"
+        },
+        "treatment": {
+            "type": "textarea"
+        },
+        "admission": {
+            "type": "radio",
+            "optionLabels": ["Yes", "No"]
+        },
+        "mortality": {
+            "type": "radio",
+            "optionLabels": ["Yes", "No"]
+        },
+        "referral": {
+            "type": "radio",
+            "optionLabels": ["Yes", "No"]
         }
-    },
-    "focus": true
+    }
 }

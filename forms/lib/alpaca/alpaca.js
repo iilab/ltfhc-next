@@ -3881,21 +3881,62 @@ var equiv = function () {
             // this is the uri of the current schema document
             callback(topField.schema, topField.options);
         }
-        else if (referenceId.indexOf("#/definitions/") > -1)
+        else if (referenceId.indexOf("#/") == 0)
         {
-            // a definition
-            var defId = referenceId.substring(14);
+            // this is a property path relative to the root of the current schema
+            var defId = referenceId.substring(2);
 
-            var defSchema = null;
-            if (topField.schema.definitions)
+            // split into tokens
+            var tokens = defId.split("/");
+
+            var defSchema = topField.schema;
+            for (var i = 0; i < tokens.length; i++)
             {
-                defSchema = topField.schema.definitions[defId];
+                var token = tokens[i];
+
+                // schema
+                if (defSchema[token])
+                {
+                    defSchema = defSchema[token];
+                }
+                else if (defSchema.properties && defSchema.properties[token])
+                {
+                    defSchema = defSchema.properties[token];
+                }
+                else if (defSchema.definitions && defSchema.definitions[token])
+                {
+                    defSchema = defSchema.definitions[token];
+                }
+                else
+                {
+                    defSchema = null;
+                    break;
+                }
             }
 
-            var defOptions = null;
-            if (topField.options.definitions)
+            var defOptions = topField.options;
+            for (var i = 0; i < tokens.length; i++)
             {
-                defOptions = topField.options.definitions[defId];
+                var token = tokens[i];
+
+                // options
+                if (defOptions[token])
+                {
+                    defOptions = defOptions[token];
+                }
+                else if (defOptions.fields && defOptions.fields[token])
+                {
+                    defOptions = defOptions.fields[token];
+                }
+                else if (defOptions.definitions && defOptions.definitions[token])
+                {
+                    defOptions = defOptions.definitions[token];
+                }
+                else
+                {
+                    defOptions = null;
+                    break;
+                }
             }
 
             callback(defSchema, defOptions);
@@ -3918,8 +3959,29 @@ var equiv = function () {
         }
         else
         {
-            topField.connector.loadSchema(referenceId, function(schema) {
-                callback(schema, {});
+            // the reference is considered to be a URI with or without a "#" in it to point to a specific location in
+            // the target schema
+
+            var referenceParts = Alpaca.pathParts(referenceId);
+
+            topField.connector.loadReferenceSchema(referenceParts.path, function(schema) {
+                topField.connector.loadReferenceOptions(referenceParts.path, function(options) {
+
+                    if (referenceParts.id)
+                    {
+                        var resolution = Alpaca.resolveReference(schema, options, referenceParts.id);
+                        if (resolution)
+                        {
+                            schema = resolution.schema;
+                            options = resolution.options;
+                        }
+                    }
+
+                    callback(schema, options);
+
+                }, function() {
+                    callback(schema);
+                });
             }, function() {
                 callback();
             });
@@ -4166,6 +4228,165 @@ var equiv = function () {
     };
 
     Alpaca.collectTiming = false;
+
+    Alpaca.pathParts = function(resource)
+    {
+        if (typeof(resource) != "string")
+        {
+            return resource;
+        }
+
+        // convert string to object
+        var resourcePath = resource;
+        var resourceId = null;
+        var i = resourcePath.indexOf("#");
+        if (i > -1)
+        {
+            resourceId = resourcePath.substring(i + 1);
+            resourcePath = resourcePath.substring(0, i);
+        }
+
+        if (Alpaca.endsWith(resourcePath, "/")) {
+            resourcePath = resourcePath.substring(0, resourcePath.length - 1);
+        }
+
+        var parts = {};
+        parts.path = resourcePath;
+
+        if (resourceId)
+        {
+            parts.id = resourceId;
+        }
+
+        return parts;
+    };
+
+    /**
+     * Resolves a field by its property id.
+     *
+     * @param containerField
+     * @param propertyId
+     * @returns {null}
+     */
+    Alpaca.resolveField = function(containerField, propertyIdOrReferenceId)
+    {
+        var resolvedField = null;
+
+        if (typeof(propertyIdOrReferenceId) == "string")
+        {
+            if (propertyIdOrReferenceId.indexOf("#/") == 0 && propertyId.length > 2)
+            {
+                // TODO: path based lookup?
+            }
+            else if (propertyIdOrReferenceId == "#" || propertyIdOrReferenceId == "#/")
+            {
+                resolvedField = containerField;
+            }
+            else if (propertyIdOrReferenceId.indexOf("#") == 0)
+            {
+                // reference id lookup
+
+                // find the top field
+                var topField = containerField;
+                while (topField.parent)
+                {
+                    topField = topField.parent;
+                }
+
+                var referenceId = propertyIdOrReferenceId.substring(1);
+
+                resolvedField = Alpaca.resolveFieldByReference(topField, referenceId);
+
+            }
+            else
+            {
+                // property lookup
+                resolvedField = containerField.childrenByPropertyId[propertyIdOrReferenceId];
+            }
+        }
+
+        return resolvedField;
+    };
+
+    /**
+     * Resolves a field based on its "reference id" relative to a top level field.  This walks down the field tree and
+     * looks for matching schema.id references to find the matching field.
+     *
+     * @param field
+     * @param referenceId
+     */
+    Alpaca.resolveFieldByReference = function(field, referenceId)
+    {
+        if (field.schema && field.schema.id == referenceId)
+        {
+            return field;
+        }
+        else
+        {
+            if (field.children && field.children.length > 0)
+            {
+                for (var i = 0; i < field.children.length; i++)
+                {
+                    var child = field.children[i];
+
+                    var resolved = Alpaca.resolveFieldByReference(child, referenceId);
+                    if (resolved)
+                    {
+                        return resolved;
+                    }
+                }
+            }
+        }
+
+        return null;
+    };
+
+    /**
+     * Determines whether any of the elements of the first argument are equal to the elements of the second argument.
+     *
+     * @param first either a scalar value or a container (object or array) of values
+     * @param second either a scalar value or a container (object or array) of values
+     * @returns whether at least one match is found
+     */
+    Alpaca.anyEquality = function(first, second)
+    {
+        // copy values from first into a values lookup map
+        var values = {};
+        if (typeof(first) == "object" || typeof(first) == "array")
+        {
+            for (var k in first)
+            {
+                values[first[k]] = true;
+            }
+        }
+        else
+        {
+            values[first] = true;
+        }
+
+        var result = false;
+
+        // check values from second against the lookup map
+        if (typeof(second) == "object" || typeof(second) == "array")
+        {
+            for (var k in second)
+            {
+                var v = second[k];
+
+                if (values[v])
+                {
+                    result = true;
+                    break;
+                }
+            }
+        }
+        else
+        {
+            result = values[second];
+        }
+
+        return result;
+    };
 
 })(jQuery);
 (function()
@@ -4952,6 +5173,7 @@ var equiv = function () {
         }
     });
 
+    /*
     Alpaca.EmptyViewTemplates = {
         'controlFieldOuterEl': '{{html this.html}}',
         'controlFieldMessage': '${message}',
@@ -4978,6 +5200,8 @@ var equiv = function () {
         'arrayToolbar': '',
         'arrayItemToolbar': ''
     };
+    */
+    Alpaca.EmptyViewTemplates = {};
 
 })(jQuery);(function($) {
 
@@ -6361,6 +6585,12 @@ var equiv = function () {
             {
                 return (self.view.type == "view");
             };
+
+            // schema id cleanup
+            if (this.schema && this.schema.id && this.schema.id.indexOf("#") == 0)
+            {
+                this.schema.id = this.schema.id.substring(1);
+            }
         },
 
         /**
@@ -8936,7 +9166,6 @@ var equiv = function () {
             {
                 return !Alpaca.isEmpty(resource) && Alpaca.isUri(resource);
             };
-
         },
 
         /**
@@ -9007,16 +9236,7 @@ var equiv = function () {
          */
         loadData: function (resource, successCallback, errorCallback)
         {
-            if (this.isUri(resource))
-            {
-                this.loadJson(resource, function(loadedResource) {
-                    successCallback(loadedResource);
-                }, errorCallback);
-            }
-            else
-            {
-                successCallback(resource);
-            }
+            return this._handleLoadJsonResource(resource, successCallback, errorCallback);
         },
 
         /**
@@ -9028,16 +9248,7 @@ var equiv = function () {
          */
         loadSchema: function (resource, successCallback, errorCallback)
         {
-            if (this.isUri(resource))
-            {
-                this.loadJson(resource, function(loadedResource) {
-                    successCallback(loadedResource);
-                }, errorCallback);
-            }
-            else
-            {
-                successCallback(resource);
-            }
+            return this._handleLoadJsonResource(resource, successCallback, errorCallback);
         },
 
         /**
@@ -9049,16 +9260,7 @@ var equiv = function () {
          */
         loadOptions: function (resource, successCallback, errorCallback)
         {
-            if (this.isUri(resource))
-            {
-                this.loadJson(resource, function(loadedResource) {
-                    successCallback(loadedResource);
-                }, errorCallback);
-            }
-            else
-            {
-                successCallback(resource);
-            }
+            return this._handleLoadJsonResource(resource, successCallback, errorCallback);
         },
 
         /**
@@ -9070,16 +9272,7 @@ var equiv = function () {
          */
         loadView: function (resource, successCallback, errorCallback)
         {
-            if (this.isUri(resource))
-            {
-                this.loadJson(resource, function(loadedResource) {
-                    successCallback(loadedResource);
-                }, errorCallback);
-            }
-            else
-            {
-                successCallback(resource);
-            }
+            return this._handleLoadJsonResource(resource, successCallback, errorCallback);
         },
 
         /**
@@ -9250,6 +9443,44 @@ var equiv = function () {
             }
 
             $.ajax(ajaxConfigs);
+        },
+
+        /**
+         * Loads referenced JSON schema.
+         *
+         * @param {Object|String} resource Resource to be loaded.
+         * @param {Function} onSuccess onSuccess callback.
+         * @param {Function} onError onError callback.
+         */
+        loadReferenceSchema: function (resource, successCallback, errorCallback)
+        {
+            return this._handleLoadJsonResource(resource, successCallback, errorCallback);
+        },
+
+        /**
+         * Loads referenced JSON options.
+         *
+         * @param {Object|String} resource Resource to be loaded.
+         * @param {Function} onSuccess onSuccess callback.
+         * @param {Function} onError onError callback.
+         */
+        loadReferenceOptions: function (resource, successCallback, errorCallback)
+        {
+            return this._handleLoadJsonResource(resource, successCallback, errorCallback);
+        },
+
+        _handleLoadJsonResource: function (resource, successCallback, errorCallback)
+        {
+            if (this.isUri(resource))
+            {
+                this.loadJson(resource, function(loadedResource) {
+                    successCallback(loadedResource);
+                }, errorCallback);
+            }
+            else
+            {
+                successCallback(resource);
+            }
         }
 
     });
@@ -10843,20 +11074,29 @@ var equiv = function () {
                                 if (_this.options.dsTransformer && Alpaca.isFunction(_this.options.dsTransformer)) {
                                     ds = _this.options.dsTransformer(ds);
                                 }
-                                if (ds) {
-                                    if (Alpaca.isArray(ds)) {
-                                        $.each(ds, function(index, value) {
+                                if (ds)
+                                {
+                                    if (Alpaca.isObject(ds))
+                                    {
+                                        // for objects, we walk through one key at a time
+                                        // the insertion order is the order of the keys from the map
+                                        // to preserve order, consider using an array as below
+                                        $.each(ds, function(key, value) {
                                             _this.selectOptions.push({
-                                                "value": value,
+                                                "value": key,
                                                 "text": value
                                             });
                                         });
                                     }
-                                    if (Alpaca.isObject(ds)) {
+                                    else if (Alpaca.isArray(ds))
+                                    {
+                                        // for arrays, we walk through one index at a time
+                                        // the insertion order is dictated by the order of the indices into the array
+                                        // this preserves order
                                         $.each(ds, function(index, value) {
                                             _this.selectOptions.push({
-                                                "value": index,
-                                                "text": value
+                                                "value": value.value,
+                                                "text": value.text
                                             });
                                         });
                                     }
@@ -11349,6 +11589,9 @@ var equiv = function () {
                 if (this.options.multiple) {
                     var isValid = true;
                     var _this = this;
+                    if (!val) {
+                        val = [];
+                    }
                     $.each(val, function(i,v) {
                         if ($.inArray(v, _this.schema["enum"]) <= -1) {
                             isValid = false;
@@ -12478,6 +12721,9 @@ var equiv = function () {
                     fieldChain.push(topField);
                 }
 
+                var originalItemSchema = itemSchema;
+                var originalItemOptions = itemOptions;
+
                 Alpaca.loadRefSchemaOptions(topField, referenceId, function(itemSchema, itemOptions) {
 
                     // walk the field chain to see if we have any circularity
@@ -12492,18 +12738,26 @@ var equiv = function () {
 
                     var circular = (refCount > 1);
 
+                    var resolvedItemSchema = {};
+                    if (originalItemSchema) {
+                        Alpaca.mergeObject(resolvedItemSchema, originalItemSchema);
+                    }
                     if (itemSchema)
                     {
-                        itemSchema = Alpaca.copyOf(itemSchema);
-                        delete itemSchema.id;
+                        Alpaca.mergeObject(resolvedItemSchema, itemSchema);
                     }
+                    delete resolvedItemSchema.id;
 
+                    var resolvedItemOptions = {};
+                    if (originalItemOptions) {
+                        Alpaca.mergeObject(resolvedItemOptions, originalItemOptions);
+                    }
                     if (itemOptions)
                     {
-                        itemOptions = Alpaca.copyOf(itemOptions);
+                        Alpaca.mergeObject(resolvedItemOptions, itemOptions);
                     }
 
-                    callback(itemSchema, itemOptions, circular);
+                    callback(resolvedItemSchema, resolvedItemOptions, circular);
                 });
             }
             else
@@ -13184,6 +13438,9 @@ var equiv = function () {
                     fieldChain.push(topField);
                 }
 
+                var originalPropertySchema = propertySchema;
+                var originalPropertyOptions = propertyOptions;
+
                 Alpaca.loadRefSchemaOptions(topField, referenceId, function(propertySchema, propertyOptions) {
 
                     // walk the field chain to see if we have any circularity
@@ -13198,18 +13455,30 @@ var equiv = function () {
 
                     var circular = (refCount > 1);
 
+                    var resolvedPropertySchema = {};
+                    if (originalPropertySchema) {
+                        Alpaca.mergeObject(resolvedPropertySchema, originalPropertySchema);
+                    }
                     if (propertySchema)
                     {
-                        propertySchema = Alpaca.copyOf(propertySchema);
-                        delete propertySchema.id;
+                        Alpaca.mergeObject(resolvedPropertySchema, propertySchema);
                     }
+                    // keep original id
+                    if (originalPropertySchema && originalPropertySchema.id) {
+                        resolvedPropertySchema.id = originalPropertySchema.id;
+                    }
+                    //delete resolvedPropertySchema.id;
 
+                    var resolvedPropertyOptions = {};
+                    if (originalPropertyOptions) {
+                        Alpaca.mergeObject(resolvedPropertyOptions, originalPropertyOptions);
+                    }
                     if (propertyOptions)
                     {
-                        propertyOptions = Alpaca.copyOf(propertyOptions);
+                        Alpaca.mergeObject(resolvedPropertyOptions, propertyOptions);
                     }
 
-                    callback(propertySchema, propertyOptions, circular);
+                    callback(resolvedPropertySchema, resolvedPropertyOptions, circular);
                 });
             }
             else
@@ -13391,6 +13660,12 @@ var equiv = function () {
                     _this.bindDependencyFieldUpdateEvent(propertyId);
                 }
 
+                // force refresh of dependency states
+                for (var propertyId in properties)
+                {
+                    _this.refreshDependentFieldStates(propertyId);
+                }
+
                 _this.renderValidationState();
 
                 if (onSuccess)
@@ -13489,13 +13764,11 @@ var equiv = function () {
             if (valid)
             {
                 item.show();
-
                 item.onDependentReveal();
             }
             else
             {
                 item.hide();
-
                 item.onDependentConceal();
             }
         },
@@ -13562,42 +13835,27 @@ var equiv = function () {
             // helper function
             var bindEvent = function(propertyId, dependencyPropertyId)
             {
-                var dependentField = self.childrenByPropertyId[dependencyPropertyId];
+                // dependencyPropertyId is the identifier for the property that the field "propertyId" is dependent on
+
+                var dependentField = Alpaca.resolveField(self, dependencyPropertyId);
                 if (dependentField)
                 {
-                    dependentField.getEl().bind("fieldupdate", function(event) {
+                    dependentField.getEl().bind("fieldupdate", function(propertyField, dependencyField, propertyId, dependencyPropertyId) {
 
-                        // the property "dependencyPropertyId" changed and affects target property ("propertyId")
-
-                        // update UI state for target property
-                        self.showOrHidePropertyBasedOnDependencies(propertyId);
-
-                        // look for any other sibling fields that depend on new state for target property
-                        for (var targetPropertyId in self.schema.properties)
+                        return function(event)
                         {
-                            var def = self.schema.properties[targetPropertyId];
-                            if (def.dependencies)
-                            {
-                                var targetField = self.childrenByPropertyId[targetPropertyId];
+                            // the property "dependencyPropertyId" changed and affects target property ("propertyId")
 
-                                if (Alpaca.isString(def.dependencies) && def.dependencies == propertyId)
-                                {
-                                    self.showOrHidePropertyBasedOnDependencies(targetPropertyId);
-                                    targetField.triggerUpdate();
-                                }
-                                else if (Alpaca.isArray(def.dependencies))
-                                {
-                                    $.each(def.dependencies, function(index, value) {
-                                        if (value == propertyId)
-                                        {
-                                            self.showOrHidePropertyBasedOnDependencies(targetPropertyId);
-                                            targetField.triggerUpdate();
-                                        }
-                                    });
-                                }
-                            }
-                        }
-                    });
+                            // update UI state for target property
+                            self.showOrHidePropertyBasedOnDependencies(propertyId);
+
+                            propertyField.trigger("fieldupdate");
+                        };
+
+                    }(item, dependentField, propertyId, dependencyPropertyId));
+
+                    // trigger field update
+                    dependentField.trigger("fieldupdate");
                 }
             };
 
@@ -13609,6 +13867,46 @@ var equiv = function () {
             {
                 $.each(itemDependencies, function(index, value) {
                     bindEvent(propertyId, value);
+                });
+            }
+        },
+
+        refreshDependentFieldStates: function(propertyId)
+        {
+            var self = this;
+
+            var propertyField = this.childrenByPropertyId[propertyId];
+            if (!propertyField)
+            {
+                return Alpaca.throwErrorWithCallback("Missing property: " + propertyId, self.errorCallback);
+            }
+
+            var itemDependencies = propertyField.schema.dependencies;
+            if (!itemDependencies)
+            {
+                // no dependencies, so simple return
+                return true;
+            }
+
+            // helper function
+            var triggerFieldUpdateForProperty = function(otherPropertyId)
+            {
+                var dependentField = Alpaca.resolveField(self, otherPropertyId);
+                if (dependentField)
+                {
+                    // trigger field update
+                    dependentField.trigger("fieldupdate");
+                }
+            };
+
+            if (Alpaca.isString(itemDependencies))
+            {
+                triggerFieldUpdateForProperty(itemDependencies);
+            }
+            else if (Alpaca.isArray(itemDependencies))
+            {
+                $.each(itemDependencies, function(index, value) {
+                    triggerFieldUpdateForProperty(value);
                 });
             }
         },
@@ -13627,15 +13925,19 @@ var equiv = function () {
          */
         determineSingleDependencyValid: function(propertyId, dependentOnPropertyId)
         {
+            var self = this;
+
             // checks to see if the referenced "dependent-on" property has a value
             // basic JSON-schema supports this (if it has ANY value, it is considered valid
             // special consideration for boolean false
-            var child = this.childrenByPropertyId[dependentOnPropertyId];
-            if (!child)
+            var dependentOnField = Alpaca.resolveField(self, dependentOnPropertyId);
+            if (!dependentOnField)
             {
                 // no dependent-on field found, return false
                 return false;
             }
+
+            var dependentOnData = dependentOnField.data;
 
             // assume it isn't valid
             var valid = false;
@@ -13650,13 +13952,13 @@ var equiv = function () {
 
                 // special case: if the field is a boolean field and we have no conditional dependency checking,
                 // then we set valid = false if the field data is a boolean false
-                if (child.getType() === "boolean" && !this.childrenByPropertyId[propertyId].options.dependencies && !child.data)
+                if (dependentOnField.getType() === "boolean" && !this.childrenByPropertyId[propertyId].options.dependencies && !dependentOnData)
                 {
                     valid = false;
                 }
                 else
                 {
-                    valid = !Alpaca.isValEmpty(child.data);
+                    valid = !Alpaca.isValEmpty(dependentOnField.data);
                 }
             }
             else
@@ -13670,29 +13972,29 @@ var equiv = function () {
                 // AND operation across any fields
 
                 // do some data sanity cleanup
-                var dependentOnField = this.childrenByPropertyId[dependentOnPropertyId];
-                var dependentOnData = dependentOnField.data;
                 if (dependentOnField.getType() === "boolean" && !dependentOnData) {
                     dependentOnData = false
                 }
 
+                var conditionalData = conditionalDependencies[dependentOnPropertyId];
 
                 // if the option is a function, then evaluate the function to determine whether to show
                 // the function evaluates regardless of whether the schema-based fallback determined we should show
-                if (!Alpaca.isEmpty(conditionalDependencies[dependentOnPropertyId]) && Alpaca.isFunction(conditionalDependencies[dependentOnPropertyId]))
+                if (!Alpaca.isEmpty(conditionalData) && Alpaca.isFunction(conditionalData))
                 {
-                    valid = conditionalDependencies[dependentOnPropertyId].call(this, dependentOnData);
+                    valid = conditionalData.call(this, dependentOnData);
                 }
                 else
                 {
                     // assume true
                     valid = true;
 
-                    // the option is an array or an object
-                    if (Alpaca.isArray(conditionalDependencies[dependentOnPropertyId])) {
+                    // the conditional data is an array of values
+                    if (Alpaca.isArray(conditionalData)) {
 
                         // check array value
-                        if (conditionalDependencies[dependentOnPropertyId] && $.inArray(dependentOnData, conditionalDependencies[dependentOnPropertyId]) == -1)
+                        //if (conditionalDependencies[dependentOnPropertyId] && $.inArray(dependentOnData, conditionalDependencies[dependentOnPropertyId]) == -1)
+                        if (Alpaca.anyEquality(dependentOnData, conditionalData))
                         {
                             valid = false;
                         }
@@ -13700,7 +14002,7 @@ var equiv = function () {
                     else
                     {
                         // check object value
-                        if (!Alpaca.isEmpty(conditionalDependencies[dependentOnPropertyId]) && conditionalDependencies[dependentOnPropertyId] != dependentOnData)
+                        if (!Alpaca.isEmpty(conditionalData) && !Alpaca.anyEquality(conditionalData, dependentOnData))
                         {
                             valid = false;
                         }
@@ -13713,8 +14015,7 @@ var equiv = function () {
             //
 
             // final check: only set valid if the dependentOnPropertyId is showing
-            var dependencyProperty = this.childrenByPropertyId[dependentOnPropertyId];
-            if (dependencyProperty && dependencyProperty.isHidden())
+            if (dependentOnField && dependentOnField.isHidden())
             {
                 valid = false;
             }

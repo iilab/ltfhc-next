@@ -10,17 +10,5 @@
                 "Female"
             ]
         }
-    },
-    "renderForm": true,
-    "form": {
-        "attributes": {
-            "action": "/todo",
-            "method": "post"
-        },
-        "buttons": {
-            "submit": {},
-            "reset": {}
-        }
-    },
-    "focus": true
+    }
 }
