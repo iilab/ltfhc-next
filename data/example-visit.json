@@ -1,15 +1,16 @@
-[
-{
+[{
 	"collection": "visits",
 	"class": "entry",
 	"schema": "http://ltfhc.iilab.org/schema/0.4.0/visit.json",
 	"_id": "806867c76984a3e06bd577cb5117b680",
-    "village": "",
-    "clinicid": "Namansi",
-    "userid": "",
-    "notes": "",
-    "reasons": [ 
-		"anc_first_visit" 
+	"date_created": "2011-01-27T11:40:52.280Z",
+	"date_updated": "2011-01-27T11:40:52.280Z",
+	"village": "",
+	"clinicid": "Namansi",
+	"userid": "",
+	"notes": "",
+	"reasons": [
+		"anc_first_visit"
 	],
 	"patient": {
 		"schema": "http://ltfhc.iilab.org/schema/0.4.0/patient.json",
@@ -62,20 +63,21 @@
 		"in_labor": false
 	},
 	"reproductive_counseling": {
-		"contraception_current" : "Depo Provera"
+		"contraception_current": "Depo Provera"
 	}
-},
-{
+}, {
 	"collection": "visits",
 	"class": "entry",
 	"schema": "http://ltfhc.iilab.org/schema/0.4.0/visit.json",
 	"_id": "806867c76984a3e06bd577cb5117b681",
-    "village": "",
-    "clinicid": "Namansi",
-    "userid": "",
-    "notes": "",
-    "reasons": [ 
-		"anc_first_visit" 
+	"date_created": "2011-01-28T11:40:52.280Z",
+	"date_updated": "2011-01-28T11:40:52.280Z",
+	"village": "",
+	"clinicid": "Namansi",
+	"userid": "",
+	"notes": "",
+	"reasons": [
+		"anc_first_visit"
 	],
 	"patient": {
 		"schema": "http://ltfhc.iilab.org/schema/0.4.0/patient.json",
@@ -128,20 +130,21 @@
 		"in_labor": false
 	},
 	"reproductive_counseling": {
-		"contraception_current" : "Depo Provera"
+		"contraception_current": "Depo Provera"
 	}
-},
-{
+}, {
 	"collection": "visits",
 	"class": "entry",
 	"schema": "http://ltfhc.iilab.org/schema/0.4.0/visit.json",
 	"_id": "806867c76984a3e06bd577cb5117b682",
-    "village": "",
-    "clinicid": "Namansi",
-    "userid": "",
-    "notes": "",
-    "reasons": [ 
-		"anc_first_visit" 
+	"date_created": "2011-02-07T11:40:52.280Z",
+	"date_updated": "2011-02-07T11:40:52.280Z",
+	"village": "",
+	"clinicid": "Namansi",
+	"userid": "",
+	"notes": "",
+	"reasons": [
+		"anc_first_visit"
 	],
 	"patient": {
 		"schema": "http://ltfhc.iilab.org/schema/0.4.0/patient.json",
@@ -193,18 +196,19 @@
 		"admission": false,
 		"in_labor": false
 	}
-},
-{
+}, {
 	"collection": "visits",
 	"class": "entry",
 	"schema": "http://ltfhc.iilab.org/schema/0.4.0/visit.json",
 	"_id": "806867c76984a3e06bd577cb5117b683",
-    "village": "",
-    "clinicid": "Namansi",
-    "userid": "",
-    "notes": "",
-    "reasons": [ 
-		"anc_first_visit" 
+	"date_created": "2011-02-09T11:40:52.280Z",
+	"date_updated": "2011-02-09T11:40:52.280Z",
+	"village": "",
+	"clinicid": "Namansi",
+	"userid": "",
+	"notes": "",
+	"reasons": [
+		"anc_first_visit"
 	],
 	"patient": {
 		"schema": "http://ltfhc.iilab.org/schema/0.4.0/patient.json",
@@ -257,20 +261,21 @@
 		"in_labor": false
 	},
 	"reproductive_counseling": {
-		"contraception_current" : "Depo Provera"
+		"contraception_current": "Depo Provera"
 	}
-},
-{
+}, {
 	"collection": "visits",
 	"class": "entry",
 	"schema": "http://ltfhc.iilab.org/schema/0.4.0/visit.json",
 	"_id": "806867c76984a3e06bd577cb5117b684",
-    "village": "",
-    "clinicid": "Namansi",
-    "userid": "",
-    "notes": "",
-    "reasons": [ 
-		"anc_first_visit" 
+	"date_created": "2011-02-17T11:40:52.280Z",
+	"date_updated": "2011-02-17T11:40:52.280Z",
+	"village": "",
+	"clinicid": "Namansi",
+	"userid": "",
+	"notes": "",
+	"reasons": [
+		"anc_first_visit"
 	],
 	"patient": {
 		"schema": "http://ltfhc.iilab.org/schema/0.4.0/patient.json",
@@ -323,20 +328,21 @@
 		"in_labor": false
 	},
 	"reproductive_counseling": {
-		"contraception_current" : "Depo Provera"
+		"contraception_current": "Depo Provera"
 	}
-},
-{
+}, {
 	"collection": "visits",
 	"class": "entry",
 	"schema": "http://ltfhc.iilab.org/schema/0.4.0/visit.json",
 	"_id": "806867c76984a3e06bd577cb5117b685",
-    "village": "",
-    "clinicid": "Namansi",
-    "userid": "",
-    "notes": "",
-    "reasons": [ 
-		"anc_first_visit" 
+	"date_created": "2011-02-21T11:40:52.280Z",
+	"date_updated": "2011-02-21T11:40:52.280Z",
+	"village": "",
+	"clinicid": "Namansi",
+	"userid": "",
+	"notes": "",
+	"reasons": [
+		"anc_first_visit"
 	],
 	"patient": {
 		"schema": "http://ltfhc.iilab.org/schema/0.4.0/patient.json",
@@ -389,21 +395,20 @@
 		"in_labor": false
 	},
 	"reproductive_counseling": {
-		"contraception_current" : "Pills",
-		"contraception_distribution" : "CBD"
+		"contraception_current": "Pills",
+		"contraception_distribution": "CBD"
 	}
-},
-{
+}, {
 	"collection": "visits",
 	"class": "entry",
 	"schema": "http://ltfhc.iilab.org/schema/0.4.0/visit.json",
 	"_id": "806867c76984a3e06bd577cb5117b687",
-    "village": "",
-    "clinicid": "Namansi",
-    "userid": "",
-    "notes": "",
-    "reasons": [ 
-		"anc_first_visit" 
+	"village": "",
+	"clinicid": "Namansi",
+	"userid": "",
+	"notes": "",
+	"reasons": [
+		"anc_first_visit"
 	],
 	"patient": {
 		"schema": "http://ltfhc.iilab.org/schema/0.4.0/patient.json",
@@ -456,8 +461,6 @@
 		"in_labor": false
 	},
 	"reproductive_counseling": {
-		"contraception_current" : "Pills"
+		"contraception_current": "Pills"
 	}
-}
-]
-
+}]

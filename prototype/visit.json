@@ -1,0 +1,40 @@
+{
+  "schema": {
+    "title": "Patient Intake",
+    "_id": "visit",
+    "type": "object",
+    "properties": {
+      "clinic": {
+        "type": "string"
+      },
+      "clinician": {
+        "type": "string"
+      },
+      "note": {
+        "type": "string"
+      },
+      "form_list0": {
+        "type": "string"
+      }
+    }
+  },
+  "options": {
+    "fields": {
+      "clinic": {
+        "label": "Clinic: (Kliniki)"
+      },
+      "clinician": {
+        "label": "Clinician: (Daktari)"
+      },
+      "note": {
+        "label": "Notes: (Maelezo mengine husika)",
+        "type": "textarea"
+      },
+      "form_list0": {
+        "label": "Reason For Visit: (Sababu ya ziara)",
+        "type": "checkbox",
+        "rightLabel": "#/forms/list"
+      }
+    }
+  }
+}

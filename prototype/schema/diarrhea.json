@@ -1,0 +1,60 @@
+{
+  "title": "Diarrhea Treatment",
+  "_id": "diarrhea",
+  "type": "object",
+  "properties": {
+    "duration": {
+      "type": "number"
+    },
+    "water_sodium_imbalance": {
+      "type": "string",
+      "enum": [
+        "severe",
+        "mild",
+        "uncertain"
+      ]
+    },
+    "given_ors": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "given_zinc": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "blood_in_stool": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "admission": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "referral": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    },
+    "diarrhea_mortality": {
+      "type": "string",
+      "enum": [
+        true,
+        false
+      ]
+    }
+  }
+}

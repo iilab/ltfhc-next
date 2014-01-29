@@ -1,304 +1,304 @@
 {
-    "collection": "reports",
-    "class": "schema",
-    "_id": "reports/schema/leprosytb",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Leprosy and TB",
-    "type": "object",
-    "properties": {
-        "totals": {
-            "title": "Total (a)",
-            "type": "number",
-            "line_number": "1",
-            "value": {
-                "field": "/visit/leprosy_tb/classification"
-            }
-        },
-        "newly_registered": {
-            "title": "New",
-            "type": "number",
-            "line_number": "2a",
-            "value": {
-                "field": "/visit/leprosy_tb/patient_count"
-            }
-        },
-        "return_after_default": {
-            "title": "Return after Default",
-            "type": "number",
-            "line_number": "2b",
-            "value": {
-                "field": "/visit/leprosy_tb/leprosy_status"
-            }
-        },
-        "relapse_after_MDT": {
-            "title": "Relapse after MDT",
-            "type": "number",
-            "line_number": "2c",
-            "value": {
-                "field": "/visit/leprosy_tb/leprosy_status"
-            }
-        },
-        "relapse_after_dds": {
-            "title": "Relapse after DDS/Others",
-            "type": "number",
-            "line_number": "2d",
-            "value": {
-                "field": "/visit/leprosy_tb/leprosy_status"
-            }
-        },
-        "total_notifications": {
-            "title": "Total Notifications (b)",
-            "type": "number",
-            "line_number": "2e",
-            "value": {
-                "field": "/visit/leprosy_tb/leprosy_status"
-            }
-        },
-        "1mb": {
-            "title": "1MB",
-            "type": "number",
-            "line_number": "3a",
-            "value": {
-                "field": "/visit/leprosy_tb/classification"
-            }
-        },
-        "1pb": {
-            "title": "1PB",
-            "type": "number",
-            "line_number": "3b",
-            "value": {
-                "field": "/visit/leprosy_tb/classification"
-            }
-        },
-        "disability_grade_0": {
-            "title": "Grade 0",
-            "type": "number",
-            "line_number": "4a",
-            "value": {
-                "field": "/visit/leprosy_tb/disability_grade"
-            }
-        },
-        "disability_grade_1": {
-            "title": "Grade 1",
-            "type": "number",
-            "line_number": "4b",
-            "value": {
-                "field": "/visit/leprosy_tb/disability_grade"
-            }
-        },
-        "disability_grade_2": {
-            "title": "Grade 2",
-            "type": "number",
-            "line_number": "4c",
-            "value": {
-                "field": "/visit/leprosy_tb/disability_grade"
-            }
-        },
-        "disability_grade_total": {
-            "title": "Total",
-            "type": "number",
-            "line_number": "4d",
-            "value": {
-                "field": "/visit/leprosy_tb/disability_grade"
-            }
-        },
-        "treatment_completed": {
-            "title": "Treatment Completed",
-            "type": "number",
-            "line_number": "5a",
-            "value": {
-                "field": "/visit/leprosy_tb/end_result"
-            }
-        },
-        "died": {
-            "title": "Died",
-            "type": "number",
-            "line_number": "5b",
-            "value": {
-                "field": "/visit/leprosy_tb/end_result"
-            }
-        },
-        "transferred_out": {
-            "title": "Transferred Out",
-            "type": "number",
-            "line_number": "5c",
-            "value": {
-                "field": "/visit/leprosy_tb/end_result"
-            }
-        },
-        "defaulter": {
-            "title": "Defaulter",
-            "type": "number",
-            "line_number": "5d",
-            "value": {
-                "field": "/visit/leprosy_tb/end_result"
-            }
-        },
-        "total_c": {
-            "title": "Total (c)",
-            "type": "number",
-            "line_number": "5e",
-            "value": {
-                "field": "/visit/leprosy_tb/end_result"
-            }
-        },
-        "registered_at_end_of_quarter": {
-            "title": "(a) + (b) - (c)",
-            "type": "number",
-            "line_number": "6",
-            "value": {
-                "field": "/visit/leprosy_tb/patient_count"
-            }
-        },
-        "corticosteroids": {
-            "title": "Patients who started corticosteroids in the quarter",
-            "type": "number",
-            "line_number": "7",
-            "value": {
-                "field": "/visit/leprosy_tb/corticosteroids"
-            }
-        }
+  "collection": "reports",
+  "class": "schema",
+  "_id": "reports/schema/leprosytb",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Leprosy and TB",
+  "type": "object",
+  "properties": {
+    "totals": {
+      "title": "Total (a)",
+      "type": "number",
+      "line_number": "1",
+      "value": {
+        "field": "/visit/leprosy_tb/classification"
+      }
     },
-    "definitions": {
-        "treatment_categories": {
-            "mb_a": {
-                "type": "number",
-                "title": "MB(A)"
-            },
-            "mb_c": {
-                "type": "number",
-                "title": "MB(C)"
-            },
-            "pb_a": {
-                "type": "number",
-                "title": "PB(A)"
-            },
-            "pb_c": {
-                "type": "number",
-                "title": "PB(C)"
-            },
-            "total": {
-                "type": "number",
-                "title": "Total"
-            }
+    "newly_registered": {
+      "title": "New",
+      "type": "number",
+      "line_number": "2a",
+      "value": {
+        "field": "/visit/leprosy_tb/patient_count"
+      }
+    },
+    "return_after_default": {
+      "title": "Return after Default",
+      "type": "number",
+      "line_number": "2b",
+      "value": {
+        "field": "/visit/leprosy_tb/leprosy_status"
+      }
+    },
+    "relapse_after_MDT": {
+      "title": "Relapse after MDT",
+      "type": "number",
+      "line_number": "2c",
+      "value": {
+        "field": "/visit/leprosy_tb/leprosy_status"
+      }
+    },
+    "relapse_after_dds": {
+      "title": "Relapse after DDS/Others",
+      "type": "number",
+      "line_number": "2d",
+      "value": {
+        "field": "/visit/leprosy_tb/leprosy_status"
+      }
+    },
+    "total_notifications": {
+      "title": "Total Notifications (b)",
+      "type": "number",
+      "line_number": "2e",
+      "value": {
+        "field": "/visit/leprosy_tb/leprosy_status"
+      }
+    },
+    "1mb": {
+      "title": "1MB",
+      "type": "number",
+      "line_number": "3a",
+      "value": {
+        "field": "/visit/leprosy_tb/classification"
+      }
+    },
+    "1pb": {
+      "title": "1PB",
+      "type": "number",
+      "line_number": "3b",
+      "value": {
+        "field": "/visit/leprosy_tb/classification"
+      }
+    },
+    "disability_grade_0": {
+      "title": "Grade 0",
+      "type": "number",
+      "line_number": "4a",
+      "value": {
+        "field": "/visit/leprosy_tb/disability_grade"
+      }
+    },
+    "disability_grade_1": {
+      "title": "Grade 1",
+      "type": "number",
+      "line_number": "4b",
+      "value": {
+        "field": "/visit/leprosy_tb/disability_grade"
+      }
+    },
+    "disability_grade_2": {
+      "title": "Grade 2",
+      "type": "number",
+      "line_number": "4c",
+      "value": {
+        "field": "/visit/leprosy_tb/disability_grade"
+      }
+    },
+    "disability_grade_total": {
+      "title": "Total",
+      "type": "number",
+      "line_number": "4d",
+      "value": {
+        "field": "/visit/leprosy_tb/disability_grade"
+      }
+    },
+    "treatment_completed": {
+      "title": "Treatment Completed",
+      "type": "number",
+      "line_number": "5a",
+      "value": {
+        "field": "/visit/leprosy_tb/end_result"
+      }
+    },
+    "died": {
+      "title": "Died",
+      "type": "number",
+      "line_number": "5b",
+      "value": {
+        "field": "/visit/leprosy_tb/end_result"
+      }
+    },
+    "transferred_out": {
+      "title": "Transferred Out",
+      "type": "number",
+      "line_number": "5c",
+      "value": {
+        "field": "/visit/leprosy_tb/end_result"
+      }
+    },
+    "defaulter": {
+      "title": "Defaulter",
+      "type": "number",
+      "line_number": "5d",
+      "value": {
+        "field": "/visit/leprosy_tb/end_result"
+      }
+    },
+    "total_c": {
+      "title": "Total (c)",
+      "type": "number",
+      "line_number": "5e",
+      "value": {
+        "field": "/visit/leprosy_tb/end_result"
+      }
+    },
+    "registered_at_end_of_quarter": {
+      "title": "(a) + (b) - (c)",
+      "type": "number",
+      "line_number": "6",
+      "value": {
+        "field": "/visit/leprosy_tb/patient_count"
+      }
+    },
+    "corticosteroids": {
+      "title": "Patients who started corticosteroids in the quarter",
+      "type": "number",
+      "line_number": "7",
+      "value": {
+        "field": "/visit/leprosy_tb/corticosteroids"
+      }
+    }
+  },
+  "definitions": {
+    "treatment_categories": {
+      "mb_a": {
+        "type": "number",
+        "title": "MB(A)"
+      },
+      "mb_c": {
+        "type": "number",
+        "title": "MB(C)"
+      },
+      "pb_a": {
+        "type": "number",
+        "title": "PB(A)"
+      },
+      "pb_c": {
+        "type": "number",
+        "title": "PB(C)"
+      },
+      "total": {
+        "type": "number",
+        "title": "Total"
+      }
+    },
+    "age_ranges": {
+      "0_14": {
+        "title": "0-14",
+        "type": "object",
+        "properties": {
+          "male": {
+            "type": "number",
+            "title": "Male"
+          },
+          "female": {
+            "type": "number",
+            "title": "Female"
+          }
+        }
+      }
+    },
+    "15_24": {
+      "title": "15-24",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
         },
-        "age_ranges": {
-            "0_14": {
-                "title": "0-14",
-                "type": "object",
-                "properties": {
-                    "male": {
-                        "type": "number",
-                        "title": "Male"
-                    },
-                    "female": {
-                        "type": "number",
-                        "title": "Female"
-                    }
-                }
-            }
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "25-34": {
+      "title": "25-34",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
         },
-        "15_24": {
-            "title": "15-24",
-            "type": "object",
-            "properties": {
-                "male": {
-                    "type": "number",
-                    "title": "Male"
-                },
-                "female": {
-                    "type": "number",
-                    "title": "Female"
-                }
-            }
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "35_44": {
+      "title": "35-44",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
         },
-        "25-34": {
-            "title": "25-34",
-            "type": "object",
-            "properties": {
-                "male": {
-                    "type": "number",
-                    "title": "Male"
-                },
-                "female": {
-                    "type": "number",
-                    "title": "Female"
-                }
-            }
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "45_54": {
+      "title": "45-54",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
         },
-        "35_44": {
-            "title": "35-44",
-            "type": "object",
-            "properties": {
-                "male": {
-                    "type": "number",
-                    "title": "Male"
-                },
-                "female": {
-                    "type": "number",
-                    "title": "Female"
-                }
-            }
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "55_64": {
+      "title": "55-64",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
         },
-        "45_54": {
-            "title": "45-54",
-            "type": "object",
-            "properties": {
-                "male": {
-                    "type": "number",
-                    "title": "Male"
-                },
-                "female": {
-                    "type": "number",
-                    "title": "Female"
-                }
-            }
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "65": {
+      "title": "65+",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
         },
-        "55_64": {
-            "title": "55-64",
-            "type": "object",
-            "properties": {
-                "male": {
-                    "type": "number",
-                    "title": "Male"
-                },
-                "female": {
-                    "type": "number",
-                    "title": "Female"
-                }
-            }
+        "female": {
+          "type": "number",
+          "title": "Female"
+        }
+      }
+    },
+    "total": {
+      "title": "Total",
+      "type": "object",
+      "properties": {
+        "male": {
+          "type": "number",
+          "title": "Male"
         },
-        "65": {
-            "title": "65+",
-            "type": "object",
-            "properties": {
-                "male": {
-                    "type": "number",
-                    "title": "Male"
-                },
-                "female": {
-                    "type": "number",
-                    "title": "Female"
-                }
-            }
+        "female": {
+          "type": "number",
+          "title": "Female"
         },
         "total": {
-            "title": "Total",
-            "type": "object",
-            "properties": {
-                "male": {
-                    "type": "number",
-                    "title": "Male"
-                },
-                "female": {
-                    "type": "number",
-                    "title": "Female"
-                },
-                "total": {
-                    "type": "number",
-                    "title": "Total"
-                }
-            }
+          "type": "number",
+          "title": "Total"
         }
+      }
     }
+  }
 }
