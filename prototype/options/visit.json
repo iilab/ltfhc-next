@@ -23,7 +23,8 @@
                             "Bodily Injury",
                             "Disease Diagnosis",
                             "Immunization"
-                        ]
+                        ],
+                        "removeDefaultNone": true
                     },
                     "subforms": {
                         "fields": {
