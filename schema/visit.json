@@ -1,67 +1,73 @@
 {
-  "collection": "forms",
-  "class": "schema",
-  "_id": "forms/schema/visit",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "title": "Visit",
-  "properties": {
-    "village": {
-      "title": "Village",
-      "type": "string"
-    },
-    "clinicid": {
-      "title": "Clinic ID",
-      "type": "string"
-    },
-    "userid": {
-      "title": "Clinician",
-      "type": "string"
-    },
-    "notes": {
-      "title": "Notes",
-      "type": "string"
-    },
-    "reasons": {
-      "title": "Reasons for Visit",
-      "$ref": "#/schema/parent/visit/list"
-    },
-    "subforms": {
-      "$ref": "#/schema/parent/visit"
-    }
-  },
-  "definitions": {
-    "schema": {
-      "parent": {
-        "visit": {
-          "list": {
-            "id": "list",
-            "enum": [
-              "bodilyinjury",
-              "diseasediagnosis",
-              "immunization"
-            ]
-          },
-          "subforms": {
-            "id": "subforms",
-            "bodilyinjury": {
-              "title": "Bodily Injury",
-              "type": "String",
-              "dependencies": "reasons"
-            },
-            "diseasediagnosis": {
-              "title": "Disease Diagnosis",
-              "type": "String",
-              "dependencies": "reasons"
-            },
-            "immunization": {
-              "title": "Imnunization",
-              "type": "String",
-              "dependencies": "reasons"
-            }
-          }
+    "collection": "forms",
+    "class": "schema",
+    "_id": "forms/schema/visit",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Visit",
+    "properties": {
+        "village": {
+            "title": "Village",
+            "type": "string"
+        },
+        "clinicid": {
+            "title": "Clinic ID",
+            "type": "string"
+        },
+        "userid": {
+            "title": "Clinician",
+            "type": "string"
+        },
+        "notes": {
+            "title": "Notes",
+            "type": "string"
+        },
+        "reasons": {
+            "id": "reasons",
+            "title": "Reasons for Visit",
+            "$ref": "#/schema/parent/visit/list"
+        },
+        "subforms": {
+            "$ref": "#/schema/parent/visit/subforms"
         }
-      }
+    },
+    "definitions": {
+        "schema": {
+            "parent": {
+                "visit": {
+                    "list": {
+                        "id": "list",
+                        "type": "string",
+                        "enum": [
+                            "bodilyinjury",
+                            "diseasediagnosis",
+                            "immunization"
+                        ],
+                        "required": true
+                    },
+                    "subforms": {
+                        "id": "subforms",
+                        "type": "object",
+                        "properties": {
+                            "bodilyinjury": {
+                                "title": "Bodily Injury",
+                                "dependencies": "#reasons",
+                                "$ref": "bodilyinjury"
+                            },
+                            "diseasediagnosis": {
+                                "title": "Disease Diagnosis",
+                                "dependencies": "#reasons",
+                                "$ref": "diseasediagnosis"
+                            },
+                            "immunization": {
+                                "title": "Immunization",
+                                "dependencies": "#reasons",
+                                "$ref": "immunization"
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 }
