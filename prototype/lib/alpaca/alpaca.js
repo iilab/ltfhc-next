@@ -13194,10 +13194,6 @@ var equiv = function () {
             if (!data || !Alpaca.isObject(data)) {
                 return;
             }
-            // clear all controls
-            //Alpaca.each(this.children, function() {
-            //    this.clear();
-            //});
 
             // set fields
             for (var fieldId in this.childrenById) {
@@ -13663,6 +13659,7 @@ var equiv = function () {
                     Alpaca.logDebug("There were " + extraDataKeys.length + " extra data keys that were not part of the schema " + JSON.stringify(extraDataKeys));
                 }
 
+                /*
                 // support for dependencies
 
                 // walk through all properties and allow each to determine whether it should show based on its dependencies.
@@ -13683,6 +13680,7 @@ var equiv = function () {
                 {
                     _this.refreshDependentFieldStates(propertyId);
                 }
+                */
 
                 _this.renderValidationState();
 
@@ -13747,6 +13745,19 @@ var equiv = function () {
 
                         // remove from extraDataProperties helper
                         delete extraDataProperties[propertyId];
+
+
+                        // HANDLE PROPERTY DEPENDENCIES (IF THE PROPERTY HAS THEM)
+
+                        // if this property has dependencies, show or hide this added item right away
+                        _this.showOrHidePropertyBasedOnDependencies(propertyId);
+
+                        // if this property has dependencies, bind update handlers to dependent fields
+                        _this.bindDependencyFieldUpdateEvent(propertyId);
+
+                        // if this property has dependencies, trigger those to ensure it is in the right state
+                        _this.refreshDependentFieldStates(propertyId);
+
 
                         handleProperty(index + 1);
                     });
