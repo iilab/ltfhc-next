@@ -2,6 +2,9 @@
     "name": "kujua-branding",
     "version": "0.0.2",
     "description": "Kujua Lite shared branding style and fonts.",
+	"less": {
+	    "paths": ["."]
+	},
     "dependencies": {
         "less-precompiler": null
     }
