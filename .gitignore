@@ -16,3 +16,7 @@ npm-debug.log
 .kansorc
 
 erl_crash.dump
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
