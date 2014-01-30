@@ -1,6 +1,3 @@
 [submodule "prototype/xlsxconverter"]
 	path = prototype/xlsxconverter
 	url = https://github.com/iilab/XLSXConverter.git
-[submodule "packages/less-precompiler"]
-	path = packages/less-precompiler
-	url = https://github.com/kanso/less-precompiler.git
