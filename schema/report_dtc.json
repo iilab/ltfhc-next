@@ -59,6 +59,22 @@
             "sw": "Idadi ya wagonjwa waliofia DTC",
             "en": "The number of patients who died of DTC_Diarrhoea treatment Centre",
             "condition": "diarrhea.diarrhea_mortality"
+        },
+        "definitions": {
+            "columns": {
+                "males": {
+                    "title": "Males",
+                    "condition": "patient.gender == 'male'"
+                },
+                "females": {
+                    "title": "Females",
+                    "condition": "patient.gender == 'female'"
+                },
+                "total": {
+                    "title": "Total",
+                    "condition": "true"
+                }
+            }
         }
     }
 }
