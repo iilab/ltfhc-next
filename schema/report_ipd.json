@@ -484,6 +484,55 @@
             "sw": "Diagnoses Other",
             "en": "Diagnoses Other",
             "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Diagnoses Other'"
+        },
+        "definitions": {
+            "columns": {
+                "lessthan1": {
+                    "title": "Less than 1 Month",
+                    "male": {
+                        "title": "Males",
+                        "condition": "FIXME && patient.gender == 'male'"
+                    },
+                    "female": {
+                        "title": "Females",
+                        "condition": "FIXME && patient.gender == 'female'"
+                    },
+                    "Total": {
+                        "title": "Total",
+                        "condition": "FIXME"
+                    }
+                },
+                "more1mo": {
+                    "title": "More than 1 month and less than 1 Year",
+                    "male": {
+                        "title": "Males",
+                        "condition": "FIXME && patient.gender == 'male'"
+                    },
+                    "female": {
+                        "title": "Females",
+                        "condition": "FIXME && patient.gender == 'female'"
+                    },
+                    "Total": {
+                        "title": "Total",
+                        "condition": "FIXME "
+                    }
+                },
+                "above1below5": {
+                    "title": "More than 1 year and less than 5 Years",
+                    "male": {
+                        "title": "Males",
+                        "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'male'"
+                    },
+                    "female": {
+                        "title": "Females",
+                        "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'female'"
+                    },
+                    "Total": {
+                        "title": "Total",
+                        "condition": "patient.approxage > 1 && patient.approxage < 5"
+                    }
+                }
+            }
         }
     }
 }
