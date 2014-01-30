@@ -1,299 +1,414 @@
-// NAVBAR (FIXED AND STATIC)
+//
+// Navbars
+// --------------------------------------------------
+
+// Wrapper and base class
+.navbar {
+  position: relative;
+  min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  margin-bottom: 20px;
+  padding-left: @navbar-padding-horizontal;
+  padding-right: @navbar-padding-horizontal;
+  background-color: @navbar-bg;
+  border-radius: @navbar-border-radius;
+
+  // Prevent floats from breaking the navbar
+  .clearfix();
+}
+
+// Navbar nav links
 // -------------------------
 
+.navbar-nav {
+  margin-bottom: 15px;
 
-// COMMON STYLES
-// -------------
-
-.navbar {
-  overflow: visible;
-  margin-bottom: @baseLineHeight;
-}
-
-// Gradient is applied to it's own element because overflow visible is not honored by IE when filter is present
-.navbar-inner {
-  padding-left:  20px;
-  padding-right: 20px;
-  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
-  .border-radius(4px);
-  @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
-  .box-shadow(@shadow);
-}
-
-// Navbar button for toggling navbar items in responsive layouts
-.btn-navbar {
-  display: none;
-  float: right;
-  padding: 7px 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-  .buttonBackground(@navbarBackgroundHighlight, @navbarBackground);
-  @shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
-  .box-shadow(@shadow);
-}
-.btn-navbar .icon-bar {
-  display: block;
-  width: 18px;
-  height: 2px;
-  background-color: #f5f5f5;
-  .border-radius(1px);
-  .box-shadow(0 1px 0 rgba(0,0,0,.25));
-}
-.btn-navbar .icon-bar + .icon-bar {
-  margin-top: 3px;
-}
-// Override the default collapsed state
-.nav-collapse.collapse {
-  height: auto;
-}
-
-
-// Brand, links, text, and buttons
-.navbar {
-  // Hover and active states
-  .brand:hover {
-    text-decoration: none;
-  }
-  // Website or project name
-  .brand {
-    float: left;
-    display: block;
-    padding: 8px 20px 12px;
-    margin-left: -20px; // negative indent to left-align the text down the page
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 1;
-    color: @white;
-  }
-  // Plain text in topbar
-  .navbar-text {
-    margin-bottom: 0;
-    line-height: 40px;
-    color: @navbarText;
-    a:hover {
-      color: @white;
-      background-color: transparent;
+  > li > a {
+    padding-top: ((@navbar-height - @line-height-computed) / 2);
+    padding-bottom: ((@navbar-height - @line-height-computed) / 2);
+    color: @navbar-link-color;
+    line-height: @line-height-computed;
+    border-radius: @border-radius-base;
+    &:hover,
+    &:focus {
+      color: @navbar-link-hover-color;
+      background-color: @navbar-link-hover-bg;
     }
   }
-  // Buttons in navbar
-  .btn,
-  .btn-group {
-    margin-top: 5px; // make buttons vertically centered in navbar
-  }
-  .btn-group .btn {
-    margin-top: 0; // then undo the margin here so we don't accidentally double it
-  }
-}
-
-// Navbar forms
-.navbar-form {
-  margin-bottom: 0; // remove default bottom margin
-  .clearfix();
-  input,
-  select {
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-  .radio,
-  .checkbox {
-    margin-top: 5px;
-  }
-  input[type="image"],
-  input[type="checkbox"],
-  input[type="radio"] {
-    margin-top: 3px;
-  }
-  .input-append,
-  .input-prepend {
-    margin-top: 6px;
-    white-space: nowrap; // preven two  items from separating within a .navbar-form that has .pull-left
-    input {
-      margin-top: 0; // remove the margin on top since it's on the parent
+  > .active > a {
+    &,
+    &:hover,
+    &:focus {
+      color: @navbar-link-active-color;
+      background-color: @navbar-link-active-bg;
     }
   }
-}
-
-// Navbar search
-.navbar-search {
-  position: relative;
-  float: left;
-  margin-top: 6px;
-  margin-bottom: 0;
-  .search-query {
-    padding: 4px 9px;
-    #font > .sans-serif(13px, normal, 1);
-    color: @white;
-    color: rgba(255,255,255,.75);
-    background: #666;
-    background: rgba(255,255,255,.3);
-    border: 1px solid #111;
-    @shadow: inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0px rgba(255,255,255,.15);
-    .box-shadow(@shadow);
-    .transition(none);
-
-    // Placeholder text gets special styles; can't be bundled together though for some reason
-    .placeholder(@grayLighter);
-
-    // Hover states
-    &:hover {
-      color: @white;
-      background-color: @grayLight;
-      background-color: rgba(255,255,255,.5);
+  > .disabled > a {
+    &,
+    &:hover,
+    &:focus {
+      color: @navbar-link-disabled-color;
+      background-color: @navbar-link-disabled-bg;
     }
-    // Focus states (we use .focused since IE7-8 and down doesn't support :focus)
-    &:focus,
-    &.focused {
-      padding: 5px 10px;
-      color: @grayDark;
-      text-shadow: 0 1px 0 @white;
-      background-color: @white;
-      border: 0;
-      .box-shadow(0 0 3px rgba(0,0,0,.15));
-      outline: 0;
-    }
+  }
+
+  // Right aligned contents
+  // Make them full width first so that they align properly on mobile
+  &.pull-right {
+    width: 100%;
   }
 }
 
 
-// FIXED NAVBAR
-// ------------
 
-.navbar-fixed-top {
+//
+// Navbar alignment options
+// --------------------------------------------------
+
+// Static navbar
+.navbar-static-top {
+  border-radius: 0;
+}
+
+// Fix the top/bottom navbars when screen real estate supports it
+.navbar-fixed-top,
+.navbar-fixed-bottom {
   position: fixed;
-  top: 0;
   right: 0;
   left: 0;
-  z-index: @zindexFixedNavbar;
+  z-index: @zindex-navbar-fixed;
+  border-radius: 0;
 }
-.navbar-fixed-top .navbar-inner {
-  padding-left:  0;
-  padding-right: 0;
-  .border-radius(0);
+.navbar-fixed-top {
+  top: 0;
+}
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0; // override .navbar defaults
+}
+
+.nav-collapse {
+  // Space out collapsed contents within the mobile navbar
+  padding-bottom: @navbar-padding-vertical;
+  // Clear floated elements and prevent collapsing of padding
+  .clearfix();
+
+  // When there is no `.navbar-brand` present (which normally sits between the
+  // navbar brand and toggle), prevent the nav from overlapping the toggle.
+  .navbar-toggle + & {
+    width: 100%;
+    margin-top: @navbar-height;
+  }
 }
 
 
-// NAVIGATION
-// ----------
+// Scrollable navbar navigation
+//
+// Sometimes you might have too many links in your fixed navbar and you need to
+// maintain access to all that content. To help, add `.nav-collapse-scrollable`
+// to your `.nav-collapse` to prevent the the content from flowing past the max-
+// height of your browser.
+//
+// This is not automatically added to the `.navbar-fixed-top` because it causes
+// z-index bugs in iOS7 (possibly earlier).
 
-.navbar .nav {
+@media (max-width: @screen-small) {
+  .nav-collapse-scrollable {
+    margin-bottom: @navbar-padding-vertical;
+    max-height: 360px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+
+//
+// Navbar optional components
+// --------------------------------------------------
+
+// Brand/project name
+.navbar-brand {
+  display: block;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  font-size: @font-size-large;
+  font-weight: 500;
+  line-height: @line-height-computed;
+  color: @navbar-brand-color;
+  text-align: center;
+  &:hover,
+  &:focus {
+    color: @navbar-brand-hover-color;
+    text-decoration: none;
+    background-color: @navbar-brand-hover-bg;
+  }
+}
+
+// Collapsible navbar toggle
+.navbar-toggle {
   position: relative;
-  left: 0;
-  display: block;
-  float: left;
-  margin: 0 10px 0 0;
-}
-.navbar .nav.pull-right {
-  float: right; // redeclare due to specificity
-}
-.navbar .nav > li {
-  display: block;
-  float: left;
+  float: right;
+  height: 34px;
+  width: 48px;
+  .navbar-vertical-align(34px);
+  padding: @padding-base-vertical @padding-base-horizontal;
+  background-color: transparent;
+  border: 1px solid @navbar-toggle-border-color;
+  border-radius: @border-radius-base;
+
+  &:hover,
+  &:focus {
+    background-color: @navbar-toggle-hover-bg;
+  }
+
+  // Bars
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: @navbar-toggle-icon-bar-bg;
+    border-radius: 1px;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
 }
 
-// Links
-.navbar .nav > li > a {
-  float: none;
-  padding: 10px 10px 11px;
-  line-height: 19px;
-  color: @navbarLinkColor;
-  text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+// Navbar form
+.navbar-form {
+  .form-inline();
+  .navbar-vertical-align(@input-height-base); // Vertically center in navbar
 }
-// Hover
-.navbar .nav > li > a:hover {
-  background-color: @navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
-  color: @navbarLinkColorHover;
-  text-decoration: none;
-}
-
-// Active nav items
-.navbar .nav .active > a,
-.navbar .nav .active > a:hover {
-  color: @navbarLinkColorHover;
-  text-decoration: none;
-  background-color: @navbarBackground;
-}
-
-// Dividers (basically a vertical hr)
-.navbar .divider-vertical {
-  height: @navbarHeight;
-  width: 1px;
-  margin: 0 9px;
-  overflow: hidden;
-  background-color: @navbarBackground;
-  border-right: 1px solid @navbarBackgroundHighlight;
-}
-
-// Secondary (floated right) nav in topbar
-.navbar .nav.pull-right {
-  margin-left: 10px;
-  margin-right: 0;
-}
-
-
 
 // Dropdown menus
-// --------------
 
 // Menu position and menu carets
-.navbar .dropdown-menu {
-  margin-top: 1px;
-  .border-radius(4px);
-  &:before {
-    content: '';
-    display: inline-block;
-    border-left:   7px solid transparent;
-    border-right:  7px solid transparent;
-    border-bottom: 7px solid #ccc;
-    border-bottom-color: rgba(0,0,0,.2);
-    position: absolute;
-    top: -7px;
-    left: 9px;
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+// Menu position and menu caret support for dropups via extra dropup class
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+// Dropdown menu items and carets
+.navbar-nav {
+  // Caret should match text color on hover
+  > .dropdown > a:hover .caret,
+  > .dropdown > a:focus .caret {
+    border-top-color: @navbar-link-hover-color;
+    border-bottom-color: @navbar-link-hover-color;
   }
-  &:after {
-    content: '';
-    display: inline-block;
-    border-left:   6px solid transparent;
-    border-right:  6px solid transparent;
-    border-bottom: 6px solid @white;
-    position: absolute;
-    top: -6px;
-    left: 10px;
+
+  // Remove background color from open dropdown
+  > .open > a {
+    &,
+    &:hover,
+    &:focus {
+      background-color: @navbar-link-active-bg;
+      color: @navbar-link-active-color;
+      .caret {
+        border-top-color: @navbar-link-active-color;
+        border-bottom-color: @navbar-link-active-color;
+      }
+    }
   }
-}
-
-// Dropdown toggle caret
-.navbar .nav .dropdown-toggle .caret,
-.navbar .nav .open.dropdown .caret {
-  border-top-color: @white;
-}
-.navbar .nav .active .caret {
-  .opacity(100);
-}
-
-// Remove background color from open dropdown
-.navbar .nav .open > .dropdown-toggle,
-.navbar .nav .active > .dropdown-toggle,
-.navbar .nav .open.active > .dropdown-toggle {
-  background-color: transparent;
-}
-
-// Dropdown link on hover
-.navbar .nav .active > .dropdown-toggle:hover {
-  color: @white;
+  > .dropdown > a .caret {
+    border-top-color: @navbar-link-color;
+    border-bottom-color: @navbar-link-color;
+  }
 }
 
 // Right aligned menus need alt position
-.navbar .nav.pull-right .dropdown-menu {
+.navbar-nav.pull-right > li > .dropdown-menu,
+.navbar-nav > li > .dropdown-menu.pull-right {
   left: auto;
   right: 0;
-  &:before {
-    left: auto;
-    right: 12px;
+}
+
+
+
+// Inverse navbar
+// --------------------------------------------------
+
+.navbar-inverse {
+  background-color: @navbar-inverse-bg;
+
+  .navbar-brand {
+    color: @navbar-inverse-brand-color;
+    &:hover,
+    &:focus {
+      color: @navbar-inverse-brand-hover-color;
+      background-color: @navbar-inverse-brand-hover-bg;
+    }
   }
-  &:after {
+
+  .navbar-text {
+    color: @navbar-inverse-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @navbar-inverse-link-color;
+
+      &:hover,
+      &:focus {
+        color: @navbar-inverse-link-hover-color;
+        background-color: @navbar-inverse-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-inverse-link-active-color;
+        background-color: @navbar-inverse-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-inverse-link-disabled-color;
+        background-color: @navbar-inverse-link-disabled-bg;
+      }
+    }
+  }
+
+  // Darken the responsive nav toggle
+  .navbar-toggle {
+    border-color: @navbar-inverse-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: @navbar-inverse-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: @navbar-inverse-toggle-icon-bar-bg;
+    }
+  }
+
+  // Dropdowns
+  .navbar-nav {
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-inverse-link-active-bg;
+        color: @navbar-inverse-link-active-color;
+      }
+    }
+    > .dropdown > a:hover .caret {
+      border-top-color: @navbar-inverse-link-hover-color;
+      border-bottom-color: @navbar-inverse-link-hover-color;
+    }
+    > .dropdown > a .caret {
+      border-top-color: @navbar-inverse-link-color;
+      border-bottom-color: @navbar-inverse-link-color;
+    }
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        .caret {
+          border-top-color: @navbar-inverse-link-active-color;
+          border-bottom-color: @navbar-inverse-link-active-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+// Responsive navbar
+// --------------------------------------------------
+
+@media screen and (min-width: @grid-float-breakpoint) {
+
+  .navbar-brand {
+    float: left;
+    margin-left: -(@navbar-padding-horizontal);
+    margin-right: 5px;
+    max-width: none; // Disables the default mobile setting
+  }
+  .navbar-nav {
+    float: left;
+    // undo margin to make nav extend full height of navbar
+    margin-top: 0;
+    margin-bottom: 0;
+
+    > li {
+      float: left;
+      > a {
+        border-radius: 0;
+      }
+    }
+
+    &.pull-right {
+      width: auto;
+    }
+  }
+
+  // Required to make the collapsing navbar work on regular desktops
+  .navbar-toggle {
+    position: relative;
+    top: auto;
     left: auto;
-    right: 13px;
+    display: none;
+  }
+  .nav-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0; // Override default setting
+    overflow: visible !important;
+  }
+
+}
+
+
+
+// Buttons in navbars
+//
+// Vertically center a button within a navbar (when *not* in a form).
+
+.navbar-btn {
+  margin-top: ((@navbar-height - @input-height-base) / 2);
+}
+
+
+
+// Text in navbars
+//
+// Add a class to make any element properly align itself vertically within the navbars.
+
+.navbar-text {
+  float: left;
+  padding: 0 @navbar-padding-horizontal;
+  .navbar-vertical-align(@line-height-computed);
+}
+
+
+
+// Links in navbars
+//
+// Add a class to ensure links outside the navbar nav are colored correctly.
+
+// Default navbar variables
+.navbar-link {
+  color: @navbar-link-color;
+  &:hover {
+    color: @navbar-link-hover-color;
+  }
+}
+
+// Use the inverse navbar variables
+.navbar-inverse .navbar-link {
+  color: @navbar-inverse-link-color;
+  &:hover {
+    color: @navbar-inverse-link-hover-color;
   }
 }
