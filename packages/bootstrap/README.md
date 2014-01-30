@@ -1,7 +1,7 @@
 # Kanso Bootstrap
 
 This package allows you to quickly start using [Twitter
-Bootstrap](http://twitter.github.com/bootstrap/) and Less in your Kanso
+Bootstrap](http://getbootstrap.com/) and Less in your Kanso
 project. 
 
 ## Install
@@ -35,7 +35,7 @@ includes bootstrap:
 ```css
 @import "bootstrap/less/bootstrap.less";
 /* Now use bootstrap and less! */
-body { background-color: @pink; }
+body { background-color: @code-color; }
 ```
 
 Include the less file in your HTML:
@@ -107,6 +107,10 @@ You an browse the Bootstrap docs locally in the package directory under
 `bootstrap/docs/index.html` or check the website.
 
 ## Upgrading
+
+### 3.0.0-kanso.1
+
+Requires less >= 1.4
 
 ### 2.0.1-kanso.2
 
