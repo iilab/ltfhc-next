@@ -9,7 +9,8 @@
         "number_of_expected_pregnant_women": {
             "line_number": "1",
             "sw": "Idadi ya Wajawazito Waliotegemewa",
-            "en": "Number of expected pregnant women"
+            "en": "Number of expected pregnant women",
+            "condition": "FIXME"
         },
         "first_visit": {
             "line_number": "2",
