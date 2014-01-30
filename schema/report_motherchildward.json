@@ -532,6 +532,22 @@
             "sw ": "Mama na Mtoto waliopewa rufaa",
             "en ": "Mother and child given referral",
             "condition ": ""
+        },
+        "definitions": {
+            "columns": {
+                "below20": {
+                    "title": "Below 20 years old",
+                    "condition": "patient.approxage < 20"
+                },
+                "above20": {
+                    "title": "Above 20 years old",
+                    "condition": "patient.approxage >= 20"
+                },
+                "total": {
+                    "title": "Total",
+                    "condition": "true"
+                }
+            }
         }
     }
 }
