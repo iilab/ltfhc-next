@@ -40,6 +40,7 @@
 		"locale": null,
 		"kujua-utils": null,
 		"kujua-reporting": null,
+		"garden-app-support": null,
 		"alpacajs": null,
 		"ltfhc-branding": ">=0.0.2"
 	}
