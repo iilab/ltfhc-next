@@ -386,13 +386,25 @@
     },
     "definitions": {
         "columns": {
-            "below20": {
-                "title": "Below 20 years old",
-                "condition": "patient.approxage < 20"
+            "10to14": {
+                "title": "10 to 14",
+                "condition": "patient.approxage => 10 && patient.approxage <= 14"
             },
-            "above20": {
-                "title": "Above 20 years old",
-                "condition": "patient.approxage >= 20"
+            "15to19": {
+                "title": "15 to 19",
+                "condition": "patient.approxage >= 15 patient.approxage <= 19"
+            },
+            "20to24": {
+                "title": "20 to 24",
+                "condition": "patient.approxage >= 20 patient.approxage <= 24"
+            },
+            "above25": {
+                "title": "Above 25",
+                "condition": "patient.approxage >= 25"
+            },
+            "return": {
+                "title": "Return???",
+                "condition": "FIXME"
             },
             "total": {
                 "title": "Total",
