@@ -83,7 +83,7 @@ body {
   padding: 10px 0;
   color: #686868;
   font-size: .85em;
-  //border-top: 2px solid @grayLighter;
+  //border-top: 2px solid @gray-lighter;
   .opacity(45);
   .links {
     font-size: 1.2em;
@@ -117,6 +117,7 @@ body {
         margin-top: 0;
         margin-bottom: 0;
         font-size: 18px;
+		line-height: 40px;
     }
     form.form-inline {
         margin-bottom: 0;
@@ -159,13 +160,13 @@ body {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
 
-@versionTextColor: lighten(@navbarBackground, 5%);
+@versionTextColor: lighten(@navbar-bg, 5%);
 .version {
     font-weight: bold;
     color: @versionTextColor;
-    font-size: @fontSizeSmall;
-    line-height: @navbarHeight;
-    text-shadow: 0 1px 0 darken(@navbarBackground, 15%);
+    font-size: @font-size-small;
+    line-height: @navbar-height;
+    text-shadow: 0 1px 0 darken(@navbar-bg, 15%);
     &:before {
         content:"v"
     }
@@ -269,7 +270,7 @@ body {
 #loader {
     > .spin-box {
         font-weight: bold;
-        color: @grayLight;
+        color: @gray-light;
         padding: 20px 0 25px;
         text-align: center;
         font-size: 36px;
@@ -405,7 +406,7 @@ body {
             font-size: .578em;
             vertical-align: super;
         }
-        color: lighten(@navbarLinkColor, 10%);
+        color: lighten(@navbar-link-color, 10%);
         &:hover {
             text-decoration: none;
         }
@@ -443,10 +444,10 @@ body {
         }
         margin-bottom: 10px;
         .rounded(2px);
-        border: 1px solid @grayLighter;
+        border: 1px solid @gray-lighter;
         box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 
-        background-color: @grayLighter;
+        background-color: @gray-lighter;
         &:hover {
             background-color: #e0e0e0;
         }
@@ -460,7 +461,7 @@ body {
                 padding: 20px;
             }
 
-            > .row-fluid {
+            > .row {
                 background-color: #fff;
                 margin-bottom: 1em;
                 box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
@@ -473,7 +474,7 @@ body {
         &.expanded {
             border: 1px solid #bbb;
             .message {
-                border-bottom: 1px solid @grayLight;
+                border-bottom: 1px solid @gray-light;
             }
             &.highlight {
                 .message {
@@ -576,24 +577,24 @@ body {
     }
     .data-record-revisions {
         text-align: center;
-        color: @grayLight;
+        color: @gray-light;
         a:hover {
             text-decoration: none;
         }
     }
     .icon-exclamation-sign {
-        font-size: @fontSizeLarge;
+        font-size: @font-size-large;
         line-height: 24px;
     }
     .icon-question-sign {
-        font-size: @fontSizeLarge;
-        color: @grayLight;
+        font-size: @font-size-large;
+        color: @gray-light;
     }
     .icon-ok {
-        color: @green;
+        color: @brand-success;
     }
     .icon-ok.pending {
-        color: @blue;
+        color: @brand-info;
     }
 // Specifying width for each column since the rows are their own tables.
 
@@ -650,7 +651,7 @@ body {
             .opacity(50);
         }
         .tasks-type {
-            color: @grayLight;
+            color: @gray-light;
         }
         .tasks-referral {
             .error-missing-phone {
@@ -785,7 +786,7 @@ body {
 }
 
 .reached-last-record {
-    color: @grayLight;
+    color: @gray-light;
     width: 30px;
     margin: 0 auto 20px auto;
 }
@@ -822,7 +823,7 @@ table.spreadsheet .dropdown-menu {
 }
 
 .spreadsheet-help {
-  color: @grayLight;
+  color: @gray-light;
   .icon-question-sign {
     &:after { content:" Help" }
     .pull-right;
@@ -871,7 +872,7 @@ table.spreadsheet .dropdown-menu {
     padding-top: 1px;
     padding-bottom: 1px;
     span {
-        font-size: @baseFontSize;
+        font-size: @font-size-base;
     }
 }
 .select2-drop {
@@ -895,9 +896,9 @@ h3, h4 {
     line-height: 30px;
 }
 .no-records {
-    color: @grayDark;
+    color: @gray-dark;
     text-align: center;
-    font-size: @fontSizeLarge;
+    font-size: @font-size-base;
     padding: 20px;
 }
 
