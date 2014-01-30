@@ -9,48 +9,36 @@
         "injectable_methods": {
             "line_number": "1",
             "sw": "Sindano",
-            "en": "Injectable methods",
-            "header": true
+            "en": "Injectable methods"
         },
-        "number_of_customers_who_use_contraceptive__injection": {
+        "number_of_customers_who_use_contraceptive_injection": {
             "line_number": "1a",
             "sw": "Idaji ya Wateja wa Sindano",
             "en": "Number of customers who use contraceptive injection",
-            "value": {
-                "field": "/visit/reproductive_counseling/contraception_current/depo_provera"
-            }
-        },
+            "condition": "reproductive_counseling.contraception_current == 'Depo Provera'"
+		},
         "contraceptive_pills": {
             "line_number": "2",
             "sw": "Vidonge",
             "en": "Contraceptive pills",
-            "value": {
-                "field": "/visit/reproductive_counseling/contraception_current/pills"
-            }
         },
         "the_number_of_pills_clients_at_the_clinic": {
             "line_number": "2a",
             "sw": "Idadi ya wateja wa Vidonge Kituoni",
             "en": "The number of pills clients at the clinic",
-            "value": {
-                "field": "/visit/reproductive_counseling/contraception_current/pills/Total"
-            }
+            "condition": "reproductive_counseling.contraception_current == 'Pills' && !(reproductive_counseling.distribution == 'CBD')"
         },
         "number_of_pills_clients_through_cbd": {
             "line_number": "2b",
             "sw": "Idadi ya wateja wa vidonge wa CBD",
             "en": "Number of pills clients through CBD(Community Based Distribution)",
-            "value": {
-                "field": "/visit/reproductive_counseling/"
-            }
+            "condition": "reproductive_counseling.contraception_current == 'Pills' && reproductive_counseling.distribution == 'CBD'"
         },
         "the_number_of_clients_who_were_given_pills_at_the_clinic_and_through_cbd": {
             "line_number": "2c",
             "sw": "Jumla walochukua Vidonge Kituoni na CBD (2a+2b)",
             "en": "The number of clients who were given pills at the clinic and through CBD(2a+2b)",
-            "value": {
-                "field": "line 2a+2b"
-            }
+            "condition": "reproductive_counseling.contraception_current == 'Pills'"
         },
         "condoms": {
             "line_number": "3",
@@ -223,82 +211,82 @@
         "total_number_of_client_who_used_permanent_contraceptive_methods": {
             "line_number": "6e",
             "sw": "Jumla ya Wateja waliochukua njia za muda mrefu na za Kudumu za Uzazi wa Mpango (4a+4b+4c+4d+5a+5b+6a+6b)",
-            "en": "Total number of client who used permanent contraceptive methods(4a+4b+4c+4d+5a+5b+6a+6b)",
+            "en": "Total number of client who used permanent contraceptive methods(4a+4b+4c+4d+5a+5b+6a+6b)"
         },
         "other_methods": {
             "line_number": "7",
             "sw": "Njia Nyinginezo",
-            "en": "Other methods",
+            "en": "Other methods"
         },
         "natural_ways": {
             "line_number": "7a",
             "sw": "Njia za maumbile (mfano LAM, BOM, joto, kalenda)",
-            "en": "Natural ways(eg. LAM,BOM,body temperature and calendar",
+            "en": "Natural ways(eg. LAM,BOM,body temperature and calendar"
         },
         "other_methods": {
             "line_number": "7b",
             "sw": "Njia nyingine",
-            "en": "Other methods",
+            "en": "Other methods"
         },
         "total_number_of_clients_who_used_other_methods": {
             "line_number": "7c",
             "sw": "Jumla ya Njia Nyinginezo (7a+7b)",
-            "en": "Total number of clients who used other methods(7a+7b)",
+            "en": "Total number of clients who used other methods(7a+7b)"
         },
         "total_number_of_types_of_contraceptives": {
             "line_number": "8",
             "sw": "Jumla ya Aina zote Uzazi wa Mpango",
-            "en": "Total number of types of contraceptives",
+            "en": "Total number of types of contraceptives"
         },
         "total_number_of_clients_who_used_all_types_of_contraceptives": {
             "line_number": "8a",
             "sw": "Jumla ya Wateja waliochukua njia zote za Uzazi Mpango (3f+6e+7c)",
-            "en": "Total number of clients who used all types of contraceptives(3f+6e+7c)",
+            "en": "Total number of clients who used all types of contraceptives(3f+6e+7c)"
         },
         "total_number_of_cycles_distributed": {
             "line_number": "9",
             "sw": "Jumla ya Mizunguko ya Vidonge Iliyotolewa",
-            "en": "Total number of cycles distributed",
+            "en": "Total number of cycles distributed"
         },
         "cycles_distributed_at_the_clinic": {
             "line_number": "9a",
             "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) - Kituoni",
-            "en": "Cycles distributed at the Clinic",
+            "en": "Cycles distributed at the Clinic"
         },
         "cycles_distributed_by_cbd": {
             "line_number": "9b",
             "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) - CBD",
-            "en": "Cycles distributed by CBD",
+            "en": "Cycles distributed by CBD"
         },
         "total_number_of_cycles_distributed": {
             "line_number": "9c",
             "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) (Kituoni na CBD) (9a+9b)",
-            "en": "Total number of cycles distributed(at the clinic+CBD) (9a+9b",
+            "en": "Total number of cycles distributed(at the clinic+CBD) (9a+9b"
         },
         "condoms_given_out_to_clients": {
             "line_number": "10",
             "sw": "Kondomu zilizotolewa",
-            "en": "Condoms given out to clients",
+            "en": "Condoms given out to clients"
         },
         "number_of_condoms_given_to_male_clients_at_the_clinic": {
             "line_number": "10a",
             "sw": "Idadi ya kondomu zilizogawiwa Kituoni Me",
-            "en": "Number of condoms given to male clients at the clinic",
+            "en": "Number of condoms given to male clients at the clinic"
         },
         "number_of_condoms_given_to_female_clients_at_the_clinic": {
             "line_number": "10b",
             "sw": "Idadi ya kondomu zilizogawiwa Kituoni Ke",
-            "en": "Number of condoms given to female clients at the clinic",
+            "en": "Number of condoms given to female clients at the clinic"
         },
         "number_of_condoms_given_to_male_clients_by_cbd": {
             "line_number": "10c",
             "sw": "Idadi ya kondomu zilizogawiwa CBD Me",
-            "en": "Number of condoms given to male clients by CBD",
+            "en": "Number of condoms given to male clients by CBD"
         },
         "number_of_condoms_given_to_female_clients_by_cbd": {
             "line_number": "10d",
             "sw": "Idadi ya kondomu zilizogawiwa CBD Ke",
-            "en": "Number of condoms given to female clients by CBD",
+            "en": "Number of condoms given to female clients by CBD"
         },
         "total_number_of_condoms_given_to_clients": {
             "line_number": "10e",
@@ -415,5 +403,21 @@
             "sw": "Wataja waliopata rufaa kwenda CTC",
             "en": "NEED TRANSLATION"
         },
-    }
+    },
+	"definitions": {
+		"columns": {
+			"below20": {
+				"title": "Below 20 years old",
+				"condition": "patient.approxage < 20"
+			},
+			"above20": {
+				"title": "Above 20 years old",
+				"condition": "patient.approxage >= 20"
+			},
+			"total": {
+				"title": "Total",
+				"condition": "true"
+			}
+		}
+	}
 }
