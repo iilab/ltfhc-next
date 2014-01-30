@@ -1,0 +1,16 @@
+{
+    "name": "font-awesome",
+    "version": "4.0.3",
+    "categories": ["frontend"],
+    "attachments": [
+        "font-awesome/fonts"
+    ],
+    "less": {
+        "paths": ["."]
+    },
+    "dependencies": {
+        "attachments": null,
+        "less-precompiler": null
+    },
+    "description": "Less files for font-awesome with font files."
+}
