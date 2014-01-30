@@ -257,6 +257,22 @@
             "sw": "Watoto wachanga wanaonyweshwa maziwa ya mama na kupatiwa chakula kingine (MF)",
             "en": "Infants who drink breast milk and other food access ( MF )",
             "condition": "postnatal.milk_type == 'Mother's Milk + Other'"
+        },
+        "definitions": {
+            "columns": {
+                "below20": {
+                    "title": "Below 20 years old",
+                    "condition": "patient.approxage < 20"
+                },
+                "above20": {
+                    "title": "Above 20 years old",
+                    "condition": "patient.approxage >= 20"
+                },
+                "total": {
+                    "title": "Total",
+                    "condition": "true"
+                }
+            }
         }
     }
 }
