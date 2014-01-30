@@ -7,6 +7,8 @@
 // avoid header bug to bypass rewrite and directly access attachment
 // @baseFontPath: "../../../bootstrap/font/";
 @gridColumns: 12;
+@container-large-desktop:      ((940px + @grid-gutter-width));
+@icon-font-path:          "../../../bootstrap/fonts/";
 
 @dataRecordBackground: #d6ebff;
 @dataRecordBackgroundHighlight: #adc2ff;
@@ -160,13 +162,13 @@ body {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
 
-@versionTextColor: lighten(@navbar-bg, 5%);
+@versionTextColor: lighten(@gray-dark, 10%);
 .version {
     font-weight: bold;
     color: @versionTextColor;
     font-size: @font-size-small;
-    line-height: @navbar-height;
-    text-shadow: 0 1px 0 darken(@navbar-bg, 15%);
+    line-height: 40px;
+    text-shadow: 0 1px 0 darken(@gray-dark, 15%);
     &:before {
         content:"v"
     }
@@ -379,6 +381,15 @@ body {
   }
 }
 
+@navbar-height:                    40px;
+
+@navbar-default-color:             @gray-light;
+@navbar-default-bg:                @gray-dark;
+
+@navbar-default-link-color:                @gray-light;
+@navbar-default-link-hover-color:          @gray-lighter;
+
+
 .navbar {
     .nav {
         > li {
@@ -400,20 +411,19 @@ body {
             }
         }
     }
-    .brand {
-        padding: 6px 20px;
+    .navbar-brand {
         .lite {
             font-size: .578em;
             vertical-align: super;
         }
-        color: lighten(@navbar-link-color, 10%);
+        color: lighten(@gray-lighter, 10%);
         &:hover {
             text-decoration: none;
         }
     }
 }
 
-.navbar, .brand {
+.navbar, .navbar-brand {
   font-weight: normal;
 }
 
