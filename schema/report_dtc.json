@@ -62,50 +62,41 @@
         },
         "definitions": {
             "columns": {
-                "lessthan1": {
-                    "title": "Less than 1 Month",
-                    "male": {
-                        "title": "Males",
-                        "condition": "FIXME && patient.gender == 'male'"
-                    },
-                    "female": {
-                        "title": "Females",
-                        "condition": "FIXME && patient.gender == 'female'"
-                    },
-                    "Total": {
-                        "title": "Total",
-                        "condition": "FIXME"
-                    }
+                "lessthan1male": {
+                    "title": "Males",
+                    "condition": "FIXME && patient.gender == 'male'"
                 },
-                "more1mo": {
-                    "title": "More than 1 month and less than 1 Year",
-                    "male": {
-                        "title": "Males",
-                        "condition": "FIXME && patient.gender == 'male'"
-                    },
-                    "female": {
-                        "title": "Females",
-                        "condition": "FIXME && patient.gender == 'female'"
-                    },
-                    "Total": {
-                        "title": "Total",
-                        "condition": "FIXME "
-                    }
+                "lessthan1female": {
+                    "title": "Less than 1 Month - Females",
+                    "condition": "FIXME && patient.gender == 'female'"
                 },
-                "above1below5": {
-                    "title": "More than 1 year and less than 5 Years",
-                    "male": {
-                        "title": "Males",
-                        "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'male'"
-                    },
-                    "female": {
-                        "title": "Females",
-                        "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'female'"
-                    },
-                    "Total": {
-                        "title": "Total",
-                        "condition": "patient.approxage > 1 && patient.approxage < 5"
-                    }
+                "lessthan1total": {
+                    "title": "Less than 1 Month - Total",
+                    "condition": "FIXME"
+                },
+                "more1momale": {
+                    "title": "More than 1 month and less than 1 Year - Male",
+                    "condition": "FIXME && patient.gender == 'male'"
+                },
+                "more1mofemale": {
+                    "title": "More than 1 month and less than 1 Year - Females",
+                    "condition": "FIXME && patient.gender == 'female'"
+                },
+                "more1mototal": {
+                    "title": "More than 1 month and less than 1 Year - Total",
+                    "condition": "FIXME "
+                },
+                "above1below5male": {
+                    "title": "More than 1 year and less than 5 Years - Male",
+                    "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'male'"
+                },
+                "above1below5female": {
+                    "title": "More than 1 year and less than 5 Years - Females",
+                    "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'female'"
+                },
+                "above1below5total": {
+                    "title": "More than 1 year and less than 5 Years - Total",
+                    "condition": "patient.approxage > 1 && patient.approxage < 5"
                 }
             }
         }
