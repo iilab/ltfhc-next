@@ -1,11 +1,4 @@
 {
-  "renderForm": true,
-  "form": {
-    "buttons": {
-      "submit": {},
-      "reset": {}
-    }
-  },
   "fields": {
     "complaint0": {
       "label": "Chief Complaint:",
