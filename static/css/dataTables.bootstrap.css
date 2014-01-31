@@ -2,10 +2,12 @@ div.dataTables_length label {
 	font-weight: normal;
 	float: left;
 	text-align: left;
+	margin:15px 0px;
 }
 
 div.dataTables_length select {
 	width: 75px;
+	margin:0px 3px;
 }
 
 div.dataTables_filter label {
@@ -19,11 +21,16 @@ div.dataTables_filter input {
 
 div.dataTables_info {
 	padding-top: 8px;
+	margin: 13px;
 }
 
 div.dataTables_paginate {
 	float: right;
 	margin: 0;
+}
+
+div.dataTables_paginate div.pagination {
+	margin: 13px 0;
 }
 
 div.dataTables_paginate ul.pagination {
