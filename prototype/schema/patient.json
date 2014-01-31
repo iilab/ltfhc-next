@@ -39,10 +39,10 @@
     "birthdate": {
       "type": "string"
     },
-    "patient_age": {
+    "approximate_age": {
       "type": "number"
     },
-    "medication_allergy": {
+    "medication_allergies": {
       "type": "string"
     },
     "note": {
