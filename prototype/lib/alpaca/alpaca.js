@@ -5750,8 +5750,10 @@ var equiv = function () {
         "wizardDoneButton" : '<button>Done</button>',
         "wizardStatusBar" : '<ol id="${id}">{{each(i,v) titles}}<li id="stepDesc${i}"><div><strong><span>${v.title}</span>${v.description}</strong></div></li>{{/each}}</ol>',
 
-        "controlFieldCheckbox": '<div class="checkbox">{{if options.rightLabel}}<label for="${id}">{{/if}}<input type="checkbox" id="${id}" {{if options.readonly}}readonly="readonly"{{/if}} {{if name}}name="${name}"{{/if}} {{each(i,v) options.data}}data-${i}="${v}"{{/each}}/>{{if options.rightLabel}}${options.rightLabel}</label>{{/if}}</div>',
-        "controlFieldRadio": '{{if !required}}<div class="radio"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value=""/>None</div>{{/if}}{{each selectOptions}}<div class="radio"><label class="alpaca-controlfield-radio-label"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value="${value}" {{if value == data}}checked="checked"{{/if}}/>${text}</label></div>{{/each}}'
+        "controlFieldCheckbox": '<div class="checkbox" id="${id}">{{if options.rightLabel}}<label for="${id}_checkbox">{{/if}}<input id="${id}_checkbox" type="checkbox" {{if options.readonly}}readonly="readonly"{{/if}} {{if name}}name="${name}"{{/if}} {{each(i,v) options.data}}data-${i}="${v}"{{/each}}/>{{if options.rightLabel}}${options.rightLabel}</label>{{/if}}</div>',
+        "controlFieldCheckboxMultiple": '<div id="${id}">{{each(i,o) checkboxOptions}}<div class="checkbox"><label for="${id}_checkbox_${i}"><input type="checkbox" id="${id}_checkbox_${i}" {{if options.readonly}}readonly="readonly"{{/if}} {{if name}}name="${name}"{{/if}} data-checkbox-value="${o.value}" data-checkbox-index="${i}"/>${o.text}</label></div>{{/each}}</div>',
+
+        "controlFieldRadio": '{{if !required}}<div class="radio"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" id="${id}_radio_nonevalue" value=""/><label for="${id}_radio_nonevalue">None</label></div>{{/if}}{{each selectOptions}}<div class="radio"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value="${value}" id="${id}_radio_${$index}" {{if value == data}}checked="checked"{{/if}}/><label for="${id}_radio_${$index}">${text}</label></div>{{/each}}'
 
     });
 
@@ -5798,8 +5800,9 @@ var equiv = function () {
 
             // any checkbox inputs get the "checkbox" class on their container
 
-            // any radio inputs get the "checkbox" class on their checkbox
-            $(targetDiv).find("input[type=checkbox]").parent().parent().addClass("checkbox");
+            // any checkbox inputs get the "checkbox" class on their checkbox
+            // TODO: remove, this is now done by the template itself
+            //$(targetDiv).find("input[type=checkbox]").parent().parent().addClass("checkbox");
             // any radio inputs get the "radio" class on their radio
             $(targetDiv).find("input[type=radio]").parent().parent().addClass("radio");
 
@@ -10630,11 +10633,69 @@ var equiv = function () {
              * @see Alpaca.Field#setup
              */
             setup: function() {
-                this.base();
+
+                var _this = this;
+
+                _this.base();
 
                 if (!this.options.rightLabel) {
                     this.options.rightLabel = "";
                 }
+
+                if (typeof(_this.options.multiple) == "undefined")
+                {
+                    if (_this.schema.type == "array")
+                    {
+                        _this.options.multiple = true;
+                    }
+                    else if (typeof(_this.schema["enum"]) != "undefined")
+                    {
+                        _this.options.multiple = true;
+                    }
+                }
+
+                _this.checkboxOptions = [];
+                if (_this.options.multiple)
+                {
+                    $.each(_this.getEnum(), function(index, value) {
+
+                        var text = value;
+
+                        if (_this.options.optionLabels)
+                        {
+                            if (!Alpaca.isEmpty(_this.options.optionLabels[index]))
+                            {
+                                text = _this.options.optionLabels[index];
+                            }
+                            else if (!Alpaca.isEmpty(_this.options.optionLabels[value]))
+                            {
+                                text = _this.options.optionLabels[value];
+                            }
+                        }
+
+                        _this.checkboxOptions.push({
+                            "value": value,
+                            "text": text
+                        });
+                    });
+                }
+            },
+
+            /**
+             * Gets schema enum property.
+             *
+             * @returns {Array|String} Field schema enum property.
+             */
+            getEnum: function()
+            {
+                var array = [];
+
+                if (this.schema && this.schema["enum"])
+                {
+                    array = this.schema["enum"];
+                }
+
+                return array;
             },
 
             /**
@@ -10653,21 +10714,31 @@ var equiv = function () {
 
                 var _this = this;
 
-                var controlFieldTemplateDescriptor = this.view.getTemplateDescriptor("controlFieldCheckbox");
+                var controlFieldTemplateDescriptor = null;
 
-                if (controlFieldTemplateDescriptor) {
+                // either use the single template or the multiple template
+                if (this.options.multiple) {
+                    controlFieldTemplateDescriptor = this.view.getTemplateDescriptor("controlFieldCheckboxMultiple");
+                } else {
+                    controlFieldTemplateDescriptor = this.view.getTemplateDescriptor("controlFieldCheckbox");
+                }
+
+                if (controlFieldTemplateDescriptor)
+                {
                     this.field = _this.view.tmpl(controlFieldTemplateDescriptor, {
                         "id": this.getId(),
                         "name": this.name,
-                        "options": this.options
+                        "options": this.options,
+                        "checkboxOptions": _this.checkboxOptions
                     });
                     this.injectField(this.field);
-                    this.field = $('input[id="' + this.getId() + '"]', this.field);
+                    //this.field = $('input[id="' + this.getId() + '"]', this.field);
 
                     // do this little trick so that if we have a default value, it gets set during first render
                     // this causes the checked state of the control to update
-                    if (this.data) {
-                        this.setValue(true);
+                    if (this.data && typeof(this.data) != "undefined")
+                    {
+                        this.setValue(this.data);
                     }
                 }
 
@@ -10689,6 +10760,15 @@ var equiv = function () {
                         self.fieldContainer.addClass('alpaca-controlfield-checkbox');
                     }
 
+                    // whenever the state of one of our input:checkbox controls is changed (either via a click or programmatically),
+                    // we signal to the top-level field to fire up a change
+                    //
+                    // this allows the dependency system to recalculate and such
+                    //
+                    $(self.field).find("input:checkbox").change(function(evt) {
+                        $(self.field).trigger("change");
+                    });
+
                     callback();
                 });
             },
@@ -10697,37 +10777,190 @@ var equiv = function () {
              * @see Alpaca.Field#getValue
              */
             getValue: function() {
-                //return this.field.attr("checked") ? true : false;
-                return Alpaca.checked(this.field);
+
+                var self = this;
+
+                var value = null;
+
+                if (!self.options.multiple)
+                {
+                    // single scalar value
+                    var input = $(self.field).find("input");
+                    if (input.length > 0)
+                    {
+                        value = Alpaca.checked($(input[0]));
+                    }
+                }
+                else
+                {
+                    // multiple values
+                    var values = [];
+                    for (var i = 0; i < self.checkboxOptions.length; i++)
+                    {
+                        var input = $(self.field).find("input[data-checkbox-index='" + i + "']");
+                        if (Alpaca.checked(input))
+                        {
+                            var v = $(input).attr("data-checkbox-value");
+                            values.push(v);
+                        }
+                    }
+
+                    // determine how we're going to hand this value back
+
+                    // if type == "array", we just hand back the array
+                    // if type == "string", we build a comma-delimited list
+                    if (self.schema.type == "array")
+                    {
+                        value = values;
+                    }
+                    else if (self.schema.type == "string")
+                    {
+                        value = values.join(",");
+                    }
+                }
+
+                return value;
             },
 
             /**
              * @see Alpaca.Field#setValue
              */
-            setValue: function(value) {
-                // convert string value to boolean
-                if (Alpaca.isString(value)) {
-                    value = (value === "true");
+            setValue: function(value)
+            {
+                var self = this;
+
+                // value can be a boolean, string ("true"), string ("a,b,c") or an array of values
+
+                var applyScalarValue = function(value)
+                {
+                    if (Alpaca.isString(value)) {
+                        value = (value === "true");
+                    }
+
+                    var input = $(self.field).find("input");
+                    if (input.length > 0)
+                    {
+                        Alpaca.checked($(input[0]), value);
+                    }
+                };
+
+                var applyMultiValue = function(values)
+                {
+                    // allow for comma-delimited strings
+                    if (typeof(values) == "string")
+                    {
+                        values = values.split(",");
+                    }
+
+                    // trim things to remove any excess white space
+                    for (var i = 0; i < values.length; i++)
+                    {
+                        values[i] = Alpaca.trim(values[i]);
+                    }
+
+                    // walk through values and assign into appropriate inputs
+                    for (var i = 0; i < values.length; i++)
+                    {
+                        var input = $(self.field).find("input[data-checkbox-value='" + values[i] + "']");
+                        if (input.length > 0)
+                        {
+                            Alpaca.checked($(input[0]), value);
+                        }
+                    }
+                };
+
+                var applied = false;
+
+                if (!self.options.multiple)
+                {
+                    // single value mode
+
+                    // boolean
+                    if (typeof(value) == "boolean")
+                    {
+                        applyScalarValue(value);
+                        applied = true;
+                    }
+                    else if (typeof(value) == "string")
+                    {
+                        applyScalarValue(value);
+                        applied = true;
+                    }
+                }
+                else
+                {
+                    // multiple value mode
+
+                    if (typeof(value) == "string")
+                    {
+                        applyMultiValue(value);
+                        applied = true;
+                    }
+                    else if (Alpaca.isArray(value))
+                    {
+                        applyMultiValue(value);
+                        applied = true;
+                    }
                 }
 
-                Alpaca.checked(this.field, value);
+                if (!applied)
+                {
+                    Alpaca.logError("CheckboxField cannot set value for schema.type=" + self.schema.type + " and value=" + value);
+                }
 
                 // be sure to call into base method
                 this.base(value);
             },
 
             /**
+             * Validate against enum property in the case that the checkbox field is in multiple mode.
+             *
+             * @returns {Boolean} True if the element value is part of the enum list, false otherwise.
+             */
+            _validateEnum: function()
+            {
+                var self = this;
+
+                if (!self.options.multiple)
+                {
+                    return true;
+                }
+
+                var val = self.getValue();
+                if (!self.schema.required && Alpaca.isValEmpty(val))
+                {
+                    return true;
+                }
+
+                // if val is a string, convert to array
+                if (typeof(val) == "string")
+                {
+                    val = val.split(",");
+                }
+
+                return Alpaca.anyEquality(val, self.schema["enum"]);
+            },
+
+            /**
              * @see Alpaca.Field#disable
              */
             disable: function() {
-                this.field.disabled = true;
+
+                $(this.field).find("input").each(function() {
+                    $(this).disabled = true;
+                });
+
             },
 
             /**
              * @see Alpaca.Field#enable
              */
             enable: function() {
-                this.field.disabled = false;
+
+                $(this.field).find("input").each(function() {
+                    $(this).disabled = false;
+                });
+
             },//__BUILDER_HELPERS
 
             /**
@@ -10790,7 +11023,8 @@ var equiv = function () {
 
         });
 
-    Alpaca.registerTemplate("controlFieldCheckbox", '<span><input type="checkbox" id="${id}" {{if options.readonly}}readonly="readonly"{{/if}} {{if name}}name="${name}"{{/if}} {{each(i,v) options.data}}data-${i}="${v}"{{/each}}/>{{if options.rightLabel}}<label for="${id}">${options.rightLabel}</label>{{/if}}</span>');
+    Alpaca.registerTemplate("controlFieldCheckbox", '<span id="${id}">{{if options.rightLabel}}<label class="alpaca-controlfield-label" for="${id}_checkbox">{{/if}}<input id="${id}_checkbox" type="checkbox" {{if options.readonly}}readonly="readonly"{{/if}} {{if name}}name="${name}"{{/if}} {{each(i,v) options.data}}data-${i}="${v}"{{/each}}/>{{if options.rightLabel}}${options.rightLabel}</label>{{/if}}</span>');
+    Alpaca.registerTemplate("controlFieldCheckboxMultiple", '<span id="${id}">{{each(i,o) checkboxOptions}}<span><label class="alpaca-controlfield-label" for="${id}_checkbox_${i}"><input type="checkbox" id="${id}_checkbox_${i}" {{if options.readonly}}readonly="readonly"{{/if}} {{if name}}name="${name}"{{/if}} data-checkbox-value="${o.value}" data-checkbox-index="${i}" />${text}</label></span>{{/each}}</span>');
 
     Alpaca.registerFieldClass("checkbox", Alpaca.Fields.CheckBoxField);
     Alpaca.registerDefaultSchemaFieldMapping("boolean", "checkbox");
@@ -11413,7 +11647,8 @@ var equiv = function () {
         
     });
     
-    Alpaca.registerTemplate("controlFieldRadio", '<div id="${id}" class="alpaca-controlfield-radio">{{if !required}}<span class="alpaca-controlfield-radio-item"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value=""/><span class="alpaca-controlfield-radio-label">None</span></span>{{/if}}{{each selectOptions}}<span class="alpaca-controlfield-radio-item"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value="${value}" {{if value == data}}checked="checked"{{/if}}/><span class="alpaca-controlfield-radio-label">${text}</span></span>{{/each}}</div>');
+    Alpaca.registerTemplate("controlFieldRadio", '<div id="${id}" class="alpaca-controlfield-radio">{{if !required}}<span class="alpaca-controlfield-radio-item"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" id="${id}_radio_nonevalue" value=""/><label class="alpaca-controlfield-radio-label" for="${id}_radio_nonevalue">None</label></span>{{/if}}{{each selectOptions}}<span class="alpaca-controlfield-radio-item"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value="${value}" id="${id}_radio_${$index}" {{if value == data}}checked="checked"{{/if}}/><label class="alpaca-controlfield-radio-label" for="${id}_radio_${$index}">${text}</label></span>{{/each}}</div>');
+
     Alpaca.registerFieldClass("radio", Alpaca.Fields.RadioField);
     
 })(jQuery);

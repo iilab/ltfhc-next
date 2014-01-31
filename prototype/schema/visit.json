@@ -25,25 +25,25 @@
             "parent": {
                 "visit": {
                     "list": {
-                        "type": "string",
+                        "type": "array",
                         "enum": [
-                            "bodilyinjury",
-                            "diseasediagnosis",
+                            "bodily_injury",
+                            "disease_diagnosis",
                             "immunization"
                         ]
                     },
                     "subforms": {
                         "type": "object",
                         "properties": {
-                            "bodilyinjury": {
+                            "bodily_injury": {
                                 "title": "Bodily Injury",
                                 "dependencies": "#reasons",
-                                "$ref": "bodilyinjury"
+                                "$ref": "bodily_injury"
                             },
-                            "diseasediagnosis": {
+                            "disease_diagnosis": {
                                 "title": "Disease Diagnosis",
                                 "dependencies": "#reasons",
-                                "$ref": "diseasediagnosis"
+                                "$ref": "disease_diagnosis"
                             },
                             "immunization": {
                                 "title": "Immunization",

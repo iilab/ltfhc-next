@@ -17,25 +17,24 @@
                 "visit": {
                     "list": {
                         "label": "Reason for Visit:",
-                        "type": "select",
+                        "type": "checkbox",
                         "multiple": true,
                         "optionLabels": [
                             "Bodily Injury",
                             "Disease Diagnosis",
                             "Immunization"
-                        ],
-                        "removeDefaultNone": true
+                        ]
                     },
                     "subforms": {
                         "fields": {
-                            "bodilyinjury": {
+                            "bodily_injury": {
                                 "dependencies": {
-                                    "#reasons": "bodilyinjury"
+                                    "#reasons": "bodily_injury"
                                 }
                             },
-                            "diseasediagnosis": {
+                            "disease_diagnosis": {
                                 "dependencies": {
-                                    "#reasons": "diseasediagnosis"
+                                    "#reasons": "disease_diagnosis"
                                 }
                             },
                             "immunization": {
