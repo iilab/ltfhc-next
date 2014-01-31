@@ -1020,15 +1020,15 @@ exports.reports = function() {
 				"columns": {
 					"below20": {
 						"title": "Below 20 years old",
-						"condition": "patient.approxage < 20"
+						"condition": "patient.approximate_age < 20"
 					},
 					"above20": {
 						"title": "Above 20 years old",
-						"condition": "patient.approxage >= 20"
+						"condition": "patient.approximate_age >= 20"
 					},
 					"total": {
 						"title": "Total",
-						"condition": "true"
+						"condition": "patient.approximate_age > 0"
 					}
 				}
 			}

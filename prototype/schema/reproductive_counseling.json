@@ -1,385 +1,222 @@
 {
-  "schema": {
-    "title": "Reproductive Counceling/Treatment",
-    "_id": "reproductive_counseling",
-    "type": "object",
-    "properties": {
-      "last_menstrual_period": {
-        "type": "string"
-      },
-      "menstrual_history": {
-        "type": "string",
-        "enum": [
-          "None",
-          "Irregular Menses",
-          "Regular Menses Monthly"
-        ]
-      },
-      "number_pregnancy": {
-        "type": "number"
-      },
-      "number_full_term_delivery": {
-        "type": "number"
-      },
-      "number_pre_term_delivery": {
-        "type": "number"
-      },
-      "number_miscarriage_or_abortion": {
-        "type": "number"
-      },
-      "number_live_birth": {
-        "type": "number"
-      },
-      "pregnancy_complication0": {
-        "type": "string"
-      },
-      "pregnancy_complication1": {
-        "type": "string"
-      },
-      "pregnancy_complication2": {
-        "type": "string"
-      },
-      "pregnancy_complication3": {
-        "type": "string"
-      },
-      "pregnancy_complication4": {
-        "type": "string"
-      },
-      "pregnancy_complication5": {
-        "type": "string"
-      },
-      "pregnancy_complication6": {
-        "type": "string"
-      },
-      "pregnancy_complication7": {
-        "type": "string"
-      },
-      "pregnancy_complication8": {
-        "type": "string"
-      },
-      "pregnancy_complication9": {
-        "type": "string"
-      },
-      "pregnancy_complication10": {
-        "type": "string"
-      },
-      "pregnancy_complication11": {
-        "type": "string"
-      },
-      "pregnancy_complication12": {
-        "type": "string"
-      },
-      "pregnancy_complication13": {
-        "type": "string"
-      },
-      "pregnancy_complication14": {
-        "type": "string"
-      },
-      "pregnancy_complication15": {
-        "type": "string"
-      },
-      "pregnancy_complication16": {
-        "type": "string"
-      },
-      "pregnancy_complication17": {
-        "type": "string"
-      },
-      "pregnancy_complication_other": {
-        "type": "string"
-      },
-      "marital_status": {
-        "type": "string",
-        "enum": [
-          "Single",
-          "Married",
-          "Divorced",
-          "Separated",
-          "Widowed"
-        ]
-      },
-      "contraception_previous": {
-        "type": "string",
-        "enum": [
-          "None",
-          "Pills",
-          "Condoms",
-          "IUD",
-          "Remove IUD",
-          "Other Implants",
-          "Depo Provera",
-          "Sterilization",
-          "Natural ways",
-          "Other"
-        ]
-      },
-      "contraception_current": {
-        "type": "string",
-        "enum": [
-          "None",
-          "Pills",
-          "Condoms",
-          "IUD",
-          "Remove IUD",
-          "Other Implants",
-          "Depo Provera",
-          "Sterilization",
-          "Natural ways",
-          "Other"
-        ]
-      },
-      "contraception_source": {
-        "type": "string",
-        "enum": [
-          "Clinic",
-          "Community Based Distribution (CBD)",
-          "Outreach",
-          "Both"
-        ]
-      },
-      "fertility_desire": {
-        "type": "string",
-        "enum": [
-          "Desires Pregnancy Now",
-          "Desires Contraception Now",
-          "Desires Future Pregnancy"
-        ]
-      },
-      "hiv_risk": {
-        "type": "string",
-        "enum": [
-          "Patient Known to Have HIV",
-          "Partner or Previous Partner Known to Have HIV",
-          "History of Sexual Assult",
-          "Desires HIV Testing"
-        ]
-      },
-      "contraception_dispensed": {
-        "type": "string",
-        "enum": [
-          "None",
-          "Pills",
-          "Condoms",
-          "IUD",
-          "Remove IUD",
-          "Other Implants",
-          "Depo Provera",
-          "Sterilization",
-          "Natural ways",
-          "Other"
-        ]
-      },
-      "quantity_pills_dispensed": {
-        "type": "string",
-        "enum": [
-          "Not Applicable",
-          "1 Month Supply",
-          "2 Month Supply",
-          "3 Month Supply",
-          "4 Month Supply",
-          "5 Month Supply",
-          "6 Month Supply",
-          "7 Month Supply",
-          "8 Month Supply",
-          "9 Month Supply",
-          "10 Month Supply",
-          "11 Month Supply",
-          "12 Month Supply",
-          "More Than One Year Supply"
-        ]
-      },
-      "quantity_condoms_dispensed": {
-        "type": "string",
-        "enum": [
-          "Not Applicable",
-          "1 to 10",
-          "11 to 20",
-          "21 to 30",
-          "31 to 40",
-          "41 to 50",
-          "50+"
-        ]
-      },
-      "quantity_depo_provera": {
-        "type": "string",
-        "enum": [
-          "3 Month Dose",
-          "6 Month Dose"
-        ]
-      },
-      "condom_education": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "cervical_symptom0": {
-        "type": "string"
-      },
-      "cervical_symptom1": {
-        "type": "string"
-      }
-    }
-  },
-  "options": {
-    "fields": {
-      "last_menstrual_period": {
-        "label": "Last Menstrual Period: (Tarehe ya mwisho wa kipindi cha hedhi)",
-        "type": "date"
-      },
-      "menstrual_history": {
-        "label": "Menstrual History: (Historia ya hedhi)",
-        "type": "select"
-      },
-      "number_pregnancy": {
-        "label": "Total Number of Pregnancies (Jumla ya idadi ya mimba za awali)",
-        "type": "number"
-      },
-      "number_full_term_delivery": {
-        "label": "Number of Full Term Deliveries (Idadi ya kujifungua katika mda uliokamilika)",
-        "type": "number"
-      },
-      "number_pre_term_delivery": {
-        "label": "Number of Preterm Deliveries (Idadi ya kujifungua watoto wasiotimiza umri)",
-        "type": "number"
-      },
-      "number_miscarriage_or_abortion": {
-        "label": "Number of Miscarriages or Abortions (Idadi ya mimba zilizoharibika au kutolewa)",
-        "type": "number"
-      },
-      "number_live_birth": {
-        "label": "Number of Live Births (Idadi ya waliozaliwa hai)",
-        "type": "number"
-      },
-      "pregnancy_complication0": {
-        "label": "Pregnancy Complications, Check All That Apply: (Matatizo ya ujauzito)",
-        "type": "checkbox",
-        "rightLabel": "None"
-      },
-      "pregnancy_complication1": {
-        "type": "checkbox",
-        "rightLabel": "Fetal Death"
-      },
-      "pregnancy_complication2": {
-        "type": "checkbox",
-        "rightLabel": "Neonatal Death"
-      },
-      "pregnancy_complication3": {
-        "type": "checkbox",
-        "rightLabel": "Neonatal Injury"
-      },
-      "pregnancy_complication4": {
-        "type": "checkbox",
-        "rightLabel": "Neonatal Tetanus"
-      },
-      "pregnancy_complication5": {
-        "type": "checkbox",
-        "rightLabel": "Neonatal Sepsis"
-      },
-      "pregnancy_complication6": {
-        "type": "checkbox",
-        "rightLabel": "Birth Asphyxia"
-      },
-      "pregnancy_complication7": {
-        "type": "checkbox",
-        "rightLabel": "Shoulder Dystocia"
-      },
-      "pregnancy_complication8": {
-        "type": "checkbox",
-        "rightLabel": "Obstructed Labor"
-      },
-      "pregnancy_complication9": {
-        "type": "checkbox",
-        "rightLabel": "TB"
-      },
-      "pregnancy_complication10": {
-        "type": "checkbox",
-        "rightLabel": "Diabetes"
-      },
-      "pregnancy_complication11": {
-        "type": "checkbox",
-        "rightLabel": "Hemorrhage"
-      },
-      "pregnancy_complication12": {
-        "type": "checkbox",
-        "rightLabel": "Intra-uterine Infection"
-      },
-      "pregnancy_complication13": {
-        "type": "checkbox",
-        "rightLabel": "Cesarean Section"
-      },
-      "pregnancy_complication14": {
-        "type": "checkbox",
-        "rightLabel": "Seizure"
-      },
-      "pregnancy_complication15": {
-        "type": "checkbox",
-        "rightLabel": "Forceps/Vacuum"
-      },
-      "pregnancy_complication16": {
-        "type": "checkbox",
-        "rightLabel": "Sepsis"
-      },
-      "pregnancy_complication17": {
-        "type": "checkbox",
-        "rightLabel": "Other"
-      },
-      "pregnancy_complication_other": {
-        "label": "If Other Pregnancy Complication, Describe:"
-      },
-      "marital_status": {
-        "label": "Marital Status: (Hadhi ya ndoa)",
-        "type": "select"
-      },
-      "contraception_previous": {
-        "label": "Previous Contraception: (Uzazi wa mpango wa awali)",
-        "type": "select"
-      },
-      "contraception_current": {
-        "label": "Current Contraception: (Uzazi wa mpango kwa sasa)",
-        "type": "select"
-      },
-      "contraception_source": {
-        "label": "Source of Contraception",
-        "type": "select"
-      },
-      "fertility_desire": {
-        "label": "Fertility Desires:",
-        "type": "select"
-      },
-      "hiv_risk": {
-        "label": "HIV Risks:",
-        "type": "select"
-      },
-      "contraception_dispensed": {
-        "label": "Contraception Dispensed: (Dawa ya Uzazi wa mpango iliogawanywa)",
-        "type": "select"
-      },
-      "quantity_pills_dispensed": {
-        "label": "Quantity of Pills Dispensed:",
-        "type": "select"
-      },
-      "quantity_condoms_dispensed": {
-        "label": "Quantity of Condoms Dispensed:",
-        "type": "select"
-      },
-      "quantity_depo_provera": {
-        "label": "Dose of Depo Provera:",
-        "type": "select"
-      },
-      "condom_education": {
-        "label": "Condom Use Education Preformed",
-        "type": "radio"
-      },
-      "cervical_symptom0": {
-        "label": "Cervical Symptoms:",
-        "type": "checkbox",
-        "rightLabel": "Vaginal Discharge"
-      },
-      "cervical_symptom1": {
-        "type": "checkbox",
-        "rightLabel": "Post-Coital Bleeding"
-      }
-    }
-  }
+	"title": "Reproductive Counceling/Treatment",
+	"_id": "reproductive_counseling",
+	"type": "object",
+	"properties": {
+		"last_menstrual_period": {
+			"type": "string"
+		},
+		"menstrual_history": {
+			"type": "string",
+			"enum": [
+				"None",
+				"Irregular Menses",
+				"Regular Menses Monthly"
+			]
+		},
+		"number_pregnancy": {
+			"type": "number"
+		},
+		"number_full_term_delivery": {
+			"type": "number"
+		},
+		"number_pre_term_delivery": {
+			"type": "number"
+		},
+		"number_miscarriage_or_abortion": {
+			"type": "number"
+		},
+		"number_live_birth": {
+			"type": "number"
+		},
+		"pregnancy_complication0": {
+			"type": "string"
+		},
+		"pregnancy_complication1": {
+			"type": "string"
+		},
+		"pregnancy_complication2": {
+			"type": "string"
+		},
+		"pregnancy_complication3": {
+			"type": "string"
+		},
+		"pregnancy_complication4": {
+			"type": "string"
+		},
+		"pregnancy_complication5": {
+			"type": "string"
+		},
+		"pregnancy_complication6": {
+			"type": "string"
+		},
+		"pregnancy_complication7": {
+			"type": "string"
+		},
+		"pregnancy_complication8": {
+			"type": "string"
+		},
+		"pregnancy_complication9": {
+			"type": "string"
+		},
+		"pregnancy_complication10": {
+			"type": "string"
+		},
+		"pregnancy_complication11": {
+			"type": "string"
+		},
+		"pregnancy_complication12": {
+			"type": "string"
+		},
+		"pregnancy_complication13": {
+			"type": "string"
+		},
+		"pregnancy_complication14": {
+			"type": "string"
+		},
+		"pregnancy_complication15": {
+			"type": "string"
+		},
+		"pregnancy_complication16": {
+			"type": "string"
+		},
+		"pregnancy_complication17": {
+			"type": "string"
+		},
+		"pregnancy_complication_other": {
+			"type": "string"
+		},
+		"marital_status": {
+			"type": "string",
+			"enum": [
+				"Single",
+				"Married",
+				"Divorced",
+				"Separated",
+				"Widowed"
+			]
+		},
+		"contraception_previous": {
+			"type": "string",
+			"enum": [
+				"None",
+				"Pills",
+				"Condoms",
+				"IUD",
+				"Remove IUD",
+				"Other Implants",
+				"Depo Provera",
+				"Sterilization",
+				"Natural ways",
+				"Other"
+			]
+		},
+		"contraception_current": {
+			"type": "string",
+			"enum": [
+				"None",
+				"Pills",
+				"Condoms",
+				"IUD",
+				"Remove IUD",
+				"Other Implants",
+				"Depo Provera",
+				"Sterilization",
+				"Natural ways",
+				"Other"
+			]
+		},
+		"contraception_source": {
+			"type": "string",
+			"enum": [
+				"Clinic",
+				"Community Based Distribution (CBD)",
+				"Outreach",
+				"Both"
+			]
+		},
+		"fertility_desire": {
+			"type": "string",
+			"enum": [
+				"Desires Pregnancy Now",
+				"Desires Contraception Now",
+				"Desires Future Pregnancy"
+			]
+		},
+		"hiv_risk": {
+			"type": "string",
+			"enum": [
+				"Patient Known to Have HIV",
+				"Partner or Previous Partner Known to Have HIV",
+				"History of Sexual Assult",
+				"Desires HIV Testing"
+			]
+		},
+		"contraception_dispensed": {
+			"type": "string",
+			"enum": [
+				"None",
+				"Pills",
+				"Condoms",
+				"IUD",
+				"Remove IUD",
+				"Other Implants",
+				"Depo Provera",
+				"Sterilization",
+				"Natural ways",
+				"Other"
+			]
+		},
+		"quantity_pills_dispensed": {
+			"type": "string",
+			"enum": [
+				"Not Applicable",
+				"1 Month Supply",
+				"2 Month Supply",
+				"3 Month Supply",
+				"4 Month Supply",
+				"5 Month Supply",
+				"6 Month Supply",
+				"7 Month Supply",
+				"8 Month Supply",
+				"9 Month Supply",
+				"10 Month Supply",
+				"11 Month Supply",
+				"12 Month Supply",
+				"More Than One Year Supply"
+			]
+		},
+		"quantity_condoms_dispensed": {
+			"type": "string",
+			"enum": [
+				"Not Applicable",
+				"1 to 10",
+				"11 to 20",
+				"21 to 30",
+				"31 to 40",
+				"41 to 50",
+				"50+"
+			]
+		},
+		"quantity_depo_provera": {
+			"type": "string",
+			"enum": [
+				"3 Month Dose",
+				"6 Month Dose"
+			]
+		},
+		"condom_education": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No"
+			]
+		},
+		"cervical_symptom0": {
+			"type": "string"
+		},
+		"cervical_symptom1": {
+			"type": "string"
+		}
+	}
 }

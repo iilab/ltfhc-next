@@ -114,11 +114,20 @@ $(document).ready(function() {
         }
     };
 
+    window.db = require('db').current();
+    console.log(window.db);
+    window.logCallback = function(err, data){
+        window.err = err;
+        window.resp = data;
+        console.log(err, data);
+    };
+
     var postRenderCallback = function(control)
     {
         $("#form").submit(function(e) {
             e.preventDefault();
             alert(JSON.stringify(control.getValue(), null, "    "));
+            window.doc = control.getValue();
         });
 
         var submitButton = $("<button class='btn btn-default' type='submit'>Submit</button>");

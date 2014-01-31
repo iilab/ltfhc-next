@@ -1,26 +1,25 @@
 <div id="search-filter" class="records-filter pull-right">
-  <div id="search-filter-help">
-    <a href="help" target="_blank"><i class="icon-question-sign"></i></a>
-  </div>
-  <div class="btn-group">
-    <div class="input-append">
-      <form action="" method="get" class="form-inline">
-        <input 
-          name="search" 
-          value="{query.search}" 
-          type="text" 
-          placeholder="{@translate value="Search"/}" />
-        <a type="submit" class="btn" href="#">
-          <i class="icon-search"></i>
-        </a> 
-    </form>
+
+    <div class="btn-group">
+      <div class="input-append">
+        <form action="" method="get" class="form-inline">
+  		  <div class="input-group">
+  			<input 
+  			  id="search-filter-input"
+  	          name="search" 
+  	          value="{query.search}"
+  	          type="text" 
+  	          class="form-control"
+  			  placeholder="{@translate value="Search"/}" />
+  			  <span class="input-group-btn">
+        			<a type="submit" class="btn btn-default" href="#">
+  	          	  <i class="icon icon-search"></i>
+  				</a>
+  			</span>
+  		  </div>
+		  
+      </form>
+      </div>
     </div>
-  </div>
-</div>
-<div class="btn-group edit-mode pull-right">
-  <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon icon-edit icon-large"></i> New Patient </a>
-</div>
-<div id="clinics-filter" class="records-filter btn-group pull-right">
-  <input name="clinics" type="text" class="input-medium" placeholder="{@translate value="District"/}">
 </div>
 

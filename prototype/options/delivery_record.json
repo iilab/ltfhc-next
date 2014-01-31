@@ -1,0 +1,114 @@
+{
+    "fields": {
+      "delivery_location": {
+        "label": "Location of delivery",
+        "type": "select"
+      },
+      "delivery_mode": {
+        "label": "Mode of delivery",
+        "type": "select"
+      },
+      "prenatal_problems0": {
+        "label": "Prenatal problems",
+        "type": "checkbox",
+        "rightLabel": "APH"
+      },
+      "prenatal_problems1": {
+        "type": "checkbox",
+        "rightLabel": "PROM"
+      },
+      "prenatal_problems2": {
+        "type": "checkbox",
+        "rightLabel": "high BP"
+      },
+      "prenatal_problems3": {
+        "type": "checkbox",
+        "rightLabel": "eclampsia"
+      },
+      "prenatal_problems4": {
+        "type": "checkbox",
+        "rightLabel": "pre-eclampsia"
+      },
+      "prenatal_problems5": {
+        "type": "checkbox",
+        "rightLabel": "anemia"
+      },
+      "prenatal_problems6": {
+        "type": "checkbox",
+        "rightLabel": "malaria"
+      },
+      "prenatal_problems7": {
+        "type": "checkbox",
+        "rightLabel": "HIV"
+      },
+      "prenatal_problems8": {
+        "type": "checkbox",
+        "rightLabel": "HIV stage III or stage IV"
+      },
+      "prenatal_problems9": {
+        "type": "checkbox",
+        "rightLabel": "ectopic pregnancy"
+      },
+      "prenatal_problems10": {
+        "type": "checkbox",
+        "rightLabel": "abortion complications"
+      },
+      "prenatal_problems11": {
+        "type": "checkbox",
+        "rightLabel": "other"
+      },
+      "childbirth_complications0": {
+        "label": "Childbirth complications",
+        "type": "checkbox",
+        "rightLabel": "PPH"
+      },
+      "childbirth_complications1": {
+        "type": "checkbox",
+        "rightLabel": "eclampsia"
+      },
+      "childbirth_complications2": {
+        "type": "checkbox",
+        "rightLabel": "pre-eclapmsia"
+      },
+      "childbirth_complications3": {
+        "type": "checkbox",
+        "rightLabel": "obstructed labor"
+      },
+      "childbirth_complications4": {
+        "type": "checkbox",
+        "rightLabel": "retained placenta"
+      },
+      "childbirth_complications5": {
+        "type": "checkbox",
+        "rightLabel": "ruptured uterus"
+      },
+      "childbirth_complications6": {
+        "type": "checkbox",
+        "rightLabel": "sepsis/infection"
+      },
+      "childbirth_complications7": {
+        "type": "checkbox",
+        "rightLabel": "other"
+      },
+      "childbirth_complications8": {
+        "type": "checkbox",
+        "rightLabel": "given IV antibiotics"
+      },
+      "childbirth_complications9": {
+        "type": "checkbox",
+        "rightLabel": "given uterotonics"
+      },
+      "childbirth_complications10": {
+        "type": "checkbox",
+        "rightLabel": "given blood transfusion"
+      },
+      "childbirth_complications11": {
+        "type": "checkbox",
+        "rightLabel": "placenta removed by hand"
+      },
+      "childbirth_complications12": {
+        "type": "checkbox",
+        "rightLabel": "MVA needed"
+      }
+    }
+  }

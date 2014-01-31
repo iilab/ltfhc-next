@@ -1,0 +1,11 @@
+<h1>List items</h1>
+
+{?rows}
+  <ul>
+  {#rows}
+    <li><a href="{baseURL}/{id}">{value}</a></li>
+  {/rows}
+    </ul>
+  {:else}
+  <p>No items</p>
+{/rows}
