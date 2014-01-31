@@ -1,175 +1,106 @@
 {
-  "schema": {
-    "title": "HIV Counseling Mother",
-    "_id": "hiv_counseling_mother",
-    "type": "object",
-    "properties": {
-      "delivery_date": {
-        "type": "string"
-      },
-      "first_visit": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "hiv_known_pre_clinic": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No",
-          "Unknown"
-        ]
-      },
-      "hiv_tested_pre_clinic": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No",
-          "Unknown"
-        ]
-      },
-      "hiv_test": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "hiv_status": {
-        "type": "string",
-        "enum": [
-          "Positive",
-          "Negative",
-          "Unknown"
-        ]
-      },
-      "hiv_positive_first_test": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "hiv_known_pre_birth": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No",
-          "Unknown"
-        ]
-      },
-      "hiv_test_during_labor": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No",
-          "Unknown"
-        ]
-      },
-      "hiv_test_post_labor": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No",
-          "Unknown"
-        ]
-      },
-      "medication_during_labor": {
-        "type": "string"
-      },
-      "referred_ctc": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No",
-          "Unknown"
-        ]
-      },
-      "referral_date": {
-        "type": "string"
-      },
-      "arv_therapy": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "other_treatment": {
-        "type": "string"
-      },
-      "note": {
-        "type": "string"
-      }
-    }
-  },
-  "options": {
-    "fields": {
-      "delivery_date": {
-        "label": "Date of Infant Delivery: (Tarehe ya kujifungua mtoto mchanga)",
-        "type": "date"
-      },
-      "first_visit": {
-        "label": "First Visit to Clinic?",
-        "type": "radio"
-      },
-      "hiv_known_pre_clinic": {
-        "label": "HIV Status Known Before Clinic?",
-        "type": "radio"
-      },
-      "hiv_tested_pre_clinic": {
-        "label": "Tested for HIV Before Clinic?",
-        "type": "radio"
-      },
-      "hiv_test": {
-        "label": "HIV Test given?",
-        "type": "radio"
-      },
-      "hiv_status": {
-        "label": "HIV Status",
-        "type": "radio"
-      },
-      "hiv_positive_first_test": {
-        "label": "Tested HIV Positive on first test?",
-        "type": "radio"
-      },
-      "hiv_known_pre_birth": {
-        "label": "HIV Status Known Before Birth? (Hadhi ya VVU anajulikana kabla ya kujifungua?)",
-        "type": "radio"
-      },
-      "hiv_test_during_labor": {
-        "label": "Tested for HIV During Labor? (Amepimwa Virusi vya UKIMWI wakati wa kuzaa?)",
-        "type": "radio"
-      },
-      "hiv_test_post_labor": {
-        "label": "Tested for HIV Post-Labor? (Amepimwa Virusi vya UKIMWI baada ya kuzaa?)",
-        "type": "radio"
-      },
-      "medication_during_labor": {
-        "label": "Medicine Taken During Labor: (Dawa zilizochukuliwa wakati wa uchungu)"
-      },
-      "referred_ctc": {
-        "label": "Mother Referred To CTC? (Mama alipewa rufaa kwenda CTC?)",
-        "type": "radio"
-      },
-      "referral_date": {
-        "label": "Referral Date (Or is This a Different Date?): (Tarehe ya rufaa (au hii ni tarehe tofauti?))",
-        "type": "date"
-      },
-      "arv_therapy": {
-        "label": "Currently Taking Anti-Retrovial Therapy?",
-        "type": "radio"
-      },
-      "other_treatment": {
-        "label": "If Any Treatment Given, Please Describe:",
-        "type": "textarea"
-      },
-      "note": {
-        "label": "Other Notes for This Visit:",
-        "type": "textarea"
-      }
-    }
-  }
+	"title": "HIV Counseling Mother",
+	"_id": "hiv_counseling_mother",
+	"type": "object",
+	"properties": {
+		"delivery_date": {
+			"type": "string"
+		},
+		"first_visit": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No"
+			]
+		},
+		"hiv_known_pre_clinic": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No",
+				"Unknown"
+			]
+		},
+		"hiv_tested_pre_clinic": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No",
+				"Unknown"
+			]
+		},
+		"hiv_test": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No"
+			]
+		},
+		"hiv_status": {
+			"type": "string",
+			"enum": [
+				"Positive",
+				"Negative",
+				"Unknown"
+			]
+		},
+		"hiv_positive_first_test": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No"
+			]
+		},
+		"hiv_known_pre_birth": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No",
+				"Unknown"
+			]
+		},
+		"hiv_test_during_labor": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No",
+				"Unknown"
+			]
+		},
+		"hiv_test_post_labor": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No",
+				"Unknown"
+			]
+		},
+		"medication_during_labor": {
+			"type": "string"
+		},
+		"referred_ctc": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No",
+				"Unknown"
+			]
+		},
+		"referral_date": {
+			"type": "string"
+		},
+		"arv_therapy": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No"
+			]
+		},
+		"other_treatment": {
+			"type": "string"
+		},
+		"note": {
+			"type": "string"
+		}
+	}
 }

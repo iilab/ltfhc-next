@@ -1,287 +1,225 @@
 {
-  "renderForm": true,
-  "form": {
-    "buttons": {
-      "submit": {},
-      "reset": {}
-    }
-  },
-  "fields": {
-    "complaint0": {
-      "label": "Chief Complaint:",
-      "type": "checkbox",
-      "rightLabel": "Other",
-      "name": "complaint[]"
-    },
-    "complaint1": {
-      "type": "checkbox",
-      "rightLabel": "Body Aches",
-      "name": "complaint[]"
-    },
-    "complaint2": {
-      "type": "checkbox",
-      "rightLabel": "Chills",
-      "name": "complaint[]"
-    },
-    "complaint3": {
-      "type": "checkbox",
-      "rightLabel": "Diarrhea",
-      "name": "complaint[]"
-    },
-    "complaint4": {
-      "type": "checkbox",
-      "rightLabel": "Fever",
-      "name": "complaint[]"
-    },
-    "complaint5": {
-      "type": "checkbox",
-      "rightLabel": "Headache",
-      "name": "complaint[]"
-    },
-    "complaint6": {
-      "type": "checkbox",
-      "rightLabel": "Shortness of Breath",
-      "name": "complaint[]"
-    },
-    "complaint7": {
-      "type": "checkbox",
-      "rightLabel": "Nausea or Vomiting",
-      "name": "complaint[]"
-    },
-    "complaint8": {
-      "type": "checkbox",
-      "rightLabel": "Rigors",
-      "name": "complaint[]"
-    },
-    "complaint9": {
-      "type": "checkbox",
-      "rightLabel": "Night Sweats",
-      "name": "complaint[]"
-    },
-    "complaint10": {
-      "type": "checkbox",
-      "rightLabel": "Rash",
-      "name": "complaint[]"
-    },
-    "complaint11": {
-      "type": "checkbox",
-      "rightLabel": "Abdominal Pain",
-      "name": "complaint[]"
-    },
-    "complaint12": {
-      "type": "checkbox",
-      "rightLabel": "Cough",
-      "name": "complaint[]"
-    },
-    "complaint13": {
-      "type": "checkbox",
-      "rightLabel": "Difficultly with Urination",
-      "name": "complaint[]"
-    },
-    "complaint14": {
-      "type": "checkbox",
-      "rightLabel": "Weakness",
-      "name": "complaint[]"
-    },
-    "complaint15": {
-      "type": "checkbox",
-      "rightLabel": "Weight Loss",
-      "name": "complaint[]"
-    },
-    "complaint_other": {
-      "label": "Other Complaint:"
-    },
-    "symptom0": {
-      "label": "Symptoms:",
-      "type": "checkbox",
-      "rightLabel": "Other",
-      "name": "symptom[]"
-    },
-    "symptom1": {
-      "type": "checkbox",
-      "rightLabel": "Body Aches",
-      "name": "symptom[]"
-    },
-    "symptom2": {
-      "type": "checkbox",
-      "rightLabel": "Chills",
-      "name": "symptom[]"
-    },
-    "symptom3": {
-      "type": "checkbox",
-      "rightLabel": "Diarrhea",
-      "name": "symptom[]"
-    },
-    "symptom4": {
-      "type": "checkbox",
-      "rightLabel": "Fever",
-      "name": "symptom[]"
-    },
-    "symptom5": {
-      "type": "checkbox",
-      "rightLabel": "Headache",
-      "name": "symptom[]"
-    },
-    "symptom6": {
-      "type": "checkbox",
-      "rightLabel": "Shortness of Breath",
-      "name": "symptom[]"
-    },
-    "symptom7": {
-      "type": "checkbox",
-      "rightLabel": "Nausea or Vomiting",
-      "name": "symptom[]"
-    },
-    "symptom8": {
-      "type": "checkbox",
-      "rightLabel": "Rigors",
-      "name": "symptom[]"
-    },
-    "symptom9": {
-      "type": "checkbox",
-      "rightLabel": "Night Sweats",
-      "name": "symptom[]"
-    },
-    "symptom10": {
-      "type": "checkbox",
-      "rightLabel": "Rash",
-      "name": "symptom[]"
-    },
-    "symptom11": {
-      "type": "checkbox",
-      "rightLabel": "Abdominal Pain",
-      "name": "symptom[]"
-    },
-    "symptom12": {
-      "type": "checkbox",
-      "rightLabel": "Cough",
-      "name": "symptom[]"
-    },
-    "symptom13": {
-      "type": "checkbox",
-      "rightLabel": "Difficultly with Urination",
-      "name": "symptom[]"
-    },
-    "symptom14": {
-      "type": "checkbox",
-      "rightLabel": "Weakness",
-      "name": "symptom[]"
-    },
-    "symptom15": {
-      "type": "checkbox",
-      "rightLabel": "Weight Loss",
-      "name": "symptom[]"
-    },
-    "symptom_other": {
-      "label": "Other Symptoms:",
-      "type": "textarea"
-    },
-    "history0": {
-      "label": "History:",
-      "type": "checkbox",
-      "rightLabel": "None",
-      "name": "history[]"
-    },
-    "history1": {
-      "type": "checkbox",
-      "rightLabel": "Other",
-      "name": "history[]"
-    },
-    "history2": {
-      "type": "checkbox",
-      "rightLabel": "Hypertension",
-      "name": "history[]"
-    },
-    "history3": {
-      "type": "checkbox",
-      "rightLabel": "Diabetes",
-      "name": "history[]"
-    },
-    "history4": {
-      "type": "checkbox",
-      "rightLabel": "Malaria",
-      "name": "history[]"
-    },
-    "history5": {
-      "type": "checkbox",
-      "rightLabel": "Yellow Fever",
-      "name": "history[]"
-    },
-    "history6": {
-      "type": "checkbox",
-      "rightLabel": "Cholera",
-      "name": "history[]"
-    },
-    "history7": {
-      "type": "checkbox",
-      "rightLabel": "Meningitis",
-      "name": "history[]"
-    },
-    "history8": {
-      "type": "checkbox",
-      "rightLabel": "Sickle Cell",
-      "name": "history[]"
-    },
-    "history9": {
-      "type": "checkbox",
-      "rightLabel": "Cancer",
-      "name": "history[]"
-    },
-    "history10": {
-      "type": "checkbox",
-      "rightLabel": "Leprosy",
-      "name": "history[]"
-    },
-    "history_other": {
-      "label": "Other Past History:",
-      "type": "textarea"
-    },
-    "note": {
-      "label": "Examination Notes:",
-      "type": "textarea"
-    },
-    "testing_method": {
-      "label": "Tested By Following Method:",
-      "type": "textarea"
-    },
-    "diagnosis": {
-      "label": "Disease Diagnosis:",
-      "type": "select"
-    },
-    "diagnosis_other": {
-      "label": "Other Disease Diagnosis:"
-    },
-    "treatment": {
-      "label": "Treatment:",
-      "type": "textarea"
-    },
-    "admission": {
-      "label": "Admission Required?",
-      "type": "radio",
-      "enum": [
-        "Yes",
-        "No"
-      ]
-    },
-    "disease_mortality": {
-      "label": "Did Disease Lead To Death?",
-      "type": "radio",
-      "enum": [
-        "Yes",
-        "No"
-      ]
-    },
-    "referral": {
-      "label": "Referral?",
-      "type": "radio",
-      "enum": [
-        "Yes",
-        "No"
-      ]
-    },
-    "referral_location": {
-      "label": "If Yes, Referral Location:",
-      "type": "select"
-    }
-  }
+	"fields": {
+		"complaint0": {
+			"label": "Chief Complaint: (Lalamiko kuu)",
+			"type": "checkbox",
+			"rightLabel": "Other"
+		},
+		"complaint1": {
+			"type": "checkbox",
+			"rightLabel": "Body Aches"
+		},
+		"complaint2": {
+			"type": "checkbox",
+			"rightLabel": "Chills"
+		},
+		"complaint3": {
+			"type": "checkbox",
+			"rightLabel": "Diarrhea"
+		},
+		"complaint4": {
+			"type": "checkbox",
+			"rightLabel": "Fever"
+		},
+		"complaint5": {
+			"type": "checkbox",
+			"rightLabel": "Headache"
+		},
+		"complaint6": {
+			"type": "checkbox",
+			"rightLabel": "Shortness of Breath"
+		},
+		"complaint7": {
+			"type": "checkbox",
+			"rightLabel": "Nausea or Vomiting"
+		},
+		"complaint8": {
+			"type": "checkbox",
+			"rightLabel": "Rigors"
+		},
+		"complaint9": {
+			"type": "checkbox",
+			"rightLabel": "Night Sweats"
+		},
+		"complaint10": {
+			"type": "checkbox",
+			"rightLabel": "Rash"
+		},
+		"complaint11": {
+			"type": "checkbox",
+			"rightLabel": "Abdominal Pain"
+		},
+		"complaint12": {
+			"type": "checkbox",
+			"rightLabel": "Cough"
+		},
+		"complaint13": {
+			"type": "checkbox",
+			"rightLabel": "Difficultly with Urination"
+		},
+		"complaint14": {
+			"type": "checkbox",
+			"rightLabel": "Weakness"
+		},
+		"complaint15": {
+			"type": "checkbox",
+			"rightLabel": "Weight Loss"
+		},
+		"complaint_other": {
+			"label": "Other Complaint: (Kuu nyingine)"
+		},
+		"symptom0": {
+			"label": "Symptoms: (Dalili)",
+			"type": "checkbox",
+			"rightLabel": "Other"
+		},
+		"symptom1": {
+			"type": "checkbox",
+			"rightLabel": "Body Aches"
+		},
+		"symptom2": {
+			"type": "checkbox",
+			"rightLabel": "Chills"
+		},
+		"symptom3": {
+			"type": "checkbox",
+			"rightLabel": "Diarrhea"
+		},
+		"symptom4": {
+			"type": "checkbox",
+			"rightLabel": "Fever"
+		},
+		"symptom5": {
+			"type": "checkbox",
+			"rightLabel": "Headache"
+		},
+		"symptom6": {
+			"type": "checkbox",
+			"rightLabel": "Shortness of Breath"
+		},
+		"symptom7": {
+			"type": "checkbox",
+			"rightLabel": "Nausea or Vomiting"
+		},
+		"symptom8": {
+			"type": "checkbox",
+			"rightLabel": "Rigors"
+		},
+		"symptom9": {
+			"type": "checkbox",
+			"rightLabel": "Night Sweats"
+		},
+		"symptom10": {
+			"type": "checkbox",
+			"rightLabel": "Rash"
+		},
+		"symptom11": {
+			"type": "checkbox",
+			"rightLabel": "Abdominal Pain"
+		},
+		"symptom12": {
+			"type": "checkbox",
+			"rightLabel": "Cough"
+		},
+		"symptom13": {
+			"type": "checkbox",
+			"rightLabel": "Difficultly with Urination"
+		},
+		"symptom14": {
+			"type": "checkbox",
+			"rightLabel": "Weakness"
+		},
+		"symptom15": {
+			"type": "checkbox",
+			"rightLabel": "Weight Loss"
+		},
+		"symptom_other": {
+			"label": "Other Symptoms: (Dalili nyingine)",
+			"type": "textarea"
+		},
+		"history0": {
+			"label": "History: (Historia ya zamani)",
+			"type": "checkbox",
+			"rightLabel": "None"
+		},
+		"history1": {
+			"type": "checkbox",
+			"rightLabel": "Other"
+		},
+		"history2": {
+			"type": "checkbox",
+			"rightLabel": "Hypertension"
+		},
+		"history3": {
+			"type": "checkbox",
+			"rightLabel": "Diabetes"
+		},
+		"history4": {
+			"type": "checkbox",
+			"rightLabel": "Malaria"
+		},
+		"history5": {
+			"type": "checkbox",
+			"rightLabel": "Yellow Fever"
+		},
+		"history6": {
+			"type": "checkbox",
+			"rightLabel": "Cholera"
+		},
+		"history7": {
+			"type": "checkbox",
+			"rightLabel": "Meningitis"
+		},
+		"history8": {
+			"type": "checkbox",
+			"rightLabel": "Sickle Cell"
+		},
+		"history9": {
+			"type": "checkbox",
+			"rightLabel": "Cancer"
+		},
+		"history10": {
+			"type": "checkbox",
+			"rightLabel": "Leprosy"
+		},
+		"history_other": {
+			"label": "Other Past History: (Historia ya zamani nyingine)",
+			"type": "textarea"
+		},
+		"note": {
+			"label": "Examination Notes:",
+			"type": "textarea"
+		},
+		"testing_method": {
+			"label": "Tested By Following Method: (Amepimwa kwa njia zifuatazo)",
+			"type": "textarea"
+		},
+		"diagnosis": {
+			"label": "Disease Diagnosis: (Utambuzi wa ugonjwa)",
+			"type": "select"
+		},
+		"diagnosis_other": {
+			"label": "Other Disease Diagnosis: (Utambuzi wa ugonjwa nyingine)"
+		},
+		"treatment": {
+			"label": "Treatment: (Matibabu)",
+			"type": "textarea"
+		},
+		"admission": {
+			"label": "Admission Required?",
+			"type": "radio"
+		},
+		"disease_mortality": {
+			"label": "Did Disease Lead To Death? (Je ugonjwa ulisababisha kifo?)",
+			"type": "radio"
+		},
+		"referral": {
+			"label": "Referral?",
+			"type": "radio"
+		},
+		"referral_location": {
+			"label": "If Yes, Referral Location:",
+			"type": "select"
+		}
+	}
 }

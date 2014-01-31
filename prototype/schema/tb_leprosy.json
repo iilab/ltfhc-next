@@ -1,106 +1,67 @@
 {
-  "schema": {
-    "title": "TB and Leprosy",
-    "_id": "tb_leprosy",
-    "type": "object",
-    "properties": {
-      "diagnosis0": {
-        "type": "string"
-      },
-      "diagnosis1": {
-        "type": "string"
-      },
-      "leprosy_classification": {
-        "type": "string",
-        "enum": [
-          "MB (A)",
-          "MB (C)",
-          "PB (A)",
-          "PB (C)"
-        ]
-      },
-      "leprosy_status": {
-        "type": "string",
-        "enum": [
-          "Return after default",
-          "Relapse after MDT",
-          "Relapse after DDS/other"
-        ]
-      },
-      "leprosy_disability": {
-        "type": "string",
-        "enum": [
-          "Grade 0",
-          "Grade 1",
-          "Grade 2"
-        ]
-      },
-      "leprosy_result": {
-        "type": "string",
-        "enum": [
-          "Treatment completed",
-          "Died",
-          "Transferred out",
-          "Defaulter",
-          "Not applicable"
-        ]
-      },
-      "coritosteroid_treatment": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "tb_regimen": {
-        "type": "string",
-        "enum": [
-          "2RHZE/4RH",
-          "2RHZ/4RH",
-          "2SRHZE/1RHZE/5RH3E3",
-          "2SRHZE/1RHZE/5RHE",
-          "2RHZE/6EH",
-          "health facility DOT",
-          "home-based DOT"
-        ]
-      }
-    }
-  },
-  "options": {
-    "fields": {
-      "diagnosis0": {
-        "label": "Diagnosis",
-        "type": "checkbox",
-        "rightLabel": "tb"
-      },
-      "diagnosis1": {
-        "type": "checkbox",
-        "rightLabel": "leprosy"
-      },
-      "leprosy_classification": {
-        "label": "Leprosy classification",
-        "type": "select"
-      },
-      "leprosy_status": {
-        "label": "Leprosy status",
-        "type": "select"
-      },
-      "leprosy_disability": {
-        "label": "Leprosy disability",
-        "type": "select"
-      },
-      "leprosy_result": {
-        "label": "Leprosy end result",
-        "type": "select"
-      },
-      "coritosteroid_treatment": {
-        "label": "Treated with corticosteroids?",
-        "type": "radio"
-      },
-      "tb_regimen": {
-        "label": "TB regimen",
-        "type": "select"
-      }
-    }
-  }
+	"title": "TB and Leprosy",
+	"_id": "tb_leprosy",
+	"type": "object",
+	"properties": {
+		"diagnosis0": {
+			"type": "string"
+		},
+		"diagnosis1": {
+			"type": "string"
+		},
+		"leprosy_classification": {
+			"type": "string",
+			"enum": [
+				"MB (A)",
+				"MB (C)",
+				"PB (A)",
+				"PB (C)"
+			]
+		},
+		"leprosy_status": {
+			"type": "string",
+			"enum": [
+				"Return after default",
+				"Relapse after MDT",
+				"Relapse after DDS/other"
+			]
+		},
+		"leprosy_disability": {
+			"type": "string",
+			"enum": [
+				"Grade 0",
+				"Grade 1",
+				"Grade 2"
+			]
+		},
+		"leprosy_result": {
+			"type": "string",
+			"enum": [
+				"Treatment completed",
+				"Died",
+				"Transferred out",
+				"Defaulter",
+				"Not applicable"
+			]
+		},
+		"coritosteroid_treatment": {
+			"type": "string",
+			"enum": [
+				"Yes",
+				"No"
+			]
+		},
+		"tb_regimen": {
+			"type": "string",
+			"enum": [
+				"2RHZE/4RH",
+				"2RHZ/4RH",
+				"2SRHZE/1RHZE/5RH3E3",
+				"2SRHZE/1RHZE/5RHE",
+				"2RHZE/6EH",
+				"health facility DOT",
+				"home-based DOT"
+			]
+		}
+	}
 }
