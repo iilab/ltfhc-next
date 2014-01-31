@@ -1,22 +1,26 @@
-<div id="search-filter" class="records-filter pull-right">
-  <div id="search-filter-help">
-    <a href="help" target="_blank"><i class="icon-question-sign"></i></a>
-  </div>
+<div id="search-filter" class="records-filter pull-left">
   <div class="btn-group">
     <div class="input-append">
       <form action="" method="get" class="form-inline">
-        <input 
-          name="search" 
-          value="{query.search}" 
-          type="text" 
-          placeholder="{@translate value="Search"/}" />
-        <a type="submit" class="btn btn-default" href="#">
-          <i class="icon-search"></i>
-        </a> 
+		  <div class="input-group">
+			<input 
+			  id="search-filter-input"
+	          name="search" 
+	          value="{query.search}"
+	          type="text" 
+	          class="form-control"
+			  placeholder="{@translate value="Search"/}" />
+			  <span class="input-group-btn">
+      			<a type="submit" class="btn btn-default" href="#">
+	          	  <i class="icon icon-search"></i>
+				</a>
+			</span>
+		  </div>
+		  
     </form>
     </div>
   </div>
 </div>
 <div class="btn-group new-patient pull-right">
-  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-edit icon-large"></i> New Patient </a>
+  <a class="btn btn-primary btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon icon-edit icon-large"></i> New Patient </a>
 </div>

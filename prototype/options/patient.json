@@ -33,11 +33,11 @@
       "label": "Birth Date:",
       "type": "date"
     },
-    "patient_age": {
-      "label": "Patient Age:",
+    "approximate_age": {
+      "label": "Approximate Age:",
       "type": "number"
     },
-    "medication_allergy": {
+    "medication_allergies": {
       "label": "Medication Allergies:",
       "type": "textarea"
     },

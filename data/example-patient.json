@@ -8,11 +8,13 @@
 	"lastname": "Doe",
 	"approxage": 39,
 	"birthday": "1985-04-12T23:20:50.52Z",
-	"clinicid": "Namansi",
+	"clinic_id": "3425645",
 	"gender": "male",
-	"governmentid": "abc123",
-	"hivid": "abc123",
+	"government_id": "abc123",
+	"hiv_id": "abc123",
 	"phone": 1234568,
+	"village": "Namansi",
+	"district": "Namansi",
 	"allergies": [
 	"penicillin"
 	]
