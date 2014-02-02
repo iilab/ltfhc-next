@@ -3,6 +3,9 @@
 	"_id": "visit",
 	"type": "object",
 	"properties": {
+		"patient_id": {
+			"type": "string"
+		},
 		"clinic": {
 			"type": "string"
 		},

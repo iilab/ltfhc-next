@@ -1,5 +1,8 @@
 {
 	"fields": {
+		"patient_id": {
+			"type": "hidden"
+		},
 		"clinic": {
 			"label": "Clinic:"
 		},
