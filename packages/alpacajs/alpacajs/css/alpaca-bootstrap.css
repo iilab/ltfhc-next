@@ -29,6 +29,11 @@ address:
     display: inline-block !important;
 }
 
+.alpaca-fieldset p {
+		display: inline-block;
+		margin: 0px 5px 10px;
+}
+
 /*
  * When in an error state, adjust the glyphicons as well.
  */
@@ -40,9 +45,13 @@ address:
 /**
  * Helper messages will have their glyphicon's dimmed to the appropriate color
  */
-.alpaca-controlfield-helper .glyphicon
+.alpaca-controlfield-helper
 {
-    color: #737373;
+    color: #999;
+}
+
+.alpaca-fieldset .radio {
+	padding-left:10px;
 }
 
 /**
