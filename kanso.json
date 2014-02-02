@@ -43,6 +43,7 @@
 		"garden-app-support": null,
 		"bootstrap": null,
 		"font-awesome": null,
+		"jquery-ui": null,
 		"alpacajs": null,
 		"ltfhc-branding": ">=0.0.2"
 	}
