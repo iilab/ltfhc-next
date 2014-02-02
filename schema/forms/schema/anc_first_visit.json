@@ -1,0 +1,314 @@
+{
+  "title": "First Antenatal Visit",
+  "_id": "anc_first_visit",
+  "type": "object",
+  "properties": {
+    "last_menstrual_period": {
+      "type": "number"
+    },
+    "due_date": {
+      "type": "number"
+    },
+    "gestational_age": {
+      "type": "number"
+    },
+    "number_pregnancy": {
+      "type": "number"
+    },
+    "pregnancy_test": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "number_full_term_delivery": {
+      "type": "number"
+    },
+    "number_pre_term_delivery": {
+      "type": "number"
+    },
+    "number_miscarriage_abortion": {
+      "type": "number"
+    },
+    "number_live_birth": {
+      "type": "number"
+    },
+    "weight_heaviest_infant": {
+			"type": "string",
+			"$ref": "lists/#infant_weights"
+    },
+    "pregnancy_complications": {
+			"type": "string",
+			"$ref": "lists/#pregnancy_complications"
+    },
+    "other_pregnancy_complications": {
+      "type": "string"
+    },
+    "pregnancy_diseases": {
+			"type": "string",
+			"$ref": "lists/#pregnancy_diseases"
+    },
+    "std_status": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "std_treatment": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_status_prior_firstvisit": {
+			"type": "string",
+			"$ref": "lists/#hiv_statuses"
+    },
+    "tested_hiv_firstvisit": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "first_hiv_status": {
+			"type": "string",
+			"$ref": "lists/#hiv_statuses"
+    },
+    "second_hiv_test": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "refer_ctc": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "partner_hiv": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "partner_positive": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "discordant_couple": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "combo_drugs": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "art_drugs": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "ctx_given": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "counsel_feeding": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "syphillus_test": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "syphillus_status": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "syphillus_treatment": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "partner_std": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "partner_std_treatment": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "partner_syphillus_test": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "partner_syphillus_status": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "partner_syphillus_treatment": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "malaria_test": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "malar_pos": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "bednet_voucher": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "ipt1": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "ipt2": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "bp_systolic": {
+      "type": "number"
+    },
+    "bp_diastolic": {
+      "type": "number"
+    },
+    "anemia_severe": {
+			"type": "string",
+			"$ref": "lists/#anemia_severities"
+    },
+    "symptoms": {
+			"type": "string",
+			"$ref": "lists/#anc_symptoms"
+    },
+    "tt2plus_vaccine": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "other_symptoms": {
+      "type": "string"
+    },
+    "fundal_height": {
+      "type": "number"
+    },
+    "fetal_heart_rate": {
+      "type": "number"
+    },
+    "treatment_given": {
+      "type": "string"
+    },
+    "iron_tablets": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "alben_tablets": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "admission": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "referral": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "referred_ctc": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "in_labor": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    }
+  }
+}
