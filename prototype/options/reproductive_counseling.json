@@ -1,161 +1,91 @@
 {
-    "fields": {
-      "last_menstrual_period": {
-        "label": "Last Menstrual Period: (Tarehe ya mwisho wa kipindi cha hedhi)",
-        "type": "date"
-      },
-      "menstrual_history": {
-        "label": "Menstrual History: (Historia ya hedhi)",
-        "type": "select"
-      },
-      "number_pregnancy": {
-        "label": "Total Number of Pregnancies (Jumla ya idadi ya mimba za awali)",
-        "type": "number"
-      },
-      "number_full_term_delivery": {
-        "label": "Number of Full Term Deliveries (Idadi ya kujifungua katika mda uliokamilika)",
-        "type": "number"
-      },
-      "number_pre_term_delivery": {
-        "label": "Number of Preterm Deliveries (Idadi ya kujifungua watoto wasiotimiza umri)",
-        "type": "number"
-      },
-      "number_miscarriage_or_abortion": {
-        "label": "Number of Miscarriages or Abortions (Idadi ya mimba zilizoharibika au kutolewa)",
-        "type": "number"
-      },
-      "number_live_birth": {
-        "label": "Number of Live Births (Idadi ya waliozaliwa hai)",
-        "type": "number"
-      },
-      "pregnancy_complication0": {
-        "label": "Pregnancy Complications, Check All That Apply: (Matatizo ya ujauzito)",
-        "type": "checkbox",
-        "rightLabel": "None"
-      },
-      "pregnancy_complication1": {
-        "type": "checkbox",
-        "rightLabel": "Fetal Death"
-      },
-      "pregnancy_complication2": {
-        "type": "checkbox",
-        "rightLabel": "Neonatal Death"
-      },
-      "pregnancy_complication3": {
-        "type": "checkbox",
-        "rightLabel": "Neonatal Injury"
-      },
-      "pregnancy_complication4": {
-        "type": "checkbox",
-        "rightLabel": "Neonatal Tetanus"
-      },
-      "pregnancy_complication5": {
-        "type": "checkbox",
-        "rightLabel": "Neonatal Sepsis"
-      },
-      "pregnancy_complication6": {
-        "type": "checkbox",
-        "rightLabel": "Birth Asphyxia"
-      },
-      "pregnancy_complication7": {
-        "type": "checkbox",
-        "rightLabel": "Shoulder Dystocia"
-      },
-      "pregnancy_complication8": {
-        "type": "checkbox",
-        "rightLabel": "Obstructed Labor"
-      },
-      "pregnancy_complication9": {
-        "type": "checkbox",
-        "rightLabel": "TB"
-      },
-      "pregnancy_complication10": {
-        "type": "checkbox",
-        "rightLabel": "Diabetes"
-      },
-      "pregnancy_complication11": {
-        "type": "checkbox",
-        "rightLabel": "Hemorrhage"
-      },
-      "pregnancy_complication12": {
-        "type": "checkbox",
-        "rightLabel": "Intra-uterine Infection"
-      },
-      "pregnancy_complication13": {
-        "type": "checkbox",
-        "rightLabel": "Cesarean Section"
-      },
-      "pregnancy_complication14": {
-        "type": "checkbox",
-        "rightLabel": "Seizure"
-      },
-      "pregnancy_complication15": {
-        "type": "checkbox",
-        "rightLabel": "Forceps/Vacuum"
-      },
-      "pregnancy_complication16": {
-        "type": "checkbox",
-        "rightLabel": "Sepsis"
-      },
-      "pregnancy_complication17": {
-        "type": "checkbox",
-        "rightLabel": "Other"
-      },
-      "pregnancy_complication_other": {
-        "label": "If Other Pregnancy Complication, Describe:"
-      },
-      "marital_status": {
-        "label": "Marital Status: (Hadhi ya ndoa)",
-        "type": "select"
-      },
-      "contraception_previous": {
-        "label": "Previous Contraception: (Uzazi wa mpango wa awali)",
-        "type": "select"
-      },
-      "contraception_current": {
-        "label": "Current Contraception: (Uzazi wa mpango kwa sasa)",
-        "type": "select"
-      },
-      "contraception_source": {
-        "label": "Source of Contraception",
-        "type": "select"
-      },
-      "fertility_desire": {
-        "label": "Fertility Desires:",
-        "type": "select"
-      },
-      "hiv_risk": {
-        "label": "HIV Risks:",
-        "type": "select"
-      },
-      "contraception_dispensed": {
-        "label": "Contraception Dispensed: (Dawa ya Uzazi wa mpango iliogawanywa)",
-        "type": "select"
-      },
-      "quantity_pills_dispensed": {
-        "label": "Quantity of Pills Dispensed:",
-        "type": "select"
-      },
-      "quantity_condoms_dispensed": {
-        "label": "Quantity of Condoms Dispensed:",
-        "type": "select"
-      },
-      "quantity_depo_provera": {
-        "label": "Dose of Depo Provera:",
-        "type": "select"
-      },
-      "condom_education": {
-        "label": "Condom Use Education Preformed",
-        "type": "radio"
-      },
-      "cervical_symptom0": {
-        "label": "Cervical Symptoms:",
-        "type": "checkbox",
-        "rightLabel": "Vaginal Discharge"
-      },
-      "cervical_symptom1": {
-        "type": "checkbox",
-        "rightLabel": "Post-Coital Bleeding"
-      }
+	"fields": {
+    "last_menstrual_period": {
+      "label": "Last Menstrual Period: (Tarehe ya mwisho wa kipindi cha hedhi)",
+      "type": "date"
+    },
+    "menstrual_history": {
+      "label": "Menstrual History: (Historia ya hedhi)",
+      "type": "select"
+    },
+    "number_pregnancy": {
+      "label": "Total Number of Pregnancies (Jumla ya idadi ya mimba za awali)",
+      "type": "number"
+    },
+    "number_full_term_delivery": {
+      "label": "Number of Full Term Deliveries (Idadi ya kujifungua katika mda uliokamilika)",
+      "type": "number"
+    },
+    "number_pre_term_delivery": {
+      "label": "Number of Preterm Deliveries (Idadi ya kujifungua watoto wasiotimiza umri)",
+      "type": "number"
+    },
+    "number_miscarriage_or_abortion": {
+      "label": "Number of Miscarriages or Abortions (Idadi ya mimba zilizoharibika au kutolewa)",
+      "type": "number"
+    },
+    "number_live_birth": {
+      "label": "Number of Live Births (Idadi ya waliozaliwa hai)",
+      "type": "number"
+    },
+    "pregnancy_complication": {
+      "label": "Pregnancy Complications, Check All That Apply: (Matatizo ya ujauzito)",
+			"type": "checkbox"
+		},
+    "pregnancy_complication_other": {
+      "label": "If Other Pregnancy Complication, Describe:"
+    },
+    "marital_status": {
+      "label": "Marital Status: (Hadhi ya ndoa)",
+      "type": "select"
+    },
+    "contraception_previous": {
+      "label": "Previous Contraception: (Uzazi wa mpango wa awali)",
+      "type": "select"
+    },
+    "contraception_current": {
+      "label": "Current Contraception: (Uzazi wa mpango kwa sasa)",
+      "type": "select"
+    },
+    "contraception_source": {
+      "label": "Source of Contraception",
+      "type": "select"
+    },
+    "fertility_desire": {
+      "label": "Fertility Desires:",
+      "type": "select"
+    },
+    "hiv_risk": {
+      "label": "HIV Risks:",
+      "type": "select"
+    },
+    "contraception_dispensed": {
+      "label": "Contraception Dispensed: (Dawa ya Uzazi wa mpango iliogawanywa)",
+      "type": "select"
+    },
+    "quantity_pills_dispensed": {
+      "label": "Quantity of Pills Dispensed:",
+      "type": "select"
+    },
+    "quantity_condoms_dispensed": {
+      "label": "Quantity of Condoms Dispensed:",
+      "type": "select"
+    },
+    "quantity_depo_provera": {
+      "label": "Dose of Depo Provera:",
+      "type": "select"
+    },
+    "condom_education": {
+      "label": "Condom Use Education Preformed",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "cervical_symptom": {
+      "label": "Cervical Symptoms:",
+      "type": "checkbox"
     }
-  }
+	}
+}

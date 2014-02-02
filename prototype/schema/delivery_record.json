@@ -1,102 +1,23 @@
 {
-	"title": "Delivery Record",
-	"_id": "delivery_record",
-	"type": "object",
-	"properties": {
-		"delivery_location": {
-			"type": "string",
-			"enum": [
-				"Home delivery",
-				"Delivered by traditional birth attendant",
-				"Delivered in clinic",
-				"Delivered on the way to clinic",
-				"Delivered by skilled provider"
-			]
-		},
-		"delivery_mode": {
-			"type": "string",
-			"enum": [
-				"Vaginal",
-				"C-section",
-				"Vacuum",
-				"Breech",
-				"Other"
-			]
-		},
-		"prenatal_problems0": {
-			"type": "string"
-		},
-		"prenatal_problems1": {
-			"type": "string"
-		},
-		"prenatal_problems2": {
-			"type": "string"
-		},
-		"prenatal_problems3": {
-			"type": "string"
-		},
-		"prenatal_problems4": {
-			"type": "string"
-		},
-		"prenatal_problems5": {
-			"type": "string"
-		},
-		"prenatal_problems6": {
-			"type": "string"
-		},
-		"prenatal_problems7": {
-			"type": "string"
-		},
-		"prenatal_problems8": {
-			"type": "string"
-		},
-		"prenatal_problems9": {
-			"type": "string"
-		},
-		"prenatal_problems10": {
-			"type": "string"
-		},
-		"prenatal_problems11": {
-			"type": "string"
-		},
-		"childbirth_complications0": {
-			"type": "string"
-		},
-		"childbirth_complications1": {
-			"type": "string"
-		},
-		"childbirth_complications2": {
-			"type": "string"
-		},
-		"childbirth_complications3": {
-			"type": "string"
-		},
-		"childbirth_complications4": {
-			"type": "string"
-		},
-		"childbirth_complications5": {
-			"type": "string"
-		},
-		"childbirth_complications6": {
-			"type": "string"
-		},
-		"childbirth_complications7": {
-			"type": "string"
-		},
-		"childbirth_complications8": {
-			"type": "string"
-		},
-		"childbirth_complications9": {
-			"type": "string"
-		},
-		"childbirth_complications10": {
-			"type": "string"
-		},
-		"childbirth_complications11": {
-			"type": "string"
-		},
-		"childbirth_complications12": {
-			"type": "string"
-		}
-	}
+  "title": "Delivery Record",
+  "_id": "delivery_record",
+  "type": "object",
+  "properties": {
+    "delivery_location": {
+      "type": "string",
+			"$ref": "lists/#delivery_type"
+    },
+    "delivery_mode": {
+      "type": "string",
+			"$ref": "lists/#delivery_mode"
+    },
+    "prenatal_problems": {
+      "type": "string",
+			"$ref": "lists/#prenatal_prob"
+    },
+    "childbirth_complications": {
+      "type": "string",
+			"$ref": "lists/#birth_comp"
+    }
+  }
 }

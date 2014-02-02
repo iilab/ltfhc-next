@@ -1,13 +1,8 @@
 {
     "fields": {
-      "diagnosis0": {
+      "diagnosis": {
         "label": "Diagnosis",
-        "type": "checkbox",
-        "rightLabel": "tb"
-      },
-      "diagnosis1": {
-        "type": "checkbox",
-        "rightLabel": "leprosy"
+        "type": "checkbox"
       },
       "leprosy_classification": {
         "label": "Leprosy classification",
@@ -28,6 +23,10 @@
       "coritosteroid_treatment": {
         "label": "Treated with corticosteroids?",
         "type": "radio"
+      },
+      "tb_classification": {
+        "label": "TB classification",
+        "type": "select"
       },
       "tb_regimen": {
         "label": "TB regimen",

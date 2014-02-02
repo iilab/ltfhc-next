@@ -8,11 +8,7 @@
     },
     "water_sodium_imbalance": {
       "type": "string",
-      "enum": [
-        "severe",
-        "mild",
-        "uncertain"
-      ]
+			"$ref": "lists/#water_sodium_severities"
     },
     "given_ors": {
       "type": "string",
