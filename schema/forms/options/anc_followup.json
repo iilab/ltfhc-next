@@ -1,0 +1,304 @@
+{
+  "fields": {
+    "due_date": {
+      "label": "Expected Due Date: (Tarehe ya matarajio)",
+      "type": "date"
+    },
+    "number_pregnancy": {
+      "label": "Pregnancy Number: (Idadi ya ujauzito)",
+      "type": "number"
+    },
+    "gestational_age": {
+      "label": "Approximate Estimated Gestational Age (weeks):",
+      "type": "number"
+    },
+    "symptom0": {
+      "label": "Symptoms:",
+      "type": "checkbox"
+		},
+    "other_symptom": {
+      "label": "If Other Symptoms, Please Describe:"
+    },
+    "patient_weight": {
+      "label": "Patient Weight in Kg:",
+      "type": "number"
+    },
+    "fundal_height": {
+      "label": "Fundal Height (cm):",
+      "type": "number"
+    },
+    "cervical_dilation": {
+      "label": "Cervical Dilation (cm):",
+      "type": "number"
+    },
+    "fetal_station": {
+      "label": "Fetal Station:",
+      "type": "select"
+    },
+    "hemoglobin": {
+      "label": "Hemoglobin (g/dl):",
+      "type": "number"
+    },
+    "fetal_movement": {
+      "label": "Fetal Movement:",
+      "type": "select"
+    },
+    "fetal_heart_rate": {
+      "label": "Fetal Heart Rate:",
+      "type": "select"
+    },
+    "hiv_status": {
+      "label": "Result if tested for HIV on first visit",
+      "type": "select"
+    },
+    "treatment_given": {
+      "label": "If any treatment given, please describe:",
+      "type": "textarea"
+    },
+    "notes": {
+      "label": "Other Application Notes:",
+      "type": "textarea"
+    },
+    "admission": {
+      "label": "Admission required today?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "in_labor": {
+      "label": "Laboring Now?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "hiv_status_prior_firstvisit": {
+      "label": "HIV Status prior to first visit (Hadhi ya VVU)",
+      "type": "select"
+    },
+    "tested_hiv_firstvisit": {
+      "label": "Tested for HIV on first visit?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "second_hiv_test": {
+      "label": "Tested positive by second HIV test?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "refer_ctc": {
+      "label": "Referred to CTC?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "partner_hiv": {
+      "label": "Partner tested for HIV in clinic?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "partner_positive": {
+      "label": "Partner tested positive for HIV?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "discordant_couple": {
+      "label": "Discordant couple?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "combo_drugs": {
+      "label": "Patient recieved PMCTC combo drugs?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "art_drugs": {
+      "label": "Patient using ART?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "ctx_given": {
+      "label": "Patient given CTX?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "counsel_feeding": {
+      "label": "Counseled on how to feed the baby?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "syphillus_test": {
+      "label": "Tested for Syphillus",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "syphillus_status": {
+      "label": "Infected with Syphillus",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "syphillus_treatment": {
+      "label": "Being treated for Syphillus",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "partner_std": {
+      "label": "Partner infected with STD",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "partner_std_treatment": {
+      "label": "Partner being treated for STD",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "partner_syphillus_test": {
+      "label": "Partner infected with Syphillus",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "partner_syphillus_status": {
+      "label": "Partner infected with Syphillus",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "partner_syphillus_treatment": {
+      "label": "Partner being treated for Syphillus",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "malaria_test": {
+      "label": "Tested for malaria?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "malar_pos": {
+      "label": "Tested positive for malaria?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "bednet_voucher": {
+      "label": "Given voucher for free bednet?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "ipt1": {
+      "label": "Given IPT1?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "ipt2": {
+      "label": "Given IPT2?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "bp_systolic": {
+      "label": "BP Systolic (BP Sistolik)",
+      "type": "number"
+    },
+    "bp_diastolic": {
+      "label": "BP Diastolic (BP Diyastolik)",
+      "type": "number"
+    },
+    "anemia_severe": {
+      "label": "Severe Anemia (>8.5g/dl)",
+      "type": "select"
+    },
+    "tt2plus_vaccine": {
+      "label": "Received vaccination of TT2+",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "referral": {
+      "label": "Referral?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "referred_ctc": {
+      "label": "Mother Referred To CTC? (Mama alipewa rufaa kwenda CTC?)",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No",
+        "Unknown"
+      ]
+    }
+  }
+}

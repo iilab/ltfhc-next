@@ -1,0 +1,44 @@
+{
+  "fields": {
+    "injury_date": {
+      "label": "Injury Date: (Tarehe ya majeraha)",
+      "type": "date"
+    },
+    "injury_type": {
+      "label": "Type of Injury: (Aina ya majeraha)",
+      "type": "select"
+    },
+    "injury_other": {
+      "label": "Other Injury:"
+    },
+    "testing_method": {
+      "label": "Testing Method: (Amepimwa kwa njia zifuatazo)",
+      "type": "textarea"
+    },
+    "treatment": {
+      "label": "Treatment: (Matibabu)",
+      "type": "select"
+    },
+    "treatment_other": {
+      "label": "Other Treatment: (Matibabu nyingine)",
+      "type": "textarea"
+    },
+    "admission": {
+      "label": "Admission Required?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "injury_mortality": {
+      "label": "Did Injury Lead to Death? (Je majeraha yalisababisha kifo?)",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    }
+  }
+
+}

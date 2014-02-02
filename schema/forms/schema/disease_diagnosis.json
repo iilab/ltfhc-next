@@ -1,0 +1,80 @@
+{
+	"collection": "forms",
+	"class": "schema",
+	"parent": "visit",
+	"_id": "forms/schema/visit/diseasediagnosis",
+	"formname": "Disease Diagnosis",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"title": "Disease Diagnosis",
+	"properties": {
+		"complaint": {
+			"$ref": "lists/#symptoms"
+		},
+		"complaint_other": {
+			"type": "string"
+		},
+		"symptom": {
+			"$ref": "lists/#symptoms"
+		},
+		"symptom_other": {
+			"type": "string"
+		},
+		"history": {
+			"$ref": "lists/#histories"
+		},
+		"history_other": {
+			"type": "string"
+		},
+		"note": {
+      "title": "Examination Notes:",
+			"type": "string"
+		},
+		"testing_method": {
+      "title": "Tested By Following Method:",
+			"type": "string"
+		},
+		"diagnosis": {
+      "title": "Disease Diagnosis:",
+			"type": "string",
+			"$ref": "lists/#diseases"
+		},
+		"diagnosis_other": {
+      "title": "Other Disease Diagnosis:",
+			"type": "string"
+		},
+		"treatment": {
+      "title": "Treatment:",
+			"type": "string"
+		},
+		"admission": {
+      "title": "Admission Required?",
+			"type": "boolean",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"disease_mortality": {
+      "title": "Did Disease Lead To Death?",
+			"type": "boolean",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"referral": {
+      "title": "Referral?",
+			"type": "string",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"referral_location": {
+      "title": "If Yes, Referral Location:",
+			"type": "string",
+			"$ref": "lists/#referral_locations"
+		}
+	}
+}

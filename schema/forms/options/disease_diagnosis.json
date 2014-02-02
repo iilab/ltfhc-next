@@ -1,0 +1,72 @@
+{
+  "fields": {
+		"complaint": {
+			"label": "Chief complaint:"
+		},
+		"complaint_other": {
+      "label": "Other Complaint:",
+			"helper": "If Chief Complaint not listed above, please write in."
+		},
+		"symptom": {
+			"label": "Symptoms:"
+		},
+    "symptom_other": {
+      "label": "Other Symptoms:",
+      "type": "textarea"
+    },
+		"history": {
+			"label": "History:"
+		},
+    "history_other": {
+			"label": "Other Past History:",
+      "type": "textarea"
+    },
+    "note": {
+      "label": "Examination Notes:",
+      "type": "textarea"
+    },
+    "testing_method": {
+      "label": "Tested By Following Method: (Amepimwa kwa njia zifuatazo)",
+      "type": "textarea"
+    },
+    "diagnosis": {
+      "label": "Disease Diagnosis: (Utambuzi wa ugonjwa)",
+      "type": "select"
+    },
+    "diagnosis_other": {
+      "label": "Other Disease Diagnosis: (Utambuzi wa ugonjwa nyingine)"
+    },
+    "treatment": {
+      "label": "Treatment: (Matibabu)",
+      "type": "textarea"
+    },
+    "admission": {
+      "label": "Admission Required?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "disease_mortality": {
+      "label": "Did Disease Lead To Death? (Je ugonjwa ulisababisha kifo?)",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "referral": {
+      "label": "Referral?",
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "referral_location": {
+      "label": "If Yes, Referral Location:",
+      "type": "select"
+    }
+  }
+}
