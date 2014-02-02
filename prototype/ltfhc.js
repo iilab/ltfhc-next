@@ -49,7 +49,7 @@ $(document).ready(function() {
 
 		adjustPath: function(res, base) {
 			res = base + res;
-			if (res.indexOf(".json")) {
+			if (res.indexOf(".json") == -1) {
 				res += ".json"
 			}
 			return res;
