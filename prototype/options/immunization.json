@@ -1,91 +1,9 @@
 {
   "fields": {
-    "vaccine_dispensed0": {
+    "vaccine_dispensed": {
       "label": "Medication Dispensed:",
-      "type": "checkbox",
-      "rightLabel": "BCG",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed1": {
-      "type": "checkbox",
-      "rightLabel": "OPV-0",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed2": {
-      "type": "checkbox",
-      "rightLabel": "OPV-1",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed3": {
-      "type": "checkbox",
-      "rightLabel": "OPV-2",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed4": {
-      "type": "checkbox",
-      "rightLabel": "OPV-3",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed5": {
-      "type": "checkbox",
-      "rightLabel": "DTP-HB",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed6": {
-      "type": "checkbox",
-      "rightLabel": "DPT 1",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed7": {
-      "type": "checkbox",
-      "rightLabel": "DPT 2",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed8": {
-      "type": "checkbox",
-      "rightLabel": "DPT 3",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed9": {
-      "type": "checkbox",
-      "rightLabel": "Measles",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed10": {
-      "type": "checkbox",
-      "rightLabel": "Tentanus Toxoid 1",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed11": {
-      "type": "checkbox",
-      "rightLabel": "Tentanus Toxoid 2",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed12": {
-      "type": "checkbox",
-      "rightLabel": "Tentanus Toxoid 3",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed13": {
-      "type": "checkbox",
-      "rightLabel": "Tentanus Toxoid 4",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed14": {
-      "type": "checkbox",
-      "rightLabel": "Tentanus Toxoid 5",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed15": {
-      "type": "checkbox",
-      "rightLabel": "Vitamin A",
-      "name": "vaccine_dispensed[]"
-    },
-    "vaccine_dispensed16": {
-      "type": "checkbox",
-      "rightLabel": "Other",
-      "name": "vaccine_dispensed[]"
-    },
+      "type": "checkbox"
+		},
     "vaccine_effect": {
       "label": "Immediate Effect of Vaccination:",
       "type": "select"

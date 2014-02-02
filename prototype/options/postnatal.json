@@ -8,26 +8,17 @@
 			"label": "Completed all 4 visits?",
 			"type": "radio"
 		},
-		"maternal_diagnoses0": {
+		"maternal_diagnoses": {
 			"label": "Maternal diagnoses, check all that apply",
-			"type": "checkbox",
-			"rightLabel": "severe anemia (Hb<8.5)"
-		},
-		"maternal_diagnoses1": {
-			"type": "checkbox",
-			"rightLabel": "mental disorder"
-		},
-		"maternal_diagnoses2": {
-			"type": "checkbox",
-			"rightLabel": "gaping or infected perineum"
-		},
-		"maternal_diagnoses3": {
-			"type": "checkbox",
-			"rightLabel": "fistula"
+			"type": "checkbox"
 		},
 		"delivered_outside": {
 			"label": "Delivered outside the health center?",
 			"type": "radio"
+		},
+		"anemia_severe": {
+			"label": "anemia_severe",
+			"type": "select"
 		},
 		"family_planning_counseling": {
 			"label": "Counseling regarding family planning given?",
@@ -53,16 +44,12 @@
 			"label": "How is the child fed?",
 			"type": "select"
 		},
-		"bcg_opv0": {
+		"bcg_opv": {
 			"label": "Please check if given to the child",
 			"type": "checkbox",
 			"rightLabel": "BCG"
 		},
-		"bcg_opv1": {
-			"type": "checkbox",
-			"rightLabel": "OPV-0"
-		},
-		"less_than_2.5kg": {
+		"less_than_2_5kg": {
 			"label": "Child born less than 2.5kg?",
 			"type": "radio"
 		},
@@ -70,26 +57,9 @@
 			"label": "Kangaroo care given at home?",
 			"type": "radio"
 		},
-		"child_diagnoses0": {
+		"child_diagnoses": {
 			"label": "Child diagnoses",
-			"type": "checkbox",
-			"rightLabel": "septicemia"
-		},
-		"child_diagnoses1": {
-			"type": "checkbox",
-			"rightLabel": "umbilical cord infection"
-		},
-		"child_diagnoses2": {
-			"type": "checkbox",
-			"rightLabel": "severe anemia (Hb<10)"
-		},
-		"child_diagnoses3": {
-			"type": "checkbox",
-			"rightLabel": "skin infection"
-		},
-		"child_diagnoses4": {
-			"type": "checkbox",
-			"rightLabel": "neonatal death"
+			"type": "checkbox"
 		}
 	}
 }

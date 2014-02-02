@@ -1,290 +1,80 @@
 {
-    "title": "Disease Diagnosis",
-    "_id": "disease_diagnosis",
-    "type": "object",
-    "properties": {
-      "complaint0": {
-        "type": "string"
-      },
-      "complaint1": {
-        "type": "string"
-      },
-      "complaint2": {
-        "type": "string"
-      },
-      "complaint3": {
-        "type": "string"
-      },
-      "complaint4": {
-        "type": "string"
-      },
-      "complaint5": {
-        "type": "string"
-      },
-      "complaint6": {
-        "type": "string"
-      },
-      "complaint7": {
-        "type": "string"
-      },
-      "complaint8": {
-        "type": "string"
-      },
-      "complaint9": {
-        "type": "string"
-      },
-      "complaint10": {
-        "type": "string"
-      },
-      "complaint11": {
-        "type": "string"
-      },
-      "complaint12": {
-        "type": "string"
-      },
-      "complaint13": {
-        "type": "string"
-      },
-      "complaint14": {
-        "type": "string"
-      },
-      "complaint15": {
-        "type": "string"
-      },
-      "complaint_other": {
-        "type": "string"
-      },
-      "symptom0": {
-        "type": "string"
-      },
-      "symptom1": {
-        "type": "string"
-      },
-      "symptom2": {
-        "type": "string"
-      },
-      "symptom3": {
-        "type": "string"
-      },
-      "symptom4": {
-        "type": "string"
-      },
-      "symptom5": {
-        "type": "string"
-      },
-      "symptom6": {
-        "type": "string"
-      },
-      "symptom7": {
-        "type": "string"
-      },
-      "symptom8": {
-        "type": "string"
-      },
-      "symptom9": {
-        "type": "string"
-      },
-      "symptom10": {
-        "type": "string"
-      },
-      "symptom11": {
-        "type": "string"
-      },
-      "symptom12": {
-        "type": "string"
-      },
-      "symptom13": {
-        "type": "string"
-      },
-      "symptom14": {
-        "type": "string"
-      },
-      "symptom15": {
-        "type": "string"
-      },
-      "symptom_other": {
-        "type": "string"
-      },
-      "history0": {
-        "type": "string"
-      },
-      "history1": {
-        "type": "string"
-      },
-      "history2": {
-        "type": "string"
-      },
-      "history3": {
-        "type": "string"
-      },
-      "history4": {
-        "type": "string"
-      },
-      "history5": {
-        "type": "string"
-      },
-      "history6": {
-        "type": "string"
-      },
-      "history7": {
-        "type": "string"
-      },
-      "history8": {
-        "type": "string"
-      },
-      "history9": {
-        "type": "string"
-      },
-      "history10": {
-        "type": "string"
-      },
-      "history_other": {
-        "type": "string"
-      },
-      "note": {
-        "type": "string"
-      },
-      "testing_method": {
-        "type": "string"
-      },
-      "diagnosis": {
-        "type": "string",
-        "enum": [
-          "Acute Flacid Paralysis",
-          "Cholera",
-          "Dysentery",
-          "Measles",
-          "Meningitis",
-          "Neonatal Tetanus",
-          "Plague",
-          "Relapsing Fever (Louse borne typhus)",
-          "Yellow Fever",
-          "Influenza",
-          "Typhoid",
-          "Rabies/Suspected rabies bites",
-          "Trachoma",
-          "Onchocerciasis",
-          "Trypanosomiasis",
-          "Viral haemorrhagic fevers",
-          "Keratoconjuctivitis",
-          "Diarrhea, Acute (< 14 days)",
-          "Diarrhea, Chronic (.> 14 days)",
-          "Malaria",
-          "Blood Slide positive",
-          "mRDT postivie",
-          "Clinical (No Test)",
-          "In Pregnancy",
-          "Schistosomiasis",
-          "STI Genital Discharge Syndrome (GDS)",
-          "STI Genital Ulcer Diseases (GUD)",
-          "STI Pelvic Inflammatory Diseases (PID)",
-          "Sexually Transmitted Infections, Other",
-          "Tuberculosis",
-          "Leprosy",
-          "Intestinal Worms",
-          "Anaemia, Mild / Moderate",
-          "Anaemia, Severe",
-          "Sickle cell Disease",
-          "HIV Positive",
-          "HIV Infection, Symptomatic",
-          "Ear Infection, Acute",
-          "Ear Infection, Chronic",
-          "Eye Infection",
-          "Cataract",
-          "Eye Diseases, Other non-infectious",
-          "Skin Infection, Non-Fungal",
-          "Skin Infection, Fungal",
-          "Skin Diseases, Non-infectious",
-          "Fungal Infection, Non-skin",
-          "Osteomyelitis",
-          "Neonatal sepsis",
-          "Low birth weight and Prematurity complications",
-          "Birth asphyxia",
-          "Acute Respiratory Infection (ARI)",
-          "Pneumonia, Non-Severe",
-          "Cerebral palsy",
-          "Pneumonia, Severe",
-          "Upper Respiratory Infections (Pharyngitis, Tonsillitis, Rhinitis)",
-          "Urinary Tract Infections (UTI)",
-          "Gynaecological diseases, Other",
-          "Kwashiokor",
-          "Marasmus",
-          "Marasmic Kwashiokor",
-          "Moderate Malnutrition",
-          "Vitamin A Deficiency",
-          "Other Nutritional Disorders",
-          "Caries",
-          "Periodontal Diseases",
-          "Dental Emergency Care",
-          "Dental Conditions, Other",
-          "Fractures / Dislocations",
-          "Burn",
-          "Poisoning",
-          "Road Traffic Accidents",
-          "Pregnancy complications",
-          "Abortion",
-          "Snake and Insect Bites",
-          "Emergencies, Other",
-          "Surgical conditions, other",
-          "Epilepsy",
-          "Psychoses",
-          "Neurosis",
-          "Mental conditions, Other",
-          "Hypertension",
-          "Rheumatic Fever",
-          "Cardiovascular Diseases, Other",
-          "Bronchial Asthma",
-          "Peptic Ulcers",
-          "GIT Diseases, Other Non-infectious",
-          "Diabetes Mellitus",
-          "Rheumatoid and Joint Diseases",
-          "Thyroid Diseases",
-          "Neoplasms",
-          "Ill Defined Symptoms (no Diagnosis)",
-          "Diagnoses, Other",
-          "Waliopewa Rufaa"
-        ]
-      },
-      "diagnosis_other": {
-        "type": "string"
-      },
-      "treatment": {
-        "type": "string"
-      },
-      "admission": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "disease_mortality": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "referral": {
-        "type": "string",
-        "enum": [
-          "Yes",
-          "No"
-        ]
-      },
-      "referral_location": {
-        "type": "string",
-        "enum": [
-          "Not Applicable",
-          "Laboratory",
-          "Pharmacy",
-          "Antenatal Clinic",
-          "TB / Leprosy Department",
-          "CTC",
-          "Reproductive Counseling",
-          "Immunization"
-        ]
-      }
-    }
-
+	"collection": "forms",
+	"class": "schema",
+	"parent": "visit",
+	"_id": "forms/schema/visit/diseasediagnosis",
+	"formname": "Disease Diagnosis",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"title": "Disease Diagnosis",
+	"properties": {
+		"complaint": {
+			"$ref": "lists/#symptoms"
+		},
+		"complaint_other": {
+			"type": "string"
+		},
+		"symptom": {
+			"$ref": "lists/#symptoms"
+		},
+		"symptom_other": {
+			"type": "string"
+		},
+		"history": {
+			"$ref": "lists/#histories"
+		},
+		"history_other": {
+			"type": "string"
+		},
+		"note": {
+      "title": "Examination Notes:",
+			"type": "string"
+		},
+		"testing_method": {
+      "title": "Tested By Following Method:",
+			"type": "string"
+		},
+		"diagnosis": {
+      "title": "Disease Diagnosis:",
+			"type": "string",
+			"$ref": "lists/#diseases"
+		},
+		"diagnosis_other": {
+      "title": "Other Disease Diagnosis:",
+			"type": "string"
+		},
+		"treatment": {
+      "title": "Treatment:",
+			"type": "string"
+		},
+		"admission": {
+      "title": "Admission Required?",
+			"type": "boolean",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"disease_mortality": {
+      "title": "Did Disease Lead To Death?",
+			"type": "boolean",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"referral": {
+      "title": "Referral?",
+			"type": "string",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"referral_location": {
+      "title": "If Yes, Referral Location:",
+			"type": "string",
+			"$ref": "lists/#referral_locations"
+		}
+	}
 }

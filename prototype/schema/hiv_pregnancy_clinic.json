@@ -5,95 +5,87 @@
     "properties": {
       "hiv_status_prior_firstvisit": {
         "type": "string",
-        "enum": [
-          "Positive",
-          "Negative",
-          "Unknown"
-        ]
+				"$ref": "lists/#hiv_statuses"
       },
       "tested_hiv_firstvisit": {
         "type": "string",
         "enum": [
-          "Yes",
-          "No"
+          "yes",
+          "no"
         ]
       },
       "counseled_hiv_prior_test": {
         "type": "string",
         "enum": [
-          "Yes",
-          "No"
+          "yes",
+          "no"
         ]
       },
       "first_hiv_status": {
         "type": "string",
-        "enum": [
-          "Positive",
-          "Negative",
-          "Unknown"
-        ]
+				"$ref": "lists/#hiv_statuses"
       },
       "second_hiv_test": {
         "type": "string",
         "enum": [
-          "Yes",
-          "No"
+          "yes",
+          "no"
         ]
       },
       "partner_hiv": {
         "type": "string",
         "enum": [
-          "Yes",
-          "No"
+          "yes",
+          "no"
         ]
       },
       "partner_positive": {
         "type": "string",
         "enum": [
-          "Yes",
-          "No"
+          "yes",
+          "no"
         ]
       },
       "discordant_couple": {
         "type": "string",
         "enum": [
-          "Yes",
-          "No"
+          "yes",
+          "no"
         ]
       },
       "combo_drugs": {
         "type": "string",
         "enum": [
-          "Yes",
-          "No"
+          "yes",
+          "no"
         ]
       },
       "art_drugs": {
         "type": "string",
         "enum": [
-          "Yes",
-          "No"
+          "yes",
+          "no"
         ]
       },
       "ctx_given": {
         "type": "string",
         "enum": [
-          "Yes",
-          "No"
+          "yes",
+          "no"
         ]
       },
       "counsel_feeding": {
         "type": "string",
         "enum": [
-          "Yes",
-          "No"
+          "yes",
+          "no"
         ]
       },
       "referred_ctc": {
         "type": "string",
         "enum": [
-          "Yes",
-          "No",
+          "yes",
+          "no",
           "Unknown"
         ]
       }

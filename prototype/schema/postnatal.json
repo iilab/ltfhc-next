@@ -9,109 +9,85 @@
 		"completed_4_visits": {
 			"type": "string",
 			"enum": [
-				"Yes",
-				"No"
+				"yes",
+				"no"
 			]
 		},
-		"maternal_diagnoses0": {
-			"type": "string"
-		},
-		"maternal_diagnoses1": {
-			"type": "string"
-		},
-		"maternal_diagnoses2": {
-			"type": "string"
-		},
-		"maternal_diagnoses3": {
-			"type": "string"
+		"maternal_diagnoses": {
+			"type": "string",
+			"$ref": "lists/#postnatal_mother_diagnoses"
 		},
 		"delivered_outside": {
 			"type": "string",
 			"enum": [
-				"Yes",
-				"No"
+				"yes",
+				"no"
 			]
 		},
+    "anemia_severe": {
+			"type": "string",
+			"$ref": "lists/#anemia_severities"
+    },
 		"family_planning_counseling": {
 			"type": "string",
 			"enum": [
-				"Yes",
-				"No"
+				"yes",
+				"no"
 			]
 		},
 		"family_planning_method_after_delivery": {
 			"type": "string",
 			"enum": [
-				"Yes",
-				"No"
+				"yes",
+				"no"
 			]
 		},
 		"contraception_within_40_days": {
 			"type": "string",
 			"enum": [
-				"Yes",
-				"No"
+				"yes",
+				"no"
 			]
 		},
 		"family_planning_method_after_miscarriage": {
 			"type": "string",
 			"enum": [
-				"Yes",
-				"No"
+				"yes",
+				"no"
 			]
 		},
 		"postnatal_hiv_positive": {
 			"type": "string",
 			"enum": [
-				"Yes",
-				"No"
+				"yes",
+				"no"
 			]
 		},
 		"milk_type": {
 			"type": "string",
-			"enum": [
-				"Mother's Milk ONLY",
-				"Mother's Milk + Formula",
-				"Mother's Milk + Other",
-				"Formula ONLY",
-				"Formula + Other",
-				"Other ONLY"
-			]
+			"$ref": "lists/#milk_types"
 		},
-		"bcg_opv0": {
-			"type": "string"
+		"bcg_opv": {
+			"type": "string",
+			"$ref": "lists/#immunizations_postnatal"
 		},
-		"bcg_opv1": {
-			"type": "string"
-		},
-		"less_than_2.5kg": {
+		"less_than_2_5kg": {
 			"type": "string",
 			"enum": [
-				"Yes",
-				"No"
+				"yes",
+				"no"
 			]
 		},
 		"kangaroo_care": {
 			"type": "string",
 			"enum": [
-				"Yes",
-				"No"
+				"yes",
+				"no"
 			]
 		},
-		"child_diagnoses0": {
-			"type": "string"
-		},
-		"child_diagnoses1": {
-			"type": "string"
-		},
-		"child_diagnoses2": {
-			"type": "string"
-		},
-		"child_diagnoses3": {
-			"type": "string"
-		},
-		"child_diagnoses4": {
-			"type": "string"
+		"child_diagnoses": {
+			"type": "string",
+			"$ref": "lists/#postnatal_child_diagnoses"
 		}
 	}
 }

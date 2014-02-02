@@ -3,65 +3,40 @@
 	"_id": "tb_leprosy",
 	"type": "object",
 	"properties": {
-		"diagnosis0": {
-			"type": "string"
-		},
-		"diagnosis1": {
-			"type": "string"
+		"diagnosis": {
+			"type": "string",
+			"$ref": "lists/#leprosy_diagnoses"
 		},
 		"leprosy_classification": {
 			"type": "string",
-			"enum": [
-				"MB (A)",
-				"MB (C)",
-				"PB (A)",
-				"PB (C)"
-			]
+			"$ref": "lists/#leprosy_classifications"
 		},
 		"leprosy_status": {
 			"type": "string",
-			"enum": [
-				"Return after default",
-				"Relapse after MDT",
-				"Relapse after DDS/other"
-			]
+			"$ref": "lists/#leprosy_statuses"
 		},
 		"leprosy_disability": {
 			"type": "string",
-			"enum": [
-				"Grade 0",
-				"Grade 1",
-				"Grade 2"
-			]
+			"$ref": "lists/#leprosy_disabilities"
 		},
 		"leprosy_result": {
 			"type": "string",
-			"enum": [
-				"Treatment completed",
-				"Died",
-				"Transferred out",
-				"Defaulter",
-				"Not applicable"
-			]
+			"$ref": "lists/#leprosy_results"
 		},
 		"coritosteroid_treatment": {
 			"type": "string",
 			"enum": [
-				"Yes",
-				"No"
+				"yes",
+				"no"
 			]
+		},
+		"tb_classification": {
+			"type": "string",
+			"$ref": "lists/#tb_classifications"
 		},
 		"tb_regimen": {
 			"type": "string",
-			"enum": [
-				"2RHZE/4RH",
-				"2RHZ/4RH",
-				"2SRHZE/1RHZE/5RH3E3",
-				"2SRHZE/1RHZE/5RHE",
-				"2RHZE/6EH",
-				"health facility DOT",
-				"home-based DOT"
-			]
+			"$ref": "lists/#tb_regimens"
 		}
 	}
 }

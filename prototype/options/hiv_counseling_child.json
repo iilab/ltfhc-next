@@ -10,10 +10,10 @@
       ]
     },
     "milk_source": {
-      "label": "Child Milk Source:",
+      "label": "Child Milk Source: (Chanzo cha maziwa ya mtoto?)",
       "type": "select"
     },
-    "hiv_diagnosis_dna_pcr": {
+		"hiv_diagnosis_dna_pcr": {
       "label": "Was Child Diagnosed With HIV Using DNA-PCR(DBS)?",
       "type": "radio",
       "enum": [
