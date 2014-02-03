@@ -436,11 +436,13 @@ body {
 }
 
 .alert {
-	margin: 0px auto;
-	width: 350px;
+	margin: 0px -250px 0px;
+	width: 500px;
 	text-align: center;
-	height: 38px;
-	padding-top: 7px;
+	top: 40px;
+	position: absolute;
+	left: 50%;
+	clear: none;
 }
 
 .clickable {
@@ -852,11 +854,18 @@ display: block;
 	color: @gray;
 }
 
-#visit-form input.form-control, #patient-form select.form-control {
-	font-size:1.2em;
-	font-weight: bold;
-	color: #000;
-}
+#visit-form, #patient-form {
+	input.form-control, select.form-control {
+		font-size:1.2em;
+		font-weight: bold;
+		color: #000;
+	}
+	textarea.form-control {
+		font-weight: bold;
+		color: #000;	
+	}
+} 
+
 
 #visit-form .btn-info {
 	margin-left:5px;
