@@ -9,18 +9,21 @@
 	"title": "Disease Diagnosis",
 	"properties": {
 		"complaint": {
+			"type": "array",
 			"$ref": "lists/#symptoms"
 		},
 		"complaint_other": {
 			"type": "string"
 		},
 		"symptom": {
+			"type": "array",
 			"$ref": "lists/#symptoms"
 		},
 		"symptom_other": {
 			"type": "string"
 		},
 		"history": {
+			"type": "array",
 			"$ref": "lists/#histories"
 		},
 		"history_other": {

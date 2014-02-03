@@ -17,8 +17,8 @@
     "anaphylaxis": {
       "type": "string",
       "enum": [
-        "Yes",
-        "No"
+        "yes",
+        "no"
       ]
     },
     "side_effect_counseling": {
@@ -27,8 +27,8 @@
     "pregnant": {
       "type": "string",
       "enum": [
-        "Yes",
-        "No"
+        "yes",
+        "no"
       ]
     }
   }

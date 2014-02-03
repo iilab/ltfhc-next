@@ -6,6 +6,9 @@
 		"patient_id": {
 			"type": "string"
 		},
+		"_formdata": {
+			"type": "string"
+		},
 		"clinic": {
 			"type": "string"
 		},
@@ -15,7 +18,7 @@
 		"note": {
 			"type": "string"
 		},
-		"form_list0": {
+		"reasons": {
 			"id": "reasons",
 			"$ref": "#/schema/parent/visit/list"
 		},

@@ -3,6 +3,9 @@
 		"patient_id": {
 			"type": "hidden"
 		},
+		"_formdata": {
+			"type": "hidden"
+		},
 		"clinic": {
 			"label": "Clinic:"
 		},

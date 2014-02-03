@@ -31,7 +31,7 @@
 		},
 		"birth_comp": {
 			"id": "birth_comp",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"pph",
 				"eclampsia",
@@ -50,7 +50,7 @@
 		},
 		"cervical_symptoms": {
 			"id": "cervical_symptoms",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"vaginal_discharge",
 				"post_coital_bleeding"
@@ -295,7 +295,7 @@
 		},
 		"genders": {
 			"id": "genders",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"female",
 				"male",
@@ -304,7 +304,7 @@
 		},
 		"histories": {
 			"id": "histories",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"other",
 				"hypertension",
@@ -362,7 +362,7 @@
 		},
 		"immunizations": {
 			"id": "immunizations",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"bcg",
 				"opv_0",
@@ -386,7 +386,7 @@
 		},
 		"immunizations_postnatal": {
 			"id": "immunizations_postnatal",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"bcg",
 				"opv_0"
@@ -451,7 +451,7 @@
 		},
 		"leprosy_diagnoses": {
 			"id": "leprosy_diagnoses",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"tb",
 				"leprosy"
@@ -519,7 +519,7 @@
 		},
 		"postnatal_child_diagnoses": {
 			"id": "postnatal_child_diagnoses",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"septicemia",
 				"umbilical_cord_infection",
@@ -530,7 +530,7 @@
 		},
 		"postnatal_mother_diagnoses": {
 			"id": "postnatal_mother_diagnoses",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"severe_anemia_hb_less_8_5",
 				"mental_disorder",
@@ -540,7 +540,7 @@
 		},
 		"pregnancy_complications": {
 			"id": "pregnancy_complications",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"fetal_death",
 				"neonatal_death",
@@ -563,7 +563,7 @@
 		},
 		"pregnancy_diseases": {
 			"id": "pregnancy_diseases",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"tuberculosis",
 				"diabetes",
@@ -572,7 +572,7 @@
 		},
 		"prenatal_prob": {
 			"id": "prenatal_prob",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"aph",
 				"prom",
@@ -604,7 +604,7 @@
 		},
 		"symptoms": {
 			"id": "symptoms",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"other",
 				"body_aches",
@@ -626,7 +626,7 @@
 		},
 		"tb_classifications": {
 			"id": "tb_classifications",
-			"type": "string",
+			"type": "array",
 			"enum": [
 				"afb_plus",
 				"afb_minus",
