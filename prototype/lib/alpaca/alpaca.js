@@ -26,6 +26,7 @@ address:
  * Based on:
  *   https://github.com/umdjs/umd/blob/master/returnExports.js
  */
+
 (function (root, factory)
 {
     var umdEnabled = true;
