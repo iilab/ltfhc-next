@@ -45,6 +45,59 @@ var connector = Alpaca.Connector.extend({
 		return this.base(arr.join("#"), successCallback, errorCallback);
 	},
 
+    /**
+     * Loads a general document through Ajax call.
+     *
+     * This uses jQuery to perform the Ajax call.  If you need to customize connectivity to your own remote server,
+     * this would be the appropriate place to do so.
+     *
+     * @param {String} uri uri to be loaded
+     * @param {Boolean} isJson Whether the document is a JSON or not.
+     * @param {Function} onSuccess onSuccess callback.
+     * @param {Function} onError onError callback.
+     */
+    loadUri : function(uri, isJson, onSuccess, onError) {
+        var ajaxConfigs = {
+            "url": uri,
+            "type": "get",
+            "success": function(jsonDocument) {
+
+                json_cache.put(uri, jsonDocument);
+
+                if (onSuccess && Alpaca.isFunction(onSuccess)) {
+                    onSuccess(jsonDocument);
+                }
+            },
+            "error": function(jqXHR, textStatus, errorThrown) {
+                if (onError && Alpaca.isFunction(onError)) {
+                    onError({
+                        "message":"Unable to load data from uri : " + uri,
+                        "stage": "DATA_LOADING_ERROR",
+                        "details": {
+                            "jqXHR" : jqXHR,
+                            "textStatus" : textStatus,
+                            "errorThrown" : errorThrown
+                        }
+                    });
+                }
+            }
+        };
+
+        if (isJson) {
+            ajaxConfigs.dataType = "json";
+        } else {
+            ajaxConfigs.dataType = "text";
+        }
+
+        var cachedDocument = json_cache.get(uri);
+
+        if (cachedDocument !== false && onSuccess && Alpaca.isFunction(onSuccess)) {
+            onSuccess(cachedDocument);
+        } else {
+            $.ajax(ajaxConfigs);
+        }
+    },
+
 	adjustPath: function(res, base) {
 		if (document.URL.indexOf("_rewrite") != -1) {
 			base = document.URL.split("_rewrite")[0] + "_rewrite" + base

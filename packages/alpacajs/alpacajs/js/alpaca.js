@@ -9416,12 +9416,11 @@ var equiv = function () {
          * @param {Function} onError onError callback.
          */
         loadUri : function(uri, isJson, onSuccess, onError) {
-						var ajaxConfigs = {
+            var ajaxConfigs = {
                 "url": uri,
                 "type": "get",
                 "success": function(jsonDocument) {
-                    json_cache.put(uri, jsonDocument);
-										if (onSuccess && Alpaca.isFunction(onSuccess)) {
+                    if (onSuccess && Alpaca.isFunction(onSuccess)) {
                         onSuccess(jsonDocument);
                     }
                 },
@@ -9445,15 +9444,8 @@ var equiv = function () {
             } else {
                 ajaxConfigs.dataType = "text";
             }
-						
-						var cachedDocument = json_cache.get(uri);
-						
-					  if (cachedDocument !== false && onSuccess && Alpaca.isFunction(onSuccess)) {
-							onSuccess(cachedDocument);
-					  } else {
-	            $.ajax(ajaxConfigs);
-					  }
-						
+
+            $.ajax(ajaxConfigs);
         },
 
         /**
