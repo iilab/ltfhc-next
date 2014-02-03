@@ -11,9 +11,11 @@
   ],
   "url": "http://github.com/iilab/kanso-alpacajs",
   "attachments": ["alpacajs/js", "alpacajs/css"], 
+  "modules_attachment": false,
   "dependencies": {
     "attachments": null,
     "jquery": null,
-    "bootstrap": null
+    "bootstrap": null,
+    "modules": ">=0.0.8"
   }
 }
