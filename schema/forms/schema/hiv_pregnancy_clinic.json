@@ -86,7 +86,7 @@
         "enum": [
           "yes",
           "no",
-          "Unknown"
+          "unknown"
         ]
       }
     }

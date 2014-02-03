@@ -31,7 +31,12 @@
     },
     "birthdate": {
       "label": "Birth Date:",
-      "type": "date"
+      "type": "date",
+      "datepicker": {
+          "hideIfNoPrevNextType": true,
+          "yearRange": "1900:+0",
+					"changeYear": true
+      }
     },
     "approximate_age": {
       "label": "Approximate Age:",

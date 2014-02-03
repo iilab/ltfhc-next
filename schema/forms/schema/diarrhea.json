@@ -13,43 +13,43 @@
     "given_ors": {
       "type": "string",
       "enum": [
-        true,
-        false
+        "yes",
+        "no"
       ]
     },
     "given_zinc": {
       "type": "string",
       "enum": [
-        true,
-        false
+        "yes",
+        "no"
       ]
     },
     "blood_in_stool": {
       "type": "string",
       "enum": [
-        true,
-        false
+        "yes",
+        "no"
       ]
     },
     "admission": {
       "type": "string",
       "enum": [
-        true,
-        false
+        "yes",
+        "no"
       ]
     },
     "referral": {
       "type": "string",
       "enum": [
-        true,
-        false
+        "yes",
+        "no"
       ]
     },
     "diarrhea_mortality": {
       "type": "string",
       "enum": [
-        true,
-        false
+        "yes",
+        "no"
       ]
     }
   }
