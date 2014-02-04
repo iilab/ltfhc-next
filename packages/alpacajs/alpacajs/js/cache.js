@@ -1,1 +1,0 @@
-var json_cache = new ajaxCache('URL', true, 30000);
