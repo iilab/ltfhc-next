@@ -1,44 +1,39 @@
 {
-
-    "fields": {
-        "injury_date": {
-            "label": "Injury Date: (Tarehe ya majeraha)",
-            "type": "date"
-        },
-        "injury_type": {
-            "label": "Type of Injury: (Aina ya majeraha)",
-            "type": "select"
-        },
-        "injury_other": {
-            "label": "Other Injury:"
-        },
-        "testing_method": {
-            "label": "Testing Method: (Amepimwa kwa njia zifuatazo)",
-            "type": "textarea"
-        },
-        "treatment": {
-            "label": "Treatment: (Matibabu)",
-            "type": "select"
-        },
-        "treatment_other": {
-            "label": "Other Treatment: (Matibabu nyingine)",
-            "type": "textarea"
-        },
-        "admission": {
-            "label": "Admission Required?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "injury_mortality": {
-            "label": "Did Injury Lead to Death? (Je majeraha yalisababisha kifo?)",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        }
-    }
+	"title": "Bodily Injury",
+	"_id": "bodily_injury",
+	"type": "object",
+	"properties": {
+		"injury_date": {
+			"type": "date"
+		},
+		"injury_type": {
+			"type": "string",
+			"$ref": "lists/#injuries"
+		},
+		"injury_other": {
+			"type": "string"
+		},
+		"testing_method": {
+			"type": "string"
+		},
+		"treatment": {
+			"type": "string",
+			"$ref": "lists/#injury_treatments"
+		},
+		"treatment_other": {
+			"type": "string"
+		},
+		"admission": {
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"injury_mortality": {
+			"enum": [
+				"yes",
+				"no"
+			]
+		}
+	}
 }

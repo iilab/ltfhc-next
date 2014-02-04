@@ -1,89 +1,86 @@
 {
-    "fields": {
-        "height": {
-            "label": "Height (cm)",
-            "type": "number"
-        },
-        "weight": {
-            "label": "Weight (kg)",
-            "type": "number"
-        },
-        "alben_tablets": {
-            "label": "Given albendazole?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "milk_source": {
-            "label": "Milk Source",
-            "type": "select"
-        },
-        "mother_hiv_status": {
-            "label": "Mother's HIV Status",
-            "type": "radio"
-        },
-        "mother_tetanus_delivery": {
-            "label": "Mother given Tetanus vaccine during delivery?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No",
-                "Unknown"
-            ]
-        },
-        "possible_hiv": {
-            "label": "Is HIV Possible?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "hiv_status": {
-            "label": "HIV Status",
-            "type": "select"
-        },
-        "hiv_pcr_test_2mo": {
-            "label": "Tested for HIV by PCR within two months from birth?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "hiv_pcr_test_18mo": {
-            "label": "Tested for HIV by PCR within 6 weeks after stopping breastfeeding or 18 months?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "ctx_status": {
-            "label": "Started on cotrimoxazole between 1 month to 2 months?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "referred_ctc": {
-            "label": "Referred CTC?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "bed_net_voucher": {
-            "label": "Given bed net voucher?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        }
-    }
+	"title": "Well Child Visit",
+	"_id": "well_child_visit",
+	"type": "object",
+	"properties": {
+		"height": {
+			"type": "number"
+		},
+		"weight": {
+			"type": "number"
+		},
+		"alben_tablets": {
+			"type": "string",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"milk_source": {
+			"type": "string",
+			"$ref": "lists/#milk_types"
+		},
+		"mother_hiv_status": {
+			"type": "string",
+			"enum": [
+				"Positive",
+				"Negative",
+				"unknown"
+			]
+		},
+		"mother_tetanus_delivery": {
+			"type": "string",
+			"enum": [
+				"yes",
+				"no",
+				"unknown"
+			]
+		},
+		"possible_hiv": {
+			"type": "string",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"hiv_status": {
+			"type": "string",
+			"$ref": "lists/#hiv_statuses"
+		},
+		"hiv_pcr_test_2mo": {
+			"type": "string",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"hiv_pcr_test_18mo": {
+			"type": "string",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"ctx_status": {
+			"type": "string",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"referred_ctc": {
+			"type": "string",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"bed_net_voucher": {
+			"type": "string",
+			"enum": [
+				"yes",
+				"no"
+			]
+		}
+	}
 }
