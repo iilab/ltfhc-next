@@ -4388,6 +4388,1008 @@ var equiv = function () {
         return result;
     };
 
+    Alpaca.series = function(funcs, callback)
+    {
+        async.series(funcs, function() {
+            callback();
+        });
+    };
+
+    Alpaca.parallel = function(funcs, callback)
+    {
+        async.parallel(funcs, function() {
+            callback();
+        });
+    };
+
+    Alpaca.nextTick = function(f)
+    {
+        async.nextTick(function() {
+            f();
+        });
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    // ASYNC
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    /*global setImmediate: false, setTimeout: false, console: false */
+    (function () {
+
+        var async = {};
+
+        // global on the server, window in the browser
+        var root, previous_async;
+
+        root = this;
+        if (root != null) {
+            previous_async = root.async;
+        }
+
+        async.noConflict = function () {
+            root.async = previous_async;
+            return async;
+        };
+
+        function only_once(fn) {
+            var called = false;
+            return function() {
+                if (called) throw new Error("Callback was already called.");
+                called = true;
+                fn.apply(root, arguments);
+            }
+        }
+
+        //// cross-browser compatiblity functions ////
+
+        var _each = function (arr, iterator) {
+            if (arr.forEach) {
+                return arr.forEach(iterator);
+            }
+            for (var i = 0; i < arr.length; i += 1) {
+                iterator(arr[i], i, arr);
+            }
+        };
+
+        var _map = function (arr, iterator) {
+            if (arr.map) {
+                return arr.map(iterator);
+            }
+            var results = [];
+            _each(arr, function (x, i, a) {
+                results.push(iterator(x, i, a));
+            });
+            return results;
+        };
+
+        var _reduce = function (arr, iterator, memo) {
+            if (arr.reduce) {
+                return arr.reduce(iterator, memo);
+            }
+            _each(arr, function (x, i, a) {
+                memo = iterator(memo, x, i, a);
+            });
+            return memo;
+        };
+
+        var _keys = function (obj) {
+            if (Object.keys) {
+                return Object.keys(obj);
+            }
+            var keys = [];
+            for (var k in obj) {
+                if (obj.hasOwnProperty(k)) {
+                    keys.push(k);
+                }
+            }
+            return keys;
+        };
+
+        //// exported async module functions ////
+
+        //// nextTick implementation with browser-compatible fallback ////
+        if (typeof process === 'undefined' || !(process.nextTick)) {
+            if (typeof setImmediate === 'function') {
+                async.nextTick = function (fn) {
+                    // not a direct alias for IE10 compatibility
+                    setImmediate(fn);
+                };
+                async.setImmediate = async.nextTick;
+            }
+            else {
+                async.nextTick = function (fn) {
+                    setTimeout(fn, 0);
+                };
+                async.setImmediate = async.nextTick;
+            }
+        }
+        else {
+            async.nextTick = process.nextTick;
+            if (typeof setImmediate !== 'undefined') {
+                async.setImmediate = function (fn) {
+                    // not a direct alias for IE10 compatibility
+                    setImmediate(fn);
+                };
+            }
+            else {
+                async.setImmediate = async.nextTick;
+            }
+        }
+
+        async.each = function (arr, iterator, callback) {
+            callback = callback || function () {};
+            if (!arr.length) {
+                return callback();
+            }
+            var completed = 0;
+            _each(arr, function (x) {
+                iterator(x, only_once(function (err) {
+                    if (err) {
+                        callback(err);
+                        callback = function () {};
+                    }
+                    else {
+                        completed += 1;
+                        if (completed >= arr.length) {
+                            callback(null);
+                        }
+                    }
+                }));
+            });
+        };
+        async.forEach = async.each;
+
+        async.eachSeries = function (arr, iterator, callback) {
+            callback = callback || function () {};
+            if (!arr.length) {
+                return callback();
+            }
+            var completed = 0;
+            var iterate = function () {
+                iterator(arr[completed], function (err) {
+                    if (err) {
+                        callback(err);
+                        callback = function () {};
+                    }
+                    else {
+                        completed += 1;
+                        if (completed >= arr.length) {
+                            callback(null);
+                        }
+                        else {
+                            iterate();
+                        }
+                    }
+                });
+            };
+            iterate();
+        };
+        async.forEachSeries = async.eachSeries;
+
+        async.eachLimit = function (arr, limit, iterator, callback) {
+            var fn = _eachLimit(limit);
+            fn.apply(null, [arr, iterator, callback]);
+        };
+        async.forEachLimit = async.eachLimit;
+
+        var _eachLimit = function (limit) {
+
+            return function (arr, iterator, callback) {
+                callback = callback || function () {};
+                if (!arr.length || limit <= 0) {
+                    return callback();
+                }
+                var completed = 0;
+                var started = 0;
+                var running = 0;
+
+                (function replenish () {
+                    if (completed >= arr.length) {
+                        return callback();
+                    }
+
+                    while (running < limit && started < arr.length) {
+                        started += 1;
+                        running += 1;
+                        iterator(arr[started - 1], function (err) {
+                            if (err) {
+                                callback(err);
+                                callback = function () {};
+                            }
+                            else {
+                                completed += 1;
+                                running -= 1;
+                                if (completed >= arr.length) {
+                                    callback();
+                                }
+                                else {
+                                    replenish();
+                                }
+                            }
+                        });
+                    }
+                })();
+            };
+        };
+
+
+        var doParallel = function (fn) {
+            return function () {
+                var args = Array.prototype.slice.call(arguments);
+                return fn.apply(null, [async.each].concat(args));
+            };
+        };
+        var doParallelLimit = function(limit, fn) {
+            return function () {
+                var args = Array.prototype.slice.call(arguments);
+                return fn.apply(null, [_eachLimit(limit)].concat(args));
+            };
+        };
+        var doSeries = function (fn) {
+            return function () {
+                var args = Array.prototype.slice.call(arguments);
+                return fn.apply(null, [async.eachSeries].concat(args));
+            };
+        };
+
+
+        var _asyncMap = function (eachfn, arr, iterator, callback) {
+            var results = [];
+            arr = _map(arr, function (x, i) {
+                return {index: i, value: x};
+            });
+            eachfn(arr, function (x, callback) {
+                iterator(x.value, function (err, v) {
+                    results[x.index] = v;
+                    callback(err);
+                });
+            }, function (err) {
+                callback(err, results);
+            });
+        };
+        async.map = doParallel(_asyncMap);
+        async.mapSeries = doSeries(_asyncMap);
+        async.mapLimit = function (arr, limit, iterator, callback) {
+            return _mapLimit(limit)(arr, iterator, callback);
+        };
+
+        var _mapLimit = function(limit) {
+            return doParallelLimit(limit, _asyncMap);
+        };
+
+        // reduce only has a series version, as doing reduce in parallel won't
+        // work in many situations.
+        async.reduce = function (arr, memo, iterator, callback) {
+            async.eachSeries(arr, function (x, callback) {
+                iterator(memo, x, function (err, v) {
+                    memo = v;
+                    callback(err);
+                });
+            }, function (err) {
+                callback(err, memo);
+            });
+        };
+        // inject alias
+        async.inject = async.reduce;
+        // foldl alias
+        async.foldl = async.reduce;
+
+        async.reduceRight = function (arr, memo, iterator, callback) {
+            var reversed = _map(arr, function (x) {
+                return x;
+            }).reverse();
+            async.reduce(reversed, memo, iterator, callback);
+        };
+        // foldr alias
+        async.foldr = async.reduceRight;
+
+        var _filter = function (eachfn, arr, iterator, callback) {
+            var results = [];
+            arr = _map(arr, function (x, i) {
+                return {index: i, value: x};
+            });
+            eachfn(arr, function (x, callback) {
+                iterator(x.value, function (v) {
+                    if (v) {
+                        results.push(x);
+                    }
+                    callback();
+                });
+            }, function (err) {
+                callback(_map(results.sort(function (a, b) {
+                    return a.index - b.index;
+                }), function (x) {
+                    return x.value;
+                }));
+            });
+        };
+        async.filter = doParallel(_filter);
+        async.filterSeries = doSeries(_filter);
+        // select alias
+        async.select = async.filter;
+        async.selectSeries = async.filterSeries;
+
+        var _reject = function (eachfn, arr, iterator, callback) {
+            var results = [];
+            arr = _map(arr, function (x, i) {
+                return {index: i, value: x};
+            });
+            eachfn(arr, function (x, callback) {
+                iterator(x.value, function (v) {
+                    if (!v) {
+                        results.push(x);
+                    }
+                    callback();
+                });
+            }, function (err) {
+                callback(_map(results.sort(function (a, b) {
+                    return a.index - b.index;
+                }), function (x) {
+                    return x.value;
+                }));
+            });
+        };
+        async.reject = doParallel(_reject);
+        async.rejectSeries = doSeries(_reject);
+
+        var _detect = function (eachfn, arr, iterator, main_callback) {
+            eachfn(arr, function (x, callback) {
+                iterator(x, function (result) {
+                    if (result) {
+                        main_callback(x);
+                        main_callback = function () {};
+                    }
+                    else {
+                        callback();
+                    }
+                });
+            }, function (err) {
+                main_callback();
+            });
+        };
+        async.detect = doParallel(_detect);
+        async.detectSeries = doSeries(_detect);
+
+        async.some = function (arr, iterator, main_callback) {
+            async.each(arr, function (x, callback) {
+                iterator(x, function (v) {
+                    if (v) {
+                        main_callback(true);
+                        main_callback = function () {};
+                    }
+                    callback();
+                });
+            }, function (err) {
+                main_callback(false);
+            });
+        };
+        // any alias
+        async.any = async.some;
+
+        async.every = function (arr, iterator, main_callback) {
+            async.each(arr, function (x, callback) {
+                iterator(x, function (v) {
+                    if (!v) {
+                        main_callback(false);
+                        main_callback = function () {};
+                    }
+                    callback();
+                });
+            }, function (err) {
+                main_callback(true);
+            });
+        };
+        // all alias
+        async.all = async.every;
+
+        async.sortBy = function (arr, iterator, callback) {
+            async.map(arr, function (x, callback) {
+                iterator(x, function (err, criteria) {
+                    if (err) {
+                        callback(err);
+                    }
+                    else {
+                        callback(null, {value: x, criteria: criteria});
+                    }
+                });
+            }, function (err, results) {
+                if (err) {
+                    return callback(err);
+                }
+                else {
+                    var fn = function (left, right) {
+                        var a = left.criteria, b = right.criteria;
+                        return a < b ? -1 : a > b ? 1 : 0;
+                    };
+                    callback(null, _map(results.sort(fn), function (x) {
+                        return x.value;
+                    }));
+                }
+            });
+        };
+
+        async.auto = function (tasks, callback) {
+            callback = callback || function () {};
+            var keys = _keys(tasks);
+            if (!keys.length) {
+                return callback(null);
+            }
+
+            var results = {};
+
+            var listeners = [];
+            var addListener = function (fn) {
+                listeners.unshift(fn);
+            };
+            var removeListener = function (fn) {
+                for (var i = 0; i < listeners.length; i += 1) {
+                    if (listeners[i] === fn) {
+                        listeners.splice(i, 1);
+                        return;
+                    }
+                }
+            };
+            var taskComplete = function () {
+                _each(listeners.slice(0), function (fn) {
+                    fn();
+                });
+            };
+
+            addListener(function () {
+                if (_keys(results).length === keys.length) {
+                    callback(null, results);
+                    callback = function () {};
+                }
+            });
+
+            _each(keys, function (k) {
+                var task = (tasks[k] instanceof Function) ? [tasks[k]]: tasks[k];
+                var taskCallback = function (err) {
+                    var args = Array.prototype.slice.call(arguments, 1);
+                    if (args.length <= 1) {
+                        args = args[0];
+                    }
+                    if (err) {
+                        var safeResults = {};
+                        _each(_keys(results), function(rkey) {
+                            safeResults[rkey] = results[rkey];
+                        });
+                        safeResults[k] = args;
+                        callback(err, safeResults);
+                        // stop subsequent errors hitting callback multiple times
+                        callback = function () {};
+                    }
+                    else {
+                        results[k] = args;
+                        async.setImmediate(taskComplete);
+                    }
+                };
+                var requires = task.slice(0, Math.abs(task.length - 1)) || [];
+                var ready = function () {
+                    return _reduce(requires, function (a, x) {
+                        return (a && results.hasOwnProperty(x));
+                    }, true) && !results.hasOwnProperty(k);
+                };
+                if (ready()) {
+                    task[task.length - 1](taskCallback, results);
+                }
+                else {
+                    var listener = function () {
+                        if (ready()) {
+                            removeListener(listener);
+                            task[task.length - 1](taskCallback, results);
+                        }
+                    };
+                    addListener(listener);
+                }
+            });
+        };
+
+        async.waterfall = function (tasks, callback) {
+            callback = callback || function () {};
+            if (tasks.constructor !== Array) {
+                var err = new Error('First argument to waterfall must be an array of functions');
+                return callback(err);
+            }
+            if (!tasks.length) {
+                return callback();
+            }
+            var wrapIterator = function (iterator) {
+                return function (err) {
+                    if (err) {
+                        callback.apply(null, arguments);
+                        callback = function () {};
+                    }
+                    else {
+                        var args = Array.prototype.slice.call(arguments, 1);
+                        var next = iterator.next();
+                        if (next) {
+                            args.push(wrapIterator(next));
+                        }
+                        else {
+                            args.push(callback);
+                        }
+                        async.setImmediate(function () {
+                            iterator.apply(null, args);
+                        });
+                    }
+                };
+            };
+            wrapIterator(async.iterator(tasks))();
+        };
+
+        var _parallel = function(eachfn, tasks, callback) {
+            callback = callback || function () {};
+            if (tasks.constructor === Array) {
+                eachfn.map(tasks, function (fn, callback) {
+                    if (fn) {
+                        fn(function (err) {
+                            var args = Array.prototype.slice.call(arguments, 1);
+                            if (args.length <= 1) {
+                                args = args[0];
+                            }
+                            callback.call(null, err, args);
+                        });
+                    }
+                }, callback);
+            }
+            else {
+                var results = {};
+                eachfn.each(_keys(tasks), function (k, callback) {
+                    tasks[k](function (err) {
+                        var args = Array.prototype.slice.call(arguments, 1);
+                        if (args.length <= 1) {
+                            args = args[0];
+                        }
+                        results[k] = args;
+                        callback(err);
+                    });
+                }, function (err) {
+                    callback(err, results);
+                });
+            }
+        };
+
+        async.parallel = function (tasks, callback) {
+            _parallel({ map: async.map, each: async.each }, tasks, callback);
+        };
+
+        async.parallelLimit = function(tasks, limit, callback) {
+            _parallel({ map: _mapLimit(limit), each: _eachLimit(limit) }, tasks, callback);
+        };
+
+        async.series = function (tasks, callback) {
+            callback = callback || function () {};
+            if (tasks.constructor === Array) {
+                async.mapSeries(tasks, function (fn, callback) {
+                    if (fn) {
+                        fn(function (err) {
+                            var args = Array.prototype.slice.call(arguments, 1);
+                            if (args.length <= 1) {
+                                args = args[0];
+                            }
+                            callback.call(null, err, args);
+                        });
+                    }
+                }, callback);
+            }
+            else {
+                var results = {};
+                async.eachSeries(_keys(tasks), function (k, callback) {
+                    tasks[k](function (err) {
+                        var args = Array.prototype.slice.call(arguments, 1);
+                        if (args.length <= 1) {
+                            args = args[0];
+                        }
+                        results[k] = args;
+                        callback(err);
+                    });
+                }, function (err) {
+                    callback(err, results);
+                });
+            }
+        };
+
+        async.iterator = function (tasks) {
+            var makeCallback = function (index) {
+                var fn = function () {
+                    if (tasks.length) {
+                        tasks[index].apply(null, arguments);
+                    }
+                    return fn.next();
+                };
+                fn.next = function () {
+                    return (index < tasks.length - 1) ? makeCallback(index + 1): null;
+                };
+                return fn;
+            };
+            return makeCallback(0);
+        };
+
+        async.apply = function (fn) {
+            var args = Array.prototype.slice.call(arguments, 1);
+            return function () {
+                return fn.apply(
+                    null, args.concat(Array.prototype.slice.call(arguments))
+                );
+            };
+        };
+
+        var _concat = function (eachfn, arr, fn, callback) {
+            var r = [];
+            eachfn(arr, function (x, cb) {
+                fn(x, function (err, y) {
+                    r = r.concat(y || []);
+                    cb(err);
+                });
+            }, function (err) {
+                callback(err, r);
+            });
+        };
+        async.concat = doParallel(_concat);
+        async.concatSeries = doSeries(_concat);
+
+        async.whilst = function (test, iterator, callback) {
+            if (test()) {
+                iterator(function (err) {
+                    if (err) {
+                        return callback(err);
+                    }
+                    async.whilst(test, iterator, callback);
+                });
+            }
+            else {
+                callback();
+            }
+        };
+
+        async.doWhilst = function (iterator, test, callback) {
+            iterator(function (err) {
+                if (err) {
+                    return callback(err);
+                }
+                if (test()) {
+                    async.doWhilst(iterator, test, callback);
+                }
+                else {
+                    callback();
+                }
+            });
+        };
+
+        async.until = function (test, iterator, callback) {
+            if (!test()) {
+                iterator(function (err) {
+                    if (err) {
+                        return callback(err);
+                    }
+                    async.until(test, iterator, callback);
+                });
+            }
+            else {
+                callback();
+            }
+        };
+
+        async.doUntil = function (iterator, test, callback) {
+            iterator(function (err) {
+                if (err) {
+                    return callback(err);
+                }
+                if (!test()) {
+                    async.doUntil(iterator, test, callback);
+                }
+                else {
+                    callback();
+                }
+            });
+        };
+
+        async.queue = function (worker, concurrency) {
+            if (concurrency === undefined) {
+                concurrency = 1;
+            }
+            function _insert(q, data, pos, callback) {
+                if(data.constructor !== Array) {
+                    data = [data];
+                }
+                _each(data, function(task) {
+                    var item = {
+                        data: task,
+                        callback: typeof callback === 'function' ? callback : null
+                    };
+
+                    if (pos) {
+                        q.tasks.unshift(item);
+                    } else {
+                        q.tasks.push(item);
+                    }
+
+                    if (q.saturated && q.tasks.length === concurrency) {
+                        q.saturated();
+                    }
+                    async.setImmediate(q.process);
+                });
+            }
+
+            var workers = 0;
+            var q = {
+                tasks: [],
+                concurrency: concurrency,
+                saturated: null,
+                empty: null,
+                drain: null,
+                push: function (data, callback) {
+                    _insert(q, data, false, callback);
+                },
+                unshift: function (data, callback) {
+                    _insert(q, data, true, callback);
+                },
+                process: function () {
+                    if (workers < q.concurrency && q.tasks.length) {
+                        var task = q.tasks.shift();
+                        if (q.empty && q.tasks.length === 0) {
+                            q.empty();
+                        }
+                        workers += 1;
+                        var next = function () {
+                            workers -= 1;
+                            if (task.callback) {
+                                task.callback.apply(task, arguments);
+                            }
+                            if (q.drain && q.tasks.length + workers === 0) {
+                                q.drain();
+                            }
+                            q.process();
+                        };
+                        var cb = only_once(next);
+                        worker(task.data, cb);
+                    }
+                },
+                length: function () {
+                    return q.tasks.length;
+                },
+                running: function () {
+                    return workers;
+                }
+            };
+            return q;
+        };
+
+        async.cargo = function (worker, payload) {
+            var working     = false,
+                tasks       = [];
+
+            var cargo = {
+                tasks: tasks,
+                payload: payload,
+                saturated: null,
+                empty: null,
+                drain: null,
+                push: function (data, callback) {
+                    if(data.constructor !== Array) {
+                        data = [data];
+                    }
+                    _each(data, function(task) {
+                        tasks.push({
+                            data: task,
+                            callback: typeof callback === 'function' ? callback : null
+                        });
+                        if (cargo.saturated && tasks.length === payload) {
+                            cargo.saturated();
+                        }
+                    });
+                    async.setImmediate(cargo.process);
+                },
+                process: function process() {
+                    if (working) return;
+                    if (tasks.length === 0) {
+                        if(cargo.drain) cargo.drain();
+                        return;
+                    }
+
+                    var ts = typeof payload === 'number'
+                        ? tasks.splice(0, payload)
+                        : tasks.splice(0);
+
+                    var ds = _map(ts, function (task) {
+                        return task.data;
+                    });
+
+                    if(cargo.empty) cargo.empty();
+                    working = true;
+                    worker(ds, function () {
+                        working = false;
+
+                        var args = arguments;
+                        _each(ts, function (data) {
+                            if (data.callback) {
+                                data.callback.apply(null, args);
+                            }
+                        });
+
+                        process();
+                    });
+                },
+                length: function () {
+                    return tasks.length;
+                },
+                running: function () {
+                    return working;
+                }
+            };
+            return cargo;
+        };
+
+        var _console_fn = function (name) {
+            return function (fn) {
+                var args = Array.prototype.slice.call(arguments, 1);
+                fn.apply(null, args.concat([function (err) {
+                    var args = Array.prototype.slice.call(arguments, 1);
+                    if (typeof console !== 'undefined') {
+                        if (err) {
+                            if (console.error) {
+                                console.error(err);
+                            }
+                        }
+                        else if (console[name]) {
+                            _each(args, function (x) {
+                                console[name](x);
+                            });
+                        }
+                    }
+                }]));
+            };
+        };
+        async.log = _console_fn('log');
+        async.dir = _console_fn('dir');
+        /*async.info = _console_fn('info');
+         async.warn = _console_fn('warn');
+         async.error = _console_fn('error');*/
+
+        async.memoize = function (fn, hasher) {
+            var memo = {};
+            var queues = {};
+            hasher = hasher || function (x) {
+                return x;
+            };
+            var memoized = function () {
+                var args = Array.prototype.slice.call(arguments);
+                var callback = args.pop();
+                var key = hasher.apply(null, args);
+                if (key in memo) {
+                    callback.apply(null, memo[key]);
+                }
+                else if (key in queues) {
+                    queues[key].push(callback);
+                }
+                else {
+                    queues[key] = [callback];
+                    fn.apply(null, args.concat([function () {
+                        memo[key] = arguments;
+                        var q = queues[key];
+                        delete queues[key];
+                        for (var i = 0, l = q.length; i < l; i++) {
+                            q[i].apply(null, arguments);
+                        }
+                    }]));
+                }
+            };
+            memoized.memo = memo;
+            memoized.unmemoized = fn;
+            return memoized;
+        };
+
+        async.unmemoize = function (fn) {
+            return function () {
+                return (fn.unmemoized || fn).apply(null, arguments);
+            };
+        };
+
+        async.times = function (count, iterator, callback) {
+            var counter = [];
+            for (var i = 0; i < count; i++) {
+                counter.push(i);
+            }
+            return async.map(counter, iterator, callback);
+        };
+
+        async.timesSeries = function (count, iterator, callback) {
+            var counter = [];
+            for (var i = 0; i < count; i++) {
+                counter.push(i);
+            }
+            return async.mapSeries(counter, iterator, callback);
+        };
+
+        async.compose = function (/* functions... */) {
+            var fns = Array.prototype.reverse.call(arguments);
+            return function () {
+                var that = this;
+                var args = Array.prototype.slice.call(arguments);
+                var callback = args.pop();
+                async.reduce(fns, args, function (newargs, fn, cb) {
+                        fn.apply(that, newargs.concat([function () {
+                            var err = arguments[0];
+                            var nextargs = Array.prototype.slice.call(arguments, 1);
+                            cb(err, nextargs);
+                        }]))
+                    },
+                    function (err, results) {
+                        callback.apply(that, [err].concat(results));
+                    });
+            };
+        };
+
+        var _applyEach = function (eachfn, fns /*args...*/) {
+            var go = function () {
+                var that = this;
+                var args = Array.prototype.slice.call(arguments);
+                var callback = args.pop();
+                return eachfn(fns, function (fn, cb) {
+                        fn.apply(that, args.concat([cb]));
+                    },
+                    callback);
+            };
+            if (arguments.length > 2) {
+                var args = Array.prototype.slice.call(arguments, 2);
+                return go.apply(this, args);
+            }
+            else {
+                return go;
+            }
+        };
+        async.applyEach = doParallel(_applyEach);
+        async.applyEachSeries = doSeries(_applyEach);
+
+        async.forever = function (fn, callback) {
+            function next(err) {
+                if (err) {
+                    if (callback) {
+                        return callback(err);
+                    }
+                    throw err;
+                }
+                fn(next);
+            }
+            next();
+        };
+
+        // AMD / RequireJS
+        if (typeof define !== 'undefined' && define.amd) {
+            define([], function () {
+                return async;
+            });
+        }
+        // Node.js
+        else if (typeof module !== 'undefined' && module.exports) {
+            module.exports = async;
+        }
+        // included directly via <script> tag
+        else {
+            root.async = async;
+        }
+
+    }());
+
 })(jQuery);
 (function()
 {
@@ -5753,7 +6755,7 @@ var equiv = function () {
         "controlFieldCheckbox": '<div class="checkbox" id="${id}">{{if options.rightLabel}}<label for="${id}_checkbox">{{/if}}<input id="${id}_checkbox" type="checkbox" {{if options.readonly}}readonly="readonly"{{/if}} {{if name}}name="${name}"{{/if}} {{each(i,v) options.data}}data-${i}="${v}"{{/each}}/>{{if options.rightLabel}}${options.rightLabel}</label>{{/if}}</div>',
         "controlFieldCheckboxMultiple": '<div id="${id}">{{each(i,o) checkboxOptions}}<div class="checkbox"><label for="${id}_checkbox_${i}"><input type="checkbox" id="${id}_checkbox_${i}" {{if options.readonly}}readonly="readonly"{{/if}} {{if name}}name="${name}"{{/if}} data-checkbox-value="${o.value}" data-checkbox-index="${i}"/>${o.text}</label></div>{{/each}}</div>',
 
-        "controlFieldRadio": '{{if !required}}<div class="radio"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" id="${id}_radio_nonevalue" value=""/><label for="${id}_radio_nonevalue">None</label></div>{{/if}}{{each selectOptions}}<div class="radio"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value="${value}" id="${id}_radio_${$index}" {{if value == data}}checked="checked"{{/if}}/><label for="${id}_radio_${$index}">${text}</label></div>{{/each}}'
+        "controlFieldRadio": '{{if !required && !removeDefaultNone}}<div class="radio"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" id="${id}_radio_nonevalue" value=""/><label for="${id}_radio_nonevalue">None</label></div>{{/if}}{{each selectOptions}}<div class="radio"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value="${value}" id="${id}_radio_${$index}" {{if value == data}}checked="checked"{{/if}}/><label for="${id}_radio_${$index}">${text}</label></div>{{/each}}'
 
     });
 
@@ -9169,6 +10171,9 @@ var equiv = function () {
             {
                 return !Alpaca.isEmpty(resource) && Alpaca.isUri(resource);
             };
+
+            var ONE_HOUR = 3600000;
+            this.cache = new ajaxCache('URL', true, ONE_HOUR);
         },
 
         /**
@@ -9416,10 +10421,16 @@ var equiv = function () {
          * @param {Function} onError onError callback.
          */
         loadUri : function(uri, isJson, onSuccess, onError) {
+
+            var self = this;
+
             var ajaxConfigs = {
                 "url": uri,
                 "type": "get",
                 "success": function(jsonDocument) {
+
+                    self.cache.put(uri, jsonDocument);
+
                     if (onSuccess && Alpaca.isFunction(onSuccess)) {
                         onSuccess(jsonDocument);
                     }
@@ -9445,7 +10456,13 @@ var equiv = function () {
                 ajaxConfigs.dataType = "text";
             }
 
-            $.ajax(ajaxConfigs);
+            var cachedDocument = self.cache.get(uri);
+
+            if (cachedDocument !== false && onSuccess && Alpaca.isFunction(onSuccess)) {
+                onSuccess(cachedDocument);
+            } else {
+                $.ajax(ajaxConfigs);
+            }
         },
 
         /**
@@ -9489,6 +10506,361 @@ var equiv = function () {
     });
 
     Alpaca.registerConnectorClass("default", Alpaca.Connector);
+
+
+
+
+
+
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    // AJAX CACHE
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    /*!
+     * ajax-cache JavaScript Library v0.2.1
+     * http://code.google.com/p/ajax-cache/
+     *
+     * Includes few JSON methods (open source)
+     * http://www.json.org/js.html
+     *
+     * Date: 2010-08-03
+     */
+    function ajaxCache(type, on, lifetime) {
+        if (on) {
+            this.on = true;
+        } else
+            this.on = false;
+
+        // set default cache lifetime
+        if (lifetime != null) {
+            this.defaultLifetime = lifetime;
+        }
+
+        // set type
+        this.type = type;
+
+        // set cache functions according to type
+        switch (this.type) {
+            case 'URL':
+                this.put = this.put_url;
+                break;
+            case 'GET':
+                this.put = this.put_GET;
+                break;
+        }
+
+    };
+
+    ajaxCache.prototype.on = false;
+    ajaxCache.prototype.type;
+    ajaxCache.prototype.defaultLifetime = 1800000; // 1800000=30min, 300000=5min, 30000=30sec
+    ajaxCache.prototype.items = Object();
+
+    /**
+     * Caches the request and its response. Type: url
+     *
+     * @param url - url of ajax response
+     * @param response - ajax response
+     * @param lifetime - (optional) sets cache lifetime in miliseconds
+     * @return true on success
+     */
+    ajaxCache.prototype.put_url = function(url, response, lifetime) {
+        if (lifetime == null) lifetime = this.defaultLifetime;
+        var key = this.make_key(url);
+        this.items[key] = Object();
+        this.items[key].key = key;
+        this.items[key].url = url;
+        this.items[key].response = response;
+        this.items[key].expire = (new Date().getTime()) + lifetime;
+        return true;
+    }
+
+    /**
+     * Caches the request and its response. Type: GET
+     *
+     * @param url - url of ajax response
+     * @param data - data params (query)
+     * @param response - ajax response
+     * @param lifetime - (optional) sets cache lifetime in miliseconds
+     * @return true on success
+     */
+    ajaxCache.prototype.put_GET = function(url, data, response, lifetime) {
+        if (lifetime == null)
+            lifetime = this.defaultLifetime;
+        var key = this.make_key(url, [ data ]);
+        this.items[key] = Object();
+        this.items[key].key = key;
+        this.items[key].url = url;
+        this.items[key].data = data;
+        this.items[key].response = response;
+        this.items[key].expire = (new Date().getTime()) + lifetime;
+        return true;
+    }
+
+    /**
+     * Get cached ajax response
+     *
+     * @param url - url of ajax response
+     * @param params - Array of additional parameters, to make key
+     * @return ajax response or false if such does not exist or is expired
+     */
+    ajaxCache.prototype.get = function(url, params) {
+        var key = this.make_key(url, params);
+
+        // if cache does not exist
+        if (this.items[key] == null)
+            return false;
+
+        // if cache expired
+        if (this.items[key].expire < (new Date().getTime()))
+            return false;
+
+        // everything is passed - lets return the response
+        return this.items[key].response;
+    }
+
+    /**
+     * Make unique key for each request depending on url and additional parameters
+     *
+     * @param url - url of ajax response
+     * @param params - Array of additional parameters, to make key
+     * @return unique key
+     */
+    ajaxCache.prototype.make_key = function(url, params) {
+        var key = url;
+        switch (this.type) {
+            case 'URL':
+                break;
+            case 'GET':
+                key += this.stringify(params[0]);
+                break;
+        }
+
+        return key;
+    }
+
+    /**
+     * Flush cache
+     *
+     * @return true on success
+     */
+    ajaxCache.prototype.flush = function() {
+        // flush all cache
+        cache.items = Object();
+        return true;
+    }
+
+    /*
+     * Methods to stringify JavaScript/JSON objects.
+     *
+     * Taken from: http://www.json.org/js.html to be more exact, this file:
+     * http://www.json.org/json2.js copied on 2010-07-19
+     *
+     * Taken methods: stringify, quote and str
+     *
+     * Methods are slightly modified to best fit ajax-cache functionality
+     *
+     */
+    ajaxCache.prototype.stringify = function(value, replacer, space) {
+
+        // The stringify method takes a value and an optional replacer, and an
+        // optional
+        // space parameter, and returns a JSON text. The replacer can be a function
+        // that can replace values, or an array of strings that will select the
+        // keys.
+        // A default replacer method can be provided. Use of the space parameter can
+        // produce text that is more easily readable.
+
+        var i;
+        gap = '';
+        indent = '';
+
+        // If the space parameter is a number, make an indent string containing that
+        // many spaces.
+
+        if (typeof space === 'number') {
+            for (i = 0; i < space; i += 1) {
+                indent += ' ';
+            }
+
+            // If the space parameter is a string, it will be used as the indent
+            // string.
+
+        } else if (typeof space === 'string') {
+            indent = space;
+        }
+
+        // If there is a replacer, it must be a function or an array.
+        // Otherwise, throw an error.
+
+        rep = replacer;
+        if (replacer
+            && typeof replacer !== 'function'
+            && (typeof replacer !== 'object' || typeof replacer.length !== 'number')) {
+            throw new Error('JSON.stringify');
+        }
+
+        // Make a fake root object containing our value under the key of ''.
+        // Return the result of stringifying the value.
+
+        return this.str('', {
+            '' : value
+        });
+    }
+
+    ajaxCache.prototype.quote = function(string) {
+
+        // If the string contains no control characters, no quote characters, and no
+        // backslash characters, then we can safely slap some quotes around it.
+        // Otherwise we must also replace the offending characters with safe escape
+        // sequences.
+
+        var escapable = /[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
+
+        escapable.lastIndex = 0;
+        return escapable.test(string) ? '"' + string.replace(escapable,
+            function(a) {
+                var c = meta[a];
+                return typeof c === 'string' ? c : '\\u' + ('0000' + a
+                    .charCodeAt(0).toString(16)).slice(-4);
+            }) + '"' : '"' + string + '"';
+    }
+
+    ajaxCache.prototype.str = function(key, holder) {
+
+        // Produce a string from holder[key].
+
+        var i, // The loop counter.
+            k, // The member key.
+            v, // The member value.
+            length, mind = gap, partial, value = holder[key];
+
+        // If the value has a toJSON method, call it to obtain a replacement value.
+
+        if (value && typeof value === 'object'
+            && typeof value.toJSON === 'function') {
+            value = value.toJSON(key);
+        }
+
+        // If we were called with a replacer function, then call the replacer to
+        // obtain a replacement value.
+
+        if (typeof rep === 'function') {
+            value = rep.call(holder, key, value);
+        }
+
+        // What happens next depends on the value's type.
+
+        switch (typeof value) {
+            case 'string':
+                return this.quote(value);
+
+            case 'number':
+
+                // JSON numbers must be finite. Encode non-finite numbers as null.
+
+                return isFinite(value) ? String(value) : 'null';
+
+            case 'boolean':
+            case 'null':
+
+                // If the value is a boolean or null, convert it to a string. Note:
+                // typeof null does not produce 'null'. The case is included here in
+                // the remote chance that this gets fixed someday.
+
+                return String(value);
+
+            // If the type is 'object', we might be dealing with an object or an
+            // array or
+            // null.
+
+            case 'object':
+
+                // Due to a specification blunder in ECMAScript, typeof null is
+                // 'object',
+                // so watch out for that case.
+
+                if (!value) {
+                    return 'null';
+                }
+
+                // Make an array to hold the partial results of stringifying this object
+                // value.
+
+                gap += indent;
+                partial = [];
+
+                // Is the value an array?
+
+                if (Object.prototype.toString.apply(value) === '[object Array]') {
+
+                    // The value is an array. Stringify every element. Use null as a
+                    // placeholder
+                    // for non-JSON values.
+
+                    length = value.length;
+                    for (i = 0; i < length; i += 1) {
+                        partial[i] = this.str(i, value) || 'null';
+                    }
+
+                    // Join all of the elements together, separated with commas, and
+                    // wrap them in
+                    // brackets.
+
+                    v = partial.length === 0 ? '[]' : gap ? '[\n' + gap
+                        + partial.join(',\n' + gap) + '\n' + mind + ']'
+                        : '[' + partial.join(',') + ']';
+                    gap = mind;
+                    return v;
+                }
+
+                // If the replacer is an array, use it to select the members to be
+                // stringified.
+
+                if (rep && typeof rep === 'object') {
+                    length = rep.length;
+                    for (i = 0; i < length; i += 1) {
+                        k = rep[i];
+                        if (typeof k === 'string') {
+                            v = this.str(k, value);
+                            if (v) {
+                                partial.push(this.quote(k) + (gap ? ': ' : ':') + v);
+                            }
+                        }
+                    }
+                } else {
+
+                    // Otherwise, iterate through all of the keys in the object.
+
+                    for (k in value) {
+                        if (Object.hasOwnProperty.call(value, k)) {
+                            v = this.str(k, value);
+                            if (v) {
+                                partial.push(this.quote(k) + (gap ? ': ' : ':') + v);
+                            }
+                        }
+                    }
+                }
+
+                // Join all of the member texts together, separated with commas,
+                // and wrap them in braces.
+
+                v = partial.length === 0 ? '{}' : gap ? '{\n' + gap
+                    + partial.join(',\n' + gap) + '\n' + mind + '}' : '{' + partial
+                    .join(',') + '}';
+                gap = mind;
+                return v;
+        }
+    }
 
 })(jQuery);
 (function($) {
@@ -10972,8 +12344,13 @@ var equiv = function () {
                     "properties": {
                         "rightLabel": {
                             "title": "Option Label",
-                            "description": "Optional right-hand side label for checkbox field.",
+                            "description": "Optional right-hand side label for single checkbox field.",
                             "type": "string"
+                        },
+                        "multiple": {
+                            "title": "Multiple",
+                            "description": "Whether to render multiple checkboxes for multi-valued type (such as an array or a comma-delimited string)",
+                            "type": "boolean"
                         }
                     }
                 });
@@ -10988,6 +12365,9 @@ var equiv = function () {
                     "fields": {
                         "rightLabel": {
                             "type": "text"
+                        },
+                        "multiple": {
+                            "type": "checkbox"
                         }
                     }
                 });
@@ -11004,7 +12384,7 @@ var equiv = function () {
              * @see Alpaca.Field#getDescription
              */
             getDescription: function() {
-                return "Checkbox Field for boolean data.";
+                return "Checkbox Field for boolean (true/false), string ('true', 'false' or comma-delimited string of values) or data array.";
             },
 
             /**
@@ -11294,7 +12674,36 @@ var equiv = function () {
             var _this = this;
             if (this.options.dataSource) {
                 if (Alpaca.isFunction(this.options.dataSource)) {
-                    this.options.dataSource(this, function() {
+                    this.options.dataSource(this, function(values) {
+
+                        if (Alpaca.isArray(values))
+                        {
+                            for (var i = 0; i < values.length; i++)
+                            {
+                                if (typeof(values[i]) == "string")
+                                {
+                                    _this.selectOptions.push({
+                                        "text": values[i],
+                                        "value": values[i]
+                                    });
+                                }
+                                else if (Alpaca.isObject(values[i]))
+                                {
+                                    _this.selectOptions.push(values[i]);
+                                }
+                            }
+                        }
+                        else if (Alpaca.isObject(values))
+                        {
+                            for (var k in values)
+                            {
+                                _this.selectOptions.push({
+                                    "text": k,
+                                    "value": values[k]
+                                });
+                            }
+                        }
+
                         _this._renderField(onSuccess);
                     });
                 } else {
@@ -11412,8 +12821,14 @@ var equiv = function () {
                     },
                     "dataSource": {
                         "title": "Option Datasource",
-                        "description": "Datasource for generating list of options.",
+                        "description": "Datasource for generating list of options.  This can be a string or a function.  If a string, it is considered to be a URI to a service that produces a object containing key/value pairs or an array of elements of structure {'text': '', 'value': ''}.  This can also be a function that is called to produce the same list.",
                         "type": "string"
+                    },
+                    "removeDefaultNone": {
+                        "title": "Remove Default None",
+                        "description": "If true, the default 'None' option will not be shown.",
+                        "type": "boolean",
+                        "default": false
                     }
                 }
             });
@@ -11432,6 +12847,10 @@ var equiv = function () {
                     },
                     "dataSource": {
                         "type": "text"
+                    },
+                    "removeDefaultNone": {
+                        "type": "checkbox",
+                        "rightLabel": "Remove Default None"
                     }
                 }
             });
@@ -11536,7 +12955,8 @@ var equiv = function () {
                     "selectOptions": this.selectOptions,
                     "required":this.schema.required,
 					"name": this.name,
-                    "data": this.data
+                    "data": this.data,
+                    "removeDefaultNone": this.options.removeDefaultNone
                 });
 
                 // if emptySelectFirst and nothing currently checked, then pick first item in the value list
@@ -11623,7 +13043,7 @@ var equiv = function () {
 				}
 			});
         },
-        
+
 		/**
          * @see Alpaca.Field#getTitle
 		 */
@@ -11647,7 +13067,7 @@ var equiv = function () {
         
     });
     
-    Alpaca.registerTemplate("controlFieldRadio", '<div id="${id}" class="alpaca-controlfield-radio">{{if !required}}<span class="alpaca-controlfield-radio-item"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" id="${id}_radio_nonevalue" value=""/><label class="alpaca-controlfield-radio-label" for="${id}_radio_nonevalue">None</label></span>{{/if}}{{each selectOptions}}<span class="alpaca-controlfield-radio-item"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value="${value}" id="${id}_radio_${$index}" {{if value == data}}checked="checked"{{/if}}/><label class="alpaca-controlfield-radio-label" for="${id}_radio_${$index}">${text}</label></span>{{/each}}</div>');
+    Alpaca.registerTemplate("controlFieldRadio", '<div id="${id}" class="alpaca-controlfield-radio">{{if !required && !removeDefaultNone}}<span class="alpaca-controlfield-radio-item"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" id="${id}_radio_nonevalue" value=""/><label class="alpaca-controlfield-radio-label" for="${id}_radio_nonevalue">None</label></span>{{/if}}{{each selectOptions}}<span class="alpaca-controlfield-radio-item"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value="${value}" id="${id}_radio_${$index}" {{if value == data}}checked="checked"{{/if}}/><label class="alpaca-controlfield-radio-label" for="${id}_radio_${$index}">${text}</label></span>{{/each}}</div>');
 
     Alpaca.registerFieldClass("radio", Alpaca.Fields.RadioField);
     
@@ -11768,7 +13188,7 @@ var equiv = function () {
                     "selectOptions": this.selectOptions,
                     "name": this.name,
                     "data": this.data,
-                    "removeDefaultNone":this.options.removeDefaultNone
+                    "removeDefaultNone": this.options.removeDefaultNone
                 });
 
                 // if emptySelectFirst and nothing currently checked, then pick first item in the value list
@@ -11930,12 +13350,6 @@ var equiv = function () {
                         "description": "If the data is empty, then automatically select the first item in the list.",
                         "type": "boolean",
                         "default": false
-                    },
-                    "removeDefaultNone": {
-                        "title": "Remove Default None",
-                        "description": "If true, the 'default' option from the list will not be shown.",
-                        "type": "boolean",
-                        "default": false
                     }
                 }
             });
@@ -11955,10 +13369,6 @@ var equiv = function () {
                     },
                     "size": {
                         "type": "integer"
-                    },
-                    "removeDefaultNone": {
-                        "type": "checkbox",
-                        "rightLabel": "Remove Default None"
                     }
                 }
             });
@@ -12441,10 +13851,41 @@ var equiv = function () {
             _this.resolveItemSchemaOptions(function(schema, options) {
 
                 // if the number of items in the data is greater than the number of existing child elements
-                while(i < data.length) {
-                    _this.addItem(i, schema, options, data[i]);
-                    i++;
-                };
+                // then we need to add the new fields
+
+                if (i < data.length)
+                {
+                    // waterfall functions
+                    var funcs = [];
+
+                    while (i < data.length)
+                    {
+                        var f = (function(i, data)
+                        {
+                            return function(callback)
+                            {
+                                _this.addItem(i, schema, options, data[i], null, false, function() {
+
+                                    // by the time we get here, we may have constructed a very large child chain of
+                                    // sub-dependencies and so we use nextTick() instead of a straight callback so as to
+                                    // avoid blowing out the stack size
+                                    Alpaca.nextTick(function() {
+                                        callback();
+                                    });
+
+                                });
+                            };
+                        })(i, data[i]);
+
+                        funcs.push(f);
+
+                        i++;
+                    };
+
+                    Alpaca.series(funcs, function() {
+                        // TODO: anything once finished?
+                    });
+                }
 
             });
 
@@ -12648,6 +14089,12 @@ var equiv = function () {
         renderToolbar: function(containerElem) {
             var _this = this;
 
+            // we do not render the toolbar in "display" mode
+            if (this.view && this.view.type == "view")
+            {
+                return;
+            }
+
             if (!this.options.readonly) {
                 var id = containerElem.attr('alpaca-id');
                 var fieldControl = this.childrenById[id];
@@ -12664,8 +14111,9 @@ var equiv = function () {
 
                                 _this.resolveItemSchemaOptions(function(schema, options) {
 
-                                    var newContainerElem = arrayField.addItem(containerElem.index() + 1, schema, options, null, id, true);
-                                    arrayField.enrichElements(newContainerElem);
+                                    arrayField.addItem(containerElem.index() + 1, schema, options, null, id, true, function(addedField) {
+                                        arrayField.enrichElements(addedField.getEl());
+                                    });
 
                                 });
 
@@ -12767,8 +14215,10 @@ var equiv = function () {
 
                         _this.resolveItemSchemaOptions(function(schema, options) {
 
-                            var newContainerElem = _this.addItem(0, schema, options, "", id, true);
-                            _this.enrichElements(newContainerElem);
+                            _this.addItem(0, schema, options, "", id, true, function(addedField) {
+                                _this.enrichElements(addedField.getEl());
+                            });
+
 
                         });
                     });
@@ -12780,7 +14230,10 @@ var equiv = function () {
                     toolbarElemAdd.click(function() {
 
                         _this.resolveItemSchemaOptions(function(schema, options) {
-                            _this.addItem(0, schema, options, "", id, true);
+
+                            _this.addItem(0, schema, options, "", id, true, function(addedField) {
+                                _this.enrichElements(addedField.getEl());
+                            });
                         });
 
                         return false;
@@ -12907,6 +14360,8 @@ var equiv = function () {
                             // store key on dom element
                             $(containerElem).attr("data-alpaca-item-container-item-key", index);
 
+                            _this.updateToolbarItemsStatus(_this.outerEl);
+
                             if (cb)
                             {
                                 cb();
@@ -12922,7 +14377,8 @@ var equiv = function () {
                     }
                 });
 
-                this.updateToolbarItemsStatus(this.outerEl);
+                //this.updateToolbarItemsStatus(this.outerEl);
+
                 return containerElem;
             }
         },
@@ -13015,48 +14471,64 @@ var equiv = function () {
         /**
          * @see Alpaca.ContainerField#renderItems
          */
-        renderItems: function(onSuccess) {
-            var _this = this;
+        renderItems: function(onSuccess)
+        {
+            var self = this;
 
             // mark field container as empty by default
             // the "addItem" method below gets the opportunity to unset this
-            $(this.fieldContainer).addClass("alpaca-fieldset-items-container-empty");
+            $(self.fieldContainer).addClass("alpaca-fieldset-items-container-empty");
 
-            if (this.data)
+            if (self.data)
             {
                 // all items within the array have the same schema and options
                 // so we only need to load this once
-                _this.resolveItemSchemaOptions(function(schema, options) {
+                self.resolveItemSchemaOptions(function(schema, options) {
 
-                    // workhorse function
-                    // adds an item and then recursively fires down from the callback until the end of the list is reached
-                    var handleItem = function(index)
+                    // waterfall functions
+                    var funcs = [];
+                    for (var index = 0; index < self.data.length; index++)
                     {
-                        if (index === _this.data.length)
+                        var value = self.data[index];
+
+                        var pf = (function(index, value)
                         {
-                            _this.updateToolbarItemsStatus();
-
-                            if (onSuccess)
+                            return function(callback)
                             {
-                                onSuccess();
-                            }
+                                self.addItem(index, schema, options, value, false, false, function() {
 
-                            return;
+                                    // by the time we get here, we may have constructed a very large child chain of
+                                    // sub-dependencies and so we use nextTick() instead of a straight callback so as to
+                                    // avoid blowing out the stack size
+                                    Alpaca.nextTick(function() {
+                                        callback();
+                                    });
+
+                                });
+                            };
+
+                        })(index, value);
+
+                        funcs.push(pf);
+                    }
+
+                    Alpaca.series(funcs, function(err) {
+
+                        console.log("DONE");
+
+                        self.updateToolbarItemsStatus();
+
+                        if (onSuccess)
+                        {
+                            onSuccess();
                         }
+                    });
 
-                        var value = _this.data[index];
-
-                        _this.addItem(index, schema, options, value, false, false, function() {
-                            handleItem(index+1);
-                        });
-
-                    };
-                    handleItem(0);
                 });
             }
             else
             {
-                this.updateToolbarItemsStatus();
+                self.updateToolbarItemsStatus();
 
                 if (onSuccess)
                 {
@@ -13414,6 +14886,12 @@ var equiv = function () {
             if (Alpaca.isEmpty(this.data)) {
                 return;
             }
+
+            if (this.data == "")
+            {
+                return;
+            }
+
             if (!Alpaca.isObject(this.data)) {
                 if (!Alpaca.isString(this.data)) {
                     return;
@@ -13905,29 +15383,6 @@ var equiv = function () {
                     Alpaca.logDebug("There were " + extraDataKeys.length + " extra data keys that were not part of the schema " + JSON.stringify(extraDataKeys));
                 }
 
-                /*
-                // support for dependencies
-
-                // walk through all properties and allow each to determine whether it should show based on its dependencies.
-                // if properties do not have dependencies, they show by default.
-                for (var propertyId in properties)
-                {
-                    _this.showOrHidePropertyBasedOnDependencies(propertyId);
-                }
-
-                // bind event handlers to handle updates to field state
-                for (var propertyId in properties)
-                {
-                    _this.bindDependencyFieldUpdateEvent(propertyId);
-                }
-
-                // force refresh of dependency states
-                for (var propertyId in properties)
-                {
-                    _this.refreshDependentFieldStates(propertyId);
-                }
-                */
-
                 _this.renderValidationState();
 
                 if (onSuccess)
@@ -13939,77 +15394,69 @@ var equiv = function () {
             // each property in the object can have a different schema and options so we need to process
             // asynchronously and wait for all to complete
 
-            // figure out the total count of properties that we need to iterate through
-            var total = 0;
+            // wrap into waterfall functions
+            var propertyFunctions = [];
             for (var propertyId in properties)
             {
-                total++;
-            }
-
-            // collect all the property ids since we'll churn through them by property key
-            var propertyIds = [];
-            for (var propertyId in properties)
-            {
-                propertyIds.push(propertyId);
-            }
-
-            // workhorse function for a single property
-            var handleProperty = function(index)
-            {
-                if (index === total)
-                {
-                    // all done, fire completion function
-                    cf();
-
-                    return;
-                }
-
-                var propertyId = propertyIds[index];
-
                 var itemData = null;
                 if (_this.data)
                 {
                     itemData = _this.data[propertyId];
                 }
 
-                // only allow this if we have data, otherwise we end up with circular reference
-                _this.resolvePropertySchemaOptions(propertyId, function(schema, options, circular) {
-
-                    // we only allow addition if the resolved schema isn't circularly referenced
-                    // or the schema is optional
-                    if (circular)
+                var pf = (function(propertyId, itemData, extraDataProperties)
+                {
+                    return function(callback)
                     {
-                        return Alpaca.throwErrorWithCallback("Circular reference detected for schema: " + schema, _this.errorCallback);
-                    }
+                        // only allow this if we have data, otherwise we end up with circular reference
+                        _this.resolvePropertySchemaOptions(propertyId, function(schema, options, circular) {
 
-                    if (!schema)
-                    {
-                        Alpaca.logError("Unable to resolve schema for property: " + propertyId);
-                    }
+                            // we only allow addition if the resolved schema isn't circularly referenced
+                            // or the schema is optional
+                            if (circular)
+                            {
+                                return Alpaca.throwErrorWithCallback("Circular reference detected for schema: " + schema, _this.errorCallback);
+                            }
 
-                    _this.addItem(propertyId, schema, options, itemData, null, false, function(addedItemControl) {
+                            if (!schema)
+                            {
+                                Alpaca.logError("Unable to resolve schema for property: " + propertyId);
+                            }
 
-                        // remove from extraDataProperties helper
-                        delete extraDataProperties[propertyId];
+                            _this.addItem(propertyId, schema, options, itemData, null, false, function(addedItemControl) {
 
+                                // remove from extraDataProperties helper
+                                delete extraDataProperties[propertyId];
 
-                        // HANDLE PROPERTY DEPENDENCIES (IF THE PROPERTY HAS THEM)
+                                // HANDLE PROPERTY DEPENDENCIES (IF THE PROPERTY HAS THEM)
 
-                        // if this property has dependencies, show or hide this added item right away
-                        _this.showOrHidePropertyBasedOnDependencies(propertyId);
+                                // if this property has dependencies, show or hide this added item right away
+                                _this.showOrHidePropertyBasedOnDependencies(propertyId);
 
-                        // if this property has dependencies, bind update handlers to dependent fields
-                        _this.bindDependencyFieldUpdateEvent(propertyId);
+                                // if this property has dependencies, bind update handlers to dependent fields
+                                _this.bindDependencyFieldUpdateEvent(propertyId);
 
-                        // if this property has dependencies, trigger those to ensure it is in the right state
-                        _this.refreshDependentFieldStates(propertyId);
+                                // if this property has dependencies, trigger those to ensure it is in the right state
+                                _this.refreshDependentFieldStates(propertyId);
 
+                                // by the time we get here, we may have constructed a very large child chain of
+                                // sub-dependencies and so we use nextTick() instead of a straight callback so as to
+                                // avoid blowing out the stack size
+                                Alpaca.nextTick(function() {
+                                    callback();
+                                });
+                            });
+                        });
+                    };
 
-                        handleProperty(index + 1);
-                    });
-                });
-            };
-            handleProperty(0);
+                })(propertyId, itemData, extraDataProperties);
+
+                propertyFunctions.push(pf);
+            }
+
+            Alpaca.series(propertyFunctions, function(err) {
+                cf();
+            });
         },
 
 
@@ -15504,61 +16951,66 @@ address:
          * @see Alpaca.Field#renderField
          */
         renderField: function(onSuccess) {
-            this.base();
-            var _this = this;
-            // apply additional css
-            $(this.fieldContainer).addClass("alpaca-addressfield");
 
-            if (this.options.addressValidation && !this.isDisplayOnly()) {
-                $('<div style="clear:both;"></div>').appendTo(this.fieldContainer);
-                var mapButton = $('<div class="alpaca-form-button">Google Map</div>').appendTo(this.fieldContainer);
-                if (mapButton.button) {
-                    mapButton.button({
-                        text: true
-                    });
-                }
-                mapButton.click(
-                    function() {
-                        if (google && google.maps) {
-                            var geocoder = new google.maps.Geocoder();
-                            var address = _this.getAddress();
-                            if (geocoder) {
-                                geocoder.geocode({
-                                    'address': address
-                                }, function(results, status) {
-                                    if (status == google.maps.GeocoderStatus.OK) {
-                                        var mapCanvasId = _this.getId() + "-map-canvas";
-                                        if ($('#' + mapCanvasId).length === 0) {
-                                            $("<div id='" + mapCanvasId + "' class='alpaca-controlfield-address-mapcanvas'></div>").appendTo(_this.fieldContainer);
+            var self = this;
+
+            this.base(function() {
+
+                // apply additional css
+                $(self.fieldContainer).addClass("alpaca-addressfield");
+
+                if (self.options.addressValidation && !self.isDisplayOnly()) {
+                    $('<div style="clear:both;"></div>').appendTo(self.fieldContainer);
+                    var mapButton = $('<div class="alpaca-form-button">Google Map</div>').appendTo(self.fieldContainer);
+                    if (mapButton.button) {
+                        mapButton.button({
+                            text: true
+                        });
+                    }
+                    mapButton.click(
+                        function() {
+                            if (google && google.maps) {
+                                var geocoder = new google.maps.Geocoder();
+                                var address = self.getAddress();
+                                if (geocoder) {
+                                    geocoder.geocode({
+                                        'address': address
+                                    }, function(results, status) {
+                                        if (status == google.maps.GeocoderStatus.OK) {
+                                            var mapCanvasId = self.getId() + "-map-canvas";
+                                            if ($('#' + mapCanvasId).length === 0) {
+                                                $("<div id='" + mapCanvasId + "' class='alpaca-controlfield-address-mapcanvas'></div>").appendTo(self.fieldContainer);
+                                            }
+                                            var map = new google.maps.Map(document.getElementById(self.getId() + "-map-canvas"), {
+                                                "zoom": 10,
+                                                "center": results[0].geometry.location,
+                                                "mapTypeId": google.maps.MapTypeId.ROADMAP
+                                            });
+                                            var marker = new google.maps.Marker({
+                                                map: map,
+                                                position: results[0].geometry.location
+                                            });
+                                        } else {
+                                            self.displayMessage("Geocoding failed: " + status);
                                         }
-                                        var map = new google.maps.Map(document.getElementById(_this.getId() + "-map-canvas"), {
-                                            "zoom": 10,
-                                            "center": results[0].geometry.location,
-                                            "mapTypeId": google.maps.MapTypeId.ROADMAP
-                                        });
-                                        var marker = new google.maps.Marker({
-                                            map: map,
-                                            position: results[0].geometry.location
-                                        });
-                                    } else {
-                                        _this.displayMessage("Geocoding failed: " + status);
-                                    }
-                                });
+                                    });
+                                }
+                            } else {
+                                self.displayMessage("Google Map API is not installed.");
                             }
-                        } else {
-                            _this.displayMessage("Google Map API is not installed.");
-                        }
-                    }).wrap('<small/>');
+                        }).wrap('<small/>');
 
-                if (this.options.showMapOnLoad)
-                {
-                    mapButton.click();
+                    if (self.options.showMapOnLoad)
+                    {
+                        mapButton.click();
+                    }
                 }
-            }
 
-            if (onSuccess) {
-                onSuccess();
-            }
+                if (onSuccess) {
+                    onSuccess();
+                }
+            });
+
         },//__BUILDER_HELPERS
 
         /**
