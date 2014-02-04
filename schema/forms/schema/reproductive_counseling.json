@@ -1,203 +1,87 @@
 {
-    "fields": {
-        "last_menstrual_period": {
-            "label": "Last Menstrual Period: (Tarehe ya mwisho wa kipindi cha hedhi)",
-            "type": "date"
-        },
-        "menstrual_history": {
-            "label": "Menstrual History: (Historia ya hedhi)",
-            "type": "select"
-        },
-        "number_pregnancy": {
-            "label": "Total Number of Pregnancies (Jumla ya idadi ya mimba za awali)",
-            "type": "select"
-        },
-        "number_full_term_delivery": {
-            "label": "Number of Full Term Deliveries (Idadi ya kujifungua katika mda uliokamilika)",
-            "type": "select"
-        },
-        "number_pre_term_delivery": {
-            "label": "Number of Preterm Deliveries (Idadi ya kujifungua watoto wasiotimiza umri)",
-            "type": "select"
-        },
-        "number_miscarriage_or_abortion": {
-            "label": "Number of Miscarriages or Abortions (Idadi ya mimba zilizoharibika au kutolewa)",
-            "type": "select"
-        },
-        "number_live_birth": {
-            "label": "Number of Live Births (Idadi ya waliozaliwa hai)",
-            "type": "select"
-        },
-        "pregnancy_complication": {
-            "label": "Pregnancy Complications, Check All That Apply: (Matatizo ya ujauzito)",
-            "type": "checkbox",
-        },
-        "pregnancy_complication_other": {
-            "label": "If Other Pregnancy Complication, Describe:"
-        },
-        "marital_status": {
-            "label": "Marital Status: (Hadhi ya ndoa)",
-            "type": "select"
-        },
-        "contraception_previous": {
-            "label": "Previous Contraception: (Uzazi wa mpango wa awali)",
-            "type": "select"
-        },
-        "contraception_current": {
-            "label": "Current Contraception: (Uzazi wa mpango kwa sasa)",
-            "type": "select"
-        },
-        "contraception_source": {
-            "label": "Source of Contraception",
-            "type": "select"
-        },
-        "fertility_desire": {
-            "label": "Fertility Desires:",
-            "type": "select"
-        },
-        "hiv_risk": {
-            "label": "HIV Risks:",
-            "type": "select"
-        },
-        "hiv_status": {
-            "label": "HIV Status",
-            "type": "select"
-        },
-        "hiv_tested": {
-            "label": "Tested for HIV?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "hiv_partner_test": {
-            "label": "Partner tested for HIV?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "hiv_positive_test": {
-            "label": "Tested positive for HIV?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "hiv_partner_positive_test": {
-            "label": "Partner tested positive for HIV?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "hiv_counseling": {
-            "label": "HIV counseling given?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "hiv_partner_counseling": {
-            "label": "HIV counseling given to partner?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "hiv_discordant": {
-            "label": "HIV discordant couple?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "referred_ctc": {
-            "label": "Referred to CTC?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "post_test_counseling": {
-            "label": "Post-test HIV counseling given?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "implant_removed": {
-            "label": "Implant removed?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "contraception_after_miscarriage": {
-            "label": "Contraception given after recent miscarriage?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "delivery_in_42_days": {
-            "label": "Delivery within 42 days?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "contraception_in_42_days": {
-            "label": "Contraception given within 42 days of delivery?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "contraception_dispensed": {
-            "label": "Contraception Dispensed: (Dawa ya Uzazi wa mpango iliogawanywa)",
-            "type": "select"
-        },
-        "quantity_pills_dispensed": {
-            "label": "Quantity of Pills Dispensed:",
-            "type": "select"
-        },
-        "quantity_condoms_dispensed": {
-            "label": "Quantity of Condoms Dispensed:",
-            "type": "select"
-        },
-        "quantity_depo_provera": {
-            "label": "Dose of Depo Provera:",
-            "type": "select"
-        },
-        "condom_education": {
-            "label": "Condom Use Education Preformed",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ]
-        },
-        "cervical_symptom": {
-            "label": "Cervical Symptoms:",
-            "type": "checkbox"
-        },
-        "breast_symptom": {
-            "label": "Breast Symptoms:",
-            "type": "checkbox"
-        }
-    }
+	"title": "Reproductive Counceling/Treatment",
+	"_id": "reproductive_counseling",
+	"type": "object",
+	"properties": {
+		"last_menstrual_period": {
+			"type": "date"
+		},
+		"menstrual_history": {
+			"type": "string",
+			"$ref": "lists/#menses_regularity"
+		},
+		"number_pregnancy": {
+			"type": "number"
+		},
+		"number_full_term_delivery": {
+			"type": "number"
+		},
+		"number_pre_term_delivery": {
+			"type": "number"
+		},
+		"number_miscarriage_or_abortion": {
+			"type": "number"
+		},
+		"number_live_birth": {
+			"type": "number"
+		},
+		"pregnancy_complication": {
+			"type": "string",
+			"$ref": "lists/#pregnancy_complications"
+		},
+		"pregnancy_complication_other": {
+			"type": "string"
+		},
+		"marital_status": {
+			"type": "string",
+			"$ref": "lists/#marital_statuses"
+		},
+		"contraception_previous": {
+			"type": "string",
+			"$ref": "lists/#contraceptives"
+		},
+		"contraception_current": {
+			"type": "string",
+			"$ref": "lists/#contraceptives"
+		},
+		"contraception_source": {
+			"type": "string",
+			"$ref": "lists/#contraceptive_sources"
+		},
+		"fertility_desire": {
+			"type": "string",
+			"$ref": "lists/#fertility_desires"
+		},
+		"hiv_risk": {
+			"type": "string",
+			"$ref": "lists/#hiv_risks"
+		},
+		"contraception_dispensed": {
+			"type": "string",
+			"$ref": "lists/#contraceptives"
+		},
+		"quantity_pills_dispensed": {
+			"type": "string",
+			"$ref": "lists/#drug_quantities"
+		},
+		"quantity_condoms_dispensed": {
+			"type": "string",
+			"$ref": "lists/#condom_quantities"
+		},
+		"quantity_depo_provera": {
+			"type": "string",
+			"$ref": "lists/#depoprovera_quantities"
+		},
+		"condom_education": {
+			"type": "string",
+			"enum": [
+				"yes",
+				"no"
+			]
+		},
+		"cervical_symptom": {
+			"type": "string",
+			"$ref": "lists/#cervical_symptoms"
+		}
+	}
 }
