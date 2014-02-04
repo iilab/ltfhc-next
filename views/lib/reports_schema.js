@@ -27,49 +27,49 @@ exports.reports_new = function() {
 					"line_number": "2a",
 					"sw": "Umri wa mimba chini ya wiki 12 (<12weeks)",
 					"en": "Gestational age below 12 weeks(<12weeks)",
-					"condition": "anc_first_visit.gestational_age<12"
+					"condition": "subforms.anc_first_visit.gestational_age<12"
 				},
 				"gestational_at_week_12_or_more": {
 					"line_number": "2b",
 					"sw": "Umri wa mimba wiki 12 au zaidi (12+ weeks)",
 					"en": "Gestational at week 12 or more (12+weeks)",
-					"condition": "anc_first_visit.gestational_age>=12"
+					"condition": "subforms.anc_first_visit.gestational_age>=12"
 				},
 				"total_attendance_of_first_visits(2a+2b)": {
 					"line_number": "2c",
 					"sw": "Jumla ya hudhurio la Kwanza (2a+2b)",
 					"en": "Total attendance of first visits(2a+2b)",
-					"condition": "anc_first_visit.gestational_age"
+					"condition": "subforms.anc_first_visit.gestational_age"
 				},
 				"clients_for_return_visits": {
 					"line_number": "2d",
 					"sw": "Wateja wa marudio",
 					"en": "clients for return visits",
-					"condition": "anc_followup.total_visits"
+					"condition": "subforms.anc_followup.total_visits"
 				},
 				"fourth_visits_for_all_pregnant_women": {
 					"line_number": "2e",
 					"sw": "Hudhurio la nne wajawazito wote",
 					"en": "Fourth visits for all pregnant women",
-					"condition": "anc_followup.fourth_visits"
+					"condition": "subforms.anc_followup.fourth_visits"
 				},
 				"total_attendance": {
 					"line_number": "2f",
 					"sw": "Jumla ya Mahudhurio yote (2c+2d)",
 					"en": "total attendance(2c+2d)",
-					"condition": "anc_first_visit.gestational_age || anc_followup.total_visits"
+					"condition": "subforms.anc_first_visit.gestational_age || anc_followup.total_visits"
 				},
 				"number_of_pregnant_women_tested_first_visit": {
 					"line_number": "2g",
 					"sw": "Idadi ya wajawazito waliopima damu hudhurio la kwanza",
 					"en": "Number of pregnant women who tested during the first visit at the clinic",
-					"condition": "anc_first_visit.pregnancy_test"
+					"condition": "subforms.anc_first_visit.pregnancy_test"
 				},
 				"pregnant_women_who_received_vaccination_of_tt2": {
 					"line_number": "3",
 					"sw": "Wajawazito waliopata Chanjo ya TT2+:",
 					"en": "Pregnant women who received vaccination of TT2+",
-					"condition": "anc_first_visit.tt2plus_vaccine"
+					"condition": "subforms.anc_first_visit.tt2plus_vaccine"
 				},
 				"risk_factors": {
 					"line_number": "4",
@@ -80,53 +80,49 @@ exports.reports_new = function() {
 					"line_number": "4a",
 					"sw": "Mimba zaidi ya 4:",
 					"en": "conceived more than four times",
-					"condition": "anc_first_visit.number_pregnancy > 4"
+					"condition": "subforms.anc_first_visit.number_pregnancy > 4"
 				},
 				"age_less_than_20_years": {
 					"line_number": "4b",
 					"sw": "Umri chini ya miaka 20:",
 					"en": "age less than 20 years",
-					"condition": "patient.patient_age < 20"
+					"condition": "patient.approximate_age < 20"
 				},
 				"age_over_35_years": {
 					"line_number": "4c",
 					"sw": "Umri zaidi ya miaka 35:",
 					"en": "age over 35 years",
-					"condition": "patient.patient_age > 35"
+					"condition": "patient.approximate_age > 35"
 				},
 				"severe_anemia_first_attendance": {
 					"line_number": "4d",
 					"sw": "Upungufu mkubwa wa damu <8.5g/dl - Anaemia hudhurio Ia kwanza:",
 					"en": "severe anemia <8.5g/dl - Anaemia first attendance",
-					"condition": "anc_first_visit.anemia"
+					"condition": "subforms.anc_first_visit.anemia"
 				},
 				"blood_pressure_high": {
 					"line_number": "4e",
 					"sw": "Shinikizo Ia damu (BP => 140/90mm/hg):",
 					"en": "blood pressure (BP => 140/90mm/hg):",
-					"condition": "((anc_first_visit.bp_systolic || anc_followup.bp_systolic) >= 140) && ((anc_first_visit.bp_diastolic || anc_followup.bp_diastolic) >= 90)"
+					"condition": "subforms.((anc_first_visit.bp_systolic || anc_followup.bp_systolic) >= 140) && ((anc_first_visit.bp_diastolic || anc_followup.bp_diastolic) >= 90)"
 				},
 				"heart_disease": {
 					"line_number": "4f",
 					"sw": "Ugonjwa wa moyo:",
 					"en": "Heart disease",
-					"condition": "anc_first_visit.pregnancy_diseases == 'Heart Disease'"
+					"condition": "subforms.anc_first_visit.pregnancy_diseases == 'Heart Disease'"
 				},
 				"diabetes": {
 					"line_number": "4g",
 					"sw": "Kisukari:",
 					"en": "Diabetes",
-					"condition": "anc_first_visit.pregnancy_diseases == 'Diabetes'"
+					"condition": "subforms.anc_first_visit.pregnancy_diseases == 'Diabetes'"
 				},
 				"tuberculosis": {
 					"line_number": "4h",
 					"sw": "Kifua kikuu:",
 					"en": "Tuberculosis",
-					"field": {
-						"name": "anc_first_visit.pregnancy_diseases",
-						"condition": "== 'Tuberculosis'",
-						"type": "count"
-					}
+					"condition": "subforms.anc_first_visit.pregnancy_diseases == 'Tuberculosis'"
 				},
 				"those_who_tested_for_syphillus": {
 					"line_number": "4i",
@@ -311,13 +307,13 @@ exports.reports_new = function() {
 					"en": " PW below 25 years who tested for HIV for the first time at the clinic",
 					"field": {
 						"name": [
-							"patient.patient_age",
+							"patient.approximate_age",
 							"hiv_pregnancy_clinic.tested_hiv_firstvisit",
 							"anc_first_visit.tested_hiv_firstvisit",
 							"anc_followup.tested_hiv_firstvisit"
 						],
 						"type": "count",
-						"condition": "patient.patient_age < 25"
+						"condition": "patient.approximate_age < 25"
 					}
 				},
 				"pw_below_25_years_who_tested_positive_by_the_first_test": {
@@ -326,13 +322,13 @@ exports.reports_new = function() {
 					"en": "PW below 25 years who tested positive by the first test",
 					"field": {
 						"name": [
-							"patient.patient_age",
+							"patient.approximate_age",
 							"hiv_pregnancy_clinic.first_hiv_status",
 							"anc_followup.first_hiv_status",
 							"anc_first_visit.first_hiv_status"
 						],
 						"type": "count",
-						"condition": "patient.patient_age < 25"
+						"condition": "patient.approximate_age < 25"
 					}
 				},
 				"pw_who_were_counselled_after_testing_hiv": {
@@ -345,7 +341,7 @@ exports.reports_new = function() {
 							"anc_first_visit.counseled_hiv_prior_test",
 							"anc_followup.counseled_hiv_prior_test"
 						],
-						"condition": "== false",
+						"condition": "subforms.== false",
 						"type": "count"
 					}
 				},
@@ -602,15 +598,15 @@ exports.reports_new = function() {
 				"columns": {
 					"below20": {
 						"title": "Below 20 years old",
-						"condition": "patient.approxage < 20"
+						"condition": "patient.approximate_age < 20"
 					},
 					"above20": {
 						"title": "Above 20 years old",
-						"condition": "patient.approxage >= 20"
+						"condition": "patient.approximate_age >= 20"
 					},
 					"total": {
 						"title": "Total",
-						"condition": "true"
+						"condition": "subforms.true"
 					}
 				}
 			}
@@ -632,7 +628,7 @@ exports.reports_new = function() {
 					"line_number": "1a",
 					"sw": "Idaji ya Wateja wa Sindano",
 					"en": "Number of customers who use contraceptive injection",
-					"condition": "reproductive_counseling.contraception_current == 'Depo Provera'"
+					"condition": "subforms.reproductive_counseling.contraception_current == 'Depo Provera'"
 				},
 				"contraceptive_pills": {
 					"line_number": "2",
@@ -643,19 +639,19 @@ exports.reports_new = function() {
 					"line_number": "2a",
 					"sw": "Idadi ya wateja wa Vidonge Kituoni",
 					"en": "The number of pills clients at the clinic",
-					"condition": "reproductive_counseling.contraception_current == 'Pills' && !(reproductive_counseling.contraception_distribution == 'CBD')"
+					"condition": "subforms.reproductive_counseling.contraception_current == 'Pills' && !(reproductive_counseling.contraception_distribution == 'CBD')"
 				},
 				"number_of_pills_clients_through_cbd": {
 					"line_number": "2b",
 					"sw": "Idadi ya wateja wa vidonge wa CBD",
 					"en": "Number of pills clients through CBD(Community Based Distribution)",
-					"condition": "reproductive_counseling.contraception_current == 'Pills' && reproductive_counseling.contraception_distribution == 'CBD'"
+					"condition": "subforms.reproductive_counseling.contraception_current == 'Pills' && reproductive_counseling.contraception_distribution == 'CBD'"
 				},
 				"the_number_of_clients_who_were_given_pills_at_the_clinic_and_through_cbd": {
 					"line_number": "2c",
 					"sw": "Jumla walochukua Vidonge Kituoni na CBD (2a+2b)",
 					"en": "The number of clients who were given pills at the clinic and through CBD(2a+2b)",
-					"condition": "reproductive_counseling.contraception_current == 'Pills'"
+					"condition": "subforms.reproductive_counseling.contraception_current == 'Pills'"
 				},
 				"condoms": {
 					"line_number": "3",
@@ -1065,49 +1061,49 @@ exports.reports = function() {
 					"line_number": "2a",
 					"sw": "Umri wa mimba chini ya wiki 12 (<12weeks)",
 					"en": "Gestational age below 12 weeks(<12weeks)",
-					"condition": "anc_first_visit.gestational_age<12"
+					"condition": "subforms.anc_first_visit.gestational_age<12"
 				},
 				"gestational_at_week_12_or_more": {
 					"line_number": "2b",
 					"sw": "Umri wa mimba wiki 12 au zaidi (12+ weeks)",
 					"en": "Gestational at week 12 or more (12+weeks)",
-					"condition": "anc_first_visit.gestational_age>=12"
+					"condition": "subforms.anc_first_visit.gestational_age>=12"
 				},
 				"total_attendance_of_first_visits(2a+2b)": {
 					"line_number": "2c",
 					"sw": "Jumla ya hudhurio la Kwanza (2a+2b)",
 					"en": "Total attendance of first visits(2a+2b)",
-					"condition": "anc_first_visit.gestational_age"
+					"condition": "subforms.anc_first_visit.gestational_age"
 				},
 				"clients_for_return_visits": {
 					"line_number": "2d",
 					"sw": "Wateja wa marudio",
 					"en": "clients for return visits",
-					"condition": "anc_followup.total_visits"
+					"condition": "subforms.anc_followup.total_visits"
 				},
 				"fourth_visits_for_all_pregnant_women": {
 					"line_number": "2e",
 					"sw": "Hudhurio la nne wajawazito wote",
 					"en": "Fourth visits for all pregnant women",
-					"condition": "anc_followup.fourth_visits"
+					"condition": "subforms.anc_followup.fourth_visits"
 				},
 				"total_attendance": {
 					"line_number": "2f",
 					"sw": "Jumla ya Mahudhurio yote (2c+2d)",
 					"en": "total attendance(2c+2d)",
-					"condition": "anc_first_visit.gestational_age || anc_followup.total_visits"
+					"condition": "subforms.anc_first_visit.gestational_age || anc_followup.total_visits"
 				},
 				"number_of_pregnant_women_tested_first_visit": {
 					"line_number": "2g",
 					"sw": "Idadi ya wajawazito waliopima damu hudhurio la kwanza",
 					"en": "Number of pregnant women who tested during the first visit at the clinic",
-					"condition": "anc_first_visit.pregnancy_test"
+					"condition": "subforms.anc_first_visit.pregnancy_test"
 				},
 				"pregnant_women_who_received_vaccination_of_tt2": {
 					"line_number": "3",
 					"sw": "Wajawazito waliopata Chanjo ya TT2+:",
 					"en": "Pregnant women who received vaccination of TT2+",
-					"condition": "anc_first_visit.tt2plus_vaccine"
+					"condition": "subforms.anc_first_visit.tt2plus_vaccine"
 				},
 				"risk_factors": {
 					"line_number": "4",
@@ -1118,43 +1114,43 @@ exports.reports = function() {
 					"line_number": "4a",
 					"sw": "Mimba zaidi ya 4:",
 					"en": "conceived more than four times",
-					"condition": "anc_first_visit.number_pregnancy > 4"
+					"condition": "subforms.anc_first_visit.number_pregnancy > 4"
 				},
 				"age_less_than_20_years": {
 					"line_number": "4b",
 					"sw": "Umri chini ya miaka 20:",
 					"en": "age less than 20 years",
-					"condition": "patient.patient_age < 20"
+					"condition": "patient.approximate_age < 20"
 				},
 				"age_over_35_years": {
 					"line_number": "4c",
 					"sw": "Umri zaidi ya miaka 35:",
 					"en": "age over 35 years",
-					"condition": "patient.patient_age > 35"
+					"condition": "patient.approximate_age > 35"
 				},
 				"severe_anemia_first_attendance": {
 					"line_number": "4d",
 					"sw": "Upungufu mkubwa wa damu <8.5g/dl - Anaemia hudhurio Ia kwanza:",
 					"en": "severe anemia <8.5g/dl - Anaemia first attendance",
-					"condition": "anc_first_visit.anemia"
+					"condition": "subforms.anc_first_visit.anemia"
 				},
 				"blood_pressure_high": {
 					"line_number": "4e",
 					"sw": "Shinikizo Ia damu (BP => 140/90mm/hg):",
 					"en": "blood pressure (BP => 140/90mm/hg):",
-					"condition": "((anc_first_visit.bp_systolic || anc_followup.bp_systolic) >= 140) && ((anc_first_visit.bp_diastolic || anc_followup.bp_diastolic) >= 90)"
+					"condition": "subforms.((anc_first_visit.bp_systolic || anc_followup.bp_systolic) >= 140) && ((anc_first_visit.bp_diastolic || anc_followup.bp_diastolic) >= 90)"
 				},
 				"heart_disease": {
 					"line_number": "4f",
 					"sw": "Ugonjwa wa moyo:",
 					"en": "Heart disease",
-					"condition": "anc_first_visit.pregnancy_diseases == 'Heart Disease'"
+					"condition": "subforms.anc_first_visit.pregnancy_diseases == 'Heart Disease'"
 				},
 				"diabetes": {
 					"line_number": "4g",
 					"sw": "Kisukari:",
 					"en": "Diabetes",
-					"condition": "anc_first_visit.pregnancy_diseases == 'Diabetes'"
+					"condition": "subforms.anc_first_visit.pregnancy_diseases == 'Diabetes'"
 				},
 				"tuberculosis": {
 					"line_number": "4h",
@@ -1162,7 +1158,7 @@ exports.reports = function() {
 					"en": "Tuberculosis",
 					"field": {
 						"name": "anc_first_visit.pregnancy_diseases",
-						"condition": "== 'Tuberculosis'",
+						"condition": "subforms.== 'Tuberculosis'",
 						"type": "count"
 					}
 				},
@@ -1349,13 +1345,13 @@ exports.reports = function() {
 					"en": " PW below 25 years who tested for HIV for the first time at the clinic",
 					"field": {
 						"name": [
-							"patient.patient_age",
+							"patient.approximate_age",
 							"hiv_pregnancy_clinic.tested_hiv_firstvisit",
 							"anc_first_visit.tested_hiv_firstvisit",
 							"anc_followup.tested_hiv_firstvisit"
 						],
 						"type": "count",
-						"condition": "patient.patient_age < 25"
+						"condition": "patient.approximate_age < 25"
 					}
 				},
 				"pw_below_25_years_who_tested_positive_by_the_first_test": {
@@ -1364,13 +1360,13 @@ exports.reports = function() {
 					"en": "PW below 25 years who tested positive by the first test",
 					"field": {
 						"name": [
-							"patient.patient_age",
+							"patient.approximate_age",
 							"hiv_pregnancy_clinic.first_hiv_status",
 							"anc_followup.first_hiv_status",
 							"anc_first_visit.first_hiv_status"
 						],
 						"type": "count",
-						"condition": "patient.patient_age < 25"
+						"condition": "patient.approximate_age < 25"
 					}
 				},
 				"pw_who_were_counselled_after_testing_hiv": {
@@ -1383,7 +1379,7 @@ exports.reports = function() {
 							"anc_first_visit.counseled_hiv_prior_test",
 							"anc_followup.counseled_hiv_prior_test"
 						],
-						"condition": "== false",
+						"condition": "subforms.== false",
 						"type": "count"
 					}
 				},
@@ -1640,15 +1636,15 @@ exports.reports = function() {
 				"columns": {
 					"below20": {
 						"title": "Below 20 years old",
-						"condition": "patient.approxage < 20"
+						"condition": "patient.approximate_age < 20"
 					},
 					"above20": {
 						"title": "Above 20 years old",
-						"condition": "patient.approxage >= 20"
+						"condition": "patient.approximate_age >= 20"
 					},
 					"total": {
 						"title": "Total",
-						"condition": "true"
+						"condition": "subforms.true"
 					}
 				}
 			}
@@ -1670,7 +1666,7 @@ exports.reports = function() {
 					"line_number": "1a",
 					"sw": "Idaji ya Wateja wa Sindano",
 					"en": "Number of customers who use contraceptive injection",
-					"condition": "reproductive_counseling.contraception_current == 'Depo Provera'"
+					"condition": "subforms.reproductive_counseling.contraception_current == 'Depo Provera'"
 				},
 				"contraceptive_pills": {
 					"line_number": "2",
@@ -1681,19 +1677,19 @@ exports.reports = function() {
 					"line_number": "2a",
 					"sw": "Idadi ya wateja wa Vidonge Kituoni",
 					"en": "The number of pills clients at the clinic",
-					"condition": "reproductive_counseling.contraception_current == 'Pills' && !(reproductive_counseling.contraception_distribution == 'CBD')"
+					"condition": "subforms.reproductive_counseling.contraception_current == 'Pills' && !(reproductive_counseling.contraception_distribution == 'CBD')"
 				},
 				"number_of_pills_clients_through_cbd": {
 					"line_number": "2b",
 					"sw": "Idadi ya wateja wa vidonge wa CBD",
 					"en": "Number of pills clients through CBD(Community Based Distribution)",
-					"condition": "reproductive_counseling.contraception_current == 'Pills' && reproductive_counseling.contraception_distribution == 'CBD'"
+					"condition": "subforms.reproductive_counseling.contraception_current == 'Pills' && reproductive_counseling.contraception_distribution == 'CBD'"
 				},
 				"the_number_of_clients_who_were_given_pills_at_the_clinic_and_through_cbd": {
 					"line_number": "2c",
 					"sw": "Jumla walochukua Vidonge Kituoni na CBD (2a+2b)",
 					"en": "The number of clients who were given pills at the clinic and through CBD(2a+2b)",
-					"condition": "reproductive_counseling.contraception_current == 'Pills'"
+					"condition": "subforms.reproductive_counseling.contraception_current == 'Pills'"
 				},
 				"condoms": {
 					"line_number": "3",
