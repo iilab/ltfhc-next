@@ -6,6 +6,7 @@
 #Importing modules
 import requests
 import json
+from collections import OrderedDict
 
 changes = "http://localhost:5984/emr/_changes"
 localdoc = "http://localhost:5984/emr/_local/last"
@@ -21,6 +22,7 @@ changesparams = {
 
 r = requests.get(changes,params=changesparams)
 
+//l = OrderedDict.fromkeys(r.json["id"]).keys()
 print r.json()
 
 # Save output, copy to remote end, post to _rev_diff URL
