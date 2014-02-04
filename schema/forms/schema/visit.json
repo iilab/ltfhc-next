@@ -110,7 +110,7 @@
 								"well_child_visit": {
 									"title": "Well Child Visit",
 									"dependencies": "#reasons",
-									"$ref": "immunization"
+									"$ref": "well_child_visit"
 								},
 								"delivery_record": {
 									"title": "Delivery Record",
