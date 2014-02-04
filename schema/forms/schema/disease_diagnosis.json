@@ -1,83 +1,76 @@
 {
-	"collection": "forms",
-	"class": "schema",
-	"parent": "visit",
-	"_id": "forms/schema/visit/diseasediagnosis",
-	"formname": "Disease Diagnosis",
-	"$schema": "http://json-schema.org/draft-04/schema#",
-	"type": "object",
-	"title": "Disease Diagnosis",
-	"properties": {
-		"complaint": {
-			"type": "array",
-			"$ref": "lists/#symptoms"
-		},
-		"complaint_other": {
-			"type": "string"
-		},
-		"symptom": {
-			"type": "array",
-			"$ref": "lists/#symptoms"
-		},
-		"symptom_other": {
-			"type": "string"
-		},
-		"history": {
-			"type": "array",
-			"$ref": "lists/#histories"
-		},
-		"history_other": {
-			"type": "string"
-		},
-		"note": {
-      "title": "Examination Notes:",
-			"type": "string"
-		},
-		"testing_method": {
-      "title": "Tested By Following Method:",
-			"type": "string"
-		},
-		"diagnosis": {
-      "title": "Disease Diagnosis:",
-			"type": "string",
-			"$ref": "lists/#diseases"
-		},
-		"diagnosis_other": {
-      "title": "Other Disease Diagnosis:",
-			"type": "string"
-		},
-		"treatment": {
-      "title": "Treatment:",
-			"type": "string"
-		},
-		"admission": {
-      "title": "Admission Required?",
-			"type": "boolean",
-			"enum": [
-				"yes",
-				"no"
-			]
-		},
-		"disease_mortality": {
-      "title": "Did Disease Lead To Death?",
-			"type": "boolean",
-			"enum": [
-				"yes",
-				"no"
-			]
-		},
-		"referral": {
-      "title": "Referral?",
-			"type": "string",
-			"enum": [
-				"yes",
-				"no"
-			]
-		},
-		"referral_location": {
-      "title": "If Yes, Referral Location:",
-			"type": "string",
-			"$ref": "lists/#referral_locations"
-		}
-	}
+
+    "fields": {
+        "complaint": {
+            "label": "Chief Complaint: (Lalamiko kuu)",
+            "type": "checkbox"
+        },
+        "complaint_other": {
+            "label": "Other Complaint: (Kuu nyingine)",
+            "helper": "If Chief Complaint not listed above, please write in."
+        },
+        "symptom": {
+            "label": "Symptoms: (Dalili)",
+            "type": "checkbox"
+        },
+        "symptom_other": {
+            "label": "Other Symptoms: (Dalili nyingine)",
+            "type": "textarea"
+        },
+        "history": {
+            "label": "History: (Historia ya zamani)",
+            "type": "checkbox"
+        },
+        "history_other": {
+            "label": "Other Past History: (Historia ya zamani nyingine)",
+            "type": "textarea"
+        },
+        "note": {
+            "label": "Examination Notes:",
+            "type": "textarea"
+        },
+        "testing_method": {
+            "label": "Tested By Following Method: (Amepimwa kwa njia zifuatazo)",
+            "type": "textarea"
+        },
+        "diagnosis": {
+            "label": "Disease Diagnosis: (Utambuzi wa ugonjwa)",
+            "type": "select"
+        },
+        "diagnosis_other": {
+            "label": "Other Disease Diagnosis: (Utambuzi wa ugonjwa nyingine)"
+        },
+        "treatment": {
+            "label": "Treatment: (Matibabu)",
+            "type": "textarea"
+        },
+        "admission": {
+            "label": "Admission Required?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "disease_mortality": {
+            "label": "Did Disease Lead To Death? (Je ugonjwa ulisababisha kifo?)",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "referral": {
+            "label": "Referral?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "referral_location": {
+            "label": "If Yes, Referral Location:",
+            "type": "select"
+        }
+    }
 }
