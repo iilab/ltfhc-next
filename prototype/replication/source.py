@@ -6,7 +6,6 @@
 #Importing modules
 import requests
 import json
-from collections import OrderedDict
 
 changes = "http://localhost:5984/emr/_changes"
 localdoc = "http://localhost:5984/emr/_local/last"
@@ -22,8 +21,12 @@ changesparams = {
 
 r = requests.get(changes,params=changesparams)
 
-//l = OrderedDict.fromkeys(r.json["id"]).keys()
-print r.json()
+b = {}
+
+for i in r.json()['results']:
+   b[i['id']] = [i['changes'][0]['rev']]
+
+print json.dumps(b, sort_keys=True, indent=4, separators=(',', ': '))
 
 # Save output, copy to remote end, post to _rev_diff URL
 # http://wiki.apache.org/couchdb/HttpPostRevsDiff
