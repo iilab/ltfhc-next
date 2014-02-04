@@ -1,56 +1,101 @@
 {
     "fields": {
-      "hiv_status_prior_firstvisit": {
-        "label": "HIV Status prior to first visit (Hadhi ya VVU)",
-        "type": "select"
-      },
-      "tested_hiv_firstvisit": {
-        "label": "Tested for HIV on first visit?",
-        "type": "radio"
-      },
-      "counseled_hiv_prior_test": {
-        "label": "Counseled before tested for HIV?",
-        "type": "radio"
-      },
-      "first_hiv_status": {
-        "label": "Result if tested for HIV on first visit",
-        "type": "select"
-      },
-      "second_hiv_test": {
-        "label": "Tested positive by second HIV test?",
-        "type": "radio"
-      },
-      "partner_hiv": {
-        "label": "Partner tested for HIV in clinic?",
-        "type": "radio"
-      },
-      "partner_positive": {
-        "label": "Partner tested positive for HIV?",
-        "type": "radio"
-      },
-      "discordant_couple": {
-        "label": "Discordant couple?",
-        "type": "radio"
-      },
-      "combo_drugs": {
-        "label": "Patient recieved PMCTC combo drugs?",
-        "type": "radio"
-      },
-      "art_drugs": {
-        "label": "Patient using ART?",
-        "type": "radio"
-      },
-      "ctx_given": {
-        "label": "Patient given CTX?",
-        "type": "radio"
-      },
-      "counsel_feeding": {
-        "label": "Counseled on how to feed the baby?",
-        "type": "radio"
-      },
-      "referred_ctc": {
-        "label": "Mother Referred To CTC? (Mama alipewa rufaa kwenda CTC?)",
-        "type": "radio"
-      }
+        "hiv_status_prior_firstvisit": {
+            "label": "HIV Status prior to first visit (Hadhi ya VVU)",
+            "type": "select"
+        },
+        "tested_hiv_firstvisit": {
+            "label": "Tested for HIV on first visit?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "counseled_hiv_prior_test": {
+            "label": "Counseled before tested for HIV?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "first_hiv_status": {
+            "label": "Result if tested for HIV on first visit",
+            "type": "select"
+        },
+        "second_hiv_test": {
+            "label": "Tested positive by second HIV test?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "partner_hiv": {
+            "label": "Partner tested for HIV in clinic?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "partner_positive": {
+            "label": "Partner tested positive for HIV?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "discordant_couple": {
+            "label": "Discordant couple?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "combo_drugs": {
+            "label": "Patient recieved PMCTC combo drugs?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "art_drugs": {
+            "label": "Patient using ART?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "ctx_given": {
+            "label": "Patient given CTX?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "counsel_feeding": {
+            "label": "Counseled on how to feed the baby?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
+        "referred_ctc": {
+            "label": "Mother Referred To CTC? (Mama alipewa rufaa kwenda CTC?)",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No",
+                "Unknown"
+            ]
+        }
     }
-  }
+}
