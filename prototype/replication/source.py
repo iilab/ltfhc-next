@@ -21,7 +21,12 @@ changesparams = {
 
 r = requests.get(changes,params=changesparams)
 
-print r.json()
+b = {}
+
+for i in r.json()['results']:
+   b[i['id']] = [i['changes'][0]['rev']]
+
+print json.dumps(b, sort_keys=True, indent=4, separators=(',', ': '))
 
 # Save output, copy to remote end, post to _rev_diff URL
 # http://wiki.apache.org/couchdb/HttpPostRevsDiff
