@@ -1,20 +1,23 @@
 {
+  "class": "schema",
   "title": "Follow-up Antenatal Visit",
   "_id": "anc_followup",
   "type": "object",
   "properties": {
     "due_date": {
-      "type": "date"
+      "type": "string"
     },
     "number_pregnancy": {
-      "type": "number"
+      "type": "string",
+      "$ref": "lists/#one_to_20_plus"
     },
     "gestational_age": {
-      "type": "number"
+      "type": "string",
+      "$ref": "lists/#one_to_42_plus"
     },
-    "symptoms": {
-			"type": "string",
-			"$ref": "lists/#anc_symptoms"
+    "symptom": {
+      "type": "string",
+      "$ref": "lists/#anc_symptoms"
     },
     "other_symptom": {
       "type": "string"
@@ -23,29 +26,31 @@
       "type": "number"
     },
     "fundal_height": {
-      "type": "number"
+      "type": "string",
+      "$ref": "lists/#fundal_heights"
     },
     "cervical_dilation": {
-      "type": "number"
+      "type": "string",
+      "$ref": "lists/#cervical_dilations"
     },
     "fetal_station": {
-			"type": "string",
-			"$ref": "lists/#fetal_stations"
+      "type": "string",
+      "$ref": "lists/#fetal_stations"
     },
     "hemoglobin": {
       "type": "number"
     },
     "fetal_movement": {
-			"type": "string",
-			"$ref": "lists/#fetal_movements"
+      "type": "string",
+      "$ref": "lists/#fetal_movements"
     },
     "fetal_heart_rate": {
-			"type": "string",
-			"$ref": "lists/#fetal_heart_rates"
+      "type": "string",
+      "$ref": "lists/#fetal_heart_rates"
     },
     "hiv_status": {
-			"type": "string",
-			"$ref": "lists/#hiv_statuses"
+      "type": "string",
+      "$ref": "lists/#hiv_statuses"
     },
     "treatment_given": {
       "type": "string"
@@ -68,8 +73,8 @@
       ]
     },
     "hiv_status_prior_firstvisit": {
-			"type": "string",
-			"$ref": "lists/#hiv_statuses"
+      "type": "string",
+      "$ref": "lists/#hiv_statuses"
     },
     "tested_hiv_firstvisit": {
       "type": "string",
@@ -79,8 +84,11 @@
       ]
     },
     "second_hiv_test": {
-			"type": "string",
-			"$ref": "lists/#hiv_statuses"
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
     },
     "refer_ctc": {
       "type": "string",
@@ -236,8 +244,8 @@
       "type": "number"
     },
     "anemia_severe": {
-			"type": "string",
-			"$ref": "lists/#anemia_severities"
+      "type": "string",
+      "$ref": "lists/#anemia_severities"
     },
     "tt2plus_vaccine": {
       "type": "string",

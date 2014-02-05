@@ -1,45 +1,40 @@
 {
   "fields": {
     "first_name": {
-      "label": "First Name:"
+      "label": "First Name: (Jina la kwanza)"
     },
     "last_name": {
-      "label": "Last Name:"
+      "label": "Last Name: (Jina la mwisho)"
     },
     "gender": {
-      "label": "Gender:",
+      "label": "Gender: (Jinsia)",
       "type": "select"
     },
     "clinic_id": {
-      "label": "Clinic ID:"
+      "label": "Clinic ID: (Namba ya utambulishi ya kliniki)"
     },
     "government_id": {
-      "label": "Government ID:"
+      "label": "Government ID: (Namba ya utambulishi ya Serikali)"
     },
     "hiv_id": {
-      "label": "HIV ID:"
+      "label": "HIV ID: (Kitambulisho cha VVU)"
     },
     "phone": {
-      "label": "Phone:",
+      "label": "Phone: (Namba ya simu)",
       "type": "number"
     },
     "hometown": {
       "label": "Hometown:"
     },
     "village": {
-      "label": "What village do you live in?"
+      "label": "What village do you live in? (Unaishi katika kijiji gani?)"
     },
     "birthdate": {
-      "label": "Birth Date:",
-      "type": "date",
-      "datepicker": {
-          "hideIfNoPrevNextType": true,
-          "yearRange": "1900:+0",
-					"changeYear": true
-      }
+      "label": "Birth Date: (Tarehe ya kuzaliwa)",
+      "type": "date"
     },
     "approximate_age": {
-      "label": "Approximate Age:",
+      "label": "Approximate Age: (Umri wa mgonjwa)",
       "type": "number"
     },
     "medication_allergies": {
@@ -47,7 +42,7 @@
       "type": "textarea"
     },
     "note": {
-      "label": "Other Patient Notes:",
+      "label": "Other Patient Notes: (Maelezo mengine husika)",
       "type": "textarea"
     }
   }

@@ -1,4 +1,5 @@
 {
+  "class": "schema",
   "title": "Patient Information",
   "_id": "patient",
   "type": "object",
@@ -12,11 +13,7 @@
     },
     "gender": {
       "type": "string",
-      "enum": [
-        "Female",
-        "Male",
-        "Unknown"
-      ]
+      "$ref": "lists/#genders"
     },
     "clinic_id": {
       "type": "string"
