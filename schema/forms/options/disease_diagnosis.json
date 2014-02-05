@@ -1,24 +1,27 @@
 {
   "fields": {
-		"complaint": {
-			"label": "Chief complaint:"
-		},
-		"complaint_other": {
-      "label": "Other Complaint:",
-			"helper": "If Chief Complaint not listed above, please write in."
-		},
-		"symptom": {
-			"label": "Symptoms:"
-		},
+    "complaint": {
+      "label": "Chief Complaint: (Lalamiko kuu)",
+      "type": "checkbox"
+    },
+    "complaint_other": {
+      "label": "Other Complaint: (Kuu nyingine)",
+      "helper": "If Chief Complaint not listed above, please write in."
+    },
+    "symptom": {
+      "label": "Symptoms: (Dalili)",
+      "type": "checkbox"
+    },
     "symptom_other": {
-      "label": "Other Symptoms:",
+      "label": "Other Symptoms: (Dalili nyingine)",
       "type": "textarea"
     },
-		"history": {
-			"label": "History:"
-		},
+    "history": {
+      "label": "History: (Historia ya zamani)",
+      "type": "checkbox"
+    },
     "history_other": {
-			"label": "Other Past History:",
+      "label": "Other Past History: (Historia ya zamani nyingine)",
       "type": "textarea"
     },
     "note": {
@@ -46,7 +49,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "disease_mortality": {
       "label": "Did Disease Lead To Death? (Je ugonjwa ulisababisha kifo?)",
@@ -54,7 +58,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "referral": {
       "label": "Referral?",
@@ -62,7 +67,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "referral_location": {
       "label": "If Yes, Referral Location:",

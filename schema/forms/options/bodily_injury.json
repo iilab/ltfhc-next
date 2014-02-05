@@ -29,7 +29,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "injury_mortality": {
       "label": "Did Injury Lead to Death? (Je majeraha yalisababisha kifo?)",
@@ -37,8 +38,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     }
   }
-
 }

@@ -1,86 +1,83 @@
 {
-	"title": "Well Child Visit",
-	"_id": "well_child_visit",
-	"type": "object",
-	"properties": {
-		"height": {
-			"type": "number"
-		},
-		"weight": {
-			"type": "number"
-		},
-		"alben_tablets": {
-			"type": "string",
-			"enum": [
-				"yes",
-				"no"
-			]
-		},
-		"milk_source": {
-			"type": "string",
-			"$ref": "lists/#milk_types"
-		},
-		"mother_hiv_status": {
-			"type": "string",
-			"enum": [
-				"Positive",
-				"Negative",
-				"unknown"
-			]
-		},
-		"mother_tetanus_delivery": {
-			"type": "string",
-			"enum": [
-				"yes",
-				"no",
-				"unknown"
-			]
-		},
-		"possible_hiv": {
-			"type": "string",
-			"enum": [
-				"yes",
-				"no"
-			]
-		},
-		"hiv_status": {
-			"type": "string",
-			"$ref": "lists/#hiv_statuses"
-		},
-		"hiv_pcr_test_2mo": {
-			"type": "string",
-			"enum": [
-				"yes",
-				"no"
-			]
-		},
-		"hiv_pcr_test_18mo": {
-			"type": "string",
-			"enum": [
-				"yes",
-				"no"
-			]
-		},
-		"ctx_status": {
-			"type": "string",
-			"enum": [
-				"yes",
-				"no"
-			]
-		},
-		"referred_ctc": {
-			"type": "string",
-			"enum": [
-				"yes",
-				"no"
-			]
-		},
-		"bed_net_voucher": {
-			"type": "string",
-			"enum": [
-				"yes",
-				"no"
-			]
-		}
-	}
+  "class": "schema",
+  "title": "Well Child Visit",
+  "_id": "well_child_visit",
+  "type": "object",
+  "properties": {
+    "height": {
+      "type": "number"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "alben_tablets": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "milk_source": {
+      "type": "string",
+      "$ref": "lists/#milk_types"
+    },
+    "mother_hiv_status": {
+      "type": "string",
+      "$ref": "lists/#hiv_statuses"
+    },
+    "mother_tetanus_delivery": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "possible_hiv": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_status": {
+      "type": "string",
+      "$ref": "lists/#hiv_statuses"
+    },
+    "hiv_pcr_test_2mo": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_pcr_test_18mo": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "ctx_status": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "referred_ctc": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "bed_net_voucher": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    }
+  }
 }
