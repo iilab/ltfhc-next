@@ -295,7 +295,7 @@
         },
         "genders": {
             "id": "genders",
-            "type": "array",
+            "type": "string",
             "enum": [
                 "female",
                 "male",
@@ -731,7 +731,7 @@
         },
         "breast_symptoms": {
             "id": "breast_symptoms",
-            "type": "string",
+            "type": "array",
             "enum": [
                 "Lump",
                 "Pain",
