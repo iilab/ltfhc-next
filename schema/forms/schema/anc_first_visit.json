@@ -1,4 +1,5 @@
 {
+  "class": "schema",
   "title": "First Antenatal Visit",
   "_id": "anc_first_visit",
   "type": "object",
@@ -10,10 +11,12 @@
       "type": "number"
     },
     "gestational_age": {
-      "type": "number"
+      "type": "string",
+      "$ref": "lists/#one_to_42_plus"
     },
     "number_pregnancy": {
-      "type": "number"
+      "type": "string",
+      "$ref": "lists/#one_to_20_plus"
     },
     "pregnancy_test": {
       "type": "string",
@@ -23,31 +26,35 @@
       ]
     },
     "number_full_term_delivery": {
-      "type": "number"
+      "type": "string",
+      "$ref": "lists/#one_to_20_plus"
     },
     "number_pre_term_delivery": {
-      "type": "number"
+      "type": "string",
+      "$ref": "lists/#one_to_20_plus"
     },
     "number_miscarriage_abortion": {
-      "type": "number"
+      "type": "string",
+      "$ref": "lists/#one_to_20_plus"
     },
     "number_live_birth": {
-      "type": "number"
+      "type": "string",
+      "$ref": "lists/#one_to_20_plus"
     },
     "weight_heaviest_infant": {
-			"type": "string",
-			"$ref": "lists/#infant_weights"
+      "type": "string",
+      "$ref": "lists/#infant_weights"
     },
     "pregnancy_complications": {
-			"type": "string",
-			"$ref": "lists/#pregnancy_complications"
+      "type": "string",
+      "$ref": "lists/#pregnancy_complications"
     },
     "other_pregnancy_complications": {
       "type": "string"
     },
     "pregnancy_diseases": {
-			"type": "string",
-			"$ref": "lists/#pregnancy_diseases"
+      "type": "string",
+      "$ref": "lists/#pregnancy_diseases"
     },
     "std_status": {
       "type": "string",
@@ -64,8 +71,8 @@
       ]
     },
     "hiv_status_prior_firstvisit": {
-			"type": "string",
-			"$ref": "lists/#hiv_statuses"
+      "type": "string",
+      "$ref": "lists/#hiv_statuses"
     },
     "tested_hiv_firstvisit": {
       "type": "string",
@@ -75,8 +82,8 @@
       ]
     },
     "first_hiv_status": {
-			"type": "string",
-			"$ref": "lists/#hiv_statuses"
+      "type": "string",
+      "$ref": "lists/#hiv_statuses"
     },
     "second_hiv_test": {
       "type": "string",
@@ -239,12 +246,12 @@
       "type": "number"
     },
     "anemia_severe": {
-			"type": "string",
-			"$ref": "lists/#anemia_severities"
+      "type": "string",
+      "$ref": "lists/#anemia_severities"
     },
     "symptoms": {
-			"type": "string",
-			"$ref": "lists/#anc_symptoms"
+      "type": "string",
+      "$ref": "lists/#anc_symptoms"
     },
     "tt2plus_vaccine": {
       "type": "string",

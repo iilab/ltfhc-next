@@ -14,7 +14,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "given_zinc": {
       "label": "Zinc given?",
@@ -22,7 +23,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "blood_in_stool": {
       "label": "Blood in stool?",
@@ -30,7 +32,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "admission": {
       "label": "Admission required?",
@@ -38,7 +41,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "referral": {
       "label": "Referral required?",
@@ -46,7 +50,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "diarrhea_mortality": {
       "label": "Death due to diarrhea?",
@@ -54,7 +59,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     }
   }
 }
