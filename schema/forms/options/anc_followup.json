@@ -6,16 +6,16 @@
     },
     "number_pregnancy": {
       "label": "Pregnancy Number: (Idadi ya ujauzito)",
-      "type": "number"
+      "type": "select"
     },
     "gestational_age": {
       "label": "Approximate Estimated Gestational Age (weeks):",
-      "type": "number"
+      "type": "select"
     },
-    "symptom0": {
+    "symptom": {
       "label": "Symptoms:",
       "type": "checkbox"
-		},
+    },
     "other_symptom": {
       "label": "If Other Symptoms, Please Describe:"
     },
@@ -25,11 +25,11 @@
     },
     "fundal_height": {
       "label": "Fundal Height (cm):",
-      "type": "number"
+      "type": "select"
     },
     "cervical_dilation": {
       "label": "Cervical Dilation (cm):",
-      "type": "number"
+      "type": "select"
     },
     "fetal_station": {
       "label": "Fetal Station:",
@@ -65,7 +65,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "in_labor": {
       "label": "Laboring Now?",
@@ -73,7 +74,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "hiv_status_prior_firstvisit": {
       "label": "HIV Status prior to first visit (Hadhi ya VVU)",
@@ -85,7 +87,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "second_hiv_test": {
       "label": "Tested positive by second HIV test?",
@@ -93,7 +96,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "refer_ctc": {
       "label": "Referred to CTC?",
@@ -101,7 +105,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "partner_hiv": {
       "label": "Partner tested for HIV in clinic?",
@@ -109,7 +114,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "partner_positive": {
       "label": "Partner tested positive for HIV?",
@@ -117,7 +123,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "discordant_couple": {
       "label": "Discordant couple?",
@@ -125,7 +132,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "combo_drugs": {
       "label": "Patient recieved PMCTC combo drugs?",
@@ -133,7 +141,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "art_drugs": {
       "label": "Patient using ART?",
@@ -141,7 +150,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "ctx_given": {
       "label": "Patient given CTX?",
@@ -149,7 +159,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "counsel_feeding": {
       "label": "Counseled on how to feed the baby?",
@@ -157,7 +168,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "syphillus_test": {
       "label": "Tested for Syphillus",
@@ -165,7 +177,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "syphillus_status": {
       "label": "Infected with Syphillus",
@@ -173,7 +186,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "syphillus_treatment": {
       "label": "Being treated for Syphillus",
@@ -181,7 +195,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "partner_std": {
       "label": "Partner infected with STD",
@@ -189,7 +204,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "partner_std_treatment": {
       "label": "Partner being treated for STD",
@@ -197,7 +213,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "partner_syphillus_test": {
       "label": "Partner infected with Syphillus",
@@ -205,7 +222,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "partner_syphillus_status": {
       "label": "Partner infected with Syphillus",
@@ -213,7 +231,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "partner_syphillus_treatment": {
       "label": "Partner being treated for Syphillus",
@@ -221,7 +240,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "malaria_test": {
       "label": "Tested for malaria?",
@@ -229,7 +249,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "malar_pos": {
       "label": "Tested positive for malaria?",
@@ -237,7 +258,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "bednet_voucher": {
       "label": "Given voucher for free bednet?",
@@ -245,7 +267,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "ipt1": {
       "label": "Given IPT1?",
@@ -253,7 +276,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "ipt2": {
       "label": "Given IPT2?",
@@ -261,7 +285,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "bp_systolic": {
       "label": "BP Systolic (BP Sistolik)",
@@ -281,7 +306,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "referral": {
       "label": "Referral?",
@@ -289,7 +315,8 @@
       "enum": [
         "Yes",
         "No"
-      ]
+      ],
+      "removeDefaultNone": true
     },
     "referred_ctc": {
       "label": "Mother Referred To CTC? (Mama alipewa rufaa kwenda CTC?)",
@@ -298,7 +325,8 @@
         "Yes",
         "No",
         "Unknown"
-      ]
+      ],
+      "removeDefaultNone": true
     }
   }
 }

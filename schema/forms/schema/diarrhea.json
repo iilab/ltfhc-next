@@ -1,4 +1,5 @@
 {
+  "class": "schema",
   "title": "Diarrhea Treatment",
   "_id": "diarrhea",
   "type": "object",
@@ -8,7 +9,7 @@
     },
     "water_sodium_imbalance": {
       "type": "string",
-			"$ref": "lists/#water_sodium_severities"
+      "$ref": "lists/#water_sodium_severities"
     },
     "given_ors": {
       "type": "string",
