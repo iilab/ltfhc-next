@@ -12,7 +12,11 @@
         },
         "gender": {
             "type": "string",
-            "$ref": "lists/#genders"
+            "enum": [
+                "Female",
+                "Male",
+                "Unknown"
+            ]
         },
         "clinic_id": {
             "type": "string"
