@@ -8,7 +8,8 @@
         },
         "gender": {
             "label": "Gender: (Jinsia)",
-            "type": "select"
+            "type": "select",
+            "removeDefaultNone": true
         },
         "clinic_id": {
             "label": "Clinic ID: (Namba ya utambulishi ya kliniki)"
