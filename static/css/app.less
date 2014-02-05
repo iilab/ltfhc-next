@@ -874,6 +874,20 @@ display: block;
 table.spreadsheet {
 //    margin: 20px 20px 10px 20px !important;
 //    width: 900px !important;
+	input[type="text"] { 
+		border: none;
+		padding: 0px;
+		margin:0px;
+		width:100%;
+		outline:none;
+	}
+
+	td > input[type="text"] {
+		padding:0px;
+	}
+	td.range > input[type="text"] {
+		background: #eef;
+	}
 }
 table.spreadsheet .dropdown.open a.dropdown-toggle {
   color: #333;
