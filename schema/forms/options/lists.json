@@ -741,9 +741,8 @@
             ]
         },
         "cervical_dilations": {
-            "id": "cervical_dilations",
-            "type": "string",
-            "enum": [
+            "type": "select",
+            "optionLabels": [
                 "not examined",
                 "closed",
                 "finger tip",
