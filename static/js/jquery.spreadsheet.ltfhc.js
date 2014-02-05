@@ -151,6 +151,7 @@
 				td.data({
 					'validation': validation,
 					'validation-hint': c.validationHint,
+					'cell_key': doc.indicator + "|" + c.property[0],
 					'type': c.type
 				});
 				setValue(td, p, {
@@ -210,18 +211,21 @@
 		if (typeof $(td).data('editSelectionHandler') === 'function') {
 			$(td).data('editSelectionHandler')(td, setValue);
 		} else {
-			editInline.call(this, td, clear_value);
+			if ($(td).data('type') == 'field') {
+				editInline.call(this, td, clear_value);
+			}
 		}
 	};
+
 
 	/**
 	 * Clears exisitng inline-edit elements and creates a new one for the
 	 * provided td element
 	 */
 	var editInline = function(td, clear_value) {
-		var $input,
+		var $td = $(td),
+			$input = $td.children("input"),
 			$table = $(this),
-			$td = $(td),
 			offset = $td.offset(),
 			validation = $td.data('validation'),
 			validationHint = $td.data('validation-hint');
@@ -231,23 +235,14 @@
 			return true;
 		}
 
-		$input = $('<input class="edit-inline" type="text" />').css({
-			height: ($td.outerHeight()) + 'px',
-			width: ($td.outerWidth()) + 'px',
-			position: 'absolute',
-			top: offset.top - 117,
-			left: offset.left -425
-		});
 		$input.on('focus keyup mouseup blur', function() {
 			var valid = validation.call($input, $input.val());
 			$input.toggleClass('invalid-value', !valid);
 		});
 		if (clear_value) {
 			$input.val('');
-		} else {
-			$input.val($(td).text());
-		}
-
+		} 
+		
 		if (validationHint) {
 			$input.attr('title', validationHint);
 			if ($.fn.tooltip) {
@@ -256,13 +251,10 @@
 				});
 			}
 		}
-		$td.parents('table').after($input);
 		$table.data('spreadsheet:edit-inline-input', $input[0]);
 		$table.data('spreadsheet:edit-inline-td', $td[0]);
 		return $input.focus();
 	};
-
-
 
 	/**
 	 * Change the selected cell to the provided td element
@@ -281,12 +273,12 @@
 			div = $('<div id="spreadsheet_select" />');
 			$td.parents('table').after(div);
 		}
-		var offset = $td.offset();
+		var pos = $td.position();
 		div.css({
 			width: $td.outerWidth(),
 			height: $td.outerHeight(),
-			top: offset.top - 117,
-			left: offset.left - 425,
+			top: pos.top,
+			left: pos.left,
 			position: 'absolute'
 		});
 
@@ -339,7 +331,15 @@
 		if (_.isFunction(validation)) {
 			$td.toggleClass('error', !validation(val));
 		}
-		$td.text(val);
+		
+		if ($td.data('type') == 'field') {
+			val = val? val:"0";
+			var field = $("<input type='text' name='" + $td.data('cell_key') + "' value='" + val + "'/>");
+			$td.html(field)
+		} else {
+			$td.text(val);
+		}
+		
 		if (!options.silent) {
 			$td.trigger('change');
 		}
@@ -452,7 +452,7 @@
 				return;
 			}
 			$tr.data('save_queued', false);
-			$tr.addClass('saving');
+			//tr.addClass('saving');
 			$tr.removeClass('error');
 
 			doc = getDoc(tr, options);
@@ -702,14 +702,14 @@
 			// wait until a different tr is selected if possible
 			// TODO: check if doc has actually changed values
 			var tr = $(this);
-			saveDoc(tr, options);
+			//saveDoc(tr, options);
 		});
 		$table.on('change', 'td', function(ev) {
 			// update doc value in spreadsheet data array
-			var tr = $(this).parent(),
-				doc = getDoc(tr, options);
+			//var tr = $(this).parent(),
+			//doc = getDoc(tr, options);
 			// TODO: coerce value to correct type depending on options
-			setProperty(doc, $(this).data('property'), $(this).text());
+			//setProperty(doc, $(this).data('property'), $(this).text());
 		});
 		$table.on('click', 'tbody th', function(ev) {
 			if (ev.which === 3) { // right mouse button
@@ -719,7 +719,7 @@
 				ev.stopImmediatePropagation();
 			}
 		});
-		$table.on('click', 'tbody .delete-row', function(ev) {
+		/*$table.on('click', 'tbody .delete-row', function(ev) {
 			ev.preventDefault();
 			var deleted,
 				row = $(this).parents('tr'),
@@ -733,7 +733,7 @@
 			ev.preventDefault();
 			addRow($table, options);
 			return false;
-		});
+		});*/
 	};
 
 
@@ -800,10 +800,11 @@
 				}, 0);
 			}
 		});
+		/*
 		$(document).on('dblclick', '#spreadsheet_select', function(ev) {
 			var td = $table.data('spreadsheet:selected-td');
 			editCell.call($table, td);
-		});
+		});*/
 		$(document).click(function(ev) {
 			var el = $(ev.target),
 				input = $table.data('spreadsheet:edit-inline-input'),
@@ -812,7 +813,7 @@
 			if (!el.is('td', table) && !el.is(input) && !el.is(select_div)) {
 				clearSelection.call(this);
 			}
-		});
+		});	
 		$(document).keydown(function(ev) {
 			var selected = $table.data('spreadsheet:selected-td'),
 				input = $table.data('spreadsheet:edit-inline-input'),
@@ -873,7 +874,7 @@
 				if (!selected || ev.target.tagName === 'INPUT') {
 					return;
 				}
-				pos = getCellPosition.call($table, selected);
+				pos = getCellPosition($table, selected);
 				cell = getCellAt($table, pos.row, pos.column + 1)
 				if (cell) {
 					ev.preventDefault();
