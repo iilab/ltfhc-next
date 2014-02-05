@@ -1,50 +1,49 @@
 {
-  "class": "schema",
-  "title": "Patient Information",
-  "_id": "patient",
-  "type": "object",
-  "properties": {
-    "first_name": {
-      "type": "string",
-      "required": true
+    "title": "Patient Information",
+    "_id": "patient",
+    "type": "object",
+    "properties": {
+        "first_name": {
+            "type": "string",
+            "required": true
+        },
+        "last_name": {
+            "type": "string"
+        },
+        "gender": {
+            "type": "string",
+            "$ref": "lists/#genders"
+        },
+        "clinic_id": {
+            "type": "string"
+        },
+        "government_id": {
+            "type": "string"
+        },
+        "hiv_id": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "number"
+        },
+        "hometown": {
+            "type": "string"
+        },
+        "village": {
+            "type": "string"
+        },
+        "birthdate": {
+            "type": "string"
+        },
+        "approximate_age": {
+            "type": "number"
+        },
+        "medication_allergies": {
+            "type": "string"
+        },
+        "note": {
+            "type": "string"
+        }
     },
-    "last_name": {
-      "type": "string"
-    },
-    "gender": {
-      "type": "string",
-      "$ref": "lists/#genders"
-    },
-    "clinic_id": {
-      "type": "string"
-    },
-    "government_id": {
-      "type": "string"
-    },
-    "hiv_id": {
-      "type": "string"
-    },
-    "phone": {
-      "type": "number"
-    },
-    "hometown": {
-      "type": "string"
-    },
-    "village": {
-      "type": "string"
-    },
-    "birthdate": {
-      "type": "string"
-    },
-    "approximate_age": {
-      "type": "number"
-    },
-    "medication_allergies": {
-      "type": "string"
-    },
-    "note": {
-      "type": "string"
-    }
-  },
-  "description": "Enter Patient demographic information"
+    "description": "Enter Patient demographic information"
 }
