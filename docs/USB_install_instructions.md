@@ -23,7 +23,7 @@ Putty is now installed and you are ready for the next step.
 1. Make sure the server computer is on.
 1. Make sure that the laptop is connected to the wifi network ID `health`
 1. Double-click Putty in the Putty folder on your desktop. A new dialog box will open.
-1. In the `Host Name` box fill in `www.health`.
+1. In the `Host Name` box fill in `192.168.42.1`.
 1. A box will pop up saying `The server's host key is not cached in the registry.` Click `OK`
 1. A new window will appear that is your session into the server.
 1. Enter `lastmile` when it asks for a username.
@@ -57,7 +57,7 @@ Keep your Putty window open.
 ### From the browser
 
 1. Run Google Chrome
-1. Type `http://www.health` in the address bar.
+1. Type `https://www.health` in the address bar.
 1. The `LTFHC Home` screen will appear.
 1. Click `Login` in the upper-right corner.
 1. Enter the LTFHC username and password you were given.
