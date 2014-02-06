@@ -3,7 +3,7 @@
 ## You will need
 1. The iilab server computer.
 2. Good, stable power (solar battery charged)
-3. A laptop with the Putty software installed on it. (See below)
+3. A laptop with Google Chrome and Putty software installed on it. (See below)
 4. The Installation USB key
 
 ## Installation of Putty
@@ -54,4 +54,23 @@ Keep your Putty window open.
 
 ## Testing the EMR System
 
+### From the browser
+
+1. Run Google Chrome
+1. Type `http://www.health` in the address bar.
+1. The `LTFHC Home` screen will appear.
+1. Click `Login` in the upper-right corner.
+1. Enter the LTFHC username and password you were given.
+1. Click `New Patient` in the upper-right corner. 
+1. Fill in the form with fake data. Be creative!
+1. Click `Save and Continue Visit`.
+1. A green box will pop over the next page that says `The patient's data has been saved`.
+Click the `X` on the right side of the box to dismiss it.
+1. Fill in the `Patient Intake` and check at least one `Reason for Visit`.
+1. Continue to fill in the rest of the form. Make sure you use the pulldowns, radio buttons 
+and checkbox lists. Click `Save` at the bottom.
+1. A green box will pop over that says `The visit's data has been saved`.
+1. Click the `Visits` item in the black navigation bar at the top of the page.
+1. Verify that the visit form you filled out is there. Click `Edit` next to the item you created.
+1. Verify that all of the data 
 
