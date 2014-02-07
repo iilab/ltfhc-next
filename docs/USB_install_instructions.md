@@ -45,6 +45,8 @@ This script requires root permissions
 4. Starting database...Done
 5. Installing application...Done.
 6. Testing application...Done.
+7. Bootstrapping replication...Done.
+System ready for testing in the browser at https://www.health/
 ```
 
 If all of these steps complete successfully, you will have a working installation! If not, you 
@@ -54,7 +56,7 @@ Keep your Putty window open.
 
 ## Testing the EMR System
 
-### From the browser
+### Making a Patient and a Visit
 
 1. Run Google Chrome
 1. Type `https://www.health` in the address bar.
@@ -72,5 +74,27 @@ and checkbox lists. Click `Save` at the bottom.
 1. A green box will pop over that says `The visit's data has been saved`.
 1. Click the `Visits` item in the black navigation bar at the top of the page.
 1. Verify that the visit form you filled out is there. Click `Edit` next to the item you created.
-1. Verify that all of the data 
+1. Verify that all of the data is the same as you entered it.
 
+### Creating a User
+
+Find a healthcare worker that will be using the system. Get their name and help them decide on a password that they can remember. Try not to use birthdays or their names for passwords, but if that's the only choice then it is fine. We will be using these in the following steps.
+
+1. In the upper right corner next to `ltfhc` you will see a little down arrow, click it.
+1. In the menu that pulls down, select `Manage Users` to load the user management tool.
+1. Fill in `User Name` - this is the ID they will use to access the system. We recommend using their last name or their nickname.
+1. Fill in `Full Name`
+1. Select `Full Access` under `User Type` 
+1. Fill in a password under `Password`. 
+1. Don't worry about any of the other fields.
+1. Click `Create User` 
+1. You will see the user's information pop up in the table on the right.
+
+### Testing the new user
+
+1. In the upper right corner next to `ltfhc` you will see a little down arrow, click it.
+1. In the menu that pulls down, select `Logout`. 
+1. The `LTFHC Home` screen will appear.
+1. Click `Login` in the upper-right corner.
+1. Enter the username and password that you just used to create the user.
+1. Click `Visits` and see if the visit that you created earlier is visible.
