@@ -218,7 +218,7 @@ exports.reports = function() {
                     "line_number": "5e",
                     "sw": "Wajawazito waliopimwa VVU Kipimo cha kwanza chini ya Umri wa miaka 25",
                     "en": " PW below 25 years who tested for HIV for the first time at the clinic",
-                    "condition": "patient.approximate_age < 25 && (hiv_pregnancy_clinic.tested_hiv_firstvisit == 'yes' || subforms.anc_first_visit.tested_hiv_firstvisit_"
+                    "condition": "patient.approximate_age < 25 && (hiv_pregnancy_clinic.tested_hiv_firstvisit == 'yes' || subforms.anc_first_visit.tested_hiv_firstvisit == 'yes')"
                 },
                 "pw_below_25_years_who_tested_positive_by_the_first_test": {
                     "line_number": "5f",
