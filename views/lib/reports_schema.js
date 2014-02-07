@@ -356,24 +356,24 @@ exports.reports = function() {
                     "sw": "Waliopcwa Rufaa kwenda CTC:",
                     "en": "PW reffered to CTC (CTC-care and treatment center)",
                     "condition": "subforms.hiv_pregnancy_clinic.referred_ctc == 'yes' || subforms.anc_first_visit.referred_ctc == 'yes' || subforms.anc_followup.referred_ctc == 'yes'"
-                },
-                "definitions": {
-                    "columns": {
-                        "below20": {
-                            "title": "Below 20 years old",
-                            "condition": "patient.approximate_age < 20"
-                        },
-                        "above20": {
-                            "title": "Above 20 years old",
-                            "condition": "patient.approximate_age >= 20"
-                        },
-                        "total": {
-                            "title": "Total",
-                            "condition": "true"
-                        }
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "below20": {
+                        "title": "Below 20 years old",
+                        "condition": "patient.approximate_age < 20"
+                    },
+                    "above20": {
+                        "title": "Above 20 years old",
+                        "condition": "patient.approximate_age >= 20"
+                    },
+                    "total": {
+                        "title": "Total",
+                        "condition": "true"
                     }
                 }
             }
-        } // end of report_anc
-    };
+        }
+    }; // end of report_anc
 };
