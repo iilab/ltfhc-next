@@ -224,7 +224,7 @@ exports.reports = function() {
                     "line_number": "5f",
                     "sw": "Wajawazito Waliokutwa na VVU (positive) kipimo cha kwanza walio chini ya umri wa miaka 25:",
                     "en": "PW below 25 years who tested positive by the first test",
-                    "condition": "patient.approximate_age < 25 && (hiv_pregnancy_clinic.first_hiv_status == 'yes' || subforms.anc_followup.first_hiv_status == 'yes')"
+                    "condition": "patient.approximate_age < 25 && (subforms.hiv_pregnancy_clinic.first_hiv_status == 'yes' || subforms.anc_followup.first_hiv_status == 'yes')"
                 },
                 "pw_who_were_counselled_after_testing_hiv": {
                     "line_number": "5g",
