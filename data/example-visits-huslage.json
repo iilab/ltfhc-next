@@ -1,4 +1,4 @@
-[{
+{
     "_id": "967136fd-938b-8eae-0359500002334aeb",
     "class": "entry",
     "schema": "http://ltfhc.iilab.org/schema/0.4.0/visit.json",
@@ -11,30 +11,40 @@
         "class": "entry",
         "schema": "http://ltfhc.iilab.org/schema/0.4.0/patient.json",
         "date_created": "2013-09-24 17:22:26.799843",
-        "date_updated": "2014-02-07T16:11:27.410Z",
+        "date_updated": "2013-09-25 05:59:00.745507",
         "first_name": "Aailyah",
         "last_name": "Ally",
-        "clinic_id": "2449",
-        "government_id": "98717325",
-        "hiv_id": "86128447",
-        "phone": "8078756918",
+        "clinic_id": 2449,
+        "government_id": 98717325,
+        "hiv_id": 86128447,
+        "phone": 8078756918,
         "village": "Kitela",
         "district": "Kigoma",
         "gender": "female",
         "birth_month": 5,
         "birth_day": 6,
         "birth_year": 2004,
-        "approximate_age": "9",
+        "approximate_age": 9,
         "medication_allergies": "",
-        "notes": "",
-        "hometown": "",
-        "birthdate": "",
-        "note": ""
+        "notes": ""
     },
     "clinic": "me",
     "clinician": "me",
     "reasons": [
-        "anc_first_visit"
+        "disease_diagnosis",
+        "bodily_injury",
+        "immunization",
+        "hiv_counseling_mother",
+        "hiv_counseling_child",
+        "reproductive_counseling",
+        "anc_first_visit",
+        "anc_followup",
+        "postnatal",
+        "tb_leprosy",
+        "hiv_pregnancy_clinic",
+        "well_child_visit",
+        "delivery_record",
+        "diarrhea"
     ],
     "subforms": {
         "anc_first_visit": {
@@ -361,5 +371,6 @@
             "referral": "no",
             "diarrhea_mortality": "no"
         }
-    }
-}]
+    },
+    "date_updated": "2014-02-07T19:41:36.188Z"
+}
