@@ -3,8 +3,6 @@
 //     for each bucket
 //        
 
-exports.reports_new = function() {}
-
 exports.reports = function() {
     return {
         "report_anc": {
@@ -84,19 +82,19 @@ exports.reports = function() {
                     "line_number": "4a",
                     "sw": "Mimba zaidi ya 4:",
                     "en": "conceived more than four times",
-                    "condition": "subforms.anc_first_visit.number_pregnancy > '4'"
+                    "condition": "subforms.anc_first_visit.number_pregnancy > 4"
                 },
                 "age_less_than_20_years": {
                     "line_number": "4b",
                     "sw": "Umri chini ya miaka 20:",
                     "en": "age less than 20 years",
-                    "condition": "patient.patient_age < '20'"
+                    "condition": "patient.patient_age < 20"
                 },
                 "age_over_35_years": {
                     "line_number": "4c",
                     "sw": "Umri zaidi ya miaka 35:",
                     "en": "age over 35 years",
-                    "condition": "patient.patient_age > '35'"
+                    "condition": "patient.patient_age > 35"
                 },
                 "severe_anemia_first_attendance": {
                     "line_number": "4d",
