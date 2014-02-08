@@ -1104,19 +1104,19 @@ exports.reports = function() {
                 "columns": {
                     "10to14": {
                         "title": "10 to 14",
-                        "condition": "patient.approxage => 10 && patient.approxage <= 14"
+                        "condition": "patient.approximate_age => 10 && patient.approximate_age <= 14"
                     },
                     "15to19": {
                         "title": "15 to 19",
-                        "condition": "patient.approxage >= 15 patient.approxage <= 19"
+                        "condition": "patient.approximate_age >= 15 patient.approximate_age <= 19"
                     },
                     "20to24": {
                         "title": "20 to 24",
-                        "condition": "patient.approxage >= 20 patient.approxage <= 24"
+                        "condition": "patient.approximate_age >= 20 patient.approximate_age <= 24"
                     },
                     "above25": {
                         "title": "Above 25",
-                        "condition": "patient.approxage >= 25"
+                        "condition": "patient.approximate_age >= 25"
                     },
                     "return": {
                         "title": "Return???",
@@ -1134,77 +1134,77 @@ exports.reports = function() {
             "class": "schema",
             "_id": "reports/schema/contraceptive",
             "$schema": "http://json-schema.org/draft-04/schema#",
-            "title": "Contraceptive",
+            "title": "DTC",
             "type": "object",
             "properties": {
                 "number_of_patients_treated_dtc_dtc-diarrhea_and_treatment_centre": {
                     "line_number": 1,
                     "sw": "Idadi ya wagonjwa waliotibiwa DTC DTC-Idara ya magonjwa ya kuhara",
                     "en": "Number of patients treated DTC DTC-Diarrhea and treatment centre",
-                    "condition": "subforms.diarrhea.duration"
+                    "condition": "subforms.diarrhea && subforms.diarrhea.duration"
                 },
                 "number_of_dtc_patients_treated_with_acute_shortage_of_water_and_sodium_cloride_in_the_body": {
                     "line_number": 2,
                     "sw": "Idadi ya wagonjwa waliotibiwa DTC walio na upungufu mkubwa wa maji na churnvichumvi mwilini",
                     "en": "Number of DTC patients treated with acute shortage of water and Sodium cloride in the body",
-                    "condition": "subforms.diarrhea.water_sodium_imbalance == 'Severe'"
+                    "condition": "subforms.diarrhea && ubforms.diarrhea.water_sodium_imbalance == 'Severe'"
                 },
                 "number_of_dtc_patients_treated_with_little_shortage_of_water_and_sodium_cloride": {
                     "line_number": 3,
                     "sw": "Idadi ya wagonjwa waliotibiwa DTC walio na upungufu kiasi wa maji na chumvichumvi mwilini",
                     "en": "Number of DTC patients treated with little shortage of water and sodium cloride",
-                    "condition": "subforms.diarrhea.water_sodium_imbalance == 'Mild'"
+                    "condition": "subforms.diarrhea && subforms.diarrhea.water_sodium_imbalance == 'Mild'"
                 },
                 "number_of_patients_with_blood_in_stool": {
                     "line_number": 4,
                     "sw": "Idadi ya wagonjwa walio na damu katika kinyesi",
                     "en": "Number of patients with blood in stool",
-                    "condition": "subforms.diarrhea.blood_in_stool == 'yes'"
+                    "condition": "subforms.diarrhea && subforms.diarrhea.blood_in_stool == 'yes'"
                 },
                 "the_number_of_patients_who_received_zinc": {
                     "line_number": 5,
                     "sw": "Idadi ya wagonjwa waliopewa zinki",
                     "en": "The number of patients who received zinc",
-                    "condition": "subforms.diarrhea.given_zinc == 'yes'"
+                    "condition": "subforms.diarrhea && subforms.diarrhea.given_zinc == 'yes'"
                 },
                 "the_number_of_patients_who_received_a_packet_of_ors": {
                     "line_number": 6,
                     "sw": "Idadi ya wagonjwa waliopatiwa paketi za ORS",
                     "en": "The number of patients who received a packet of ORS",
-                    "condition": "subforms.diarrhea.given_ors == 'yes'"
+                    "condition": "subforms.diarrhea && subforms.diarrhea.given_ors == 'yes'"
                 },
                 "number_of_admitted_patients": {
                     "line_number": 7,
                     "sw": "Idadi ya wagonjwa waliolazwa",
                     "en": "Number of admitted patients",
-                    "condition": "subforms.diarrhea.admission == 'yes'"
+                    "condition": "subforms.diarrhea && subforms.diarrhea.admission == 'yes'"
                 },
                 "the_number_of_refereed_patients": {
                     "line_number": 8,
                     "sw": "Idadi ya wagonjwa waliopewa rufaa",
                     "en": "The number of refereed patients",
-                    "condition": "subforms.diarrhea.referral == 'no'"
+                    "condition": "subforms.diarrhea && subforms.diarrhea.referral == 'no'"
                 },
                 "the_number_of_patients_who_died_of_dtc_diarrhoea_treatment_centre": {
                     "line_number": 9,
                     "sw": "Idadi ya wagonjwa waliofia DTC",
                     "en": "The number of patients who died of DTC_Diarrhoea treatment Centre",
-                    "condition": "subforms.diarrhea.diarrhea_mortality == 'no'"
+                    "condition": "subforms.diarrhea && subforms.diarrhea.diarrhea_mortality == 'no'"
                 }
             },
             "definitions": {
                 "columns": {
                     "lessthan1male": {
-                        "title": "Males",
-                        "condition": "FIXME && patient.gender == 'male'"
+                        "title": "Less than 1 Month - Males",
+                        "condition": "patient.gender == 'male'"
                     },
                     "lessthan1female": {
                         "title": "Less than 1 Month - Females",
-                        "condition": "FIXME && patient.gender == 'female'"
+                        "condition": "patient.gender == 'female'"
                     },
                     "lessthan1total": {
                         "title": "Less than 1 Month - Total",
-                        "condition": "FIXME"
+                        "condition": "patient.gender == 'male' || patient.gender == 'female'"
                     },
                     "more1momale": {
                         "title": "More than 1 month and less than 1 Year - Male",
@@ -1220,15 +1220,15 @@ exports.reports = function() {
                     },
                     "above1below5male": {
                         "title": "More than 1 year and less than 5 Years - Male",
-                        "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'male'"
+                        "condition": "patient.approximate_age > 1 && patient.approximate_age < 5 && patient.gender == 'male'"
                     },
                     "above1below5female": {
                         "title": "More than 1 year and less than 5 Years - Females",
-                        "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'female'"
+                        "condition": "patient.approximate_age > 1 && patient.approximate_age < 5 && patient.gender == 'female'"
                     },
                     "above1below5total": {
                         "title": "More than 1 year and less than 5 Years - Total",
-                        "condition": "patient.approxage > 1 && patient.approxage < 5"
+                        "condition": "patient.approximate_age > 1 && patient.approximate_age < 5"
                     }
                 }
             }
