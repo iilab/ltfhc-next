@@ -603,6 +603,7 @@ DB.prototype.saveDoc = function (doc, callback) {
         data: data,
         processData: false,
         contentType: 'application/json',
+				async:false,
         expect_json: true
     };
     exports.request(req, callback);

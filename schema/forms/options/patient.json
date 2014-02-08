@@ -30,14 +30,18 @@
         "village": {
             "label": "What village do you live in? (Unaishi katika kijiji gani?)"
         },
-        "birthdate": {
+        "date_age": {
             "label": "Birth Date: (Tarehe ya kuzaliwa)",
             "type": "date",
-            "datepicker": {
+        		"dateFormat": "yy-mm-dd",
+				    "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "1900:+0",
                 "changeYear": true
             }
+        },
+        "current_age": {
+            "type": "hidden"
         },
         "approximate_age": {
             "label": "Approximate Age: (Umri wa mgonjwa)",
