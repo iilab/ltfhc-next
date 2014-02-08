@@ -18,6 +18,9 @@
                 "changeYear": true
             }
         },
+        "date_gestational_age": {
+            "type": "hidden"
+        },
         "gestational_age": {
             "label": "Approximate Estiamted Gestational Age (weeks): (Wastani takriban wa umri wa ujauzito (wiki))",
             "type": "select"

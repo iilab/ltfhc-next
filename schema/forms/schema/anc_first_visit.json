@@ -10,10 +10,13 @@
         "due_date": {
             "type": "string"
         },
-        "gestational_age": {
+        "current_gestational_age": {
             "type": "string",
             "$ref": "lists/#one_to_42_plus"
         },
+				"date_gestational_age": {
+						"type": "string"
+				}
         "number_pregnancy": {
             "type": "string",
             "$ref": "lists/#one_to_20_plus"

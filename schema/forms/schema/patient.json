@@ -32,7 +32,10 @@
         "village": {
             "type": "string"
         },
-        "birthdate": {
+        "date_age": {
+            "type": "string"
+        },
+        "current_age": {
             "type": "string"
         },
         "approximate_age": {
