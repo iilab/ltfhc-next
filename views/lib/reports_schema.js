@@ -69,7 +69,7 @@ exports.reports = function() {
                     "line_number": "3",
                     "sw": "Wajawazito waliopata Chanjo ya TT2+:",
                     "en": "Pregnant women who received vaccination of TT2+",
-                    "condition": "subforms.anc_first_visit.tt2plus_vaccine == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.tt2plus_vaccine == 'yes') || (subforms.anc_first_visit &&subforms.anc_followup.tt2plus_vaccine == 'yes')"
                 },
                 "risk_factors": {
                     "line_number": "4",
@@ -86,25 +86,25 @@ exports.reports = function() {
                     "line_number": "4b",
                     "sw": "Umri chini ya miaka 20:",
                     "en": "age less than 20 years",
-                    "condition": "patient.patient_age < 20"
+                    "condition": "patient.approximate_age < 20"
                 },
                 "age_over_35_years": {
                     "line_number": "4c",
                     "sw": "Umri zaidi ya miaka 35:",
                     "en": "age over 35 years",
-                    "condition": "patient.patient_age > 35"
+                    "condition": "patient.approximate_age > 35"
                 },
                 "severe_anemia_first_attendance": {
                     "line_number": "4d",
                     "sw": "Upungufu mkubwa wa damu <8.5g/dl - Anaemia hudhurio Ia kwanza:",
                     "en": "severe anemia <8.5g/dl - Anaemia first attendance",
-                    "condition": "subforms.anc_first_visit.anemia == 'less_8_5'"
+                    "condition": "subforms.anc_first_visit.anemia_severe == 'less_8_5'"
                 },
                 "blood_pressure_high": {
                     "line_number": "4e",
                     "sw": "Shinikizo Ia damu (BP => 140/90mm/hg):",
                     "en": "blood pressure (BP => 140/90mm/hg):",
-                    "condition": "((subforms.anc_first_visit.bp_systolic || subforms.anc_followup.bp_systolic) >= 140) && ((subforms.anc_first_visit.bp_diastolic || subforms.anc_followup.bp_diastolic) >= 90)"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.bp_systolic >= 140 || subforms.anc_followup && subforms.anc_followup.bp_systolic >= 140) && (subforms.anc_first_visit && subforms.anc_first_visit.bp_diastolic >= 90 || subforms.anc_followup && subforms.anc_followup.bp_diastolic >= 90)"
                 },
                 "heart_disease": {
                     "line_number": "4f",
