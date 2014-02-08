@@ -16,8 +16,7 @@ exports.reports = function() {
                 "number_of_expected_pregnant_women": {
                     "line_number": "1",
                     "sw": "Idadi ya Wajawazito Waliotegemewa",
-                    "en": "Number of expected pregnant women",
-                    "condition": "subforms.FIXME"
+                    "en": "Number of expected pregnant women"
                 },
                 "first_visit": {
                     "line_number": "2",
