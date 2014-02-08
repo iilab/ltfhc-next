@@ -16,8 +16,7 @@ exports.reports = function() {
                 "number_of_expected_pregnant_women": {
                     "line_number": "1",
                     "sw": "Idadi ya Wajawazito Waliotegemewa",
-                    "en": "Number of expected pregnant women",
-                    "condition": "subforms.FIXME"
+                    "en": "Number of expected pregnant women"
                 },
                 "first_visit": {
                     "line_number": "2",
@@ -28,19 +27,19 @@ exports.reports = function() {
                     "line_number": "2a",
                     "sw": "Umri wa mimba chini ya wiki 12 (<12weeks)",
                     "en": "Gestational age below 12 weeks(<12weeks)",
-                    "condition": "subforms.anc_first_visit.gestational_age < '12'"
+                    "condition": "subforms.anc_first_visit.gestational_age < 12"
                 },
                 "gestational_at_week_12_or_more": {
                     "line_number": "2b",
                     "sw": "Umri wa mimba wiki 12 au zaidi (12+ weeks)",
                     "en": "Gestational at week 12 or more (12+weeks)",
-                    "condition": "subforms.anc_first_visit.gestational_age >= '12'"
+                    "condition": "subforms.anc_first_visit.gestational_age >= 12"
                 },
                 "total_attendance_of_first_visits(2a+2b)": {
                     "line_number": "2c",
                     "sw": "Jumla ya hudhurio la Kwanza (2a+2b)",
                     "en": "Total attendance of first visits(2a+2b)",
-                    "condition": "subforms.anc_first_visit.gestational_age < '12' && subforms.anc_first_visit.gestational_age >= '12'"
+                    "condition": "subforms.anc_first_visit.gestational_age < 12 || subforms.anc_first_visit.gestational_age >= 12"
                 },
                 "clients_for_return_visits": {
                     "line_number": "2d",
@@ -52,13 +51,13 @@ exports.reports = function() {
                     "line_number": "2e",
                     "sw": "Hudhurio la nne wajawazito wote",
                     "en": "Fourth visits for all pregnant women",
-                    "condition": "subforms.anc_followup == 4"
+                    "condition": "subforms.anc_followup >= 4"
                 },
                 "total_attendance": {
                     "line_number": "2f",
                     "sw": "Jumla ya Mahudhurio yote (2c+2d)",
                     "en": "total attendance(2c+2d)",
-                    "condition": "subforms.anc_first_visit && subforms.anc_followup"
+                    "condition": "subforms.anc_first_visit || subforms.anc_followup"
                 },
                 "number_of_pregnant_women_tested_first_visit": {
                     "line_number": "2g",
