@@ -864,7 +864,7 @@ exports.reports = function() {
                     "line_number": "6a",
                     "sw": "Kuweka Kitanzi - kituoni",
                     "en": "Inserting IUD (at the clinic)",
-                    "condition": "reproductive_counseling.contraception_source == 'IUD' && reproductive_counseling.contraception_source == 'Clinic'"
+                    "condition": "subforms.reproductive_counseling.contraception_source == 'IUD' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
                 },
                 "inserting_iud_outreach": {
                     "line_number": "6b",
