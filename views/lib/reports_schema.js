@@ -1778,37 +1778,37 @@ exports.reports = function() {
                     "title": "Total (a)",
                     "type": "number",
                     "line_number": "1",
-                    "condition": "tb_leprosy.classification"
+                    "condition": "subforms.tb_leprosy.classification"
                 },
                 "newly_registered": {
                     "title": "New",
                     "type": "number",
                     "line_number": "2a",
-                    "condition": "tb_leprosy.patient_count"
+                    "condition": "subforms.tb_leprosy.patient_count"
                 },
                 "return_after_default": {
                     "title": "Return after Default",
                     "type": "number",
                     "line_number": "2b",
-                    "condition": "tb_leprosy.leprosy_status == 'return after default'"
+                    "condition": "subforms.tb_leprosy.leprosy_status == 'return after default'"
                 },
                 "relapse_after_MDT": {
                     "title": "Relapse after MDT",
                     "type": "number",
                     "line_number": "2c",
-                    "condition": "tb_leprosy.leprosy_status == 'relapse after mdt'"
+                    "condition": "subforms.tb_leprosy.leprosy_status == 'relapse after mdt'"
                 },
                 "relapse_after_dds": {
                     "title": "Relapse after DDS.Others",
                     "type": "number",
                     "line_number": "2d",
-                    "condition": "tb_leprosy.leprosy_status == 'relapse after dds'"
+                    "condition": "subforms.tb_leprosy.leprosy_status == 'relapse after dds'"
                 },
                 "total_notifications": {
                     "title": "Total Notifications (b)",
                     "type": "number",
                     "line_number": "2e",
-                    "condition": "tb_leprosy.leprosy_status"
+                    "condition": "subforms.tb_leprosy.leprosy_status"
                 },
                 "1mb": {
                     "title": "1MB",
@@ -1826,55 +1826,55 @@ exports.reports = function() {
                     "title": "Grade 0",
                     "type": "number",
                     "line_number": "4a",
-                    "condition": "tb_leprosy.disability_grade == 'grade 0'"
+                    "condition": "subforms.tb_leprosy.disability_grade == 'grade 0'"
                 },
                 "disability_grade_1": {
                     "title": "Grade 1",
                     "type": "number",
                     "line_number": "4b",
-                    "condition": "tb_leprosy.disability_grade == 'grade 1'"
+                    "condition": "subforms.tb_leprosy.disability_grade == 'grade 1'"
                 },
                 "disability_grade_2": {
                     "title": "Grade 2",
                     "type": "number",
                     "line_number": "4c",
-                    "condition": "tb_leprosy.disability_grade == 'grade 2"
+                    "condition": "subforms.tb_leprosy.disability_grade == 'grade 2"
                 },
                 "disability_grade_total": {
                     "title": "Total",
                     "type": "number",
                     "line_number": "4d",
-                    "condition": "tb_leprosy.disability_grade"
+                    "condition": "subforms.tb_leprosy.disability_grade"
                 },
                 "treatment_completed": {
                     "title": "Treatment Completed",
                     "type": "number",
                     "line_number": "5a",
-                    "condition": "tb_leprosy.end_result == 'treatment completed'"
+                    "condition": "subforms.tb_leprosy.end_result == 'treatment completed'"
                 },
                 "died": {
                     "title": "Died",
                     "type": "number",
                     "line_number": "5b",
-                    "condition": "tb_leprosy.end_result == 'died'"
+                    "condition": "subforms.tb_leprosy.end_result == 'died'"
                 },
                 "transferred_out": {
                     "title": "Transferred Out",
                     "type": "number",
                     "line_number": "5c",
-                    "condition": "tb_leprosy.end_result == 'transferred out'"
+                    "condition": "subforms.tb_leprosy.end_result == 'transferred out'"
                 },
                 "defaulter": {
                     "title": "Defaulter",
                     "type": "number",
                     "line_number": "5d",
-                    "condition": "tb_leprosy.end_result == 'defaulter'"
+                    "condition": "subforms.tb_leprosy.end_result == 'defaulter'"
                 },
                 "total_c": {
                     "title": "Total (c)",
                     "type": "number",
                     "line_number": "5e",
-                    "condition": "tb_leprosy.end_result"
+                    "condition": "subforms.tb_leprosy.end_result"
                 },
                 "registered_at_end_of_quarter": {
                     "title": "(a) + (b) - (c)",
@@ -1886,7 +1886,7 @@ exports.reports = function() {
                     "title": "Patients who started corticosteroids in the quarter",
                     "type": "number",
                     "line_number": "7",
-                    "condition": "tb_leprosy.corticosteroid_treatment"
+                    "condition": "subforms.tb_leprosy.corticosteroid_treatment"
                 }
             },
             "definitions": {
