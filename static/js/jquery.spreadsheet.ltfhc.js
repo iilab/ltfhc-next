@@ -998,7 +998,7 @@
 		$table.append(help);
 		$table.append(table);
 
-		if (options.lockRows) {
+/*		if (options.lockRows) {
 			$table.append(
 				'<div class="spreadsheet-actions">' +
 				'</div>'
@@ -1013,7 +1013,7 @@
 				'</div>'
 			);
 		}
-
+*/
 
 		textarea = $('<textarea id="spreadsheet_clipboard"></textarea>');
 		$table.data('spreadsheet:clipboard', textarea);
