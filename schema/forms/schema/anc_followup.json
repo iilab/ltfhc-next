@@ -11,9 +11,12 @@
             "type": "string",
             "$ref": "lists/#one_to_20_plus"
         },
-        "gestational_age": {
+        "current_gestationalage_weeks": {
             "type": "string",
             "$ref": "lists/#one_to_42_plus"
+        },
+        "date_gestationalage": {
+            "type": "string"
         },
         "symptom": {
             "type": "string",

@@ -15,9 +15,12 @@
             "label": "Pregnancy Number: (Idadi ya ujauzito)",
             "type": "select"
         },
-        "gestational_age": {
+        "current_gestationalage_weeks": {
             "label": "Approximate Estimated Gestational Age (weeks):",
             "type": "select"
+        },
+        "date_gestationalage": {
+            "type": "hidden"
         },
         "symptom": {
             "label": "Symptoms:",
