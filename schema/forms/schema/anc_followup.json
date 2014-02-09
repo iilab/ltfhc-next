@@ -12,7 +12,7 @@
             "$ref": "lists/#one_to_20_plus"
         },
         "current_gestationalage_weeks": {
-            "type": "string",
+            "type": "number",
             "$ref": "lists/#one_to_42_plus"
         },
         "date_gestationalage": {
