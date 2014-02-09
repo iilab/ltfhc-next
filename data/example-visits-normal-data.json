@@ -978,7 +978,7 @@
         "anc_first_visit": {
             "last_menstrual_period": "2014-01-05",
             "due_date": "2014-11-10",
-            "current_gestationalage_weeks": 4,
+            "current_gestationalage_weeks": 14,
             "date_gestationalage": null,
             "number_pregnancy": "2",
             "pregnancy_test": "yes",
@@ -987,12 +987,16 @@
             "pregnancy_complications": [
                 "forceps_vacuum"
             ],
-            "pregnancy_diseases": [],
+            "pregnancy_diseases": [
+                "Tuberculosis",
+                "Diabetes",
+                "Heart Disease"
+            ],
             "std_status": "no",
             "std_treatment": "no",
             "hiv_status_prior_firstvisit": "negative",
             "tested_hiv_firstvisit": "no",
-            "partner_hiv": "no",
+            "partner_hiv": "yes",
             "discordant_couple": "no",
             "combo_drugs": "no",
             "art_drugs": "no",
@@ -1264,7 +1268,7 @@
             "refer_ctc": "yes",
             "partner_hiv": "yes",
             "partner_positive": "yes",
-            "discordant_couple": "no",
+            "discordant_couple": "yes",
             "combo_drugs": "yes",
             "art_drugs": "yes",
             "ctx_given": "yes",
