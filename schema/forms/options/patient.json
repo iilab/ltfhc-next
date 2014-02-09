@@ -40,7 +40,7 @@
                 "changeYear": true
             }
         },
-        "current_age": {
+        "current_age_years": {
             "label": "Approximate Age: (Umri wa mgonjwa)",
             "type": "number"
         },

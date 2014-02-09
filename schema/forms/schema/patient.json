@@ -35,7 +35,7 @@
         "date_age": {
             "type": "string"
         },
-        "current_age": {
+        "current_age_years": {
             "type": "number"
         },
         "medication_allergies": {
