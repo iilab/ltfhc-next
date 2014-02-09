@@ -684,7 +684,7 @@
         },
         "one_to_42_plus": {
             "id": "one_to_42_plus",
-            "type": "string",
+            "type": "number",
             "enum": [
                 1,
                 2,
