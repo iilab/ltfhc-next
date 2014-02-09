@@ -22,10 +22,10 @@
                 "changeYear": true
             }
         },
-        "date_gestational_age": {
+        "date_gestationalage": {
             "type": "hidden"
         },
-        "current_gestational_weeks": {
+        "current_gestationalage_weeks": {
             "label": "Approximate Estimated Gestational Age (weeks): (Wastani takriban wa umri wa ujauzito (wiki))",
             "type": "select"
         },
