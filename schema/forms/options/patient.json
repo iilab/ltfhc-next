@@ -41,9 +41,6 @@
             }
         },
         "current_age": {
-            "type": "hidden"
-        },
-        "approximate_age": {
             "label": "Approximate Age: (Umri wa mgonjwa)",
             "type": "number"
         },
