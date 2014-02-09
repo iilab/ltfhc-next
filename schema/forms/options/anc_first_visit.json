@@ -3,18 +3,22 @@
         "last_menstrual_period": {
             "label": "Date of Last Menstrual Period: (Tarehe ya mwisho wa kipindi cha hedhi)",
             "type": "date",
+            "dateFormat": "yy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",
+                "changeMonth": true,
                 "changeYear": true
             }
         },
         "due_date": {
             "label": "Expected Due Date: (Tarehe ya matarajio)",
             "type": "date",
+            "dateFormat": "yy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",
+                "changeMonth": true,
                 "changeYear": true
             }
         },
@@ -336,11 +340,11 @@
         },
         "fundal_height": {
             "label": "Fundal Height (cm): (Urefu wa mfuko wa uzazi (cm))",
-            "type": "number"
+            "type": "select"
         },
         "fetal_heart_rate": {
             "label": "Fetal Heart Rate (Beats Per Minute): (Mapigo ya moyo ya Kijusi)",
-            "type": "number"
+            "type": "select"
         },
         "treatment_given": {
             "label": "If Any Treatment Given, Please Describe:",
