@@ -346,9 +346,24 @@
     "subforms": {
         "immunization": {
             "vaccine_dispensed": [
+                "bcg",
+                "opv_0",
+                "opv_1",
+                "opv_2",
+                "opv_3",
+                "dtp_hb",
+                "dpt_1",
+                "dpt_2",
                 "dpt_3",
+                "measles",
+                "penta",
+                "tentanus_toxoid_1",
+                "tentanus_toxoid_2",
+                "tentanus_toxoid_3",
+                "tentanus_toxoid_4",
                 "tentanus_toxoid_5",
-                "vitamin_a"
+                "vitamin_a",
+                "other"
             ],
             "vaccine_effect": "swelling_at_injection_site",
             "anaphylaxis": "no",
@@ -394,9 +409,24 @@
     "subforms": {
         "immunization": {
             "vaccine_dispensed": [
+                "bcg",
+                "opv_0",
+                "opv_1",
+                "opv_2",
+                "opv_3",
+                "dtp_hb",
+                "dpt_1",
+                "dpt_2",
+                "dpt_3",
+                "measles",
                 "penta",
                 "tentanus_toxoid_1",
-                "tentanus_toxoid_2"
+                "tentanus_toxoid_2",
+                "tentanus_toxoid_3",
+                "tentanus_toxoid_4",
+                "tentanus_toxoid_5",
+                "vitamin_a",
+                "other"
             ],
             "vaccine_effect": "tongue_swelling",
             "anaphylaxis": "no",
@@ -427,7 +457,7 @@
         "district": "Uvinza",
         "gender": "male",
         "date_age": "2012-8-15",
-        "current_age_years": 30,
+        "current_age_years": 3,
         "current_age_months": 18,
         "medication_allergies": "",
         "notes": "",
@@ -443,9 +473,24 @@
     "subforms": {
         "immunization": {
             "vaccine_dispensed": [
+                "bcg",
                 "opv_0",
                 "opv_1",
-                "dpt_2"
+                "opv_2",
+                "opv_3",
+                "dtp_hb",
+                "dpt_1",
+                "dpt_2",
+                "dpt_3",
+                "measles",
+                "penta",
+                "tentanus_toxoid_1",
+                "tentanus_toxoid_2",
+                "tentanus_toxoid_3",
+                "tentanus_toxoid_4",
+                "tentanus_toxoid_5",
+                "vitamin_a",
+                "other"
             ],
             "anaphylaxis": "no",
             "pregnant": "no"

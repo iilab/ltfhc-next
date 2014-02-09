@@ -390,73 +390,73 @@ exports.reports = function() {
                     "line_number": "1b",
                     "sw": "BCG Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
                     "en": "BCG at the age of 1+ (Within service area )",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'BCG'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'bcg'"
                 },
                 "bcg_age_<1_year_+_(within_service_area)": {
                     "line_number": "1c",
                     "sw": "BCG Umri mwaka <1 (Nje ya eneo la huduma)",
                     "en": "BCG Age <1 year + (Within service area)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'BCG'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'bcg'"
                 },
                 "bcgat_the_age_of_1_+_(out_of_service_area)": {
                     "line_number": "1d",
                     "sw": "BCG Umri mwaka 1+ (Nje ya eneo la huduma)",
                     "en": "BCGat the Age of 1 + (out of service area)",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'BCG'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'bcg'"
                 },
                 "polio_at_the_age_<1_(within_area_service)": {
                     "line_number": "1e",
                     "sw": "Polio Umri mwaka <1 (Ndani ya eneo Ia huduma)",
                     "en": "Polio at the age <1 (within area service)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'BCG'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'bcg'"
                 },
                 "polio_at_the_age_1+_(within_service_area)": {
                     "line_number": "1f",
                     "sw": "Polio Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
                     "en": "Polio at the age 1+ (within service area)",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Polio'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'polio'"
                 },
                 "polio_at_the_age_<1_(out_of_service_area)": {
                     "line_number": "1k",
                     "sw": "Polio Umri mwaka <1 (Nje ya eneo la huduma)",
                     "en": "Polio at the age <1 (out of service area)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Polio'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'polio'"
                 },
                 "polio_at_the_age_of_1_+_(out_of_service_area)": {
                     "line_number": "1l",
                     "sw": "Polio Umri mwaka 1+ (Nje ya eneo la huduma)",
                     "en": "Polio at the age of 1 + (out of service area)",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Polio'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'polio'"
                 },
                 "penta_at_the_age_<1_(within_service_area)": {
                     "line_number": "1i",
                     "sw": "PENTA Umri mwaka <1 (Ndani ya eneo Ia huduma)",
                     "en": "PENTA at the age <1 (within service area)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Polio'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'polio'"
                 },
                 "penta_at_the_age_1+_(within_service_area)": {
                     "line_number": "1j",
                     "sw": "PENTA Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
                     "en": "PENTA at the age 1+ (within service area)",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'PENTA'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'penta'"
                 },
                 "measles_at_the_age_<1_(within_service_area)": {
                     "line_number": "1m",
                     "sw": "Surua Umri mwaka <1 (Ndani ya eneo Ia huduma)",
                     "en": "measles at the age <1 (within service area)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Measles'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'measles'"
                 },
                 "measles_at_the_age_1+_(within_service_area)": {
                     "line_number": "1n",
                     "sw": "Surua Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
                     "en": "measles at the age 1+ (within service area)",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Measles'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'measles'"
                 },
                 "measles_at_the_age_<1_(out_of_service_area)": {
                     "line_number": "1p",
                     "sw": "Surua Umri mwaka <1 (Nje ya eneo la huduma)",
                     "en": "measles at the age <1 (out of service area)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Measles'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'measles'"
                 },
                 "attendance_growth_of_6_months_old_baby": {
                     "line_number": "3",
@@ -1349,7 +1349,7 @@ exports.reports = function() {
                     "line_number": "5",
                     "sw": "Measles",
                     "en": "Measles",
-                    "condition": "subforms.disease_diagnosis.admission && subforms.disease_diagnosis.diagnosis == 'Measles'"
+                    "condition": "subforms.disease_diagnosis.admission && subforms.disease_diagnosis.diagnosis == 'measles'"
                 },
                 "meningitis": {
                     "line_number": "6",
@@ -2674,7 +2674,7 @@ exports.reports = function() {
                 "7": {
                     "line_number": "7",
                     "en": "Measles",
-                    "condition": "subforms.disease_diagnosis.diagnosis == 'Measles'"
+                    "condition": "subforms.disease_diagnosis.diagnosis == 'measles'"
                 },
                 "8": {
                     "line_number": "8",
