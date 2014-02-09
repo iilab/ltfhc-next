@@ -37,10 +37,12 @@
                 "Retained placenta",
                 "Ruptured uterus",
                 "Sepsis/infection",
+                "Tear (Third Degree Tear)"
                 "Other",
                 "Given IV antibiotics",
                 "Given uterotonics",
                 "Given blood transfusion",
+                "Given IV anticonvulsants"
                 "Placenta removed by hand",
                 "MVA needed"
             ]
@@ -454,6 +456,7 @@
         "leprosy_statuses": {
             "type": "select",
             "optionLabels": [
+                "New Patient",
                 "Return after default",
                 "Relapse after MDT",
                 "Relapse after DDS/other"
@@ -547,7 +550,7 @@
                 "APH",
                 "PROM",
                 "High BP",
-                "Eeclampsia",
+                "Eclampsia",
                 "Pre-eclampsia",
                 "Anemia",
                 "Malaria",
