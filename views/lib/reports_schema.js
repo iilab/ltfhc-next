@@ -23,23 +23,23 @@ exports.reports = function() {
                     "sw": "Hudhurio la kwanza",
                     "en": "First visit"
                 },
-                "gestational_age_below_12_weeks": {
+                "current_gestational_weeks_below_12_weeks": {
                     "line_number": "2a",
                     "sw": "Umri wa mimba chini ya wiki 12 (<12weeks)",
                     "en": "Gestational age below 12 weeks(<12weeks)",
-                    "condition": "subforms.anc_first_visit.gestational_age < 12"
+                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.current_gestational_weeks < 12"
                 },
                 "gestational_at_week_12_or_more": {
                     "line_number": "2b",
                     "sw": "Umri wa mimba wiki 12 au zaidi (12+ weeks)",
                     "en": "Gestational at week 12 or more (12+weeks)",
-                    "condition": "subforms.anc_first_visit.gestational_age >= 12"
+                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.current_gestational_weeks >= 12"
                 },
                 "total_attendance_of_first_visits(2a+2b)": {
                     "line_number": "2c",
                     "sw": "Jumla ya hudhurio la Kwanza (2a+2b)",
                     "en": "Total attendance of first visits(2a+2b)",
-                    "condition": "subforms.anc_first_visit.gestational_age < 12 || subforms.anc_first_visit.gestational_age >= 12"
+                    "condition": "subforms.anc_first_visit.current_gestational_weeks < 12 && subforms.anc_first_visit.current_gestational_weeks >= 12"
                 },
                 "clients_for_return_visits": {
                     "line_number": "2d",
@@ -63,7 +63,7 @@ exports.reports = function() {
                     "line_number": "2g",
                     "sw": "Idadi ya wajawazito waliopima damu hudhurio la kwanza",
                     "en": "Number of pregnant women who tested during the first visit at the clinic",
-                    "condition": "subforms.anc_first_visit.pregnancy_test == 'yes'"
+                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.pregnancy_test == 'yes'"
                 },
                 "pregnant_women_who_received_vaccination_of_tt2": {
                     "line_number": "3",
@@ -80,25 +80,25 @@ exports.reports = function() {
                     "line_number": "4a",
                     "sw": "Mimba zaidi ya 4:",
                     "en": "conceived more than four times",
-                    "condition": "subforms.anc_first_visit.number_pregnancy > 4"
+                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.number_pregnancy > 4"
                 },
                 "age_less_than_20_years": {
                     "line_number": "4b",
                     "sw": "Umri chini ya miaka 20:",
                     "en": "age less than 20 years",
-                    "condition": "patient.current_age_years < 20"
+                    "condition": "subforms.anc_first_visit && patient.current_age_years < 20"
                 },
                 "age_over_35_years": {
                     "line_number": "4c",
                     "sw": "Umri zaidi ya miaka 35:",
                     "en": "age over 35 years",
-                    "condition": "patient.current_age_years > 35"
+                    "condition": "subforms.anc_first_visit && patient.current_age_years > 35"
                 },
                 "severe_anemia_first_attendance": {
                     "line_number": "4d",
                     "sw": "Upungufu mkubwa wa damu <8.5g/dl - Anaemia hudhurio Ia kwanza:",
                     "en": "severe anemia <8.5g/dl - Anaemia first attendance",
-                    "condition": "subforms.anc_first_visit.anemia_severe == 'less_8_5'"
+                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.anemia_severe == 'less_8_5'"
                 },
                 "blood_pressure_high": {
                     "line_number": "4e",
@@ -128,61 +128,61 @@ exports.reports = function() {
                     "line_number": "4i",
                     "sw": "Waliopima Kaswendwe:",
                     "en": "Those who tested for Syphillus",
-                    "condition": "subforms.anc_first_visit.syphillus_test == 'yes' && subforms.anc_followup.syphillus_test == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.syphillus_test == 'yes') && (subforms.anc_followup && subforms.anc_followup.syphillus_test == 'yes')"
                 },
                 "those_who_were_infected_with_syphilis": {
                     "line_number": "4j",
                     "sw": "Waliogundulika na maambukizi ya Kaswende:",
                     "en": "Those who were infected with Syphillus",
-                    "condition": "subforms.anc_first_visit.syphillus_status == 'yes' && subforms.anc_followup.syphillus_status == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.syphillus_status == 'yes') && (subforms.anc_followup && subforms.anc_followup.syphillus_status == 'yes')"
                 },
                 "those_who_got_syphillis_treatment": {
                     "line_number": "4k",
                     "sw": "Waliopata matibabu ya Kaswende:",
                     "en": "Those who got Syphillis treatment",
-                    "condition": "subforms.anc_first_visit.syphillus_treatment == 'yes'|| subforms.anc_followup.syphillus_treatment == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.syphillus_treatment == 'yes') || (subforms.anc_followup && subforms.anc_followup.syphillus_treatment == 'yes')"
                 },
                 "partners_husbands_who_tested_for_syphillis": {
                     "line_number": "4l",
                     "sw": "Wenza/Waume waliopima Kaswende:",
                     "en": "Patners/husbands who tested for Syphillis",
-                    "condition": "subforms.anc_first_visit.partner_syphillus_test == 'yes' || subforms.anc_followup.partner_syphillus_test == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.partner_syphillus_test == 'yes') || (subforms.anc_followup && subforms.anc_followup.partner_syphillus_test == 'yes')"
                 },
                 "patners_husbands_who_were_infected_with_syphilis": {
                     "line_number": "4m",
                     "sw": "Wenza/Waume Waliogundulika na maambukizi ya Kaswende:",
                     "en": "Partners/husbands who were infected with Syphilis",
-                    "condition": "subforms.anc_first_visit.partner_syphillus_status == 'yes' || subforms.anc_followup.partner_syphillus_status == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.partner_syphillus_status == 'yes') || (subforms.anc_followup && subforms.anc_followup.partner_syphillus_status == 'yes')"
                 },
                 "patners_husbands_who_got_treatment_for_syphilis": {
                     "line_number": "4n",
                     "sw": "Wenza/waume waliopata matibabu ya Kaswende:",
                     "en": "Patners/husbands who got treatment for Syphilis",
-                    "condition": "subforms.anc_first_visit.partner_syphillus_treatment == 'yes' || subforms.anc_followup.partner_syphillus_treatment == 'yes'"
+                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.partner_syphillus_treatment == 'yes' || (subforms.anc_followup && subforms.anc_followup.partner_syphillus_treatment == 'yes')"
                 },
                 "pregnant_women_who_were_infected_with_stds": {
                     "line_number": "4o",
                     "sw": "Waliopatikana na magoniwa ya mambukizo ya ngono:",
                     "en": "Pregnant women who were infected with STD's",
-                    "condition": "subforms.anc_first_visit.std_status == 'yes' || subforms.anc_followup.std_status == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.std_status == 'yes') || (subforms.anc_followup && subforms.anc_followup.std_status == 'yes')"
                 },
                 "patners_husbands_who_were_infected_with_stds": {
                     "line_number": "4p",
                     "sw": "Wenzi/waume Waliopatikana na magonjwa ya mambukizo ya ngono:",
                     "en": "Patners/husbands who were infected with STD's",
-                    "condition": "subforms.anc_first_visit.partner_std == 'yes' || subforms.anc_followup.partner_std == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.partner_std == 'yes') || (subforms.anc_followup && subforms.anc_followup.partner_std == 'yes')"
                 },
                 "pregnant_women_who_got_appropriate_treatment_for_stds": {
                     "line_number": "4q",
                     "sw": "Waliopata tiba sahihi ya magonjwa ya ngono:",
                     "en": "Pregnant women who got appropriate treatment for STD's",
-                    "condition": "subforms.anc_first_visit.std_treatment == 'yes'|| subforms.anc_followup.std_treatment == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.std_treatment == 'yes')|| (subforms.anc_followup && subforms.anc_followup.std_treatment == 'yes')"
                 },
                 "patners_who_got_approprite_treatment_for_stds": {
                     "line_number": "4r",
                     "sw": "Wenzi/waume waliooata tiba sahihi ya magoniwa ya ngono:",
                     "en": "Patners who got appropriate treatment for STD's",
-                    "condition": "subforms.anc_first_visit.partner_std_treatment == 'yes'|| subforms.anc_followup.partner_std_treatment== 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.partner_std_treatment == 'yes')|| (subforms.anc_followup && subforms.anc_followup.partner_std_treatment== 'yes')"
                 },
                 "pmtct": {
                     "line_number": "5",
@@ -193,25 +193,25 @@ exports.reports = function() {
                     "line_number": "5a",
                     "sw": "Tayari wana maambukizi ya VVU kabla ya kuanza kliniki:",
                     "en": "PW who were already infected by HIV before starting Clinic",
-                    "condition": "subforms.hiv_pregnancy_clinic.hiv_status_prior_firstvisit == 'yes' || subforms.anc_followup.hiv_status_prior_firstvisit == 'yes'|| subforms.anc_first_visit.hiv_status_prior_firstvisit== 'yes'"
+                    "condition": "(subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.hiv_status_prior_firstvisit == 'yes') || (subforms.anc_followup && subforms.anc_followup.hiv_status_prior_firstvisit == 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.hiv_status_prior_firstvisit== 'yes')"
                 },
                 "pw_who_were_counselled_before_testing_for_hiv": {
                     "line_number": "5b",
                     "sw": "Wajawazito wote waliopata ushauri nasaha kabla ya kupima VVU kliniki:",
                     "en": "PW who were counselled before testing for HIV",
-                    "condition": "subforms.hiv_pregnancy_clinic.counseled_hiv_prior_test == 'yes' || subforms.anc_first_visit.counseled_hiv_prior_test == 'yes' || subforms.anc_followup.counseled_hiv_prior_test == 'yes'"
+                    "condition": "(subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.counseled_hiv_prior_test == 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.counseled_hiv_prior_test == 'yes') || (subforms.anc_followup && subforms.anc_followup.counseled_hiv_prior_test == 'yes')"
                 },
                 "pw_who_tested_for_hiv_for_the_first_time_at_the_clinic": {
                     "line_number": "5c",
                     "sw": "Wajawazito Waliopima VVU kipimo cha kwanza kliniki:",
                     "en": "PW who tested for HIV for the first time at the clinic",
-                    "condition": "subforms.hiv_pregnancy_clinic.tested_hiv_firstvisit == 'yes' || subforms.anc_followup.tested_hiv_firstvisit == 'yes' || subforms.anc_first_visit.tested_hiv_firstvisit == 'yes'"
+                    "condition": "(subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.tested_hiv_firstvisit == 'yes') || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit == 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit == 'yes')"
                 },
                 "pw_who_tested_positive_by_the_first_test": {
                     "line_number": "5d",
                     "sw": "Wajawazito Waliokutwa na VVU (positive) kipimo cha kwanza:",
                     "en": "PW who tested positive by the first test",
-                    "condition": "subforms.hiv_pregnancy_clinic.first_hiv_status == 'yes' || subforms.anc_first_visit.first_hiv_status == 'yes' || subforms.anc_followup.first_hiv_status == 'yes'"
+                    "condition": "(subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.first_hiv_status == 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status == 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status == 'yes')"
                 },
                 "pw_below_25_years_who_tested_for_hiv_for_the_first_time_at_the_clinic": {
                     "line_number": "5e",
@@ -223,73 +223,73 @@ exports.reports = function() {
                     "line_number": "5f",
                     "sw": "Wajawazito Waliokutwa na VVU (positive) kipimo cha kwanza walio chini ya umri wa miaka 25:",
                     "en": "PW below 25 years who tested positive by the first test",
-                    "condition": "patient.current_age_years < 25 && (subforms.hiv_pregnancy_clinic.first_hiv_status == 'yes' || subforms.anc_followup.first_hiv_status == 'yes')"
+                    "condition": "patient.current_age_years < 25 && (subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.first_hiv_status == 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status == 'yes'))"
                 },
                 "pw_who_were_counselled_after_testing_hiv": {
                     "line_number": "5g",
                     "sw": "Wajawazito Waliopata Ushauri baada ya kupima:",
                     "en": "PW who were counselled after testing HIV",
-                    "condition": "subforms.hiv_pregnancy_clinic.counseled_hiv_prior_test == 'yes' || subforms.anc_first_visit.counseled_hiv_prior_test == 'yes' || subforms.anc_followup.counseled_hiv_prior_test  == 'yes'"
+                    "condition": "(subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.counseled_hiv_prior_test == 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.counseled_hiv_prior_test == 'yes') || (subforms.anc_followup && subforms.anc_followup.counseled_hiv_prior_test  == 'yes')"
                 },
                 "pw_who_tested_together_with_their_couple_together_at_the_clinic": {
                     "line_number": "5h",
                     "sw": "Wajawazito waliopimwa VVU na wenza wao (Couple) kwa pamoja katika kliniki ya wajawazito:",
                     "en": "PW who tested together with their couple together at the clinic",
-                    "condition": "subforms.hiv_pregnancy_clinic.partner_hiv == 'yes' || subforms.anc_followup.partner_hiv == 'yes' || subforms.anc_first_visit.partner_hiv == 'yes'"
+                    "condition": "subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.partner_hiv == 'yes' || (subforms.anc_followup && subforms.anc_followup.partner_hiv == 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.partner_hiv == 'yes')"
                 },
                 "pw_who_tested_hiv_by_the_second_test": {
                     "line_number": "5i",
                     "sw": "Wajawazito waliopima VVU kipimo cha pili:",
                     "en": "PW who tested HIV by the second test",
-                    "condition": "subforms.hiv_pregnancy_clinic.second_hiv_test == 'yes' || subforms.anc_first_visit.second_hiv_test == 'yes' || subforms.anc_followup.second_hiv_test == 'yes'"
+                    "condition": "subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.second_hiv_test == 'yes' || subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test == 'yes' || subforms.anc_followup && subforms.anc_followup.second_hiv_test == 'yes'"
                 },
                 "pw_who_tested_positive_by_the_second_test": {
                     "line_number": "5j",
                     "sw": "Wajawazito waliokutwa na maambukizi ya VVU kipimo cha pili:",
                     "en": "PW who tested positive by the second test",
-                    "condition": "subforms.hiv_pregnancy_clinic.second_hiv_test == 'yes' || subforms.anc_first_visit.second_hiv_test == 'yes' || subforms.anc_followup.second_hiv_test == 'yes'"
+                    "condition": "subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.second_hiv_test == 'yes' || subforms.anc_first_visit.second_hiv_test == 'yes' || subforms.anc_followup && subforms.anc_followup.second_hiv_test == 'yes'"
                 },
                 "partners_husbands_who_tested_for_hiv_at_the_clinic": {
                     "line_number": "5k",
                     "sw": "Wenza waliopima VVU Kliniki ya wajawazito:",
                     "en": "Patners/husbands who tested for HIV at the clinic",
-                    "condition": "subforms.hiv_pregnancy_clinic.partner_hiv == 'yes' || subforms.anc_first_visit.partner_hiv == 'yes' || subforms.anc_followup.partner_hiv == 'yes'"
+                    "condition": "subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.partner_hiv == 'yes' || subforms.anc_first_visit && subforms.anc_first_visit.partner_hiv == 'yes' || subforms.anc_followup && subforms.anc_followup.partner_hiv == 'yes'"
                 },
                 "partners_husbands_who_tested_positive_at_the_clinic": {
                     "line_number": "5l",
                     "sw": "Wenza waliogundulika kuwa na maambukizi ya VVU katika kliniki va wajawazito:",
                     "en": "Patners/husbands who tested positive at the clinic",
-                    "condition": "subforms.hiv_pregnancy_clinic.partner_positive == 'yes' || subforms.anc_first_visit.partner_positive == 'yes' || subforms.anc_followup.partner_positive == 'yes'"
+                    "condition": "subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.partner_positive == 'yes' || subforms.anc_first_visit && subforms.anc_first_visit.partner_positive == 'yes' || subforms.anc_followup && subforms.anc_followup.partner_positive == 'yes'"
                 },
                 "discordant_couples": {
                     "line_number": "5m",
                     "sw": "Wajawazito na wenza waliopata majibu tofauti (discordant) baada ya kupima VVU kliniki",
                     "en": "Couples who have different HIV results after testing at the clinic(discordant couple)",
-                    "condition": "subforms.hiv_pregnancy_clinic.discordant_couple == 'yes' || subforms.anc_first_visit.discordant_couple == 'yes' || subforms.anc_followup.discordant_couple == 'yes'"
+                    "condition": "subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.discordant_couple == 'yes' || subforms.anc_first_visit && subforms.anc_first_visit.discordant_couple == 'yes' || subforms.anc_followup && subforms.anc_followup.discordant_couple == 'yes'"
                 },
                 "pw_who_received_pmtct_combination_drugs": {
                     "line_number": "5n",
                     "sw": "Wajawazito waliopewa dawa za Mchanganyiko za PMTCT:",
                     "en": "PW who received PMTCT combination drugs:",
-                    "condition": "subforms.hiv_pregnancy_clinic.combo_drugs == 'yes' || subforms.anc_first_visit.combo_drugs == 'yes' || subforms.anc_followup.combo_drugs == 'yes'"
+                    "condition": "subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.combo_drugs == 'yes' || subforms.anc_first_visit && subforms.anc_first_visit.combo_drugs == 'yes' || subforms.anc_followup && subforms.anc_followup.combo_drugs == 'yes'"
                 },
                 "pw_whi_are_using_art_drugs": {
                     "line_number": "5o",
                     "sw": "Wajawazito wanaotumia dawa za ART:",
                     "en": "PW whi are using ART drugs",
-                    "condition": "subforms.hiv_pregnancy_clinic.art_drugs == 'yes' || subforms.anc_first_visit.art_drugs == 'yes' || subforms.anc_followup.art_drugs == 'yes'"
+                    "condition": "subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.art_drugs == 'yes' || subforms.anc_first_visit && subforms.anc_first_visit.art_drugs == 'yes' || subforms.anc_followup && subforms.anc_followup.art_drugs == 'yes'"
                 },
                 "pw_who_were_given_ctx": {
                     "line_number": "5p",
                     "sw": "Wajawazito Waliopewa CTX:",
                     "en": "PW who were given CTX (Cotrimocxazole)",
-                    "condition": "subforms.hiv_pregnancy_clinic.ctx_given == 'yes' || subforms.anc_first_visit.ctx_given == 'yes' || subforms.anc_followup.ctx_given == 'yes'"
+                    "condition": "subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.ctx_given == 'yes' || subforms.anc_first_visit && subforms.anc_first_visit.ctx_given == 'yes' || subforms.anc_followup && subforms.anc_followup.ctx_given == 'yes'"
                 },
                 "pw_who_were_counselled_on_feeding_the_baby": {
                     "line_number": "5q",
                     "sw": "Waliopata ushauri iuu ya ulishaji wa mtoto:",
                     "en": "PW who were counselled on feeding the baby",
-                    "condition": "subforms.hiv_pregnancy_clinic.counsel_feeding == 'yes' || subforms.anc_first_visit.counsel_feeding == 'yes' || subforms.anc_followup.counsel_feeding == 'yes'"
+                    "condition": "subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.counsel_feeding == 'yes' || subforms.anc_first_visit && subforms.anc_first_visit.counsel_feeding == 'yes' || subforms.anc_followup && subforms.anc_followup.counsel_feeding == 'yes'"
                 },
                 "malaria": {
                     "line_number": "6",
@@ -300,31 +300,31 @@ exports.reports = function() {
                     "line_number": "6a",
                     "sw": "Waliopewa vocha ya hati punguzo:",
                     "en": "PW given a voucher for Hati Punguzo (voucher for free mosquito net)",
-                    "condition": "subforms.anc_first_visit.bednet_voucher == 'yes' || subforms.anc_followup.bednet_voucher == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.bednet_voucher  ==  'yes' ) || subforms.anc_followup && subforms.anc_followup.bednet_voucher == 'yes'"
                 },
                 "pw_tested_for_malaria": {
                     "line_number": "6b",
                     "sw": "Waliopima Malaria:",
                     "en": "PW tested for malaria",
-                    "condition": "subforms.anc_first_visit.malaria_test == 'yes' || subforms.anc_followup.malaria_test == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.malaria_test  ==  'yes' ) || subforms.anc_followup && subforms.anc_followup.malaria_test == 'yes'"
                 },
                 "pw_tested_positive_for_malaria": {
                     "line_number": "6c",
                     "sw": "Waliopima Malaria positive:",
                     "en": "PW tested positive for Malaria",
-                    "condition": "subforms.anc_first_visit.malaria_poss == 'yes' || subforms.anc_followup.malaria_poss == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.malaria_poss  ==  'yes' ) || subforms.anc_followup && subforms.anc_followup.malaria_poss == 'yes'"
                 },
                 "pw_given_ipt1_preventive_treatment": {
                     "line_number": "6d",
                     "sw": "Waliopewa IPT1:",
                     "en": "PW given IPT1 (IPT--Intermittent Preventive Treatment)",
-                    "condition": "subforms.anc_first_visit.ipt1 == 'yes' || subforms.anc_followup.ipt1 == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.ipt1  ==  'yes' ) || subforms.anc_followup && subforms.anc_followup.ipt1 == 'yes'"
                 },
                 "pw_given_ipt2": {
                     "line_number": "6e",
                     "sw": "Waliopewa IPT2:",
                     "en": "PW given IPT2",
-                    "condition": "subforms.anc_first_visit.ipt2 == 'yes' || subforms.anc_followup.ipt2 == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.ipt2  ==  'yes' ) || subforms.anc_followup && subforms.anc_followup.ipt2 == 'yes'"
                 },
                 "other_services": {
                     "line_number": "7",
@@ -335,25 +335,25 @@ exports.reports = function() {
                     "line_number": "7",
                     "sw": "Waliopewa Iron/Folic vidonge vya kutosha:",
                     "en": "PW given enough Iron/Folic tablets",
-                    "condition": "subforms.anc_first_visit.iron_tablets == 'yes' || subforms.anc_followup.iron_tablets == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.iron_tablets  ==  'yes' ) || subforms.anc_followup && subforms.anc_followup.iron_tablets == 'yes'"
                 },
                 "pw_given_antihelminths": {
                     "line_number": "8",
                     "sw": "Waliopewa Dawa za minyoo (Mebendazole / Albendazole):",
                     "en": "PW given antihelminths (Mebendazole/Albendazole)",
-                    "condition": "subforms.anc_first_visit.alben_tablets == 'yes' || subforms.anc_followup.alben_tablets == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.alben_tablets  ==  'yes' ) || subforms.anc_followup && subforms.anc_followup.alben_tablets == 'yes'"
                 },
                 "pw_who_were_given_refferals": {
                     "line_number": "9",
                     "sw": "Waliopewa Rufaa wakati wa uiauzito:",
                     "en": "PW who were given refferals",
-                    "condition": "subforms.anc_first_visit.referral == 'yes' || subforms.anc_followup.referral == 'yes'"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.referral  ==  'yes' ) || subforms.anc_followup && subforms.anc_followup.referral == 'yes'"
                 },
                 "pw_reffered_to_ctc": {
                     "line_number": "10",
                     "sw": "Waliopcwa Rufaa kwenda CTC:",
                     "en": "PW reffered to CTC (CTC-care and treatment center)",
-                    "condition": "subforms.hiv_pregnancy_clinic.referred_ctc == 'yes' || subforms.anc_first_visit.referred_ctc == 'yes' || subforms.anc_followup.referred_ctc == 'yes'"
+                    "condition": "subforms.hiv_pregnancy_clinic && subforms.hiv_pregnancy_clinic.referred_ctc == 'yes' || subforms.anc_first_visit.referred_ctc == 'yes' || subforms.anc_followup && subforms.anc_followup.referred_ctc == 'yes'"
                 }
             },
             "definitions": {
@@ -390,73 +390,73 @@ exports.reports = function() {
                     "line_number": "1b",
                     "sw": "BCG Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
                     "en": "BCG at the age of 1+ (Within service area )",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization.vaccine_dispensed == 'BCG'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'BCG'"
                 },
                 "bcg_age_<1_year_+_(within_service_area)": {
                     "line_number": "1c",
                     "sw": "BCG Umri mwaka <1 (Nje ya eneo la huduma)",
                     "en": "BCG Age <1 year + (Within service area)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization.vaccine_dispensed == 'BCG'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'BCG'"
                 },
                 "bcgat_the_age_of_1_+_(out_of_service_area)": {
                     "line_number": "1d",
                     "sw": "BCG Umri mwaka 1+ (Nje ya eneo la huduma)",
                     "en": "BCGat the Age of 1 + (out of service area)",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization.vaccine_dispensed == 'BCG'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'BCG'"
                 },
                 "polio_at_the_age_<1_(within_area_service)": {
                     "line_number": "1e",
                     "sw": "Polio Umri mwaka <1 (Ndani ya eneo Ia huduma)",
                     "en": "Polio at the age <1 (within area service)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization.vaccine_dispensed == 'BCG'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'BCG'"
                 },
                 "polio_at_the_age_1+_(within_service_area)": {
                     "line_number": "1f",
                     "sw": "Polio Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
                     "en": "Polio at the age 1+ (within service area)",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization.vaccine_dispensed == 'Polio'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Polio'"
                 },
                 "polio_at_the_age_<1_(out_of_service_area)": {
                     "line_number": "1k",
                     "sw": "Polio Umri mwaka <1 (Nje ya eneo la huduma)",
                     "en": "Polio at the age <1 (out of service area)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization.vaccine_dispensed == 'Polio'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Polio'"
                 },
                 "polio_at_the_age_of_1_+_(out_of_service_area)": {
                     "line_number": "1l",
                     "sw": "Polio Umri mwaka 1+ (Nje ya eneo la huduma)",
                     "en": "Polio at the age of 1 + (out of service area)",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization.vaccine_dispensed == 'Polio'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Polio'"
                 },
                 "penta_at_the_age_<1_(within_service_area)": {
                     "line_number": "1i",
                     "sw": "PENTA Umri mwaka <1 (Ndani ya eneo Ia huduma)",
                     "en": "PENTA at the age <1 (within service area)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization.vaccine_dispensed == 'Polio'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Polio'"
                 },
                 "penta_at_the_age_1+_(within_service_area)": {
                     "line_number": "1j",
                     "sw": "PENTA Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
                     "en": "PENTA at the age 1+ (within service area)",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization.vaccine_dispensed == 'PENTA'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'PENTA'"
                 },
                 "measles_at_the_age_<1_(within_service_area)": {
                     "line_number": "1m",
                     "sw": "Surua Umri mwaka <1 (Ndani ya eneo Ia huduma)",
                     "en": "measles at the age <1 (within service area)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization.vaccine_dispensed == 'Measles'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Measles'"
                 },
                 "measles_at_the_age_1+_(within_service_area)": {
                     "line_number": "1n",
                     "sw": "Surua Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
                     "en": "measles at the age 1+ (within service area)",
-                    "condition": "patient.current_age_years >= 1 && subforms.immunization.vaccine_dispensed == 'Measles'"
+                    "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Measles'"
                 },
                 "measles_at_the_age_<1_(out_of_service_area)": {
                     "line_number": "1p",
                     "sw": "Surua Umri mwaka <1 (Nje ya eneo la huduma)",
                     "en": "measles at the age <1 (out of service area)",
-                    "condition": "patient.current_age_years < 1 && subforms.immunization.vaccine_dispensed == 'Measles'"
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed == 'Measles'"
                 },
                 "attendance_growth_of_6_months_old_baby": {
                     "line_number": "3",
@@ -558,26 +558,26 @@ exports.reports = function() {
                     "line_number": "11a",
                     "sw": "Watoto umri wa miezi 6-11",
                     "en": "Children of 6-11 months",
-                    "condition": "patient.current_age_months >= 6 && patient.current_age_months <= 11 && subforms.well_child_visit.vitamin_a == 'Yes'"
+                    "condition": "patient.current_age_months >= 6 && patient.current_age_months <= 11 && subforms.well_child_visit && subforms.well_child_visit.vitamin_a == 'Yes'"
                 },
                 "children_of_12-17_months": {
                     "line_number": "11b",
                     "sw": "Watoto umri wa miezi 12-17",
                     "en": "Children of 12-17 months",
-                    "condition": "patient.current_age_months >= 12 && patient.current_age_months <= 17 && subforms.well_child_visit.vitamin_a == 'Yes'"
+                    "condition": "patient.current_age_months >= 12 && patient.current_age_months <= 17 && subforms.well_child_visit && subforms.well_child_visit.vitamin_a == 'Yes'"
 
                 },
                 "children_of_18-23_months": {
                     "line_number": "11c",
                     "sw": "Watoto umri wa miezi 18-23",
                     "en": "Children of 18-23 months",
-                    "condition": "patient.current_age_months >= 18 && patient.current_age_months <= 23 && subforms.well_child_visit.vitamin_a == 'Yes'"
+                    "condition": "patient.current_age_months >= 18 && patient.current_age_months <= 23 && subforms.well_child_visit && subforms.well_child_visit.vitamin_a == 'Yes'"
                 },
                 "children_of_24-59_months": {
                     "line_number": "11d",
                     "sw": "Watoto umri wa miezi 24-59",
                     "en": "Children of 24-59 months",
-                    "condition": "patient.current_age_months >= 24 && patient.current_age_months <= 59 && subforms.well_child_visit.vitamin_a == 'Yes'"
+                    "condition": "patient.current_age_months >= 24 && patient.current_age_months <= 59 && subforms.well_child_visit && subforms.well_child_visit.vitamin_a == 'Yes'"
 
                 },
                 "children_given_mebendazole/albendazole": {
@@ -591,26 +591,26 @@ exports.reports = function() {
                     "line_number": "12a",
                     "sw": "Watoto umri wa miezi 12",
                     "en": "Children of 12 months",
-                    "condition": "patient.current_age_months == 12 && subforms.well_child_visit.vitamin_a == 'Yes'"
+                    "condition": "patient.current_age_months == 12 && subforms.well_child_visit && subforms.well_child_visit.vitamin_a == 'Yes'"
 
                 },
                 "children_of_18_months": {
                     "line_number": "12b",
                     "sw": "Watoto umri wa miezi 18",
                     "en": "Children of 18 months",
-                    "condition": "patient.current_age_months == 18 && subforms.well_child_visit.vitamin_a == 'Yes'"
+                    "condition": "patient.current_age_months == 18 && subforms.well_child_visit && subforms.well_child_visit.vitamin_a == 'Yes'"
                 },
                 "children_of_24_months": {
                     "line_number": "12c",
                     "sw": "Watoto umri wa miezi 24",
                     "en": "Children of 24 months",
-                    "condition": "patient.current_age_months == 24 && subforms.well_child_visit.vitamin_a == 'Yes'"
+                    "condition": "patient.current_age_months == 24 && subforms.well_child_visit && subforms.well_child_visit.vitamin_a == 'Yes'"
                 },
                 "children_of_30_months": {
                     "line_number": "12d",
                     "sw": "Watoto umri wa miezi 30",
                     "en": "Children of 30 months",
-                    "condition": "patient.current_age_months == 30 && subforms.well_child_visit.vitamin_a == 'Yes'"
+                    "condition": "patient.current_age_months == 30 && subforms.well_child_visit && subforms.well_child_visit.vitamin_a == 'Yes'"
                 },
                 "feeding_infants_born_to_hiv_infected_mothers": {
                     "line_number": "13",
@@ -713,7 +713,7 @@ exports.reports = function() {
                     "line_number": "17b",
                     "sw": "Watoto walioanzishiwa Cotrimoxazole kati ya mwezi 1 hadi miezi 2 ya umri",
                     "en": "Children who were started on cotrimoxazole between 1 month to 2 months",
-                    "condition": "subforms.well_child_visit.ctx_status == 'Yes' && patient.current_age_months < 2"
+                    "condition": "subforms.well_child_visit && subforms.well_child_visit.ctx_status == 'Yes' && patient.current_age_months < 2"
                 },
                 "Children who were tested for HIV by PCR within two months from birth": {
                     "line_number": "17e",
@@ -817,13 +817,13 @@ exports.reports = function() {
                     "line_number": "2a",
                     "sw": "Idadi ya wateja wa Vidonge Kituoni",
                     "en": "The number of pills clients at the clinic",
-                    "condition": "subforms.reproductive_counseling.contraception_current == 'Pills' && subforms.reproductive_counseling.contraceptive_source == 'Clinic'"
+                    "condition": "subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_current == 'Pills' && subforms.reproductive_counseling.contraceptive_source == 'Clinic'"
                 },
                 "number_of_pills_clients_through_cbd": {
                     "line_number": "2b",
                     "sw": "Idadi ya wateja wa vidonge wa CBD",
                     "en": "Number of pills clients through CBD(Community Based Distribution)",
-                    "condition": "subforms.reproductive_counseling.contraception_current == 'Pills' && subforms.reproductive_counseling.contraceptive_source == 'CBD'"
+                    "condition": "subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_current == 'Pills' && subforms.reproductive_counseling.contraceptive_source == 'CBD'"
                 },
                 "the_number_of_clients_who_were_given_pills_at_the_clinic_and_through_cbd": {
                     "line_number": "2c",
@@ -840,25 +840,25 @@ exports.reports = function() {
                     "line_number": "3a",
                     "sw": "Idadi ya wateja waliochukua kondom Kituoni Me",
                     "en": "The number of Male clients who were given condoms at the clinic",
-                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'Clinic'"
+                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'Clinic'"
                 },
                 "the_number_of_female_clients_who_were_given_condoms_at_the_clinic": {
                     "line_number": "3b",
                     "sw": "Idadi ya wateja waliochukua kondom Kituoni Ke",
                     "en": "The number of Female clients who were given condoms at the clinic",
-                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'Clinic'"
+                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'Clinic'"
                 },
                 "number_of__male_clients_who_were_given_condoms_by_cbd": {
                     "line_number": "3c",
                     "sw": "Idadi ya wateja waliochukua kondom CBD Me",
                     "en": "Number of male clients who were given condoms by CBD",
-                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'CBD'"
+                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'CBD'"
                 },
                 "number_of_female_clients_who_were_given_condoms_by_cbd": {
                     "line_number": "3d",
                     "sw": "Idadi ya wateja waliochukua kondom CBD Ke",
                     "en": "Number of female clients who were given condoms by CBD",
-                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'CBD'"
+                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'CBD'"
                 },
                 "total_customers_who_given_condoms_at_the_clinic_and_cbd": {
                     "line_number": "3e",
@@ -886,25 +886,25 @@ exports.reports = function() {
                     "line_number": "4a",
                     "sw": "Kufunga Uzazi mama (ML/LA) - kituoni",
                     "en": "Women sterilization (ML / LA) - at the clinic",
-                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling.contraception_dispensed == 'Sterilization' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
+                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_dispensed == 'Sterilization' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
                 },
                 "women_sterilization_ml_la_outreach": {
                     "line_number": "4b",
                     "sw": "Kufunga Uzazi mama (ML/LA) - outreach",
                     "en": "Women sterilization (ML / LA) - outreach",
-                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling.contraception_dispensed == 'Sterilization' && subforms.reproductive_counseling.contraception_source == 'outreach'"
+                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_dispensed == 'Sterilization' && subforms.reproductive_counseling.contraception_source == 'outreach'"
                 },
                 "men_sterilization_nsv_at_the_clinic": {
                     "line_number": "4c",
                     "sw": "Kufunga uzazi baba (NSV) - kituoni",
                     "en": "Men sterilization (NSV) - at the clinic",
-                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling.contraception_dispensed == 'Sterilization' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
+                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_dispensed == 'Sterilization' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
                 },
                 "men_sterilization_nsv_outreach": {
                     "line_number": "4d",
                     "sw": "Kufung uzazi baba (NSV) - outreach",
                     "en": "Men sterilization (NSV) - outreach",
-                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling.contraception_dispensed == 'Sterilization' && subforms.reproductive_counseling.contraception_source == 'outreach'"
+                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_dispensed == 'Sterilization' && subforms.reproductive_counseling.contraception_source == 'outreach'"
                 },
                 "implants": {
                     "line_number": "5",
@@ -915,19 +915,19 @@ exports.reports = function() {
                     "line_number": "5a",
                     "sw": "Kuweka vipandikizi - kituoni",
                     "en": "Those who put implants - at the clinic",
-                    "condition": "subforms.reproductive_counseling.contraception_source == 'Other Implants' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
+                    "condition": "subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_source == 'Other Implants' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
                 },
                 "those_who_put_implants_outreach": {
                     "line_number": "5b",
                     "sw": "Kuweka vipandikizi - outreach",
                     "en": "Those who put implants - outreach",
-                    "condition": "subforms.reproductive_counseling.contraception_source == 'Other Implants' && subforms.reproductive_counseling.contraception_source == 'outreach'"
+                    "condition": "subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_source == 'Other Implants' && subforms.reproductive_counseling.contraception_source == 'outreach'"
                 },
                 "removing_implants": {
                     "line_number": "5c",
                     "sw": "Kuondoa vipandikizi",
                     "en": "Removing implants",
-                    "condition": "subforms.reproductive_counseling.contraception_source == 'Remove IUD'"
+                    "condition": "subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_source == 'Remove IUD'"
                 },
                 "intrauterine_methods_iucd": {
                     "line_number": "6",
@@ -938,25 +938,25 @@ exports.reports = function() {
                     "line_number": "6a",
                     "sw": "Kuweka Kitanzi - kituoni",
                     "en": "Inserting IUD (at the clinic)",
-                    "condition": "subforms.reproductive_counseling.contraception_source == 'IUD' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
+                    "condition": "subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_source == 'IUD' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
                 },
                 "inserting_iud_outreach": {
                     "line_number": "6b",
                     "sw": "Kuweka Kitanzi - outreach",
                     "en": "Inserting IUD (outreach)",
-                    "condition": "subforms.reproductive_counseling.contraception_source == 'IUD' && subforms.reproductive_counseling.contraception_source == 'outreach'"
+                    "condition": "subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_source == 'IUD' && subforms.reproductive_counseling.contraception_source == 'outreach'"
                 },
                 "removing_iud_clinic": {
                     "line_number": "6c",
                     "sw": "Kuondoa Kitanzi - kituoni",
                     "en": "Removing IUD (at the clinic)",
-                    "condition": "subforms.reproductive_counseling.contraception_source == 'Remove IUD' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
+                    "condition": "subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_source == 'Remove IUD' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
                 },
                 "removing_iud_outreach": {
                     "line_number": "6d",
                     "sw": "Kuondoa Kitanzi - outreach",
                     "en": "Removing IUD (outreach)",
-                    "condition": "subforms.reproductive_counseling.contraception_source == 'Remove IUD' && subforms.reproductive_counseling.contraception_source == 'outreach'"
+                    "condition": "subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_source == 'Remove IUD' && subforms.reproductive_counseling.contraception_source == 'outreach'"
                 },
                 "total_number_of_client_who_used_permanent_contraceptive_methods": {
                     "line_number": "6e",
@@ -980,7 +980,7 @@ exports.reports = function() {
                     "line_number": "7c",
                     "sw": "Jumla ya Njia Nyinginezo (7a+7b)",
                     "en": "Total number of clients who used other methods(7a+7b)",
-                    "condition": "subforms.reproductive_counseling.contraception_source == 'Natural ways' && subforms.reproductive_counseling.contraception_source == 'Other'"
+                    "condition": "subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_source == 'Natural ways' && subforms.reproductive_counseling.contraception_source == 'Other'"
                 },
                 "total_number_of_types_of_contraceptives": {
                     "line_number": "8",
@@ -1010,7 +1010,7 @@ exports.reports = function() {
                     "line_number": "9c",
                     "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) (Kituoni na CBD) (9a+9b)",
                     "en": "Total number of cycles distributed(at the clinic+CBD) (9a+9b)",
-                    "condition": "subforms.reproductive_counseling.contraception_source == 'CBD' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
+                    "condition": "subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_source == 'CBD' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
 
                 },
                 "condoms_given_out_to_clients": {
@@ -1022,25 +1022,25 @@ exports.reports = function() {
                     "line_number": "10a",
                     "sw": "Idadi ya kondomu zilizogawiwa Kituoni Me",
                     "en": "Number of condoms given to male clients at the clinic",
-                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'Clinic'"
+                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'Clinic'"
                 },
                 "number_of_condoms_given_to_female_clients_at_the_clinic": {
                     "line_number": "10b",
                     "sw": "Idadi ya kondomu zilizogawiwa Kituoni Ke",
                     "en": "Number of condoms given to female clients at the clinic",
-                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'Clinic'"
+                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'Clinic'"
                 },
                 "number_of_condoms_given_to_male_clients_by_cbd": {
                     "line_number": "10c",
                     "sw": "Idadi ya kondomu zilizogawiwa CBD Me",
                     "en": "Number of condoms given to male clients by CBD",
-                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'CBD'"
+                    "condition": "patient.gender == 'male' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'CBD'"
                 },
                 "number_of_condoms_given_to_female_clients_by_cbd": {
                     "line_number": "10d",
                     "sw": "Idadi ya kondomu zilizogawiwa CBD Ke",
                     "en": "Number of condoms given to female clients by CBD",
-                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'CBD'"
+                    "condition": "patient.gender == 'female' && subforms.reproductive_counseling && subforms.reproductive_counseling.contraception_current == 'Condoms' && subforms.reproductive_counseling.contraceptive_source == 'CBD'"
                 },
                 "total_number_of_condoms_given_to_clients": {
                     "line_number": "10e",
@@ -1057,7 +1057,7 @@ exports.reports = function() {
                     "line_number": "11a",
                     "sw": "Waliopata huduma baada ya mimba kubaribika",
                     "en": "Those who got treatment after miscarriages",
-                    "condition": "subforms.reproductive_counseling.family_planning_method_after_miscarriage == true"
+                    "condition": "subforms.reproductive_counseling.family_planning_method_after_miscarriage == 'yes'"
                 },
                 "those_who_used_contraception_after_miscarriage": {
                     "line_number": "11b",
@@ -2125,7 +2125,7 @@ exports.reports = function() {
                     "line_number": "1",
                     "sw": "Waliotarajiwa kujifungua",
                     "en": "Those who were expected to deliver",
-                    "condition": "subforms.anc_followup.gestational_age > 36"
+                    "condition": "subforms.anc_followup.current_gestational_weeks > 36"
                 },
                 "reprot_for_mothers_who_delivered": {
                     "line_number": "2",
@@ -2683,7 +2683,7 @@ exports.reports = function() {
                     "line_number": "3",
                     "en": "Repeated attendance",
                     "sw": "Mahudhurio ya Marudio",
-                    "condition": "subforms.disease_diagnosis && FIXME"
+                    "condition": "subforms.disease_diagnosis"
                 },
                 "3a": {
                     "line_number": "3a",
@@ -3209,19 +3209,19 @@ exports.reports = function() {
                     "line_number": "12a",
                     "sw": "Waliohudhuria Ndani ya saa 24",
                     "en": "Attendees Within 24 hours",
-                    "condition": "patient.age < 1 && subforms.postnatal.days_postpartum <= 1"
+                    "condition": "patient.age < 1 && subforms.postnatal && subforms.postnatal.days_postpartum <= 1"
                 },
                 "attendess_between_2_and_7_days": {
                     "line_number": "1b",
                     "sw": "Waliohudhuria kati ya siku ya 2-7",
                     "en": "Attendees between 2-7 days",
-                    "condition": "patient.age > 1 && subforms.postnatal.days_postpartum >= 2 && subforms.postnatal.days_postpartum <= 7"
+                    "condition": "patient.age > 1 && subforms.postnatal && subforms.postnatal.days_postpartum >= 2 && subforms.postnatal.days_postpartum <= 7"
                 },
                 "total_attendees_within_7_days": {
                     "line_number": "1c",
                     "sw": "Jumla Waliohudhuria ndani ya siku 7 (la+lb)",
                     "en": "Total attendees within 7 days",
-                    "condition": "patient.age > 1 && subforms.postnatal.days_postpartum <= 7"
+                    "condition": "patient.age > 1 && subforms.postnatal && subforms.postnatal.days_postpartum <= 7"
                 },
                 "those_who_finished_all_visits_24_hours_days_2_and_7_day_28_day_42": {
                     "line_number": "2a",
@@ -3449,7 +3449,7 @@ exports.reports = function() {
                     "line_number": "17b",
                     "sw": "Watoto wachanga wanaonyweshwa maziwa mbadala (RF)",
                     "en": "Infants who drink milk substitute (RF)",
-                    "condition": "subforms.postnatal.milk_type != 'Mother\\'s Milk ONLY' && subforms.postnatal.milk_type != 'Mother\\'s Milk + Other'"
+                    "condition": "subforms.postnatal.milk_type && subforms.postnatal.milk_type != 'Mother\\'s Milk ONLY' && subforms.postnatal.milk_type != 'Mother\\'s Milk + Other'"
                 },
                 "infants_who_drink_breast_milk_and_other_food_access_mf": {
                     "line_number": "17c",
