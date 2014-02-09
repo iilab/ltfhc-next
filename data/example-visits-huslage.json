@@ -3,15 +3,15 @@
     "class": "entry",
     "schema": "http://ltfhc.iilab.org/schema/0.4.0/visit.json",
     "collection": "visits",
-    "_date_created": "2014-02-07T16:19:27.435Z",
+    "date_created": "2014-02-07T16:19:27.435Z",
     "patient_id": "5cc2db69a32a84091b96c24427560310",
     "patient": {
         "_id": "5cc2db69a32a84091b96c24427560310",
         "collection": "patients",
         "class": "entry",
         "schema": "http://ltfhc.iilab.org/schema/0.4.0/patient.json",
-        "_date_created": "2013-09-24 17:22:26.799843",
-        "_date_updated": "2013-09-25 05:59:00.745507",
+        "date_created": "2013-09-24 17:22:26.799843",
+        "date_updated": "2013-09-25 05:59:00.745507",
         "first_name": "Aailyah",
         "last_name": "Ally",
         "clinic_id": 2449,
@@ -372,5 +372,5 @@
             "diarrhea_mortality": "no"
         }
     },
-    "_date_updated": "2014-02-07T19:41:36.188Z"
+    "date_updated": "2014-02-07T19:41:36.188Z"
 }
