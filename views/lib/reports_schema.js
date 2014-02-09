@@ -2602,13 +2602,13 @@ exports.reports = function() {
                     "line_number": "2",
                     "en": "Patient who visited for the first time this year\n",
                     "sw": "Wagonjwa waliohudhuria kwa mara ya kwanza mwaka huu (*)",
-                    "condition": "subforms.disease_diagnosis && date_created FIXME"
+                    "condition": "subforms.disease_diagnosis && patient.current_created_years < 1"
                 },
                 "3": {
                     "line_number": "3",
                     "en": "Repeated attendance",
                     "sw": "Mahudhurio ya Marudio",
-                    "condition": "subforms.disease_diagnosis && date_created FIXME"
+                    "condition": "subforms.disease_diagnosis && FIXME"
                 },
                 "3a": {
                     "line_number": "3a",
