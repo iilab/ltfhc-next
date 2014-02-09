@@ -1688,7 +1688,7 @@ exports.reports = function() {
                     "line_number": "72",
                     "sw": "Congenital Disorders",
                     "en": "Congenital Disorders",
-                    "condition": "subforms.disease_diagnosis.admission && subforms.subforms.disease_diagnosis.diagnosis == 'Congenital Disorders'"
+                    "condition": "subforms.disease_diagnosis.admission && subforms.disease_diagnosis.diagnosis == 'Congenital Disorders'"
                 },
                 "hepatitis": {
                     "line_number": "73",
@@ -1848,37 +1848,37 @@ exports.reports = function() {
                     "title": "Total",
                     "type": "number",
                     "line_number": "4d",
-                    "condition": "subforms.tb_leprosy.disability_grade"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.disability_grade"
                 },
                 "treatment_completed": {
                     "title": "Treatment Completed",
                     "type": "number",
                     "line_number": "5a",
-                    "condition": "subforms.tb_leprosy.end_result == 'treatment completed'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.end_result == 'treatment completed'"
                 },
                 "died": {
                     "title": "Died",
                     "type": "number",
                     "line_number": "5b",
-                    "condition": "subforms.tb_leprosy.end_result == 'died'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.end_result == 'died'"
                 },
                 "transferred_out": {
                     "title": "Transferred Out",
                     "type": "number",
                     "line_number": "5c",
-                    "condition": "subforms.tb_leprosy.end_result == 'transferred out'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.end_result == 'transferred out'"
                 },
                 "defaulter": {
                     "title": "Defaulter",
                     "type": "number",
                     "line_number": "5d",
-                    "condition": "subforms.tb_leprosy.end_result == 'defaulter'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.end_result == 'defaulter'"
                 },
                 "total_c": {
                     "title": "Total (c)",
                     "type": "number",
                     "line_number": "5e",
-                    "condition": "subforms.tb_leprosy.end_result"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.end_result"
                 },
                 "registered_at_end_of_quarter": {
                     "title": "(a) + (b) - (c)",
@@ -2409,7 +2409,7 @@ exports.reports = function() {
                     "line_number": "9a",
                     "sw": "Jumla ya watoto waliozaliwa hai",
                     "en": "Total children born alive",
-                    "condition": "subforms.postnatal.child_diagnoses !='Neonatal death"
+                    "condition": "subforms.postnatal.child_diagnoses !='Neonatal death'"
                 },
                 "9b_live_births_weight_low": {
                     "line_number": "9b",
@@ -2509,8 +2509,8 @@ exports.reports = function() {
                 },
                 "10h_total_babies_born_alive_and_dead": {
                     "line_number": "10h",
-                    "sw ": "Jumla ya watoto waliozaliwa(hai na wafu)(9a + 9d + 9e)",
-                    "en ": "Total babies born(alive and dead)(9a + 9 + 9 d e)",
+                    "sw": "Jumla ya watoto waliozaliwa(hai na wafu)(9a + 9d + 9e)",
+                    "en": "Total babies born(alive and dead)(9a + 9 + 9 d e)",
                     "condition": "FIXME"
                 },
                 "children_with_apgar_score_less_than_7_at_5_minutes ": {
@@ -2527,43 +2527,43 @@ exports.reports = function() {
                 },
                 "11a_number_of_children_assisted_to_breathe_stimulation": {
                     "line_number ": "11a",
-                    "sw ": "Idadi ya Watoto Waliosaidiwa Kupumua - stimulation",
-                    "en ": "Number of Children assisted to beathe - stimulation",
+                    "sw": "Idadi ya Watoto Waliosaidiwa Kupumua - stimulation",
+                    "en": "Number of Children assisted to beathe - stimulation",
                     "condition ": "FIXME"
                 },
                 "11b_number_of_children_assisted_to_breath_suction": {
                     "line_number ": "11b",
-                    "sw ": "Idadi ya Watoto Waliosaidiwa Kupumua - suction",
-                    "en ": "Number of children assisted to breathe - suction",
+                    "sw": "Idadi ya Watoto Waliosaidiwa Kupumua - suction",
+                    "en": "Number of children assisted to breathe - suction",
                     "condition ": "FIXME"
                 },
                 "11c_number_of_children_who_were_assisted_to_breathe_bag_and_mask": {
                     "line_number ": "11c",
-                    "sw ": "Idadi ya Watoto Waliosaidiwa Kupumua - bag and mask",
-                    "en ": "Number of Children who were assisted to breathe - bag and mask",
+                    "sw": "Idadi ya Watoto Waliosaidiwa Kupumua - bag and mask",
+                    "en": "Number of Children who were assisted to breathe - bag and mask",
                     "condition ": "FIXME"
                 },
                 "12_other_services": {
                     "line_number ": "12",
-                    "sw ": "Huduma nyinginezo",
-                    "en ": "Other Services "
+                    "sw": "Huduma nyinginezo",
+                    "en": "Other Services "
                 },
                 "12_the_number_of_children_who_were_breastfed_hour_after_birth": {
                     "line_number ": "12",
-                    "sw ": "idadi ya Watoto walionyonyeshwa saa moja baada ya kuzaliwa",
-                    "en ": "The number of children who were breastfed hour after birth",
+                    "sw": "idadi ya Watoto walionyonyeshwa saa moja baada ya kuzaliwa",
+                    "en": "The number of children who were breastfed hour after birth",
                     "condition ": "FIXME"
                 },
                 "13_those_assessed_24_hours_after_birth": {
                     "line_number ": "13",
-                    "sw ": "Waliofanyiwa tathmini masaa 24 baada ya kuzaliwa",
-                    "en ": "Those assessed 24 hours after birth",
+                    "sw": "Waliofanyiwa tathmini masaa 24 baada ya kuzaliwa",
+                    "en": "Those assessed 24 hours after birth",
                     "condition ": "FIXME"
                 },
                 "14_mother_and_child_given_referral": {
                     "line_number ": "14",
-                    "sw ": "Mama na Mtoto waliopewa rufaa",
-                    "en ": "Mother and child given referral",
+                    "sw": "Mama na Mtoto waliopewa rufaa",
+                    "en": "Mother and child given referral",
                     "condition ": "FIXME"
                 }
             },
@@ -2610,7 +2610,8 @@ exports.reports = function() {
                     "sw": "Mahudhurio ya Marudio",
                     "condition": "subforms.disease_diagnosis && date_created FIXME"
                 },
-                "": {
+                "3a": {
+                    "line_number": "3a",
                     "en": "Diagnoses for OPD",
                     "sw": "Diagnoses za OPD"
                 },
@@ -3251,13 +3252,13 @@ exports.reports = function() {
                     "line_number": "11d",
                     "sw": "Wenye VVU waliochagua kunyonyesha maziwa ya mama pekee (EBF)",
                     "en": "People with HIV who chose to breastfeed exclusively breastfed ( EBF )",
-                    "condition": "subforms.postnatal.postnatal_hiv_positive && subforms.postnatal.milk_type == 'Mother\'s Milk ONLY'"
+                    "condition": "subforms.postnatal.postnatal_hiv_positive && subforms.postnatal.milk_type == 'Mother\\'s Milk ONLY'"
                 },
                 "people_with_hiv_who_chose_to_use_milk_substitute_rf": {
                     "line_number": "11e",
                     "sw": "Wenye VVU waliochagua kunywesha maziwa mbadala (RF)",
                     "en": "People with HIV who chose to use milk substitute ( RF )",
-                    "condition": "subforms.postnatal.postnatal_hiv_positive && subforms.postnatal.milk_type != 'Mother\'s Milk ONLY'"
+                    "condition": "subforms.postnatal.postnatal_hiv_positive && subforms.postnatal.milk_type != 'Mother\\'s Milk ONLY'"
                 },
                 "child": {
                     "line_number": "12",
@@ -3309,7 +3310,7 @@ exports.reports = function() {
                     "line_number": "13d",
                     "sw": "Idadi ya watoto walozaliwa nyumbani chini ya 2.5kg",
                     "en": "Number of children at home under the born 2.5kg",
-                    "condition": "subforms.postnatal.delivered_outside && subforms.postnatal.less_than_2.5kg"
+                    "condition": "subforms.postnatal.delivered_outside && subforms.postnatal.less_than_2_5kg"
                 },
                 "number_of_babies_born_at_home_were_started_on_kangaroo_care_kmc": {
                     "line_number": "13e",
@@ -3367,19 +3368,19 @@ exports.reports = function() {
                     "line_number": "17a",
                     "sw": "Watoto wachanga wanaonyonya maziwa ya mama pekee (EBF)",
                     "en": "Infants who are breastfed exclusively breastfed ( EBF )",
-                    "condition": "subforms.postnatal.milk_type == 'Mother\'s Milk ONLY'"
+                    "condition": "subforms.postnatal.milk_type == 'Mother\\'s Milk ONLY'"
                 },
                 "infants_who_drik_milk_substitute_rf": {
                     "line_number": "17b",
                     "sw": "Watoto wachanga wanaonyweshwa maziwa mbadala (RF)",
                     "en": "Infants who drink milk substitute (RF)",
-                    "condition": "subforms.postnatal.milk_type != 'Mother\'s Milk ONLY' && subforms.postnatal.milk_type != 'Mother\'s Milk + Other'"
+                    "condition": "subforms.postnatal.milk_type != 'Mother\\'s Milk ONLY' && subforms.postnatal.milk_type != 'Mother\\'s Milk + Other'"
                 },
                 "infants_who_drink_breast_milk_and_other_food_access_mf": {
                     "line_number": "17c",
                     "sw": "Watoto wachanga wanaonyweshwa maziwa ya mama na kupatiwa chakula kingine (MF)",
                     "en": "Infants who drink breast milk and other food access (MF)",
-                    "condition": "subforms.postnatal.milk_type == 'Mother\'s Milk + Other'"
+                    "condition": "subforms.postnatal.milk_type == 'Mother\\'s Milk + Other'"
                 }
             },
             "definitions": {
