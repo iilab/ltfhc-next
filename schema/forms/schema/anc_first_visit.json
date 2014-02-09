@@ -267,10 +267,12 @@
             "type": "string"
         },
         "fundal_height": {
-            "type": "number"
+            "type": "string",
+            "$ref": "lists/#fundal_heights"
         },
         "fetal_heart_rate": {
-            "type": "number"
+            "type": "string",
+            "$ref": "lists/fetal_heart_rates"
         },
         "treatment_given": {
             "type": "string"
