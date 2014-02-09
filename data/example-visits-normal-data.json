@@ -933,7 +933,8 @@
         "anc_first_visit": {
             "last_menstrual_period": "2014-01-05",
             "due_date": "2014-11-10",
-            "current_gestational_age": "4",
+            "current_gestationalage_weeks": 4,
+            "date_gestationalage": null,
             "number_pregnancy": "2",
             "pregnancy_test": "yes",
             "number_full_term_delivery": "2",
@@ -1101,7 +1102,8 @@
         "anc_first_visit": {
             "last_menstrual_period": "2013-10-14",
             "due_date": "2014-05-14",
-            "current_gestational_age": "30",
+            "current_gestationalage_weeks": 30,
+            "date_gestationalage": null,
             "number_pregnancy": "9",
             "pregnancy_test": "yes",
             "number_full_term_delivery": "4",
@@ -1198,7 +1200,8 @@
         "anc_followup": {
             "due_date": "11/06/2014",
             "number_pregnancy": "7",
-            "gestational_age": "9",
+            "current_gestationalage_weeks": 9,
+            "date_gestationalage": null,
             "symptom": "vaginal_leakage_of_fluid,headache,blurred_vision",
             "patient_weight": 20,
             "fundal_height": "18",
@@ -1273,7 +1276,8 @@
         "anc_followup": {
             "due_date": "07/14/2014",
             "number_pregnancy": "4",
-            "gestational_age": "18",
+            "current_gestationalage_weeks": 18,
+            "date_gestationalage": null,
             "symptom": "abdominal_pain,constipation",
             "patient_weight": 12,
             "fundal_height": "19",
