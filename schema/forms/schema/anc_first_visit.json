@@ -24,8 +24,8 @@
         "pregnancy_test": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "number_full_term_delivery": {
@@ -62,15 +62,15 @@
         "std_status": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "std_treatment": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "hiv_status_prior_firstvisit": {
@@ -80,8 +80,8 @@
         "tested_hiv_firstvisit": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "first_hiv_status": {
@@ -91,155 +91,155 @@
         "second_hiv_test": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "refer_ctc": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "partner_hiv": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "partner_positive": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "discordant_couple": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "combo_drugs": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "art_drugs": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "ctx_given": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "counsel_feeding": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "syphillus_test": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "syphillus_status": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "syphillus_treatment": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "partner_std": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "partner_std_treatment": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "partner_syphillus_test": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "partner_syphillus_status": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "partner_syphillus_treatment": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "malaria_test": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "malar_pos": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "bednet_voucher": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "ipt1": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "ipt2": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "bp_systolic": {
@@ -259,8 +259,8 @@
         "tt2plus_vaccine": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "other_symptoms": {
@@ -280,15 +280,15 @@
         "iron_tablets": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "alben_tablets": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "notes": {
@@ -297,29 +297,29 @@
         "admission": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "referral": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "referred_ctc": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "in_labor": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         }
     }

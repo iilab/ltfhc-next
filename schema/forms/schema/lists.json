@@ -300,7 +300,7 @@
         "enum": [
             "female",
             "male",
-            "unknown"
+            "Unknown"
         ]
     },
     "histories": {
@@ -323,7 +323,7 @@
         "id": "hiv_diagnosis_times",
         "type": "string",
         "enum": [
-            "unknown",
+            "Unknown",
             "less_than_2_month_after_birth",
             "between_2_18_months_after_birth",
             "more_than_18_months_after_birth"
@@ -345,7 +345,7 @@
         "enum": [
             "positive",
             "negative",
-            "unknown"
+            "Unknown"
         ]
     },
     "immunization_effects": {
@@ -398,7 +398,7 @@
         "type": "string",
         "enum": [
             "no_previous_delivery",
-            "unknown",
+            "Unknown",
             "less_1kg",
             "1kg",
             "1_5kg",

@@ -210,7 +210,7 @@
                 "Rheumatoid and Joint Diseases",
                 "Thyroid Diseases",
                 "Neoplasms",
-                "Ill Defined Symptoms (no Diagnosis)",
+                "Ill Defined Symptoms (No Diagnosis)",
                 "Diagnoses, Other",
                 "Waliopewa Rufaa"
             ]
@@ -393,7 +393,7 @@
             "type": "select",
             "optionLabels": [
                 "Animal Bite (suspected rabies)",
-                "Animal Bite (no rabies)",
+                "Animal Bite (No rabies)",
                 "Fracture",
                 "Concussion / Head Injury",
                 "Motor Vehicle Accident",
