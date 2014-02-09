@@ -23,23 +23,23 @@ exports.reports = function() {
                     "sw": "Hudhurio la kwanza",
                     "en": "First visit"
                 },
-                "current_gestational_weeks_below_12_weeks": {
+                "current_gestationalage_weeks_below_12_weeks": {
                     "line_number": "2a",
                     "sw": "Umri wa mimba chini ya wiki 12 (<12weeks)",
                     "en": "Gestational age below 12 weeks(<12weeks)",
-                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.current_gestational_weeks < 12"
+                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.current_gestationalage_weeks < 12"
                 },
                 "gestational_at_week_12_or_more": {
                     "line_number": "2b",
                     "sw": "Umri wa mimba wiki 12 au zaidi (12+ weeks)",
                     "en": "Gestational at week 12 or more (12+weeks)",
-                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.current_gestational_weeks >= 12"
+                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.current_gestationalage_weeks >= 12"
                 },
                 "total_attendance_of_first_visits(2a+2b)": {
                     "line_number": "2c",
                     "sw": "Jumla ya hudhurio la Kwanza (2a+2b)",
                     "en": "Total attendance of first visits(2a+2b)",
-                    "condition": "subforms.anc_first_visit.current_gestational_weeks < 12 && subforms.anc_first_visit.current_gestational_weeks >= 12"
+                    "condition": "subforms.anc_first_visit.current_gestationalage_weeks < 12 && subforms.anc_first_visit.current_gestationalage_weeks >= 12"
                 },
                 "clients_for_return_visits": {
                     "line_number": "2d",
@@ -2125,7 +2125,7 @@ exports.reports = function() {
                     "line_number": "1",
                     "sw": "Waliotarajiwa kujifungua",
                     "en": "Those who were expected to deliver",
-                    "condition": "subforms.anc_followup.current_gestational_weeks > 36"
+                    "condition": "subforms.anc_followup.current_gestationalage_weeks > 36"
                 },
                 "reprot_for_mothers_who_delivered": {
                     "line_number": "2",
