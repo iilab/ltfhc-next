@@ -44,6 +44,9 @@
             "label": "Approximate Age: (Umri wa mgonjwa)",
             "type": "number"
         },
+        "current_age_months": {
+            "type": "hidden"
+        },
         "medication_allergies": {
             "label": "Medication Allergies:",
             "type": "textarea"
