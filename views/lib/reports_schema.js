@@ -688,15 +688,15 @@ exports.reports = function() {
                     },
                     "more1momale": {
                         "title": "More than 1 month and less than 1 Year - Male",
-                        "condition": "FIXME && patient.gender == 'male'"
+                        "condition": "patient.approximate_age < 1 && patient.gender == 'male'"
                     },
                     "more1mofemale": {
                         "title": "More than 1 month and less than 1 Year - Females",
-                        "condition": "FIXME && patient.gender == 'female'"
+                        "condition": "patient.approximate_age < 1 && patient.gender == 'female'"
                     },
                     "more1mototal": {
                         "title": "More than 1 month and less than 1 Year - Total",
-                        "condition": "FIXME "
+                        "condition": "patient.approximate_age < 1 "
                     },
                     "above1below5male": {
                         "title": "More than 1 year and less than 5 Years - Male",
@@ -795,7 +795,7 @@ exports.reports = function() {
                     "line_number": "3f",
                     "sw": "Jumla ya Wateja waliochukua njia za muda mfupi (1+2c+3c)",
                     "en": "Total Customers who took short-term course (1+2c+3c)",
-                    "condition": "subforms.reproductive_counseling.???"
+                    "condition": "subforms.reproductive_counseling.quantity_pills_dispensed == '1 Month Supply'"
                 },
                 "methods_of_long-term_and_permanent_family_planning": {
                     "line_number": "4",
@@ -911,30 +911,32 @@ exports.reports = function() {
                     "line_number": "8",
                     "sw": "Jumla ya Aina zote Uzazi wa Mpango",
                     "en": "Total number of types of contraceptives",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.contraception_source"
                 },
                 "total_number_of_clients_who_used_all_types_of_contraceptives": {
                     "line_number": "8a",
                     "sw": "Jumla ya Wateja waliochukua njia zote za Uzazi Mpango (3f+6e+7c)",
                     "en": "Total number of clients who used all types of contraceptives(3f+6e+7c)",
-                    "condition": "FIXME"
-                },
-                "total_number_of_cycles_distributed": {
-                    "line_number": "9c",
-                    "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) (Kituoni na CBD) (9a+9b)",
-                    "en": "Total number of cycles distributed(at the clinic+CBD) (9a+9b"
+                    "condition": "subforms.reproductive_counseling.quantity_pills_dispensed != 'None'"
                 },
                 "cycles_distributed_at_the_clinic": {
                     "line_number": "9a",
                     "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) - Kituoni",
                     "en": "Cycles distributed at the Clinic",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.contraception_source == 'Clinic'"
                 },
                 "cycles_distributed_by_cbd": {
                     "line_number": "9b",
                     "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) - CBD",
                     "en": "Cycles distributed by CBD",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.contraception_source == 'CBD'"
+                },
+                "total_number_of_cycles_distributed": {
+                    "line_number": "9c",
+                    "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) (Kituoni na CBD) (9a+9b)",
+                    "en": "Total number of cycles distributed(at the clinic+CBD) (9a+9b)",
+                    "condition": "subforms.reproductive_counseling.contraception_source == 'CBD' && subforms.reproductive_counseling.contraception_source == 'Clinic'"
+
                 },
                 "condoms_given_out_to_clients": {
                     "line_number": "10",
@@ -980,54 +982,55 @@ exports.reports = function() {
                     "line_number": "11a",
                     "sw": "Waliopata huduma baada ya mimba kubaribika",
                     "en": "Those who got treatment after miscarriages",
-                    "condition": "subforms.postnatal.family_planning_method_after_miscarriage == true"
+                    "condition": "subforms.reproductive_counseling.family_planning_method_after_miscarriage == true"
                 },
                 "those_who_used_contraception_after_miscarriage": {
                     "line_number": "11b",
                     "sw": "Waliopata uzazi wa mpango baada ya mimba kubaribika",
-                    "en": "Those who used contraception after miscarriage"
+                    "en": "Those who used contraception after miscarriage",
+                    "condition": "subforms.reproductive_counseling.contraception_after_miscarriage == 'Yes'"
                 },
                 "those_who_used_contraceptive_methods_42_days_after_giving_birth": {
                     "line_number": "11c",
                     "sw": "Waliopata njia ya uazazi wa mpango siku 42 baada ya kujifungua",
                     "en": "Those who used contraceptive methods 42 days after giving birth",
-                    "condition": "subforms.postnatal.contraception_within_40_days == true"
+                    "condition": "subforms.reproductive_counseling.contraception_in_42_days == 'Yes'"
                 },
                 "clients_who_screened_for_cancer": {
                     "line_number": "12",
                     "sw": "Wateja waliochunguzwa saratani",
                     "en": "clients who screened for cancer",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.cervical_symptom"
                 },
                 "those_screened_for_breast_diseases": {
                     "line_number": "12a",
                     "sw": "waliochunguzwa tit",
                     "en": "Those Screened for breast diseases",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.breast_symptom"
                 },
                 "detected_to_have_breast_cancer_symptoms": {
                     "line_number": "12b",
                     "sw": "Waliogundulika na matatizo ya matiti (mfano: kutoka damu kwenye chuchu au uvimbe wa matiti)",
                     "en": "Detected to have breast cancer symptoms (eg, bleeding or swelling of the breast nipples)",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.breast_symptom"
                 },
                 "screened_for_cervical_diseases": {
                     "line_number": "12c",
                     "sw": "Waliochunguzwa Shingo ya mfuko wa uzazi",
                     "en": "Screened for cervical diseases",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.cervical_symptom"
                 },
                 "detected_to_have_cervical_diseases": {
                     "line_number": "12d",
                     "sw": "Waliogundulika na matatizo ya shingo ya mfuko wa uzazi (mfano: mchubuko au kidonda)",
                     "en": "Detected to have cervical diseases (eg, bruise or cervical ulcer)",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.cervical_symptom"
                 },
                 "detected_to_have_cervical_cancer_symptoms": {
                     "line_number": "12e",
                     "sw": "Waliodhamwa wana saratani ya shingo ya mfuko wa uzazi",
                     "en": "Detected to have cervical cancer symptoms",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.cervical_symptom"
                 },
                 "those_who_got_cryotherapy_service": {
                     "line_number": "12f",
@@ -1044,83 +1047,85 @@ exports.reports = function() {
                     "line_number": "13a",
                     "sw": "Tayari wana uambukizo wa VVU",
                     "en": "Those who already have an HIV infection",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.hiv_status == 'Positive'"
                 },
                 "those_who_got_hiv_counseling": {
                     "line_number": "13b",
                     "sw": "Waliopata ushauri nasha juu ya VVU",
                     "en": "Those who got HIV counseling",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.hiv_counseling == 'yes'"
                 },
                 "clients_who_tested_for_hiv": {
                     "line_number": "13c",
                     "sw": "Wateja waliopima VVU",
                     "en": "Clients who tested for HIV",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.hiv_tested == 'yes'"
                 },
                 "clients_who_received_post-test_counseling": {
                     "line_number": "13d",
                     "sw": "Wateja waliopata ushauri nasaha baada ya kupima",
                     "en": "Clients who received post-test counseling",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.post_test_counseling == 'yes'"
                 },
                 "customers_who_tested_positive": {
                     "line_number": "13e",
                     "sw": "Wateja waliogundulika Positive (+)",
                     "en": "Customers who tested positive (+)",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.hiv_positive_test == 'yes'"
                 },
                 "partners_who_tested_for_hiv": {
                     "line_number": "13f",
                     "sw": "Wenza waliopima VVU",
                     "en": "Partners who tested for HIV",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.hiv_partner_test == 'yes'"
                 },
                 "partners_who_tested_positive": {
                     "line_number": "13g",
                     "sw": "Wenza Waliogundulika Positive (+)",
                     "en": "Partners Who tested Positive (+)",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.hiv_partner_positive_test == 'yes'"
                 },
                 "discordant_couple": {
                     "line_number": "13h",
                     "sw": "Wateja ambao matokeo ya vipimo vya VVU yanatofautiana",
                     "en": "Clients who tested HIV and got different results(discordant couple)",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.hiv_discordant == 'yes'"
                 },
                 "clients_who_were_reffered_to_ctc": {
                     "line_number": "13i",
                     "sw": "Wateja waliopata rufaa kwenda CTC",
                     "en": "Clients who were reffered to CTC",
-                    "condition": "FIXME"
+                    "condition": "subforms.reproductive_counseling.referred_ctc == 'yes'"
                 },
                 "NEED_TRANSLATION": {
                     "line_number": "13j",
                     "sw": "Wataja waliopata rufaa kwenda CTC",
-                    "en": "NEED TRANSLATION"
+                    "en": "Patients who were referred to CTC",
+                    "condition": "subforms.reproductive_counseling.referred_ctc == 'yes'"
+
                 }
             },
             "definitions": {
                 "columns": {
                     "10to14": {
                         "title": "10 to 14",
-                        "condition": "patient.approximate_age => 10 && patient.approximate_age <= 14"
+                        "condition": "patient.approximate_age >= 10 && patient.approximate_age <= 14"
                     },
                     "15to19": {
                         "title": "15 to 19",
-                        "condition": "patient.approximate_age >= 15 patient.approximate_age <= 19"
+                        "condition": "patient.approximate_age >= 15 && patient.approximate_age <= 19"
                     },
                     "20to24": {
                         "title": "20 to 24",
-                        "condition": "patient.approximate_age >= 20 patient.approximate_age <= 24"
+                        "condition": "patient.approximate_age >= 20 && patient.approximate_age <= 24"
                     },
                     "above25": {
                         "title": "Above 25",
                         "condition": "patient.approximate_age >= 25"
                     },
                     "return": {
-                        "title": "Return???",
-                        "condition": "FIXME"
+                        "title": "Return",
+                        "condition": "true"
                     },
                     "total": {
                         "title": "Total",
@@ -1138,55 +1143,55 @@ exports.reports = function() {
             "type": "object",
             "properties": {
                 "number_of_patients_treated_dtc_dtc-diarrhea_and_treatment_centre": {
-                    "line_number": 1,
+                    "line_number": "1",
                     "sw": "Idadi ya wagonjwa waliotibiwa DTC DTC-Idara ya magonjwa ya kuhara",
                     "en": "Number of patients treated DTC DTC-Diarrhea and treatment centre",
                     "condition": "subforms.diarrhea && subforms.diarrhea.duration"
                 },
                 "number_of_dtc_patients_treated_with_acute_shortage_of_water_and_sodium_cloride_in_the_body": {
-                    "line_number": 2,
+                    "line_number": "2",
                     "sw": "Idadi ya wagonjwa waliotibiwa DTC walio na upungufu mkubwa wa maji na churnvichumvi mwilini",
                     "en": "Number of DTC patients treated with acute shortage of water and Sodium cloride in the body",
-                    "condition": "subforms.diarrhea && ubforms.diarrhea.water_sodium_imbalance == 'Severe'"
+                    "condition": "subforms.diarrhea && subforms.diarrhea.water_sodium_imbalance == 'Severe'"
                 },
                 "number_of_dtc_patients_treated_with_little_shortage_of_water_and_sodium_cloride": {
-                    "line_number": 3,
+                    "line_number": "3",
                     "sw": "Idadi ya wagonjwa waliotibiwa DTC walio na upungufu kiasi wa maji na chumvichumvi mwilini",
                     "en": "Number of DTC patients treated with little shortage of water and sodium cloride",
                     "condition": "subforms.diarrhea && subforms.diarrhea.water_sodium_imbalance == 'Mild'"
                 },
                 "number_of_patients_with_blood_in_stool": {
-                    "line_number": 4,
+                    "line_number": "4",
                     "sw": "Idadi ya wagonjwa walio na damu katika kinyesi",
                     "en": "Number of patients with blood in stool",
                     "condition": "subforms.diarrhea && subforms.diarrhea.blood_in_stool == 'yes'"
                 },
                 "the_number_of_patients_who_received_zinc": {
-                    "line_number": 5,
+                    "line_number": "5",
                     "sw": "Idadi ya wagonjwa waliopewa zinki",
                     "en": "The number of patients who received zinc",
                     "condition": "subforms.diarrhea && subforms.diarrhea.given_zinc == 'yes'"
                 },
                 "the_number_of_patients_who_received_a_packet_of_ors": {
-                    "line_number": 6,
+                    "line_number": "6",
                     "sw": "Idadi ya wagonjwa waliopatiwa paketi za ORS",
                     "en": "The number of patients who received a packet of ORS",
                     "condition": "subforms.diarrhea && subforms.diarrhea.given_ors == 'yes'"
                 },
                 "number_of_admitted_patients": {
-                    "line_number": 7,
+                    "line_number": "7",
                     "sw": "Idadi ya wagonjwa waliolazwa",
                     "en": "Number of admitted patients",
                     "condition": "subforms.diarrhea && subforms.diarrhea.admission == 'yes'"
                 },
                 "the_number_of_refereed_patients": {
-                    "line_number": 8,
+                    "line_number": "8",
                     "sw": "Idadi ya wagonjwa waliopewa rufaa",
                     "en": "The number of refereed patients",
                     "condition": "subforms.diarrhea && subforms.diarrhea.referral == 'no'"
                 },
                 "the_number_of_patients_who_died_of_dtc_diarrhoea_treatment_centre": {
-                    "line_number": 9,
+                    "line_number": "9",
                     "sw": "Idadi ya wagonjwa waliofia DTC",
                     "en": "The number of patients who died of DTC_Diarrhoea treatment Centre",
                     "condition": "subforms.diarrhea && subforms.diarrhea.diarrhea_mortality == 'no'"
@@ -1208,15 +1213,15 @@ exports.reports = function() {
                     },
                     "more1momale": {
                         "title": "More than 1 month and less than 1 Year - Male",
-                        "condition": "FIXME && patient.gender == 'male'"
+                        "condition": "patient.approximate_age < 1 && patient.gender == 'male'"
                     },
                     "more1mofemale": {
                         "title": "More than 1 month and less than 1 Year - Females",
-                        "condition": "FIXME && patient.gender == 'female'"
+                        "condition": "patient.approximate_age < 1 && patient.gender == 'female'"
                     },
                     "more1mototal": {
                         "title": "More than 1 month and less than 1 Year - Total",
-                        "condition": "FIXME "
+                        "condition": "patient.approximate_age < 1"
                     },
                     "above1below5male": {
                         "title": "More than 1 year and less than 5 Years - Male",
@@ -1725,7 +1730,7 @@ exports.reports = function() {
             "definitions": {
                 "columns": {
                     "lessthan1male": {
-                        "title": "Males",
+                        "title": "Less than 1 Month - Males",
                         "condition": "FIXME && patient.gender == 'male'"
                     },
                     "lessthan1female": {
@@ -1738,15 +1743,15 @@ exports.reports = function() {
                     },
                     "more1momale": {
                         "title": "More than 1 month and less than 1 Year - Male",
-                        "condition": "FIXME && patient.gender == 'male'"
+                        "condition": "patient.approximate_age < 1 && patient.gender == 'male'"
                     },
                     "more1mofemale": {
                         "title": "More than 1 month and less than 1 Year - Females",
-                        "condition": "FIXME && patient.gender == 'female'"
+                        "condition": "patient.approximate_age < 1 && patient.gender == 'female'"
                     },
                     "more1mototal": {
                         "title": "More than 1 month and less than 1 Year - Total",
-                        "condition": "FIXME "
+                        "condition": "patient.approximate_age < 1"
                     },
                     "above1below5male": {
                         "title": "More than 1 year and less than 5 Years - Male",
@@ -1783,7 +1788,7 @@ exports.reports = function() {
                     "title": "New",
                     "type": "number",
                     "line_number": "2a",
-                    "condition": "subforms.tb_leprosy.patient_count"
+                    "condition": "subforms.tb_leprosy.leprosy_status == 'new patient'"
                 },
                 "return_after_default": {
                     "title": "Return after Default",
@@ -1813,13 +1818,13 @@ exports.reports = function() {
                     "title": "1MB",
                     "type": "number",
                     "line_number": "3a",
-                    "condition": "FIXME"
+                    "condition": "subforms.tb_leprosy.leprosy_classification == 'MB (A)' || subforms.tb_leprosy.leprosy_classification == 'MB (B)' "
                 },
                 "1pb": {
                     "title": "1PB",
                     "type": "number",
                     "line_number": "3b",
-                    "condition": "FIXME"
+                    "condition": "subforms.tb_leprosy.leprosy_classification == 'PB (A)' || subforms.tb_leprosy.leprosy_classification == 'PB (B)' "
                 },
                 "disability_grade_0": {
                     "title": "Grade 0",
@@ -1837,7 +1842,7 @@ exports.reports = function() {
                     "title": "Grade 2",
                     "type": "number",
                     "line_number": "4c",
-                    "condition": "subforms.tb_leprosy.disability_grade == 'grade 2"
+                    "condition": "subforms.tb_leprosy.disability_grade == 'grade 2'"
                 },
                 "disability_grade_total": {
                     "title": "Total",
@@ -1879,13 +1884,13 @@ exports.reports = function() {
                     "title": "(a) + (b) - (c)",
                     "type": "number",
                     "line_number": "6",
-                    "condition": "FIXME"
+                    "condition": "(subforms.tb_leprosy.leprosy_status + subforms.tb_leprosy.classification) - subforms.tb_leprosy.end_result"
                 },
                 "corticosteroids": {
                     "title": "Patients who started corticosteroids in the quarter",
                     "type": "number",
                     "line_number": "7",
-                    "condition": "subforms.tb_leprosy.corticosteroid_treatment"
+                    "condition": "subforms.tb_leprosy.corticosteroid_treatment == 'yes'"
                 }
             },
             "definitions": {
@@ -2045,97 +2050,95 @@ exports.reports = function() {
                     "line_number": "1",
                     "sw": "Waliotarajiwa kujifungua",
                     "en": "Those who were expected to deliver",
-                    "condition": "FIXME"
+                    "condition": "subforms.anc_followup.gestational_age > 36"
                 },
                 "reprot_for_mothers_who_delivered": {
                     "line_number": "2",
                     "sw": "Taarifa ya Waliojifungua",
                     "en": "Report for mothers who delivered",
-                    "condition": "FIXME"
                 },
                 "those_who_delivered_at_the_clinic": {
                     "line_number": "2a",
                     "sw": "Waliojifungulia katika kituo cha kutolea huduma za afya",
                     "en": "Those who delivered at the clinic",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.delivery_location == 'Delivered in Clinic'"
                 },
                 "those_who_delivered_on_while_on_their_way_to_the_clinic": {
                     "line_number": "2b",
                     "sw": "Waliojifungua kabla ya kufika kituoni (BBA)",
                     "en": "Those who delivered on while on their way to the clinic (BBA)",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.delivery_location == 'Delivered on the way to Clinic'"
                 },
                 "those_helped_to_deliver_by_traditional_birth_attendants_tba": {
                     "line_number": "2c",
                     "sw": "Waliozalishwa na wakunga wa jadi (TBA)",
                     "en": "Those helped to deliver by traditional birth attendants (TBA)",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.delivery_location == 'Delivered by traditional birth attendant'"
                 },
                 "home_delivery": {
                     "line_number": "2d",
                     "sw": "Waliojifungua nyumbani (H)",
                     "en": "Home delivery (H)",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.delivery_location == 'Home Delivery'"
                 },
                 "total_giving_birth": {
                     "line_number": "2e",
                     "sw": "Jumla waliojifungua (2a+2b+2c+2d)",
                     "en": "Total giving birth (2a +2 b +2 c +2 d)",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record"
                 },
                 "those_who_were_helped_to_deliver_by_skilled_providers": {
                     "line_number": "2f",
                     "sw": "Waliozalishwa na watoa huduma wanye ujuzi",
                     "en": "Those who were helped to deliver by skilled providers",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.delivery_location == 'Delivered by skilled provider'"
                 },
                 "percentage_of_all_who_delivered_at_the_clinic": {
                     "line_number": "2g",
                     "sw": "Asilimia ya waliojifungulia katika vituo vya kutolea huduma za afya (2a/1) x 100",
                     "en": "Percentage of all who delivered at the Clinic (2a / 1) x 100",
-                    "condition": "FIXME"
+                    "condition": "(subforms.delivery_record.delivery_location == 'Delivered in Clinic'/1)*100"
                 },
                 "clinic_reports_on_different_methods_of_methods_of_delivery": {
                     "line_number": "3",
                     "sw": "Taarifa ya njia za kujifungua kutoka vituo vya kutolea huduma za afya",
                     "en": "Clinic reports on different methods of methods of delivery",
-                    "condition": "FIXME"
                 },
                 "normal_delivery_kw": {
                     "line_number": "3a",
                     "sw": "Waliojifungua Kawaida (KW)",
                     "en": "Normal delivery (KW)",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.delivery_mode == 'Vaginal'"
                 },
                 "vacuum_vm_delivery": {
                     "line_number": "3b",
                     "sw": "Waliojifungua kwa Vacuum (VM)",
                     "en": "Vacuum (VM) delivery",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.delivery_mode == 'Vacuum'"
                 },
                 "breech_delivery": {
                     "line_number": "3c",
                     "sw": "Breech Delivery",
                     "en": "breech Delivery",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.delivery_mode == 'Breech'"
                 },
                 "caesarian_section_cs_delivery": {
                     "line_number": "3d",
                     "sw": "Waliojifungua kwa Caesarian Section (CS)",
                     "en": "Caesarian Section (CS) delivery",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.delivery_mode == 'C-section'"
                 },
                 "delivery_through_other_ways": {
                     "line_number": "3e",
                     "sw": "Waliojifungua kwa njia nyingizezo",
                     "en": "Delivery through other ways",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.delivery_mode == 'Other'"
                 },
                 "total": {
                     "line_number": "3f",
                     "sw": "Jumla (3a+3b+3c+3d+3e)",
                     "en": "Total (3a +3 b +3 c +3 d +3 e)",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.delivery_mode"
                 },
                 "the_number_of_pregnant_women_who_underwent_amtsl": {
                     "line_number": "3g",
@@ -2147,73 +2150,72 @@ exports.reports = function() {
                     "line_number": "4",
                     "sw": "Matatizo kabla ya kujifungua",
                     "en": "Prenatal problems",
-                    "condition": "FIXME"
                 },
                 "aph": {
                     "line_number": "4a",
                     "sw": "APH",
                     "en": "APH",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.prenatal_problems == 'APH'"
                 },
                 "pre_mature_rupture_of_membrane_prom": {
                     "line_number": "4b",
                     "sw": "Pre-mature Rupture of Membrane (PROM)",
                     "en": "Pre-mature rupture of membrane (PROM)",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.prenatal_problems == 'PROM'"
                 },
                 "high_bp": {
                     "line_number": "4c",
                     "sw": "High BP",
                     "en": "high BP",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.prenatal_problems == 'High BP'"
                 },
                 "eclampsia": {
                     "line_number": "6b",
                     "sw": "Eclampsia",
                     "en": "eclampsia",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.prenatal_problems == 'Eclampsia'"
                 },
                 "anaemia": {
                     "line_number": "4e",
                     "sw": "Anaemia",
                     "en": "Anaemia",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.prenatal_problems == 'Anemia'"
                 },
                 "malaria": {
                     "line_number": "4f",
                     "sw": "Malaria",
                     "en": "malaria",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.prenatal_problems == 'Malaria'"
                 },
                 "hiv_stage_iii_or_iv": {
                     "line_number": "4g",
                     "sw": "HIV+ stage III or IV",
                     "en": "HIV + stage III or IV",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.prenatal_problems == 'HIV stage III or IV'"
                 },
                 "eptopic_pregnancy": {
                     "line_number": "4h",
                     "sw": "Ectopic Pregnancy",
                     "en": "ectopic Pregnancy",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.prenatal_problems == 'Ectopic pregnancy'"
                 },
                 "abortion_or_abortion_complications": {
                     "line_number": "4i",
                     "sw": "Abortion / Abortion Complications",
                     "en": "Abortion / Abortion Complications",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.prenatal_problems == 'Abortion complications'"
                 },
                 "other": {
                     "line_number": "6h",
                     "sw": "Mengineyo",
                     "en": "other",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.prenatal_problems == 'Other'"
                 },
                 "total_impaired_prenatal": {
                     "line_number": "4k",
                     "sw": "Jumla wenye matatizo kabla ya kujifungua (4a+4b+4c+4d+4e+4f+4h+4i+4j+4k)",
                     "en": "Total impaired prenatal (4a +4 b +4 c +4 d +4 e +4 f +4 h +4 i +4 j +4 k)",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.prenatal_problems"
                 },
                 "waliokeketwa_fgm": {
                     "line_number": "5",
@@ -2225,163 +2227,160 @@ exports.reports = function() {
                     "line_number": "6",
                     "sw": "Matatizo wakati na baada ya kujifungua",
                     "en": "Complications during and after childbirth",
-                    "condition": "FIXME"
                 },
                 "pph": {
                     "line_number": "6a",
                     "sw": "PPH",
                     "en": "PPH",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.childbirth_complications == 'PPH'"
                 },
                 "obstructed_labour": {
                     "line_number": "6c",
                     "sw": "Obstructed Labour",
                     "en": "Obstructed Labour",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.childbirth_complications == 'Obstructed labor'"
                 },
                 "retained_placenta": {
                     "line_number": "6d",
                     "sw": "Retained Placenta",
                     "en": "Retained Placenta",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.childbirth_complications == 'Retained placenta'"
                 },
                 "tear_third_degree_tear": {
                     "line_number": "6e",
                     "sw": "Tear (Third Degree Tear)",
                     "en": "Tear (Third Degree Tear)",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.childbirth_complications == 'Tear (Third Degree Tear)'"
                 },
                 "ruptured_uterus": {
                     "line_number": "6f",
                     "sw": "Ruptured Uterus",
                     "en": "Ruptured Uterus",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.childbirth_complications == 'Ruptured uterus'"
                 },
                 "infection_or_sepsis": {
                     "line_number": "6g",
                     "sw": "Uambukizo / Sepsis",
-                    "en": "infenction/sepsis",
-                    "condition": "FIXME"
+                    "en": "Infection/sepsis",
+                    "condition": "subforms.delivery_record.childbirth_complications == 'Sepsis/infection'"
                 },
                 "total_complications_after_childbirth": {
                     "line_number": "6i",
                     "sw": "Jumla ya matatizo baada ya kujifungua (6a+6b+6c+6d+6e+6f+6g+6h)",
                     "en": "Total complications after childbirth (6a +6 b +6 +6 c d e +6 +6 +6 G+ f 6h)",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.childbirth_complications"
                 },
                 "emoc": {
                     "line_number": "7",
                     "sw": "EmOC",
                     "en": "EmOC",
-                    "condition": "FIXME"
                 },
                 "given_iv_antibiotics": {
                     "line_number": "7a",
                     "sw": "Amepewa (IV) Antibiotiki",
                     "en": "given (IV) antibiotics",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.childbirth_complications == 'Given IV antibiotics'"
                 },
                 "given_iv_uterontonic": {
                     "line_number": "7b",
                     "sw": "Amepewa (IV) Uterotonic",
                     "en": "given (IV) Uterotonic",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.childbirth_complications == 'Given uterotonics'"
                 },
                 "given_iv_anticonvulsants": {
                     "line_number": "7c",
                     "sw": "Amepewa (IV) Anticonvulsants",
-                    "en": "given (IV) Anticonvulsants",
-                    "condition": "FIXME"
+                    "en": "Given (IV) Anticonvulsants",
+                    "condition": "subforms.delivery_record.childbirth_complications == 'Given IV anticonvulsants'"
                 },
                 "placenta_has_been_dismissed_by_hand": {
                     "line_number": "7d",
                     "sw": "Ameondolewa kondo la nyuma kwa mkono",
                     "en": "Placenta has been dismissed by hand",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.childbirth_complications == 'Placenta removed by hand'"
                 },
                 "those_who_did_mva": {
                     "line_number": "7e",
                     "sw": "Amefanyiwa MVA",
                     "en": "Those who did MVA",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.childbirth_complications == 'MVA needed'"
                 },
                 "those_who_got_blood_transfusion": {
                     "line_number": "7f",
                     "sw": "Ameongezewa Damu",
                     "en": "Those who got blood transfusion",
-                    "condition": "FIXME"
+                    "condition": "subforms.delivery_record.childbirth_complications == 'Given blood transfusion'"
                 },
                 "pmtct": {
                     "line_number": "8",
                     "sw": "PMTCT",
                     "en": "PMTCT",
-                    "condition": "FIXME"
                 },
                 "total_who_tested_hiv_anc": {
                     "line_number": "8a",
                     "sw": "Jumla waliopimwa VVU ANC",
                     "en": "Total who tested HIV ANC",
-                    "condition": "FIXME"
+                    "condition": "subforms.anc_followup.tested_hiv_firstvisit == 'yes'"
                 },
                 "those_who_were_found_positive_at_anc": {
                     "line_number": "8b",
                     "sw": "Waliogundulika Positive kutoka ANC",
                     "en": "Those who were found positive at ANC",
-                    "condition": "FIXME"
+                    "condition": "subforms.anc_followup.second_hiv_test == 'yes'"
                 },
                 "those_who_started_using_arv_during_pregnancy_at_anc": {
                     "line_number": "8c",
                     "sw": "Walioanzishiwa dawa za ARV wakati wa ajauzito (ANC)",
                     "en": "Those who started using ARV during pregnancy at ANC",
-                    "condition": "FIXME"
+                    "condition": "subforms.anc_followup.combo_drugs == 'yes'"
                 },
                 "those_who_started_using_art_treatment_during_pregnancy_anc": {
                     "line_number": "8d",
                     "sw": "Walioanza matibabu ya ART wakati wa ujauzito (ANC)",
                     "en": "Those who started using ART treatment during pregnancy (ANC)",
-                    "condition": "FIXME"
+                    "condition": "subforms.anc_followup.art_drugs == 'yes'"
                 },
                 "total_number_of_clients_who_tested_for_hiv_during_and_after_childbirth": {
                     "line_number": "8e",
                     "sw": "Jumla waliopimwa VVU wakati na baada ya kujifungua",
                     "en": "Total number of clients who tested for HIV during and after childbirth",
-                    "condition": "FIXME"
+                    "condition": "subforms.postnatal.postnatal_hiv_test == 'yes'"
                 },
                 "those_tested_positive_during_and_after_childbirth": {
                     "line_number": "8f",
                     "sw": "Waliogundulika Positive wakati na baada ya kujifungua",
                     "en": "Those tested positive during and after childbirth",
-                    "condition": "FIXME"
+                    "condition": "subforms.postnatal.postnatal_hiv_positive == 'yes'"
                 },
                 "those_who_started_using_arvs_during_labor_and_delivery": {
                     "line_number": "8g",
                     "sw": "Walioanzishiwa dawa za ARV wakati wa uchungu na kujifungua",
                     "en": "Those who started using ARV's during labor and delivery",
-                    "condition": "FIXME"
+                    "condition": "subforms.anc_followup.combo_drugs == 'yes'"
                 },
                 "those_who_started_art_treatment_during_labor_and_delivery": {
                     "line_number": "8h",
                     "sw": "Walioanza matibabu ya ART wakati wa uchungu na kujifungua",
                     "en": "Those who started ART treatment during labor and delivery",
-                    "condition": "FIXME"
+                    "condition": "subforms.anc_followup.art_drugs == 'yes'"
                 },
                 "total_clients_with_hiv": {
                     "line_number": "8i",
                     "sw": "Jumla Walio na VVU (8b+8f)",
                     "en": "Total Clients with HIV (8b +8 f)",
-                    "condition": "FIXME"
+                    "condition": "subforms.postnatal.postnatal_hiv_positive && subforms.anc_followup.second_hiv_test"
                 },
                 "mothers_who_chose_to_breastfeed_only_ebf": {
                     "line_number": "8j",
                     "sw": "Waliochagua kunyonyesha maziwa ya mama pekee (EBF)",
                     "en": "Mothers who chose to breastfeed only (EBF)",
-                    "condition": "FIXME"
+                    "condition": "subforms.postnatal.milk_type == 'Mothers Milk ONLY'"
                 },
                 "mothers_who_chose_to_feed_milk_substitute_rf": {
                     "line_number": "8k",
                     "sw": "Waliochagua ulishaji wa maziwa mbadala (RF)",
                     "en": "Mothers who chose to feeding milk substitute (RF)",
-                    "condition": "FIXME"
+                    "condition": "subforms.postnatal.milk_type == 'Formula ONLY'"
                 },
                 "those_given_arv_prophylaxis_tail_when_discharged": {
                     "line_number": "8l",
@@ -2399,19 +2398,18 @@ exports.reports = function() {
                     "line_number": "8n",
                     "sw": "Jumla ya akina mama walio na VVU wenye umri chini ya miaka 20",
                     "en": "Total HIV-positive mothers who are younger than 20 years",
-                    "condition": "FIXME"
+                    "condition": "patient.approximate_age < 20 && subforms.postnatal.postnatal_hiv_positive == 'yes'"
                 },
                 "9_children_single_birth": {
                     "line_number": "9",
                     "sw": "Watoto Waliozaliwa mmoja",
-                    "en": "9 children single birth",
-                    "condition": "FIXME"
+                    "en": "Children single birth",
                 },
                 "9a_total_children_born_alive": {
                     "line_number": "9a",
                     "sw": "Jumla ya watoto waliozaliwa hai",
                     "en": "Total children born alive",
-                    "condition": "FIXME"
+                    "condition": "subforms.postnatal.child_diagnoses !='Neonatal death"
                 },
                 "9b_live_births_weight_low": {
                     "line_number": "9b",
@@ -2422,25 +2420,25 @@ exports.reports = function() {
                 "9c_live_births_weight_high": {
                     "line_number": "9c",
                     "sw": "Waliozaliwa hai Uzito =>2.5kg",
-                    "en": "9c live births Weight = > 2.5kg",
+                    "en": "Live births Weight = > 2.5kg",
                     "condition": "FIXME"
                 },
                 "9d_macerated_dead_births_msb": {
                     "line_number": "9d",
                     "sw": "Waliozaliwa wafu Macerated (MSB)",
-                    "en": "9D macerated dead births ( MSB )",
+                    "en": "Macerated dead births ( MSB )",
                     "condition": "FIXME"
                 },
                 "fresh_dead_births_9e_msb": {
                     "line_number": "9e",
                     "sw": "Waliozaliwa wafu Fresh (MSB)",
-                    "en": "Fresh dead births 9e ( MSB )",
+                    "en": "Fresh dead births (MSB)",
                     "condition": "FIXME"
                 },
                 "9f_births_to_mothers_with_hiv": {
                     "line_number": "9f",
                     "sw": "Waliozaliwa na mama wenye VVU",
-                    "en": "births to mothers with HIV",
+                    "en": "Births to mothers with HIV",
                     "condition": "FIXME"
                 },
                 "9g_children_given_arv_drugs": {
@@ -2452,8 +2450,8 @@ exports.reports = function() {
                 "9h_total_babies_born_alive_and_dead": {
                     "line_number": "9h",
                     "sw": "Jumla ya watoto waliozaliwa (hai na wafu) (9a+9d+9e)",
-                    "en": "Total babies born ( alive and dead ) ( 9a +9 +9 d e )",
-                    "condition": "FIXME"
+                    "en": "Total babies born (Alive and dead) ( 9a +9 +9 d e )",
+                    "condition": "subforms.delivery_record"
                 },
                 "children_9i_apgar_score_less_than_7_at_5_minutes": {
                     "line_number": "9i",
@@ -2527,42 +2525,42 @@ exports.reports = function() {
                     "en": "children who were assisted to breath",
                     "condition": "FIXME"
                 },
-                "11a_number_of_children_assisted_to_breathe_stimulation ": {
+                "11a_number_of_children_assisted_to_breathe_stimulation": {
                     "line_number ": "11a",
                     "sw ": "Idadi ya Watoto Waliosaidiwa Kupumua - stimulation",
                     "en ": "Number of Children assisted to beathe - stimulation",
                     "condition ": "FIXME"
                 },
-                "11b_number_of_children_assisted_to_breath_suction ": {
+                "11b_number_of_children_assisted_to_breath_suction": {
                     "line_number ": "11b",
                     "sw ": "Idadi ya Watoto Waliosaidiwa Kupumua - suction",
                     "en ": "Number of children assisted to breathe - suction",
                     "condition ": "FIXME"
                 },
-                "11c_number_of_children_who_were_assisted_to_breathe_bag_and_mask ": {
+                "11c_number_of_children_who_were_assisted_to_breathe_bag_and_mask": {
                     "line_number ": "11c",
                     "sw ": "Idadi ya Watoto Waliosaidiwa Kupumua - bag and mask",
                     "en ": "Number of Children who were assisted to breathe - bag and mask",
                     "condition ": "FIXME"
                 },
-                "12_other_services ": {
+                "12_other_services": {
                     "line_number ": "12",
                     "sw ": "Huduma nyinginezo",
                     "en ": "Other Services "
                 },
-                "12_the_number_of_children_who_were_breastfed_hour_after_birth ": {
+                "12_the_number_of_children_who_were_breastfed_hour_after_birth": {
                     "line_number ": "12",
                     "sw ": "idadi ya Watoto walionyonyeshwa saa moja baada ya kuzaliwa",
                     "en ": "The number of children who were breastfed hour after birth",
                     "condition ": "FIXME"
                 },
-                "13_those_assessed_24_hours_after_birth ": {
+                "13_those_assessed_24_hours_after_birth": {
                     "line_number ": "13",
                     "sw ": "Waliofanyiwa tathmini masaa 24 baada ya kuzaliwa",
                     "en ": "Those assessed 24 hours after birth",
                     "condition ": "FIXME"
                 },
-                "14_mother_and_child_given_referral ": {
+                "14_mother_and_child_given_referral": {
                     "line_number ": "14",
                     "sw ": "Mama na Mtoto waliopewa rufaa",
                     "en ": "Mother and child given referral",
@@ -2587,7 +2585,6 @@ exports.reports = function() {
             }
         }, //end report_motherchildward
         "report_opd": {
-
             "collection": "reports",
             "class": "schema",
             "_id": "reports/schema/reportopd",
@@ -2599,19 +2596,19 @@ exports.reports = function() {
                     "line_number": "1",
                     "en": "OPD attendance",
                     "sw": "Mahudhurio ya OPD",
-                    "condition": "FIXME"
+                    "condition": "subforms.disease_diagnosis"
                 },
                 "2": {
                     "line_number": "2",
                     "en": "Patient who visited for the first time this year\n",
                     "sw": "Wagonjwa waliohudhuria kwa mara ya kwanza mwaka huu (*)",
-                    "condition": "FIXME"
+                    "condition": "subforms.disease_diagnosis && date_created FIXME"
                 },
                 "3": {
                     "line_number": "3",
                     "en": "Repeated attendance",
                     "sw": "Mahudhurio ya Marudio",
-                    "condition": "FIXME"
+                    "condition": "subforms.disease_diagnosis && date_created FIXME"
                 },
                 "": {
                     "en": "Diagnoses for OPD",
@@ -3099,7 +3096,7 @@ exports.reports = function() {
                     },
                     "more1momale": {
                         "title": "More than 1 month and less than 1 Year - Male",
-                        "condition": "FIXME && patient.gender == 'male'"
+                        "condition": "patient_age  && patient.gender == 'male'"
                     },
                     "more1mofemale": {
                         "title": "More than 1 month and less than 1 Year - Females",
@@ -3254,13 +3251,13 @@ exports.reports = function() {
                     "line_number": "11d",
                     "sw": "Wenye VVU waliochagua kunyonyesha maziwa ya mama pekee (EBF)",
                     "en": "People with HIV who chose to breastfeed exclusively breastfed ( EBF )",
-                    "condition": "subforms.postnatal.postnatal_hiv_positive && subforms.postnatal.milk_type == 'Mother's Milk ONLY'"
+                    "condition": "subforms.postnatal.postnatal_hiv_positive && subforms.postnatal.milk_type == 'Mother\'s Milk ONLY'"
                 },
                 "people_with_hiv_who_chose_to_use_milk_substitute_rf": {
                     "line_number": "11e",
                     "sw": "Wenye VVU waliochagua kunywesha maziwa mbadala (RF)",
                     "en": "People with HIV who chose to use milk substitute ( RF )",
-                    "condition": "subforms.postnatal.postnatal_hiv_positive && subforms.postnatal.milk_type != 'Mother's Milk ONLY'"
+                    "condition": "subforms.postnatal.postnatal_hiv_positive && subforms.postnatal.milk_type != 'Mother\'s Milk ONLY'"
                 },
                 "child": {
                     "line_number": "12",
@@ -3370,19 +3367,19 @@ exports.reports = function() {
                     "line_number": "17a",
                     "sw": "Watoto wachanga wanaonyonya maziwa ya mama pekee (EBF)",
                     "en": "Infants who are breastfed exclusively breastfed ( EBF )",
-                    "condition": "subforms.postnatal.milk_type == 'Mother's Milk ONLY'"
+                    "condition": "subforms.postnatal.milk_type == 'Mother\'s Milk ONLY'"
                 },
                 "infants_who_drik_milk_substitute_rf": {
                     "line_number": "17b",
                     "sw": "Watoto wachanga wanaonyweshwa maziwa mbadala (RF)",
-                    "en": "Infants who drink milk substitute ( RF )",
-                    "condition": "subforms.postnatal.milk_type != 'Mother's Milk ONLY' && subforms.postnatal.milk_type != 'Mother's Milk + Other'"
+                    "en": "Infants who drink milk substitute (RF)",
+                    "condition": "subforms.postnatal.milk_type != 'Mother\'s Milk ONLY' && subforms.postnatal.milk_type != 'Mother\'s Milk + Other'"
                 },
                 "infants_who_drink_breast_milk_and_other_food_access_mf": {
                     "line_number": "17c",
                     "sw": "Watoto wachanga wanaonyweshwa maziwa ya mama na kupatiwa chakula kingine (MF)",
-                    "en": "Infants who drink breast milk and other food access ( MF )",
-                    "condition": "subforms.postnatal.milk_type == 'Mother's Milk + Other'"
+                    "en": "Infants who drink breast milk and other food access (MF)",
+                    "condition": "subforms.postnatal.milk_type == 'Mother\'s Milk + Other'"
                 }
             },
             "definitions": {

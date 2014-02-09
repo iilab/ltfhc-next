@@ -21,10 +21,10 @@ Putty is now installed and you are ready for the next step.
 
 ## Installation of EMR System
 1. Make sure the server computer is on.
-1. Make sure that the laptop is connected to the wifi network ID `health`
+1. Make sure that the laptop is connected to the wifi network ID `health` password: `hoffman medic platelet crutch`
 1. Double-click Putty in the Putty folder on your desktop. A new dialog box will open.
-1. In the `Host Name` box fill in `192.168.42.1`.
-1. A box will pop up saying `The server's host key is not cached in the registry.` Click `OK`
+1. In the `Host Name` box fill in `192.168.42.1` and click `Open`
+1. A box will pop up saying `The server's host key is not cached in the registry.` Click `Yes`
 1. A new window will appear that is your session into the server.
 1. Enter `lastmile` when it asks for a username.
 1. Enter the password you were given when it asks for a password.
