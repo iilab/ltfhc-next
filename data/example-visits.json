@@ -15,7 +15,7 @@
         "schema": "http://ltfhc.iilab.org/schema/0.4.0/patient.json",
         "first_name": "John",
         "last_name": "Doe",
-        "approximate_age": 39,
+        "current_age": 39,
         "birthday": "1985-04-12T23:20:50.52Z",
         "clinic_id": "Namansi",
         "gender": "male",
@@ -95,7 +95,7 @@
 			"birth_month": 10,
 			"birth_day": 4,
 			"birth_year": 2010,
-			"approximate_age": 3,
+			"current_age": 3,
 			"medication_allergies": "",
 			"notes": "",
 			"_id": "5cc2db69a32a84091b96c244273fe977"
@@ -172,7 +172,7 @@
 			"birth_month": 8,
 			"birth_day": 9,
 			"birth_year": 1940,
-			"approximate_age": 73,
+			"current_age": 73,
 			"medication_allergies": "",
 			"notes": "",
 			"_id": "5cc2db69a32a84091b96c244274f30b1"
@@ -245,7 +245,7 @@
 			"birth_month": 10,
 			"birth_day": 25,
 			"birth_year": 2010,
-			"approximate_age": 3,
+			"current_age": 3,
 			"medication_allergies": "",
 			"notes": "",
 			"_id": "5cc2db69a32a84091b96c2442752fb1a"
@@ -335,7 +335,7 @@
 			"birth_month": 6,
 			"birth_day": 15,
 			"birth_year": 2005,
-			"approximate_age": 8,
+			"current_age": 8,
 			"medication_allergies": "",
 			"notes": "",
 			"_id": "5cc2db69a32a84091b96c24427530230"
@@ -411,7 +411,7 @@
 			"birth_month": 9,
 			"birth_day": 20,
 			"birth_year": 1961,
-			"approximate_age": 52,
+			"current_age": 52,
 			"medication_allergies": "",
 			"notes": "",
 			"_id": "5cc2db69a32a84091b96c24427530e00"
@@ -488,7 +488,7 @@
 			"birth_month": 9,
 			"birth_day": 27,
 			"birth_year": 1998,
-			"approximate_age": 15,
+			"current_age": 15,
 			"medication_allergies": "",
 			"notes": "",
 			"_id": "5cc2db69a32a84091b96c244275319a8"
@@ -564,7 +564,7 @@
 			"birth_month": 2,
 			"birth_day": 16,
 			"birth_year": 2008,
-			"approximate_age": 5,
+			"current_age": 5,
 			"medication_allergies": "",
 			"notes": "",
 			"_id": "5cc2db69a32a84091b96c244275322a6"
@@ -610,7 +610,7 @@
 			"birth_month": 1,
 			"birth_day": 5,
 			"birth_year": 2007,
-			"approximate_age": 6,
+			"current_age": 6,
 			"medication_allergies": "",
 			"notes": "",
 			"_id": "5cc2db69a32a84091b96c24427532e21"
@@ -702,7 +702,7 @@
 	        "birth_month": 5,
 	        "birth_day": 6,
 	        "birth_year": 2004,
-	        "approximate_age": 9,
+	        "current_age": 9,
 	        "medication_allergies": "",
 	        "notes": ""
 	    },
