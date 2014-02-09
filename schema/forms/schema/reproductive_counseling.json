@@ -69,92 +69,92 @@
         "hiv_tested": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "hiv_partner_test": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "hiv_positive_test": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "hiv_partner_positive_test": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "hiv_counseling": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "hiv_partner_counseling": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "hiv_discordant": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
-        "referred_ctc": {
+    "referred_ctc": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "post_test_counseling": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "implant_removed": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "contraception_after_miscarriage": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "delivery_in_42_days": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "contraception_in_42_days": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "contraception_dispensed": {
@@ -176,8 +176,8 @@
         "condom_education": {
             "type": "string",
             "enum": [
-                "yes",
-                "no"
+                "Yes",
+                "No"
             ]
         },
         "cervical_symptom": {
