@@ -36,9 +36,6 @@
             "type": "string"
         },
         "current_age": {
-            "type": "string"
-        },
-        "approximate_age": {
             "type": "number"
         },
         "medication_allergies": {
