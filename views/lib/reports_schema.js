@@ -86,13 +86,13 @@ exports.reports = function() {
                     "line_number": "4b",
                     "sw": "Umri chini ya miaka 20:",
                     "en": "age less than 20 years",
-                    "condition": "patient.approximate_age < 20"
+                    "condition": "patient.current_age_years < 20"
                 },
                 "age_over_35_years": {
                     "line_number": "4c",
                     "sw": "Umri zaidi ya miaka 35:",
                     "en": "age over 35 years",
-                    "condition": "patient.approximate_age > 35"
+                    "condition": "patient.current_age_years > 35"
                 },
                 "severe_anemia_first_attendance": {
                     "line_number": "4d",
@@ -217,13 +217,13 @@ exports.reports = function() {
                     "line_number": "5e",
                     "sw": "Wajawazito waliopimwa VVU Kipimo cha kwanza chini ya Umri wa miaka 25",
                     "en": " PW below 25 years who tested for HIV for the first time at the clinic",
-                    "condition": "patient.approximate_age < 25 && (subforms.hiv_pregnancy_clinic.tested_hiv_firstvisit == 'yes' || subforms.anc_first_visit.tested_hiv_firstvisit == 'yes')"
+                    "condition": "patient.current_age_years < 25 && (subforms.hiv_pregnancy_clinic.tested_hiv_firstvisit == 'yes' || subforms.anc_first_visit.tested_hiv_firstvisit == 'yes')"
                 },
                 "pw_below_25_years_who_tested_positive_by_the_first_test": {
                     "line_number": "5f",
                     "sw": "Wajawazito Waliokutwa na VVU (positive) kipimo cha kwanza walio chini ya umri wa miaka 25:",
                     "en": "PW below 25 years who tested positive by the first test",
-                    "condition": "patient.approximate_age < 25 && (subforms.hiv_pregnancy_clinic.first_hiv_status == 'yes' || subforms.anc_followup.first_hiv_status == 'yes')"
+                    "condition": "patient.current_age_years < 25 && (subforms.hiv_pregnancy_clinic.first_hiv_status == 'yes' || subforms.anc_followup.first_hiv_status == 'yes')"
                 },
                 "pw_who_were_counselled_after_testing_hiv": {
                     "line_number": "5g",
@@ -360,11 +360,11 @@ exports.reports = function() {
                 "columns": {
                     "below20": {
                         "title": "Below 20 years old",
-                        "condition": "patient.approximate_age < 20"
+                        "condition": "patient.current_age_years < 20"
                     },
                     "above20": {
                         "title": "Above 20 years old",
-                        "condition": "patient.approximate_age >= 20"
+                        "condition": "patient.current_age_years >= 20"
                     },
                     "total": {
                         "title": "Total",
@@ -688,15 +688,15 @@ exports.reports = function() {
                     },
                     "more1momale": {
                         "title": "More than 1 month and less than 1 Year - Male",
-                        "condition": "patient.approximate_age < 1 && patient.gender == 'male'"
+                        "condition": "patient.current_age_years < 1 && patient.gender == 'male'"
                     },
                     "more1mofemale": {
                         "title": "More than 1 month and less than 1 Year - Females",
-                        "condition": "patient.approximate_age < 1 && patient.gender == 'female'"
+                        "condition": "patient.current_age_years < 1 && patient.gender == 'female'"
                     },
                     "more1mototal": {
                         "title": "More than 1 month and less than 1 Year - Total",
-                        "condition": "patient.approximate_age < 1 "
+                        "condition": "patient.current_age_years < 1 "
                     },
                     "above1below5male": {
                         "title": "More than 1 year and less than 5 Years - Male",
@@ -1109,19 +1109,19 @@ exports.reports = function() {
                 "columns": {
                     "10to14": {
                         "title": "10 to 14",
-                        "condition": "patient.approximate_age >= 10 && patient.approximate_age <= 14"
+                        "condition": "patient.current_age_years >= 10 && patient.current_age_years <= 14"
                     },
                     "15to19": {
                         "title": "15 to 19",
-                        "condition": "patient.approximate_age >= 15 && patient.approximate_age <= 19"
+                        "condition": "patient.current_age_years >= 15 && patient.current_age_years <= 19"
                     },
                     "20to24": {
                         "title": "20 to 24",
-                        "condition": "patient.approximate_age >= 20 && patient.approximate_age <= 24"
+                        "condition": "patient.current_age_years >= 20 && patient.current_age_years <= 24"
                     },
                     "above25": {
                         "title": "Above 25",
-                        "condition": "patient.approximate_age >= 25"
+                        "condition": "patient.current_age_years >= 25"
                     },
                     "return": {
                         "title": "Return",
@@ -1213,27 +1213,27 @@ exports.reports = function() {
                     },
                     "more1momale": {
                         "title": "More than 1 month and less than 1 Year - Male",
-                        "condition": "patient.approximate_age < 1 && patient.gender == 'male'"
+                        "condition": "patient.current_age_years < 1 && patient.gender == 'male'"
                     },
                     "more1mofemale": {
                         "title": "More than 1 month and less than 1 Year - Females",
-                        "condition": "patient.approximate_age < 1 && patient.gender == 'female'"
+                        "condition": "patient.current_age_years < 1 && patient.gender == 'female'"
                     },
                     "more1mototal": {
                         "title": "More than 1 month and less than 1 Year - Total",
-                        "condition": "patient.approximate_age < 1"
+                        "condition": "patient.current_age_years < 1"
                     },
                     "above1below5male": {
                         "title": "More than 1 year and less than 5 Years - Male",
-                        "condition": "patient.approximate_age > 1 && patient.approximate_age < 5 && patient.gender == 'male'"
+                        "condition": "patient.current_age_years > 1 && patient.current_age_years < 5 && patient.gender == 'male'"
                     },
                     "above1below5female": {
                         "title": "More than 1 year and less than 5 Years - Females",
-                        "condition": "patient.approximate_age > 1 && patient.approximate_age < 5 && patient.gender == 'female'"
+                        "condition": "patient.current_age_years > 1 && patient.current_age_years < 5 && patient.gender == 'female'"
                     },
                     "above1below5total": {
                         "title": "More than 1 year and less than 5 Years - Total",
-                        "condition": "patient.approximate_age > 1 && patient.approximate_age < 5"
+                        "condition": "patient.current_age_years > 1 && patient.current_age_years < 5"
                     }
                 }
             }
@@ -1743,15 +1743,15 @@ exports.reports = function() {
                     },
                     "more1momale": {
                         "title": "More than 1 month and less than 1 Year - Male",
-                        "condition": "patient.approximate_age < 1 && patient.gender == 'male'"
+                        "condition": "patient.current_age_years < 1 && patient.gender == 'male'"
                     },
                     "more1mofemale": {
                         "title": "More than 1 month and less than 1 Year - Females",
-                        "condition": "patient.approximate_age < 1 && patient.gender == 'female'"
+                        "condition": "patient.current_age_years < 1 && patient.gender == 'female'"
                     },
                     "more1mototal": {
                         "title": "More than 1 month and less than 1 Year - Total",
-                        "condition": "patient.approximate_age < 1"
+                        "condition": "patient.current_age_years < 1"
                     },
                     "above1below5male": {
                         "title": "More than 1 year and less than 5 Years - Male",
@@ -2398,7 +2398,7 @@ exports.reports = function() {
                     "line_number": "8n",
                     "sw": "Jumla ya akina mama walio na VVU wenye umri chini ya miaka 20",
                     "en": "Total HIV-positive mothers who are younger than 20 years",
-                    "condition": "patient.approximate_age < 20 && subforms.postnatal.postnatal_hiv_positive == 'yes'"
+                    "condition": "patient.current_age_years < 20 && subforms.postnatal.postnatal_hiv_positive == 'yes'"
                 },
                 "9_children_single_birth": {
                     "line_number": "9",
