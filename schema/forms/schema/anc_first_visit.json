@@ -10,7 +10,7 @@
         "due_date": {
             "type": "string"
         },
-        "current_gestational_age": {
+        "current_gestational_weeks": {
             "type": "string",
             "$ref": "lists/#one_to_42_plus"
         },
