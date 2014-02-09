@@ -270,6 +270,8 @@ exports.request = function (options, callback) {
         options.complete = onComplete(options, callback);
         options.dataType = 'json';
         $.ajax(options);
+    } else if (requestCache[key]) {
+        callback("", JSON.parse(key).data)        
     }
 };
 
