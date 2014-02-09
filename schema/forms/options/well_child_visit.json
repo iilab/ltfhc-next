@@ -17,6 +17,16 @@
             ],
             "removeDefaultNone": true
         },
+        "vitamin_a": {
+            "label": "Given Vitamin A?",
+            "type": "radio",
+            "enum": [
+                "Yes",
+                "No"
+            ],
+            "removeDefaultNone": true
+        },
+
         "milk_source": {
             "label": "Milk Source",
             "type": "select"

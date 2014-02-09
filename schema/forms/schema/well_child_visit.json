@@ -17,6 +17,13 @@
                 "No"
             ]
         },
+        "vitamin_a": {
+            "type": "string",
+            "enum": [
+                "Yes",
+                "No"
+            ]
+        },
         "milk_source": {
             "type": "string",
             "$ref": "lists/#milk_types"
