@@ -825,7 +825,7 @@ body {
   width: 920px;
 }
 
-#patients-table_wrapper, #visits-table_wrapper, #patient-form, #visit-form, #report-form {
+#patients-table_wrapper, #visits-table_wrapper,  #reports-table_wrapper, #patient-form, #visit-form, #report-form {
     margin: 20px 40px;
     padding-bottom: 20px;
 }
@@ -845,16 +845,7 @@ display: block;
 	color: #000;
 }
 
-#patient-form .btn-info {
-	margin-left:5px;
-}
-
-#visit-form label {
-	font-weight: normal;
-	color: @gray;
-}
-
-#visit-form, #patient-form {
+#visit-form, #patient-form, #report-form {
 	input.form-control, select.form-control {
 		font-size:1.2em;
 		font-weight: bold;
@@ -864,12 +855,14 @@ display: block;
 		font-weight: bold;
 		color: #000;	
 	}
+    label {
+    	font-weight: normal;
+    	color: @gray;
+    }
+    .btn-info {
+    	margin-left:5px;
+    }
 } 
-
-
-#visit-form .btn-info {
-	margin-left:5px;
-}
 
 table.spreadsheet {
 //    margin: 20px 20px 10px 20px !important;
