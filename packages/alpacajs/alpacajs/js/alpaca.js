@@ -1983,11 +1983,20 @@ var equiv = function () {
 
                 x = Alpaca.trim(x);
 
-                // convert to dom
-                // we wrap with <div/> to be sure here
-                x = "<div>" + x + "</div>";
+                var converted = null;
+                try
+                {
+                    converted = $(x);
+                }
+                catch (e)
+                {
+                    // make another attempt to account for safety in some browsers
+                    x = "<div>" + x + "</div>";
 
-                x = $(x).children();
+                    converted = $(x).children();
+                }
+
+                return converted;
             }
 
             return x;
@@ -3207,10 +3216,19 @@ var equiv = function () {
             //
             ///////////////////////////////////////////////////////////////////////////////////////////////////
 
+            // TEST - swap code
+            // swap el -> placeholder
+            //var tempHolder = $("<div></div>");
+            //$(el).before(tempHolder);
+            //$(el).remove();
 
             var field = Alpaca.createFieldInstance(el, data, options, schema, view, connector, errorCallback);
             if (field)
             {
+                // hide field while rendering
+                $(el).addClass("alpaca-field-rendering");
+                $(el).addClass("alpaca-hidden");
+
                 field.isDynamicCreation = isDynamicCreation;
                 Alpaca.fieldInstances[field.getId()] = field;
 
@@ -3236,6 +3254,15 @@ var equiv = function () {
 
                 var fin = function()
                 {
+                    // TEST - swap code
+                    // swap placeholder -> el
+                    //$(tempHolder).before(el);
+                    //$(tempHolder).remove();
+
+                    // reveal field after rendering
+                    $(el).removeClass("alpaca-field-rendering");
+                    $(el).removeClass("alpaca-hidden");
+
                     if (Alpaca.collectTiming)
                     {
                         var t2 = new Date().getTime();
@@ -4427,6 +4454,12 @@ var equiv = function () {
     //
     // ASYNC
     //
+    // Here we provide a reduced version of the wonderful async library.  This is entirely inline and
+    // will have no bearing on any external dependencies on async.
+    //
+    // https://github.com/caolan/async
+    // Copyright (c) 2010 Caolan McMahon
+    //
     /////////////////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -5373,6 +5406,7 @@ var equiv = function () {
             next();
         };
 
+        /*
         // AMD / RequireJS
         if (typeof define !== 'undefined' && define.amd) {
             define([], function () {
@@ -5387,6 +5421,9 @@ var equiv = function () {
         else {
             root.async = async;
         }
+        */
+
+        root.async = async;
 
     }());
 
@@ -6755,7 +6792,12 @@ var equiv = function () {
         "controlFieldCheckbox": '<div class="checkbox" id="${id}">{{if options.rightLabel}}<label for="${id}_checkbox">{{/if}}<input id="${id}_checkbox" type="checkbox" {{if options.readonly}}readonly="readonly"{{/if}} {{if name}}name="${name}"{{/if}} {{each(i,v) options.data}}data-${i}="${v}"{{/each}}/>{{if options.rightLabel}}${options.rightLabel}</label>{{/if}}</div>',
         "controlFieldCheckboxMultiple": '<div id="${id}">{{each(i,o) checkboxOptions}}<div class="checkbox"><label for="${id}_checkbox_${i}"><input type="checkbox" id="${id}_checkbox_${i}" {{if options.readonly}}readonly="readonly"{{/if}} {{if name}}name="${name}"{{/if}} data-checkbox-value="${o.value}" data-checkbox-index="${i}"/>${o.text}</label></div>{{/each}}</div>',
 
-        "controlFieldRadio": '{{if !required && !removeDefaultNone}}<div class="radio"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" id="${id}_radio_nonevalue" value=""/><label for="${id}_radio_nonevalue">None</label></div>{{/if}}{{each selectOptions}}<div class="radio"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value="${value}" id="${id}_radio_${$index}" {{if value == data}}checked="checked"{{/if}}/><label for="${id}_radio_${$index}">${text}</label></div>{{/each}}'
+        "controlFieldRadio": '{{if !required && !removeDefaultNone}}<div class="radio"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" id="${id}_radio_nonevalue" value=""/><label for="${id}_radio_nonevalue">None</label></div>{{/if}}{{each selectOptions}}<div class="radio"><input type="radio" {{if options.readonly}}readonly="readonly"{{/if}} name="${name}" value="${value}" id="${id}_radio_${$index}" {{if value == data}}checked="checked"{{/if}}/><label for="${id}_radio_${$index}">${text}</label></div>{{/each}}',
+
+        "itemLabel": '{{if options.itemLabel}}<div class="alpaca-controlfield-label"><div>${options.itemLabel}{{if index}} <span class="alpaca-item-label-counter">${index}</span>{{/if}}</div></div>{{/if}}',
+        "arrayToolbar": '<div class="alpaca-fieldset-array-toolbar btn-group"><button class="alpaca-fieldset-array-toolbar-icon alpaca-fieldset-array-toolbar-add btn btn-default">${addItemLabel}</button></span>',
+        "arrayItemToolbar": '<div class="alpaca-fieldset-array-item-toolbar btn-group btn-group-sm">{{each(k,v) buttons}}<button class="alpaca-fieldset-array-item-toolbar-icon alpaca-fieldset-array-item-toolbar-${v.feature} btn btn-default btn-sm">${v.label}</button>{{/each}}</div>'
+
 
     });
 
@@ -8288,116 +8330,121 @@ var equiv = function () {
          */
         renderValidationState: function(checkChildren) {
 
+            var self = this;
+
             // internal method for conducting either a depth first validation of child fields
             // or a trickle up re-validation of dependent parents
             // this method gets called with the context (this) == field
             var _rvc = function(checkChildren, diving)
             {
-                if (this.options.validate) {
+                if (self.options.validate) {
 
                     // if we're instructed to check children, always go depth first right away
-                    if (checkChildren && this.children)
+                    if (checkChildren && self.children)
                     {
-                        for (var i = 0; i < this.children.length; i++) {
-                            if (this.children[i].isValidationParticipant())
+                        for (var i = 0; i < self.children.length; i++) {
+                            if (self.children[i].isValidationParticipant())
                             {
-                                _rvc.call(this.children[i], checkChildren, true);
+                                _rvc.call(self.children[i], checkChildren, true);
                             }
                         }
                     }
 
                     // current validation status
-                    var beforeStatus = this.isValid();
+                    var beforeStatus = self.isValid();
 
                     // clear out previous validation UI markers
-                    this.getStyleInjection("removeError",this.getEl());
-                    this.getEl().removeClass("alpaca-field-invalid alpaca-field-invalid-hidden alpaca-field-valid");
+                    self.getStyleInjection("removeError",this.getEl());
+                    self.getEl().removeClass("alpaca-field-invalid alpaca-field-invalid-hidden alpaca-field-valid");
 
                     // now run the validation
-                    if (this.validate()) {
+                    self.validate();
 
-                        // TRIGGER: "validated"
-                        this.triggerWithPropagation("validated");
+                    // apply custom validation (if exists)
+                    self._validateCustomValidator(function() {
 
-                        // mark valid
-                        this.getEl().addClass("alpaca-field-valid");
+                        if (self.validate()) {
 
-                    } else {
+                            // TRIGGER: "validated"
+                            self.triggerWithPropagation("validated");
 
-                        // TRIGGER: "invalidated"
-                        this.triggerWithPropagation("invalidated");
+                            // mark valid
+                            self.getEl().addClass("alpaca-field-valid");
 
-                        // we don't markup invalidation state for readonly fields
-                        if (!this.options.readonly)
-                        {
-                            if (!this.hideInitValidationError) {
-                                this.getStyleInjection("error",this.getEl());
-                                this.getEl().addClass("alpaca-field-invalid");
-                            } else {
-                                this.getEl().addClass("alpaca-field-invalid-hidden");
-                            }
-                        }
-                        else
-                        {
-                            // this field is invalid and is also read-only, so we're not supposed to inform the end-user
-                            // within the UI (since there is nothing we can do about it)
-                            // here, we log a message to debug to inform the developer
-                            Alpaca.logWarn("The field (id=" + this.getId() + ", title=" + this.getTitle() + ", path=" + this.path + ") is invalid and also read-only");
-                        }
-                    }
+                        } else {
 
-                    // now check whether valid
-                    var afterStatus = this.isValid();
-
-                    // Allow for the message to change
-                    if (this.options.showMessages) {
-
-                        if (!this.initializing) {
+                            // TRIGGER: "invalidated"
+                            self.triggerWithPropagation("invalidated");
 
                             // we don't markup invalidation state for readonly fields
-                            if (!this.options.readonly)
+                            if (!self.options.readonly)
                             {
-                                // messages
-                                var messages = [];
-                                for (var messageId in this.validation) {
-                                    if (!this.validation[messageId]["status"]) {
-                                        messages.push(this.validation[messageId]["message"]);
-                                    }
+                                if (!self.hideInitValidationError) {
+                                    self.getStyleInjection("error", self.getEl());
+                                    self.getEl().addClass("alpaca-field-invalid");
+                                } else {
+                                    self.getEl().addClass("alpaca-field-invalid-hidden");
                                 }
-
-                                this.displayMessage(messages, beforeStatus);
+                            }
+                            else
+                            {
+                                // this field is invalid and is also read-only, so we're not supposed to inform the end-user
+                                // within the UI (since there is nothing we can do about it)
+                                // here, we log a message to debug to inform the developer
+                                Alpaca.logWarn("The field (id=" + self.getId() + ", title=" + self.getTitle() + ", path=" + self.path + ") is invalid and also read-only");
                             }
                         }
-                    }
 
-                    // if the validations state changed and we're not "diving", then it means we're at the top field
-                    // of our depth-first dive.
-                    //
-                    // a change to the validation state means that any fields dependent on us should have their validation
-                    // checked, thus we allow for trickle-up validation here
+                        // now check whether valid
+                        var afterStatus = self.isValid();
 
-                    if (!diving)
-                    {
-                        var forceRevalidation = false;
-                        var parent = this.parent;
-                        while (parent) {
-                            // if parent has custom validator, it should re-validate.
-                            if (parent.options && (parent.options.forceRevalidation || parent.options.validator)) {
-                                forceRevalidation = true;
+                        // Allow for the message to change
+                        if (self.options.showMessages) {
+
+                            if (!self.initializing) {
+
+                                // we don't markup invalidation state for readonly fields
+                                if (!self.options.readonly)
+                                {
+                                    // messages
+                                    var messages = [];
+                                    for (var messageId in self.validation) {
+                                        if (!self.validation[messageId]["status"]) {
+                                            messages.push(self.validation[messageId]["message"]);
+                                        }
+                                    }
+
+                                    self.displayMessage(messages, beforeStatus);
+                                }
                             }
-                            parent = parent.parent;
                         }
-                        if ((beforeStatus != afterStatus && this.parent && this.parent.renderValidationState) || forceRevalidation) {
-                            this.parent.renderValidationState();
-                        }
-                    }
 
-                    // apply custom validation
-                    this._validateCustomValidator();
+                        // if the validations state changed and we're not "diving", then it means we're at the top field
+                        // of our depth-first dive.
+                        //
+                        // a change to the validation state means that any fields dependent on us should have their validation
+                        // checked, thus we allow for trickle-up validation here
+
+                        if (!diving)
+                        {
+                            var forceRevalidation = false;
+                            var parent = self.parent;
+                            while (parent) {
+                                // if parent has custom validator, it should re-validate.
+                                if (parent.options && (parent.options.forceRevalidation || parent.options.validator)) {
+                                    forceRevalidation = true;
+                                }
+                                parent = parent.parent;
+                            }
+                            if ((beforeStatus != afterStatus && self.parent && self.parent.renderValidationState) || forceRevalidation) {
+                                self.parent.renderValidationState();
+                            }
+                        }
+                    });
                 }
             };
 
-            _rvc.call(this, checkChildren, false);
+            _rvc.call(self, checkChildren, false);
         },
 
         showHiddenMessages: function() {
@@ -8537,12 +8584,20 @@ var equiv = function () {
         /**
          * Validates using user provided validator.
          */
-        _validateCustomValidator: function() {
+        _validateCustomValidator: function(callback) {
+
             var _this = this;
-            if (this.options.validator && Alpaca.isFunction(this.options.validator)) {
+
+            if (this.options.validator && Alpaca.isFunction(this.options.validator))
+            {
                 this.options.validator(this, function(valInfo) {
                     _this.updateValidationState('customValidator', valInfo);
+                    callback();
                 });
+            }
+            else
+            {
+                callback();
             }
         },
 
@@ -13848,13 +13903,13 @@ var equiv = function () {
                 }
             }
 
-            _this.resolveItemSchemaOptions(function(schema, options) {
+            // if the number of items in the data is greater than the number of existing child elements
+            // then we need to add the new fields
 
-                // if the number of items in the data is greater than the number of existing child elements
-                // then we need to add the new fields
+            if (i < data.length)
+            {
+                _this.resolveItemSchemaOptions(function(schema, options) {
 
-                if (i < data.length)
-                {
                     // waterfall functions
                     var funcs = [];
 
@@ -13885,9 +13940,8 @@ var equiv = function () {
                     Alpaca.series(funcs, function() {
                         // TODO: anything once finished?
                     });
-                }
-
-            });
+                });
+            }
 
         },
 
@@ -14198,6 +14252,13 @@ var equiv = function () {
          */
         renderArrayToolbar: function(containerElem) {
             var _this = this;
+
+            // we do not render the array toolbar in "display" mode
+            if (this.view && this.view.type == "view")
+            {
+                return;
+            }
+
             var id = containerElem.attr('alpaca-id');
             var itemToolbarTemplateDescriptor = this.view.getTemplateDescriptor("arrayToolbar");
             if (itemToolbarTemplateDescriptor) {
@@ -14914,20 +14975,63 @@ var equiv = function () {
          *
          * @see Alpaca.Field#setValue
          */
-        setValue: function(data) {
-            if (!data || !Alpaca.isObject(data)) {
+        setValue: function(data)
+        {
+            if (!data)
+            {
+                data = {};
+            }
+
+            // if not an object by this point, we don't handle it
+            if (!Alpaca.isObject(data))
+            {
                 return;
             }
 
-            // set fields
-            for (var fieldId in this.childrenById) {
+            // sort existing fields by property id
+            var existingFieldsByPropertyId = {};
+            for (var fieldId in this.childrenById)
+            {
                 var propertyId = this.childrenById[fieldId].propertyId;
-                var _data = Alpaca.traverseObject(data, propertyId);
-                if (!Alpaca.isEmpty(_data)) {
-                    var childField = this.childrenById[fieldId];
-                    childField.setValue(_data);
+                existingFieldsByPropertyId[propertyId] = this.childrenById[fieldId];
+            }
+
+            // new data mapped by property id
+            var newDataByPropertyId = {};
+            for (var k in data)
+            {
+                if (data.hasOwnProperty(k))
+                {
+                    newDataByPropertyId[k] = data[k];
                 }
             }
+
+            // walk through new property ids
+            // if a field exists, set value onto it and remove from newDataByPropertyId and existingFieldsByPropertyId
+            // if a field doesn't exist, let it remain in list
+            for (var propertyId in newDataByPropertyId)
+            {
+                var field = existingFieldsByPropertyId[propertyId];
+                if (field)
+                {
+                    field.setValue(newDataByPropertyId[propertyId]);
+
+                    delete existingFieldsByPropertyId[propertyId];
+                    delete newDataByPropertyId[propertyId];
+                }
+            }
+
+            // anything left in existingFieldsByPropertyId describes data that is missing, null or empty
+            // we null out those values
+            for (var propertyId in existingFieldsByPropertyId)
+            {
+                var field = existingFieldsByPropertyId[propertyId];
+                field.setValue(null);
+            }
+
+            // anything left in newDataByPropertyId is new stuff that we need to add
+            // the object field doesn't support this since it runs against a schema
+            // so we drop this off
         },
 
         /**
@@ -15216,12 +15320,20 @@ var equiv = function () {
                         Alpaca.mergeObject(resolvedPropertyOptions, propertyOptions);
                     }
 
-                    callback(resolvedPropertySchema, resolvedPropertyOptions, circular);
+                    Alpaca.nextTick(function() {
+                        callback(resolvedPropertySchema, resolvedPropertyOptions, circular);
+                    });
+
+                    //callback(resolvedPropertySchema, resolvedPropertyOptions, circular);
                 });
             }
             else
             {
-                callback(propertySchema, propertyOptions);
+                Alpaca.nextTick(function() {
+                    callback(propertySchema, propertyOptions);
+                });
+
+                //callback(propertySchema, propertyOptions);
             }
         },
 
@@ -15253,7 +15365,8 @@ var equiv = function () {
         },
 
         /**
-         * Adds a child item.
+         * Adds a child item.  Returns the container element right away.  The postRenderCallback method is called
+         * upon completion.
          *
          * @param {String} propertyId Child field property ID.
          * @param {Object} itemSchema schema
@@ -15343,6 +15456,8 @@ var equiv = function () {
                     }
                 }
             });
+
+            return containerElem;
         },
 
         /**
