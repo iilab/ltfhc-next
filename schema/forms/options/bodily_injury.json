@@ -2,6 +2,7 @@
     "fields": {
         "injury_date": {
             "label": "Injury Date: (Tarehe ya majeraha)",
+            "type": "date",
             "dateFormat": "yy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
