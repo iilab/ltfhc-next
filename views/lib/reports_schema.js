@@ -51,7 +51,7 @@ exports.reports = function() {
                     "line_number": "2e",
                     "sw": "Hudhurio la nne wajawazito wote",
                     "en": "Fourth visits for all pregnant women",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "total_attendance": {
                     "line_number": "2f",
@@ -110,7 +110,7 @@ exports.reports = function() {
                     "line_number": "4f",
                     "sw": "Ugonjwa wa moyo:",
                     "en": "Heart disease",
-                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.pregnancy_diseases =='Heart Disease'"
+                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit. pregnancy_diseases.indexOf('Heart Disease') != -1"
                 },
                 "diabetes": {
                     "line_number": "4g",
@@ -462,7 +462,7 @@ exports.reports = function() {
                     "line_number": "3",
                     "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 6",
                     "en": "Attendance growth of 6 months old baby",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "total_attendance": {
                     "line_number": "7a",
@@ -474,84 +474,84 @@ exports.reports = function() {
                     "line_number": "5b",
                     "sw": "Uwaino wa uzito kwa umri",
                     "en": "the ratio of weight by age",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "the_ratio_of_weight_by_height": {
                     "line_number": "7c",
                     "sw": "Uwaino wa uzito kwa urefu",
                     "en": "the ratio of weight by height",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "the_ratio_of_height_by_age": {
                     "line_number": "7d",
                     "sw": "Uwaino wa urefu kwa umri",
                     "en": "the ratio of height by age",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "growth_attendance_of_6_months_old_baby": {
                     "line_number": "4",
                     "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 6",
                     "en": "Growth attendance of 6 months old baby",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "growth_attendance_of_12_months_old_baby": {
                     "line_number": "5",
                     "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 12",
                     "en": "growth attendance of 12 months old baby",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "growth_attendance_of_18_month_old_baby": {
                     "line_number": "6",
                     "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 18",
                     "en": "Growth attendance of 18 month old baby",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "growth_attendance_of_24_month_old_baby": {
                     "line_number": "7",
                     "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 24",
                     "en": "growth attendance of 24 month old baby",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "ratio_of_weight_by_age": {
                     "line_number": "7b",
                     "sw": "Uwaino wa uzito kwa umri",
                     "en": "ratio of weight by age",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "growth_attendance_of_36_month_old_baby": {
                     "line_number": "8",
                     "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 36",
                     "en": "growth attendance of 36 month old baby",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "growth_attendance_of_48_month_old_baby": {
                     "line_number": "9",
                     "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 48",
                     "en": "growth attendance of 48 month old baby",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "growth_attendance_of_59_month_old_baby": {
                     "line_number": "10",
                     "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 59",
                     "en": "growth attendance of 59 month old baby",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "additional_vitamin_a": {
                     "line_number": "11",
                     "sw": "Nyongeza ya Vitamini A",
                     "en": "additional Vitamin A",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "children_of_6-11_months": {
@@ -681,20 +681,20 @@ exports.reports = function() {
                     "line_number": "16a",
                     "sw": "Waliokingwa",
                     "en": "Those Vaccinated",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "those_not_vaccinated": {
                     "line_number": "16b",
                     "sw": "Wasiokuwa na Kinga",
                     "en": "Those not vaccinated",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "not_known": {
                     "line_number": "16c",
                     "sw": "Haijulikani",
                     "en": "not known",
-                    "condition": "null"
+                    "condition": "true"
 
                 },
                 "number_of_children_who_received_cotrimoxazole_i_arv_/given_bed_net__vouchers_and_ones_tested_for_hiv": {
@@ -1111,7 +1111,7 @@ exports.reports = function() {
                     "line_number": "12f",
                     "sw": "Waliopewa huduma ya Cryotherapy",
                     "en": "Those who got Cryotherapy service",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "pitc": {
                     "line_number": "13",
@@ -2185,7 +2185,7 @@ exports.reports = function() {
                     "line_number": "3g",
                     "sw": "Idadi ya wajawazito walio fanyiwa AMTSL",
                     "en": "The number of pregnant women who underwent AMTSL",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "prenatal_problems": {
                     "line_number": "4",
@@ -2262,7 +2262,7 @@ exports.reports = function() {
                     "line_number": "5",
                     "sw": "Waliokeketwa (FGM)",
                     "en": "Waliokeketwa (FGM)",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "complications_during_and_after_childbirth": {
                     "line_number": "6",
@@ -2427,13 +2427,13 @@ exports.reports = function() {
                     "line_number": "8l",
                     "sw": "Waliopewa ARV Prophylaxis (tail) wakati wa kuruhusiwa",
                     "en": "Those given ARV prophylaxis (tail) when discharged",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "those_given_referral_to_clinical_care_and_treatment_center_ctc": {
                     "line_number": "8m",
                     "sw": "Waliopata rufaa kwenda kliniki ya huduma na matibabu ya wenye VVU (CTC)",
                     "en": "Those given referral to clinical care and treatment center (CTC)",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "total_hiv_positive_mothers_who_are_younger_than_20_years": {
                     "line_number": "8n",
@@ -2468,13 +2468,13 @@ exports.reports = function() {
                     "line_number": "9d",
                     "sw": "Waliozaliwa wafu Macerated (MSB)",
                     "en": "Macerated dead births ( MSB )",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "fresh_dead_births_9e_msb": {
                     "line_number": "9e",
                     "sw": "Waliozaliwa wafu Fresh (MSB)",
                     "en": "Fresh dead births (MSB)",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "9f_births_to_mothers_with_hiv": {
                     "line_number": "9f",
@@ -2486,7 +2486,7 @@ exports.reports = function() {
                     "line_number": "9g",
                     "sw": "Waliopewa dawa za ARV",
                     "en": "Children given ARV drugs",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "9h_total_babies_born_alive_and_dead": {
                     "line_number": "9h",
@@ -2498,55 +2498,55 @@ exports.reports = function() {
                     "line_number": "9i",
                     "sw": "Watoto wenye APGAR Score chini ya 7 katika dakika 5",
                     "en": "Children Apgar Score less than 7 at 5 minutes",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "10_twin_births": {
                     "line_number": "10",
                     "sw": "Watoto Waliozaliwa mapacha",
                     "en": "Twin births",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "10a_total_children_born_alive": {
                     "line_number": "10a",
                     "sw": "Jumla ya watoto waliozaliwa hai",
                     "en": "Total children born alive",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "10b_live_births_weight_low": {
                     "line_number": "10b",
                     "sw": "Waliozaliwa hai Uzito <2.5kg",
                     "en": "live births Weight < 2.5kg",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "10c_live_births_weight_high": {
                     "line_number": "10c",
                     "sw": "Waliozaliwa hai Uzito =>2.5kg",
                     "en": "live births Weight = > 2.5kg",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "10d_macerated_dead_births_msb": {
                     "line_number": "10d",
                     "sw": "Waliozaliwa wafu Macerated (MSB)",
                     "en": "macerated dead births ( MSB )",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "fresh_dead_births_10e_msb": {
                     "line_number": "10e",
                     "sw": "Waliozaliwa wafu Fresh (MSB)",
                     "en": "Fresh dead births 10E ( MSB )",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "10f_births_to_mothers_with_hiv": {
                     "line_number": "10f",
                     "sw": "Waliozaliwa na mama wenye VVU",
                     "en": "births to mothers with HIV",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "10g_children_given_arvs": {
                     "line_number": "10g",
                     "sw": "Waliopewa dawa za ARV",
                     "en": "Children given ARVs",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "10h_total_babies_born_alive_and_dead": {
                     "line_number": "10h",
@@ -2558,31 +2558,31 @@ exports.reports = function() {
                     "line_number": "10i",
                     "sw": "Watoto wenye APGAR Score chini ya 7 katika dakika 5",
                     "en": "Children with Apgar Score less than 7 at 5 minutes",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "11_children_who_were_assisted_to_breath": {
                     "line_number": "11",
                     "sw": "Watoto waliosaidiwa kupumua",
                     "en": "children who were assisted to breath",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "11a_number_of_children_assisted_to_breathe_stimulation": {
                     "line_number": "11a",
                     "sw": "Idadi ya Watoto Waliosaidiwa Kupumua - stimulation",
                     "en": "Number of Children assisted to beathe - stimulation",
-                    "condition ": "null"
+                    "condition ": "true"
                 },
                 "11b_number_of_children_assisted_to_breath_suction": {
                     "line_number": "11b",
                     "sw": "Idadi ya Watoto Waliosaidiwa Kupumua - suction",
                     "en": "Number of children assisted to breathe - suction",
-                    "condition ": "null"
+                    "condition ": "true"
                 },
                 "11c_number_of_children_who_were_assisted_to_breathe_bag_and_mask": {
                     "line_number": "11c",
                     "sw": "Idadi ya Watoto Waliosaidiwa Kupumua - bag and mask",
                     "en": "Number of Children who were assisted to breathe - bag and mask",
-                    "condition ": "null"
+                    "condition ": "true"
                 },
                 "12_other_services": {
                     "line_number": "12",
@@ -2593,19 +2593,19 @@ exports.reports = function() {
                     "line_number": "12",
                     "sw": "idadi ya Watoto walionyonyeshwa saa moja baada ya kuzaliwa",
                     "en": "The number of children who were breastfed hour after birth",
-                    "condition ": "null"
+                    "condition ": "true"
                 },
                 "13_those_assessed_24_hours_after_birth": {
                     "line_number": "13",
                     "sw": "Waliofanyiwa tathmini masaa 24 baada ya kuzaliwa",
                     "en": "Those assessed 24 hours after birth",
-                    "condition ": "null"
+                    "condition ": "true"
                 },
                 "14_mother_and_child_given_referral": {
                     "line_number": "14",
                     "sw": "Mama na Mtoto waliopewa rufaa",
                     "en": "Mother and child given referral",
-                    "condition ": "null"
+                    "condition ": "true"
                 }
             },
             "definitions": {
@@ -2637,24 +2637,25 @@ exports.reports = function() {
                     "line_number": "1",
                     "en": "OPD attendance",
                     "sw": "Mahudhurio ya OPD",
-                    "condition": "subforms.disease_diagnosis"
+                    "condition": "subforms.disease_diagnosis.diagnosis"
                 },
                 "2": {
                     "line_number": "2",
                     "en": "Patient who visited for the first time this year\n",
                     "sw": "Wagonjwa waliohudhuria kwa mara ya kwanza mwaka huu (*)",
-                    "condition": "subforms.disease_diagnosis && patient.current_created_years < 1"
+                    "condition": "subforms.disease_diagnosis.diagnosis && patient.current_created_years < 1"
                 },
                 "3": {
                     "line_number": "3",
                     "en": "Repeated attendance",
                     "sw": "Mahudhurio ya Marudio",
-                    "condition": "subforms.disease_diagnosis"
+                    "condition": "subforms.disease_diagnosis.diagnosis"
                 },
                 "3a": {
                     "line_number": "3a",
                     "en": "Diagnoses for OPD",
-                    "sw": "Diagnoses za OPD"
+                    "sw": "Diagnoses za OPD",
+                    "condition": "subforms.disease_diagnosis.diagnosis"
                 },
                 "4": {
                     "line_number": "4",
@@ -3345,7 +3346,7 @@ exports.reports = function() {
                     "line_number": "13c",
                     "sw": "Idadi ya watoto waliozaliwa na uzito wa < 2.5kg wakapatiwa KMC",
                     "en": "The number of children born with a weight of < 2.5 kg were given KMC",
-                    "condition": "null"
+                    "condition": "true"
                 },
                 "number_of_children_at_home_under_the_born_low_weight": {
                     "line_number": "13d",
