@@ -87,7 +87,8 @@
 		var tbody = $('<tbody/>');
 		_.each(data, function(doc) {
 			var tr
-			if (doc.header) {
+			//if (doc.header) {
+            if (false) {
 				var heading = new Array();
 				for (var idx in columns) {
 					heading[idx] = {}
@@ -151,7 +152,7 @@
 				td.data({
 					'validation': validation,
 					'validation-hint': c.validationHint,
-					'cell_key': doc.indicator + "|" + c.property[0],
+					'cell_key': doc.indicator + "|" + c.property[0] + "|" + doc.line_number + "|" + doc.label,
 					'type': c.type
 				});
 				setValue(td, p, {
