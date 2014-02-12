@@ -37,7 +37,8 @@
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "1900:+0",
-                "changeYear": true
+                "changeYear": true,
+                "changeMonth": true
             }
         },
         "current_age_years": {
