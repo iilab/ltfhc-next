@@ -25,7 +25,7 @@
       "type": "textarea"
     },
     "note": {
-      "label": "Examination Notes:",
+      "label": "Examination Findings:",
       "type": "textarea"
     },
     "testing_method": {
