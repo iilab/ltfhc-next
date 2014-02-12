@@ -545,6 +545,7 @@
             "id": "pregnancy_complications",
             "type": "array",
             "enum": [
+                "none",
                 "fetal_death",
                 "neonatal_death",
                 "neonatal_injury",
