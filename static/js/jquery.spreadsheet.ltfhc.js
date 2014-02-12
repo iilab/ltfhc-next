@@ -224,7 +224,7 @@
 	 * provided td element
 	 */
 	var editInline = function(td, clear_value) {
-		var $td = $(td),
+/*		var $td = $(td),
 			$input = $td.children("input"),
 			$table = $(this),
 			offset = $td.offset(),
@@ -253,8 +253,8 @@
 			}
 		}
 		$table.data('spreadsheet:edit-inline-input', $input[0]);
-		$table.data('spreadsheet:edit-inline-td', $td[0]);
-		return $input.focus();
+		$table.data('spreadsheet:edit-inline-td', $td[0]);*/
+		return true //$input.focus();
 	};
 
 	/**
@@ -262,7 +262,7 @@
 	 */
 
 	var select = function(td) {
-		var div = $('#spreadsheet_select'),
+/*		var div = $('#spreadsheet_select'),
 			reselect = false,
 			$td = $(td),
 			$table = $(this);
@@ -296,7 +296,7 @@
 			select.call(this, td);
 		}
 
-		$table.trigger('selectionChange');
+		$table.trigger('selectionChange');*/
 	};
 
 
