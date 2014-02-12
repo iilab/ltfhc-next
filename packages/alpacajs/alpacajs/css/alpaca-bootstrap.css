@@ -86,7 +86,9 @@ address:
     display:none;
 }
 
-
+.alpaca-controlfield-hidden {
+    display:none;
+}
 /*
 .alpaca-controlfield-helper-text
 {
