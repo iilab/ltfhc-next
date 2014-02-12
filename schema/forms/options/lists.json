@@ -516,6 +516,7 @@
             "type": "checkbox",
             "multiple": true,
             "optionLabels": [
+                "None",
                 "Fetal Death",
                 "Neonatal Death",
                 "Neonatal Injury",
