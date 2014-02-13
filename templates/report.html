@@ -1,0 +1,23 @@
+<div id="report">
+  {>"loader.html"/}
+  <div id="report-name" class="list-group-item"></div>
+  <div class="row">
+      <div class="col-md-12">
+          <form id="report-form" action="" method="post">
+      			<input type="hidden" name="report" value="{report}"></input>
+      			<input type="hidden" name="title" value="{title}"></input>
+      			<input type="hidden" name="period" value="{period}"></input>
+            <input type="hidden" id="_submit" name="_submit" value="" />
+      			<div id="form"></div>
+      			<a class='btn btn-lg btn-default' href='{baseURL}/reports'>Cancel</a>
+            {@if cond="'{status}' == 'Unapproved'"}
+              <button class='btn btn-lg btn-primary pull-right' type='submit' value='save_approved' onclick='$("#_submit").val("save_approve")'>Save and Approve</button>
+              <button class='btn btn-lg btn-info pull-right' type='submit' value='save' onclick='$("#_submit").val("save")'>Save</button>
+            {:else}
+              <button class='btn btn-lg btn-primary  pull-right' type='submit' value='save' onclick='$("#_submit").val("save")'>Save</button>
+              <button class='btn btn-lg btn-info' type='submit' value='unapprove' onclick='$("#_submit").val("unapprove")'>Unapprove</button>
+            {/if}
+          </form>
+      </div>
+  </div>
+</div>
