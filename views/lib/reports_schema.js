@@ -57,7 +57,7 @@ exports.reports = function() {
                     "line_number": "2f",
                     "sw": "Jumla ya Mahudhurio yote (2c+2d)",
                     "en": "total attendance(2c+2d)",
-                    "condition": "subforms.anc_first_visit && subforms.anc_first_visit.current_gestationalage_weeks >= 1 && subforms.anc_followup && subforms.anc_followup.current_gestationalage_weeks >=1"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.current_gestationalage_weeks >= 1) || (subforms.anc_followup && subforms.anc_followup.current_gestationalage_weeks >=1)"
                 },
                 "number_of_pregnant_women_tested_first_visit": {
                     "line_number": "2g",
@@ -386,16 +386,22 @@ exports.reports = function() {
                     "sw": "Aina ya Chanjo Kwa Umri",
                     "en": "Type of vaccine by age"
                 },
+                "bcg_age_<1_year_+_(within_service_area)": {
+                    "line_number": "1a",
+                    "sw": "BCG Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
+                    "en": "BCG at the age of 1+ (Within service area )",
+                    "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed.indexOf('bcg') != -1"
+                },
                 "bcg_at_the_age_of_1+_(within_service_area_)": {
                     "line_number": "1b",
                     "sw": "BCG Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
                     "en": "BCG at the age of 1+ (Within service area )",
                     "condition": "patient.current_age_years >= 1 && subforms.immunization && subforms.immunization.vaccine_dispensed.indexOf('bcg') != -1"
                 },
-                "bcg_age_<1_year_+_(within_service_area)": {
+                "bcg_age_<1_year_+_(out_of_service_area)": {
                     "line_number": "1c",
                     "sw": "BCG Umri mwaka <1 (Nje ya eneo la huduma)",
-                    "en": "BCG Age <1 year + (Within service area)",
+                    "en": "BCG Age <1 year + (out of service area)",
                     "condition": "patient.current_age_years < 1 && subforms.immunization && subforms.immunization.vaccine_dispensed.indexOf('bcg') != -1"
                 },
                 "bcgat_the_age_of_1_+_(out_of_service_area)": {
@@ -715,13 +721,13 @@ exports.reports = function() {
                     "en": "Children who were started on cotrimoxazole between 1 month to 2 months",
                     "condition": "subforms.well_child_visit && subforms.well_child_visit.ctx_status == 'yes' && patient.current_age_months < 2"
                 },
-                "Children who were tested for HIV by PCR within two months from birth": {
+                "children_who_were_tested_for_HIV_by_PCR_within_two_months_from_birth": {
                     "line_number": "17e",
                     "sw": "Watoto waliopimwa VVU kwa PCR ndani ya miezi miwili tangu kuzaliwa",
                     "en": "Children who were tested for HIV by PCR within two months from birth",
                     "condition": "subforms.well_child_visit.hiv_pcr_test_2mo == 'yes'"
                 },
-                "Children tested for HIV by PCR 6 weeks after stopping breastfeeding or 18 months": {
+                "children_tested_for_HIV_by_PCR_6_weeks_after_stopping_breastfeeding_or_18_months": {
                     "line_number": "17f",
                     "sw": "Watoto waliopimwa VVU kwa PCR wiki 6 baada ya kuacha kunyonya maziwa ya mama au miezi 18 ya umri",
                     "en": "Children tested for HIV by PCR 6 weeks after stopping breastfeeding or 18 months",

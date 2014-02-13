@@ -1,16 +1,23 @@
-<div class="btn-group edit-mode pull-right">
-  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-    <i class="icon icon-edit icon-large"></i> Edit <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="#" class="edit-update">Update Facility</a></li>
-    <li><a href="#" class="mark-invalid">Mark as Invalid</a></li>
-    <li><a href="#" class="clear-invalid">Mark as Valid</a></li>
-    <li><a href="#" class="edit-delete">Delete</a></li>
-  </ul>
-</div>
-<div id="report-filter" class="report-filter btn-group pull-right">
-    <input name="report" type="text" class="input-medium" placeholder="" />
-</div>
-<div id="date-filter" class="records-filter btn-group pull-right">
-    <input name="date" type="text" class="input-medium" placeholder="" />
+<div id="search-filter" class="records-filter pull-right">
+  <div class="btn-group">
+    <div class="input-append">
+      <form action="" method="get" class="form-inline">
+      <div class="input-group">
+      <select class="form-control"
+        id="search-filter-input"
+            name="search" 
+            value="{query.search}"
+            type="text" 
+            class="form-control"
+        placeholder="{@translate value="Search"/}">
+          <option value="Unapproved">Unapproved</option>
+          <option value="Approved">Approved</option>
+        </select>
+      </a>
+      </span>
+      </div>
+      
+    </form>
+    </div>
+  </div>
 </div>
