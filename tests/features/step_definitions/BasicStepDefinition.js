@@ -39,7 +39,7 @@ var aTest = function () {
 	});
 	
 	this.Given("I visit the home page", function(callback) {
-		this.visit('http://localhost:5984/emr_test_local/_design/emr/_rewrite/', function () {
+		this.visit('http://127.0.0.1:5984/emr_test_local/_design/emr/_rewrite/', function () {
 		    callback()
 		});
 	});
@@ -50,11 +50,9 @@ var aTest = function () {
 
 	this.Then('I should see "$message" message', function (message, callback) {
         
-        util.puts("before browser");
-        var pageMessage = this.browser.html();
-        util.puts(pageMessage);
+        var pageMessage = this.browser.text();
     
-	    if (message === pageMessage) {
+	    if (pageMessage.indexOf(message)!=-1) {
 	      callback();
 	    } else {
 	      callback.fail(new Error('Expected to be on page with title "' + message + '"'));
