@@ -45,7 +45,5 @@
 		"jquery-ui": null,
 		"alpacajs": null,
 		"ltfhc-branding": ">=0.0.2"
-        "nodeunit": null,
-        "nodeunit-testrunner": null
 	}
 }
