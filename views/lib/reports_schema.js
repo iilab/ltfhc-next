@@ -57,7 +57,7 @@ exports.reports = function() {
                     "line_number": "2f",
                     "sw": "Jumla ya Mahudhurio yote (2c+2d)",
                     "en": "total attendance(2c+2d)",
-                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.current_gestationalage_weeks >= 1) || (subforms.anc_followup && subforms.anc_followup.current_gestationalage_weeks >=1)"
+                    "condition": "subforms.anc_first_visit || (subforms.anc_followup && subforms.anc_followup.current_gestationalage_weeks >=1)"
                 },
                 "number_of_pregnant_women_tested_first_visit": {
                     "line_number": "2g",
@@ -1337,475 +1337,475 @@ exports.reports = function() {
                     "line_number": "2",
                     "sw": "Acute Flacid Paralysis",
                     "en": "Acute Flacid Paralysis",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'acute_flacid_paralysis'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'acute_flacid_paralysis'"
                 },
                 "cholera": {
                     "line_number": "3",
                     "sw": "Cholera",
                     "en": "Cholera",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'cholera'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'cholera'"
                 },
                 "dysentery": {
                     "line_number": "4",
                     "sw": "Dysentery",
                     "en": "Dysentery",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'dysentery'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'dysentery'"
                 },
                 "measles": {
                     "line_number": "5",
                     "sw": "Measles",
                     "en": "Measles",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'measles'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'measles'"
                 },
                 "meningitis": {
                     "line_number": "6",
                     "sw": "Meningitis",
                     "en": "Meningitis",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'meningitis'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'meningitis'"
                 },
                 "tetanus_neonatal": {
                     "line_number": "7",
                     "sw": "Tetanus. Neonatal",
                     "en": "Tetanus. Neonatal",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'tetanus_neonatal'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'tetanus_neonatal'"
                 },
                 "plague": {
                     "line_number": "8",
                     "sw": "Plague",
                     "en": "Plague",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'plague'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'plague'"
                 },
                 "relapsing_fever_louse_borne_typhus": {
                     "line_number": "9",
                     "sw": "Relapsing Fever Louse borne Typhus",
                     "en": "Relapsing Fever Louse borne Typhus",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'relapsing_fever'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'relapsing_fever'"
                 },
                 "typhoid": {
                     "line_number": "10",
                     "sw": "Typhoid",
                     "en": "Typhoid",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'typhoid'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'typhoid'"
                 },
                 "diarrhea_acute": {
                     "line_number": "11",
                     "sw": "Diarrhea Acute <14days",
                     "en": "Diarrhea Acute <14days",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'diarrhea_acute'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'diarrhea_acute'"
                 },
                 "diarrhea_chronic": {
-                    "line_number": "1",
+                    "line_number": "12",
                     "sw": "Diarrhea Chronic >or= 14days",
                     "en": "Diarrhea Chronic >or= 14days",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'diarrhea_chronic'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'diarrhea_chronic'"
                 },
                 "malaria_severe_complicated_blood_side_positive": {
                     "line_number": "13a",
                     "sw": "Malaria Severe/Complicated Blood Side Positive",
                     "en": "maleria Severe/Complicated Blood Side Positive",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'maleria'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'maleria'"
                 },
                 "malaria_severe_complicated_mrdt_positive": {
                     "line_number": "13b",
                     "sw": "Malaria Severe/Complicated mRDT Positive",
                     "en": "maleria Severe/Complicated mRDT Positive",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'maleria'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'maleria'"
                 },
                 "malaria_severe_complicated_clinical_no_test": {
                     "line_number": "13c",
                     "sw": "Malaria Severe/Complicated Clinical no test",
                     "en": "maleria Severe/Complicated Clinical no test",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'maleria'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'maleria'"
                 },
                 "schistosomiasis": {
                     "line_number": "14",
                     "sw": "Schistosomiasis",
                     "en": "Schistosomiasis",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'schistosomiasis'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'schistosomiasis'"
                 },
                 "sti_genital_discharge_syndrome_gds": {
                     "line_number": "15",
                     "sw": "STI Genital Discharge Syndrome GDS",
                     "en": "STI Genital Discharge Syndrome GDS",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'sti_genital_discharge_syndrome'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'sti_genital_discharge_syndrome'"
                 },
                 "sti_genital_ulcer_diseases_gud": {
                     "line_number": "16",
                     "sw": "STI Genital Ulcer Diseases GUD",
                     "en": "STI Genital Ulcer Diseases GUD",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'sti_genital_ulcer_diseases'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'sti_genital_ulcer_diseases'"
                 },
                 "sti_pelvic_inflammatory_diseases": {
                     "line_number": "17",
                     "sw": "STI Pelvic Inflammatory diseases PID",
                     "en": "STI Pelvic Inflammatory diseases PID",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'sti_pelvic_inflammatory_diseases'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'sti_pelvic_inflammatory_diseases'"
                 },
                 "sexually_transmitted_infection_other": {
                     "line_number": "18",
                     "sw": "Sexually Transmitted Infection Other",
                     "en": "Sexually Transmitted Infection Other",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'sexually_transmitted_infections_other'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'sexually_transmitted_infections_other'"
                 },
                 "gynaecological_diseases": {
                     "line_number": "19",
                     "sw": "Gynaecological diseases Other",
                     "en": "Gynaecological diseases Other",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'gynaecological_diseases_other'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'gynaecological_diseases_other'"
                 },
                 "tuberculosis": {
                     "line_number": "20",
                     "sw": "Tuberculosis",
                     "en": "Tuberculosis",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'tuberculosis'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'tuberculosis'"
                 },
                 "leprosy": {
                     "line_number": "21",
                     "sw": "Leprosy",
                     "en": "Leprosy",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'leprosy'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'leprosy'"
                 },
                 "diabetes_mellitus": {
                     "line_number": "22",
                     "sw": "Diabetes Mellitus",
                     "en": "Diabetes Mellitus",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'diabetes_mellitus'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'diabetes_mellitus'"
                 },
                 "infant_of_diabetic_mother": {
                     "line_number": "23",
                     "sw": "Infant of Diabetic Mother",
                     "en": "Infant of Diabetic Mother",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'infant_of_diabetic_mother'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'infant_of_diabetic_mother'"
                 },
                 "kwashiorkor": {
                     "line_number": "24",
                     "sw": "Kwashiorkor",
                     "en": "Kwashiorkor",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'kwashiorkor'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'kwashiorkor'"
                 },
                 "marasmus": {
                     "line_number": "25",
                     "sw": "Marasmus",
                     "en": "Marasmus",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'marasmus'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'marasmus'"
                 },
                 "marasmic_kwashiorkor": {
                     "line_number": "26",
                     "sw": "Marasmic_kwashiorkor",
                     "en": "Marasmic_kwashiorkor",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'marasmic_kwashiorkor'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'marasmic_kwashiorkor'"
                 },
                 "moderate_malnutrition": {
                     "line_number": "27",
                     "sw": "Moderate Malnutrition",
                     "en": "Moderate Malnutrition",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'moderate_malnutrition'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'moderate_malnutrition'"
                 },
                 "nutritional_disoders_other": {
                     "line_number": "28",
                     "sw": "Nutritional Disorders Other",
                     "en": "Nutritional Disorders Other",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'nutritional_disorders_other'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'nutritional_disorders_other'"
                 },
                 "thyroid_diseases": {
                     "line_number": "29",
                     "sw": "Thyroid Diseases",
                     "en": "Thyroid Diseases",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'thyroid_diseases'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'thyroid_diseases'"
                 },
                 "sickle_cell_disease": {
                     "line_number": "30",
                     "sw": "Sickle cell Disease",
                     "en": "Sickle cell Disease",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'sickle_cell_disease'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'sickle_cell_disease'"
                 },
                 "anaemia_mild_moderate": {
                     "line_number": "31",
                     "sw": "Anaemia Mild/Moderate",
                     "en": "Anaemia Mild/Moderate",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'anaemia_mild_moderate'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'anaemia_mild_moderate'"
                 },
                 "anaemia_severe": {
                     "line_number": "32",
                     "sw": "Anaemia Severe",
                     "en": "Anaemia Severe",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'anaemia_severe'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'anaemia_severe'"
                 },
                 "psychoses": {
                     "line_number": "33",
                     "sw": "Psychoses",
                     "en": "Psychoses",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'psychoses'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'psychoses'"
                 },
                 "neuroses": {
                     "line_number": "34",
                     "sw": "Neuroses",
                     "en": "Neuroses",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'neuroses'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'neuroses'"
                 },
                 "cerebral_palsy": {
                     "line_number": "35",
                     "sw": "Cerebral Palsy",
                     "en": "Cerebral Palsy",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'cerebral_palsy'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'cerebral_palsy'"
                 },
                 "epilepsy": {
                     "line_number": "36",
                     "sw": "Epilepsy",
                     "en": "Epilepsy",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'epilepsy'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'epilepsy'"
                 },
                 "ear_diseases_non_infectious": {
                     "line_number": "37",
                     "sw": "Ear Diseases non-infectious",
                     "en": "Ear Diseases non-infectious",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'Ear Diseases non-infectious'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'Ear Diseases non-infectious'"
                 },
                 "ear_infection_acute": {
                     "line_number": "38",
                     "sw": "Ear infection Acute",
                     "en": "Ear infection Acute",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'ear_infection_acute'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'ear_infection_acute'"
                 },
                 "ear_infection_chronic": {
                     "line_number": "39",
                     "sw": "Ear Infection Chronic",
                     "en": "Ear Infection Chronic",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'ear_infection_chronic'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'ear_infection_chronic'"
                 },
                 "eye_infections_viral_keratoconjunctivitis": {
                     "line_number": "40",
                     "sw": "Eye Infections Viral Keratoconjunctivitis",
                     "en": "Eye Infections Viral Keratoconjunctivitis",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'eye_infection'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'eye_infection'"
                 },
                 "eye_infections_other": {
                     "line_number": "41",
                     "sw": "Eye Infections Other",
                     "en": "Eye Infections Other",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'eye_diseases_other_non_infectious'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'eye_diseases_other_non_infectious'"
                 },
                 "eye_diseases_non-infectious": {
                     "line_number": "42",
                     "sw": "Eye Diseases non-infectious",
                     "en": "Eye Diseases non-infectious",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'eye_diseases_other_non_infectious'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'eye_diseases_other_non_infectious'"
                 },
                 "cardiac_failure": {
                     "line_number": "43",
                     "sw": "Cardiac Failure",
                     "en": "Cardiac Failure",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'cardiac_failure'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'cardiac_failure'"
                 },
                 "hypertension_severe": {
                     "line_number": "44",
                     "sw": "Hypertension severe",
                     "en": "Hypertension severe",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'hypertension_severe'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'hypertension_severe'"
                 },
                 "rheumatic_fever": {
                     "line_number": "45",
                     "sw": "Rheumatic Fever",
                     "en": "Rheumatic Fever",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'rheumatic_fever'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'rheumatic_fever'"
                 },
                 "cardiovascular_disorders_other": {
                     "line_number": "46",
                     "sw": "Cardiovascular Disorders Other",
                     "en": "Cardiovascular Disorders Other",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'cardiovascular_disorders_other'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'cardiovascular_disorders_other'"
                 },
                 "broncial_asthma_severe": {
                     "line_number": "47",
                     "sw": "Broncial Asthma Severe",
                     "en": "Broncial Asthma Severe",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'broncial_asthma_severe'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'broncial_asthma_severe'"
                 },
                 "upper_respiratory_infections_pharyngitis_tonsillitis_rhinitis": {
                     "line_number": "48",
                     "sw": "Upper Respiratory Infections Pharyngitis/Tonsillitis/Rhinitis",
                     "en": "Upper Respiratory Infections Pharyngitis/Tonsillitis/Rhinitis",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'upper_respiratory_infections'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'upper_respiratory_infections'"
                 },
                 "pneumonia": {
                     "line_number": "49",
                     "sw": "Pneumonia",
                     "en": "Pneumonia",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'pneumonia'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'pneumonia'"
                 },
                 "pneumonia_severe": {
                     "line_number": "50",
                     "sw": "Pneumonia Severe",
                     "en": "Pneumonia Severe",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'pneumonia_severe'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'pneumonia_severe'"
                 },
                 "respiratory_system_disorders_other": {
                     "line_number": "51",
                     "sw": "Respiratory System disorders Other",
                     "en": "Respiratory System disorders Other",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'respiratory_system_disorders_other'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'respiratory_system_disorders_other'"
                 },
                 "peptic_ulcers": {
                     "line_number": "52",
                     "sw": "Peptic ulcers",
                     "en": "Peptic ulcers",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'peptic_ulcers'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'peptic_ulcers'"
                 },
                 "liver_diseases_non_infectious": {
                     "line_number": "53",
                     "sw": "Liver diseases non-infectious",
                     "en": "Liver diseases non-infectious",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'liver_diseases_non_infectious'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'liver_diseases_non_infectious'"
                 },
                 "gastrointestinal_disease_other_non_infectious": {
                     "line_number": "54",
                     "sw": "Gastrointestinal diseases Other non-infectious",
                     "en": "Gastrointestinal diseases Other non-infectious",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'gastrointestinal_diseases'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'gastrointestinal_diseases'"
                 },
                 "urinary_tract_infections": {
                     "line_number": "55",
                     "sw": "Urinary Tract Infections UTI",
                     "en": "Urinary Tract Infections UTI",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'urinary_tract_infections'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'urinary_tract_infections'"
                 },
                 "nephrotic_syndrome": {
                     "line_number": "56",
                     "sw": "Nephrotic Syndrome",
                     "en": "Nephrotic Syndrome",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'nephrotic_syndrome'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'nephrotic_syndrome'"
                 },
                 "acute_glumerulonephritis": {
                     "line_number": "57",
                     "sw": "Acute glumerulonephritis",
                     "en": "Acute glumerulonephritis",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'acute_glumerulonephritis'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'acute_glumerulonephritis'"
                 },
                 "skin_infections": {
                     "line_number": "58",
                     "sw": "Skin Infections",
                     "en": "Skin Infections",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'skin_infection'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'skin_infection'"
                 },
                 "skin_diseases_non_infectious": {
                     "line_number": "59",
                     "sw": "Skin diseases non-infectious",
                     "en": "Skin diseases non-infectious",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'skin_diseases_non_infectious'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'skin_diseases_non_infectious'"
                 },
                 "osteomyelitis": {
                     "line_number": "60",
                     "sw": "Osteomyelitis",
                     "en": "Osteomyelitis",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'osteomyelitis'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'osteomyelitis'"
                 },
                 "rheumatoid_and_joint_disease": {
                     "line_number": "61",
                     "sw": "Rheumatoid and Joint diseases",
                     "en": "Rheumatoid and Joint diseases",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'rheumatoid_and_joint_diseases'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'rheumatoid_and_joint_diseases'"
                 },
                 "low_birth_weight_and_prematurity_complications": {
                     "line_number": "62",
                     "sw": "Low birth weight and Prematurity complications",
                     "en": "Low birth weight and Prematurity complications",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'Low birth weight and Prematurity complications'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'Low birth weight and Prematurity complications'"
                 },
                 "birth_asphyxia": {
                     "line_number": "63",
                     "sw": "Birth asphyxia",
                     "en": "Birth asphyxia",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'Birth asphyxia'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'Birth asphyxia'"
                 },
                 "neonatal_septicaemia_local_infections": {
                     "line_number": "64",
                     "sw": "Neonatal Septicaemia Local infections",
                     "en": "Neonatal Septicaemia Local infections",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'low_birth_weight_and_prematurity_complications'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'low_birth_weight_and_prematurity_complications'"
                 },
                 "road_traffic_accidents": {
                     "line_number": "65",
                     "sw": "Road Traffic Accidents",
                     "en": "Road Traffic Accidents",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'road_traffic_accidents'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'road_traffic_accidents'"
                 },
                 "fractures": {
                     "line_number": "66",
                     "sw": "Fractures",
                     "en": "Fractures",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'fractures'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'fractures'"
                 },
                 "poisoning": {
                     "line_number": "67",
                     "sw": "Poisoning",
                     "en": "Poisoning",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'poisoning'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'poisoning'"
                 },
                 "burns": {
                     "line_number": "68",
                     "sw": "Burns",
                     "en": "Burns",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'burns'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'burns'"
                 },
                 "animal_bites_suspected_rabies": {
                     "line_number": "69",
                     "sw": "Animal Bites Suspected Rabies",
                     "en": "Animal Bites Suspected Rabies",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'animal_bite_suspected_rabies'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'animal_bite_suspected_rabies'"
                 },
                 "animal_bites_no_suspected_rabies": {
                     "line_number": "70",
                     "sw": "Animal Bites no suspected Rabies",
                     "en": "Animal Bites no suspected Rabies",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'animal_bite_no_rabies'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'animal_bite_no_rabies'"
                 },
                 "hiv_infection_symptomatic": {
                     "line_number": "71",
                     "sw": "HIV infection Symptomatic",
                     "en": "HIV infection Symptomatic",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'hiv_infection_symptomatic'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'hiv_infection_symptomatic'"
                 },
                 "congenital_disorders": {
                     "line_number": "72",
                     "sw": "Congenital Disorders",
                     "en": "Congenital Disorders",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'congenital_disorders'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'congenital_disorders'"
                 },
                 "hepatitis": {
                     "line_number": "73",
                     "sw": "Hepatitis",
                     "en": "Hepatitis",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'hepatitis'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'hepatitis'"
                 },
                 "neoplasm": {
                     "line_number": "74",
                     "sw": "Neoplasm",
                     "en": "Neoplasm",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'neoplasm'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'neoplasm'"
                 },
                 "soil_transmitted_helminths": {
                     "line_number": "75",
                     "sw": "Soil transmitted helminths",
                     "en": "Soil transmitted helminths",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'soil_transmitted_helminths'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'soil_transmitted_helminths'"
                 },
                 "lympatic_filairiasis": {
                     "line_number": "76",
                     "sw": "Lympatic filairiasis",
                     "en": "Lympatic filairiasis",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'lympatic_filairiasis'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'lympatic_filairiasis'"
                 },
                 "anthrax": {
                     "line_number": "77",
                     "sw": "Anthrax",
                     "en": "Anthrax",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'anthrax'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'anthrax'"
                 },
                 "diagnoses_other": {
                     "line_number": "78",
                     "sw": "Diagnoses Other",
                     "en": "Diagnoses Other",
-                    "condition": "subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'diagnoses_other'"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.admission == 'yes' && subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis == 'diagnoses_other'"
                 }
             },
             "definitions": {
@@ -1867,73 +1867,73 @@ exports.reports = function() {
                     "title": "Total (a)",
                     "type": "number",
                     "line_number": "1",
-                    "condition": "subforms.tb_leprosy.diagnosis.indexOf('leprosy') != -1"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.diagnosis.indexOf('leprosy') != -1"
                 },
                 "newly_registered": {
                     "title": "New",
                     "type": "number",
                     "line_number": "2a",
-                    "condition": "subforms.tb_leprosy.leprosy_status == 'new_patient'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_status == 'new_patient'"
                 },
                 "return_after_default": {
                     "title": "Return after Default",
                     "type": "number",
                     "line_number": "2b",
-                    "condition": "subforms.tb_leprosy.leprosy_status == 'return_after_default'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_status == 'return_after_default'"
                 },
                 "relapse_after_MDT": {
                     "title": "Relapse after MDT",
                     "type": "number",
                     "line_number": "2c",
-                    "condition": "subforms.tb_leprosy.leprosy_status == 'relapse_after_mdt'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_status == 'relapse_after_mdt'"
                 },
                 "relapse_after_dds": {
                     "title": "Relapse after DDS.Others",
                     "type": "number",
                     "line_number": "2d",
-                    "condition": "subforms.tb_leprosy.leprosy_status == 'relapse_after_dds'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_status == 'relapse_after_dds'"
                 },
                 "total_notifications": {
                     "title": "Total notifications (b)",
                     "type": "number",
                     "line_number": "2e",
-                    "condition": "subforms.tb_leprosy.leprosy_status == 'new_patient' && subforms.tb_leprosy.leprosy_status == 'return after default' && subforms.tb_leprosy.leprosy_status == 'relapse after mdt' && subforms.tb_leprosy.leprosy_status == 'relapse after dds'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_status == 'new_patient' && subforms.tb_leprosy.leprosy_status == 'return after default' && subforms.tb_leprosy.leprosy_status == 'relapse after mdt' && subforms.tb_leprosy.leprosy_status == 'relapse after dds'"
                 },
                 "1mb": {
                     "title": "1MB",
                     "type": "number",
                     "line_number": "3a",
-                    "condition": "subforms.tb_leprosy.leprosy_classification == 'mb_a' || subforms.tb_leprosy.leprosy_classification == 'mb_b' "
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_classification == 'mb_a' || subforms.tb_leprosy.leprosy_classification == 'mb_b' "
                 },
                 "1pb": {
                     "title": "1PB",
                     "type": "number",
                     "line_number": "3b",
-                    "condition": "subforms.tb_leprosy.leprosy_classification == 'pb_a' || subforms.tb_leprosy.leprosy_classification == 'pb_b' "
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_classification == 'pb_a' || subforms.tb_leprosy.leprosy_classification == 'pb_b' "
                 },
                 "disability_grade_0": {
                     "title": "Grade 0",
                     "type": "number",
                     "line_number": "4a",
-                    "condition": "subforms.tb_leprosy.disability_grade == 'grade_0'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.disability_grade == 'grade_0'"
                 },
                 "disability_grade_1": {
                     "title": "Grade 1",
                     "type": "number",
                     "line_number": "4b",
-                    "condition": "subforms.tb_leprosy.disability_grade == 'grade_1'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.disability_grade == 'grade_1'"
                 },
                 "disability_grade_2": {
                     "title": "Grade 2",
                     "type": "number",
                     "line_number": "4c",
-                    "condition": "subforms.tb_leprosy.disability_grade == 'grade_2'"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.disability_grade == 'grade_2'"
                 },
                 "disability_grade_total": {
                     "title": "Total",
                     "type": "number",
                     "line_number": "4d",
-                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy.disability_grade"
+                    "condition": "subforms.tb_leprosy && subforms.tb_leprosy && subforms.tb_leprosy.disability_grade"
                 },
                 "treatment_completed": {
                     "title": "Treatment Completed",
@@ -1982,23 +1982,23 @@ exports.reports = function() {
                 "columns": {
                     "mb_a": {
                         "title": "MB(A)",
-                        "condition": "subforms.tb_leprosy.leprosy_classification == 'mb_a'"
+                        "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_classification == 'mb_a'"
                     },
                     "mb_c": {
                         "title": "MB(C)",
-                        "condition": "subforms.tb_leprosy.leprosy_classification == 'mb_c'"
+                        "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_classification == 'mb_c'"
                     },
                     "pb_a": {
                         "title": "PB(A)",
-                        "condition": "subforms.tb_leprosy.leprosy_classification == 'pb_a'"
+                        "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_classification == 'pb_a'"
                     },
                     "pb_c": {
                         "type": "number",
-                        "condition": "subforms.tb_leprosy.leprosy_classification == 'pb_c'"
+                        "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_classification == 'pb_c'"
                     },
                     "total": {
                         "title": "Total",
-                        "condition": "subforms.tb_leprosy.leprosy_classification"
+                        "condition": "subforms.tb_leprosy && subforms.tb_leprosy.leprosy_classification"
                     },
 
                     "0_14_male": {
@@ -2643,25 +2643,25 @@ exports.reports = function() {
                     "line_number": "1",
                     "en": "OPD attendance",
                     "sw": "Mahudhurio ya OPD",
-                    "condition": "subforms.disease_diagnosis.diagnosis"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis"
                 },
                 "2": {
                     "line_number": "2",
                     "en": "Patient who visited for the first time this year\n",
                     "sw": "Wagonjwa waliohudhuria kwa mara ya kwanza mwaka huu (*)",
-                    "condition": "subforms.disease_diagnosis.diagnosis && patient.current_created_years < 1"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis && patient.current_created_years < 1"
                 },
                 "3": {
                     "line_number": "3",
                     "en": "Repeated attendance",
                     "sw": "Mahudhurio ya Marudio",
-                    "condition": "subforms.disease_diagnosis.diagnosis"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis"
                 },
                 "3a": {
                     "line_number": "3a",
                     "en": "Diagnoses for OPD",
                     "sw": "Diagnoses za OPD",
-                    "condition": "subforms.disease_diagnosis.diagnosis"
+                    "condition": "subforms.disease_diagnosis && subforms.disease_diagnosis.diagnosis"
                 },
                 "4": {
                     "line_number": "4",
