@@ -1,9 +1,9 @@
-Feature: This is an example feature
-	In order to learn Cucumber
-	As a developer
-	I want to make this feature pass
+Feature: Login
+	In order to identify EMR users
+	As a user
+	I want to access the application with my credentials
 
-	Scenario: wrote my first scenario
+	Scenario: Check not logged in.
 		Given I have cleaned the deployment
 		Given I have deployed the app
 		Given I have uploaded test data
