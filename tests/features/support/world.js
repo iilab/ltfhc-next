@@ -5,7 +5,7 @@ var zombie = require('zombie');
 var World = function World(callback) {
     var path = "/usr/local/bin/"
     
-    this.browser = new zombie({ debug: true }); // this.browser will be available in step definitions
+    this.browser = new zombie({ debug: false }); // this.browser will be available in step definitions
     this.browser.runScripts = true;
     this.browser.on('error',function (err){console.log(err.stack)});
         
