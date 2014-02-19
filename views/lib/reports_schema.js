@@ -1159,7 +1159,7 @@ exports.reports = function() {
                     "line_number": 4,
                     "sw": "Idadi ya wagonjwa walio na damu katika kinyesi",
                     "en": "Number of patients with blood in stool",
-                    "condition": "subforms.diarrhea.blood_in_stool == 'yes'"
+                    "condition": "subforms.diarrhea.blood_in_stool"
                 },
                 "the_number_of_patients_who_received_zinc": {
                     "line_number": 5,
