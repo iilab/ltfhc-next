@@ -1159,37 +1159,37 @@ exports.reports = function() {
                     "line_number": 4,
                     "sw": "Idadi ya wagonjwa walio na damu katika kinyesi",
                     "en": "Number of patients with blood in stool",
-                    "condition": "diarrhea.blood_in_stool"
+                    "condition": "diarrhea.blood_in_stool == 'yes'"
                 },
                 "the_number_of_patients_who_received_zinc": {
                     "line_number": 5,
                     "sw": "Idadi ya wagonjwa waliopewa zinki",
                     "en": "The number of patients who received zinc",
-                    "condition": "diarrhea.given_zinc"
+                    "condition": "diarrhea.given_zinc == 'yes'"
                 },
                 "the_number_of_patients_who_received_a_packet_of_ors": {
                     "line_number": 6,
                     "sw": "Idadi ya wagonjwa waliopatiwa paketi za ORS",
                     "en": "The number of patients who received a packet of ORS",
-                    "condition": "diarrhea.given_ors"
+                    "condition": "diarrhea.given_ors == 'yes'"
                 },
                 "number_of_admitted_patients": {
                     "line_number": 7,
                     "sw": "Idadi ya wagonjwa waliolazwa",
                     "en": "Number of admitted patients",
-                    "condition": "diarrhea.admission"
+                    "condition": "diarrhea.admission == 'yes'"
                 },
                 "the_number_of_refereed_patients": {
                     "line_number": 8,
                     "sw": "Idadi ya wagonjwa waliopewa rufaa",
                     "en": "The number of refereed patients",
-                    "condition": "diarrhea.referral"
+                    "condition": "diarrhea.referral == 'no'"
                 },
                 "the_number_of_patients_who_died_of_dtc_diarrhoea_treatment_centre": {
                     "line_number": 9,
                     "sw": "Idadi ya wagonjwa waliofia DTC",
                     "en": "The number of patients who died of DTC_Diarrhoea treatment Centre",
-                    "condition": "diarrhea.diarrhea_mortality"
+                    "condition": "diarrhea.diarrhea_mortality == 'no'"
                 }
             },
             "definitions": {
