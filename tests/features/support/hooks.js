@@ -1,5 +1,3 @@
-var world = require("../support/world.js");
- 
 var myHooks = function() {
 	
 	this.Before(function(callback) {
@@ -10,10 +8,33 @@ var myHooks = function() {
 		// Let's say we have a bunch of "maintenance" methods available on our World
 		// instance, we can fire some to prepare the application for the next
 		// scenario:
-		
-		
-		// Don't forget to tell Cucumber when you're done:
-		callback()
+				
+		var util = require('util'),
+            exec = require('child_process').exec;   
+
+	    exec(["kanso deletedb test"], function(error, stdout, stderr) {
+	        if (error) {
+	            util.puts(stderr);
+                callback.fail("Error")
+	        }
+    	    exec(["kanso push .. test"], function(error, stdout, stderr) {
+    	        if (error) {
+    	            util.puts(stderr);
+                    callback.fail("Error")
+                    // I need to also deploy emr/_local/instance_settings
+    	        }
+        	    exec(["kanso upload features/data test"], function(error, stdout, stderr) {
+        	        if (error) {
+        	            util.puts(stderr);
+                        callback.fail("Error")
+        	        }
+                    // I also need to create the correct user "user:pass"
+                    
+                    // Don't forget to tell Cucumber when you're done:
+            		callback()
+        	    });                
+    	    });
+	    });
 	});
 
 	this.After(function(callback) {
