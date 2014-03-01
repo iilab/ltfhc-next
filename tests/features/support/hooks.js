@@ -14,20 +14,24 @@ var myHooks = function() {
 
 	    exec(["kanso deletedb test"], function(error, stdout, stderr) {
 	        if (error) {
-	            util.puts(stderr);
-                callback.fail("Error")
+	            if (stdout.indexOf("not_found") != -1) {
+	            	// Continue. test db doesn't exist which is fine.
+	            } else {
+		            util.puts(stdout);
+		            return
+	            }
 	        }
     	    exec(["kanso push .. test"], function(error, stdout, stderr) {
     	        if (error) {
     	            util.puts(stderr);
-                    callback.fail("Error")
+		            return
                     // I need to also deploy emr/_local/instance_settings
     	        }
         	    exec(["kanso upload features/data test"], function(error, stdout, stderr) {
         	        if (error) {
         	            util.puts(stderr);
-                        callback.fail("Error")
-        	        }
+	    	            return
+    		        }
                     // I also need to create the correct user "user:pass"
                     
                     // Don't forget to tell Cucumber when you're done:
