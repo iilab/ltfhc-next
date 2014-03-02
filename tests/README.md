@@ -30,3 +30,4 @@ Runs all feature tests in the features directory.
 
 ## Problems
 * There seem to be a problem with XHR support (read somewhere that it is with XHR2). Current getSettings code in appinfo.js uses window.jQuery.ajax which seem to fail with an exception.
+* Asynchronous XHR doesn't seem like it's going to be supported : https://github.com/assaf/zombie/issues/417 this might mean that we'll have to move to phantom.js
