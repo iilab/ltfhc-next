@@ -8,7 +8,19 @@ Cucumber-js and Zombie-js
 
 Currently the git repo contains the node_modules directory. 
 
-`make install` (runs npm install --dev to install devDependencies)
+`make install`
+
+## Configure
+
+Add entry for test in `.kansorc`. Example:
+```
+exports.env = {
+    // the default env will be used when you just do "kanso push"
+    'test': {
+        db: 'http://user:pass@localhost:5984/emr_test_local'  
+    }
+};
+```
 
 ## Run the tests
 
