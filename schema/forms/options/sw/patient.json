@@ -1,7 +1,7 @@
 {
     "fields": {
         "first_name": {
-            "label": "First Name: (Jina la kwanza)"
+            "label": "Jina la kwanza:"
         },
         "last_name": {
             "label": "Last Name: (Jina la mwisho)"
