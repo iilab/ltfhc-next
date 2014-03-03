@@ -7,7 +7,7 @@
             "type": "hidden"
         },
         "clinic": {
-            "label": "Clinic:"
+            "label": "Clinic?:"
         },
         "clinician": {
             "label": "Clinician:"

@@ -1,11 +1,11 @@
 {
   "fields": {
     "complaint": {
-      "label": "Chief Complaint: (Lalamiko kuu)",
+      "label": "Lalamiko kuu:",
       "type": "checkbox"
     },
     "complaint_other": {
-      "label": "Other Complaint: (Kuu nyingine)",
+      "label": "Kuu nyingine:",
       "helper": "If Chief Complaint not listed above, please write in."
     },
     "symptom": {
