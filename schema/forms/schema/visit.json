@@ -37,20 +37,20 @@
                     "list": {
                         "type": "array",
                         "enum": [
-                            "disease_diagnosis",
-                            "bodily_injury",
-                            "immunization",
-                            "hiv_counseling_mother",
-                            "hiv_counseling_child",
-                            "reproductive_counseling",
                             "anc_first_visit",
                             "anc_followup",
-                            "postnatal",
-                            "tb_leprosy",
-                            "hiv_pregnancy_clinic",
-                            "well_child_visit",
+                            "bodily_injury",
                             "delivery_record",
-                            "diarrhea"
+                            "diarrhea",
+                            "disease_diagnosis",
+                            "hiv_counseling_child",
+                            "hiv_counseling_mother",
+                            "hiv_pregnancy_clinic",
+                            "immunization",
+                            "postnatal",
+                            "reproductive_counseling",
+                            "tb_leprosy",
+                            "well_child_visit"
                         ]
                     },
                     "subforms": {

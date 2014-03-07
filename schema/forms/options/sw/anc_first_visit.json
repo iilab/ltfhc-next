@@ -1,7 +1,7 @@
 {
     "fields": {
         "last_menstrual_period": {
-            "label": "Date of Last Menstrual Period: (Tarehe ya mwisho wa kipindi cha hedhi)",
+            "label": "Tarehe ya mwisho wa kipindi cha hedhi",
             "type": "date",
             "dateFormat": "yy-mm-dd",
             "datepicker": {
@@ -12,7 +12,7 @@
             }
         },
         "due_date": {
-            "label": "Expected Due Date: (Tarehe ya matarajio)",
+            "label": "Tarehe ya matarajio",
             "type": "date",
             "dateFormat": "yy-mm-dd",
             "datepicker": {
@@ -26,11 +26,11 @@
             "type": "hidden"
         },
         "current_gestationalage_weeks": {
-            "label": "Approximate Estimated Gestational Age (weeks): (Wastani takriban wa umri wa ujauzito (wiki))",
+            "label": "wiki)",
             "type": "select"
         },
         "number_pregnancy": {
-            "label": "Pregnancy Number: (Idadi ya ujauzito)",
+            "label": "Idadi ya ujauzito",
             "type": "select"
         },
         "pregnancy_test": {
@@ -44,27 +44,27 @@
             "removeDefaultNone": true
         },
         "number_full_term_delivery": {
-            "label": "Number of Previous Full Term Deliveries: (Idadi ya kujifungua katika mda uliokamilika)",
+            "label": "Idadi ya kujifungua katika mda uliokamilika",
             "type": "select"
         },
         "number_pre_term_delivery": {
-            "label": "Number of Previous Preterm Deliveries: (Idadi ya kujifungua watoto wasiotimiza umri)",
+            "label": "Idadi ya kujifungua watoto wasiotimiza umri",
             "type": "select"
         },
         "number_miscarriage_abortion": {
-            "label": "Number of Previous Miscarriages/Abortions: (Idadi ya mimba zilizoharibika au kutolewa)",
+            "label": "Idadi ya mimba zilizoharibika au kutolewa",
             "type": "select"
         },
         "number_live_birth": {
-            "label": "Number of Previous Live Births (Idadi ya waliozaliwa hai)",
+            "label": "Idadi ya waliozaliwa hai",
             "type": "select"
         },
         "weight_heaviest_infant": {
-            "label": "Approximate Weight of Heaviest Infant Previously Delivered: (Uzito takriban wa mtoto mchanga mzito uliejifungua awali)",
+            "label": "Uzito takriban wa mtoto mchanga mzito uliejifungua awali",
             "type": "select"
         },
         "pregnancy_complications": {
-            "label": "Complications in Previous Pregnancies: (Matatizo katika ujauzito uliopita)",
+            "label": "Matatizo katika ujauzito uliopita",
             "type": "checkbox"
         },
         "other_pregnancy_complications": {
@@ -95,7 +95,7 @@
             "removeDefaultNone": true
         },
         "hiv_status_prior_firstvisit": {
-            "label": "HIV Status prior to first visit (Hadhi ya VVU)",
+            "label": "Hadhi ya VVU",
             "type": "radio",
             "removeDefaultNone": true
 
@@ -337,19 +337,19 @@
             "removeDefaultNone": true
         },
         "bp_systolic": {
-            "label": "BP Systolic (BP Sistolik)",
+            "label": "BP Sistolik",
             "type": "number"
         },
         "bp_diastolic": {
-            "label": "BP Diastolic (BP Diyastolik)",
+            "label": "BP Diyastolik",
             "type": "number"
         },
         "anemia_severe": {
-            "label": "Severe Anemia (>8.5g/dl)",
+            "label": ">8.5g/dl",
             "type": "select"
         },
         "symptoms": {
-            "label": "Symptoms: (Dalili)",
+            "label": "Dalili",
             "type": "checkbox"
         },
         "tt2plus_vaccine": {
@@ -366,11 +366,11 @@
             "label": "If Other Symptom, Please Describe: (Dalili nyingine)"
         },
         "fundal_height": {
-            "label": "Fundal Height (cm): (Urefu wa mfuko wa uzazi (cm))",
+            "label": "cm)",
             "type": "select"
         },
         "fetal_heart_rate": {
-            "label": "Fetal Heart Rate (Beats Per Minute): (Mapigo ya moyo ya Kijusi)",
+            "label": "Mapigo ya moyo ya Kijusi",
             "type": "select"
         },
         "treatment_given": {
@@ -422,7 +422,7 @@
             "removeDefaultNone": true
         },
         "referred_ctc": {
-            "label": "Mother Referred To CTC? (Mama alipewa rufaa kwenda CTC?)",
+            "label": "Mama alipewa rufaa kwenda CTC?",
             "type": "radio",
             "enum": [
                 "Yes",

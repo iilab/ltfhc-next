@@ -1,7 +1,7 @@
 {
     "fields": {
         "injury_date": {
-            "label": "Injury Date: (Tarehe ya majeraha)",
+            "label": "Tarehe ya majeraha",
             "type": "date",
             "dateFormat": "yy-mm-dd",
             "datepicker": {
@@ -12,22 +12,22 @@
             }
         },
         "injury_type": {
-            "label": "Type of Injury: (Aina ya majeraha)",
+            "label": "Aina ya majeraha",
             "type": "select"
         },
         "injury_other": {
             "label": "Other Injury:"
         },
         "testing_method": {
-            "label": "Testing Method: (Amepimwa kwa njia zifuatazo)",
+            "label": "Amepimwa kwa njia zifuatazo",
             "type": "textarea"
         },
         "treatment": {
-            "label": "Treatment: (Matibabu)",
+            "label": "Matibabu",
             "type": "select"
         },
         "treatment_other": {
-            "label": "Other Treatment: (Matibabu nyingine)",
+            "label": "Matibabu nyingine",
             "type": "textarea"
         },
         "admission": {
@@ -40,7 +40,7 @@
             "removeDefaultNone": true
         },
         "injury_mortality": {
-            "label": "Did Injury Lead to Death? (Je majeraha yalisababisha kifo?)",
+            "label": "Je majeraha yalisababisha kifo?",
             "type": "radio",
             "enum": [
                 "Yes",

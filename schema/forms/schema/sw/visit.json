@@ -37,20 +37,20 @@
                     "list": {
                         "type": "array",
                         "enum": [
-                            "disease_diagnosis",
-                            "bodily_injury",
-                            "immunization",
-                            "hiv_counseling_mother",
-                            "hiv_counseling_child",
-                            "reproductive_counseling",
                             "anc_first_visit",
                             "anc_followup",
-                            "postnatal",
-                            "tb_leprosy",
-                            "hiv_pregnancy_clinic",
-                            "well_child_visit",
+                            "bodily_injury",
                             "delivery_record",
-                            "diarrhea"
+                            "diarrhea",
+                            "disease_diagnosis",
+                            "hiv_counseling_child",
+                            "hiv_counseling_mother",
+                            "hiv_pregnancy_clinic",
+                            "immunization",
+                            "postnatal",
+                            "reproductive_counseling",
+                            "tb_leprosy",
+                            "well_child_visit"
                         ]
                     },
                     "subforms": {
@@ -64,67 +64,67 @@
                             "bodily_injury": {
                                 "title": "Bodily Injury",
                                 "dependencies": "#reasons",
-                                "$ref": "bodily_injury"
+                                "$ref": "sw/bodily_injury"
                             },
                             "immunization": {
                                 "title": "Immunization/Post-Immunization",
                                 "dependencies": "#reasons",
-                                "$ref": "immunization"
+                                "$ref": "sw/immunization"
                             },
                             "hiv_counseling_mother": {
                                 "title": "HIV Counseling Mother",
                                 "dependencies": "#reasons",
-                                "$ref": "hiv_counseling_mother"
+                                "$ref": "sw/hiv_counseling_mother"
                             },
                             "hiv_counseling_child": {
                                 "title": "HIV Counseling Child",
                                 "dependencies": "#reasons",
-                                "$ref": "hiv_counseling_child"
+                                "$ref": "sw/hiv_counseling_child"
                             },
                             "reproductive_counseling": {
                                 "title": "Reproductive Counceling/Treatment",
                                 "dependencies": "#reasons",
-                                "$ref": "reproductive_counseling"
+                                "$ref": "sw/reproductive_counseling"
                             },
                             "anc_first_visit": {
                                 "title": "First Antenatal Visit",
                                 "dependencies": "#reasons",
-                                "$ref": "anc_first_visit"
+                                "$ref": "sw/anc_first_visit"
                             },
                             "anc_followup": {
                                 "title": "Follow-up Antenatal Visit",
                                 "dependencies": "#reasons",
-                                "$ref": "anc_followup"
+                                "$ref": "sw/anc_followup"
                             },
                             "postnatal": {
                                 "title": "Postnatal Visit",
                                 "dependencies": "#reasons",
-                                "$ref": "postnatal"
+                                "$ref": "sw/postnatal"
                             },
                             "tb_leprosy": {
                                 "title": "TB and Leprosy",
                                 "dependencies": "#reasons",
-                                "$ref": "tb_leprosy"
+                                "$ref": "sw/tb_leprosy"
                             },
                             "hiv_pregnancy_clinic": {
                                 "title": "HIV in Pregnancy",
                                 "dependencies": "#reasons",
-                                "$ref": "hiv_pregnancy_clinic"
+                                "$ref": "sw/hiv_pregnancy_clinic"
                             },
                             "well_child_visit": {
                                 "title": "Well Child Visit",
                                 "dependencies": "#reasons",
-                                "$ref": "well_child_visit"
+                                "$ref": "sw/well_child_visit"
                             },
                             "delivery_record": {
                                 "title": "Delivery Record",
                                 "dependencies": "#reasons",
-                                "$ref": "delivery_record"
+                                "$ref": "sw/delivery_record"
                             },
                             "diarrhea": {
                                 "title": "Diarrhea Treatment",
                                 "dependencies": "#reasons",
-                                "$ref": "diarrhea"
+                                "$ref": "sw/diarrhea"
                             }
                         }
                     }
