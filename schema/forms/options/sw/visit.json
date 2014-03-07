@@ -29,20 +29,20 @@
                         "type": "checkbox",
                         "multiple": true,
                         "optionLabels": [
-                            "Disease Diagnosis",
                             "Bodily Injury",
-                            "Immunization/Post-Immunization",
-                            "HIV Counseling Mother",
-                            "HIV Counseling Child",
-                            "Reproductive Counceling/Treatment",
+                            "Delivery Record",
+                            "Diarrhea Treatment",
+                            "Disease Diagnosis",
                             "First Antenatal Visit",
                             "Follow-up Antenatal Visit",
-                            "Postnatal Visit",
-                            "TB and Leprosy",
+                            "HIV Counseling Child",
+                            "HIV Counseling Mother",
                             "HIV in Pregnancy",
-                            "Well Child Visit",
-                            "Delivery Record",
-                            "Diarrhea Treatment"
+                            "Immunization/Post-Immunization",
+                            "Postnatal Visit",
+                            "Reproductive Counceling/Treatment",
+                            "TB and Leprosy",
+                            "Well Child Visit"
                         ]
                     },
                     "subforms": {

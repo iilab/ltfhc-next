@@ -37,12 +37,12 @@
                     "list": {
                         "type": "array",
                         "enum": [
-                            "anc_first_visit",
-                            "anc_followup",
                             "bodily_injury",
                             "delivery_record",
                             "diarrhea",
                             "disease_diagnosis",
+                            "anc_first_visit",
+                            "anc_followup",
                             "hiv_counseling_child",
                             "hiv_counseling_mother",
                             "hiv_pregnancy_clinic",
