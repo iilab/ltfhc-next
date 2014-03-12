@@ -13,7 +13,7 @@
                 "Headache",
                 "Loss of Fetal Movement",
                 "Nausea or Vomiting",
-                "Post-Coital Bleeding"
+                "Post-Coital Bleeding",
                 "Vaginal Bleeding",
                 "Vaginal Leakage of Fluid",
                 "Vaginal Pain"
@@ -213,7 +213,7 @@
                 "Urinary Tract Infections (UTI)",
                 "Viral haemorrhagic fevers",
                 "Vitamin A Deficiency",
-                "Waliopewa Rufaa"
+                "Waliopewa Rufaa",
                 "Yellow Fever"
             ]
         },
@@ -298,7 +298,7 @@
                 "Cholera",
                 "Diabetes",
                 "Hypertension",
-                "Leprosy"
+                "Leprosy",
                 "Malaria",
                 "Meningitis",
                 "Sickle Cell",
@@ -496,21 +496,21 @@
             "type": "checkbox",
             "multiple": true,
             "optionLabels": [
-                "Neonatal death"
+                "Neonatal death",
                 "Septicemia",
                 "Severe anemia (Hb<10)",
                 "Skin infection",
-                "Umbilical cord infection",
+                "Umbilical cord infection"
             ]
         },
         "postnatal_mother_diagnoses": {
             "type": "checkbox",
             "multiple": true,
             "optionLabels": [
-                "Fistula"
+                "Fistula",
                 "Gaping or infected perineum ",
                 "Mental disorder",
-                "Severe anemia (Hb<8.5)",
+                "Severe anemia (Hb<8.5)"
             ]
         },
         "pregnancy_complications": {
@@ -542,7 +542,7 @@
             "multiple": true,
             "optionLabels": [
                 "Diabetes",
-                "Heart Disease"
+                "Heart Disease",
                 "Tuberculosis"
             ]
         },
@@ -596,7 +596,7 @@
                 "Shortness of Breath",
                 "Weakness",
                 "Weight Loss",
-                "Other",
+                "Other"
             ]
         },
         "tb_classifications": {
