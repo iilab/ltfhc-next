@@ -3,7 +3,7 @@
         "injury_date": {
             "label": "Tarehe ya majeraha",
             "type": "date",
-            "dateFormat": "yy-mm-dd",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",

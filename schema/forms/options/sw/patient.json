@@ -33,7 +33,7 @@
         "date_age": {
             "label": "Tarehe ya kuzaliwa",
             "type": "date",
-            "dateFormat": "yy-mm-dd",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "1900:+0",

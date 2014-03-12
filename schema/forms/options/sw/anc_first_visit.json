@@ -3,7 +3,7 @@
         "last_menstrual_period": {
             "label": "Tarehe ya mwisho wa kipindi cha hedhi",
             "type": "date",
-            "dateFormat": "yy-mm-dd",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",
@@ -14,7 +14,7 @@
         "due_date": {
             "label": "Tarehe ya matarajio",
             "type": "date",
-            "dateFormat": "yy-mm-dd",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",
@@ -167,7 +167,7 @@
             "removeDefaultNone": true
         },
         "combo_drugs": {
-            "label": "Patient recieved PMCTC combo drugs?",
+        "label": "Patient recieved PMCTC combo drugs?",
             "type": "radio",
             "enum": [
                 "Yes",

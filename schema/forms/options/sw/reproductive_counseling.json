@@ -3,7 +3,7 @@
         "last_menstrual_period": {
             "label": "Tarehe ya mwisho wa kipindi cha hedhi",
             "type": "date",
-            "dateFormat": "yy-mm-dd",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",

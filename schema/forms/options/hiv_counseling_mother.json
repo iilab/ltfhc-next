@@ -1,8 +1,8 @@
 {
     "fields": {
         "delivery_date": {
-            "label": "Date of Infant Delivery: (Tarehe ya kujifungua mtoto mchanga)",
-            "dateFormat": "yy-mm-dd",
+            "label": "Date of Infant Delivery:",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",
@@ -62,7 +62,7 @@
             "removeDefaultNone": true
         },
         "hiv_known_pre_birth": {
-            "label": "HIV Status Known Before Birth? (Hadhi ya VVU anajulikana kabla ya kujifungua?)",
+            "label": "HIV Status Known Before Birth? ",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -72,7 +72,7 @@
             "removeDefaultNone": true
         },
         "hiv_test_during_labor": {
-            "label": "Tested for HIV During Labor? (Amepimwa Virusi vya UKIMWI wakati wa kuzaa?)",
+            "label": "Tested for HIV During Labor? ",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -82,7 +82,7 @@
             "removeDefaultNone": true
         },
         "hiv_test_post_labor": {
-            "label": "Tested for HIV Post-Labor? (Amepimwa Virusi vya UKIMWI baada ya kuzaa?)",
+            "label": "Tested for HIV Post-Labor? ",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -92,10 +92,10 @@
             "removeDefaultNone": true
         },
         "medication_during_labor": {
-            "label": "Medicine Taken During Labor: (Dawa zilizochukuliwa wakati wa uchungu)"
+            "label": "Medicine Taken During Labor: "
         },
         "referred_ctc": {
-            "label": "Mother Referred To CTC? (Mama alipewa rufaa kwenda CTC?)",
+            "label": "Mother Referred To CTC? ",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -105,8 +105,8 @@
             "removeDefaultNone": true
         },
         "referral_date": {
-            "label": "Referral Date (Or is This a Different Date?): (Tarehe ya rufaa (au hii ni tarehe tofauti?))",
-            "dateFormat": "yy-mm-dd",
+            "label": "Referral Date (Or is This a Different Date?): ",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",

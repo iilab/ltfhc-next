@@ -1,9 +1,9 @@
 {
     "fields": {
         "last_menstrual_period": {
-            "label": "Last Menstrual Period: (Tarehe ya mwisho wa kipindi cha hedhi)",
+            "label": "Last Menstrual Period: ",
             "type": "date",
-            "dateFormat": "yy-mm-dd",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",
@@ -12,46 +12,46 @@
             }
         },
         "menstrual_history": {
-            "label": "Menstrual History: (Historia ya hedhi)",
+            "label": "Menstrual History: ",
             "type": "select"
         },
         "number_pregnancy": {
-            "label": "Total Number of Pregnancies (Jumla ya idadi ya mimba za awali)",
+            "label": "Total Number of Pregnancies ",
             "type": "select"
         },
         "number_full_term_delivery": {
-            "label": "Number of Full Term Deliveries (Idadi ya kujifungua katika mda uliokamilika)",
+            "label": "Number of Full Term Deliveries ",
             "type": "select"
         },
         "number_pre_term_delivery": {
-            "label": "Number of Preterm Deliveries (Idadi ya kujifungua watoto wasiotimiza umri)",
+            "label": "Number of Preterm Deliveries ",
             "type": "select"
         },
         "number_miscarriage_or_abortion": {
-            "label": "Number of Miscarriages or Abortions (Idadi ya mimba zilizoharibika au kutolewa)",
+            "label": "Number of Miscarriages or Abortions ",
             "type": "select"
         },
         "number_live_birth": {
-            "label": "Number of Live Births (Idadi ya waliozaliwa hai)",
+            "label": "Number of Live Births ",
             "type": "select"
         },
         "pregnancy_complication": {
-            "label": "Pregnancy Complications, Check All That Apply: (Matatizo ya ujauzito)",
+            "label": "Pregnancy Complications, Check All That Apply: ",
             "type": "checkbox"
         },
         "pregnancy_complication_other": {
             "label": "If Other Pregnancy Complication, Describe:"
         },
         "marital_status": {
-            "label": "Marital Status: (Hadhi ya ndoa)",
+            "label": "Marital Status: ",
             "type": "select"
         },
         "contraception_previous": {
-            "label": "Previous Contraception: (Uzazi wa mpango wa awali)",
+            "label": "Previous Contraception: ",
             "type": "select"
         },
         "contraception_current": {
-            "label": "Current Contraception: (Uzazi wa mpango kwa sasa)",
+            "label": "Current Contraception: ",
             "type": "select"
         },
         "contraception_source": {
@@ -188,7 +188,7 @@
             "removeDefaultNone": true
         },
         "contraception_dispensed": {
-            "label": "Contraception Dispensed: (Dawa ya Uzazi wa mpango iliogawanywa)",
+            "label": "Contraception Dispensed: ",
             "type": "select"
         },
         "quantity_pills_dispensed": {

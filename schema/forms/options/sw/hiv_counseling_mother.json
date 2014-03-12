@@ -2,7 +2,7 @@
     "fields": {
         "delivery_date": {
             "label": "Tarehe ya kujifungua mtoto mchanga",
-            "dateFormat": "yy-mm-dd",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",
@@ -106,7 +106,7 @@
         },
         "referral_date": {
             "label": "au hii ni tarehe tofauti?)",
-            "dateFormat": "yy-mm-dd",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",
