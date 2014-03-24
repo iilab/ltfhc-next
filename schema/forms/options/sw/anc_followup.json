@@ -1,9 +1,9 @@
 {
     "fields": {
         "due_date": {
-            "label": "Expected Due Date: (Tarehe ya matarajio)",
+            "label": "Tarehe ya matarajio",
             "type": "date",
-            "dateFormat": "yy-mm-dd",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "2010:+10",
@@ -12,7 +12,7 @@
             }
         },
         "number_pregnancy": {
-            "label": "Pregnancy Number: (Idadi ya ujauzito)",
+            "label": "Idadi ya ujauzito",
             "type": "select"
         },
         "current_gestationalage_weeks": {
@@ -88,7 +88,7 @@
             "removeDefaultNone": true
         },
         "hiv_status_prior_firstvisit": {
-            "label": "HIV Status prior to first visit (Hadhi ya VVU)",
+            "label": "Hadhi ya VVU",
             "type": "select"
         },
         "tested_hiv_firstvisit": {
@@ -299,15 +299,15 @@
             "removeDefaultNone": true
         },
         "bp_systolic": {
-            "label": "BP Systolic (BP Sistolik)",
+            "label": "BP Sistolik",
             "type": "number"
         },
         "bp_diastolic": {
-            "label": "BP Diastolic (BP Diyastolik)",
+            "label": "BP Diyastolik",
             "type": "number"
         },
         "anemia_severe": {
-            "label": "Severe Anemia (>8.5g/dl)",
+            "label": ">8.5g/dl",
             "type": "select"
         },
         "tt2plus_vaccine": {
@@ -329,7 +329,7 @@
             "removeDefaultNone": true
         },
         "referred_ctc": {
-            "label": "Mother Referred To CTC? (Mama alipewa rufaa kwenda CTC?)",
+            "label": "Mama alipewa rufaa kwenda CTC?",
             "type": "radio",
             "enum": [
                 "Yes",

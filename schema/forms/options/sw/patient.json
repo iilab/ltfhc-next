@@ -7,33 +7,33 @@
             "label": "Last Name: (Jina la mwisho)"
         },
         "gender": {
-            "label": "Gender: (Jinsia)",
+            "label": "Jinsia",
             "type": "select",
             "removeDefaultNone": true
         },
         "clinic_id": {
-            "label": "Clinic ID: (Namba ya utambulishi ya kliniki)"
+            "label": "Namba ya utambulishi ya kliniki"
         },
         "government_id": {
-            "label": "Government ID: (Namba ya utambulishi ya Serikali)"
+            "label": "Namba ya utambulishi ya Serikali"
         },
         "hiv_id": {
-            "label": "HIV ID: (Kitambulisho cha VVU)"
+            "label": "HIV ID: (Kitambulisho cha VVU"
         },
         "phone": {
-            "label": "Phone: (Namba ya simu)",
+            "label": "Namba ya simu",
             "type": "number"
         },
         "hometown": {
             "label": "Hometown:"
         },
         "village": {
-            "label": "What village do you live in? (Unaishi katika kijiji gani?)"
+            "label": "Unaishi katika kijiji gani?"
         },
         "date_age": {
-            "label": "Birth Date: (Tarehe ya kuzaliwa)",
+            "label": "Tarehe ya kuzaliwa",
             "type": "date",
-            "dateFormat": "yy-mm-dd",
+            "dateFormat": "yyyy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "1900:+0",
@@ -42,7 +42,7 @@
             }
         },
         "current_age_years": {
-            "label": "Approximate Age: (Umri wa mgonjwa)",
+            "label": "Umri wa mgonjwa",
             "type": "number"
         },
         "current_age_months": {
@@ -53,7 +53,7 @@
             "type": "textarea"
         },
         "note": {
-            "label": "Other Patient Notes: (Maelezo mengine husika)",
+            "label": "Maelezo mengine husika",
             "type": "textarea"
         }
     }

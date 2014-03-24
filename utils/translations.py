@@ -11,8 +11,11 @@ with open(args.input) as file:
 	reports = json.load(file)
 
 out = []
+rn = ""
+
 for rk in reports:
 	if rk.startswith('report_'):
+		rn = rk
 		for r in reports[rk]['properties'].items():
 			#print r[1]
 
@@ -25,6 +28,8 @@ for rk in reports:
 			else: 
 				sw = ""
 
-			out.append({'key': r[0], 'sw': sw, 'en': en})
+			out.append({'key': rn+"."+r[0], 'sw': sw, 'en': en})
 
+print "// Begin LTFHC Reports"
 print json.dumps(out)
+print "// End LTFHC Reports"

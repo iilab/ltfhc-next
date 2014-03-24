@@ -2102,7 +2102,7 @@ exports.reports = function() {
                 "reprot_for_mothers_who_delivered": {
                     "line_number": "2",
                     "sw": "Taarifa ya Waliojifungua",
-                    "en": "Report for mothers who delivered",
+                    "en": "Report for mothers who delivered"
                 },
                 "those_who_delivered_at_the_clinic": {
                     "line_number": "2a",
@@ -2149,7 +2149,7 @@ exports.reports = function() {
                 "clinic_reports_on_different_methods_of_methods_of_delivery": {
                     "line_number": "3",
                     "sw": "Taarifa ya njia za kujifungua kutoka vituo vya kutolea huduma za afya",
-                    "en": "Clinic reports on different methods of methods of delivery",
+                    "en": "Clinic reports on different methods of methods of delivery"
                 },
                 "normal_delivery_kw": {
                     "line_number": "3a",
@@ -2196,7 +2196,7 @@ exports.reports = function() {
                 "prenatal_problems": {
                     "line_number": "4",
                     "sw": "Matatizo kabla ya kujifungua",
-                    "en": "Prenatal problems",
+                    "en": "Prenatal problems"
                 },
                 "aph": {
                     "line_number": "4a",
@@ -2273,7 +2273,7 @@ exports.reports = function() {
                 "complications_during_and_after_childbirth": {
                     "line_number": "6",
                     "sw": "Matatizo wakati na baada ya kujifungua",
-                    "en": "Complications during and after childbirth",
+                    "en": "Complications during and after childbirth"
                 },
                 "pph": {
                     "line_number": "6a",
@@ -2320,7 +2320,7 @@ exports.reports = function() {
                 "emoc": {
                     "line_number": "7",
                     "sw": "EmOC",
-                    "en": "EmOC",
+                    "en": "EmOC"
                 },
                 "given_iv_antibiotics": {
                     "line_number": "7a",
@@ -2361,7 +2361,7 @@ exports.reports = function() {
                 "pmtct": {
                     "line_number": "8",
                     "sw": "PMTCT",
-                    "en": "PMTCT",
+                    "en": "PMTCT"
                 },
                 "total_who_tested_hiv_anc": {
                     "line_number": "8a",
@@ -2450,7 +2450,7 @@ exports.reports = function() {
                 "9_children_single_birth": {
                     "line_number": "9",
                     "sw": "Watoto Waliozaliwa mmoja",
-                    "en": "Children single birth",
+                    "en": "Children single birth"
                 },
                 "9a_total_children_born_alive": {
                     "line_number": "9a",
