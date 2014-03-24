@@ -1,0 +1,12 @@
+{ 
+  "name": "emr-tests",
+  "version": "0.4.0",
+  "author": "Jun Matsushita <tech@iilab.org>",
+  "description": "a behavior driven test suite for EMR",
+  "dependencies" : {
+	"exec": "latest",
+    "underscore": "latest",
+ 	"zombie": "latest",
+    "cucumber": "latest"
+  }
+}

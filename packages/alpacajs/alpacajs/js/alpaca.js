@@ -7149,7 +7149,6 @@ var equiv = function () {
                 "content": "error message"
             });
             $(targetDiv).on("shown.bs.popover", function() {
-                debugger;
                 $(this).css({
                     "border": "1px red solid",
                     "color": "red"
