@@ -1,13 +1,4 @@
-.. Electronic Medical Records documentation master file, created by
-   sphinx-quickstart on Sat Apr 12 18:35:46 2014.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-.. toctree::
-   :maxdepth: 2
-
-Electronic Medical Records documentation!
-=========================================
+# Electronic Medical Records documentation!
 
 The Electronic Medical Records system is a software and hardware system which can be deployed in ultra-rural areas. The system is piloted currently in Tanzania. The LTFHC EMR System fills several gaps in existing Healthcare solutions for ultra-rural areas:
  * It is a Medical Record system meant to be used by Community Health Workers. (Other solutions focus on reporting rather than Medical Records which is an integral part of ensuring quality health care delivery).
@@ -16,43 +7,33 @@ The Electronic Medical Records system is a software and hardware system which ca
 
 In addition, the EMR System's hardware components is currently based on off the shelf components, and iilab is aiming at developing a low cost solution using an open hardware approach. The software component of the system is available as open source.
 
-Features
---------
+## Features
 
 
 
-Installation
-------------
+## Installation
 
 Install EMR by running:
 
     install project
 
-Contribute
-----------
+## Contribute
 
 - Issue Tracker: github.com/$project/$project/issues
 - Source Code: github.com/$project/$project
 
-Support
--------
+## Support
 
 If you are having issues, please let us know.
 We have a mailing list located at: project@google-groups.com
 
-License
--------
+## License
 
 The project is licensed under the BSD license.
 
 Contents:
 
-
-
-
-
-Indices and tables
-==================
+# Indices and tables
 
 * :ref:`genindex`
 * :ref:`modindex`

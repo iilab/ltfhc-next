@@ -1,0 +1,14 @@
+site_name: Electronic Medical Records
+site_url: http://electronic-medical-records.readthedocs.org
+site_description: Software and Hardware System for Medical Records in Ultra Rural Areas.
+
+repo_url: https://github.com/iilab/ltfhc-next
+
+pages:
+- ['index.md', 'Home']
+- ['user-guide/documentation.md', 'User Guide', 'Documentation']
+- ['misc/USB_install_instructions.md', 'Miscellaneous', 'USB Installation']
+- ['misc/reports_schema.md', 'User Guide', 'Configuration']
+- ['misc/csvtojsonwithkanso.md', 'About', 'License']
+theme: readthedocs
+copyright: Copyright &copy; 2014, <a href="https://floatingclinic.org">Lake Tanganyika Floating Health Clinic</a> - Developed by <a href="https://iilab.org">iilab</a>.
