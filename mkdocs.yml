@@ -6,9 +6,11 @@ repo_url: https://github.com/iilab/ltfhc-next
 
 pages:
 - ['index.md', 'Home']
-- ['user-guide/documentation.md', 'User Guide', 'Documentation']
+- ['documentation.md', 'Documentation']
 - ['misc/USB_install_instructions.md', 'Miscellaneous', 'USB Installation']
-- ['misc/reports_schema.md', 'User Guide', 'Configuration']
-- ['misc/csvtojsonwithkanso.md', 'About', 'License']
-theme: readthedocs
+- ['misc/reports_schema.md', 'Miscellaneous', 'Configuration']
+- ['misc/csvtojsonwithkanso.md', 'Miscellaneous', 'License']
+
+theme: rtd
+theme_dir: 'docs/rtd'
 copyright: Copyright &copy; 2014, <a href="https://floatingclinic.org">Lake Tanganyika Floating Health Clinic</a> - Developed by <a href="https://iilab.org">iilab</a>.
