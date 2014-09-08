@@ -178,6 +178,21 @@ body {
     }
 }
 
+@clinicTextColor: lighten(@gray-dark, 10%);
+.clinic {
+    font-weight: bold;
+    color: @versionTextColor;
+    font-size: @font-size-small;
+    line-height: 40px;
+    text-shadow: 0 1px 0 darken(@gray-dark, 15%);
+    &:before {
+        content:"-"
+    }
+    &:hover {
+        color: lighten(@clinicTextColor, 5%);
+        text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    }
+}
 #docs-body {
   padding: 20px;
   h2, h3, h4 {
