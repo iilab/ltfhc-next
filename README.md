@@ -1,6 +1,22 @@
 # LTFHC EMR System
 
-You need to have CouchDB installed somewhere (either local or remote).
+
+## Development
+
+Prerequisite
+  * Vagrant 1.6.3+
+  * Ansible 1.7+
+
+To install the development environment run.
+
+  * ```git clone https://github.com/iilab/ltfhc-next.git```
+  * ```cd ltfhc-next```
+  * ```vagrant up``` (The provisioning will take a long time as it is building couch from source currently.)
+  * (```vagrant provision```) Only necessary if you modify the playbook or need to provisioning an existing and running vagrant VM.
+
+Now you should be able to see Futon at ```http://localhost:5984/_utils```
+
+Create a user account click "Fix this" to end the Admin Party (bottom right of Futon)
 
 We use [Kanso](http://kan.so) for dependency management and installation of this CouchApp.
 
@@ -33,7 +49,7 @@ cd ltfhc-next
 kanso install
 ```
 
-You need to work in a personal dev replica. Once you have your credentials edit your .kansorc to be able to push by default to your personal working dev replica. Replace USER and PASS (make sure to push by default to emr__dev__USER)
+You can use the credentials you created above after ending the Admin Party. Edit your .kansorc to be able to push by default to your personal working dev replica. Replace USER and PASS (make sure to push by default to emr__dev__USER)
 
 *.kansorc*
 
