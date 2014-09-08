@@ -1,0 +1,12 @@
+[Unit]
+Description=LTFHC Couch Service
+
+After=docker.service
+Requires=docker.service
+
+[Service]
+ExecStart=/bin/bash -c '/usr/bin/docker start -a couch || /usr/bin/docker run -i -t -d --privileged -p 80:5984 --name couch iilab/ltfhc-couch'
+ExecStop=/usr/bin/docker kill couch
+
+[Install]
+WantedBy=multi-user.target
