@@ -87,8 +87,8 @@
 		var tbody = $('<tbody/>');
 		_.each(data, function(doc) {
 			var tr
-			//if (doc.header) {
-            if (false) {
+			if (doc.header) {
+//            if (false) {
 				var heading = new Array();
 				for (var idx in columns) {
 					heading[idx] = {}
