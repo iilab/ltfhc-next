@@ -1,0 +1,10 @@
+{
+    "name" : "emr-country-preprocessor",
+    "version" : "0.0.1",
+    "categories" : ["build-tools"],
+    "description" : "Copies relevant country reports source files",
+    "url": "none",
+    "preprocessors": {
+          "compile": "emr-country-preprocessor"
+    }
+}
