@@ -10,13 +10,21 @@ Prerequisite
 To install the development environment run.
 
   * ```git clone https://github.com/iilab/ltfhc-next.git```
+  * ```git clone https://github.com/iilab/ltfhc-config.git```
   * ```cd ltfhc-next```
   * ```vagrant up``` (The provisioning will take a long time as it is building couch from source currently.)
   * (```vagrant provision```) Only necessary if you modify the playbook or need to provisioning an existing and running vagrant VM.
+    * If you have made targeted modifications in the playbook and want to only run specific tags then use ```ansible-playbook -i system/inventory --private-key=~/.vagrant.d/insecure_private_key -u vagrant ../ltfhc-config/playbook/site.yml --tags="SOMETAGS"```
 
-Now you should be able to see Futon at ```http://localhost:5984/_utils```
+To be able to run couchdb on https://www.health :
+ - Add 127.0.0.1 www.health to /etc/hosts
+ - sudo ipfw add 101 fwd 127.0.0.1,8443 tcp from any to me 443
+
+Now you should be able to see Futon at ```https://www.health/_utils```
 
 Create a user account click "Fix this" to end the Admin Party (bottom right of Futon)
+
+## Deploying the EMR app
 
 We use [Kanso](http://kan.so) for dependency management and installation of this CouchApp.
 
