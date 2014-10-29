@@ -1,4 +1,4 @@
 [node]
-default ansible_ssh_host=127.0.0.1 ansible_ssh_port=2200 ltfhc_zone=bujumbura ltfhc_type=district ltfhc_country=cd
+default ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222 ltfhc_zone=dev ltfhc_type=dev ltfhc_country=cd
 
 

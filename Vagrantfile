@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "ffuenf/debian-7.6.0-amd64"
+  config.vm.box = "ffuenf/debian-7.7.0-amd64"
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "../ltfhc-config/playbook/site.yml"
     ansible.tags = ["vagrant"]
