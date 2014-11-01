@@ -18,6 +18,8 @@ To install the development environment run.
 
 You should be able to access the application at ```https://localhost:8443``` with the username ```demo``` and the password ```demo```
 
+To access Futon use ```https://127.0.0.1:8443/_utils/```
+
 ## Optional steps
 
 To be able to run couchdb on https://www.health :
