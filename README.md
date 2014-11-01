@@ -16,6 +16,10 @@ To install the development environment run.
   * (```vagrant provision```) Only necessary if you modify the playbook or need to provisioning an existing and running vagrant VM.
     * If you have made targeted modifications in the playbook and want to only run specific tags then use ```ansible-playbook -i system/inventory --private-key=~/.vagrant.d/insecure_private_key -u vagrant ../ltfhc-config/playbook/site.yml --tags="SOMETAGS"```
 
+You should be able to access the application at ```https://localhost:8443``` with the username ```demo``` and the password ```demo```
+
+## Optional steps
+
 To be able to run couchdb on https://www.health :
  - Add 127.0.0.1 www.health to /etc/hosts
  - sudo ipfw add 101 fwd 127.0.0.1,8443 tcp from any to me 443
