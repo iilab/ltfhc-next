@@ -21,3 +21,5 @@ erl_crash.dump
 *.sublime-workspace
 .DS_Store
 
+/couchdb/data
+/couchdb/logs
