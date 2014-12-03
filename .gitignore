@@ -24,3 +24,4 @@ erl_crash.dump
 /couchdb/data
 /couchdb/logs
 /kanso.json
+/node_modules
