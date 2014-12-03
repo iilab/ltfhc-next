@@ -157,4 +157,4 @@ You can now access the clinic couchapp at http://clinic.ltfhc.dev:5985
 
 ### Push clinic data
 
-    $ kanso upload data http://demo:demo@localhost:5985/emr_clinic
+    $ kanso upload data http://demo:demo@localhost:5985/emr_clinic --skip
