@@ -145,12 +145,16 @@ username: demo, password: demo
 
 ### Push district couchapp
 
+    $ rm kanso.json
+    $ ln -s kanso.json.dev-district ./kanso.json
     $ kanso push http://demo:demo@localhost:5985/emr_district
 
 You can now access the district couchapp at http://district.ltfhc.dev:5985
 
 ### Push clinic couchapp
 
+    $ rm kanso.json
+    $ ln -s kanso.json.dev-clinic ./kanso.json
     $ kanso push http://demo:demo@localhost:5985/emr_clinic
 
 You can now access the clinic couchapp at http://clinic.ltfhc.dev:5985
