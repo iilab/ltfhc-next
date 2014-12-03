@@ -1,0 +1,6 @@
+{
+    "_id": "_local/instance_settings",
+    "type": "prod",
+    "db": "emr",
+    "clinic": "kirando"
+}
