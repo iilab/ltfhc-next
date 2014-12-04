@@ -1,0 +1,60 @@
+{
+    "fields": {
+        "first_name": {
+            "label": "Prénom:"
+        },
+        "last_name": {
+            "label": "Nom de famille:"
+        },
+        "gender": {
+            "label": "Sexe",
+            "type": "select",
+            "removeDefaultNone": true
+        },
+        "clinic_id": {
+            "label": "Identifiant au Centre de Santé"
+        },
+        "government_id": {
+            "label": "Identifiant Gouvernemental"
+        },
+        "hiv_id": {
+            "label": "Identifiant SIDA"
+        },
+        "phone": {
+            "label": "Numéro de téléphone",
+            "type": "number"
+        },
+        "hometown": {
+            "label": "Lieu de naissance"
+        },
+        "village": {
+            "label": "Lieu d'habitation"
+        },
+        "date_age": {
+            "label": "Date de naissance",
+            "type": "date",
+            "dateFormat": "yyyy-mm-dd",
+            "datepicker": {
+                "hideIfNoPrevNextType": true,
+                "yearRange": "1900:+0",
+                "changeYear": true,
+                "changeMonth": true
+            }
+        },
+        "current_age_years": {
+            "label": "Age (années)",
+            "type": "number"
+        },
+        "current_age_months": {
+            "type": "hidden"
+        },
+        "medication_allergies": {
+            "label": "Allergies aux médicaments:",
+            "type": "textarea"
+        },
+        "note": {
+            "label": "Notes sur le patient",
+            "type": "textarea"
+        }
+    }
+}
