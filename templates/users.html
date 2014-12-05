@@ -7,7 +7,7 @@
           <td class="first" colspan="2">User ID</td>
           <td>Name</td>
           <td>User Type</td>
-          <td>Facility</td>
+          <td>District</td>
           <td>Actions</td>
         </tr>
       </thead>
@@ -39,20 +39,32 @@
     <label for="type">User Type</label>
     <select id="type">
       <option value=""></option>
-      <optgroup label="People">
-        <option value="national-manager">Full access</option>
-        <option value="district-manager">Restricted to group of facilities</option>
+      <!--<optgroup label="People">-->
+        <option value="national-manager">Clinic</option>
+        <option value="district-manager">District</option>
         <!--option value="facility-manager">Restricted to individual facility</option-->
-        <option value="data-entry">Data entry - access to Muvuku only</option>
-      </optgroup>
+        <!--<option value="data-entry">Data entry - access to Muvuku only</option>-->
+      <!--</optgroup>-->
+      <!--
       <optgroup label="Computers">
         <option value="analytics">Analytics - Data export via URL only</option>
         <option value="gateway">Gateway - Limited access user for SMSSync</option>
       </optgroup>
+      -->
     </select>
 
+    <label for="district">District</label>
+    <select id="district">
+      <option value=""></option>
+      {#districts}
+      <option value="{name}">{name}</option>
+      {/districts}
+    </select>
+
+    <!--
     <label for="facility">Facility</label>
     <div id="facility"></div>
+    -->
 
     <label for="language">Language</label>
     <select id="language">
