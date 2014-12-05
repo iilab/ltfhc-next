@@ -34,15 +34,6 @@
 				</div>
 				<nav id="topnav" class="navbar-collapse" role="navigation">
 	 			  <ul class="nav navbar-nav navbar-right">
-            {?info.isDistrict}
-              {#info.clinics}
-                <li class="reports">
-                  <a href="{baseURL}/">
-                    <i class="icon icon-group"></i> {name}
-                  </a>
-                </li>
-              {/info.clinics}
-            {/info.isDistrict}
             {?info.isClinic}
               <li class="patients">
                 <a href="{baseURL}/">

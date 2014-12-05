@@ -4,9 +4,6 @@
 	"description": "Medical Record for LTFHC",
 	"zone":  "dev",
 	"type": "district",
-	"clinics": [
-        {"name": "Kimena"}
-    ],
 	"country": "cd",
 	"attachments": ["static", "schema"],
 	"load": "lib/app",
