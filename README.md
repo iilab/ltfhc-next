@@ -173,3 +173,6 @@ You can now access the clinic couchapp at http://clinic.ltfhc.dev:5985
 Create a user of type 'District' in the user administration interface,
 login to the district couchapp and click the tab for the clinic. To add
 more clinics to the district or add more distrits edit the lib/districts.js file.
+
+You'll need to approve a report in the clinic instance (and make sure you
+have done the above replication setup).
