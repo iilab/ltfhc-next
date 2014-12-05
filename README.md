@@ -167,3 +167,9 @@ You can now access the clinic couchapp at http://clinic.ltfhc.dev:5985
 
     $ ./utils/setup_clinic_to_district_replication.js http://demo:demo@localhost:5985 emr_clinic emr_district
 
+
+### To view reports in district instance
+
+Create a user of type 'District' in the user administration interface,
+login to the district couchapp and click the tab for the clinic. To add
+more clinics to the district or add more distrits edit the lib/districts.js file.
