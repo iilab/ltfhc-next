@@ -1,7 +1,7 @@
 {
     "fields": {
         "last_menstrual_period": {
-            "label": "Date of Last Menstrual Period: ",
+            "label": "Date des dernières règles:",
             "type": "date",
             "dateFormat": "yyyy-mm-dd",
             "datepicker": {
@@ -12,7 +12,7 @@
             }
         },
         "due_date": {
-            "label": "Expected Due Date: ",
+            "label": "Date de naissance prévue:",
             "type": "date",
             "dateFormat": "yyyy-mm-dd",
             "datepicker": {
@@ -26,15 +26,15 @@
             "type": "hidden"
         },
         "current_gestationalage_weeks": {
-            "label": "Approximate Estimated Gestational Age (weeks):",
+            "label": "Age de gestation approximatif estimé (en semaine):",
             "type": "select"
         },
         "number_pregnancy": {
-            "label": "Pregnancy Number: ",
+            "label": "Nombre de grossesses:",
             "type": "select"
         },
         "pregnancy_test": {
-            "label": "Positive Pregnancy Test?",
+            "label": "Test de grossesse positif",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -44,38 +44,38 @@
             "removeDefaultNone": true
         },
         "number_full_term_delivery": {
-            "label": "Number of Previous Full Term Deliveries: ",
+            "label": "Nombre d'accouchements précédents menés à terme",
             "type": "select"
         },
         "number_pre_term_delivery": {
-            "label": "Number of Previous Preterm Deliveries: ",
+            "label": "Nombre d'accouchements précédents prématurés",
             "type": "select"
         },
         "number_miscarriage_abortion": {
-            "label": "Number of Previous Miscarriages/Abortions: ",
+            "label": "Nombre de fausses couches/avortements précédents",
             "type": "select"
         },
         "number_live_birth": {
-            "label": "Number of Previous Live Births ",
+            "label": "Nombre précédents d'enfants nés vivants",
             "type": "select"
         },
         "weight_heaviest_infant": {
-            "label": "Approximate Weight of Heaviest Infant Previously Delivered: ",
+            "label": "Poids approximatif de l'enfant né le plus lourd précedemment",
             "type": "select"
         },
         "pregnancy_complications": {
-            "label": "Complications in Previous Pregnancies: ",
+            "label": "Complications lors de grossesses précedentes",
             "type": "checkbox"
         },
         "other_pregnancy_complications": {
-            "label": "If Other Pregnancy Complication, Please Describe:"
+            "label": "En cas d'autres complications de la grossesse, veillez décrire"
         },
         "pregnancy_diseases": {
-            "label": "Diseases:",
+            "label": "Maladies:",
             "type": "checkbox"
         },
         "std_status": {
-            "label": "Infected with STD",
+            "label": "Infecte par une MST",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -85,7 +85,7 @@
             "removeDefaultNone": true
         },
         "std_treatment": {
-            "label": "Being treated for STD",
+            "label": "En traitement pour MST",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -95,13 +95,13 @@
             "removeDefaultNone": true
         },
         "hiv_status_prior_firstvisit": {
-            "label": "HIV Status prior to first visit ",
+            "label": "Statut VIH avant la première visite",
             "type": "radio",
             "removeDefaultNone": true
 
         },
         "tested_hiv_firstvisit": {
-            "label": "Tested for HIV on first visit?",
+            "label": "Testé VIH lors de la premiere visite?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -111,13 +111,13 @@
             "removeDefaultNone": true
         },
         "first_hiv_status": {
-            "label": "Result if tested for HIV on first visit",
+            "label": "Résultat du test VIH, en cas de test lors de la première visite",
             "type": "radio",
             "removeDefaultNone": true
 
         },
         "second_hiv_test": {
-            "label": "Tested positive by second HIV test?",
+            "label": "Testé positif lors du second test VIH?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -127,7 +127,7 @@
             "removeDefaultNone": true
         },
         "refer_ctc": {
-            "label": "Referred to CTC?",
+            "label": "Reféré au Centre pour traitement du VIH?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -137,7 +137,7 @@
             "removeDefaultNone": true
         },
         "partner_hiv": {
-            "label": "Partner tested for HIV in clinic?",
+            "label": "Partenaire testé pour le VIH au centre de santé",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -147,7 +147,7 @@
             "removeDefaultNone": true
         },
         "partner_positive": {
-            "label": "Partner tested positive for HIV?",
+            "label": "Partenaire testé positif pour le VIH?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -157,7 +157,7 @@
             "removeDefaultNone": true
         },
         "discordant_couple": {
-            "label": "Discordant couple?",
+            "label": "Couple discordant? (le résultat VIH du couple est différent)",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -167,7 +167,7 @@
             "removeDefaultNone": true
         },
         "combo_drugs": {
-            "label": "Patient received PMCTC combo drugs?",
+            "label": "Recoit des médicaments VIH pendant la grossesse (PMCTC)?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -177,7 +177,7 @@
             "removeDefaultNone": true
         },
         "art_drugs": {
-            "label": "Patient using ART?",
+            "label": "Prend de l'ART?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -187,7 +187,7 @@
             "removeDefaultNone": true
         },
         "ctx_given": {
-            "label": "Patient given CTX?",
+            "label": "Prend du CTX?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -197,7 +197,7 @@
             "removeDefaultNone": true
         },
         "counsel_feeding": {
-            "label": "Counseled on how to feed the baby?",
+            "label": "Conseillé sur l'alimentation du nourisson?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -207,7 +207,7 @@
             "removeDefaultNone": true
         },
         "syphillus_test": {
-            "label": "Tested for Syphillus",
+            "label": "Testé pour la Syphillis",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -217,7 +217,7 @@
             "removeDefaultNone": true
         },
         "syphillus_status": {
-            "label": "Infected with Syphillus",
+            "label": "Infecté par la Syphillis",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -227,7 +227,7 @@
             "removeDefaultNone": true
         },
         "syphillus_treatment": {
-            "label": "Being treated for Syphillus",
+            "label": "En traitement pour la Syphillis",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -237,7 +237,7 @@
             "removeDefaultNone": true
         },
         "partner_std": {
-            "label": "Partner infected with STD",
+            "label": "Partenaire infecté par MST",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -247,7 +247,7 @@
             "removeDefaultNone": true
         },
         "partner_std_treatment": {
-            "label": "Partner being treated for STD",
+            "label": "Partenaire en traitement pour MST",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -257,7 +257,7 @@
             "removeDefaultNone": true
         },
         "partner_syphillus_test": {
-            "label": "Partner infected with Syphillus",
+            "label": "Partenaire testé pour la Syphillis",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -267,7 +267,7 @@
             "removeDefaultNone": true
         },
         "partner_syphillus_status": {
-            "label": "Partner infected with Syphillus",
+            "label": "Partenaire infecté par la Syphillis",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -277,7 +277,7 @@
             "removeDefaultNone": true
         },
         "partner_syphillus_treatment": {
-            "label": "Partner being treated for Syphillus",
+            "label": "Partenaire en traitement pour la Syphillis",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -287,7 +287,7 @@
             "removeDefaultNone": true
         },
         "malaria_test": {
-            "label": "Tested for malaria?",
+            "label": "Testé pour la Malaria?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -297,7 +297,7 @@
             "removeDefaultNone": true
         },
         "malar_pos": {
-            "label": "Tested positive for malaria?",
+            "label": "Testé positif pour la Malaria?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -307,7 +307,7 @@
             "removeDefaultNone": true
         },
         "bednet_voucher": {
-            "label": "Given voucher for free bednet?",
+            "label": "Donné coupon pour moustiquaire gratuite?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -317,7 +317,7 @@
             "removeDefaultNone": true
         },
         "ipt1": {
-            "label": "Given IPT1?",
+            "label": "Prend IPT1?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -327,7 +327,7 @@
             "removeDefaultNone": true
         },
         "ipt2": {
-            "label": "Given IPT2?",
+            "label": "Prend IPT2?",
             "type": "radio",
             "enum": [
                 "Yes",
@@ -337,19 +337,19 @@
             "removeDefaultNone": true
         },
         "bp_systolic": {
-            "label": "BP Systolic ",
+            "label": "Pression sanguine systolique ",
             "type": "number"
         },
         "bp_diastolic": {
-            "label": "BP Diastolic ",
+            "label": "Pression sanguine diastolique ",
             "type": "number"
         },
         "anemia_severe": {
-            "label": "Severe Anemia ",
+            "label": "Anémie sévère",
             "type": "select"
         },
         "symptoms": {
-            "label": "Symptoms: ",
+            "label": "Symptomes:",
             "type": "checkbox"
         },
         "tt2plus_vaccine": {

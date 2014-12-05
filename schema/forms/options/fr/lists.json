@@ -1,0 +1,767 @@
+{
+    "fields": {
+        "anc_symptoms": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "Douleurs abdominales",
+                "Vision floue",
+                "Constipation",
+                "Contractions",
+                "Diarrhée",
+                "Fièvre",
+                "Maux de tete",
+                "Absence de mouvement foetal",
+                "Nausées ou vomissements",
+                "Saignements post-coital",
+                "Saignement vaginal",
+                "Vaginal Leakage of Fluid",
+                "Douleurs vaginales"
+            ]
+        },
+        "anemia_severities": {
+            "type": "select",
+            "optionLabels": [
+                "<8.5g/dl",
+                ">8.5g/dl"
+            ]
+        },
+        "birth_comp": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "Eclampsia",
+                "Recu transfusion sanguine",
+                "Recu antibiotiques IV",
+                "Recu anticonvulsions IV",
+                "Recu uterotonics",
+                "MVA necessaire",
+                "Obstruction du travail",
+                "Autre",
+                "Placenta manuellement enlevé",
+                "PPH",
+                "Pre-eclapmsia",
+                "Placenta retenu",
+                "Rupture de l'uterus",
+                "Sepsis/infection",
+                "Déchirure (troisième degré)"
+            ]
+        },
+        "cervical_symptoms": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "Décharge Vaginale",
+                "Saignement Post-Coital"
+            ]
+        },
+        "condom_quantities": {
+            "type": "select",
+            "optionLabels": [
+                "Non Applicable",
+                "1 à 10",
+                "11 à 20",
+                "21 à 30",
+                "31 à 40",
+                "41 à 50",
+                "50+"
+            ]
+        },
+        "contraceptive_sources": {
+            "type": "select",
+            "optionLabels": [
+                "Centre de santé",
+                "Distribution communautaire (CBD)",
+                "Campagne de sensibilisation",
+                "Les deux"
+            ]
+        },
+        "contraceptives": {
+            "type": "select",
+            "optionLabels": [
+                "Préservatifs",
+                "Depo Provera",
+                "Stérilet",
+                "Méthodes naturelles",
+                "Autres implants",
+                "Pilulle",
+                "Enlèvement du stérilet",
+                "Stérilisation",
+                "Autres"
+
+            ]
+        },
+        "delivery_mode": {
+            "type": "select",
+            "optionLabels": [
+                "Episiotomie",
+                "Césarienne",
+                "Vide",
+                "Vaginal",
+                "Other"
+            ]
+        },
+        "delivery_type": {
+            "type": "select",
+            "optionLabels": [
+                "Accouchement au domicile",
+                "Accouchement par une sage-femme traditionelle",
+                "Accouchement au centre de santé",
+                "Accouchement en route vers le centre de santé",
+                "Accouchement par un pratiquant qualifié"
+            ]
+        },
+        "depoprovera_quantities": {
+            "type": "select",
+            "optionLabels": [
+                "Dose pour 3 mois",
+                "Dose pour 6 mois"
+            ]
+        },
+        "diseases": {
+            "type": "select",
+            "optionLabels": [
+                "Avortement",
+                "Paralysie flacide aigue",
+                "Infection respiratoire aigue",
+                "Anémie modérée ",
+                "Anémie sévère",
+                "Asphyxie à la naissance",
+                "Blood Slide positive",
+                "Asthme bronchial",
+                "Brulure",
+                "Maladie cardiovasculaire, autre",
+                "Caries",
+                "Cataracte",
+                "Cerebral palsy",
+                "Cholera",
+                "Clinique (Pas de test)",
+                "Condition dentaire, autre",
+                "Soin dentaire urgent",
+                "Diabetes Mellitus",
+                "Autre diagnostic",
+                "Diarrhée, Aigue (moins de 14 jours)",
+                "Diarrhée, Chronique (plus de 14 jours)",
+                "Dysentrie",
+                "Infection de l'oreille, aigue",
+                "Infection de l'oreille, chronique",
+                "Urgence, autre",
+                "Epilepsie",
+                "Maladie de l'oeil, non-infectieuse",
+                "Infection de l'oeil",
+                "Fractures / Dislocations",
+                "Infection fongale, (autre que la peau)",
+                "Maladie GIT, autre non-infectieuse",
+                "Maladie gynecologique, autre",
+                "Infection VIH, symptomatique",
+                "Positif HIV",
+                "Hypertension",
+                "Symptomes mal définis (pas de diagnostique)",
+                "En grossesse",
+                "Influenza",
+                "Vers Intestinaux",
+                "Keratoconjuctivitis",
+                "Kwashiokor",
+                "Lèpre",
+                "Naissance prématurée, poids insuffisant",
+                "Malaria",
+                "Marasmic Kwashiokor",
+                "Marasmus",
+                "Measles",
+                "Meningite",
+                "Conditions psychologique, autre",
+                "Malnutrition modérée",
+                "mRDT postivie",
+                "Sepsis néonatale",
+                "Tetanos néonatale",
+                "Neoplasms",
+                "Névrose",
+                "Onchocerciasis",
+                "Osteomyelitis",
+                "Autre désordre nutritionels",
+                "Peptic Ulcers",
+                "Periodontal Diseases",
+                "Peste",
+                "Pneumonie, non-sévère",
+                "Pneumonie, sévère",
+                "Enpoisonnement",
+                "Complications de la grossesse",
+                "Psychose",
+                "Rage/Morsure rabique suspecte",
+                "Relapsing Fever (Louse borne typhus)",
+                "Fièvre rhumatique",
+                "Rhumatismes et maladie articulaires",
+                "Accident de la route",
+                "Schistosomiasis",
+                "Maladie sexuellement transmissible, autre",
+                "Sickle cell Disease",
+                "Maladie de la peau, non-infectieuse",
+                "Infection de la peau, fongal",
+                "Infection de la peau, non-fongal",
+                "Morsure de serpent et d'insectes",
+                "MST Décharge génitale",
+                "STI Ulcère genital",
+                "STI Inflammation pelvique",
+                "Condition chirurgicale, autre",
+                "Maladie de la thyroide",
+                "Trachoma",
+                "Trypanosomiasis",
+                "Tuberculose",
+                "Typhoide",
+                "Upper Respiratory Infections (Pharyngitis, Tonsillitis, Rhinitis)",
+                "Infection du canal urinaire",
+                "Fièvres hémorrhagique virale",
+                "Carence en vitamine A",
+                "Waliopewa Rufaa",
+                "Fièvre jaune"
+            ]
+        },
+        "drug_quantities": {
+            "type": "select",
+            "optionLabels": [
+                "Not Applicable",
+                "1 Month Supply",
+                "2 Month Supply",
+                "3 Month Supply",
+                "4 Month Supply",
+                "5 Month Supply",
+                "6 Month Supply",
+                "7 Month Supply",
+                "8 Month Supply",
+                "9 Month Supply",
+                "10 Month Supply",
+                "11 Month Supply",
+                "12 Month Supply",
+                "More Than One Year Supply"
+            ]
+        },
+        "fertility_desires": {
+            "type": "select",
+            "optionLabels": [
+                "Desires Pregnancy Now",
+                "Desires Contraception Now",
+                "Desires Future Pregnancy"
+            ]
+        },
+        "fetal_heart_rates": {
+            "type": "select",
+            "optionLabels": [
+                "Not Checked",
+                "Checked, But Unable To Hear",
+                "110s",
+                "120s",
+                "130s",
+                "140s",
+                "150s",
+                "160s",
+                "170s",
+                "180s"
+            ]
+        },
+        "fetal_movements": {
+            "type": "select",
+            "optionLabels": [
+                "Too Early To Be Felt",
+                "Felt By Mother",
+                "Felt By Mother, Noted to be Abnormal",
+                "Not Felt By Mother"
+            ]
+        },
+        "fetal_stations": {
+            "type": "select",
+            "optionLabels": [
+                "Not Examined",
+                "High/Unengaged",
+                "-3",
+                "-2",
+                "-1",
+                "0",
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        "genders": {
+            "type": "select",
+            "optionLabels": [
+                "Féminin",
+                "Masculin",
+                "Inconnu"
+            ]
+        },
+        "histories": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "Cancer",
+                "Cholera",
+                "Diabetes",
+                "Hypertension",
+                "Leprosy",
+                "Malaria",
+                "Meningitis",
+                "Sickle Cell",
+                "Yellow Fever",
+                "Other"
+            ]
+        },
+        "hiv_diagnosis_times": {
+            "type": "select",
+            "optionLabels": [
+                "Inconnu",
+                "Less Than 2 Month After Birth",
+                "Between 2-18 Months After Birth",
+                "More Than 18 Months After Birth"
+            ]
+        },
+        "hiv_risks": {
+            "type": "select",
+            "optionLabels": [
+                "Patient Known to Have HIV",
+                "Partner or Previous Partner Known to Have HIV",
+                "History of Sexual Assult",
+                "Desires HIV Testing"
+            ]
+        },
+        "hiv_statuses": {
+            "type": "radio",
+            "optionLabels": [
+                "Positive",
+                "Negative",
+                "Inconnu"
+            ]
+        },
+        "immunization_effects": {
+            "type": "select",
+            "optionLabels": [
+                "Fever",
+                "Nausea or Vomiting",
+                "Rash",
+                "Shortness of Breath",
+                "Swelling at Injection Site",
+                "Tongue Swelling",
+                "Other"
+            ]
+        },
+        "immunizations": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "BCG",
+                "OPV-0",
+                "OPV-1",
+                "OPV-2",
+                "OPV-3",
+                "DTP-HB",
+                "DPT 1",
+                "DPT 2",
+                "DPT 3",
+                "Measles",
+                "PENTA",
+                "Tentanus Toxoid 1",
+                "Tentanus Toxoid 2",
+                "Tentanus Toxoid 3",
+                "Tentanus Toxoid 4",
+                "Tentanus Toxoid 5",
+                "Vitamin A",
+                "Other"
+            ]
+        },
+        "immunizations_postnatal": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "BCG",
+                "OPV-0"
+            ]
+        },
+        "infant_weights": {
+            "type": "select",
+            "optionLabels": [
+                "No Previous Delivery",
+                "Inconnu",
+                "<1kg",
+                "1kg",
+                "1.5kg",
+                "2kg",
+                "2.5kg",
+                "3kg",
+                "3.5kg",
+                "4kg+"
+            ]
+        },
+        "injuries": {
+            "type": "select",
+            "optionLabels": [
+                "Animal Bite (No rabies)",
+                "Animal Bite (suspected rabies)",
+                "Burn",
+                "Concussion / Head Injury",
+                "Crush injury",
+                "Fracture",
+                "Laceration",
+                "Motor Vehicle Accident",
+                "Motorcycle Accident",
+                "Other"
+            ]
+        },
+        "injury_treatments": {
+            "type": "select",
+            "optionLabels": [
+                "Antibiotics",
+                "Antivenom",
+                "Blood Transfusion",
+                "Bone Setting/Cast",
+                "Surgery",
+                "Suture of Laceration",
+                "Topical Treatment of Burn",
+                "Wound Washout",
+                "Other"
+            ]
+        },
+        "leprosy_classifications": {
+            "type": "select",
+            "optionLabels": [
+                "MB (A)",
+                "MB (C)",
+                "PB (A)",
+                "PB (C)"
+            ]
+        },
+        "leprosy_diagnoses": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "TB",
+                "Leprosy"
+            ]
+        },
+        "leprosy_disabilities": {
+            "type": "select",
+            "optionLabels": [
+                "Grade 0",
+                "Grade 1",
+                "Grade 2"
+            ]
+        },
+        "leprosy_results": {
+            "type": "select",
+            "optionLabels": [
+                "Treatment completed",
+                "Died",
+                "Transferred out",
+                "Defaulter",
+                "Not applicable"
+            ]
+        },
+        "leprosy_statuses": {
+            "type": "select",
+            "optionLabels": [
+                "New Patient",
+                "Return after default",
+                "Relapse after MDT",
+                "Relapse after DDS/other"
+            ]
+        },
+        "marital_statuses": {
+            "type": "select",
+            "optionLabels": [
+                "Single",
+                "Married",
+                "Divorced",
+                "Separated",
+                "Widowed"
+            ]
+        },
+        "menses_regularity": {
+            "type": "select",
+            "optionLabels": [
+                "Irregular Menses",
+                "Regular Menses Monthly"
+            ]
+        },
+        "milk_types": {
+            "type": "select",
+            "optionLabels": [
+                "Mother's Milk ONLY",
+                "Mother's Milk + Formula",
+                "Mother's Milk + Other",
+                "Formula ONLY",
+                "Formula + Other",
+                "Other ONLY"
+            ]
+        },
+        "postnatal_child_diagnoses": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "Neonatal death",
+                "Septicemia",
+                "Severe anemia (Hb<10)",
+                "Skin infection",
+                "Umbilical cord infection"
+            ]
+        },
+        "postnatal_mother_diagnoses": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "Fistula",
+                "Gaping or infected perineum ",
+                "Mental disorder",
+                "Severe anemia (Hb<8.5)"
+            ]
+        },
+        "pregnancy_complications": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "None",
+                "Birth Asphyxia",
+                "Cesarean Section",
+                "Diabetes",
+                "Fetal Death",
+                "Forceps/Vacuum",
+                "Hemorrhage",
+                "Intra-uterine Infection",
+                "Neonatal Death",
+                "Neonatal Injury",
+                "Neonatal Sepsis",
+                "Neonatal Tetanus",
+                "Obstructed Labor",
+                "Seizure",
+                "Sepsis",
+                "Shoulder Dystocia",
+                "TB",
+                "Other"
+            ]
+        },
+        "pregnancy_diseases": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "Diabetes",
+                "Heart Disease",
+                "Tuberculosis"
+            ]
+        },
+        "prenatal_prob": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "Abortion complications",
+                "Anemia",
+                "APH",
+                "Eclampsia",
+                "Ectopic pregnancy ",
+                "High BP",
+                "HIV stage III or stage IV",
+                "HIV",
+                "Malaria",
+                "Pre-eclampsia",
+                "PROM",
+                "Other"
+            ]
+        },
+        "referral_locations": {
+            "type": "select",
+            "optionLabels": [
+                "Not Applicable",
+                "Antenatal Clinic",
+                "CTC",
+                "Immunization",
+                "Laboratory",
+                "Pharmacy",
+                "Reproductive Counseling",
+                "TB / Leprosy Department"
+            ]
+        },
+        "symptoms": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "Abdominal Pain",
+                "Body Aches",
+                "Chills",
+                "Cough",
+                "Diarrhea",
+                "Difficultly with Urination",
+                "Fever",
+                "Headache",
+                "Nausea or Vomiting",
+                "Night Sweats",
+                "Rash",
+                "Rigors",
+                "Shortness of Breath",
+                "Weakness",
+                "Weight Loss",
+                "Other"
+            ]
+        },
+        "tb_classifications": {
+            "type": "checkbox",
+            "optionLabels": [
+                "AFB+",
+                "AFB-",
+                "Extra-pulmonary"
+            ]
+        },
+        "tb_regimens": {
+            "type": "select",
+            "optionLabels": [
+                "2RHZE/4RH",
+                "2RHZ/4RH",
+                "2SRHZE/1RHZE/5RH3E3",
+                "2SRHZE/1RHZE/5RHE",
+                "2RHZE/6EH",
+                "Health facility DOT",
+                "Home-based DOT"
+            ]
+        },
+        "water_sodium_severities": {
+            "type": "select",
+            "optionLabels": [
+                "Severe",
+                "Mild",
+                "Uncertain"
+            ]
+        },
+        "one_to_20_plus": {
+            "type": "select",
+            "optionLabels": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20+"
+            ]
+        },
+        "one_to_42_plus": {
+            "type": "select",
+            "optionLabels": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42+"
+            ]
+        },
+        "breast_symptoms": {
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+                "Lump",
+                "Pain",
+                "Discharge",
+                "Ulcer"
+            ]
+        },
+        "fundal_heights": {
+            "type": "select",
+            "optionLabels": [
+                "too early to measure",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+            ]
+        },
+        "cervical_dilations": {
+            "type": "select",
+            "optionLabels": [
+                "not examined",
+                "closed",
+                "finger tip",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ]
+        }
+    }
+}
