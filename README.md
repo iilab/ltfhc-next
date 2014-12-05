@@ -162,3 +162,8 @@ You can now access the clinic couchapp at http://clinic.ltfhc.dev:5985
 ### Push clinic data
 
     $ kanso upload data http://demo:demo@localhost:5985/emr_clinic --skip
+
+### Setup replication of approved reports from clinic instance to district
+
+    $ ./utils/setup_clinic_to_district_replication.js http://demo:demo@localhost:5985 emr_clinic emr_district
+
