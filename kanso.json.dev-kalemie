@@ -2,9 +2,29 @@
 	"name": "emr",
 	"version": "0.4.2",
 	"description": "Medical Record for LTFHC",
-	"clinic": "kimena",
-	"zone":  "dev",
-	"type": "clinic",
+	"zone":  "kalemie",
+	"type": "district",
+	"zones": {
+		"kalemie": [
+			{
+				"name": "katondo"
+			},
+			{
+				"name": "kimena"
+			},
+			{
+				"name": "katombo"
+			}
+		],
+        "nyemba": [
+			{
+				"name": "kitoke"
+			},
+			{
+				"name": "wimbi"
+			}
+		]	
+    },
 	"country": "cd",
 	"attachments": ["static", "schema"],
 	"load": "lib/app",
