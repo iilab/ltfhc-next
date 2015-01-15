@@ -991,8 +991,15 @@
 
 		help = '<div class="spreadsheet-help">' + '<i class="icon-question-sign"></i>' + '<ul>' + '<li><b>Double click</b> or enter key to edit a cell.</li>' + '<li><b>Enter</b> key to save.</li>' + '<li><b>Escape</b> key for undo.</li>' + '<li><b>Tab</b> cycles through cells.</li>' + '</ul>' + '</div>';
 
+        var thead_contents = (
+            (options.thead_prefix || '') +
+            createHeadings(options.columns).html()
+        );
+        console.log('thead_contents');
+        console.log(thead_contents);
+
 		table = $('<table class="spreadsheet"></table>');
-		thead = $('<thead/>').append(createHeadings(options.columns));
+		thead = $('<thead/>').append(thead_contents);
 		tbody = createBody(options.columns, options.data);
 
 		table.append(thead).append(tbody);
