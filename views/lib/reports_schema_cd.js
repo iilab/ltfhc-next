@@ -8,6 +8,176 @@
 
 exports.reports = function() {
     return {
+        "report_familyplanning_1": {
+            "title": "3.7.1 The use of Family Planning services",
+            "type": "object",
+            "properties": {
+                "new_cases_new_accepted_fp_services": {
+                    "line_number": "1",
+                    "fr": "Nouveaux cas (Nouvelle acceptante) des services PF",
+                    "en": "New cases (new accepted) FP services"
+                },
+                "including_20yrs": {
+                    "line_number": "2",
+                    "fr": "Dont Moins de 20 ans",
+                    "en": "Including<20yrs"
+                },
+                "old_cases_renewing_or_changing_of_fp_method": {
+                    "line_number": "3",
+                    "fr": "Ancien Cas (Renouvellement ou changement des methodes PF)",
+                    "en": "Old cases renewing or changing of FP method"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "as": {
+                        "fr": "AS",
+                        "en": "AS"
+                    },
+                    "has": {
+                        "fr": "HAS",
+                        "en": "HAS"
+                    },
+                    "hz": {
+                        "fr": "HZ",
+                        "en": "HZ"
+                    },
+                    "total": {
+                        "fr": "TOTAL",
+                        "en": "TOTAL"
+                    }
+                }
+            },
+            "parent": "report_familyplanning"
+        },
+        "report_familyplanning_2": {
+            "title": "3.7.2  The use of FP methods",
+            "type": "object",
+            "properties": {
+                "inj_deprovera": {
+                    "line_number": "1",
+                    "fr": "Inj Dépoprovera",
+                    "en": "Inj. Deprovera"
+                },
+                "inj_norestera": {
+                    "line_number": "2",
+                    "fr": "Inj. Norestera",
+                    "en": "Inj. Norestera"
+                },
+                "pill_tabs": {
+                    "line_number": "3",
+                    "fr": "Plaquette pilule",
+                    "en": "Pill tabs"
+                },
+                "combined_pill_tabs": {
+                    "line_number": "4",
+                    "fr": "Plaquette pilule combinée",
+                    "en": "Combined pill tabs"
+                },
+                "placed_iuds": {
+                    "line_number": "5",
+                    "fr": "DIU placés",
+                    "en": "Placed IUDs"
+                },
+                "male_preservatif": {
+                    "line_number": "6",
+                    "fr": "Préservatif masculin",
+                    "en": "Male preservatif"
+                },
+                "female_preservatif": {
+                    "line_number": "7",
+                    "fr": "Préservatif féminin",
+                    "en": "Female preservatif"
+                },
+                "spemicid_key": {
+                    "line_number": "8",
+                    "fr": "Spermicide cés",
+                    "en": "Spemicid key"
+                },
+                "spemicid_bomb": {
+                    "line_number": "9",
+                    "fr": "Spermicide bombe",
+                    "en": "Spemicid bomb"
+                },
+                "implants": {
+                    "line_number": "10",
+                    "fr": "Implants",
+                    "en": "Implants"
+                },
+                "collier_de_cycle": {
+                    "line_number": "11",
+                    "fr": "Collier du cycle",
+                    "en": "Collier de cycle"
+                },
+                "mama": {
+                    "line_number": "12",
+                    "fr": "MAMA",
+                    "en": "MAMA"
+                },
+                "confirmed_mao": {
+                    "line_number": "13",
+                    "fr": "MAO confirmé",
+                    "en": "Confirmed MAO"
+                },
+                "total": {
+                    "line_number": "14",
+                    "fr": "TOTAL",
+                    "en": "Total"
+                },
+                "average_of_new_acceptance_under_modern_contraceptives": {
+                    "line_number": "15",
+                    "line": "singlecell",
+                    "fr": "Proportion des nouvelles acceptantes sous méthodes contraceptives modernes = total nouvelles acceptantes d’une méthode x 100 / Pop Femmes 15-49 ans du mois",
+                    "en": "Average of new acceptance under modern contraceptives = total number of new acceptance of one method X 100/women Population ranged from 15-49yrs of the month",
+                    "condition": "FIXME"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "new_acceptance_as": {
+                        "fr": "Nouvelles acceptantes AS",
+                        "en": "New acceptance AS"
+                    },
+                    "new_acceptance_has": {
+                        "fr": "Nouvelles acceptantes HAS",
+                        "en": "New acceptance HAS"
+                    },
+                    "new_acceptance_hz": {
+                        "fr": "Nouvelles acceptantes HZ",
+                        "en": "New acceptance HZ"
+                    },
+                    "renewing_during_this_year": {
+                        "fr": "Renouvelle ments années En cours",
+                        "en": "Renewing  during this year"
+                    },
+                    "renewing_during_previous_year": {
+                        "fr": "Renouvelle ments années Antérieure",
+                        "en": "Renewing during previous year"
+                    },
+                    "used_quantity": {
+                        "fr": "Quantités Utilisées",
+                        "en": "Used quantity"
+                    },
+                    "o_s": {
+                        "fr": "Jrs Rupture",
+                        "en": "O.S"
+                    },
+                    "qty_available": {
+                        "fr": "Quantité Disponible",
+                        "en": "Qty available"
+                    },
+                    "factors": {
+                        "fr": "Facteurs",
+                        "en": "Factors"
+                    },
+                    "year_of_couple_protection": {
+                        "fr": "Annee Couple Protection",
+                        "en": "Year of couple protection"
+                    }
+                }
+            },
+            "parent": "report_familyplanning"
+        },
         "report_anc": {
             "collection": "reports",
             "class": "schema",
