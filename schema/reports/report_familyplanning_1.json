@@ -6,16 +6,19 @@
             "line_number": "1",
             "fr": "Nouveaux cas (Nouvelle acceptante) des services PF",
             "en": "New cases (new accepted) FP services",
+            "condition": "true"
         },
         "including_20yrs": {
             "line_number": "2",
             "fr": "Dont Moins de 20 ans",
             "en": "Including<20yrs",
+            "condition": "true"
         },
         "old_cases_renewing_or_changing_of_fp_method": {
             "line_number": "3",
             "fr": "Ancien Cas (Renouvellement ou changement des methodes PF)",
             "en": "Old cases renewing or changing of FP method",
+            "condition": "true"
         }
     },
     "definitions": {
@@ -23,22 +26,26 @@
             "as": {
                 "fr": "AS",
                 "en": "AS",
-                "title": "AS"
+                "title": "AS",
+                "condition": "true"
             },
             "has": {
                 "fr": "HAS",
                 "en": "HAS",
-                "title": "HAS"
+                "title": "HAS",
+                "condition": "true"
             },
             "hz": {
                 "fr": "HZ",
                 "en": "HZ",
-                "title": "HZ"
+                "title": "HZ",
+                "condition": "true"
             },
             "total": {
                 "fr": "TOTAL",
                 "en": "TOTAL",
-                "title": "TOTAL"
+                "title": "TOTAL",
+                "condition": "true"
             }
         }
     },

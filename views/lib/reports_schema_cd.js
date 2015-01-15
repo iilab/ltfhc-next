@@ -16,16 +16,19 @@ exports.reports = function() {
                     "line_number": "1",
                     "fr": "Nouveaux cas (Nouvelle acceptante) des services PF",
                     "en": "New cases (new accepted) FP services",
+                    "condition": "true"
                 },
                 "including_20yrs": {
                     "line_number": "2",
                     "fr": "Dont Moins de 20 ans",
                     "en": "Including<20yrs",
+                    "condition": "true"
                 },
                 "old_cases_renewing_or_changing_of_fp_method": {
                     "line_number": "3",
                     "fr": "Ancien Cas (Renouvellement ou changement des methodes PF)",
                     "en": "Old cases renewing or changing of FP method",
+                    "condition": "true"
                 }
             },
             "definitions": {
@@ -33,22 +36,26 @@ exports.reports = function() {
                     "as": {
                         "fr": "AS",
                         "en": "AS",
-                        "title": "AS"
+                        "title": "AS",
+                        "condition": "true"
                     },
                     "has": {
                         "fr": "HAS",
                         "en": "HAS",
-                        "title": "HAS"
+                        "title": "HAS",
+                        "condition": "true"
                     },
                     "hz": {
                         "fr": "HZ",
                         "en": "HZ",
-                        "title": "HZ"
+                        "title": "HZ",
+                        "condition": "true"
                     },
                     "total": {
                         "fr": "TOTAL",
                         "en": "TOTAL",
-                        "title": "TOTAL"
+                        "title": "TOTAL",
+                        "condition": "true"
                     }
                 }
             },
@@ -61,79 +68,93 @@ exports.reports = function() {
                 "inj_deprovera": {
                     "line_number": "1",
                     "fr": "Inj Dépoprovera",
-                    "en": "Inj. Deprovera"
+                    "en": "Inj. Deprovera",
+                    "condition": "true"
                 },
                 "inj_norestera": {
                     "line_number": "2",
                     "fr": "Inj. Norestera",
-                    "en": "Inj. Norestera"
+                    "en": "Inj. Norestera",
+                    "condition": "true"
                 },
                 "pill_tabs": {
                     "line_number": "3",
                     "fr": "Plaquette pilule",
-                    "en": "Pill tabs"
+                    "en": "Pill tabs",
+                    "condition": "true"
                 },
                 "combined_pill_tabs": {
                     "line_number": "4",
                     "fr": "Plaquette pilule combinée",
-                    "en": "Combined pill tabs"
+                    "en": "Combined pill tabs",
+                    "condition": "true"
                 },
                 "placed_iuds": {
                     "line_number": "5",
                     "fr": "DIU placés",
-                    "en": "Placed IUDs"
+                    "en": "Placed IUDs",
+                    "condition": "true"
                 },
                 "male_preservatif": {
                     "line_number": "6",
                     "fr": "Préservatif masculin",
-                    "en": "Male preservatif"
+                    "en": "Male preservatif",
+                    "condition": "true"
                 },
                 "female_preservatif": {
                     "line_number": "7",
                     "fr": "Préservatif féminin",
-                    "en": "Female preservatif"
+                    "en": "Female preservatif",
+                    "condition": "true"
                 },
                 "spemicid_key": {
                     "line_number": "8",
                     "fr": "Spermicide cés",
-                    "en": "Spemicid key"
+                    "en": "Spemicid key",
+                    "condition": "true"
                 },
                 "spemicid_bomb": {
                     "line_number": "9",
                     "fr": "Spermicide bombe",
-                    "en": "Spemicid bomb"
+                    "en": "Spemicid bomb",
+                    "condition": "true"
                 },
                 "implants": {
                     "line_number": "10",
                     "fr": "Implants",
-                    "en": "Implants"
+                    "en": "Implants",
+                    "condition": "true"
                 },
                 "collier_de_cycle": {
                     "line_number": "11",
                     "fr": "Collier du cycle",
-                    "en": "Collier de cycle"
+                    "en": "Collier de cycle",
+                    "condition": "true"
                 },
                 "mama": {
                     "line_number": "12",
                     "fr": "MAMA",
-                    "en": "MAMA"
+                    "en": "MAMA",
+                    "condition": "true"
                 },
                 "confirmed_mao": {
                     "line_number": "13",
                     "fr": "MAO confirmé",
-                    "en": "Confirmed MAO"
+                    "en": "Confirmed MAO",
+                    "condition": "true"
                 },
                 "total": {
                     "line_number": "14",
                     "fr": "TOTAL",
-                    "en": "Total"
+                    "en": "Total",
+                    "condition": "true"
                 },
                 "average_of_new_acceptance_under_modern_contraceptives": {
                     "line_number": "15",
                     "line": "singlecell",
                     "fr": "Proportion des nouvelles acceptantes sous méthodes contraceptives modernes = total nouvelles acceptantes d’une méthode x 100 / Pop Femmes 15-49 ans du mois",
                     "en": "Average of new acceptance under modern contraceptives = total number of new acceptance of one method X 100/women Population ranged from 15-49yrs of the month",
-                    "condition": "FIXME"
+                    "condition": "true"
                 }
             },
             "definitions": {
@@ -141,52 +162,62 @@ exports.reports = function() {
                     "new_acceptance_as": {
                         "fr": "Nouvelles acceptantes AS",
                         "en": "New acceptance AS",
-                        "title": "New acceptance AS"
+                        "title": "New acceptance AS",
+                        "condition": "true"
                     },
                     "new_acceptance_has": {
                         "fr": "Nouvelles acceptantes HAS",
                         "en": "New acceptance HAS",
-                        "title": "New acceptance HAS"
+                        "title": "New acceptance HAS",
+                        "condition": "true"
                     },
                     "new_acceptance_hz": {
                         "fr": "Nouvelles acceptantes HZ",
                         "en": "New acceptance HZ",
-                        "title": "New acceptance HZ"
+                        "title": "New acceptance HZ",
+                        "condition": "true"
                     },
                     "renewing_during_this_year": {
                         "fr": "Renouvelle ments années En cours",
                         "en": "Renewing  during this year",
-                        "title": "Renewing  during this year"
+                        "title": "Renewing  during this year",
+                        "condition": "true"
                     },
                     "renewing_during_previous_year": {
                         "fr": "Renouvelle ments années Antérieure",
                         "en": "Renewing during previous year",
-                        "title": "Renewing during previous year"
+                        "title": "Renewing during previous year",
+                        "condition": "true"
                     },
                     "used_quantity": {
                         "fr": "Quantités Utilisées",
                         "en": "Used quantity",
-                        "title": "Used quantity"
+                        "title": "Used quantity",
+                        "condition": "true"
                     },
                     "o_s": {
                         "fr": "Jrs Rupture",
                         "en": "O.S",
-                        "title": "O.S"
+                        "title": "O.S",
+                        "condition": "true"
                     },
                     "qty_available": {
                         "fr": "Quantité Disponible",
                         "en": "Qty available",
-                        "title": "Qty available"
+                        "title": "Qty available",
+                        "condition": "true"
                     },
                     "factors": {
                         "fr": "Facteurs",
                         "en": "Factors",
-                        "title": "Factors"
+                        "title": "Factors",
+                        "condition": "true"
                     },
                     "year_of_couple_protection": {
                         "fr": "Annee Couple Protection",
                         "en": "Year of couple protection",
-                        "title": "Year of couple protection"
+                        "title": "Year of couple protection",
+                        "condition": "true"
                     }
                 }
             },
