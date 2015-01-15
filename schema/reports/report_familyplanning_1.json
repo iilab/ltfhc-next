@@ -5,36 +5,40 @@
         "new_cases_new_accepted_fp_services": {
             "line_number": "1",
             "fr": "Nouveaux cas (Nouvelle acceptante) des services PF",
-            "en": "New cases (new accepted) FP services"
+            "en": "New cases (new accepted) FP services",
         },
         "including_20yrs": {
             "line_number": "2",
             "fr": "Dont Moins de 20 ans",
-            "en": "Including<20yrs"
+            "en": "Including<20yrs",
         },
         "old_cases_renewing_or_changing_of_fp_method": {
             "line_number": "3",
             "fr": "Ancien Cas (Renouvellement ou changement des methodes PF)",
-            "en": "Old cases renewing or changing of FP method"
+            "en": "Old cases renewing or changing of FP method",
         }
     },
     "definitions": {
         "columns": {
             "as": {
                 "fr": "AS",
-                "en": "AS"
+                "en": "AS",
+                "title": "AS"
             },
             "has": {
                 "fr": "HAS",
-                "en": "HAS"
+                "en": "HAS",
+                "title": "HAS"
             },
             "hz": {
                 "fr": "HZ",
-                "en": "HZ"
+                "en": "HZ",
+                "title": "HZ"
             },
             "total": {
                 "fr": "TOTAL",
-                "en": "TOTAL"
+                "en": "TOTAL",
+                "title": "TOTAL"
             }
         }
     },

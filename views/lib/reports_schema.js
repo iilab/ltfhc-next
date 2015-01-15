@@ -15,36 +15,40 @@ exports.reports = function() {
                 "new_cases_new_accepted_fp_services": {
                     "line_number": "1",
                     "fr": "Nouveaux cas (Nouvelle acceptante) des services PF",
-                    "en": "New cases (new accepted) FP services"
+                    "en": "New cases (new accepted) FP services",
                 },
                 "including_20yrs": {
                     "line_number": "2",
                     "fr": "Dont Moins de 20 ans",
-                    "en": "Including<20yrs"
+                    "en": "Including<20yrs",
                 },
                 "old_cases_renewing_or_changing_of_fp_method": {
                     "line_number": "3",
                     "fr": "Ancien Cas (Renouvellement ou changement des methodes PF)",
-                    "en": "Old cases renewing or changing of FP method"
+                    "en": "Old cases renewing or changing of FP method",
                 }
             },
             "definitions": {
                 "columns": {
                     "as": {
                         "fr": "AS",
-                        "en": "AS"
+                        "en": "AS",
+                        "title": "AS"
                     },
                     "has": {
                         "fr": "HAS",
-                        "en": "HAS"
+                        "en": "HAS",
+                        "title": "HAS"
                     },
                     "hz": {
                         "fr": "HZ",
-                        "en": "HZ"
+                        "en": "HZ",
+                        "title": "HZ"
                     },
                     "total": {
                         "fr": "TOTAL",
-                        "en": "TOTAL"
+                        "en": "TOTAL",
+                        "title": "TOTAL"
                     }
                 }
             },
@@ -136,43 +140,53 @@ exports.reports = function() {
                 "columns": {
                     "new_acceptance_as": {
                         "fr": "Nouvelles acceptantes AS",
-                        "en": "New acceptance AS"
+                        "en": "New acceptance AS",
+                        "title": "New acceptance AS"
                     },
                     "new_acceptance_has": {
                         "fr": "Nouvelles acceptantes HAS",
-                        "en": "New acceptance HAS"
+                        "en": "New acceptance HAS",
+                        "title": "New acceptance HAS"
                     },
                     "new_acceptance_hz": {
                         "fr": "Nouvelles acceptantes HZ",
-                        "en": "New acceptance HZ"
+                        "en": "New acceptance HZ",
+                        "title": "New acceptance HZ"
                     },
                     "renewing_during_this_year": {
                         "fr": "Renouvelle ments années En cours",
-                        "en": "Renewing  during this year"
+                        "en": "Renewing  during this year",
+                        "title": "Renewing  during this year"
                     },
                     "renewing_during_previous_year": {
                         "fr": "Renouvelle ments années Antérieure",
-                        "en": "Renewing during previous year"
+                        "en": "Renewing during previous year",
+                        "title": "Renewing during previous year"
                     },
                     "used_quantity": {
                         "fr": "Quantités Utilisées",
-                        "en": "Used quantity"
+                        "en": "Used quantity",
+                        "title": "Used quantity"
                     },
                     "o_s": {
                         "fr": "Jrs Rupture",
-                        "en": "O.S"
+                        "en": "O.S",
+                        "title": "O.S"
                     },
                     "qty_available": {
                         "fr": "Quantité Disponible",
-                        "en": "Qty available"
+                        "en": "Qty available",
+                        "title": "Qty available"
                     },
                     "factors": {
                         "fr": "Facteurs",
-                        "en": "Factors"
+                        "en": "Factors",
+                        "title": "Factors"
                     },
                     "year_of_couple_protection": {
                         "fr": "Annee Couple Protection",
-                        "en": "Year of couple protection"
+                        "en": "Year of couple protection",
+                        "title": "Year of couple protection"
                     }
                 }
             },
