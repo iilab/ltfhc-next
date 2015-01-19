@@ -158,5 +158,6 @@
             }
         }
     },
-    "parent": "report_familyplanning"
+    "parent": "report_familyplanning",
+    "parent_title": "Family Planning"
 }
