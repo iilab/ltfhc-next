@@ -41,7 +41,40 @@
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 9. HEALTH'S MUTUAL"/}</strong></div>
     <div class="report-item" data-report="report_mutual" data-title="{@translate value="9. Health mutual" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 10. SUMMARY OF THE USE OF SERVICES"/}</strong></div>
+<<<<<<< HEAD
     <div class="report-item" data-report="report_summary" data-title="{@translate value="10. Summary  of the use of services" /}" />
 	</div>
   {/isBrowser}
+=======
+		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="10. Summary  of the use of services"/} ({@translate value="Current"/})</a>
+		<a href="./report_calculated?report=report_childgrowth" class="list-group-item">{@translate value="Report Child Growth"/} ({@translate value="Current"/})</a>
+		<a href="./report_calculated?report=report_contraceptive" class="list-group-item">{@translate value="Report Contraceptive"/} ({@translate value="Current"/})</a>
+		<a href="./report_calculated?report=report_dtc" class="list-group-item">{@translate value="Report DTC"/} ({@translate value="Current"/})</a>
+		<a href="./report_calculated?report=report_ipd" class="list-group-item">{@translate value="Report IPD"/} ({@translate value="Current"/})</a>
+		<a href="./report_calculated?report=report_leprosy" class="list-group-item">{@translate value="Report Leprosy"/} ({@translate value="Current"/})</a>
+		<a href="./report_calculated?report=report_motherchildward" class="list-group-item">{@translate value="Report Mother Child Ward"/} ({@translate value="Current"/})</a>
+		<a href="./report_calculated?report=report_opd" class="list-group-item">{@translate value="Report OPD"/} ({@translate value="Current"/})</a>
+		<a href="./report_calculated?report=report_postnatal" class="list-group-item">{@translate value="Report Postnatal"/} ({@translate value="Current"/})</a>
+    <!--<a href="./report_calculated?report=report_familyplanning" class="list-group-item">{@translate value="Report Family Planning"/}</a>-->
+    <div class="list-group-item">
+      {@translate value="Report Family Planning"/}
+      <div style="margin-top: -7px;" class="form-inline pull-right">
+        <form class="form-inline">
+          <input type="hidden" name="report" value="report_familyplanning" />
+          <input type="hidden" name="daterange-start" />
+          <input type="hidden" name="daterange-end" />
+          <input readonly type="text" class="form-control daterange input-small" />
+          <button type="submit" class="btn btn-small btn-default">
+            {@translate value="Generate report"/}
+          </button>
+          <button class="btn btn-preview btn-small btn-default">
+            {@translate value="Preview"/}
+          </button>
+        </div>
+      </div>
+    </div>
+	</div>
+  {/isBrowser}
+	
+>>>>>>> pass start and end parameters through to preview page
 </div>
