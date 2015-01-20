@@ -9,6 +9,7 @@
 
       </div>
   </div>
+  {?isBrowser}
 	<div class="list-group">
 		<div class="list-group-item"><strong>{@translate value="WEEKLY NOTIFICATION"/}</strong></div>
     <!--<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Weekly Notification Form - Epidemiological Diseases"/} ({@translate value="Current"/})</a>-->
@@ -16,11 +17,14 @@
       {@translate value="Weekly Notification Form - Epidemiological Diseases"/}
       <div style="margin-top: -7px;" class="form-inline pull-right">
         <form class="form-inline">
-          <input type="text" class="form-control daterange input-small" />
+          <input type="hidden" name="report" value="report_anc" />
+          <input type="hidden" name="daterange-start" />
+          <input type="hidden" name="daterange-end" />
+          <input readonly type="text" class="form-control daterange input-small" />
           <button type="submit" class="btn btn-small btn-default">
             {@translate value="Generate report"/}
           </button>
-          <button type="submit" class="btn btn-small btn-default">
+          <button class="btn btn-preview btn-small btn-default">
             {@translate value="Preview"/}
           </button>
         </div>
@@ -32,11 +36,14 @@
       {@translate value="Form 1 : Monthly Report complementing the SNIS"/}
       <div style="margin-top: -7px;" class="form-inline pull-right">
         <form class="form-inline">
-          <input type="text" class="form-control daterange input-small" />
+          <input type="hidden" name="report" value="report_anc" />
+          <input type="hidden" name="daterange-start" />
+          <input type="hidden" name="daterange-end" />
+          <input readonly type="text" class="form-control daterange input-small" />
           <button type="submit" class="btn btn-small btn-default">
             {@translate value="Generate report"/}
           </button>
-          <button type="submit" class="btn btn-small btn-default">
+          <button class="btn btn-preview btn-small btn-default">
             {@translate value="Preview"/}
           </button>
         </div>
@@ -48,13 +55,14 @@
       {@translate value="Monthly data on reproductive health at a health center/maternity"/}
       <div style="margin-top: -7px;" class="form-inline pull-right">
         <form class="form-inline">
+          <input type="hidden" name="report" value="report_anc" />
           <input type="hidden" name="daterange-start" />
           <input type="hidden" name="daterange-end" />
           <input readonly type="text" class="form-control daterange input-small" />
           <button type="submit" class="btn btn-small btn-default">
             {@translate value="Generate report"/}
           </button>
-          <button type="submit" class="btn btn-small btn-default">
+          <button class="btn btn-preview btn-small btn-default">
             {@translate value="Preview"/}
           </button>
         </div>
@@ -101,7 +109,25 @@
 		<a href="./report_calculated?report=report_motherchildward" class="list-group-item">{@translate value="Report Mother Child Ward"/} ({@translate value="Current"/})</a>
 		<a href="./report_calculated?report=report_opd" class="list-group-item">{@translate value="Report OPD"/} ({@translate value="Current"/})</a>
 		<a href="./report_calculated?report=report_postnatal" class="list-group-item">{@translate value="Report Postnatal"/} ({@translate value="Current"/})</a>
-    <a href="./report_calculated?report=report_familyplanning" class="list-group-item">{@translate value="Report Family Planning"/}</a>
+    <!--<a href="./report_calculated?report=report_familyplanning" class="list-group-item">{@translate value="Report Family Planning"/}</a>-->
+    <div class="list-group-item">
+      {@translate value="Report Family Planning"/}
+      <div style="margin-top: -7px;" class="form-inline pull-right">
+        <form class="form-inline">
+          <input type="hidden" name="report" value="report_familyplanning" />
+          <input type="hidden" name="daterange-start" />
+          <input type="hidden" name="daterange-end" />
+          <input readonly type="text" class="form-control daterange input-small" />
+          <button type="submit" class="btn btn-small btn-default">
+            {@translate value="Generate report"/}
+          </button>
+          <button class="btn btn-preview btn-small btn-default">
+            {@translate value="Preview"/}
+          </button>
+        </div>
+      </div>
+    </div>
 	</div>
+  {/isBrowser}
 	
 </div>
