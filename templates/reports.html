@@ -9,6 +9,7 @@
 
       </div>
   </div>
+  {?isBrowser}
 	<div class="list-group">
 		<div class="list-group-item"><strong>{@translate value="WEEKLY NOTIFICATION"/}</strong></div>
 		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Weekly Notification Form - Epidemiological Diseases"/} ({@translate value="Current"/})</a>
@@ -52,5 +53,6 @@
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 10. SUMMARY OF THE USE OF SERVICES"/}</strong></div>
 		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="10. Summary  of the use of services"/} ({@translate value="Current"/})</a>
 	</div>
+  {/isBrowser}
 	
 </div>
