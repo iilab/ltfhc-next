@@ -11,11 +11,55 @@
   </div>
 	<div class="list-group">
 		<div class="list-group-item"><strong>{@translate value="WEEKLY NOTIFICATION"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Weekly Notification Form - Epidemiological Diseases"/} ({@translate value="Current"/})</a>
+    <!--<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Weekly Notification Form - Epidemiological Diseases"/} ({@translate value="Current"/})</a>-->
+    <div class="list-group-item">
+      {@translate value="Weekly Notification Form - Epidemiological Diseases"/}
+      <div style="margin-top: -7px;" class="form-inline pull-right">
+        <form class="form-inline">
+          <input type="text" class="form-control daterange input-small" />
+          <button type="submit" class="btn btn-small btn-default">
+            {@translate value="Generate report"/}
+          </button>
+          <button type="submit" class="btn btn-small btn-default">
+            {@translate value="Preview"/}
+          </button>
+        </div>
+      </div>
+    </div>
 		<div class="list-group-item"><strong>{@translate value="MONTHLY MALARIA REPORT"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Form 1 : Monthly Report complementing the SNIS"/} ({@translate value="Current"/})</a>
+    <!--<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Form 1 : Monthly Report complementing the SNIS"/} ({@translate value="Current"/})</a>-->
+    <div class="list-group-item">
+      {@translate value="Form 1 : Monthly Report complementing the SNIS"/}
+      <div style="margin-top: -7px;" class="form-inline pull-right">
+        <form class="form-inline">
+          <input type="text" class="form-control daterange input-small" />
+          <button type="submit" class="btn btn-small btn-default">
+            {@translate value="Generate report"/}
+          </button>
+          <button type="submit" class="btn btn-small btn-default">
+            {@translate value="Preview"/}
+          </button>
+        </div>
+      </div>
+    </div>
 		<div class="list-group-item"><strong>{@translate value="MONTHLY DATA ON REPRODUCTIVE HEALTH"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Monthly data on reproductive health at a health center/maternity"/} ({@translate value="Current"/})</a>
+    <!--<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value=""/} ({@translate value="Current"/})</a>-->
+    <div class="list-group-item">
+      {@translate value="Monthly data on reproductive health at a health center/maternity"/}
+      <div style="margin-top: -7px;" class="form-inline pull-right">
+        <form class="form-inline">
+          <input type="hidden" name="daterange-start" />
+          <input type="hidden" name="daterange-end" />
+          <input readonly type="text" class="form-control daterange input-small" />
+          <button type="submit" class="btn btn-small btn-default">
+            {@translate value="Generate report"/}
+          </button>
+          <button type="submit" class="btn btn-small btn-default">
+            {@translate value="Preview"/}
+          </button>
+        </div>
+      </div>
+    </div>
 		<div class="list-group-item"><strong>{@translate value="MONTHLY VACCINATION REPORT"/}</strong></div>
 		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Form 1: Vaccination Report"/} ({@translate value="Current"/})</a>
 		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Form 1: Vaccines/Intrants management"/} ({@translate value="Current"/})</a>
