@@ -8,6 +8,195 @@
 
 exports.reports = function() {
     return {
+        "report_screening_1": {
+            "title": "2.1 SCREENING",
+            "type": "object",
+            "properties": {
+                "new_cases": {
+                    "line_number": "1",
+                    "fr": "Nouveaux Cas",
+                    "en": "New cases",
+                    "condition": "true"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "under_5_years_as": {
+                        "fr": "AS",
+                        "en": "AS",
+                        "condition": "true"
+                    },
+                    "under_5_years_has": {
+                        "fr": "HAS",
+                        "en": "HAS",
+                        "condition": "true"
+                    },
+                    "under_5_years_hz": {
+                        "fr": "HZ",
+                        "en": "HZ",
+                        "condition": "true"
+                    },
+                    "above_5_years_as": {
+                        "fr": "AS",
+                        "en": "AS",
+                        "condition": "true"
+                    },
+                    "above_5_years_has": {
+                        "fr": "HAS",
+                        "en": "HAS",
+                        "condition": "true"
+                    },
+                    "above_5_years_hz": {
+                        "fr": "HZ",
+                        "en": "HZ",
+                        "condition": "true"
+                    },
+                    "above_5_years_total": {
+                        "fr": "Total",
+                        "en": "Total",
+                        "condition": "true"
+                    }
+                }
+            },
+            "parent": "report_screening",
+            "overrides": {
+                "thead_prefix": "<tr><th></th><th></th><th></th><th colspan=\"3\">&lt; 5 ans</th><th colspan=\"3\">&gt; 5 ans</th><th></th></tr>"
+            }
+        },
+        "report_screening_2": {
+            "title": "2.1 SCREENING(table1)",
+            "type": "object",
+            "properties": {
+                "including_new_patients": {
+                    "line_number": "1",
+                    "fr": "Dont nouveaux patients",
+                    "en": "Including New Patients",
+                    "condition": "true"
+                },
+                "including_night_health_attendants": {
+                    "line_number": "2",
+                    "fr": "Dont adhérents de mut. de santé",
+                    "en": "including night health attendants",
+                    "condition": "true"
+                },
+                "old_cases": {
+                    "line_number": "3",
+                    "fr": "Anciens cas",
+                    "en": "Old cases",
+                    "condition": "true"
+                },
+                "including_oldcases_contr_refered": {
+                    "line_number": "4",
+                    "fr": "Dont anciens cas contre-référés",
+                    "en": "Including oldcases contr- refered",
+                    "condition": "true"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "as": {
+                        "fr": "AS",
+                        "en": "AS",
+                        "condition": "true"
+                    },
+                    "has": {
+                        "fr": "HAS",
+                        "en": "HAS",
+                        "condition": "true"
+                    },
+                    "hz": {
+                        "fr": "HZ",
+                        "en": "HZ",
+                        "condition": "true"
+                    },
+                    "total": {
+                        "fr": "Total",
+                        "en": "Total",
+                        "condition": "true"
+                    }
+                }
+            },
+            "parent": "report_screening"
+        },
+        "report_screening_3": {
+            "title": "2.1 SCREENING(table2)",
+            "type": "object",
+            "properties": {
+                "refered_to_the_general_hospital": {
+                    "line_number": "1",
+                    "fr": "Référés vers HGR",
+                    "en": "Refered to the General Hospital",
+                    "condition": "true"
+                },
+                "refered_by_community_health_workers": {
+                    "line_number": "2",
+                    "fr": "Référés par les RECO",
+                    "en": "Refered by Community Health Workers",
+                    "condition": "true"
+                },
+                "new_feminin_cases": {
+                    "line_number": "3",
+                    "fr": "Nouveaux cas féminins",
+                    "en": "New feminin cases",
+                    "condition": "true"
+                },
+                "including_pw": {
+                    "line_number": "4",
+                    "fr": "Dont Femmes enceintes",
+                    "en": "Including PW",
+                    "condition": "true"
+                },
+                "indigents": {
+                    "line_number": "5",
+                    "fr": "Indigents",
+                    "en": "Indigents",
+                    "condition": "true"
+                },
+                "follow_ups_in_observation": {
+                    "line_number": "6",
+                    "fr": "Suivi en observation",
+                    "en": "Follow ups in observation",
+                    "condition": "true"
+                },
+                "children_under_5_deaths": {
+                    "line_number": "7",
+                    "fr": "Décés enfants <5 ans",
+                    "en": "Children under 5 deaths",
+                    "condition": "true"
+                },
+                "targeted_population": {
+                    "line_number": "8",
+                    "line": "singlecell",
+                    "fr": "Population cible = population du mois",
+                    "en": "Targeted population = Monthly popualtion",
+                    "condition": "true"
+                },
+                "total_consultation": {
+                    "line_number": "9",
+                    "line": "singlecell",
+                    "fr": "Total Consultations (c+d)",
+                    "en": "Total consultation (c+d)",
+                    "condition": "true"
+                },
+                "curatif_used_rate": {
+                    "line_number": "10",
+                    "line": "singlecell",
+                    "fr": "Taux d’utilisation du curatif = Total Nouveaux Cas AS (a+b) x 100 / pop du mois",
+                    "en": "Curatif used rate = total new case AS(a+b)X100/monthly population",
+                    "condition": "true"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "number": {
+                        "fr": "Nombre",
+                        "en": "Number",
+                        "condition": "true"
+                    }
+                }
+            },
+            "parent": "report_screening"
+        },
         "report_familyplanning_1": {
             "title": "3.7.1 The use of Family Planning services",
             "type": "object",
