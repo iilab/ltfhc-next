@@ -1,58 +1,47 @@
 <div id="reports">
-  {>"loader.html"/}
-  <div class="row">
-      <div class="col-md-12">
-
-		  <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="reports-table" style="display:none;">
-		  </table>
-
-
-      </div>
-  </div>
   {?isBrowser}
 	<div class="list-group">
 		<div class="list-group-item"><strong>{@translate value="WEEKLY NOTIFICATION"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Weekly Notification Form - Epidemiological Diseases"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="Weekly Notification Form - Epidemiological Diseases" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY MALARIA REPORT"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Form 1 : Monthly Report complementing the SNIS"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="Form 1 : Monthly Report complementing the SNIS" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY DATA ON REPRODUCTIVE HEALTH"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Monthly data on reproductive health at a health center/maternity"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="Monthly data on reproductive health at a health center/maternity" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY VACCINATION REPORT"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Form 1: Vaccination Report"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Form 1: Vaccines/Intrants management"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Form 1: Monitoring of preventable deseases through vaccination"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="Order of vaccines, diluants and infection material form"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="Form 1: Vaccination Report" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="Form 1: Vaccines/Intrants management" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="Form 1: Monitoring of preventable deseases through vaccination" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="Order of vaccines, diluants and infection material form" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 2. CURATIVE ACTIVITIES"/}</strong></div>
-		<a href="./report_calculated?report=report_screening" class="list-group-item">{@translate value="2.1 SCREENING"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="2.2 Consultation of sexual violence survivors"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="2.3 ISTs/HIV consultation"/} ({@translate value="Current"/})</a>		
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="2.4 New cases identification"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="2.5 Laboratory / 2.6 Care"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="2.7. Malaria"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="2.8 Diagnosis and end of cases put in observation"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_screening" data-title="{@translate value="2.1 SCREENING" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="2.2 Consultation of sexual violence survivors" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="2.3 ISTs/HIV consultation" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="2.4 New cases identification" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="2.5 Laboratory / 2.6 Care" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="2.7. Malaria" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="2.8 Diagnosis and end of cases put in observation" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 3. MATERNAL HEALTH"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="3.1 Antenatal clinic"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="3.2 PMTCT"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="3.3 Partners and family members of the PW"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="3.4 Pregnant women vaccination / 3.5 Pregnancy maturity"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_postnatal" class="list-group-item">{@translate value="3.6 Postnatal"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_familyplanning" class="list-group-item">{@translate value="3.7 Family Planning"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="3.1 Antenatal clinic" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="3.2 PMTCT" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="3.3 Partners and family members of the PW" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="3.4 Pregnant women vaccination / 3.5 Pregnancy maturity" /}" />
+    <div class="report-item" data-report="report_postnatal" data-title="{@translate value="3.6 Postnatal" /}" />
+    <div class="report-item" data-report="report_familyplanning" data-title="{@translate value="3.7 Family Planning" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 4. CHILD'S HEALTH"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="4.1 Child's vaccination"/} ({@translate value="Current"/})</a>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="4.2 Pre-scholary consultation / 4.3 Growth follow up at the pre-scholary consultation"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="4.1 Child's vaccination" /}" />
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="4.2 Pre-scholary consultation / 4.3 Growth follow up at the pre-scholary consultation" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 5. PROMOTIONAL ACTIVITIES"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="5. Promotional activities (health center)"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="5. Promotional activities (health center)" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 6. COMMUNITY CARE SITE ACTIVITIES"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="6. Community care site activities"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="6. Community care site activities" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 7. SUPERVISION"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="7. Supervisions"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="7. Supervisions" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 8. RESOURCES MANAGEMENT"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="8. Resources management"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="8. Resources management" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 9. HEALTH'S MUTUAL"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="9. Health's mutual"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="9. Health's mutual" /}" />
 		<div class="list-group-item"><strong>{@translate value="MONTHLY CANVAS - 10. SUMMARY OF THE USE OF SERVICES"/}</strong></div>
-		<a href="./report_calculated?report=report_anc" class="list-group-item">{@translate value="10. Summary  of the use of services"/} ({@translate value="Current"/})</a>
+    <div class="report-item" data-report="report_anc" data-title="{@translate value="10. Summary  of the use of services" /}" />
 	</div>
   {/isBrowser}
-	
 </div>
