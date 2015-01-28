@@ -1,0 +1,65 @@
+{
+        "title": "2.3.5 Detention under AVR treatment",
+        "type": "object",
+        "properties": {
+            "number_of_adults_infants_alive_under_arv_treatment_since": {
+                "line_number": "1",
+                "fr": "Nb adultes/enfants en vie et sous TARV depuis",
+                "en": "Number of adults/infants alive under ARV treatment since",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "male_12_months": {
+                    "fr": "12 mois",
+                    "en": "12 months",
+                    "title":"12 months",
+                    "condition": "true"
+                },
+                "male_24_months": {
+                    "fr": "24 mois",
+                    "en": "24 months",
+                    "title":"24 months",
+                    "condition": "true"
+                },
+                "male_36_months": {
+                    "fr": "36 mois",
+                    "en": "36 months",
+                    "title":"36 months",
+                    "condition": "true"
+                },
+                "male_60_months": {
+                    "fr": "60 mois",
+                    "en": "60 months",
+                    "title":"60 months",
+                    "condition": "true"
+                },
+                "female_12_months": {
+                    "fr": "12 mois",
+                    "en": "12 months",
+                    "title":"12 months",
+                    "condition": "true"
+                },
+                "female_24_months": {
+                    "fr": "24 mois",
+                    "en": "24 months",
+                    "title":"24 months",
+                    "condition": "true"
+                },
+                "female_36_months": {
+                    "fr": "36 mois",
+                    "en": "36 months",
+                    "title":"36 months",
+                    "condition": "true"
+                },
+                "female_60_months": {
+                    "fr": "60 mois",
+                    "en": "60 months",
+                    "title":"60 months",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_isthiv"
+    }

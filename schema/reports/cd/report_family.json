@@ -1,0 +1,89 @@
+
+    {
+        "title": "3.3  Parteners and Family members of the PW",
+        "type": "object",
+        "properties": {
+            "0_14_yrs": {
+                "line_number": "1",
+                "fr": "0-14 ans",
+                "en": "0-14 yrs",
+                "condition": "true"
+            },
+            "15_19_yrs": {
+                "line_number": "2",
+                "fr": "15–19 ans",
+                "en": "15 - 19 yrs",
+                "condition": "true"
+            },
+            "20_24_yrs": {
+                "line_number": "3",
+                "fr": "20–24 ans",
+                "en": "20 - 24 yrs",
+                "condition": "true"
+            },
+            "25_plus": {
+                "line_number": "4",
+                "fr": "25 ans et plus",
+                "en": "25 +",
+                "condition": "true"
+            },
+            "general_total": {
+                "line_number": "5",
+                "fr": "Total général",
+                "en": "General total",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "male_parteners_of_the_pw_hiv_positive_counseled": {
+                    "fr": "Conseillés",
+                    "en": "Counseled",
+                    "title":"Counseled",
+                    "condition": "true"
+                },
+                "male_parteners_of_the_pw_hiv_positive_tested": {
+                    "fr": "Testés",
+                    "en": "Tested",
+                    "title":"Tested",
+                    "condition": "true"
+                },
+                "male_parteners_of_the_pw_hiv_positive_positif": {
+                    "fr": "Positifs",
+                    "en": "Positif",
+                    "title":"Positif",
+                    "condition": "true"
+                },
+                "male_parteners_of_the_pw_hiv_positive_informed_about_their_results": {
+                    "fr": "Informées de leur résultat",
+                    "en": "Informed about their results",
+                    "title":"Informed about their results",
+                    "condition": "true"
+                },
+                "family_parteners_of_the_pw_hiv_positive_counseled": {
+                    "fr": "Conseillés",
+                    "en": "Counseled",
+                    "title":"Counseled",
+                    "condition": "true"
+                },
+                "family_parteners_of_the_pw_hiv_positive_tested": {
+                    "fr": "Testés",
+                    "en": "Tested",
+                    "title":"Tested",
+                    "condition": "true"
+                },
+                "family_parteners_of_the_pw_hiv_positive_positif": {
+                    "fr": "Positifs",
+                    "en": "Positif",
+                    "title":"Positif",
+                    "condition": "true"
+                },
+                "family_parteners_of_the_pw_hiv_positive_informed_about_their_results": {
+                    "fr": "Informées de leur résultat",
+                    "en": "Informed about their results",
+                    "title":"Informed about their results",
+                    "condition": "true"
+                }
+            }
+        }
+    }

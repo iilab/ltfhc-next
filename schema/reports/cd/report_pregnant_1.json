@@ -1,0 +1,67 @@
+    {
+        "title": "3.4 Pregnant women vaccination",
+        "type": "object",
+        "properties": {
+            "vat_1": {
+                "line_number": "1",
+                "fr": "VAT 1",
+                "en": "VAT 1",
+                "condition": "true"
+            },
+            "vat_2": {
+                "line_number": "2",
+                "fr": "VAT 2",
+                "en": "VAT 2",
+                "condition": "true"
+            },
+            "vat_3": {
+                "line_number": "3",
+                "fr": "VAT 3",
+                "en": "VAT 3",
+                "condition": "true"
+            },
+            "vat_4": {
+                "line_number": "4",
+                "fr": "VAT 4",
+                "en": "VAT 4",
+                "condition": "true"
+            },
+            "vat_5": {
+                "line_number": "5",
+                "fr": "VAT 5",
+                "en": "VAT 5",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "as": {
+                    "fr": "AS",
+                    "en": "AS",
+                    "title":"AS",
+                    "condition": "true"
+                },
+                "has": {
+                    "fr": "HAS",
+                    "en": "HAS",
+                    "title":"HAS",
+                    "condition": "true"
+                },
+                "hz": {
+                    "fr": "HZ",
+                    "en": "HZ",
+                    "title":"HZ",
+                    "condition": "true"
+                },
+                "total": {
+                    "fr": "TOTAL",
+                    "en": "TOTAL",
+                    "title":"TOTAL",
+                    "condition": "true"
+                }
+            }
+        }
+        ,
+    "parent": "report_pregnant"
+    }
+    

@@ -1,0 +1,77 @@
+    {
+        "title": "8.4.3 Value of consummed medicines at the buying cost",
+        "type": "object",
+        "properties": {
+            "administrated_medicines_to_patients": {
+                "line_number": "1",
+                "fr": "Médicament admininistrés aux malades",
+                "en": "Administrated medicines to patients",
+                "condition": "true"
+            },
+            "administrated_medicines_to_personnel": {
+                "line_number": "2",
+                "fr": "Médicament admininistrés au personnel",
+                "en": "Administrated medicines to personnel",
+                "condition": "true"
+            },
+            "administrated_medicines_to_indigents": {
+                "line_number": "3",
+                "fr": "Médicament admininistrés aux indigents",
+                "en": "Administrated medicines to indigents",
+                "condition": "true"
+            },
+            "expired_medicines_broken": {
+                "line_number": "4",
+                "fr": "Médicaments périmés, avariés, cassés",
+                "en": "Expired medicines, broken",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "mobile": {
+                    "fr": "Ambulatoire",
+                    "en": "Mobile",
+                    "title":"Mobile",
+                    "condition": "true"
+                },
+                "obserbation": {
+                    "fr": "Observation",
+                    "en": "Observation",
+                    "title":"Observation",
+                    "condition": "true"
+                },
+                "psc": {
+                    "fr": "CPS",
+                    "en": "PSC",
+                    "title":"PSC",
+                    "condition": "true"
+                },
+                "small_surgery": {
+                    "fr": "Petite Chirurgie",
+                    "en": "Small surgery",
+                    "title":"Small surgery",
+                    "condition": "true"
+                },
+                "anc_fp_and_ponc": {
+                    "fr": "CPN, PF et CPON",
+                    "en": "ANC, FP & PONC",
+                    "title":"ANC, FP & PONC",
+                    "condition": "true"
+                },
+                "meternity": {
+                    "fr": "Maternité",
+                    "en": "Maternity",
+                    "title":"Maternity",
+                    "condition": "true"
+                },
+                "total": {
+                    "fr": "Total",
+                    "en": "Total",
+                    "title":"TOTAL",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_resources"
+    }

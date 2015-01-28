@@ -1,0 +1,80 @@
+{
+        "title": "2.1 SCREENING(table2)",
+        "type": "object",
+        "properties": {
+            "refered_to_the_general_hospital": {
+                "line_number": "1",
+                "fr": "Référés vers HGR",
+                "en": "Refered to the General Hospital",
+                "condition": "true"
+            },
+            "refered_by_community_health_workers": {
+                "line_number": "2",
+                "fr": "Référés par les RECO",
+                "en": "Refered by Community Health Workers",
+                "condition": "true"
+            },
+            "new_feminin_cases": {
+                "line_number": "3",
+                "fr": "Nouveaux cas féminins",
+                "en": "New feminin cases",
+                "condition": "true"
+            },
+            "including_pw": {
+                "line_number": "4",
+                "fr": "Dont Femmes enceintes",
+                "en": "Including PW",
+                "condition": "true"
+            },
+            "indigents": {
+                "line_number": "5",
+                "fr": "Indigents",
+                "en": "Indigents",
+                "condition": "true"
+            },
+            "follow_ups_in_observation": {
+                "line_number": "6",
+                "fr": "Suivi en observation",
+                "en": "Follow ups in observation",
+                "condition": "true"
+            },
+            "children_under_5_deaths": {
+                "line_number": "7",
+                "fr": "Décés enfants <5 ans",
+                "en": "Children under 5 deaths",
+                "condition": "true"
+            },
+            "targeted_population": {
+                "line_number": "8",
+                "line": "singlecell",
+                "fr": "Population cible = population du mois",
+                "en": "Targeted population = Monthly popualtion",
+                "condition": "true"
+            },
+            "total_consultation": {
+                "line_number": "9",
+                "line": "singlecell",
+                "fr": "Total Consultations (c+d)",
+                "en": "Total consultation (c+d)",
+                "condition": "true"
+            },
+            "curatif_used_rate": {
+                "line_number": "10",
+                "line": "singlecell",
+                "fr": "Taux d’utilisation du curatif = Total Nouveaux Cas AS (a+b) x 100 / pop du mois",
+                "en": "Curatif used rate = total new case AS(a+b)X100/monthly population",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "number": {
+                    "fr": "Nombre",
+                    "en": "Number",
+                    "title":"Number",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_screening"
+    }

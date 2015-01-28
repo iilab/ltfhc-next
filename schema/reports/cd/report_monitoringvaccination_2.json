@@ -1,0 +1,66 @@
+{
+        "title": "MONITORING OF PREVENTABLE DESEASES THROUGH VACCINATION(table1)",
+        "type": "object",
+        "properties": {
+            "bcg": {
+                "line_number": "1",
+                "fr": "BCG",
+                "en": "BCG",
+                "condition": "true"
+            },
+            "vpo": {
+                "line_number": "2",
+                "fr": "VPO",
+                "en": "VPO",
+                "condition": "true"
+            },
+            "dtc_hep_hib": {
+                "line_number": "3",
+                "fr": "DTC-Hep-Hib",
+                "en": "DTC-Hep-Hib",
+                "condition": "true"
+            },
+            "pheumo": {
+                "line_number": "4",
+                "fr": "Pneumo",
+                "en": "Pneumo",
+                "condition": "true"
+            },
+            "var": {
+                "line_number": "5",
+                "fr": "VAR",
+                "en": "VAR",
+                "condition": "true"
+            },
+            "vaa": {
+                "line_number": "6",
+                "fr": "VAA",
+                "en": "VAA",
+                "condition": "true"
+            },
+            "vat": {
+                "line_number": "7",
+                "fr": "VAT",
+                "en": "VAT",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "vaccinnes": {
+                    "fr": "Vaccines",
+                    "en": "Vaccinnes",
+                    "title":"Vaccinnes",
+                    "condition": "true"
+                },
+                "number_of_days": {
+                    "fr": "Nbre de Jours",
+                    "en": "Number of days",
+                    "title":"Number of days",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_monitoringvaccination"
+    }
+ 

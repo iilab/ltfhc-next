@@ -1,0 +1,71 @@
+    {
+        "title": "9. CCC",
+        "type": "object",
+        "properties": {
+            "nbr_of_post_operatory_infection_cases": {
+                "line_number": "1",
+                "fr": "Cible (categories)",
+                "en": "Target ( categories)",
+                "condition": "true"
+            },
+            "nbr_of_infections_due_to_lack_of_aspsie": {
+                "line_number": "2",
+                "fr": "nbre participants attandus",
+                "en": "Nbr of expected participants",
+                "condition": "true"
+            },
+            "nbr_of_means_of_waste_evacuation": {
+                "line_number": "3",
+                "fr": "Nbr de reçu les participants",
+                "en": "Nbr of received participants",
+                "condition": "true"
+            },
+            "nbr_of_energy_power_source_and_type": {
+                "line_number": "4",
+                "fr": "Nbr de sessions prévues",
+                "en": "Nbr of planned sessions",
+                "condition": "true"
+            },
+            "nbr_of_hours_of_rupture_of_water_supply_in_the_hc_maternity_ward": {
+                "line_number": "5",
+                "fr": "Nbr de sessions réalisées",
+                "en": "Nbr of realized sessions",
+                "condition": "true"
+            },
+            "themes": {
+                "line_number": "6",
+                "fr": "THEMES",
+                "en": "THEMES",
+                "condition": "true"
+            },
+            "themes_1": {
+                "line_number": "6a",
+                "fr": "1.",
+                "en": "1.",
+                "condition": "true"
+            },
+            "themes_2": {
+                "line_number": "6b",
+                "fr": "2.",
+                "en": "2.",
+                "condition": "true"
+            },
+            "themes_3": {
+                "line_number": "6c",
+                "fr": "3.",
+                "en": "3.",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "number": {
+                    "fr": "Nombre",
+                    "en": "Number",
+                    "title":"Number",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_reprohealth"
+    }

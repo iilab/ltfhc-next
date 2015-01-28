@@ -1,0 +1,61 @@
+    {
+        "title": "5.5 Relais communautaire Identification (RECO)",
+        "type": "object",
+        "properties": {
+            "nbr_of_needed": {
+                "line_number": "1",
+                "fr": "Nombre de RECO prévus",
+                "en": "Nbr of needed",
+                "condition": "true"
+            },
+            "nbr_of_existing_reco": {
+                "line_number": "2",
+                "fr": "Nombre des RECO existants",
+                "en": "Nbr of existing RECO",
+                "condition": "true"
+            },
+            "nbr_of_actif_reco": {
+                "line_number": "3",
+                "fr": "Nombre des RECO opérationnels",
+                "en": "Nbr of actif RECO",
+                "condition": "true"
+            },
+            "average_of_active_reco": {
+                "line_number": "4",
+                "line": "singlecell",
+                "fr": "Proportion des RECO opérationnels = Nombre des RECO opérationnels X 100 / Nombre tot. des RECO",
+                "en": "Average of active RECO= Nbrof active RECO X 100/Nbr of RECO",
+                "condition": "true"
+            },
+            "coverage_of_reco_in_the_health_area": {
+                "line_number": "5",
+                "line": "singlecell",
+                "fr": "Couverture en RECO dans l’AS = Nombre des RECO existantsX100/Nombre des RECO prévus",
+                "en": "Coverageof RECO in the health area= Nbr of existing RECO X100/Nbr of RECO Provided",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "ladies": {
+                    "fr": "Femme",
+                    "en": "Ladies",
+                    "title":"Ladies",
+                    "condition": "true"
+                },
+                "men": {
+                    "fr": "Homme",
+                    "en": "Men",
+                    "title":"Men",
+                    "condition": "true"
+                },
+                "totals": {
+                    "fr": "Total",
+                    "en": "Total",
+                    "title":"Total",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_promo"
+    }

@@ -1,0 +1,120 @@
+    {
+        "title": "2.5 LABORATORY(table2)",
+        "type": "object",
+        "properties": {
+            "stool": {
+                "line_number": "1",
+                "fr": "Selles",
+                "en": "Stool",
+                "condition": "true"
+            },
+            "amoebia": {
+                "line_number": "2",
+                "fr": "Amibe",
+                "en": "Amoebia",
+                "condition": "true"
+            },
+            "ankylostoma": {
+                "line_number": "3",
+                "fr": "Ankylostome",
+                "en": "Ankylostoma",
+                "condition": "true"
+            },
+            "schisto_mansoni": {
+                "line_number": "4",
+                "fr": "Schisto-mansoni",
+                "en": "Schisto-mansoni",
+                "condition": "true"
+            },
+            "trichomonas": {
+                "line_number": "5",
+                "fr": "Trichomonas",
+                "en": "Trichomonas",
+                "condition": "true"
+            },
+            "ascaris": {
+                "line_number": "6",
+                "fr": "Ascaris",
+                "en": "Ascaris",
+                "condition": "true"
+            },
+            "oxyures": {
+                "line_number": "7",
+                "fr": "Oxyures",
+                "en": "Oxyures",
+                "condition": "true"
+            },
+            "others": {
+                "line_number": "8",
+                "fr": "Autres",
+                "en": "Others",
+                "condition": "true"
+            },
+            "hemoglobine": {
+                "line_number": "9",
+                "fr": "Hémoglobine",
+                "en": "Hemoglobine",
+                "condition": "true"
+            },
+            "less_than_8gr_percentage": {
+                "line_number": "10",
+                "fr": "<8gr%",
+                "en": "<8gr%",
+                "condition": "true"
+            },
+            "sputum_for_afb": {
+                "line_number": "11",
+                "fr": "Crachat Ziehl / BK Dépistage",
+                "en": "Sputum for AFB",
+                "condition": "true"
+            },
+            "ziehl_bk_test_c2_c3": {
+                "line_number": "12",
+                "fr": "Ziehl / BK Contrôle C2/C3",
+                "en": "Ziehl/BK test C2/C3",
+                "condition": "true"
+            },
+            "ziehl_bk_control_c5": {
+                "line_number": "13",
+                "fr": "Ziehl / BK Contrôle C5",
+                "en": "Ziehl/BK Control C5",
+                "condition": "true"
+            },
+            "ziehl_bk_control_c6_c7": {
+                "line_number": "14",
+                "fr": "Ziehl / BK Contrôle C6/C7",
+                "en": "Ziehl/BK control C6/C7",
+                "condition": "true"
+            },
+            "hiv": {
+                "line_number": "15",
+                "fr": "VIH",
+                "en": "HIV",
+                "condition": "true"
+            },
+            "rapid_test_det_unigld_db_chk": {
+                "line_number": "16",
+                "fr": "Test rapide (Det., Unigld, Db chk)",
+                "en": "Rapid test (Det, Unigld, Db chk)",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "screening_total": {
+                    "fr": "Total",
+                    "en": "Total",
+                    "title":"Total",
+                    "condition": "true"
+                },
+                "screening_positif": {
+                    "fr": "Positif",
+                    "en": "Positif",
+                    "title":"Positif",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_labcare"
+    }
+    

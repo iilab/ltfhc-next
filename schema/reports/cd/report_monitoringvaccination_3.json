@@ -1,0 +1,61 @@
+   {
+        "title": "MONITORING OF PREVENTABLE DESEASES THROUGH VACCINATION ( Vaccination Sessions )",
+        "type": "object",
+        "properties": {
+            "stable": {
+                "line_number": "1",
+                "fr": "Fixe",
+                "en": "STABLE",
+                "condition": "true"
+            },
+            "advanced": {
+                "line_number": "2",
+                "fr": "Avancee",
+                "en": "ADVANCED",
+                "condition": "true"
+            },
+            "mobile": {
+                "line_number": "3",
+                "fr": "MOBILE",
+                "en": "MOBILE",
+                "condition": "true"
+            },
+            "date_of_last_monitoring_meeting": {
+                "line_number": "4",
+                "line": "singlecell",
+                "fr": "Date de la derniere reunion de monitorage",
+                "en": "Date of last monitoring meeting",
+                "condition": "true"
+            },
+            "date_of_the_last_bcz_supervision": {
+                "line_number": "5",
+                "line": "singlecell",
+                "fr": "Date de la derniere supervision du BCZS",
+                "en": "Date of the last BCZ supervision",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "straegy": {
+                    "fr": "Strategie",
+                    "en": "Straegy",
+                    "title":"Straegy",
+                    "condition": "true"
+                },
+                "planned": {
+                    "fr": "Prevues",
+                    "en": "Planned",
+                    "title":"Planned",
+                    "condition": "true"
+                },
+                "realized": {
+                    "fr": "Realisees",
+                    "en": "Realized",
+                    "title":"Realized",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_monitoringvaccination"
+    }

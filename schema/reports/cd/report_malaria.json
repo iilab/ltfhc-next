@@ -1,0 +1,144 @@
+{
+    "title": "Monthly Canvas - 2.7. Malaria",
+    "type": "object",
+    "properties": {
+        "suspect_cases": {
+            "line_number": "1",
+            "fr": "Cas suspect",
+            "en": "Suspect cases",
+            "condition": "true"
+        },
+        "tdr_realised": {
+            "line_number": "2",
+            "fr": "TDR réalisés",
+            "en": "TDR realised",
+            "condition": "true"
+        },
+        "including_positif": {
+            "line_number": "2a",
+            "fr": "Dont positif",
+            "en": "Including positif",
+            "condition": "true"
+        },
+        "blood_smears_realised": {
+            "line_number": "3",
+            "fr": "Goutte épaisse réalisée",
+            "en": "Blood smears realised",
+            "condition": "true"
+        },
+        "blood_smears_including": {
+            "line_number": "3a",
+            "fr": "Dont positif",
+            "en": "?",
+            "condition": "true"
+        },		
+        "including_frottis_mince_realised": {
+            "line_number": "4",
+            "fr": "Frottis mince réalisés",
+            "en": "Including frottis mince realised",
+            "condition": "true"
+        },
+        "confirmed_simple_malaria": {
+            "line_number": "5",
+            "fr": "Paludisme simple confirmé",
+            "en": "Confirmed simple malaria",
+            "condition": "true"
+        },
+        "including_treated": {
+            "line_number": "5a",
+            "fr": "Dont traité",
+            "en": "Including treated",
+            "condition": "true"
+        },
+        "confirmed_severe_malaria": {
+            "line_number": "6",
+            "fr": "Paludisme grave confirmé",
+            "en": "Confirmed severe malaria",
+            "condition": "true"
+        },
+        "confirmed_severe_including_refered": {
+            "line_number": "6a",
+            "fr": "Dont référé",
+            "en": "Including refered",
+            "condition": "true"
+        },
+        "confirmed_severe_including_deads": {
+            "line_number": "6b",
+            "fr": "Dont traité",
+            "en": "Including deads",
+            "condition": "true"
+        },
+        "unconfirmed_simple_malaria": {
+            "line_number": "7",
+            "fr": "Paludisme simple non confirmé",
+            "en": "Unconfirmed simple malaria",
+            "condition": "true"
+        },
+        "unconfirmed_simple_dead": {
+            "line_number": "7a",
+            "fr": "Dont traité",
+            "en": "Including deads",
+            "condition": "true"
+        },		
+        "unconfirmed_severe_malaria": {
+            "line_number": "8",
+            "fr": "Paludisme grave non confirmé",
+            "en": "Unconfirmed severe malaria",
+            "condition": "true"
+        },
+        "unconfirmed_severe_including_refered": {
+            "line_number": "8a",
+            "fr": "Dont référé",
+            "en": "Including refered",
+            "condition": "true"
+        },
+        "unconfirmed_severe_including_deads": {
+            "line_number": "8b",
+            "fr": "Dont décédé",
+            "en": "Including deads",
+            "condition": "true"
+        }
+	 
+	 
+    },
+    "definitions": {
+        "columns": {
+            "0_11months": {
+                "fr": "0-11 mois",
+                "en": "0-11 months",
+                "title":"0-11 months",
+                "condition": "true"
+            },
+            "12_59months": {
+                "fr": "12-59 mois",
+                "en": "12-59 months",
+                "title":"12-59 months",
+                "condition": "true"
+            },
+            "5_14yrs": {
+                "fr": "5-14 ans",
+                "en": "5-14yrs",
+                "title":"5-14yrs",
+                "condition": "true"
+            },			
+            "15yrs": {
+                "fr": "15 ans +",
+                "en": "15yrs +",
+                "title":"15yrs",
+                "condition": "true"
+            },				
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title":"Total",
+                "condition": "true"
+            },
+            "pw": {
+                "fr": "Dont femme enceinte",
+                "en": "Incl. P.W",
+                "title":"Incl. P.W",
+                "condition": "true"
+            }  			
+        }
+    }
+}

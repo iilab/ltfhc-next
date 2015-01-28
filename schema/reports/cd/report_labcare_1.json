@@ -1,0 +1,107 @@
+    {
+        "title": "2.5 LABORATORY",
+        "type": "object",
+        "properties": {
+            "clinistix": {
+                "line_number": "1",
+                "fr": "Chimie urines",
+                "en": "Clinistix",
+                "condition": "true"
+            },
+            "dosage_albumine": {
+                "line_number": "2",
+                "fr": "Dosage albumine",
+                "en": "Dosage Albumine",
+                "condition": "true"
+            },
+            "sugar": {
+                "line_number": "3",
+                "fr": "Sucre",
+                "en": "Sugar",
+                "condition": "true"
+            },
+            "culot_urinaire": {
+                "line_number": "4",
+                "fr": "Culot urinaire",
+                "en": "Culot Urinaire",
+                "condition": "true"
+            },
+            "schisto_haem": {
+                "line_number": "5",
+                "fr": "Schisto-haem",
+                "en": "Schisto-haem",
+                "condition": "true"
+            },
+            "trichomonas": {
+                "line_number": "6",
+                "fr": "Trichomonas",
+                "en": "Trichomonas",
+                "condition": "true"
+            },
+            "others": {
+                "line_number": "7",
+                "fr": "Autres",
+                "en": "Others",
+                "condition": "true"
+            },
+            "blood_smears": {
+                "line_number": "8",
+                "fr": "Gouttes épaisses",
+                "en": "Blood smears",
+                "condition": "true"
+            },
+            "micro_filaria": {
+                "line_number": "9",
+                "fr": "Micro filaire",
+                "en": "Micro filaria",
+                "condition": "true"
+            },
+            "plasmodium": {
+                "line_number": "10",
+                "fr": "Plasmodium",
+                "en": "Plasmodium",
+                "condition": "true"
+            },
+            "trypanosomiasis": {
+                "line_number": "11",
+                "fr": "Trypanosomes",
+                "en": "Trypanosomiasis",
+                "condition": "true"
+            },
+            "fresh_blood_smears": {
+                "line_number": "12",
+                "fr": "Goutte fraiche",
+                "en": "Fresh Blood smears",
+                "condition": "true"
+            },
+            "aspirate_from_nodules": {
+                "line_number": "13",
+                "fr": "Ponction ganglionnaires",
+                "en": "Aspirate from Nodules",
+                "condition": "true"
+            },
+            "tested_couple_drepanocytosis": {
+                "line_number": "14",
+                "fr": "Couples dépistés: drépanocytose",
+                "en": "Tested couple: drepanocytosis",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "screening_total": {
+                    "fr": "Total",
+                    "en": "Total",
+                    "title":"Total",
+                    "condition": "true"
+                },
+                "screening_positif": {
+                    "fr": "Positif",
+                    "en": "Positif",
+                    "title":"Positif",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_labcare"
+    }
