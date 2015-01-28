@@ -1,0 +1,35 @@
+{
+    "title": "6.1 Reference of Community care site activities",
+    "type": "object",
+    "properties": {
+        "active_care_sites": {
+            "line_number": "1",
+            "fr": "Sites de soins fonctionnels",
+            "en": "Active care sites",
+            "condition": "true"
+        },
+        "care_sites_wich_have_reported": {
+            "line_number": "2",
+            "fr": "Sites de soins ayant rapporté",
+            "en": "Care sites wich have reported",
+            "condition": "true"
+        },
+        "care_sites_wich_have_reported_on_the_dead_line": {
+            "line_number": "3",
+            "fr": "SSC ayant rapporté dans le délai",
+            "en": "Care sites wich have reported on the dead line",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title": "Number",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_community"
+}

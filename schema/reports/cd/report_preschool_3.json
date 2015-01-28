@@ -1,0 +1,98 @@
+    {
+        "title": "4.3 Growth follow up at the Pre-scolary consultation",
+        "type": "object",
+        "properties": {
+            "nbr_of_children_on_middle_line_growth_chart": {
+                "line_number": "1",
+                "fr": "Nb d’enfants sous la courbe centrale de la fiche de croissance",
+                "en": "Nbr of children on middle line growth chart",
+                "condition": "true"
+            },
+            "nbr_of_light_malunutrition_cases": {
+                "line_number": "2",
+                "fr": "Nb cas malnutrition légère",
+                "en": "Nbr of light malunutrition cases",
+                "condition": "true"
+            },
+            "nbr_of_high_balanced_malnutriation_cases": {
+                "line_number": "3",
+                "fr": "Nb cas malnutrition aiguë modérée ",
+                "en": "Nbr of high balanced malnutriation cases",
+                "condition": "true"
+            },
+            "nbr_of_high_severe_malnutrition_cases": {
+                "line_number": "4",
+                "fr": "Nb cas malnutrition aiguë sévère",
+                "en": "Nbr of High severe malnutrition cases",
+                "condition": "true"
+            },
+            "nbr_of_high_balanced_malnutriation_refered_cases": {
+                "line_number": "5",
+                "fr": "Nb cas malnutrition aiguë sévère référés",
+                "en": "Nbr of high balanced malnutriation refered cases",
+                "condition": "true"
+            },
+            "nbr_of_children_showing_psychologic_trauma": {
+                "line_number": "6",
+                "fr": "Nb enfants présentant un retard psychomoteur",
+                "en": "Nbr of children showing psychologic trauma",
+                "condition": "true"
+            },
+            "avarage_of_refered_high_severe_malunutrition_children": {
+                "line_number": "7",
+                "line": "singlecell",
+                "fr": "Proportion enfants Malnutrition sévère référés = Nb enfants au stade 3 référés / Nb enfants au stade 3 x 100",
+                "en": "Avarage of refered high severe malunutrition children =Nbr of children at stage 3 refered/nbr of children at stage 3x100",
+                "condition": "true"
+            },
+            "average_of_children_with_insufficiency": {
+                "line_number": "8",
+                "line": "singlecell",
+                "fr": "Proportion d’enfants avec insuffisance pondérale=  Nb d’enfants sous la courbe centrale de la fiche de croissance X 100/Nb d’enfants de 0-59 mois attendus à la CPS",
+                "en": "Average of children with insufficiency = Nbr of children under the growth line of the chart x 100/Nbr of children from 0-59 months who attended at the PSC",
+                "condition": "true"
+            },
+            "average_of_children_from_0_11_months_who_received_a_mild": {
+                "line_number": "9",
+                "line": "singlecell",
+                "fr": "Proportion des enfants de 0-11 mois ayant reçu une MIILD = Nombre d'enfants de 0-11 mois ayant reçu une MILD lors des visites préscolaires X 100 / Total enfants reçus à la 1ėre visite préscolaire",
+                "en": "Average of children from 0-11 months who received a MILD =Nbr of children from 0-11 months who received a MILD during PSC visit x100/total children seen at the 1st PSC visit",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "among_the_new_cases_at_psc": {
+                    "fr": "Parmi les NC CPS",
+                    "en": "Among the new cases at PSC",
+                    "title":"Among the new cases at PSC",
+                    "condition": "true"
+                },
+                "as": {
+                    "fr": "AS",
+                    "en": "AS",
+                    "title":"AS",
+                    "condition": "true"
+                },
+                "has": {
+                    "fr": "HAS",
+                    "en": "HAS",
+                    "title":"HAS",
+                    "condition": "true"
+                },
+                "hz": {
+                    "fr": "HZ",
+                    "en": "HZ",
+                    "title":"HZ",
+                    "condition": "true"
+                },
+                "total": {
+                    "fr": "TOTAL",
+                    "en": "TOTAL",
+                    "title":"TOTAL",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_preschool"
+    }

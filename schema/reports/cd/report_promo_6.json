@@ -1,0 +1,71 @@
+    {
+        "title": "5.6 Water coverage",
+        "type": "object",
+        "properties": {
+            "improved_existing_water_points": {
+                "line_number": "1",
+                "fr": "Points d’eau amenagés existant",
+                "en": "Improved existing water points",
+                "condition": "true"
+            },
+            "improved_existing_water_points_with_tested_water": {
+                "line_number": "2",
+                "fr": "Points d’eau amenagés don’t la qualite d'eau a ete teste au mois",
+                "en": "Improved existing water points with tested water",
+                "condition": "true"
+            },
+            "water_management_programed": {
+                "line_number": "3",
+                "fr": "Aménagement programmés",
+                "en": "Water management programed",
+                "condition": "true"
+            },
+            "water_management_realised_this_month": {
+                "line_number": "4",
+                "fr": "Aménagement réalisés durant le mois",
+                "en": "Water management realised this month",
+                "condition": "true"
+            },
+            "population_served_by_new_water_point": {
+                "line_number": "5",
+                "fr": "Pop. desservie par les nv points d’eau",
+                "en": "Population served by new water point",
+                "condition": "true"
+            },
+            "house_hold_living_in_the_health_area": {
+                "line_number": "6",
+                "fr": "Ménages vivant dans l'Aire de Sante",
+                "en": "House hold living in the health area",
+                "condition": "true"
+            },
+            "house_hold_with_hygienic_latrines": {
+                "line_number": "7",
+                "fr": "Ménages avec latrines hygiéniques",
+                "en": "House hold with hygienic latrines",
+                "condition": "true"
+            },
+            "house_hold_who_use_the_treated_water": {
+                "line_number": "8",
+                "fr": "Ménages qui recourent au traitement d’eau de boisson avant l'utilisation",
+                "en": "House hold who use the treated water",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "functional_tools": {
+                    "fr": "Ouvrages Fonctionnels",
+                    "en": "Functional tools",
+                    "title":"Functional tools",
+                    "condition": "true"
+                },
+                "number": {
+                    "fr": "Nombre",
+                    "en": "Number",
+                    "title":"Number",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_promo"
+    }

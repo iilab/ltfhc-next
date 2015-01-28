@@ -1,0 +1,222 @@
+    {
+        "title": "Weekly Notification Form - Epidemiological Diseases",
+        "type": "object",
+        "properties": {
+            "structure_of_care": {
+                "line_number": "1",
+                "line": "singlecell",
+                "fr": "Etablissement  de  soins",
+                "en": "Structure of care",
+                "condition": "true"
+            },
+            "health_area_population": {
+                "line_number": "2",
+                "line": "singlecell",
+                "fr": "Population  de l'aire  de  sante",
+                "en": "Health area population",
+                "condition": "true"
+            },
+            "week_no": {
+                "line_number": "3",
+                "line": "singlecell",
+                "fr": "SEMAINE N°",
+                "en": "Week N°",
+                "condition": "true"
+            },
+            "from": {
+                "line_number": "4",
+                "line": "singlecell",
+                "fr": "du",
+                "en": "From",
+                "condition": "true"
+            },
+            "to": {
+                "line_number": "5",
+                "line": "singlecell",
+                "fr": "au",
+                "en": "To",
+                "condition": "true"
+            },
+            "cholera": {
+                "line_number": "6",
+                "fr": "CHOLERA",
+                "en": "CHOLERA",
+                "condition": "true"
+            },
+            "disenterie_bascillaire": {
+                "line_number": "7",
+                "fr": "DISENTERIE BASCILLAIRE",
+                "en": "DISENTERIE BASCILLAIRE",
+                "condition": "true"
+            },
+            "viral_heamoragic_fever": {
+                "line_number": "8",
+                "fr": "FIEVRES  HEMORRAGIQUES  VIRALES",
+                "en": "VIRAL HEAMORAGIC FEVER",
+                "condition": "true"
+            },
+            "yellow_fever": {
+                "line_number": "9",
+                "fr": "FIEVRE JAUNE",
+                "en": "YELLOW FEVER",
+                "condition": "true"
+            },
+            "cerebro_spiral_miningititis": {
+                "line_number": "10",
+                "fr": "MENINGITE  CELEBRO-SPIRALE",
+                "en": "CEREBRO-SPIRAL MININGITITIS",
+                "condition": "true"
+            },
+            "monkey_pox": {
+                "line_number": "11",
+                "fr": "MONKEY POX",
+                "en": "MONKEY POX",
+                "condition": "true"
+            },
+            "malaria": {
+                "line_number": "12",
+                "fr": "PALUDISME",
+                "en": "MALARIA",
+                "condition": "true"
+            },
+            "pest": {
+                "line_number": "13",
+                "fr": "PESTE",
+                "en": "PEST",
+                "condition": "true"
+            },
+            "paralysie_flasque_aigue": {
+                "line_number": "14",
+                "fr": "PARALYSIE FLASQUE AIGUE",
+                "en": "PARALYSIE FLASQUE AIGUE",
+                "condition": "true"
+            },
+            "meascles": {
+                "line_number": "15",
+                "fr": "ROUGHOLE",
+                "en": "MEASCLES",
+                "condition": "true"
+            },
+            "typhus": {
+                "line_number": "16",
+                "fr": "TYPHUS",
+                "en": "TYPHUS",
+                "condition": "true"
+            },
+            "neonatal_tetanus": {
+                "line_number": "17",
+                "fr": "TETANOS  NEONATAL",
+                "en": "NEONATAL TETANUS",
+                "condition": "true"
+            },
+            "wooping_cogh": {
+                "line_number": "18",
+                "fr": "COOUELUCHE",
+                "en": "WOOPING COGH",
+                "condition": "true"
+            },
+            "typhoid_fever_for_each_case_precise_any_perforation_suspicion": {
+                "line_number": "19",
+                "fr": "FIEVRE TYPHOIDE  (pour  tout  cas  preciser si perforation  est susPectee)",
+                "en": "TYPHOID FEVER(for each case, precise any perforation suspicion)",
+                "condition": "true"
+            },
+            "grippe_saisoniere_season_flu": {
+                "line_number": "20",
+                "fr": "GRIPPE  SAISONNIERE",
+                "en": "Grippe saisoniere(season flu)",
+                "condition": "true"
+            },
+            "high_respiratory_infection": {
+                "line_number": "21",
+                "fr": "INFECTION  RESPIRATOIRE  AIGUT",
+                "en": "High Respiratory Infection",
+                "condition": "true"
+            },
+            "conjonctivities": {
+                "line_number": "22",
+                "fr": "CONJOCTIVITES",
+                "en": "Conjonctivities",
+                "condition": "true"
+            },
+            "blood_transfusion": {
+                "line_number": "23",
+                "fr": "TRANSFUSION  SANGUINE",
+                "en": "Blood transfusion",
+                "condition": "true"
+            },
+            "road_accident": {
+                "line_number": "24",
+                "fr": "ACCIDENT  DE TRAFIC  ROUTIER",
+                "en": "Road Accident",
+                "condition": "true"
+            },
+            "observation": {
+                "line_number": "25",
+                "line": "singlecell",
+                "fr": "Observation",
+                "en": "Observation",
+                "condition": "true"
+            },
+            "date": {
+                "line_number": "26",
+                "line": "singlecell",
+                "fr": "Date",
+                "en": "Date:",
+                "condition": "true"
+            },
+            "place": {
+                "line_number": "27",
+                "line": "singlecell",
+                "fr": "Fait a",
+                "en": "Place:",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "diseases": {
+                    "fr": "MALADIES",
+                    "en": "DISEASES",
+                    "title":"DISEASES",
+                    "condition": "true"
+                },
+                "cases_less_years": {
+                    "fr": "CAS <5 ans",
+                    "en": "CASES <5 years",
+                    "title":"CASES <5 years",
+                    "condition": "true"
+                },
+                "cases_greater_years": {
+                    "fr": "CAS >5 ans",
+                    "en": "CASES >5years",
+                    "title":"CASES >5years",
+                    "condition": "true"
+                },
+                "cases_total": {
+                    "fr": "CAS Total",
+                    "en": "CASES Total",
+                    "title":"CASES Total",
+                    "condition": "true"
+                },
+                "deaths_less_years": {
+                    "fr": "DECES <5 ans",
+                    "en": "DEATHS <5years",
+                    "title":"DEATHS <5years",
+                    "condition": "true"
+                },
+                "deaths_greater_years": {
+                    "fr": "DECES >5 ans",
+                    "en": "DEATHS >5years",
+                    "title":"DEATHS >5years",
+                    "condition": "true"
+                },
+                "death_total": {
+                    "fr": "DECES Total",
+                    "en": "DEATHS Total",
+                    "title":"DEATHS Total",
+                    "condition": "true"
+                }
+            }
+        }
+    }

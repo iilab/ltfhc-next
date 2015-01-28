@@ -1,0 +1,65 @@
+    {
+        "title": "11. a USE OF REVENUES GENERATED FROM THE DRUGS SALE",
+        "type": "object",
+        "properties": {
+            "total_revenues": {
+                "line_number": "1",
+                "fr": "Total recettes",
+                "en": "Total revenues",
+                "condition": "true"
+            },
+            "proportion_of_the_structure": {
+                "line_number": "2",
+                "fr": "Proportion de la structure",
+                "en": "Proportion of the structure",
+                "condition": "true"
+            },
+            "staff_expenses": {
+                "line_number": "3",
+                "fr": "Personnel dépenses",
+                "en": "Staff expenses",
+                "condition": "true"
+            },
+            "purchasing_drugs": {
+                "line_number": "4",
+                "fr": "Achat de médicaments/gels",
+                "en": "Purchasing drugs",
+                "condition": "true"
+            },
+            "consumables_expenses_fungible": {
+                "line_number": "5",
+                "fr": "Ingrédients frais (fongible)",
+                "en": "Consumables expenses (fungible)",
+                "condition": "true"
+            },
+            "long_term_material_expenses": {
+                "line_number": "6",
+                "fr": "Frais de matériel",
+                "en": "Long term material Expenses",
+                "condition": "true"
+            },
+            "maintenance": {
+                "line_number": "7",
+                "fr": "Maintenance",
+                "en": "Maintenance",
+                "condition": "true"
+            },
+            "others_to_be_specified": {
+                "line_number": "8",
+                "fr": "Autres (à préciser)",
+                "en": "Others (to be specified)",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "number": {
+                    "fr": "Nombre",
+                    "en": "Number",
+                    "title":"Number",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_reprohealth"
+    }

@@ -1,0 +1,65 @@
+    {
+        "title": "8.4.4 Pharmacy value",
+        "type": "object",
+        "properties": {
+            "physics_stocks_value_of_medicines_plus": {
+                "line_number": "1",
+                "fr": "Valeur du stock physique de médicaments (+)",
+                "en": "Physics stocks value of medicines (+)",
+                "condition": "true"
+            },
+            "pharmacy_account_plus": {
+                "line_number": "2",
+                "fr": "Montant du compte pharmacie (+)",
+                "en": "Pharmacy account (+)",
+                "condition": "true"
+            },
+            "request_amount_in_process_already_paid_plus": {
+                "line_number": "3",
+                "fr": "Montant des commandes en cours (déjà payées) (+)",
+                "en": "Request amount in process, ( already paid) (+)",
+                "condition": "true"
+            },
+            "amount_recovered_creances_plus": {
+                "line_number": "4",
+                "fr": "Montant à recouvrer (créances) (+)",
+                "en": "Amount recovered (creances) (+)",
+                "condition": "true"
+            },
+            "amount_to_be_paid_to_3rd_part_debts": {
+                "line_number": "5",
+                "fr": "Montant à payer au tiers (dettes) (-)",
+                "en": "Amount to be paid to 3rd part (debts)",
+                "condition": "true"
+            },
+            "stock_value_form": {
+                "line_number": "6",
+                "fr": "Valeur du stock sur fiche",
+                "en": "Stock value form",
+                "condition": "true"
+            },
+            "real_value_of_the_pharmacy": {
+                "line_number": "7",
+                "fr": "Valeur réelle de la pharmacie",
+                "en": "Real value of the Pharmacy",
+                "condition": "true"
+            },
+            "loss_of_the_pharmacy": {
+                "line_number": "8",
+                "fr": "Perte de la pharmacie",
+                "en": "Loss of the pharmacy",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "amount": {
+                    "fr": "Montant",
+                    "en": "Amount",
+                    "title":"Amount",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_resources"
+    }

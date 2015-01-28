@@ -1,0 +1,83 @@
+    {
+        "title": "8.2 Personnel Management",
+        "type": "object",
+        "properties": {
+            "doctors_for_consultation": {
+                "line_number": "1",
+                "fr": "Médecins (pour consultation)",
+                "en": "Doctors (for consultation)",
+                "condition": "true"
+            },
+            "nurse_l2": {
+                "line_number": "2",
+                "fr": "Infirmier L2",
+                "en": "Nurse L2",
+                "condition": "true"
+            },
+            "nurse_a1": {
+                "line_number": "3",
+                "fr": "Infirmier A1",
+                "en": "Nurse A1",
+                "condition": "true"
+            },
+            "nurse_a2": {
+                "line_number": "4",
+                "fr": "Infirmier A2",
+                "en": "Nurse A2",
+                "condition": "true"
+            },
+            "mid_wives": {
+                "line_number": "5",
+                "fr": "Accoucheur(se)/Sage-femme",
+                "en": "Mid wives",
+                "condition": "true"
+            },
+            "nutritionists_a2_a1_l2": {
+                "line_number": "6",
+                "fr": "Nutritionnistes A2 /A1/ L2",
+                "en": "Nutritionists /A2/A1/L2",
+                "condition": "true"
+            },
+            "lab_technician_a2_a1_l2": {
+                "line_number": "7",
+                "fr": "Techniciens de laboratoire A2 A1 L2",
+                "en": "Lab technician A2 A1 L2",
+                "condition": "true"
+            },
+            "other_personnel": {
+                "line_number": "8",
+                "fr": "Autre personne",
+                "en": "Other personnel",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "nbr_of_personnel": {
+                    "fr": "Nb d'agents",
+                    "en": "Nbr of personnel",
+                    "title":"Nbr of personnel",
+                    "condition": "true"
+                },
+                "nb_of_working_days_provided": {
+                    "fr": "Nb jrs de travail prévu",
+                    "en": "# of working days provided",
+                    "title":"# of working days provided",
+                    "condition": "true"
+                },
+                "nb_of_justified_absent_days": {
+                    "fr": "Nb jrs d’absence justifié",
+                    "en": "# of justified absent days",
+                    "title":"# of justified absent days",
+                    "condition": "true"
+                },
+                "nb_of_non_justified_absent_days": {
+                    "fr": "Nb jrs d’absence non justifié",
+                    "en": "# of non justified absent days",
+                    "title":"# of non justified absent days",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_resources"
+    }

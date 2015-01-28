@@ -1,0 +1,42 @@
+
+    {
+        "title": "2.3.1 STIs",
+        "type": "object",
+        "properties": {
+            "new_stis_cases": {
+                "line_number": "1",
+                "fr": "Nouveaux cas IST",
+                "en": "New STIs cases",
+                "condition": "true"
+            },
+            "contact_among_new_stis_cases": {
+                "line_number": "2",
+                "fr": "Contacts parmi les Nouveaux Cas IST",
+                "en": "Contact among new STIs cases",
+                "condition": "true"
+            },
+            "cases_of_stis_councilled_and_hiv_tested": {
+                "line_number": "3",
+                "fr": "Cas IST conseillés et testés au VIH",
+                "en": "Cases of STIs councilled and HIV tested",
+                "condition": "true"
+            },
+            "stis_cases_treated_under_syndromic_approach": {
+                "line_number": "4",
+                "fr": "Cas IST traités selon l’approche syndromique",
+                "en": "STIs cases treated under syndromic approach",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "number": {
+                    "fr": "Nombre",
+                    "en": "Number",
+                    "title":"Number",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_isthiv"
+    }

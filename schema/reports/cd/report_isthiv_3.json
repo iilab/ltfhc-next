@@ -1,0 +1,107 @@
+    {
+        "title": "2.3.3  Care, Treatment and support",
+        "type": "object",
+        "properties": {
+            "number_of_new_cases_io": {
+                "line_number": "1",
+                "fr": "Nombre Nouveaux Cas IO",
+                "en": "Number of new cases IO",
+                "condition": "true"
+            },
+            "including_tbc_new_cases": {
+                "line_number": "2",
+                "fr": "Dont Nouveaux Cas TBC",
+                "en": "Including TBC new cases",
+                "condition": "true"
+            },
+            "number_of_plwhiv_under_profilaxis_ctx": {
+                "line_number": "3",
+                "fr": "Nombre de PVV sous prophylaxie CTX",
+                "en": "Number of PLWHIV under profilaxis CTX",
+                "condition": "true"
+            },
+            "number_of_plwhiv_tested_tb_under_profilaxis_ctx": {
+                "line_number": "4",
+                "fr": "Nombre de PVV VIH dépistée TB sous prophylaxie CTX",
+                "en": "Number of PLWHIV tested TB under profilaxis CTX",
+                "condition": "true"
+            },
+            "number_of_patients_who_beneficiated_with_pec_pss": {
+                "line_number": "5",
+                "fr": "Nombre de patients ayant bénéficié de la PEC PSS",
+                "en": "Number of patients who beneficiated with PEC PSS",
+                "condition": "true"
+            },
+            "number_of_malnurished_plwhiv_who_beneficiated_nutritional_pec": {
+                "line_number": "6",
+                "fr": "Nombre de PVV Malnutris ayant bénéficié de la PEC Nutritionnelle",
+                "en": "Number of malnurished PLWHIV who beneficiated nutritional PEC",
+                "condition": "true"
+            },
+            "number_of_plwhiv_who_are_under_home_based_care": {
+                "line_number": "7",
+                "fr": "Nombre de PVV bénéficiant du suivi dans le cadre des visites à domicile",
+                "en": "Number of PLWHIV who are under Home Based Care",
+                "condition": "true"
+            },
+            "number_of_plwhiv_who_beneficiated_the_follow_up_on_the_biological_cd4": {
+                "line_number": "8",
+                "fr": "Nombre des PVVIH ayant bénéficié du suivi biologique par le CD4",
+                "en": "Number of PLWHIV who beneficiated the follow up on the biological CD4",
+                "condition": "true"
+            },
+            "number_of_children_born_from_hiv_mothers_who_have_benefciated_the_dbs_pcr_dna": {
+                "line_number": "9",
+                "fr": "Nombre d’enfant nés de mères VIH+ ayant bénéficié du DBS/PCR DNA",
+                "en": "Number of children born from HIV+ mothers who have benefciated the DBS/PCR DNA",
+                "condition": "true"
+            },
+            "number_of_exposed_people_who_beneficated_the_pep_kit": {
+                "line_number": "10",
+                "fr": "Nbre des personnes exposées ayant bénéficié du Kit PEP",
+                "en": "Number of exposed people who beneficated the PEP kit",
+                "condition": "true"
+            },
+            "number_of_patients_under_arv_treatment": {
+                "line_number": "11",
+                "fr": "Nombre de patients sous TARV",
+                "en": "Number of patients under ARV treatment",
+                "condition": "true"
+            },
+            "number_of_plwhiv_who_disappeared": {
+                "line_number": "12",
+                "fr": "Nombre de PVV perdues de vue",
+                "en": "Number of PLWHIV who disappeared",
+                "condition": "true"
+            },
+            "number_of_plwhiv_on_a_queue": {
+                "line_number": "13",
+                "fr": "Nombre de PVV file d’attente",
+                "en": "Number of PLWHIV on a queue",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "oldcases": {
+                    "fr": "Anciens Cas",
+                    "en": "Oldcases",
+                    "title":"Oldcases",
+                    "condition": "true"
+                },
+                "new_cases": {
+                    "fr": "Nouveaux Cas",
+                    "en": "New cases",
+                    "title":"New cases",
+                    "condition": "true"
+                },
+                "total": {
+                    "fr": "TOTAL",
+                    "en": "TOTAL",
+                    "title":"TOTAL",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_isthiv"
+    }

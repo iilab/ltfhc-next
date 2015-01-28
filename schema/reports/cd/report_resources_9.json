@@ -1,0 +1,113 @@
+    {
+        "title": "8.3.6 Subventions and subsides received values",
+        "type": "object",
+        "properties": {
+            "personal_salaries": {
+                "line_number": "1",
+                "fr": "Salaire personnel",
+                "en": "Personal Salaries",
+                "condition": "true"
+            },
+            "personal_incentives": {
+                "line_number": "2",
+                "fr": "Primes personnel",
+                "en": "Personal  incentives",
+                "condition": "true"
+            },
+            "personnel_de_la_structure_d_appui": {
+                "line_number": "3",
+                "fr": "Personnel de la structure d’appui",
+                "en": "Personnel de la structure d'appui",
+                "condition": "true"
+            },
+            "infrastructure_construcution": {
+                "line_number": "4",
+                "fr": "Infrastructure - Construction",
+                "en": "Infrastructure - Construcution",
+                "condition": "true"
+            },
+            "infrastructure_rehabiliation": {
+                "line_number": "5",
+                "fr": "Infrastructure - Réhabilitation",
+                "en": "Infrastructure - Rehabiliation",
+                "condition": "true"
+            },
+            "subvention_material_vehicule": {
+                "line_number": "6",
+                "fr": "Subvention Matériel - Vehicule",
+                "en": "Subvention material-vehicule",
+                "condition": "true"
+            },
+            "material_medical_equipments": {
+                "line_number": "7",
+                "fr": "Matériel - Equipement médicaux",
+                "en": "Material - medical equipments",
+                "condition": "true"
+            },
+            "material_other_equipments": {
+                "line_number": "8",
+                "fr": "Matériel - Autre équipement",
+                "en": "Material - other equipments",
+                "condition": "true"
+            },
+            "material_medicines": {
+                "line_number": "9",
+                "fr": "Matériel - Médicaments",
+                "en": "Material - Medicines",
+                "condition": "true"
+            },
+            "training_activities": {
+                "line_number": "10",
+                "fr": "Activités des Formations",
+                "en": "Training activities",
+                "condition": "true"
+            },
+            "other_activities": {
+                "line_number": "11",
+                "fr": "Autres Activites",
+                "en": "Other activities",
+                "condition": "true"
+            },
+            "routine_care_activities": {
+                "line_number": "12",
+                "fr": "Activités de soins - Routine",
+                "en": "Routine care activities",
+                "condition": "true"
+            },
+            "emergency_care_activities": {
+                "line_number": "13",
+                "fr": "Activités de soins - Urgence",
+                "en": "Emergency care activities",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "state": {
+                    "fr": "Etat",
+                    "en": "State",
+                    "title":"State",
+                    "condition": "true"
+                },
+                "parteners": {
+                    "fr": "Partenaire",
+                    "en": "Parterners",
+                    "title":"Parterners",
+                    "condition": "true"
+                },
+                "others": {
+                    "fr": "Autre",
+                    "en": "others",
+                    "title":"Others",
+                    "condition": "true"
+                },
+                "total": {
+                    "fr": "Total",
+                    "en": "Total",
+                    "title":"Total",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_resources"
+    }

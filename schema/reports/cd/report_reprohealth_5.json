@@ -1,0 +1,41 @@
+    {
+        "title": "5.CPON",
+        "type": "object",
+        "properties": {
+            "targeted_population": {
+                "line_number": "1",
+                "fr": "Pop. Cible",
+                "en": "Targeted Population",
+                "condition": "true"
+            },
+            "nber_of_women_who_were_followed_within_6weeks_45days_after_delivery": {
+                "line_number": "2",
+                "fr": "Nbre de femmes suivies dans les 6 semaines (45 jour) aprds accouchement",
+                "en": "Nber of Women who were followed within 6weeks (45days)after delivery",
+                "condition": "true"
+            },
+            "nber_of_women_who_presented_complications_after_delivery": {
+                "line_number": "3",
+                "fr": "Nbre de  femmes  ayant  pr6sentd  une complication  aprds  accouchement",
+                "en": "Nber of Women who presented complications after delivery",
+                "condition": "true"
+            },
+            "nber_of_women_who_received_vitamin_a_at_cpon": {
+                "line_number": "4",
+                "fr": "Nbre de  femmes  ayant  regu  la  Vitamine  A d la  CPoN",
+                "en": "Nber of Women who received Vitamin A at CPON",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "number": {
+                    "fr": "Nombre",
+                    "en": "Number",
+                    "title":"Number",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_reprohealth"
+    }

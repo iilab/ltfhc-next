@@ -1,0 +1,171 @@
+[
+    {
+        "title": "MONITORING OF PREVENTABLE DESEASES THROUGH VACCINATION",
+        "type": "object",
+        "properties": {
+            "pfa": {
+                "line_number": "1",
+                "fr": "PFA",
+                "en": "PFA",
+                "condition": "true"
+            },
+            "measles": {
+                "line_number": "2",
+                "fr": "Rougheole",
+                "en": "Measles",
+                "condition": "true"
+            },
+            "tnn": {
+                "line_number": "3",
+                "fr": "TNN***",
+                "en": "TNN**",
+                "condition": "true"
+            },
+            "diphteria": {
+                "line_number": "4",
+                "fr": "Diphteria",
+                "en": "Diphteria",
+                "condition": "true"
+            },
+            "wooping_cough": {
+                "line_number": "5",
+                "fr": "Coqueluch",
+                "en": "Wooping cough",
+                "condition": "true"
+            },
+            "fever": {
+                "line_number": "6",
+                "fr": "fièvre",
+                "en": "Fever",
+                "condition": "true"
+            },
+            "miningetitis": {
+                "line_number": "7",
+                "fr": "Miningetitis",
+                "en": "Miningetitis",
+                "condition": "true"
+            },
+            "pneumonia": {
+                "line_number": "8",
+                "fr": "Pneumoni",
+                "en": "Pneumonia",
+                "condition": "true"
+            },
+            "hepatitis": {
+                "line_number": "9",
+                "fr": "Hépatites*",
+                "en": "Hepatitis*",
+                "condition": "true"
+            },
+            "name_of_the_main_nurse": {
+                "line_number": "10",
+                "line": "singlecell",
+                "fr": "Nom de infirmière Titulaire",
+                "en": "Name of the Main Nurse",
+                "condition": "true"
+            },
+            "signature": {
+                "line_number": "11",
+                "line": "singlecell",
+                "fr": "Signature",
+                "en": "Signature",
+                "condition": "true"
+            },
+            "submiting_date_to_bcz": {
+                "line_number": "12",
+                "line": "singlecell",
+                "fr": "Date de transmission au BCZS",
+                "en": "Submiting date to BCZ",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "desease": {
+                    "fr": "Maladie",
+                    "en": "Desease",
+                    "title":"Desease",
+                    "condition": "true"
+                },
+                "0_11_months_case": {
+                    "fr": "0-11 mois Cas",
+                    "en": "0-11 months Case",
+                    "title":"0-11 months Case",
+                    "condition": "true"
+                },
+                "0_11_months_deaths": {
+                    "fr": "0-11 mois Décès",
+                    "en": "0-11 months Deaths",
+                    "title":"0-11 months Deaths",
+                    "condition": "true"
+                },
+                "12_59_months_case": {
+                    "fr": "12-59 mois Cas",
+                    "en": "12- 59 months Case",
+                    "title":"12-59 months Case",
+                    "condition": "true"
+                },
+                "12_59_months_deaths": {
+                    "fr": "12-59 mois Décès",
+                    "en": "12- 59 months Deaths",
+                    "title":"12-59 months Deaths",
+                    "condition": "true"
+                },
+                "5_15_years_case": {
+                    "fr": "5-15 ans Cas",
+                    "en": "5- 15 years Case",
+                    "title":"5-15 years Case",
+                    "condition": "true"
+                },
+                "5_15_years_deaths": {
+                    "fr": "5-15 ans Décès",
+                    "en": "5- 15 years Deaths",
+                    "title":"5-15 years Deaths",
+                    "condition": "true"
+                },
+                "greter_15_years_case": {
+                    "fr": ">15 ans Cas",
+                    "en": ">15 years Case",
+                    "title":">15 years Case",
+                    "condition": "true"
+                },
+                "greter_15_years_deaths": {
+                    "fr": ">15 ans Décès",
+                    "en": ">15 years Deaths",
+                    "title":">15 years Deaths",
+                    "condition": "true"
+                },
+                "total_case": {
+                    "fr": "Total Cas",
+                    "en": "Total Case",
+                    "title":"Total Case",
+                    "condition": "true"
+                },
+                "total_deaths": {
+                    "fr": "Total Décès",
+                    "en": "Total Deaths",
+                    "title":"Total Deaths",
+                    "condition": "true"
+                },
+                "nb_ch_wo_vacc": {
+                    "fr": "Statut Vaccinal Enf. 0 -11 mois Nbre/Enf/Fe/vacc",
+                    "en": "Vaccinal status Childr. 0 -11months Nb/ch/wo/vacc",
+                    "title":"Vaccinal status Childr. 0 -11months Nb/ch/wo/vacc",
+                    "condition": "true"
+                },
+                "nb_ch_wo_non_vacc": {
+                    "fr": "Statut Vaccinal Enf. 0 -11 mois Nbre/Enf/Fe/Non vacc",
+                    "en": "Vaccinal status Childr. 0 -11months Nb/Ch/Wo/non vacc",
+                    "title":"Vaccinal status Childr. 0 -11months Nb/Ch/Wo/non vacc",
+                    "condition": "true"
+                },
+                "nb_ch_wo_unknown_status": {
+                    "fr": "Statut Vaccinal Enf. 0 -11 mois Nbre/Enf/Fe/Statut Inconnu",
+                    "en": "Vaccinal status Childr. 0 -11months Nb/Ch/Wo/unknown status",
+                    "title":"Vaccinal status Childr. 0 -11months Nb/Ch/Wo/unknown status",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_monitoringvaccination"
+    }

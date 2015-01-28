@@ -1,0 +1,35 @@
+    {
+        "title": "5.8 Other Community Information",
+        "type": "object",
+        "properties": {
+            "deaths_in_the_community": {
+                "line_number": "1",
+                "fr": "Décès dans la communauté",
+                "en": "Deaths in the community",
+                "condition": "true"
+            },
+            "births_in_the_community": {
+                "line_number": "2",
+                "fr": "Naissances dans la communauté",
+                "en": "Births in the community",
+                "condition": "true"
+            },
+            "deaths_of_children_aged_0_59_months": {
+                "line_number": "3",
+                "fr": "Décès d’enfants de 0 à 59 mois",
+                "en": "deaths of children aged 0-59 months",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "number": {
+                    "fr": "Nombre",
+                    "en": "Number",
+                    "title":"Number",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_promo"
+    }

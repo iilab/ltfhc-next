@@ -1,0 +1,393 @@
+{
+    "title": "4.1 Child's vaccination (cont)",
+    "type": "object",
+    "properties": {
+        "bcg": {
+            "line_number": "16",
+            "line": "singlecell",
+            "fr": "BCG = BCG AS x 100 / Population de 0-11 mois du mois",
+            "en": "BCG = BCG As X 100/Pop from 01 to 11 months of the month",
+            "condition": "true"
+        },
+        "opv_0": {
+            "line_number": "2",
+            "fr": "VPO 0",
+            "en": "OPV 0",
+            "condition": "true"
+        },
+        "opv_1": {
+            "line_number": "3",
+            "fr": "VPO 1",
+            "en": "OPV 1",
+            "condition": "true"
+        },
+        "opv_2": {
+            "line_number": "4",
+            "fr": "VPO 2",
+            "en": "OPV 2",
+            "condition": "true"
+        },
+        "opv_3": {
+            "line_number": "17",
+            "line": "singlecell",
+            "fr": "VPO 3 = VPO3 AS x 100 / Population des nourrissons survivants au cours du mois",
+            "en": "OVP 3= OVP3 Asx100/Pop of survivors infants during the month",
+            "condition": "true"
+        },
+        "dtc_hepb_hib1": {
+            "line_number": "6",
+            "fr": "DTC-HepB Hib1",
+            "en": "DTC-HepB Hib1",
+            "condition": "true"
+        },
+        "dtc_hepb_hib2": {
+            "line_number": "7",
+            "fr": "DTC-HepB Hib2",
+            "en": "DTC-HepB Hib2",
+            "condition": "true"
+        },
+        "dtc_hepb_hib3": {
+            "line_number": "18",
+            "line": "singlecell",
+            "fr": "DTC-HepB Hib3 = DTC-HepB Hib3 0-11 mois AS x 100 / Nourrissons survivants du mois",
+            "en": "DTC-HepB Hib3 = DTC-HepB Hib3 0-11 months Asx100/survivor infants of the month",
+            "condition": "true"
+        },
+        "pvc_13_1": {
+            "line_number": "9",
+            "fr": "PCV-13 (1)",
+            "en": "PVC-13 (1)",
+            "condition": "true"
+        },
+        "pvc_13_2": {
+            "line_number": "10",
+            "fr": "PCV-13 (2)",
+            "en": "PVC-13 (2)",
+            "condition": "true"
+        },
+        "pvc_13_3": {
+            "line_number": "11",
+            "fr": "PCV-13 (3)",
+            "en": "PVC-13 (3)",
+            "condition": "true"
+        },
+        "vaa": {
+            "line_number": "21",
+            "line": "singlecell",
+            "fr": "VAA = VAA AS x 100 / Population des nourrissons survivants",
+            "en": "VAA = VAA ASx100/Pop survivor infants",
+            "condition": "true"
+        },
+        "var": {
+            "line_number": "13",
+            "fr": "VAR",
+            "en": "VAR",
+            "condition": "true"
+        },
+        "ecv": {
+            "line_number": "22",
+            "line": "singlecell",
+            "fr": "ECV = ECV AS x 100 / Population des nourrissons survivants",
+            "en": "ECV = ECV AS x100/Pop survovors infants",
+            "condition": "true"
+        },
+        "total_number_of_non_atteded_children_by_vaccination": {
+            "line_number": "15",
+            "line": "singlecell",
+            "fr": "Total enfants non atteints par la vaccination",
+            "en": "Total number of non atteded children by vaccination",
+            "condition": "ture"
+        },
+        "vaar": {
+            "line_number": "19",
+            "line": "singlecell",
+            "fr": "VAR = VAR AS x 100 / Pop des nourrissons survivants du mois",
+            "en": "VAAR = VAAR ASx100/pop of survivors infants of the month",
+            "condition": "true"
+        },
+        "pcv13_3rd_dose": {
+            "line_number": "20",
+            "line": "singlecell",
+            "fr": "PCV-13 3eme dose = PCV-13 0-11 mois AS x 100 / Population des nourrissons survivants",
+            "en": "PCV13 3rd dose= PCV- 13 0 -11 months ASx100/Pop of survivors infants",
+            "condition": "true"
+        },
+        "drop_out_rate_dtc1_dtc3": {
+            "line_number": "23",
+            "line": "singlecell",
+            "fr": "Tx d’abandon DTC1 – DTC3 = (DTC-HepB Hib1 - DTC-HepB Hib3 ) x 100 / DTC-HepB Hib1",
+            "en": "Drop out rate DTC1-DTC3=(DTC-HepB Hib1 - DTC-HepB Hib3)x100/DTC-HepB Hib1",
+            "condition": "true"
+        },
+        "vat2_plus": {
+            "line_number": "24",
+            "line": "singlecell",
+            "fr": "VAT2+ = (VAT2-5 B + VAT1-5 A) x 100 / Femmes enceintes attendues (4% Pop tot)",
+            "en": "VAT2+=(VAT2-5B + VAT1-5A)x100/PW attended (4% of the total population)",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "0_11_months_male_fixe_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "0_11_months_male_fixe_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "0_11_months_male_fixe_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "0_11_months_male_mobile_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "0_11_months_male_mobile_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "0_11_months_male_mobile_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "0_11_months_male_advanced_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "0_11_months_male_advanced_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "0_11_months_male_advanced_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "0_11_months_male_total": {
+                "fr": "Total",
+                "en": "Total",
+                "title": "Total",
+                "condition": "true"
+            },
+            "0_11_months_female_fixe_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "0_11_months_female_fixe_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "0_11_months_female_fixe_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "0_11_months_female_mobile_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "0_11_months_female_mobile_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "0_11_months_female_mobile_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "0_11_months_female_advanced_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "0_11_months_female_advanced_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "0_11_months_female_advanced_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "0_11_months_female_total": {
+                "fr": "Total",
+                "en": "Total",
+                "title": "Total",
+                "condition": "true"
+            },
+            "0_11_months_total": {
+                "fr": "Total",
+                "en": "Total",
+                "title": "Total",
+                "condition": "true"
+            },
+            "12_59_months_male_fixe_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "12_59_months_male_fixe_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "12_59_months_male_fixe_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "12_59_months_male_mobile_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "12_59_months_male_mobile_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "12_59_months_male_mobile_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "12_59_months_male_advanced_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "12_59_months_male_advanced_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "12_59_months_male_advanced_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "12_59_months_male_total": {
+                "fr": "Total",
+                "en": "Total",
+                "title": "Total",
+                "condition": "true"
+            },
+            "12_59_months_female_fixe_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "12_59_months_female_fixe_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "12_59_months_female_fixe_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "12_59_months_female_mobile_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "12_59_months_female_mobile_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "12_59_months_female_mobile_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "12_59_months_female_advanced_as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "12_59_months_female_advanced_has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "12_59_months_female_advanced_hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "12_59_months_female_total": {
+                "fr": "Total",
+                "en": "Total",
+                "title": "Total",
+                "condition": "true"
+            },
+            "12_59_total": {
+                "fr": "Total",
+                "en": "Total",
+                "title": "Total",
+                "condition": "true"
+            },
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title": "Total",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_childvaccination"
+}

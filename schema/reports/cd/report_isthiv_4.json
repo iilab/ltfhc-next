@@ -1,0 +1,108 @@
+    {
+        "title": "2.3.4 Patient under ARV treatment",
+        "type": "object",
+        "properties": {
+            "care_azt_3tc_nvp": {
+                "line_number": "1",
+                "fr": "Soins AZT+3TC+NVP",
+                "en": "Care AZT + 3TC+NVP",
+                "condition": "true"
+            },
+            "care_azt_3tc_efv": {
+                "line_number": "2",
+                "fr": "Soins AZT+3TC+ EFV",
+                "en": "Care AZT + 3TC+EFV",
+                "condition": "true"
+            },
+            "care_tbf_3tc_nvp": {
+                "line_number": "3",
+                "fr": "Soins TDF+3TC+NVP",
+                "en": "Care TBF + 3TC + NVP",
+                "condition": "true"
+            },
+            "care_tbf_3tc_efv": {
+                "line_number": "4",
+                "fr": "Soins TDF+3TC+EFV",
+                "en": "Care TBF + 3TC + EFV",
+                "condition": "true"
+            },
+            "care_azt_3_tc_mvp_syrup_children_ward": {
+                "line_number": "5",
+                "fr": "Soins AZT+3TC+ NVP Sirop (pédiatrique)",
+                "en": "Care AZT+ 3 TC + MVP syrup (children ward)",
+                "condition": "true"
+            },
+            "care_abc_ddl_lpv_r": {
+                "line_number": "6",
+                "fr": "Soins ABC+ddI+LPV/r",
+                "en": "Care ABC + ddl+ LPV/r",
+                "condition": "true"
+            },
+            "care_abc_3tc_efv": {
+                "line_number": "7",
+                "fr": "Soins ABC + 3TC + EFV",
+                "en": "Care ABC + 3TC+ EFV",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "under_14_yrs_male": {
+                    "fr": "Masculin",
+                    "en": "Male",
+                    "title":"Male",
+                    "condition": "true"
+                },
+                "under_14_yrs_female": {
+                    "fr": "Féminin",
+                    "en": "Female",
+                    "title":"Female",
+                    "condition": "true"
+                },
+                "under_14_yrs_incl_pregn": {
+                    "fr": "Dont Enceinte",
+                    "en": "Incl. Pregn",
+                    "title":"Incl. Pregn",
+                    "condition": "true"
+                },
+                "under_14_yrs_total": {
+                    "fr": "Total",
+                    "en": "Total",
+                    "title":"Total",
+                    "condition": "true"
+                },
+                "14_yrs_and_above_male": {
+                    "fr": "Masculin",
+                    "en": "Male",
+                    "title":"Male",
+                    "condition": "true"
+                },
+                "14_yrs_and_above_female": {
+                    "fr": "Féminin",
+                    "en": "Female",
+                    "title":"Female",
+                    "condition": "true"
+                },
+                "14_yrs_and_above_incl_pregn": {
+                    "fr": "Dont Enceinte",
+                    "en": "Incl. Pregn",
+                    "title":"Incl. Pregn",
+                    "condition": "true"
+                },
+                "14_yrs_and_above_total": {
+                    "fr": "Total",
+                    "en": "Total",
+                    "title":"Total",
+                    "condition": "true"
+                },
+                "total": {
+                    "fr": "Total",
+                    "en": "Total",
+                    "title":"Total",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_isthiv"
+    }
+    

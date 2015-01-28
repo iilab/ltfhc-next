@@ -1,0 +1,59 @@
+    {
+        "title": "8.3.3 Loans",
+        "type": "object",
+        "properties": {
+            "amount_due_by_a_patient": {
+                "line_number": "1",
+                "fr": "Montant dû par patients",
+                "en": "Amount due by a patient",
+                "condition": "true"
+            },
+            "amount_due_by_a_personnel_and_indigents": {
+                "line_number": "2",
+                "fr": "Montant dû par personnel et Indigents",
+                "en": "Amount due by a personnel and indigents",
+                "condition": "true"
+            },
+            "total_due_credits": {
+                "line_number": "3",
+                "fr": "Total dettes dues",
+                "en": "Total due credits",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "previous_monthly_cummulation": {
+                    "fr": "Cumul mois précédant",
+                    "en": "Previous monthly Cummulation",
+                    "title":"Previous monthly Cummulation",
+                    "condition": "true"
+                },
+                "monthly_credit_e2": {
+                    "fr": "Crédits du mois (E2)",
+                    "en": "Monthly Credit (E2)",
+                    "title":"Monthly Credit (E2)",
+                    "condition": "true"
+                },
+                "reimboursed_credit_e3": {
+                    "fr": "Crédits remboursées (E3)",
+                    "en": "Reimboursed Credit (E3)",
+                    "title":"Reimboursed Credit (E3)",
+                    "condition": "true"
+                },
+                "dropped_out_credits": {
+                    "fr": "Crédits abandonnées",
+                    "en": "Dropped out Credits",
+                    "title":"Dropped out Credits",
+                    "condition": "true"
+                },
+                "end_of_the_year_cummulation": {
+                    "fr": "Cumul fin de mois",
+                    "en": "End of the year Cummulation",
+                    "title":"End of the year Cummulation",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_resources"
+    }

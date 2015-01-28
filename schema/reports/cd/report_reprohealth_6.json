@@ -1,0 +1,9 @@
+    {
+        "title": "6.STIs",
+        "type": "object",
+        "properties": {},
+        "definitions": {
+            "columns": {}
+        },
+    "parent": "report_reprohealth"
+    }

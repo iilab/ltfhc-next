@@ -1,0 +1,47 @@
+    {
+        "title": "4.2 Pre-scolary consultation",
+        "type": "object",
+        "properties": {
+            "psc_10_11_months": {
+                "line_number": "1",
+                "fr": "CPS 1 (0-11mois )",
+                "en": "PSC 1(0-11 months)",
+                "condition": "true"
+            },
+            "psc_2_12_59_months": {
+                "line_number": "2",
+                "fr": "CPS 2+(12-59mois )",
+                "en": "PSC 2(12-59 months)",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "as": {
+                    "fr": "AS",
+                    "en": "AS",
+                    "title":"AS",
+                    "condition": "true"
+                },
+                "has": {
+                    "fr": "HAS",
+                    "en": "HAS",
+                    "title":"HAS",
+                    "condition": "true"
+                },
+                "hz": {
+                    "fr": "HZ",
+                    "en": "HZ",
+                    "title":"HZ",
+                    "condition": "true"
+                },
+                "total": {
+                    "fr": "TOTAL",
+                    "en": "TOTAL",
+                    "title":"TOTAL",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_preschool"
+    }   

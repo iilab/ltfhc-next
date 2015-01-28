@@ -1,0 +1,53 @@
+    {
+        "title": "5.3 Communication for behavioral change CCC",
+        "type": "object",
+        "properties": {
+            "nbr_of_sessions_planned": {
+                "line_number": "1",
+                "fr": "Nb séances prévues",
+                "en": "Nbr of sessions planned",
+                "condition": "true"
+            },
+            "nbr_of_realised_sessions": {
+                "line_number": "2",
+                "fr": "Nb séances réalisées",
+                "en": "Nbr of realised sessions",
+                "condition": "true"
+            },
+            "nbr_of_male_participants_ccc": {
+                "line_number": "3",
+                "fr": "Nb de participants Hommes CCC",
+                "en": "Nbr of male participants CCC",
+                "condition": "true"
+            },
+            "nbr_of_female_participants_ccc": {
+                "line_number": "4",
+                "fr": "Nb de participants Femmes CCC",
+                "en": "Nbr of female participants ccc",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "ladies": {
+                    "fr": "Femme",
+                    "en": "Ladies",
+                    "title":"Ladies",
+                    "condition": "true"
+                },
+                "men": {
+                    "fr": "Homme",
+                    "en": "Men",
+                    "title":"Men",
+                    "condition": "true"
+                },
+                "totals": {
+                    "fr": "Total",
+                    "en": "Total",
+                    "title":"Total",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_promo"
+    }
