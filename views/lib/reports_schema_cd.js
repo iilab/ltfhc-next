@@ -251,7 +251,10 @@ exports.reports = function() {
             "parent": "report_familyplanning",
             "parent_title": "Family Planning",
             "overrides": {
-                "thead_prefix": "<tr><th></th><th></th><th colspan=\"2\">Complex header 1</th><th colspan=\"3\">Complex header 2</th></tr>"
+                "thead_prefix": "<tr><th></th><th></th><th colspan=\"2\">Complex header 1</th><th colspan=\"3\">Complex header 2</th></tr>",
+                "disabled": [
+                    {"row": "including_20yrs", "col": "hz"}
+                ]
             }
         },
         "report_familyplanning_2": {
