@@ -533,6 +533,220 @@ exports.reports = function () {
                 }
             }
         },
+        "report_community_1": {
+            "title": "6.1 Reference of Community care site activities",
+            "type": "object",
+            "properties": {
+                "active_care_sites": {
+                    "line_number": "1",
+                    "fr": "Sites de soins fonctionnels",
+                    "en": "Active care sites"
+                },
+                "care_sites_wich_have_reported": {
+                    "line_number": "2",
+                    "fr": "Sites de soins ayant rapporté",
+                    "en": "Care sites wich have reported"
+                },
+                "care_sites_wich_have_reported_on_the_dead_line": {
+                    "line_number": "3",
+                    "fr": "SSC ayant rapporté dans le délai",
+                    "en": "Care sites wich have reported on the dead line"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "number": {
+                        "fr": "Nombre",
+                        "en": "Number"
+                    }
+                }
+            },
+            "parent": "report_community"
+        },
+        "report_community_2": {
+            "title": "6.2 Treatment and Notification",
+            "type": "object",
+            "properties": {
+                "new_children_cases_receivedat_the_site": {
+                    "line_number": "1",
+                    "fr": "Nouveaux cas enfants reçus au site",
+                    "en": "New children cases receivedat the site"
+                },
+                "nbr_of_old_cases_received_at_the_site": {
+                    "line_number": "2",
+                    "fr": "Nombre d’anciens cas reçus au site",
+                    "en": "Nbr of old cases received at the site"
+                },
+                "nbr_of_referals_to_hc": {
+                    "line_number": "3",
+                    "fr": "Nombre de référés vers CS",
+                    "en": "Nbr of referals to HC"
+                },
+                "nbr_of_contre_refered": {
+                    "line_number": "4",
+                    "fr": "Nombre de contre-référés",
+                    "en": "Nbr of contre - refered"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "as": {
+                        "fr": "AS",
+                        "en": "AS"
+                    },
+                    "has": {
+                        "fr": "HAS",
+                        "en": "HAS"
+                    },
+                    "hz": {
+                        "fr": "HZ",
+                        "en": "HZ"
+                    },
+                    "total": {
+                        "fr": "Total",
+                        "en": "Total"
+                    }
+                }
+            },
+            "parent": "report_community"
+        },
+        "report_community_3": {
+            "title": "6.2 Treatment and Notification (cont)",
+            "type": "object",
+            "properties": {
+                "cases_of_fever_in_malaria_zone_at_risk": {
+                    "line_number": "1",
+                    "fr": "Cas de fièvre dans une zone a risque du paludisme",
+                    "en": "Cases of fever in malaria zone at risk"
+                },
+                "realized_tdrs": {
+                    "line_number": "2",
+                    "fr": "TDRs réalisés",
+                    "en": "Realized TDRs"
+                },
+                "including_positive": {
+                    "line_number": "3",
+                    "fr": "Dont positif",
+                    "en": "Including positive"
+                },
+                "including_treated": {
+                    "line_number": "4",
+                    "fr": "Dont traité",
+                    "en": "Including treated"
+                },
+                "pneumonia": {
+                    "line_number": "5",
+                    "fr": "Pneumonie",
+                    "en": "Pneumonia"
+                },
+                "including_treaed_under_national_policy": {
+                    "line_number": "6",
+                    "fr": "Dont traité avec la politique national",
+                    "en": "Including treaed under national policy"
+                },
+                "cough_and_cold": {
+                    "line_number": "7",
+                    "fr": "Toux ou Rhume",
+                    "en": "Cough and cold"
+                },
+                "diarrhea": {
+                    "line_number": "8",
+                    "fr": "Diarrhée",
+                    "en": "Diarrhea"
+                },
+                "including_treated_under_national_policy": {
+                    "line_number": "9",
+                    "fr": "Dont traité avec la politique national",
+                    "en": "Including treated under national policy"
+                },
+                "malnutrition": {
+                    "line_number": "10",
+                    "fr": "Malnutrition",
+                    "en": "Malnutrition"
+                },
+                "including_pb_under_the_red_line": {
+                    "line_number": "11",
+                    "fr": "Dont PB sur la bande rouge",
+                    "en": "Including PB under the red line"
+                },
+                "danger_signs_alert_referal_cases": {
+                    "line_number": "12",
+                    "fr": "Signe de danger/alerte & cas à orienter",
+                    "en": "Danger signs/alert& referal cases"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "number": {
+                        "fr": "Nombre",
+                        "en": "Number"
+                    }
+                }
+            },
+            "parent": "report_community"
+        },
+        "report_community_4": {
+            "title": "6.3  Consumption of medicines",
+            "type": "object",
+            "properties": {
+                "amoxyciline_250mg_or_syrup_125mg": {
+                    "line_number": "1",
+                    "fr": "Amoxycilline caps 250 mg ou sirop 125 mg",
+                    "en": "Amoxyciline  250mg or Syrup 125mg"
+                },
+                "artesunate_amodiaquine_2_11_months": {
+                    "line_number": "2",
+                    "fr": "Artésunate-Amodiaquine (2-11 mois)",
+                    "en": "Artesunate-Amodiaquine 2-11 months"
+                },
+                "artesunate_amodiaquine_12_59_months": {
+                    "line_number": "3",
+                    "fr": "Artésunate-Amodiaquine (12 -59 mois)",
+                    "en": "Artesunate-Amodiaquine 12-59 months"
+                },
+                "paracetamol_500mg": {
+                    "line_number": "4",
+                    "fr": "Paracétamol 500mg",
+                    "en": "Paracetamol 500mg"
+                },
+                "ors": {
+                    "line_number": "5",
+                    "fr": "SRO",
+                    "en": "ORS"
+                },
+                "tdr": {
+                    "line_number": "6",
+                    "fr": "TDR",
+                    "en": "TDR"
+                },
+                "zinc_20mg": {
+                    "line_number": "7",
+                    "fr": "Zinc 20 mg",
+                    "en": "Zinc 20mg"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "qty_at_beginning": {
+                        "fr": "Quantité au début",
+                        "en": "Qty at beginning"
+                    },
+                    "entries": {
+                        "fr": "Entrées",
+                        "en": "Entries"
+                    },
+                    "consumed_qty": {
+                        "fr": "Quantité consommée",
+                        "en": "Consumed QTY"
+                    },
+                    "qty_at_the_end_of_month": {
+                        "fr": "Quantité à la fin du mois",
+                        "en": "QTY at the end of month"
+                    }
+                }
+            },
+            "parent": "report_community"
+        },
         "report_contraceptive": {
             "collection": "reports",
             "class": "schema",
@@ -2626,6 +2840,76 @@ exports.reports = function () {
                 }
             }
         },
+        "report_mutual": {
+            "title": "9. Health's Mutual",
+            "type": "object",
+            "properties": {
+                "news_mutual_cases": {
+                    "line_number": "1",
+                    "fr": "Nouveaux cas mutualis tes",
+                    "en": "News mutual cases"
+                },
+                "including_new_mutual_patients": {
+                    "line_number": "2",
+                    "fr": "Dont nouveaux patients mutual is tes",
+                    "en": "Including new mutual patients"
+                },
+                "old_mutual_cases": {
+                    "line_number": "3",
+                    "fr": "Anciens cas mutualis tes",
+                    "en": "Old mutual cases"
+                },
+                "including_contre_refered_mutuals": {
+                    "line_number": "4",
+                    "fr": "Dont contre-référés mutual is tes",
+                    "en": "Including contre- refered mutuals"
+                },
+                "mutual_eutocic_deliveries": {
+                    "line_number": "5",
+                    "fr": "Accouchements eutociques mutuali s tes",
+                    "en": "Mutual eutocic deliveries"
+                },
+                "mutual_dystocic_deliveries": {
+                    "line_number": "6",
+                    "fr": "Accouchements dys toci ques mutual is tes",
+                    "en": "Mutual Dystocic deliveries"
+                },
+                "use_of_services_rate_of_mutual_member_of_the_hc": {
+                    "line_number": "7",
+                    "line": "singlecell",
+                    "fr": "Taux d'utilisation des services par les adhérents de la mutuelle de santé = Nb d’adhérents de mutuelles ayant consulté au CS X 100 / Total des adhérents",
+                    "en": "Use of services rate of mutual member of the HC= Nbr of members who were consulted at the HC X100/Total members",
+                    "condition": "FIXME"
+                },
+                "penetration_rate": {
+                    "line_number": "8",
+                    "line": "singlecell",
+                    "fr": "Total Consultations SVS (a+b)",
+                    "en": "Penetration rate=nbr of persons who joined an health mutual (Nbr of new mutualistcases + old mutualist cases)X 100/population",
+                    "condition": "FIXME"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "as": {
+                        "fr": "AS",
+                        "en": "AS"
+                    },
+                    "has": {
+                        "fr": "HAS",
+                        "en": "HAS"
+                    },
+                    "hz": {
+                        "fr": "HZ",
+                        "en": "HZ"
+                    },
+                    "total": {
+                        "fr": "Total",
+                        "en": "Total"
+                    }
+                }
+            }
+        },
         "report_opd": {
             "collection": "reports",
             "class": "schema",
@@ -3163,6 +3447,140 @@ exports.reports = function () {
                 }
             }
         },
+        "report_pmtct": {
+            "title": "3.2 PMTCT",
+            "type": "object",
+            "properties": {
+                "who_know_their_hiv_status_before_anc_1": {
+                    "line_number": "1",
+                    "fr": "Qui connaissent leur statut sérologique VIH avant l a CPN1",
+                    "en": "Who know their HIV status before ANC 1"
+                },
+                "who_were_counseled_for_hiv_test": {
+                    "line_number": "2",
+                    "fr": "Qui ont été conseillée pour un test VIH",
+                    "en": "Who were counseled for HIV test"
+                },
+                "who_were_hiv_tested": {
+                    "line_number": "3",
+                    "fr": "Qui ont été testées pour le VIH",
+                    "en": "Who were HIV tested"
+                },
+                "who_were_informed_about_their_result": {
+                    "line_number": "4",
+                    "fr": "Qui ont été informées du résultat",
+                    "en": "who were informed about their result"
+                },
+                "who_had_hiv_test": {
+                    "line_number": "5",
+                    "fr": "Qui ont eu un test positif au VIH",
+                    "en": "Who had HIV+ test"
+                },
+                "who_had_hiv_test_and_were_informed_about_their_results": {
+                    "line_number": "6",
+                    "fr": "Qui ont eu un test positif au VIH et ont été informées du résultat",
+                    "en": "Who had HIV+ test and were informed about their results"
+                },
+                "who_are_hiv_and_beneficiated_a_prophylaxie_at_arv_azt_3tc_nvp)": {
+                    "line_number": "7",
+                    "fr": "Qui sont VIH+ ayant bénéficié de la prophylaxie aux ARV (AZT /AZT+3TC+NVP)",
+                    "en": "Who are HIV+ and beneficiated a prophylaxie at ARV (AZT+3TC+NVP)"
+                },
+                "who_are_hiv_and_beneficiated_a_prophylaxie_and_cotrimoxazole": {
+                    "line_number": "8",
+                    "fr": "Qui sont VIH+ ayant bénéficié de la prophylaxie au cotrimoxazole",
+                    "en": "Who are HIV+ and beneficiated a prophylaxie and cotrimoxazole"
+                },
+                "who_are_hiv_and_refered_to_a_pec_center": {
+                    "line_number": "9",
+                    "fr": "Qui sont VIH+ qui sont référées vers une structure de PEC",
+                    "en": "Who are HIV+ and refered to a PEC center"
+                },
+                "tested_and_informed_about_their_results_during_labour_delivery_and_post_portum_72": {
+                    "line_number": "10",
+                    "fr": "Testées et informées de leur résultat lors du trava il, accouchement et post partum (72 h)",
+                    "en": "Tested and informed about their results during labour, delivery and post-portum (72)"
+                },
+                "pregnant_women_put_under_arvt": {
+                    "line_number": "11",
+                    "fr": "Femmes enceintes ont été mis sous TARV",
+                    "en": "Pregnant women put under ARVT"
+                },
+                "who_were_pregnants_after_being_raped": {
+                    "line_number": "12",
+                    "fr": "Qui ont eu la grossesse à lissue dun Viol",
+                    "en": "Who were pregnants after being raped"
+                },
+                "hiv_mother_who_opted_the_breast_feeding_up_to_6_months": {
+                    "line_number": "13",
+                    "fr": "Mères VIH+ ayant opté pour lallaitement exclusif jusquà 6 mois",
+                    "en": "HIV+ mother who opted the breast feeding up to 6 months"
+                },
+                "who_were_tested_for_ghonorrhea": {
+                    "line_number": "14",
+                    "fr": "?",
+                    "en": "Who were tested for Ghonorrhea"
+                },
+                "hiv_mother_put_under_double_protection_pf_preservatif": {
+                    "line_number": "15",
+                    "fr": "Dont mères VIH+ mises sous double protection (PF+ préservatif)",
+                    "en": "HIV+ mother put under double protection (PF+ preservatif)"
+                },
+                "delivered_hiv": {
+                    "line_number": "16",
+                    "fr": "?",
+                    "en": "Delivered HIV+"
+                },
+                "including_those_have_received_the_nevirapine_azt_lav": {
+                    "line_number": "17",
+                    "fr": "Dont ayant reçu de la névirapine + AZT+LAV",
+                    "en": "Including those have received the Nevirapine + AZT + LAV"
+                },
+                "children_born_from_hiv_mothers_who_were_put_under_nevirapine_at_birth": {
+                    "line_number": "18",
+                    "fr": "Enfants nés de mère VIH+",
+                    "en": "Children born from HIV+ mothers who were put under nevirapine at birth."
+                },
+                "who_were_put_under_cotrimoxazole_during_6_weeks_after_birth": {
+                    "line_number": "19",
+                    "fr": "Dont mis sous cotrimoxazole pendant 6 semaines après la naissance",
+                    "en": "Who were put under cotrimoxazole during 6 weeks after birth"
+                },
+                "who_were_put_under_nevirapine_during_the_12_months_after_birth": {
+                    "line_number": "20",
+                    "fr": "Dont mis sous NVP pendant 12 mois après la naissance",
+                    "en": "Who were put under Nevirapine during the 12 months after birth"
+                },
+                "exposed_children_who_were_tested_hiv_at_pcr_1_after_6_weeks_after_birth": {
+                    "line_number": "21",
+                    "fr": "Enfants exposés reçus et testés au PCR1 à 6 semaines après la naissance",
+                    "en": "Exposed children who were tested HIV+ at PCR 1 after 6 weeks after birth"
+                },
+                "exposed_children_who_were_tested_at_pcr_2_at_10_weeks_after_birth": {
+                    "line_number": "22",
+                    "fr": "Enfants exposés reçus et testés au PCR2 à 10 semaines après la naissance",
+                    "en": "Exposed children who were tested at PCR 2 at 10 weeks after birth"
+                },
+                "exposed_children_who_were_tested_hiv_at_pcr2_at_10_weeks_after_birth": {
+                    "line_number": "23",
+                    "fr": "Enfants exposés testés positifs au PCR2 à 10 semai nes après la naissance",
+                    "en": "Exposed children who were tested HIV+at PCR2 at 10 weeks after birth"
+                },
+                "exposed_children_tested_at_pcr1_who_receiveda_hiv_test_at_12_months": {
+                    "line_number": "24",
+                    "fr": "Enfants exposés testés au PCR1 ayant bénéficié d'untest séro. à 12 mois",
+                    "en": "Exposed children tested at PCR1 who receiveda HIV test at 12 months"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "number": {
+                        "fr": "Nombre",
+                        "en": "Number"
+                    }
+                }
+            }
+        },
         "report_postnatal": {
             "collection": "reports",
             "class": "schema",
@@ -3441,6 +3859,725 @@ exports.reports = function () {
                 }
             }
         },
+        "report_pregnant_1": {
+            "title": "3.4 Pregnant women vaccination",
+            "type": "object",
+            "properties": {
+                "vat_1": {
+                    "line_number": "1",
+                    "fr": "VAT 1",
+                    "en": "VAT 1"
+                },
+                "vat_2": {
+                    "line_number": "2",
+                    "fr": "VAT 2",
+                    "en": "VAT 2"
+                },
+                "vat_3": {
+                    "line_number": "3",
+                    "fr": "VAT 3",
+                    "en": "VAT 3"
+                },
+                "vat_4": {
+                    "line_number": "4",
+                    "fr": "VAT 4",
+                    "en": "VAT 4"
+                },
+                "vat_5": {
+                    "line_number": "5",
+                    "fr": "VAT 5",
+                    "en": "VAT 5"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "as": {
+                        "fr": "AS",
+                        "en": "AS"
+                    },
+                    "has": {
+                        "fr": "HAS",
+                        "en": "HAS"
+                    },
+                    "hz": {
+                        "fr": "HZ",
+                        "en": "HZ"
+                    },
+                    "total": {
+                        "fr": "TOTAL",
+                        "en": "TOTAL"
+                    }
+                }
+            },
+            "parent": "report_pregnant"
+        },
+        "report_pregnant_2": {
+            "title": "3.5.1 Deliveries at the Health center",
+            "type": "object",
+            "properties": {
+                "eutocic_deliveries": {
+                    "line_number": "1",
+                    "fr": "Accouchements eutociques",
+                    "en": "Eutocic deliveries"
+                },
+                "dystocic_deliveries": {
+                    "line_number": "2",
+                    "fr": "Accouchements dystociques",
+                    "en": "Dystocic deliveries"
+                },
+                "including_20_yrs": {
+                    "line_number": "3",
+                    "fr": "Dont âgés de < 20 an",
+                    "en": "Including < 20 yrs"
+                },
+                "including_watched_out": {
+                    "line_number": "4",
+                    "fr": "Dont surveillés",
+                    "en": "Including watched out"
+                },
+                "mother_who_beneficiated_gatpa": {
+                    "line_number": "5",
+                    "fr": "Mère ayant bénéficié de la GATPA",
+                    "en": "Mother who beneficiated GATPA"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "as": {
+                        "fr": "AS",
+                        "en": "AS"
+                    },
+                    "has": {
+                        "fr": "HAS",
+                        "en": "HAS"
+                    },
+                    "hz": {
+                        "fr": "HZ",
+                        "en": "HZ"
+                    },
+                    "total": {
+                        "fr": "TOTAL",
+                        "en": "TOTAL"
+                    }
+                }
+            },
+            "parent": "report_pregnant"
+        },
+        "report_pregnant_3": {
+            "title": "3.5.2 Delveries in the community",
+            "type": "object",
+            "properties": {
+                "eutocic_deliveries": {
+                    "line_number": "1",
+                    "fr": "Accouchements par accoucheuse traditionnelle",
+                    "en": "Deliveries assisted by TBA"
+                },
+                "dystocic_deliveries": {
+                    "line_number": "2",
+                    "fr": "Dont Accouchements par accoucheuses traditionnellesrecyclées",
+                    "en": "Including deliverie by trained TBAs"
+                },
+                "including_20_yrs": {
+                    "line_number": "3",
+                    "fr": "Dont référés au CS",
+                    "en": "Including the refered to Health center"
+                },
+                "including_watched_out": {
+                    "line_number": "4",
+                    "fr": "Total accouchement dans la communauté",
+                    "en": "Total deliveries in the community"
+                },
+                "rate_of_deliveries_assited_by_qualified_personnel": {
+                    "line_number": "5",
+                    "line": "singlecell",
+                    "fr": "Taux d'accouchements assistés par du personnel qualifié = Nb total d’Accouchements en présence d'un personnelqualifié/formé X 100 / Total accouchements attendus",
+                    "en": "rate of deliveries assited by qualified personnel=tottal of deliveries in presence of one qualified personnel/trainedX100/total number of deliveries attended",
+                    "condition": "FIXME"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "number": {
+                        "fr": "Nombre",
+                        "en": "Number"
+                    }
+                }
+            },
+            "parent": "report_pregnant"
+        },
+        "report_pregnant_4": {
+            "title": "3.5.3 Births and deaths",
+            "type": "object",
+            "properties": {
+                "alive_births": {
+                    "line_number": "1",
+                    "fr": "Naissances vivantes",
+                    "en": "Alive births"
+                },
+                "births_at_the_health_center": {
+                    "line_number": "2",
+                    "fr": "Naissances CS",
+                    "en": "Births at the health center"
+                },
+                "mature_nbb": {
+                    "line_number": "3",
+                    "fr": "Nouveaux-nés à terme",
+                    "en": "Mature NBB"
+                },
+                "mature_nbb_2500g": {
+                    "line_number": "4",
+                    "fr": "Nouveaux-nés à terme < 2 500 g",
+                    "en": "Mature NBB < 2500g"
+                },
+                "fresh_stillborn_babies": {
+                    "line_number": "5",
+                    "fr": "Morts nés frais",
+                    "en": "Fresh stillborn babies"
+                },
+                "mort_maceres": {
+                    "line_number": "6",
+                    "fr": "Mort-nés macéré",
+                    "en": "Mort-né maceres"
+                },
+                "new_born": {
+                    "line_number": "7",
+                    "fr": "Nouveau-nés avec malformation congénitale visible",
+                    "en": "New born"
+                },
+                "pre_mature_nbb": {
+                    "line_number": "8",
+                    "fr": "Nouveaux-nés Prématurés",
+                    "en": "Pre- mature NBB"
+                },
+                "pre_mature_nbb_born_with_weak_weight_treated_with_kangaroo_method": {
+                    "line_number": "9",
+                    "fr": "Nouveaux nés prématurés et de faibles poids de naissance soignés selon la méthode du Kangourou",
+                    "en": "Pre- mature NBB born with weak weight treated with Kangaroo Method"
+                },
+                "nbb_who_have_received_an_efficient_care": {
+                    "line_number": "10",
+                    "fr": "Nouveaux-nés ayant bénéficiés des soins essentiels",
+                    "en": "NBB who have received an efficient care"
+                },
+                "nbb_who_have_received_the_antibiotic": {
+                    "line_number": "11",
+                    "fr": "Nouveaux-nés ayant reçus d’antibiotiques",
+                    "en": "NBB who have received the antibiotic"
+                },
+                "nbb_put_on_breast_feeding_an_hour_after_delivery": {
+                    "line_number": "12",
+                    "fr": "Nouveaux-nés mis au sein dans l’heure qui suit l’accouchement",
+                    "en": "NBB put on breast feeding an hour after delivery"
+                },
+                "assisted_deliveries_rate": {
+                    "line_number": "13",
+                    "line": "singlecell",
+                    "fr": "Taux d’accouchements assistés = Accouchement par personnel soignant qualifié (a) X 100 / Femmes de l’AS attendues",
+                    "en": "Assisted deliveries rate = deliveries by a qualified personnel (a)X100/women attended in the health area",
+                    "condition": "FIXME"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "number": {
+                        "fr": "Nombre",
+                        "en": "Number"
+                    }
+                }
+            },
+            "parent": "report_pregnant_4"
+        },
+        "report_pregnant_5": {
+            "title": "3.5.3 Births and deaths (cont)",
+            "type": "object",
+            "properties": {
+                "refered_mother_and_child": {
+                    "line_number": "1",
+                    "fr": "Références mère et bébé",
+                    "en": "Refered mother and child"
+                },
+                "nbb_deaths_7days": {
+                    "line_number": "2",
+                    "fr": "Décès nouveau-nés ≤ 7 jours",
+                    "en": "NBB deaths < 7days"
+                },
+                "nbb_deaths_28days": {
+                    "line_number": "3",
+                    "fr": "Décès nouveau-nés ≤ 28 jours",
+                    "en": "NBB deaths < 28days"
+                },
+                "assisted_births": {
+                    "line_number": "4",
+                    "fr": "Naissances assistées",
+                    "en": "Assisted births"
+                },
+                "including_stillborn_babies": {
+                    "line_number": "4",
+                    "fr": "Dont mort-nés",
+                    "en": "Including stillborn babies"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "number": {
+                        "fr": "Nombre",
+                        "en": "Number"
+                    }
+                }
+            },
+            "parent": "report_pregnant"
+        },
+        "report_pregnant_6": {
+            "title": "3.5.4 Follow up",
+            "type": "object",
+            "properties": {
+                "maternal_deaths_at_the_health_center": {
+                    "line_number": "1",
+                    "fr": "Décès maternels au CS",
+                    "en": "Maternal deaths at the Health center"
+                },
+                "including_audited_maternal_deaths": {
+                    "line_number": "2",
+                    "fr": "Dont décès maternels audités",
+                    "en": "Including audited maternal deaths"
+                },
+                "maternal_deaths_in_the_community": {
+                    "line_number": "3",
+                    "fr": "Décès maternels dans la communauté",
+                    "en": "maternal deaths in the community"
+                },
+                "including_audited_maternal_deaths_in_the_community": {
+                    "line_number": "4",
+                    "fr": "Dont décès maternels dans la communauté audités",
+                    "en": "Including audited maternal deaths in the community"
+                },
+                "perinatal_mortality_rate": {
+                    "line_number": "5",
+                    "line": "singlecell",
+                    "fr": "Taux d’accouchements assistés = Accouchement par personnel soignant qualifié (a) X 100 / Femmes de l’AS attendues",
+                    "en": "Perinatal mortality rate=stillborn babies + the number of of deaths within 0-7 days of life X100/total births at the health center",
+                    "condition": "FIXME"
+                },
+                "neonatal_mortality_rate": {
+                    "line_number": "6",
+                    "line": "singlecell",
+                    "fr": "Taux d’accouchements assistés = Accouchement par personnel soignant qualifié (a) X 100 / Femmes de l’AS attendues",
+                    "en": "Neonatal mortality rate=total number of children who died between birth and 28 daysX 100/total births registered at the health center",
+                    "condition": "FIXME"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "number": {
+                        "fr": "Nombre",
+                        "en": "Number"
+                    }
+                }
+            },
+            "parent": "report_pregnant"
+        },
+        "report_promo_1": {
+            "title": "5.1 Community participation",
+            "type": "object",
+            "properties": {
+                "prepared_meetings": {
+                    "line_number": "1",
+                    "fr": "Réunions prévues",
+                    "en": "Prepared meetings"
+                },
+                "meeting_held_with_minutes": {
+                    "line_number": "2",
+                    "fr": "Réunions tenues avec compte rendus",
+                    "en": "Meeting held with minutes"
+                },
+                "nbr_of_monitoring_meeting_held": {
+                    "line_number": "3",
+                    "fr": "Nb réunions de monitoring tenues",
+                    "en": "Nbr of monitoring meeting held"
+                },
+                "prepared_community_activities": {
+                    "line_number": "4",
+                    "fr": "Activités communautaires prévues",
+                    "en": "Prepared community activities"
+                },
+                "realised_community_activities": {
+                    "line_number": "5",
+                    "fr": "Activités communautaires réalisées",
+                    "en": "Realised community activities"
+                },
+                "nbr_of_meetings_of_analysis_of_data": {
+                    "line_number": "6",
+                    "fr": "Nb de réunion d’analyse des données",
+                    "en": "Nbr of meetings of analysis of data"
+                },
+                "nbr_of_decisions_taken_in_the_previous_meeting": {
+                    "line_number": "7",
+                    "fr": "Nb de décisions prises le mois antérieur",
+                    "en": "Nbr of decisions taken in the previous meeting"
+                },
+                "nbr_executed_decisions_of_last_month": {
+                    "line_number": "8",
+                    "fr": "Nb de décisions du mois antérieur exécutées",
+                    "en": "Nbr Executed decisions of last month"
+                },
+                "nbr_of_decisions_taken_this_month": {
+                    "line_number": "9",
+                    "fr": "Nb de décisions prises au cours du mois",
+                    "en": "Nbr of decisions taken this month"
+                },
+                "average_of_held_meeting_by_codesa": {
+                    "line_number": "10",
+                    "line": "singlecell",
+                    "fr": "Proportion des réunions CODESA tenues = Nombre des réunions prevues x 100 / nombre des réunions programmées",
+                    "en": "Averageof held meeting by CODESA=Nbr of provided meetings X100/Nbr of meetings programed",
+                    "condition": "FIXME"
+                },
+                "average_of_community_activities_realized": {
+                    "line_number": "11",
+                    "line": "singlecell",
+                    "fr": "Proportion des activités communaut. Réalisées = Nombre des activités prevues x 100 / le nombres des activtés realisées",
+                    "en": "Average of community activities realized X 100/Nbr of realized activities",
+                    "condition": "FIXME"
+                },
+                "average_of_codesa_executed_decisions": {
+                    "line_number": "12",
+                    "line": "singlecell",
+                    "fr": "Proportion des décisions CODESA exécutées = Nombre des décisions exécutées x 100 / le nombres des décisions prises",
+                    "en": "Average of CODESA executed decisions =Nbr of executed decision X 100/Nbr of decision made",
+                    "condition": "FIXME"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "codesa": {
+                        "fr": "CODESA",
+                        "en": "CODESA"
+                    },
+                    "cac": {
+                        "fr": "CAC",
+                        "en": "CAC"
+                    },
+                    "others": {
+                        "fr": "Autres",
+                        "en": "OTHERS"
+                    }
+                }
+            },
+            "parent": "report_promo"
+        },
+        "report_promo_2": {
+            "title": "5.2 Follow of Relais Communautaire",
+            "type": "object",
+            "properties": {
+                "nbr_of_children_on_middle_line_growth_chart": {
+                    "line_number": "1",
+                    "fr": "Relais communautaires ",
+                    "en": "Relaiscommunautaire"
+                },
+                "nbr_of_light_malunutrition_cases": {
+                    "line_number": "2",
+                    "fr": "Relais communautaires Actifs",
+                    "en": "Active relais communautaire"
+                },
+                "nbr_of_high_balanced_malnutriation_cases": {
+                    "line_number": "3",
+                    "fr": "MILD distribuées par les RECO",
+                    "en": "MILD distributed by the relais communautaire"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "ladies": {
+                        "fr": "Femme",
+                        "en": "Ladies"
+                    },
+                    "men": {
+                        "fr": "Homme",
+                        "en": "Men"
+                    },
+                    "totals": {
+                        "fr": "Total",
+                        "en": "Total"
+                    }
+                }
+            },
+            "parent": "report_promo"
+        },
+        "report_promo_3": {
+            "title": "5.3 Communication for behavioral change CCC",
+            "type": "object",
+            "properties": {
+                "nbr_of_sessions_planned": {
+                    "line_number": "1",
+                    "fr": "Nb séances prévues",
+                    "en": "Nbr of sessions planned"
+                },
+                "nbr_of_realised_sessions": {
+                    "line_number": "2",
+                    "fr": "Nb séances réalisées",
+                    "en": "Nbr of realised sessions"
+                },
+                "nbr_of_male_participants_ccc": {
+                    "line_number": "3",
+                    "fr": "Nb de participants Hommes CCC",
+                    "en": "Nbr of male participants CCC"
+                },
+                "nbr_of_female_participants_ccc": {
+                    "line_number": "4",
+                    "fr": "Nb de participants Femmes CCC",
+                    "en": "Nbr of female participants ccc"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "ladies": {
+                        "fr": "Femme",
+                        "en": "Ladies"
+                    },
+                    "men": {
+                        "fr": "Homme",
+                        "en": "Men"
+                    },
+                    "totals": {
+                        "fr": "Total",
+                        "en": "Total"
+                    }
+                }
+            },
+            "parent": "report_promo"
+        },
+        "report_promo_4": {
+            "title": "5.4 Hygiene & Disposals management (health center)",
+            "type": "object",
+            "properties": {
+                "incinarator": {
+                    "line_number": "1",
+                    "fr": "Incinérateur",
+                    "en": "Incinarator"
+                },
+                "hygienic_latrines": {
+                    "line_number": "2",
+                    "fr": "Latrines hygiénique",
+                    "en": "Hygienic latrines"
+                },
+                "dust_bins": {
+                    "line_number": "3",
+                    "fr": "Poubelles",
+                    "en": "Dust bins"
+                },
+                "placenta_hall": {
+                    "line_number": "4",
+                    "fr": "Fosse à placenta",
+                    "en": "Placenta hall"
+                },
+                "rabbish_pit": {
+                    "line_number": "5",
+                    "fr": "Trou à ordures",
+                    "en": "Rabbish pit"
+                },
+                "flowing_water_and_tapes": {
+                    "line_number": "6",
+                    "fr": "Eau courante (avec robinet)",
+                    "en": "Flowing water and tapes"
+                },
+                "existing_water_point": {
+                    "line_number": "7",
+                    "fr": "Points d’eau existant",
+                    "en": "Existing water point"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "functional_tools": {
+                        "fr": "Ouvrages Fonctionnels",
+                        "en": "Functional tools"
+                    },
+                    "days_off": {
+                        "fr": "Jours Non Fonctionne",
+                        "en": "Days off"
+                    }
+                }
+            },
+            "parent": "report_promo"
+        },
+        "report_promo_5": {
+            "title": "5.5 Relais communautaire Identification (RECO)",
+            "type": "object",
+            "properties": {
+                "nbr_of_needed": {
+                    "line_number": "1",
+                    "fr": "Nombre de RECO prévus",
+                    "en": "Nbr of needed"
+                },
+                "nbr_of_existing_reco": {
+                    "line_number": "2",
+                    "fr": "Nombre des RECO existants",
+                    "en": "Nbr of existing RECO"
+                },
+                "nbr_of_actif_reco": {
+                    "line_number": "3",
+                    "fr": "Nombre des RECO opérationnels",
+                    "en": "Nbr of actif RECO"
+                },
+                "average_of_active_reco": {
+                    "line_number": "4",
+                    "line": "singlecell",
+                    "fr": "Proportion des RECO opérationnels = Nombre des RECO opérationnels X 100 / Nombre tot. des RECO",
+                    "en": "Average of active RECO= Nbrof active RECO X 100/Nbr of RECO",
+                    "condition": "FIXME"
+                },
+                "coverage_of_reco_in_the_health_area": {
+                    "line_number": "5",
+                    "line": "singlecell",
+                    "fr": "Couverture en RECO dans l’AS = Nombre des RECO existantsX100/Nombre des RECO prévus",
+                    "en": "Coverageof RECO in the health area= Nbr of existing RECO X100/Nbr of RECO Provided",
+                    "condition": "FIXME"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "ladies": {
+                        "fr": "Femme",
+                        "en": "Ladies"
+                    },
+                    "men": {
+                        "fr": "Homme",
+                        "en": "Men"
+                    },
+                    "totals": {
+                        "fr": "Total",
+                        "en": "Total"
+                    }
+                }
+            },
+            "parent": "report_promo"
+        },
+        "report_promo_6": {
+            "title": "5.6 Water coverage",
+            "type": "object",
+            "properties": {
+                "improved_existing_water_points": {
+                    "line_number": "1",
+                    "fr": "Points d’eau amenagés existant",
+                    "en": "Improved existing water points"
+                },
+                "improved_existing_water_points_with_tested_water": {
+                    "line_number": "2",
+                    "fr": "Points d’eau amenagés don’t la qualite d'eau a ete teste au mois",
+                    "en": "Improved existing water points with tested water"
+                },
+                "water_management_programed": {
+                    "line_number": "3",
+                    "fr": "Aménagement programmés",
+                    "en": "Water management programed"
+                },
+                "water_management_realised_this_month": {
+                    "line_number": "4",
+                    "fr": "Aménagement réalisés durant le mois",
+                    "en": "Water management realised this month"
+                },
+                "population_served_by_new_water_point": {
+                    "line_number": "5",
+                    "fr": "Pop. desservie par les nv points d’eau",
+                    "en": "Population served by new water point"
+                },
+                "house_hold_living_in_the_health_area": {
+                    "line_number": "6",
+                    "fr": "Ménages vivant dans l'Aire de Sante",
+                    "en": "House hold living in the health area"
+                },
+                "house_hold_with_hygienic_latrines": {
+                    "line_number": "7",
+                    "fr": "Ménages avec latrines hygiéniques",
+                    "en": "House hold with hygienic latrines"
+                },
+                "house_hold_who_use_the_treated_water": {
+                    "line_number": "8",
+                    "fr": "Ménages qui recourent au traitement d’eau de boisson avant l'utilisation",
+                    "en": "House hold who use the treated water"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "functional_tools": {
+                        "fr": "Ouvrages Fonctionnels",
+                        "en": "Functional tools"
+                    },
+                    "number": {
+                        "fr": "Nombre",
+                        "en": "Number"
+                    }
+                }
+            },
+            "parent": "report_promo"
+        },
+        "report_promo_7": {
+            "title": "5.8 Other Community Information",
+            "type": "object",
+            "properties": {
+                "deaths_in_the_community": {
+                    "line_number": "1",
+                    "fr": "Décès dans la communauté",
+                    "en": "Deaths in the community"
+                },
+                "births_in_the_community": {
+                    "line_number": "2",
+                    "fr": "Naissances dans la communauté",
+                    "en": "Births in the community"
+                },
+                "deaths_of_children_aged_0_59_months": {
+                    "line_number": "3",
+                    "fr": "Décès d’enfants de 0 à 59 mois",
+                    "en": "deaths of children aged 0-59 months"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "number": {
+                        "fr": "Nombre",
+                        "en": "Number"
+                    }
+                }
+            },
+            "parent": "report_promo"
+        },
+        "report_promo_8": {
+            "title": "Other Community Information (cont)",
+            "type": "object",
+            "properties": {
+                "people_with_handicap": {
+                    "line_number": "1",
+                    "fr": "Personnes avec handicap",
+                    "en": "People with handicap"
+                },
+                "in_the_community": {
+                    "line_number": "2",
+                    "fr": "dans la communauté",
+                    "en": "in the community"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "under_5_ac": {
+                        "fr": "< 5 ans AC",
+                        "en": "Under 5 AC"
+                    },
+                    "under_5_nc": {
+                        "fr": "< 5 ans NC",
+                        "en": "Under 5 NC"
+                    },
+                    "above_5_ac": {
+                        "fr": "> 5 ans AC",
+                        "en": "Above 5 AC"
+                    },
+                    "above_5_nc": {
+                        "fr": "> 5 ans NC",
+                        "en": "Above 5 NC"
+                    }
+                }
+            },
+            "parent": "report_promo"
+        },
         "report_screening_1": {
             "title": "2.1 SCREENING",
             "type": "object",
@@ -3629,6 +4766,178 @@ exports.reports = function () {
                 }
             },
             "parent": "report_screening"
+        },
+        "report_summary": {
+            "title": "10. Summary  of the use of serivces",
+            "type": "object",
+            "properties": {
+                "news_curative_cases_all_new_curative_cases": {
+                    "line_number": "1",
+                    "fr": "Nouveaux cas curatif (Tous les NC curatifs)",
+                    "en": "News curative cases (all new curative cases)"
+                },
+                "new_pmtct_cases_anc_cpon_fp": {
+                    "line_number": "2",
+                    "fr": "Nouveaux cas prévention mère (CPN,CPON,PF)",
+                    "en": "New PMTCT cases (ANC, CPON FP)"
+                },
+                "new_child_prevention_cases_psc1": {
+                    "line_number": "3",
+                    "fr": "Nouveaux cas prévention enfant (CPS1",
+                    "en": "New Child prevention cases (PSC1)"
+                },
+                "total_new_cases": {
+                    "line_number": "4",
+                    "fr": "Total des Nouveaux Cas",
+                    "en": "Total new cases"
+                },
+                "use_of_service_rate_at_the_hc_total": {
+                    "line_number": "5",
+                    "line": "singlecell",
+                    "fr": "Taux d’utilisation des services au CS= Total Nouveaux Cas reçus au CS X100/Population",
+                    "en": "Use of service rate at the HC Total of new cases received at the HC X100/population",
+                    "condition": "FIXME"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "as": {
+                        "fr": "AS",
+                        "en": "AS"
+                    },
+                    "has": {
+                        "fr": "HAS",
+                        "en": "HAS"
+                    },
+                    "hz": {
+                        "fr": "HZ",
+                        "en": "HZ"
+                    },
+                    "total": {
+                        "fr": "Total",
+                        "en": "Total"
+                    }
+                }
+            }
+        },
+        "report_supervision_1": {
+            "title": "7.1 Realised supervisions by the health center and the RECO in the community",
+            "type": "object",
+            "properties": {
+                "nbr_of_visits_from_the_health_center_team_to_reco": {
+                    "line_number": "1",
+                    "fr": "Nb Visites de l’équipe du CS auprès de relais communautaires",
+                    "en": "Nbr of visits from the health center team to RECO"
+                },
+                "nbr_of_visits_of_reco_to_the_community_including_family_planning": {
+                    "line_number": "2",
+                    "fr": "Nb Visites des RECO vers la communauté dont Counsel ing PF",
+                    "en": "Nbr of visits of RECO to the community including Family Planning"
+                },
+                "nbr_of_visits_of_reco_to_the_community_for_other_problems": {
+                    "line_number": "3",
+                    "fr": "Nb Visites des RECO vers la communauté dont pour autres problèmes de santé",
+                    "en": "Nbr of visits of RECO to the community for  other problems"
+                },
+                "nbr_of_visits_of_reco_to_the_community_for_family_planning_material_distribution": {
+                    "line_number": "4",
+                    "fr": "Nb Visites des RECO vers la communauté dont distribution des intrants PF",
+                    "en": "Nbr of visits of RECO to the community for family planning material distribution"
+                },
+                "nbr_of_visits_of_reco_to_the_community_for_other_intrants_distribution": {
+                    "line_number": "5",
+                    "fr": "Nb Visites des RECO vers la communauté dont distribution autres intrants",
+                    "en": "Nbr of visits of RECo to the community for other intrants distribution"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "program": {
+                        "fr": "Program",
+                        "en": "Program"
+                    },
+                    "realised": {
+                        "fr": "Réalisées",
+                        "en": "Realised"
+                    }
+                }
+            },
+            "parent": "report_supervision"
+        },
+        "report_supervision_2": {
+            "title": "7.2 Supervisions realies by the main nurses and/or the ECZS to other structures",
+            "type": "object",
+            "properties": {
+                "visited_strucutres": {
+                    "line_number": "1",
+                    "fr": "Structures visitées",
+                    "en": "Visited strucutres"
+                },
+                "programed_supervision_visits": {
+                    "line_number": "2",
+                    "fr": "Visites de supervisions programmées",
+                    "en": "Programed supervision visits"
+                },
+                "realised_supervision_visits": {
+                    "line_number": "3",
+                    "fr": "Visites de supervisions réalisées",
+                    "en": "Realised supervision visits"
+                },
+                "visits_of_supervision_received": {
+                    "line_number": "4",
+                    "fr": "Visites de supervisions reçues",
+                    "en": "Visits of supervision received"
+                },
+                "recipients_who_beneficiated_with_one_supervision": {
+                    "line_number": "5",
+                    "fr": "Prestataires ayant bénéficié d'une supervision",
+                    "en": "Recipients who beneficiated with one supervision"
+                },
+                "written_retro_information_received": {
+                    "line_number": "6",
+                    "fr": "Rétro-informations écrites reçues",
+                    "en": "Written retro-information received"
+                },
+                "accoplished_visits_rate_from_the_hc_to_the_reco": {
+                    "line_number": "7",
+                    "line": "singlecell",
+                    "fr": "Taux de réalisation des visites du CS vers le RC = Nb de visites réalisées X 100 / Nb de visites programmées par le CS",
+                    "en": "Accoplished visits rate from the HC to the RECO = Nbr of visits realized X 100/nbr of programed visits to the HC",
+                    "condition": "FIXME"
+                },
+                "accomplished_visits_rate_from_the_reco_to_the_community": {
+                    "line_number": "8",
+                    "line": "singlecell",
+                    "fr": "Taux de réalisation des visites des RC dans la communauté = Nb de visites réalisées X 100/ Nb de visites programmées par le RC",
+                    "en": "Accomplished visits rate from the RECO to the community =Nbr of visits realized X100/Nbr of visits programed the RECO",
+                    "condition": "FIXME"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "main_nurse": {
+                        "fr": "IT",
+                        "en": "Main Nurse"
+                    },
+                    "ecz": {
+                        "fr": "ECZ",
+                        "en": "ECZ"
+                    },
+                    "combined_team": {
+                        "fr": "Equipe Conjointe",
+                        "en": "Combined team"
+                    },
+                    "others": {
+                        "fr": "Autres",
+                        "en": "Others"
+                    },
+                    "total": {
+                        "fr": "Total",
+                        "en": "Total"
+                    }
+                }
+            },
+            "parent": "report_supervision"
         }
     };
 };

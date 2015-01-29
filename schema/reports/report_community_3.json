@@ -1,0 +1,75 @@
+{
+    "title": "6.2 Treatment and Notification (cont)",
+    "type": "object",
+    "properties": {
+        "cases_of_fever_in_malaria_zone_at_risk": {
+            "line_number": "1",
+            "fr": "Cas de fièvre dans une zone a risque du paludisme",
+            "en": "Cases of fever in malaria zone at risk"
+        },
+        "realized_tdrs": {
+            "line_number": "2",
+            "fr": "TDRs réalisés",
+            "en": "Realized TDRs"
+        },
+        "including_positive": {
+            "line_number": "3",
+            "fr": "Dont positif",
+            "en": "Including positive"
+        },
+        "including_treated": {
+            "line_number": "4",
+            "fr": "Dont traité",
+            "en": "Including treated"
+        },
+        "pneumonia": {
+            "line_number": "5",
+            "fr": "Pneumonie",
+            "en": "Pneumonia"
+        },
+        "including_treaed_under_national_policy": {
+            "line_number": "6",
+            "fr": "Dont traité avec la politique national",
+            "en": "Including treaed under national policy"
+        },
+        "cough_and_cold": {
+            "line_number": "7",
+            "fr": "Toux ou Rhume",
+            "en": "Cough and cold"
+        },
+        "diarrhea": {
+            "line_number": "8",
+            "fr": "Diarrhée",
+            "en": "Diarrhea"
+        },
+        "including_treated_under_national_policy": {
+            "line_number": "9",
+            "fr": "Dont traité avec la politique national",
+            "en": "Including treated under national policy"
+        },
+        "malnutrition": {
+            "line_number": "10",
+            "fr": "Malnutrition",
+            "en": "Malnutrition"
+        },
+        "including_pb_under_the_red_line": {
+            "line_number": "11",
+            "fr": "Dont PB sur la bande rouge",
+            "en": "Including PB under the red line"
+        },
+        "danger_signs_alert_referal_cases": {
+            "line_number": "12",
+            "fr": "Signe de danger/alerte & cas à orienter",
+            "en": "Danger signs/alert& referal cases"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number"
+            }
+        }
+    },
+    "parent": "report_community"
+}

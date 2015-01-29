@@ -1,0 +1,47 @@
+{
+    "title": "6.2 Treatment and Notification",
+    "type": "object",
+    "properties": {
+        "new_children_cases_receivedat_the_site": {
+            "line_number": "1",
+            "fr": "Nouveaux cas enfants reçus au site",
+            "en": "New children cases receivedat the site"
+        },
+        "nbr_of_old_cases_received_at_the_site": {
+            "line_number": "2",
+            "fr": "Nombre d’anciens cas reçus au site",
+            "en": "Nbr of old cases received at the site"
+        },
+        "nbr_of_referals_to_hc": {
+            "line_number": "3",
+            "fr": "Nombre de référés vers CS",
+            "en": "Nbr of referals to HC"
+        },
+        "nbr_of_contre_refered": {
+            "line_number": "4",
+            "fr": "Nombre de contre-référés",
+            "en": "Nbr of contre - refered"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "as": {
+                "fr": "AS",
+                "en": "AS"
+            },
+            "has": {
+                "fr": "HAS",
+                "en": "HAS"
+            },
+            "hz": {
+                "fr": "HZ",
+                "en": "HZ"
+            },
+            "total": {
+                "fr": "Total",
+                "en": "Total"
+            }
+        }
+    },
+    "parent": "report_community"
+}

@@ -1,0 +1,40 @@
+{
+    "title": "3.5.3 Births and deaths (cont)",
+    "type": "object",
+    "properties": {
+        "refered_mother_and_child": {
+            "line_number": "1",
+            "fr": "Références mère et bébé",
+            "en": "Refered mother and child"
+        },
+        "nbb_deaths_7days": {
+            "line_number": "2",
+            "fr": "Décès nouveau-nés ≤ 7 jours",
+            "en": "NBB deaths < 7days"
+        },
+        "nbb_deaths_28days": {
+            "line_number": "3",
+            "fr": "Décès nouveau-nés ≤ 28 jours",
+            "en": "NBB deaths < 28days"
+        },
+        "assisted_births": {
+            "line_number": "4",
+            "fr": "Naissances assistées",
+            "en": "Assisted births"
+        },
+        "including_stillborn_babies": {
+            "line_number": "4",
+            "fr": "Dont mort-nés",
+            "en": "Including stillborn babies"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number"
+            }
+        }
+    },
+    "parent": "report_pregnant"
+}

@@ -1,0 +1,38 @@
+{
+    "title": "5.2 Follow of Relais Communautaire",
+    "type": "object",
+    "properties": {
+        "nbr_of_children_on_middle_line_growth_chart": {
+            "line_number": "1",
+            "fr": "Relais communautaires ",
+            "en": "Relaiscommunautaire"
+        },
+        "nbr_of_light_malunutrition_cases": {
+            "line_number": "2",
+            "fr": "Relais communautaires Actifs",
+            "en": "Active relais communautaire"
+        },
+        "nbr_of_high_balanced_malnutriation_cases": {
+            "line_number": "3",
+            "fr": "MILD distribuées par les RECO",
+            "en": "MILD distributed by the relais communautaire"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "ladies": {
+                "fr": "Femme",
+                "en": "Ladies"
+            },
+            "men": {
+                "fr": "Homme",
+                "en": "Men"
+            },
+            "totals": {
+                "fr": "Total",
+                "en": "Total"
+            }
+        }
+    },
+    "parent": "report_promo"
+}

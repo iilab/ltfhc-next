@@ -1,0 +1,52 @@
+{
+    "title": "5.5 Relais communautaire Identification (RECO)",
+    "type": "object",
+    "properties": {
+        "nbr_of_needed": {
+            "line_number": "1",
+            "fr": "Nombre de RECO prévus",
+            "en": "Nbr of needed"
+        },
+        "nbr_of_existing_reco": {
+            "line_number": "2",
+            "fr": "Nombre des RECO existants",
+            "en": "Nbr of existing RECO"
+        },
+        "nbr_of_actif_reco": {
+            "line_number": "3",
+            "fr": "Nombre des RECO opérationnels",
+            "en": "Nbr of actif RECO"
+        },
+        "average_of_active_reco": {
+            "line_number": "4",
+            "line": "singlecell",
+            "fr": "Proportion des RECO opérationnels = Nombre des RECO opérationnels X 100 / Nombre tot. des RECO",
+            "en": "Average of active RECO= Nbrof active RECO X 100/Nbr of RECO",
+            "condition": "FIXME"
+        },
+        "coverage_of_reco_in_the_health_area": {
+            "line_number": "5",
+            "line": "singlecell",
+            "fr": "Couverture en RECO dans l’AS = Nombre des RECO existantsX100/Nombre des RECO prévus",
+            "en": "Coverageof RECO in the health area= Nbr of existing RECO X100/Nbr of RECO Provided",
+            "condition": "FIXME"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "ladies": {
+                "fr": "Femme",
+                "en": "Ladies"
+            },
+            "men": {
+                "fr": "Homme",
+                "en": "Men"
+            },
+            "totals": {
+                "fr": "Total",
+                "en": "Total"
+            }
+        }
+    },
+    "parent": "report_promo"
+}

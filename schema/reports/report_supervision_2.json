@@ -1,0 +1,75 @@
+{
+    "title": "7.2 Supervisions realies by the main nurses and/or the ECZS to other structures",
+    "type": "object",
+    "properties": {
+        "visited_strucutres": {
+            "line_number": "1",
+            "fr": "Structures visitées",
+            "en": "Visited strucutres"
+        },
+        "programed_supervision_visits": {
+            "line_number": "2",
+            "fr": "Visites de supervisions programmées",
+            "en": "Programed supervision visits"
+        },
+        "realised_supervision_visits": {
+            "line_number": "3",
+            "fr": "Visites de supervisions réalisées",
+            "en": "Realised supervision visits"
+        },
+        "visits_of_supervision_received": {
+            "line_number": "4",
+            "fr": "Visites de supervisions reçues",
+            "en": "Visits of supervision received"
+        },
+        "recipients_who_beneficiated_with_one_supervision": {
+            "line_number": "5",
+            "fr": "Prestataires ayant bénéficié d'une supervision",
+            "en": "Recipients who beneficiated with one supervision"
+        },
+        "written_retro_information_received": {
+            "line_number": "6",
+            "fr": "Rétro-informations écrites reçues",
+            "en": "Written retro-information received"
+        },
+        "accoplished_visits_rate_from_the_hc_to_the_reco": {
+            "line_number": "7",
+            "line": "singlecell",
+            "fr": "Taux de réalisation des visites du CS vers le RC = Nb de visites réalisées X 100 / Nb de visites programmées par le CS",
+            "en": "Accoplished visits rate from the HC to the RECO = Nbr of visits realized X 100/nbr of programed visits to the HC",
+            "condition": "FIXME"
+        },
+        "accomplished_visits_rate_from_the_reco_to_the_community": {
+            "line_number": "8",
+            "line": "singlecell",
+            "fr": "Taux de réalisation des visites des RC dans la communauté = Nb de visites réalisées X 100/ Nb de visites programmées par le RC",
+            "en": "Accomplished visits rate from the RECO to the community =Nbr of visits realized X100/Nbr of visits programed the RECO",
+            "condition": "FIXME"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "main_nurse": {
+                "fr": "IT",
+                "en": "Main Nurse"
+            },
+            "ecz": {
+                "fr": "ECZ",
+                "en": "ECZ"
+            },
+            "combined_team": {
+                "fr": "Equipe Conjointe",
+                "en": "Combined team"
+            },
+            "others": {
+                "fr": "Autres",
+                "en": "Others"
+            },
+            "total": {
+                "fr": "Total",
+                "en": "Total"
+            }
+        }
+    },
+    "parent": "report_supervision"
+}

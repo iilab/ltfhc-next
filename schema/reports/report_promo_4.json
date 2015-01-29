@@ -1,0 +1,54 @@
+{
+    "title": "5.4 Hygiene & Disposals management (health center)",
+    "type": "object",
+    "properties": {
+        "incinarator": {
+            "line_number": "1",
+            "fr": "Incinérateur",
+            "en": "Incinarator"
+        },
+        "hygienic_latrines": {
+            "line_number": "2",
+            "fr": "Latrines hygiénique",
+            "en": "Hygienic latrines"
+        },
+        "dust_bins": {
+            "line_number": "3",
+            "fr": "Poubelles",
+            "en": "Dust bins"
+        },
+        "placenta_hall": {
+            "line_number": "4",
+            "fr": "Fosse à placenta",
+            "en": "Placenta hall"
+        },
+        "rabbish_pit": {
+            "line_number": "5",
+            "fr": "Trou à ordures",
+            "en": "Rabbish pit"
+        },
+        "flowing_water_and_tapes": {
+            "line_number": "6",
+            "fr": "Eau courante (avec robinet)",
+            "en": "Flowing water and tapes"
+        },
+        "existing_water_point": {
+            "line_number": "7",
+            "fr": "Points d’eau existant",
+            "en": "Existing water point"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "functional_tools": {
+                "fr": "Ouvrages Fonctionnels",
+                "en": "Functional tools"
+            },
+            "days_off": {
+                "fr": "Jours Non Fonctionne",
+                "en": "Days off"
+            }
+        }
+    },
+    "parent": "report_promo"
+}
