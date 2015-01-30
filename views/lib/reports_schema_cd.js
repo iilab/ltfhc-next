@@ -4454,7 +4454,7 @@ exports.reports = function () {
             }
         },
         "report_malariacomplement": {
-            "title": "1. Antenatal Care  re- centered",
+            "title": "Form 1 : Monthly Report complementing the SNIS",
             "type": "object",
             "properties": {
                 "0_5years": {
