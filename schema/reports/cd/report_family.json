@@ -1,6 +1,6 @@
 
     {
-        "title": "3.3  Parteners and Family members of the PW",
+        "title": "3.3  Partners and Family members of the PW",
         "type": "object",
         "properties": {
             "0_14_yrs": {
@@ -36,49 +36,49 @@
         },
         "definitions": {
             "columns": {
-                "male_parteners_of_the_pw_hiv_positive_counseled": {
+                "male_partners_of_the_pw_hiv_positive_counseled": {
                     "fr": "Conseillés",
                     "en": "Counseled",
                     "title":"Counseled",
                     "condition": "true"
                 },
-                "male_parteners_of_the_pw_hiv_positive_tested": {
+                "male_partners_of_the_pw_hiv_positive_tested": {
                     "fr": "Testés",
                     "en": "Tested",
                     "title":"Tested",
                     "condition": "true"
                 },
-                "male_parteners_of_the_pw_hiv_positive_positif": {
+                "male_partners_of_the_pw_hiv_positive_positif": {
                     "fr": "Positifs",
                     "en": "Positif",
                     "title":"Positif",
                     "condition": "true"
                 },
-                "male_parteners_of_the_pw_hiv_positive_informed_about_their_results": {
+                "male_partners_of_the_pw_hiv_positive_informed_about_their_results": {
                     "fr": "Informées de leur résultat",
                     "en": "Informed about their results",
                     "title":"Informed about their results",
                     "condition": "true"
                 },
-                "family_parteners_of_the_pw_hiv_positive_counseled": {
+                "family_partners_of_the_pw_hiv_positive_counseled": {
                     "fr": "Conseillés",
                     "en": "Counseled",
                     "title":"Counseled",
                     "condition": "true"
                 },
-                "family_parteners_of_the_pw_hiv_positive_tested": {
+                "family_partners_of_the_pw_hiv_positive_tested": {
                     "fr": "Testés",
                     "en": "Tested",
                     "title":"Tested",
                     "condition": "true"
                 },
-                "family_parteners_of_the_pw_hiv_positive_positif": {
+                "family_partners_of_the_pw_hiv_positive_positif": {
                     "fr": "Positifs",
                     "en": "Positif",
                     "title":"Positif",
                     "condition": "true"
                 },
-                "family_parteners_of_the_pw_hiv_positive_informed_about_their_results": {
+                "family_partners_of_the_pw_hiv_positive_informed_about_their_results": {
                     "fr": "Informées de leur résultat",
                     "en": "Informed about their results",
                     "title":"Informed about their results",

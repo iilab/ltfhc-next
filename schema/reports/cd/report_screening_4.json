@@ -1,0 +1,42 @@
+{
+        "title": "",
+        "type": "object",
+        "properties": {
+            "targeted_population": {
+                "line_number": "1",
+                "fr": "Population cible = population du mois",
+                "en": "Targeted population = Monthly population",
+                "condition": "false"
+            },
+            "total_consultation": {
+                "line_number": "2",
+                "fr": "Total Consultations (c+d)",
+                "en": "Total consultation (c+d)",
+                "condition": "false"
+            },
+            "curatif_used_rate": {
+                "line_number": "3",
+                "fr": "Taux d’utilisation du curatif = Total Nouveaux Cas AS (a+b) x 100 / pop du mois",
+                "en": "Curatif used rate = total new case AS(a+b)X100/monthly population",
+                "condition": "false"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "number": {
+                    "fr": "Nombre",
+                    "en": "Number",
+                    "title":"Number",
+                    "condition": "true"
+                }
+            }
+        },
+        "parent": "report_screening",
+        "overrides": {
+            "predefined": [
+                {"row": "targeted_population", "col": "number", "value": ""},
+                {"row": "total_consultation", "col": "number", "value": ""},
+                {"row": "curatif_used_rate", "col": "number", "value": ""}
+            ]
+        }
+    }

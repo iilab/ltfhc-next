@@ -1,122 +1,124 @@
 {
     "title": "Monthly Canvas - 2.2 Consultation of sexual violence survivors",
+    "en": "Monthly Canvas - 2.2 Consultation of sexual violence survivors",
+    "fr": "Consultations survivants des violences sexuelles",
     "type": "object",
     "properties": {
         "new_cases_and_svs": {
             "line_number": "1",
             "fr": "Nouveaux cas SVS",
             "en": "New cases and SVS",
-            "condition": "true"
+            "condition": "(subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes') || (subforms.sexual_violence_record) && (!(follow_up === 'yes' && subforms.sexual_violence_record))"
         },
         "including_those_seen_within_72 hours": {
             "line_number": "1a",
             "fr": "Dont vu dans 72 heures",
             "en": "Including those seen within 72 hours",
-            "condition": "true"
+            "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.current_incident_days <= 3)"
         },
         "including_feminines": {
             "line_number": "1b",
             "fr": "Dont féminins",
             "en": "Including feminines",
-            "condition": "true"
+            "condition": "patient.gender === 'female' && (subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes') || (subforms.sexual_violence_record) && (!(follow_up === 'yes' && subforms.sexual_violence_record))"
         },
         "old_cases_svs": {
             "line_number": "2",
             "fr": "Anciens cas SVS",
             "en": "Old cases SVS",
-            "condition": "true"
+            "condition": "(follow_up === 'yes' && subforms.sexual_violence_record)"
         },
         "including_those_contre_refered": {
             "line_number": "2a",
             "fr": "Dont contre-référés",
             "en": "Including those contre-refered",
-            "condition": "true"
+            "condition": "counter_referred && subforms.sexual_violence_record"
         },
-        "svs_refered_to_pshyco_social": {
+        "svs_refered_to_psycho_social": {
             "line_number": "3",
             "fr": "SVS Référés psycho-social",
-            "en": "SVS refered to pshyco-social",
-            "condition": "true"
+            "en": "SVS refered to psycho-social",
+            "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'psycho_social'"
         },
         "svs_refered_to_justice": {
             "line_number": "4",
             "fr": "SVS Référés juridique",
             "en": "SVS refered to justice",
-            "condition": "true"
+            "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'judicial'"
         },
         "svs_refered_to_socio_economic_reintegration": {
             "line_number": "5",
             "fr": "SVS Référés à la réinsertion socio-économique",
             "en": "SVS refered to socio economic reintegration",
-            "condition": "true"
+            "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'socio_economic'"
         },
         "svs_refered_to_the_general_hospital": {
             "line_number": "6",
             "fr": "SVS Référés vers HGR",
             "en": "SVS refered to the General Hospital",
-            "condition": "true"
+            "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'general_hospital'"
         },
         "svs_who_have_received_medical_pec": {
             "line_number": "7",
             "fr": "SVS ayant recu une PEC médicale (Méd ou Inf)",
             "en": "SVS who have received medical PEC",
-            "condition": "true"
+            "condition": "(subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes' && subforms.disease_diagnosis.admission === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes' && subforms.reproductive_counseling.admission === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes' && subforms.bodily_injury.admission === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes' && subforms.ctc_record.admission === 'yes')"
         },
         "svs_who_have_received_pep_kit_within_72_hours": {
             "line_number": "8",
             "fr": "SVS ayant recu le kit PEP – 72 h",
             "en": "SVS who have received PEP kit within 72 hours",
-            "condition": "true"
+            "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_pep_kit_72h === 'yes'"
         },
         "svs_who_have_received_pep_kit_after_72_hours": {
             "line_number": "9",
             "fr": "SVS ayant recu le kit PEP après 72h",
             "en": "SVS who have received PEP kit after 72 hours",
-            "condition": "true"
+            "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_pep_kit === 'yes' && subforms.sexual_violence_record.received_pep_kit_72h === 'no'"
         },
         "svs_who_have_received_emergency_contraceptive": {
             "line_number": "10",
             "fr": "SVS ayant recu la Contraception d'Urgence",
             "en": "SVS who have received emergency contraceptive",
-            "condition": "true"
+            "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_emergency_contraception === 'yes'"
         },
         "svs_hiv_tested": {
             "line_number": "11",
             "fr": "SVS testés pour le VIH",
             "en": "SVS HIV tested",
-            "condition": "true"
+            "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_tested === 'yes'"
         },
         "svs_hiv_plus_tested": {
             "line_number": "12",
             "fr": "SVS testés VIH+",
             "en": "SVS HIV + tested",
-            "condition": "true"
+            "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_positive_test === 'yes'"
         },
         "urogenital_fistula_post_violence_dignostic": {
             "line_number": "13",
-            "fr": "Fistules urogénitales post viol diagnost",
-            "en": "Urogenital fistula post violence dignostic",
-            "condition": "true"
+            "fr": "Fistules urogénitales post viol diagnostic",
+            "en": "Urogenital fistula post rape dignostic",
+            "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.urogenital_fistula_post_rape === 'yes'"
         },
         "refered_urogenital_fistula_post_violence_dignostic": {
             "line_number": "14",
             "fr": "Fistules urogénitales post viol diagnost. et référées",
             "en": "Refered Urogenital fistula post violence dignostic",
-            "condition": "true"
+            "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.urogenital_fistula_post_rape === 'yes') && (subforms.sexual_violence_record.referred_to_location === 'general_hospital')"
         },
         "total_consultation": {
             "line_number": "15",
             "line": "singlecell",
             "fr": "Total Consultations SVS (a+b)",
             "en": "Total consultation SVS (a+b)",
-            "condition": "true"
+            "condition": "((subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes') || (subforms.sexual_violence_record)) || (follow_up === 'yes' && subforms.sexual_violence_record)"
         },
-        "total_new_cases": {
+        "rate_new_cases_72h": {
             "line_number": "16",
             "line": "singlecell",
             "fr": "% de SVS vu dans – 72h = Total Nouveaux Cas vus dans – 72h x 100 /Tot Nouveaux Cas SVS",
             "en": "Rate of SVS seen within 72 hrs  = Total New cases seen X 100/total SVS NC",
-            "condition": "true"
+            "condition": "false"
         }
     },
     "definitions": {
@@ -128,5 +130,10 @@
                 "condition": "true"
             }
         }
+    },
+    "overrides": {
+        "predefined": [
+            {"row": "rate_new_cases_72h", "col": "number", "value": ""}
+        ]
     }
 }

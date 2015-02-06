@@ -1,89 +1,94 @@
-    {
-        "title": "2.3.2 Voluntary Counseling and Testing VCT",
-        "type": "object",
-        "properties": {
-            "0_14_yrs": {
-                "line_number": "1",
-                "fr": "0 – 14 ans",
-                "en": "0-14 yrs",
-                "condition": "true"
-            },
-            "15_19_yrs": {
-                "line_number": "2",
-                "fr": "15–19 ans",
-                "en": "15-19 yrs",
-                "condition": "true"
-            },
-            "20_24_yrs": {
-                "line_number": "3",
-                "fr": "20–24 ans",
-                "en": "20-24 yrs",
-                "condition": "true"
-            },
-            "25_yrs_and_above": {
-                "line_number": "4",
-                "fr": "25 ans et plus",
-                "en": "25 yrs and above",
-                "condition": "true"
-            }
+{
+    "title": "2.3.2 Voluntary Counseling and Testing VCT",
+    "en": "2.3.2 Voluntary Counseling and Testing VCT",
+    "fr": "2.3.2 Conseils et dépistage volontaire (CDV)",
+    "type": "object",
+    "properties": {
+        "0_14_yrs": {
+            "line_number": "1",
+            "fr": "0 – 14 ans",
+            "en": "0-14 yrs",
+            "condition": "patient.current_age_years <= 14"
         },
-        "definitions": {
-            "columns": {
-                "masculine_tested": {
-                    "fr": "Testés",
-                    "en": "Tested",
-                    "title":"Tested",
-                    "condition": "true"
-                },
-                "masculine_positive": {
-                    "fr": "Positifs",
-                    "en": "Positive",
-                    "title":"Positive",
-                    "condition": "true"
-                },
-                "masculine_negative": {
-                    "fr": "Négatifs",
-                    "en": "Negative",
-                    "title":"Negative",
-                    "condition": "true"
-                },
-                "feminine_tested": {
-                    "fr": "Testés",
-                    "en": "Tested",
-                    "title":"Tested",
-                    "condition": "true"
-                },
-                "feminine_positive": {
-                    "fr": "Positifs",
-                    "en": "Positive",
-                    "title":"Positive",
-                    "condition": "true"
-                },
-                "feminine_negative": {
-                    "fr": "Négatifs",
-                    "en": "Negative",
-                    "title":"Negative",
-                    "condition": "true"
-                },
-                "total_tested": {
-                    "fr": "Testés",
-                    "en": "Tested",
-                    "title":"Tested",
-                    "condition": "true"
-                },
-                "total_positive": {
-                    "fr": "Positifs",
-                    "en": "Positive",
-                    "title":"Positive",
-                    "condition": "true"
-                },
-                "total_negative": {
-                    "fr": "Négatifs",
-                    "en": "Negative",
-                    "title":"Negative",
-                    "condition": "true"
-                }
-            }
+        "15_19_yrs": {
+            "line_number": "2",
+            "fr": "15–19 ans",
+            "en": "15-19 yrs",
+            "condition": "(patient.current_age_years > 14 && patient.current_age_years <= 19)"
         },
-    "parent": "report_isthiv"
+        "20_24_yrs": {
+            "line_number": "3",
+            "fr": "20–24 ans",
+            "en": "20-24 yrs",
+            "condition": "(patient.current_age_years > 20 && patient.current_age_years <= 24)"
+        },
+        "25_yrs_and_above": {
+            "line_number": "4",
+            "fr": "25 ans et plus",
+            "en": "25 yrs and above",
+            "condition": "(patient.current_age_years > 25) || !(patient.current_age_years)"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "masculine_tested": {
+                "fr": "Testés",
+                "en": "Tested",
+                "title":"Tested",
+                "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes'))"
+            },
+            "masculine_positive": {
+                "fr": "Positifs",
+                "en": "Positive",
+                "title":"Positive",
+                "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes'))"
+            },
+            "masculine_negative": {
+                "fr": "Négatifs",
+                "en": "Negative",
+                "title":"Negative",
+                "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no'))"
+            },
+            "feminine_tested": {
+                "fr": "Testés",
+                "en": "Tested",
+                "title":"Tested",
+                "condition": "patient.gender === 'female' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit) || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit))"
+            },
+            "feminine_positive": {
+                "fr": "Positifs",
+                "en": "Positive",
+                "title":"Positive",
+                "condition": "(patient.gender === 'female' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'yes'))"
+            },
+            "feminine_negative": {
+                "fr": "Négatifs",
+                "en": "Negative",
+                "title":"Negative",
+                "condition": "(patient.gender === 'female' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'no'))"
+            },
+            "total_tested": {
+                "fr": "Testés",
+                "en": "Tested",
+                "title":"Tested",
+                "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit === 'yes')"
+            },
+            "total_positive": {
+                "fr": "Positifs",
+                "en": "Positive",
+                "title":"Positive",
+                "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative' && subforms.anc_followup.second_hiv_test === 'yes')"
+            },
+            "total_negative": {
+                "fr": "Négatifs",
+                "en": "Negative",
+                "title":"Negative",
+                "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && subforms.anc_followup.second_hiv_test === 'no')"
+            }
+        }
+    },
+    "parent": "report_isthiv",
+    "overrides": {
+        "thead_prefix": "<tr><th></th><th></th><th></th><th colspan=\"3\">Masculin</th><th colspan=\"3\">Féminin</th><th colspan=\"3\">Total</th></tr>"
     }
+}

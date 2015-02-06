@@ -1,187 +1,187 @@
-[
-    {
-        "title": "3.1. Antenatal Clinic",
-        "type": "object",
-        "properties": {
-            "antenatal_clinic_visit_1": {
-                "line_number": "1",
-                "fr": "Nouveaux cas SVSVisites CPN 1",
-                "en": "Antenatal Clinic visit 1",
-                "condition": "true"
-            },
-            "pregnant_women_less_than_20_yrs": {
-                "line_number": "2",
-                "fr": "Femmes enceintes < 20 Ans",
-                "en": "Pregnant women less than 20 yrs",
-                "condition": "true"
-            },
-            "antenatal_clinic_visit_2": {
-                "line_number": "3",
-                "fr": "Visites CPN 2",
-                "en": "Antenatal Clinic visit 2",
-                "condition": "true"
-            },
-            "antenatal_clinic_visit_3": {
-                "line_number": "4",
-                "fr": "Visites CPN 3",
-                "en": "Antenatal Clinic visit 3",
-                "condition": "true"
-            },
-            "antenatal_clinic_vist_4": {
-                "line_number": "5",
-                "fr": "Visites CPN 4",
-                "en": "Antenatal Clinic vist 4",
-                "condition": "true"
-            },
-            "pregnant_women_who_realised_the_antenatal_cininc_1st_term": {
-                "line_number": "6",
-                "fr": "Femmes enceinte ayant réalisé la CPN1 au 1er trimestre",
-                "en": "Pregnant women who realised the Antenatal cininc 1st term",
-                "condition": "true"
-            },
-            "pregnant_women_with_anc4_during_their_last_pregnancy": {
-                "line_number": "7",
-                "fr": "Femmes enceinte avec CPN 4 pendant leur dernière grossesse",
-                "en": "Pregnant women with ANC4 during their last pregnancy",
-                "condition": "true"
-            },
-            "pregnant_women_with_anc4_with_one_at_8th_or_9th_month": {
-                "line_number": "8",
-                "fr": "Femmes enceinte avec CPN 4 dont une au 8ème-9ème mois",
-                "en": "Pregnant women with ANC4  with one at 8th or 9th month",
-                "condition": "true"
-            },
-            "tested_pregnant_women_at_risk": {
-                "line_number": "9",
-                "fr": "Femmes enceinte à risque détectées",
-                "en": "Tested Pregnant women at risk",
-                "condition": "true"
-            },
-            "refered_pregant_women_at_risk_to_the_general_hospital": {
-                "line_number": "10",
-                "fr": "Femmes enceinte à risque référée vers l'HGR",
-                "en": "Refered Pregant women at risk to the general hospital",
-                "condition": "true"
-            },
-            "pregnant_women_under_20_yrs_refered": {
-                "line_number": "11",
-                "fr": "Femmes enceintes < 20 Ans référées",
-                "en": "Pregnant women under 20 yrs refered",
-                "condition": "true"
-            },
-            "iron_plus_folic_acid_1st_dose_received": {
-                "line_number": "12",
-                "fr": "Fer + Acide Folique 1ère dose reçue",
-                "en": "Iron + folic acid 1st dose received",
-                "condition": "true"
-            },
-            "iron_plus_folic_acid_2nd_dose_received": {
-                "line_number": "13",
-                "fr": "Fer + Acide Folique 2ème dose reçues",
-                "en": "Iron + folic acid 2nd dose received",
-                "condition": "true"
-            },
-            "iron_plus_folic_acid_3rd_dose_received": {
-                "line_number": "14",
-                "fr": "Fer + Acide Folique 3ème dose reçue",
-                "en": "Iron + folic acid 3rd dose received",
-                "condition": "true"
-            },
-            "sulfadox_plus_pyrimet_1st_dose_received": {
-                "line_number": "15",
-                "fr": "Sulfadox. + Pyrimét 1ère dose reçue",
-                "en": "Sulfadox + Pyrimet 1st dose received",
-                "condition": "true"
-            },
-            "sulfadox_plus_pyrimet_2nd_dose_received": {
-                "line_number": "16",
-                "fr": "Sulfadox. + Pyrimét 2ème dose reçues",
-                "en": "Sulfadox + Pyrimet 2nd dose received",
-                "condition": "true"
-            },
-            "sulfadox_plus_pyrimet_3rd_dose_received": {
-                "line_number": "17",
-                "fr": "Sulfadox. + Pyrimét 3ème dose reçue",
-                "en": "Sulfadox + Pyrimet 3rd dose received",
-                "condition": "true"
-            },
-            "completed_vaccinated_before_pregnancy": {
-                "line_number": "18",
-                "fr": "Complètement vaccinées avant grossesse",
-                "en": "Completed vaccinated before pregnancy",
-                "condition": "true"
-            },
-            "who_required_the_mild": {
-                "line_number": "19",
-                "fr": "Ayant acquis une MILD",
-                "en": "Who required the MILD",
-                "condition": "true"
-            },
-            "who_received_mebendazole_since_the_2nd_term": {
-                "line_number": "20",
-                "fr": "Ayant reçu le Mébendazole à partir du 2ème trimestre",
-                "en": "Who received Mebendazole since the 2nd term",
-                "condition": "true"
-            },
-            "target_population": {
-                "line_number": "21",
-                "line": "singlecell",
-                "fr": "Population cible = fe du mois",
-                "en": "target population= monthly woman",
-                "condition": "true"
-            },
-            "anc_sessions": {
-                "line_number": "22",
-                "line": "singlecell",
-                "fr": "Séances de CPN",
-                "en": "ANC sessions",
-                "condition": "true"
-            },
-            "used_rate_anc": {
-                "line_number": "23",
-                "line": "singlecell",
-                "fr": "Taux d’utilisation CPN = CPN 1 AS (Nlles inscrites)x 100/ Pop femmes enceintes du mois",
-                "en": "Used rate ANC= ANC 1 AS (new registered)X100/pop monthly pregnant women",
-                "condition": "true"
-            },
-            "pregnacies_at_high_risk_detected": {
-                "line_number": "24",
-                "line": "singlecell",
-                "fr": "Proportion de grossesses à haut risque détectées = Tot Grossesses à haut risque détectées x 100 / Total Nlles Inscrites",
-                "en": "Pregnacies at high risk detected = total pregnancies at high risk detected X100/tota new registered",
-                "condition": "true"
-            },
-            "pregnancies_at_high_risk_avarage_refered": {
-                "line_number": "25",
-                "line": "singlecell",
-                "fr": "Propor)on de grossesses à haut risque référées = Tot Grossesses à haut risque référées x 100 / Total femmes à hauts risques détectées inscrites",
-                "en": "Pregnancies at high risk avarage refered= total pregnanciesat high risk refered X100/total women at high risk detected registered",
-                "condition": "true"
-            },
-            "average_of_women_who_received_at_least_the_sp2": {
-                "line_number": "26",
-                "line": "singlecell",
-                "fr": "Proportion de fe ayant reçu au moins la SP 2 = Nombre de femmes enceintes ayant reçu au moins 2 Quantité de SPX100 / Fe ayant effectué la première visite prénatale",
-                "en": "Average of women who received at least the SP2= number of pregnant women Who received at least 2 quantities of SPX100/woman who was visited for the 1st time at ANC",
-                "condition": "true"
-            },
-            "average_of_pregnant_women_who_received_one_mild_at_anc": {
-                "line_number": "27",
-                "line": "singlecell",
-                "fr": "Proportion des femmes enceintes ayant reçues une MILD à la CPN = femmes enceintes ayant acquis MILD X 100/ Total CPN1",
-                "en": "Average of pregnant women who received one MILD at ANC= Pregnant woman who required a MILD X100/total ANC 1",
-                "condition": "true"
-            }
+{
+    "title": "3.1. Antenatal Clinic",
+    "en": "3.1. Antenatal Clinic",
+    "fr": "3.1. Consultation Prénatale (CPN)",
+    "type": "object",
+    "properties": {
+        "antenatal_clinic_visit_1": {
+            "line_number": "1",
+            "fr": "Nouveaux cas SVSVisites CPN 1",
+            "en": "Antenatal Clinic visit 1",
+            "condition": "true"
         },
-        "definitions": {
-            "columns": {
-                "total": {
-                    "fr": "Total",
-                    "en": "Total",
-                    "title": "Total",
-                    "condition": "true"
-                }
+        "pregnant_women_less_than_20_yrs": {
+            "line_number": "2",
+            "fr": "Femmes enceintes < 20 Ans",
+            "en": "Pregnant women less than 20 yrs",
+            "condition": "true"
+        },
+        "antenatal_clinic_visit_2": {
+            "line_number": "3",
+            "fr": "Visites CPN 2",
+            "en": "Antenatal Clinic visit 2",
+            "condition": "true"
+        },
+        "antenatal_clinic_visit_3": {
+            "line_number": "4",
+            "fr": "Visites CPN 3",
+            "en": "Antenatal Clinic visit 3",
+            "condition": "true"
+        },
+        "antenatal_clinic_vist_4": {
+            "line_number": "5",
+            "fr": "Visites CPN 4",
+            "en": "Antenatal Clinic vist 4",
+            "condition": "true"
+        },
+        "pregnant_women_who_realised_the_antenatal_cininc_1st_term": {
+            "line_number": "6",
+            "fr": "Femmes enceinte ayant réalisé la CPN1 au 1er trimestre",
+            "en": "Pregnant women who realised the Antenatal cininc 1st term",
+            "condition": "true"
+        },
+        "pregnant_women_with_anc4_during_their_last_pregnancy": {
+            "line_number": "7",
+            "fr": "Femmes enceinte avec CPN 4 pendant leur dernière grossesse",
+            "en": "Pregnant women with ANC4 during their last pregnancy",
+            "condition": "true"
+        },
+        "pregnant_women_with_anc4_with_one_at_8th_or_9th_month": {
+            "line_number": "8",
+            "fr": "Femmes enceinte avec CPN 4 dont une au 8ème-9ème mois",
+            "en": "Pregnant women with ANC4  with one at 8th or 9th month",
+            "condition": "true"
+        },
+        "tested_pregnant_women_at_risk": {
+            "line_number": "9",
+            "fr": "Femmes enceinte à risque détectées",
+            "en": "Tested Pregnant women at risk",
+            "condition": "true"
+        },
+        "refered_pregant_women_at_risk_to_the_general_hospital": {
+            "line_number": "10",
+            "fr": "Femmes enceinte à risque référée vers l'HGR",
+            "en": "Refered Pregant women at risk to the general hospital",
+            "condition": "true"
+        },
+        "pregnant_women_under_20_yrs_refered": {
+            "line_number": "11",
+            "fr": "Femmes enceintes < 20 Ans référées",
+            "en": "Pregnant women under 20 yrs refered",
+            "condition": "true"
+        },
+        "iron_plus_folic_acid_1st_dose_received": {
+            "line_number": "12",
+            "fr": "Fer + Acide Folique 1ère dose reçue",
+            "en": "Iron + folic acid 1st dose received",
+            "condition": "true"
+        },
+        "iron_plus_folic_acid_2nd_dose_received": {
+            "line_number": "13",
+            "fr": "Fer + Acide Folique 2ème dose reçues",
+            "en": "Iron + folic acid 2nd dose received",
+            "condition": "true"
+        },
+        "iron_plus_folic_acid_3rd_dose_received": {
+            "line_number": "14",
+            "fr": "Fer + Acide Folique 3ème dose reçue",
+            "en": "Iron + folic acid 3rd dose received",
+            "condition": "true"
+        },
+        "sulfadox_plus_pyrimet_1st_dose_received": {
+            "line_number": "15",
+            "fr": "Sulfadox. + Pyrimét 1ère dose reçue",
+            "en": "Sulfadox + Pyrimet 1st dose received",
+            "condition": "true"
+        },
+        "sulfadox_plus_pyrimet_2nd_dose_received": {
+            "line_number": "16",
+            "fr": "Sulfadox. + Pyrimét 2ème dose reçues",
+            "en": "Sulfadox + Pyrimet 2nd dose received",
+            "condition": "true"
+        },
+        "sulfadox_plus_pyrimet_3rd_dose_received": {
+            "line_number": "17",
+            "fr": "Sulfadox. + Pyrimét 3ème dose reçue",
+            "en": "Sulfadox + Pyrimet 3rd dose received",
+            "condition": "true"
+        },
+        "completed_vaccinated_before_pregnancy": {
+            "line_number": "18",
+            "fr": "Complètement vaccinées avant grossesse",
+            "en": "Completed vaccinated before pregnancy",
+            "condition": "true"
+        },
+        "who_required_the_mild": {
+            "line_number": "19",
+            "fr": "Ayant acquis une MILD",
+            "en": "Who required the MILD",
+            "condition": "true"
+        },
+        "who_received_mebendazole_since_the_2nd_term": {
+            "line_number": "20",
+            "fr": "Ayant reçu le Mébendazole à partir du 2ème trimestre",
+            "en": "Who received Mebendazole since the 2nd term",
+            "condition": "true"
+        },
+        "target_population": {
+            "line_number": "21",
+            "line": "singlecell",
+            "fr": "Population cible = fe du mois",
+            "en": "target population= monthly woman",
+            "condition": "true"
+        },
+        "anc_sessions": {
+            "line_number": "22",
+            "line": "singlecell",
+            "fr": "Séances de CPN",
+            "en": "ANC sessions",
+            "condition": "true"
+        },
+        "used_rate_anc": {
+            "line_number": "23",
+            "line": "singlecell",
+            "fr": "Taux d’utilisation CPN = CPN 1 AS (Nlles inscrites)x 100/ Pop femmes enceintes du mois",
+            "en": "Used rate ANC= ANC 1 AS (new registered)X100/pop monthly pregnant women",
+            "condition": "true"
+        },
+        "pregnacies_at_high_risk_detected": {
+            "line_number": "24",
+            "line": "singlecell",
+            "fr": "Proportion de grossesses à haut risque détectées = Tot Grossesses à haut risque détectées x 100 / Total Nlles Inscrites",
+            "en": "Pregnacies at high risk detected = total pregnancies at high risk detected X100/tota new registered",
+            "condition": "true"
+        },
+        "pregnancies_at_high_risk_avarage_refered": {
+            "line_number": "25",
+            "line": "singlecell",
+            "fr": "Propor)on de grossesses à haut risque référées = Tot Grossesses à haut risque référées x 100 / Total femmes à hauts risques détectées inscrites",
+            "en": "Pregnancies at high risk avarage refered= total pregnanciesat high risk refered X100/total women at high risk detected registered",
+            "condition": "true"
+        },
+        "average_of_women_who_received_at_least_the_sp2": {
+            "line_number": "26",
+            "line": "singlecell",
+            "fr": "Proportion de fe ayant reçu au moins la SP 2 = Nombre de femmes enceintes ayant reçu au moins 2 Quantité de SPX100 / Fe ayant effectué la première visite prénatale",
+            "en": "Average of women who received at least the SP2= number of pregnant women Who received at least 2 quantities of SPX100/woman who was visited for the 1st time at ANC",
+            "condition": "true"
+        },
+        "average_of_pregnant_women_who_received_one_mild_at_anc": {
+            "line_number": "27",
+            "line": "singlecell",
+            "fr": "Proportion des femmes enceintes ayant reçues une MILD à la CPN = femmes enceintes ayant acquis MILD X 100/ Total CPN1",
+            "en": "Average of pregnant women who received one MILD at ANC= Pregnant woman who required a MILD X100/total ANC 1",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title": "Total",
+                "condition": "true"
             }
         }
     }
-]
+}

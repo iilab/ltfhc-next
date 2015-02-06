@@ -96,7 +96,7 @@
             "line": "singlecell",
             "fr": "Total enfants non atteints par la vaccination",
             "en": "Total number of non atteded children by vaccination",
-            "condition": "ture"
+            "condition": "true"
         },
         "vaar": {
             "line_number": "19",

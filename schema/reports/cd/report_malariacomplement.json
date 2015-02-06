@@ -15,7 +15,7 @@
             "condition": "true"
         },
         "pregnant_w": {
-            "line_numaber": "3",
+            "line_number": "3",
             "fr": "Total NC toutes causes confondues en consultation exteme Femmes enceintes",
             "en": "?",
             "condition": "true"
@@ -286,7 +286,7 @@
         "pregnant_women": {
             "line_number": "46",
             "line": "singlecell",
-            "fr": "emmes  enceintes",
+            "fr": "Femmes enceintes",
             "en": "Pregnant women",
             "condition": "true"
         }
