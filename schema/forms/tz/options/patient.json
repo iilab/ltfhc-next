@@ -33,7 +33,7 @@
         "date_age": {
             "label": "Birth Date: ",
             "type": "date",
-            "dateFormat": "yyyy-mm-dd",
+            "dateFormat": "yy-mm-dd",
             "datepicker": {
                 "hideIfNoPrevNextType": true,
                 "yearRange": "1900:+0",
