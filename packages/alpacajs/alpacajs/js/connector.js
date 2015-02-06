@@ -15,7 +15,9 @@ var connector = Alpaca.Connector.extend({
 
 	loadSchema: function(resource, successCallback, errorCallback) {
 		if (typeof(resource) == "string") {
-			resource = this.adjustPath(resource, "/schema/forms/schema/")
+			resource = this.adjustPath(resource, "/")
+	        var arr = resource.split("/");
+	        this.schemaBaseUri = arr.splice(0, arr.length - 1).join("/");
 		}
 
 		return this.base(resource, successCallback, errorCallback);
@@ -23,24 +25,32 @@ var connector = Alpaca.Connector.extend({
 
 	loadOptions: function(resource, successCallback, errorCallback) {
 		if (typeof(resource) == "string") {
-			resource = this.adjustPath(resource, "/schema/forms/options/")
+			resource = this.adjustPath(resource, "/")
+	        var arr = resource.split("/");
+	        this.optionsBaseUri = arr.splice(0, arr.length - 1).join("/");
 		}
 
 		return this.base(resource, successCallback, errorCallback);
 	},
 
 	loadReferenceSchema: function(resource, successCallback, errorCallback) {
-		if (typeof(resource) == "string") {
-			arr = resource.split("#")
+		if (typeof(resource) == "string" && resource[0] === "/") {
+			arr = resource.split("#");
 			arr[0] = this.adjustPath(arr[0], "/schema/forms/schema/")
+		} else if (typeof(resource) == "string" && resource[0] !== "/" && (resource.indexOf(".json") == -1))  {
+			arr = resource.split("#");
+			arr[0] = this.schemaBaseUri + "/" + arr[0] + ".json";
 		}
 		return this.base(arr.join("#"), successCallback, errorCallback);
 	},
 
 	loadReferenceOptions: function(resource, successCallback, errorCallback) {
-		if (typeof(resource) == "string") {
+		if (typeof(resource) == "string" && resource[0] === "/") {
 			arr = resource.split("#")
 			arr[0] = this.adjustPath(arr[0], "/schema/forms/options/")
+		} else if (typeof(resource) == "string" && resource[0] !== "/" && (resource.indexOf(".json") == -1))  {
+			arr = resource.split("#");
+			arr[0] = this.optionsBaseUri + "/"  + arr[0] + ".json";
 		}
 		return this.base(arr.join("#"), successCallback, errorCallback);
 	},
