@@ -571,6 +571,7 @@ DB.prototype.getDoc = function (id, /*optional*/q, callback) {
     var req = {
         url: this.url + '/' + exports.encode(id),
         expect_json: true,
+        async:false,
         data: data
     };
     exports.request(req, callback);
