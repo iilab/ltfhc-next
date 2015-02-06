@@ -179,6 +179,15 @@
                 });
                 $(td).addClass('disabled');
             }
+            var predefined = _.detect(overrides.predefined, function (x) {
+                return (
+                    x.col === c.property.join('.') &&
+                    x.row === doc.indicator
+                );
+            });
+            if (predefined) {
+                $('input', td).val('').val(predefined.value);
+            }
 			tr.append(td);
 		});
 		return tr;
@@ -978,7 +987,7 @@
 			throw new Error('You must define some columns');
 		}
 
-		help = '<div class="spreadsheet-help">' + '<i class="icon-question-sign"></i>' + '<ul>' + '<li><b>Double click</b> or enter key to edit a cell.</li>' + '<li><b>Enter</b> key to save.</li>' + '<li><b>Escape</b> key for undo.</li>' + '<li><b>Tab</b> cycles through cells.</li>' + '</ul>' + '</div>';
+		help = ''; // '<div class="spreadsheet-help">' + '<i class="icon-question-sign"></i>' + '<ul>' + '<li><b>Double click</b> or enter key to edit a cell.</li>' + '<li><b>Enter</b> key to save.</li>' + '<li><b>Escape</b> key for undo.</li>' + '<li><b>Tab</b> cycles through cells.</li>' + '</ul>' + '</div>';
 
         var thead_contents = (
             (options.overrides.thead_prefix || '') +
