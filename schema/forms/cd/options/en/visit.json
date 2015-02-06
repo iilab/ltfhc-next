@@ -1,0 +1,180 @@
+{
+  "fields": {
+    "patient_id": {
+      "type": "hidden"
+    },
+    "_formdata": {
+      "type": "hidden"
+    },
+    "clinic": {
+      "label": "Clinic:"
+    },
+    "clinician": {
+      "label": "Clinician:"
+    },
+    "area_zone": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "Provenance"
+    },
+    "indigent": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Indigent"
+    },
+    "follow_up": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Is a follow up visit?"
+    },
+    "referred_from_elsewhere": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred from elsewhere?"
+    },
+    "referred_from_location": {
+      "type": "select",
+      "label": "If Yes, Referral Location:"
+    },
+    "counter_referred": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Counter referred?"
+    },
+    "note": {
+      "type": "textarea",
+      "label": "Notes:"
+    }
+  },
+  "definitions": {
+    "schema": {
+      "parent": {
+        "visit": {
+          "list": {
+            "label": "Reason For Visit:",
+            "type": "checkbox",
+            "multiple": true,
+            "optionLabels": [
+              "Disease Diagnosis",
+              "Bodily Injury",
+              "Immunization/Post-Immunization",
+              "HIV Counseling Mother",
+              "HIV Counseling Child",
+              "Reproductive Counceling/Treatment",
+              "First Antenatal Visit",
+              "Follow-up Antenatal Visit",
+              "Postnatal Visit",
+              "TB and Leprosy",
+              "HIV in Pregnancy",
+              "Well Child Visit",
+              "Delivery Record",
+              "Diarrhea Treatment",
+              "CTC Patient Record",
+              "Sexual Violence Record"
+            ]
+          },
+          "subforms": {
+            "fields": {
+              "disease_diagnosis": {
+                "dependencies": {
+                  "#reasons": "disease_diagnosis"
+                }
+              },
+              "bodily_injury": {
+                "dependencies": {
+                  "#reasons": "bodily_injury"
+                }
+              },
+              "immunization": {
+                "dependencies": {
+                  "#reasons": "immunization"
+                }
+              },
+              "hiv_counseling_mother": {
+                "dependencies": {
+                  "#reasons": "hiv_counseling_mother"
+                }
+              },
+              "hiv_counseling_child": {
+                "dependencies": {
+                  "#reasons": "hiv_counseling_child"
+                }
+              },
+              "reproductive_counseling": {
+                "dependencies": {
+                  "#reasons": "reproductive_counseling"
+                }
+              },
+              "anc_first_visit": {
+                "dependencies": {
+                  "#reasons": "anc_first_visit"
+                }
+              },
+              "anc_followup": {
+                "dependencies": {
+                  "#reasons": "anc_followup"
+                }
+              },
+              "postnatal": {
+                "dependencies": {
+                  "#reasons": "postnatal"
+                }
+              },
+              "tb_leprosy": {
+                "dependencies": {
+                  "#reasons": "tb_leprosy"
+                }
+              },
+              "hiv_pregnancy_clinic": {
+                "dependencies": {
+                  "#reasons": "hiv_pregnancy_clinic"
+                }
+              },
+              "well_child_visit": {
+                "dependencies": {
+                  "#reasons": "well_child_visit"
+                }
+              },
+              "delivery_record": {
+                "dependencies": {
+                  "#reasons": "delivery_record"
+                }
+              },
+              "diarrhea": {
+                "dependencies": {
+                  "#reasons": "diarrhea"
+                }
+              },
+              "ctc_record": {
+                "dependencies": {
+                  "#reasons": "ctc_record"
+                }
+              },
+              "sexual_violence_record": {
+                "dependencies": {
+                  "#reasons": "sexual_violence_record"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

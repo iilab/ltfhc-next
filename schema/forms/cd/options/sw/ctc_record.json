@@ -1,0 +1,179 @@
+{
+  "fields": {
+    "ctc_id_number": {
+      "label": "Unique CTC ID Number"
+    },
+    "height_cm": {
+      "label": "Height in cm"
+    },
+    "transferred_in_with": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Transferred in with"
+    },
+    "district_div_ward": {
+      "label": "Patient district/division/ward"
+    },
+    "steet_village": {
+      "label": "Patient street/village"
+    },
+    "village_chairman": {
+      "label": "Patient street/village/chairman"
+    },
+    "ten_cell_leader": {
+      "label": "Name of ten cell leader"
+    },
+    "head_of_household": {
+      "label": "Name of head of household"
+    },
+    "contact_household_head": {
+      "label": "Contact of household head"
+    },
+    "treatment_support": {
+      "label": "Name of treatment supporter"
+    },
+    "contact_treatment_support": {
+      "label": "Telephone of treatment supporter"
+    },
+    "joined_community_support": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No",
+        "Unknown"
+      ],
+      "removeDefaultNone": true,
+      "label": "Joined community support organization?"
+    },
+    "prior_arv_expos": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Prior ARV exposure"
+    },
+    "sexual_violence": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Visit related to Sexual violence"
+    },
+    "date_confirmed_hiv": {
+      "type": "date",
+      "dateFormat": "yy-mm-dd",
+      "datepicker": {
+        "hideIfNoPrevNextType": true,
+        "yearRange": "1900:+1",
+        "changeMonth": true,
+        "changeYear": true
+      },
+      "label": "Date Confirmed HIV"
+    },
+    "date_enrolled": {
+      "type": "date",
+      "dateFormat": "yy-mm-dd",
+      "datepicker": {
+        "hideIfNoPrevNextType": true,
+        "yearRange": "1900:+1",
+        "changeMonth": true,
+        "changeYear": true
+      },
+      "label": "Date enrolled in care"
+    },
+    "date_medically_elig": {
+      "type": "date",
+      "dateFormat": "yy-mm-dd",
+      "datepicker": {
+        "hideIfNoPrevNextType": true,
+        "yearRange": "1900:+1",
+        "changeMonth": true,
+        "changeYear": true
+      },
+      "label": "Date medically eligible"
+    },
+    "date_elig_ready": {
+      "type": "date",
+      "dateFormat": "yy-mm-dd",
+      "datepicker": {
+        "hideIfNoPrevNextType": true,
+        "yearRange": "1900:+1",
+        "changeMonth": true,
+        "changeYear": true
+      },
+      "label": "Date eligible and ready"
+    },
+    "date_art": {
+      "type": "date",
+      "dateFormat": "yy-mm-dd",
+      "datepicker": {
+        "hideIfNoPrevNextType": true,
+        "yearRange": "1900:+1",
+        "changeMonth": true,
+        "changeYear": true
+      },
+      "label": "Date start ART"
+    },
+    "tb_reg_num": {
+      "label": "TB registration number"
+    },
+    "hbc_num": {
+      "label": "HBC number"
+    },
+    "who_stage": {
+      "type": "select",
+      "label": "WHO stage"
+    },
+    "cd4_count": {
+      "label": "CD4 count"
+    },
+    "age_start_art": {
+      "label": "Age at start ART"
+    },
+    "who_stage_start_art": {
+      "type": "select",
+      "label": "WHO stage at start ART"
+    },
+    "cd4_start_art": {
+      "label": "CD4 count at start ART"
+    },
+    "body_weight_start_art": {
+      "label": "Body weight kg at start ART"
+    },
+    "functional_status": {
+      "type": "select",
+      "label": "Functional status at start ART"
+    },
+    "admission": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Admission?"
+    },
+    "referred_to_elsewhere": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred to another facility?"
+    },
+    "referred_to_location": {
+      "type": "select",
+      "label": "If Yes, which facility was the patient referred to?"
+    },
+    "follow_up_recommended": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "A follow up visit has been recommended"
+    }
+  }
+}

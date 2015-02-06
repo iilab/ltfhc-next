@@ -1,0 +1,62 @@
+{
+  "fields": {
+    "first_name": {
+      "label": "Prénom:"
+    },
+    "last_name": {
+      "label": "Nom:"
+    },
+    "gender": {
+      "type": "select",
+      "label": "Sexe:"
+    },
+    "clinic_id": {
+      "label": "Identifiant Clinique:"
+    },
+    "government_id": {
+      "label": "Identifiant Gouvernemental:"
+    },
+    "hiv_id": {
+      "label": "Identifiant HIV:"
+    },
+    "phone": {
+      "type": "number",
+      "label": "Téléphone:"
+    },
+    "hometown": {
+      "label": "Village de naissance"
+    },
+    "village": {
+      "label": "Village de résidence"
+    },
+    "date_age": {
+      "type": "date",
+      "dateFormat": "yy-mm-dd",
+      "datepicker": {
+        "hideIfNoPrevNextType": true,
+        "yearRange": "1900:+1",
+        "changeMonth": true,
+        "changeYear": true
+      },
+      "label": "Date de naissance"
+    },
+    "current_age_years": {
+      "type": "number",
+      "label": "Age approximatif"
+    },
+    "medication_allergies": {
+      "type": "textarea",
+      "label": "Allergies au médicaments"
+    },
+    "note": {
+      "type": "textarea",
+      "label": "Autres notes"
+    },
+    "current_age_months": {
+      "type": "hidden"
+    },
+    "current_created_months": {
+      "type": "hidden"
+    }
+  }
+}

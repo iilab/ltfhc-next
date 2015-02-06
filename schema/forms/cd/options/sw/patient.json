@@ -1,60 +1,62 @@
 {
-    "fields": {
-        "first_name": {
-            "label": "Jina la kwanza:"
-        },
-        "last_name": {
-            "label": "Last Name: (Jina la mwisho)"
-        },
-        "gender": {
-            "label": "Jinsia",
-            "type": "select",
-            "removeDefaultNone": true
-        },
-        "clinic_id": {
-            "label": "Namba ya utambulishi ya kliniki"
-        },
-        "government_id": {
-            "label": "Namba ya utambulishi ya Serikali"
-        },
-        "hiv_id": {
-            "label": "HIV ID: (Kitambulisho cha VVU"
-        },
-        "phone": {
-            "label": "Namba ya simu",
-            "type": "number"
-        },
-        "hometown": {
-            "label": "Hometown:"
-        },
-        "village": {
-            "label": "Unaishi katika kijiji gani?"
-        },
-        "date_age": {
-            "label": "Tarehe ya kuzaliwa",
-            "type": "date",
-            "dateFormat": "yyyy-mm-dd",
-            "datepicker": {
-                "hideIfNoPrevNextType": true,
-                "yearRange": "1900:+0",
-                "changeYear": true,
-                "changeMonth": true
-            }
-        },
-        "current_age_years": {
-            "label": "Umri wa mgonjwa",
-            "type": "number"
-        },
-        "current_age_months": {
-            "type": "hidden"
-        },
-        "medication_allergies": {
-            "label": "Medication Allergies:",
-            "type": "textarea"
-        },
-        "note": {
-            "label": "Maelezo mengine husika",
-            "type": "textarea"
-        }
+  "fields": {
+    "first_name": {
+      "label": "Jina la kwanza"
+    },
+    "last_name": {
+      "label": "Jina la mwisho"
+    },
+    "gender": {
+      "type": "select",
+      "label": "Jinsia"
+    },
+    "clinic_id": {
+      "label": "Namba ya utambulishi ya kliniki"
+    },
+    "government_id": {
+      "label": "Namba ya utambulishi ya Serikali"
+    },
+    "hiv_id": {
+      "label": "Kitambulisho cha VVU"
+    },
+    "phone": {
+      "type": "number",
+      "label": "Namba ya simu"
+    },
+    "hometown": {
+      "label": "Hometown:"
+    },
+    "village": {
+      "label": "Unaishi katika kijiji gani?"
+    },
+    "date_age": {
+      "type": "date",
+      "dateFormat": "yy-mm-dd",
+      "datepicker": {
+        "hideIfNoPrevNextType": true,
+        "yearRange": "1900:+1",
+        "changeMonth": true,
+        "changeYear": true
+      },
+      "label": "Tarehe ya kuzaliwa"
+    },
+    "current_age_years": {
+      "type": "number",
+      "label": "Umri wa mgonjwa"
+    },
+    "medication_allergies": {
+      "type": "textarea",
+      "label": "Medication Allergies:"
+    },
+    "note": {
+      "type": "textarea",
+      "label": "Maelezo mengine husika"
+    },
+    "current_age_months": {
+      "type": "hidden"
+    },
+    "current_created_months": {
+      "type": "hidden"
     }
+  }
 }

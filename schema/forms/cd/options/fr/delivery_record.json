@@ -1,0 +1,44 @@
+{
+  "fields": {
+    "delivery_location": {
+      "type": "select",
+      "label": "Location of delivery"
+    },
+    "delivery_mode": {
+      "type": "select",
+      "label": "Mode of delivery"
+    },
+    "prenatal_problems": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Prenatal problems"
+    },
+    "childbirth_complications": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Childbirth complications"
+    },
+    "referred_to_elsewhere": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred to another facility?"
+    },
+    "referred_to_location": {
+      "type": "select",
+      "label": "If Yes, which facility was the patient referred to?"
+    },
+    "follow_up_recommended": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Visite de suivi"
+    }
+  }
+}

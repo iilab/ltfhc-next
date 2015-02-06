@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json_schema.org/draft-04/schema#",
+  "_id": "sexual_violence_record",
+  "title": "Sexual Violence Record",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "date_incident": {
+      "type": "date",
+      "format": "date"
+    },
+    "current_incident_days": {
+      "type": "number"
+    },
+    "received_pep_kit": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "received_pep_kit_72h": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "received_emergency_contraception": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_tested": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_partner_test": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_positive_test": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_partner_positive_test": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_counseling": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_partner_counseling": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_discordant": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "post_test_counseling": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "urogenital_fistula_post_rape": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "referred_to_elsewhere": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "referred_to_location": {
+      "type": "string",
+      "$ref": "./lists/#referral_locations"
+    },
+    "follow_up_recommended": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    }
+  }
+}
