@@ -1,528 +1,188 @@
 exports.reports = function () {
     return {
-        "report_anc": [
-            {
-                "title": "3.1. Antenatal Clinic",
-                "type": "object",
-                "properties": {
-                    "antenatal_clinic_visit_1": {
-                        "line_number": "1",
-                        "fr": "Nouveaux cas SVSVisites CPN 1",
-                        "en": "Antenatal Clinic visit 1",
-                        "condition": "true"
-                    },
-                    "pregnant_women_less_than_20_yrs": {
-                        "line_number": "2",
-                        "fr": "Femmes enceintes < 20 Ans",
-                        "en": "Pregnant women less than 20 yrs",
-                        "condition": "true"
-                    },
-                    "antenatal_clinic_visit_2": {
-                        "line_number": "3",
-                        "fr": "Visites CPN 2",
-                        "en": "Antenatal Clinic visit 2",
-                        "condition": "true"
-                    },
-                    "antenatal_clinic_visit_3": {
-                        "line_number": "4",
-                        "fr": "Visites CPN 3",
-                        "en": "Antenatal Clinic visit 3",
-                        "condition": "true"
-                    },
-                    "antenatal_clinic_vist_4": {
-                        "line_number": "5",
-                        "fr": "Visites CPN 4",
-                        "en": "Antenatal Clinic vist 4",
-                        "condition": "true"
-                    },
-                    "pregnant_women_who_realised_the_antenatal_cininc_1st_term": {
-                        "line_number": "6",
-                        "fr": "Femmes enceinte ayant réalisé la CPN1 au 1er trimestre",
-                        "en": "Pregnant women who realised the Antenatal cininc 1st term",
-                        "condition": "true"
-                    },
-                    "pregnant_women_with_anc4_during_their_last_pregnancy": {
-                        "line_number": "7",
-                        "fr": "Femmes enceinte avec CPN 4 pendant leur dernière grossesse",
-                        "en": "Pregnant women with ANC4 during their last pregnancy",
-                        "condition": "true"
-                    },
-                    "pregnant_women_with_anc4_with_one_at_8th_or_9th_month": {
-                        "line_number": "8",
-                        "fr": "Femmes enceinte avec CPN 4 dont une au 8ème-9ème mois",
-                        "en": "Pregnant women with ANC4  with one at 8th or 9th month",
-                        "condition": "true"
-                    },
-                    "tested_pregnant_women_at_risk": {
-                        "line_number": "9",
-                        "fr": "Femmes enceinte à risque détectées",
-                        "en": "Tested Pregnant women at risk",
-                        "condition": "true"
-                    },
-                    "refered_pregant_women_at_risk_to_the_general_hospital": {
-                        "line_number": "10",
-                        "fr": "Femmes enceinte à risque référée vers l'HGR",
-                        "en": "Refered Pregant women at risk to the general hospital",
-                        "condition": "true"
-                    },
-                    "pregnant_women_under_20_yrs_refered": {
-                        "line_number": "11",
-                        "fr": "Femmes enceintes < 20 Ans référées",
-                        "en": "Pregnant women under 20 yrs refered",
-                        "condition": "true"
-                    },
-                    "iron_plus_folic_acid_1st_dose_received": {
-                        "line_number": "12",
-                        "fr": "Fer + Acide Folique 1ère dose reçue",
-                        "en": "Iron + folic acid 1st dose received",
-                        "condition": "true"
-                    },
-                    "iron_plus_folic_acid_2nd_dose_received": {
-                        "line_number": "13",
-                        "fr": "Fer + Acide Folique 2ème dose reçues",
-                        "en": "Iron + folic acid 2nd dose received",
-                        "condition": "true"
-                    },
-                    "iron_plus_folic_acid_3rd_dose_received": {
-                        "line_number": "14",
-                        "fr": "Fer + Acide Folique 3ème dose reçue",
-                        "en": "Iron + folic acid 3rd dose received",
-                        "condition": "true"
-                    },
-                    "sulfadox_plus_pyrimet_1st_dose_received": {
-                        "line_number": "15",
-                        "fr": "Sulfadox. + Pyrimét 1ère dose reçue",
-                        "en": "Sulfadox + Pyrimet 1st dose received",
-                        "condition": "true"
-                    },
-                    "sulfadox_plus_pyrimet_2nd_dose_received": {
-                        "line_number": "16",
-                        "fr": "Sulfadox. + Pyrimét 2ème dose reçues",
-                        "en": "Sulfadox + Pyrimet 2nd dose received",
-                        "condition": "true"
-                    },
-                    "sulfadox_plus_pyrimet_3rd_dose_received": {
-                        "line_number": "17",
-                        "fr": "Sulfadox. + Pyrimét 3ème dose reçue",
-                        "en": "Sulfadox + Pyrimet 3rd dose received",
-                        "condition": "true"
-                    },
-                    "completed_vaccinated_before_pregnancy": {
-                        "line_number": "18",
-                        "fr": "Complètement vaccinées avant grossesse",
-                        "en": "Completed vaccinated before pregnancy",
-                        "condition": "true"
-                    },
-                    "who_required_the_mild": {
-                        "line_number": "19",
-                        "fr": "Ayant acquis une MILD",
-                        "en": "Who required the MILD",
-                        "condition": "true"
-                    },
-                    "who_received_mebendazole_since_the_2nd_term": {
-                        "line_number": "20",
-                        "fr": "Ayant reçu le Mébendazole à partir du 2ème trimestre",
-                        "en": "Who received Mebendazole since the 2nd term",
-                        "condition": "true"
-                    },
-                    "target_population": {
-                        "line_number": "21",
-                        "line": "singlecell",
-                        "fr": "Population cible = fe du mois",
-                        "en": "target population= monthly woman",
-                        "condition": "true"
-                    },
-                    "anc_sessions": {
-                        "line_number": "22",
-                        "line": "singlecell",
-                        "fr": "Séances de CPN",
-                        "en": "ANC sessions",
-                        "condition": "true"
-                    },
-                    "used_rate_anc": {
-                        "line_number": "23",
-                        "line": "singlecell",
-                        "fr": "Taux d’utilisation CPN = CPN 1 AS (Nlles inscrites)x 100/ Pop femmes enceintes du mois",
-                        "en": "Used rate ANC= ANC 1 AS (new registered)X100/pop monthly pregnant women",
-                        "condition": "true"
-                    },
-                    "pregnacies_at_high_risk_detected": {
-                        "line_number": "24",
-                        "line": "singlecell",
-                        "fr": "Proportion de grossesses à haut risque détectées = Tot Grossesses à haut risque détectées x 100 / Total Nlles Inscrites",
-                        "en": "Pregnacies at high risk detected = total pregnancies at high risk detected X100/tota new registered",
-                        "condition": "true"
-                    },
-                    "pregnancies_at_high_risk_avarage_refered": {
-                        "line_number": "25",
-                        "line": "singlecell",
-                        "fr": "Propor)on de grossesses à haut risque référées = Tot Grossesses à haut risque référées x 100 / Total femmes à hauts risques détectées inscrites",
-                        "en": "Pregnancies at high risk avarage refered= total pregnanciesat high risk refered X100/total women at high risk detected registered",
-                        "condition": "true"
-                    },
-                    "average_of_women_who_received_at_least_the_sp2": {
-                        "line_number": "26",
-                        "line": "singlecell",
-                        "fr": "Proportion de fe ayant reçu au moins la SP 2 = Nombre de femmes enceintes ayant reçu au moins 2 Quantité de SPX100 / Fe ayant effectué la première visite prénatale",
-                        "en": "Average of women who received at least the SP2= number of pregnant women Who received at least 2 quantities of SPX100/woman who was visited for the 1st time at ANC",
-                        "condition": "true"
-                    },
-                    "average_of_pregnant_women_who_received_one_mild_at_anc": {
-                        "line_number": "27",
-                        "line": "singlecell",
-                        "fr": "Proportion des femmes enceintes ayant reçues une MILD à la CPN = femmes enceintes ayant acquis MILD X 100/ Total CPN1",
-                        "en": "Average of pregnant women who received one MILD at ANC= Pregnant woman who required a MILD X100/total ANC 1",
-                        "condition": "true"
-                    }
-                },
-                "definitions": {
-                    "columns": {
-                        "total": {
-                            "fr": "Total",
-                            "en": "Total",
-                            "title": "Total",
-                            "condition": "true"
-                        }
-                    }
-                }
-            }
-        ],
-        "report_childgrowth": {
-            "collection": "reports",
-            "class": "schema",
-            "_id": "reports/schema/childgrowth",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "title": "Report Child Growth",
+        "report_anc": {
+            "title": "3.1. Antenatal Clinic",
+            "en": "3.1. Antenatal Clinic",
+            "fr": "3.1. Consultation Prénatale (CPN)",
             "type": "object",
             "properties": {
-                "type_of_vaccine_by_age": {
+                "antenatal_clinic_visit_1": {
                     "line_number": "1",
-                    "sw": "Aina ya Chanjo Kwa Umri",
-                    "en": "Type of vaccine by age"
+                    "fr": "Nouveaux cas SVSVisites CPN 1",
+                    "en": "Antenatal Clinic visit 1",
+                    "condition": "true"
                 },
-                "bcg_at_the_age_of_1+_(within_service_area_)": {
-                    "line_number": "1b",
-                    "sw": "BCG Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
-                    "en": "BCG at the age of 1+ (Within service area )"
+                "pregnant_women_less_than_20_yrs": {
+                    "line_number": "2",
+                    "fr": "Femmes enceintes < 20 Ans",
+                    "en": "Pregnant women less than 20 yrs",
+                    "condition": "true"
                 },
-                "bcg_age_<1_year_+_(within_service_area)": {
-                    "line_number": "1c",
-                    "sw": "BCG Umri mwaka <1 (Nje ya eneo la huduma)",
-                    "en": "BCG Age <1 year + (Within service area)"
-                },
-                "bcgat_the_age_of_1_+_(out_of_service_area)": {
-                    "line_number": "1d",
-                    "sw": "BCG Umri mwaka 1+ (Nje ya eneo la huduma)",
-                    "en": "BCGat the Age of 1 + (out of service area)"
-                },
-                "polio_at_the_age_<1_(within_area_service)": {
-                    "line_number": "1e",
-                    "sw": "Polio Umri mwaka <1 (Ndani ya eneo Ia huduma)",
-                    "en": "Polio at the age <1 (within area service)"
-                },
-                "polio_at_the_age_1+_(within_service_area)": {
-                    "line_number": "1f",
-                    "sw": "Polio Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
-                    "en": "Polio at the age 1+ (within service area)"
-                },
-                "polio_at_the_age_<1_(out_of_service_area)": {
-                    "line_number": "1k",
-                    "sw": "Polio Umri mwaka <1 (Nje ya eneo la huduma)",
-                    "en": "Polio at the age <1 (out of service area)"
-                },
-                "polio_at_the_age_of_1_+_(out_of_service_area)": {
-                    "line_number": "1l",
-                    "sw": "Polio Umri mwaka 1+ (Nje ya eneo la huduma)",
-                    "en": "Polio at the age of 1 + (out of service area)"
-                },
-                "penta_at_the_age_<1_(within_service_area)": {
-                    "line_number": "1i",
-                    "sw": "PENTA Umri mwaka <1 (Ndani ya eneo Ia huduma)",
-                    "en": "PENTA at the age <1 (within service area)"
-                },
-                "penta_at_the_age_1+_(within_service_area)": {
-                    "line_number": "1j",
-                    "sw": "PENTA Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
-                    "en": "PENTA at the age 1+ (within service area)"
-                },
-                "measles_at_the_age_<1_(within_service_area)": {
-                    "line_number": "1m",
-                    "sw": "Surua Umri mwaka <1 (Ndani ya eneo Ia huduma)",
-                    "en": "measles at the age <1 (within service area)"
-                },
-                "measles_at_the_age_1+_(within_service_area)": {
-                    "line_number": "1n",
-                    "sw": "Surua Umri mwaka 1+ (Ndani ya eneo Ia huduma)",
-                    "en": "measles at the age 1+ (within service area)"
-                },
-                "measles_at_the_age_<1_(out_of_service_area)": {
-                    "line_number": "1p",
-                    "sw": "Surua Umri mwaka <1 (Nje ya eneo la huduma)",
-                    "en": "measles at the age <1 (out of service area)"
-                },
-                "attendance_growth_of_6_months_old_baby": {
+                "antenatal_clinic_visit_2": {
                     "line_number": "3",
-                    "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 6",
-                    "en": "Attendance growth of 6 months old baby"
+                    "fr": "Visites CPN 2",
+                    "en": "Antenatal Clinic visit 2",
+                    "condition": "true"
                 },
-                "total_attendance": {
-                    "line_number": "7a",
-                    "sw": "Jumla ya Mahudhurio",
-                    "en": "Total attendance"
-                },
-                "the_ratio_of_weight_by_age": {
-                    "line_number": "5b",
-                    "sw": "Uwaino wa uzito kwa umri",
-                    "en": "the ratio of weight by age"
-                },
-                "the_ratio_of_weight_by_height": {
-                    "line_number": "7c",
-                    "sw": "Uwaino wa uzito kwa urefu",
-                    "en": "the ratio of weight by height"
-                },
-                "the_ratio_of_height_by_age": {
-                    "line_number": "7d",
-                    "sw": "Uwaino wa urefu kwa umri",
-                    "en": "the ratio of height by age"
-                },
-                "growth_attendance_of_6_months_old_baby": {
+                "antenatal_clinic_visit_3": {
                     "line_number": "4",
-                    "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 6",
-                    "en": "Growth attendance of 6 months old baby"
+                    "fr": "Visites CPN 3",
+                    "en": "Antenatal Clinic visit 3",
+                    "condition": "true"
                 },
-                "growth_attendance_of_12_months_old_baby": {
+                "antenatal_clinic_vist_4": {
                     "line_number": "5",
-                    "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 12",
-                    "en": "growth attendance of 12 months old baby"
+                    "fr": "Visites CPN 4",
+                    "en": "Antenatal Clinic vist 4",
+                    "condition": "true"
                 },
-                "growth_attendance_of_18_month_old_baby": {
+                "pregnant_women_who_realised_the_antenatal_cininc_1st_term": {
                     "line_number": "6",
-                    "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 18",
-                    "en": "Growth attendance of 18 month old baby"
+                    "fr": "Femmes enceinte ayant réalisé la CPN1 au 1er trimestre",
+                    "en": "Pregnant women who realised the Antenatal cininc 1st term",
+                    "condition": "true"
                 },
-                "growth_attendance_of_24_month_old_baby": {
+                "pregnant_women_with_anc4_during_their_last_pregnancy": {
                     "line_number": "7",
-                    "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 24",
-                    "en": "growth attendance of 24 month old baby"
+                    "fr": "Femmes enceinte avec CPN 4 pendant leur dernière grossesse",
+                    "en": "Pregnant women with ANC4 during their last pregnancy",
+                    "condition": "true"
                 },
-                "ratio_of_weight_by_age": {
-                    "line_number": "7b",
-                    "sw": "Uwaino wa uzito kwa umri",
-                    "en": "ratio of weight by age"
-                },
-                "growth_attendance_of_36_month_old_baby": {
+                "pregnant_women_with_anc4_with_one_at_8th_or_9th_month": {
                     "line_number": "8",
-                    "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 36",
-                    "en": "growth attendance of 36 month old baby"
+                    "fr": "Femmes enceinte avec CPN 4 dont une au 8ème-9ème mois",
+                    "en": "Pregnant women with ANC4  with one at 8th or 9th month",
+                    "condition": "true"
                 },
-                "growth_attendance_of_48_month_old_baby": {
+                "tested_pregnant_women_at_risk": {
                     "line_number": "9",
-                    "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 48",
-                    "en": "growth attendance of 48 month old baby"
+                    "fr": "Femmes enceinte à risque détectées",
+                    "en": "Tested Pregnant women at risk",
+                    "condition": "true"
                 },
-                "growth_attendance_of_59_month_old_baby": {
+                "refered_pregant_women_at_risk_to_the_general_hospital": {
                     "line_number": "10",
-                    "sw": "Mahudhurio ya ukuaji wa mtoto umri wa miezi 59",
-                    "en": "growth attendance of 59 month old baby"
+                    "fr": "Femmes enceinte à risque référée vers l'HGR",
+                    "en": "Refered Pregant women at risk to the general hospital",
+                    "condition": "true"
                 },
-                "additional_vitamin_a": {
+                "pregnant_women_under_20_yrs_refered": {
                     "line_number": "11",
-                    "sw": "Nyongeza ya Vitamini A",
-                    "en": "additional Vitamin A"
+                    "fr": "Femmes enceintes < 20 Ans référées",
+                    "en": "Pregnant women under 20 yrs refered",
+                    "condition": "true"
                 },
-                "children_of_6-11_months": {
-                    "line_number": "11a",
-                    "sw": "Watoto umri wa miezi 6-11",
-                    "en": "Children of 6-11 months"
-                },
-                "children_of_12-17_months": {
-                    "line_number": "11b",
-                    "sw": "Watoto umri wa miezi 12-17",
-                    "en": "Children of 12-17 months"
-                },
-                "children_of_18-23_months": {
-                    "line_number": "11c",
-                    "sw": "Watoto umri wa miezi 18-23",
-                    "en": "Children of 18-23 months"
-                },
-                "children_of_24-59_months": {
-                    "line_number": "11d",
-                    "sw": "Watoto umri wa miezi 24-59",
-                    "en": "Children of 24-59 months"
-                },
-                "children_given_mebendazole/albendazole": {
+                "iron_plus_folic_acid_1st_dose_received": {
                     "line_number": "12",
-                    "sw": "Waliopewa Mebendazole/Albendazole",
-                    "en": "Children given Mebendazole/Albendazole"
+                    "fr": "Fer + Acide Folique 1ère dose reçue",
+                    "en": "Iron + folic acid 1st dose received",
+                    "condition": "true"
                 },
-                "children_of_12_months": {
-                    "line_number": "12a",
-                    "sw": "Watoto umri wa miezi 12",
-                    "en": "Children of 12 months"
-                },
-                "children_of_18_months": {
-                    "line_number": "12b",
-                    "sw": "Watoto umri wa miezi 18",
-                    "en": "Children of 18 months"
-                },
-                "children_of_24_months": {
-                    "line_number": "12c",
-                    "sw": "Watoto umri wa miezi 24",
-                    "en": "Children of 24 months"
-                },
-                "children_of_30_months": {
-                    "line_number": "12d",
-                    "sw": "Watoto umri wa miezi 30",
-                    "en": "Children of 30 months"
-                },
-                "feeding_infants_born_to_hiv_infected_mothers": {
+                "iron_plus_folic_acid_2nd_dose_received": {
                     "line_number": "13",
-                    "sw": "Ulishaji wa Watoto Wachanga waliozaliwa na mama wenye VVU",
-                    "en": "feeding infants born to HIV infected mothers"
+                    "fr": "Fer + Acide Folique 2ème dose reçues",
+                    "en": "Iron + folic acid 2nd dose received",
+                    "condition": "true"
                 },
-                "infants_breastfeeding_mothers_milk_only_(ebf)": {
-                    "line_number": "13a",
-                    "sw": "Watoto wachanga wanaonyonya maziwa ya mama pekee (EBF)",
-                    "en": "Infants breastfeeding mothers milk only (EBF)"
-                },
-                "infants_receiving_other_types_of_milk_(rf)": {
-                    "line_number": "13b",
-                    "sw": "Watoto wachanga wanaopewa maziwa mbadala (RF)",
-                    "en": "Infants receiving other types of milk (RF)"
-                },
-                "breastfeeding_infants_born_to_mothers_who_are_hiv_negative": {
+                "iron_plus_folic_acid_3rd_dose_received": {
                     "line_number": "14",
-                    "sw": "Ulishaji wa Watoto Wachanga waliozaliwa na mama wasio na VVU",
-                    "en": "breastfeeding infants born to mothers who are HIV negative"
+                    "fr": "Fer + Acide Folique 3ème dose reçue",
+                    "en": "Iron + folic acid 3rd dose received",
+                    "condition": "true"
                 },
-                "children_who_breastfeed_their_mothers_milk_only": {
-                    "line_number": "14a",
-                    "sw": "Watoto wachanga wanaonyonya maziwa ya mama pekee (EBF)",
-                    "en": "Children who breastfeed their mothers milk only"
-                },
-                "infants_feeding_on_other_types_of_milk": {
-                    "line_number": "14b",
-                    "sw": "Watoto wachanga wanaoyweshwa maziwa mbadala (RF)",
-                    "en": "Infants feeding on other types of milk"
-                },
-                "mothers_condition": {
+                "sulfadox_plus_pyrimet_1st_dose_received": {
                     "line_number": "15",
-                    "sw": "Hali ya Mama",
-                    "en": "Mothers condition"
+                    "fr": "Sulfadox. + Pyrimét 1ère dose reçue",
+                    "en": "Sulfadox + Pyrimet 1st dose received",
+                    "condition": "true"
                 },
-                "mothers_with_hiv": {
-                    "line_number": "15a",
-                    "sw": "Mama wenye VVU",
-                    "en": "Mothers with HIV"
-                },
-                "mothers_without_hiv": {
-                    "line_number": "15b",
-                    "sw": "Mama wasio na VVU",
-                    "en": "Mothers without HIV"
-                },
-                "mothers_with_unknown_hiv_status": {
-                    "line_number": "15c",
-                    "sw": "Mama wasiojulikana hali yao ya VVU",
-                    "en": "Mothers with unknown HIV status"
-                },
-                "status_of_tetanus_vaccination_of_the_mother_during_delivery": {
+                "sulfadox_plus_pyrimet_2nd_dose_received": {
                     "line_number": "16",
-                    "sw": "Hali ya Chango ya Pepo punda kwa mama wakati wa kujifungua",
-                    "en": "Status of Tetanus vaccination of the mother during delivery"
+                    "fr": "Sulfadox. + Pyrimét 2ème dose reçues",
+                    "en": "Sulfadox + Pyrimet 2nd dose received",
+                    "condition": "true"
                 },
-                "those_vaccinated": {
-                    "line_number": "16a",
-                    "sw": "Waliokingwa",
-                    "en": "Those Vaccinated"
-                },
-                "those_not_vaccinated": {
-                    "line_number": "16b",
-                    "sw": "Wasiokuwa na Kinga",
-                    "en": "Those Not vaccinated"
-                },
-                "not_known": {
-                    "line_number": "16c",
-                    "sw": "Haijulikani",
-                    "en": "Not known"
-                },
-                "number_of_children_who_received_cotrimoxazole_i_arv_/given_bed_net__vouchers_and_ones_tested_for_hiv": {
+                "sulfadox_plus_pyrimet_3rd_dose_received": {
                     "line_number": "17",
-                    "sw": "Idadi ya Watoto waliopewa Cotrimoxazole I ARV / waliopewa hati punguzo nil waliopimwa VVU",
-                    "en": "Number of children who received cotrimoxazole I ARV /given bed net  vouchers and ones tested for HIV"
+                    "fr": "Sulfadox. + Pyrimét 3ème dose reçue",
+                    "en": "Sulfadox + Pyrimet 3rd dose received",
+                    "condition": "true"
                 },
-                "children_with_the_possibility_of_hiv_infection": {
-                    "line_number": "17a",
-                    "sw": "Watoto wenye uwezekano wa uambukizo wa VVU",
-                    "en": "Children with the possibility of HIV infection"
+                "completed_vaccinated_before_pregnancy": {
+                    "line_number": "18",
+                    "fr": "Complètement vaccinées avant grossesse",
+                    "en": "Completed vaccinated before pregnancy",
+                    "condition": "true"
                 },
-                "children_who_were_started_on_cotrimoxazole_between_1_month_to_2_months": {
-                    "line_number": "17b",
-                    "sw": "Watoto walioanzishiwa Cotrimoxazole kati ya mwezi 1 hadi miezi 2 ya umri",
-                    "en": "Children who were started on cotrimoxazole between 1 month to 2 months"
+                "who_required_the_mild": {
+                    "line_number": "19",
+                    "fr": "Ayant acquis une MILD",
+                    "en": "Who required the MILD",
+                    "condition": "true"
                 },
-                "Children who were tested for HIV by PCR within two months from birth": {
-                    "line_number": "17e",
-                    "sw": "Watoto waliopimwa VVU kwa PCR ndani ya miezi miwili tangu kuzaliwa",
-                    "en": "Children who were tested for HIV by PCR within two months from birth"
+                "who_received_mebendazole_since_the_2nd_term": {
+                    "line_number": "20",
+                    "fr": "Ayant reçu le Mébendazole à partir du 2ème trimestre",
+                    "en": "Who received Mebendazole since the 2nd term",
+                    "condition": "true"
                 },
-                "Children tested for HIV by PCR 6 weeks after stopping breastfeeding or 18 months": {
-                    "line_number": "17f",
-                    "sw": "Watoto waliopimwa VVU kwa PCR wiki 6 baada ya kuacha kunyonya maziwa ya mama au miezi 18 ya umri",
-                    "en": "Children tested for HIV by PCR 6 weeks after stopping breastfeeding or 18 months"
+                "target_population": {
+                    "line_number": "21",
+                    "line": "singlecell",
+                    "fr": "Population cible = fe du mois",
+                    "en": "target population= monthly woman",
+                    "condition": "true"
                 },
-                "children_tested_hiv_pcr_6_weeks_after_stopping_breastfeeding_or_18_months_of_age": {
-                    "line_number": "17g",
-                    "sw": "Watoto waliopimwa VVU kwa PCR wiki 6 baada ya kuacha kunyonya maziwa ya mama au miezi 18 ya umri",
-                    "en": "Children tested HIV PCR 6 weeks after stopping breastfeeding or 18 months of age"
+                "anc_sessions": {
+                    "line_number": "22",
+                    "line": "singlecell",
+                    "fr": "Séances de CPN",
+                    "en": "ANC sessions",
+                    "condition": "true"
                 },
-                "children_who_were_moved_from_clinic_care_and_treatment_of_hiv-positive_(ctc)": {
-                    "line_number": "17h",
-                    "sw": "Watoto waliohamishiwa Klinlki ya huduma na matibabu kwa wenye VVU (CTC)",
-                    "en": "Children who were moved from clinic care and treatment of HIV-positive (CTC)"
+                "used_rate_anc": {
+                    "line_number": "23",
+                    "line": "singlecell",
+                    "fr": "Taux d’utilisation CPN = CPN 1 AS (Nlles inscrites)x 100/ Pop femmes enceintes du mois",
+                    "en": "Used rate ANC= ANC 1 AS (new registered)X100/pop monthly pregnant women",
+                    "condition": "true"
                 },
-                "children_who_received_a_bed_net_voucher": {
-                    "line_number": "17i",
-                    "sw": "Watoto watiopatiwa hati punguzo ya chandarua",
-                    "en": "Children who received a bed net voucher"
+                "pregnacies_at_high_risk_detected": {
+                    "line_number": "24",
+                    "line": "singlecell",
+                    "fr": "Proportion de grossesses à haut risque détectées = Tot Grossesses à haut risque détectées x 100 / Total Nlles Inscrites",
+                    "en": "Pregnacies at high risk detected = total pregnancies at high risk detected X100/tota new registered",
+                    "condition": "true"
                 },
-                "definitions": {
-                    "columns": {
-                        "lessthan1male": {
-                            "title": "Males",
-                            "condition": "FIXME && patient.gender == 'male'"
-                        },
-                        "lessthan1female": {
-                            "title": "Less than 1 Month - Females",
-                            "condition": "FIXME && patient.gender == 'female'"
-                        },
-                        "lessthan1total": {
-                            "title": "Less than 1 Month - Total",
-                            "condition": "FIXME"
-                        },
-                        "more1momale": {
-                            "title": "More than 1 month and less than 1 Year - Male",
-                            "condition": "FIXME && patient.gender == 'male'"
-                        },
-                        "more1mofemale": {
-                            "title": "More than 1 month and less than 1 Year - Females",
-                            "condition": "FIXME && patient.gender == 'female'"
-                        },
-                        "more1mototal": {
-                            "title": "More than 1 month and less than 1 Year - Total",
-                            "condition": "FIXME "
-                        },
-                        "above1below5male": {
-                            "title": "More than 1 year and less than 5 Years - Male",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'male'"
-                        },
-                        "above1below5female": {
-                            "title": "More than 1 year and less than 5 Years - Females",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'female'"
-                        },
-                        "above1below5total": {
-                            "title": "More than 1 year and less than 5 Years - Total",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5"
-                        }
+                "pregnancies_at_high_risk_avarage_refered": {
+                    "line_number": "25",
+                    "line": "singlecell",
+                    "fr": "Propor)on de grossesses à haut risque référées = Tot Grossesses à haut risque référées x 100 / Total femmes à hauts risques détectées inscrites",
+                    "en": "Pregnancies at high risk avarage refered= total pregnanciesat high risk refered X100/total women at high risk detected registered",
+                    "condition": "true"
+                },
+                "average_of_women_who_received_at_least_the_sp2": {
+                    "line_number": "26",
+                    "line": "singlecell",
+                    "fr": "Proportion de fe ayant reçu au moins la SP 2 = Nombre de femmes enceintes ayant reçu au moins 2 Quantité de SPX100 / Fe ayant effectué la première visite prénatale",
+                    "en": "Average of women who received at least the SP2= number of pregnant women Who received at least 2 quantities of SPX100/woman who was visited for the 1st time at ANC",
+                    "condition": "true"
+                },
+                "average_of_pregnant_women_who_received_one_mild_at_anc": {
+                    "line_number": "27",
+                    "line": "singlecell",
+                    "fr": "Proportion des femmes enceintes ayant reçues une MILD à la CPN = femmes enceintes ayant acquis MILD X 100/ Total CPN1",
+                    "en": "Average of pregnant women who received one MILD at ANC= Pregnant woman who required a MILD X100/total ANC 1",
+                    "condition": "true"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "total": {
+                        "fr": "Total",
+                        "en": "Total",
+                        "title": "Total",
+                        "condition": "true"
                     }
                 }
             }
@@ -667,7 +327,7 @@ exports.reports = function () {
                     "line": "singlecell",
                     "fr": "Total enfants non atteints par la vaccination",
                     "en": "Total number of non atteded children by vaccination",
-                    "condition": "ture"
+                    "condition": "true"
                 },
                 "vaar": {
                     "line_number": "19",
@@ -1221,421 +881,6 @@ exports.reports = function () {
                 }
             },
             "parent": "report_community"
-        },
-        "report_contraceptive": {
-            "collection": "reports",
-            "class": "schema",
-            "_id": "reports/schema/contraceptive",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "title": "Contraceptive",
-            "type": "object",
-            "properties": {
-                "injectable_methods": {
-                    "line_number": "1",
-                    "sw": "Sindano",
-                    "en": "Injectable methods"
-                },
-                "number_of_customers_who_use_contraceptive_injection": {
-                    "line_number": "1a",
-                    "sw": "Idaji ya Wateja wa Sindano",
-                    "en": "Number of customers who use contraceptive injection",
-                    "condition": "reproductive_counseling.contraception_current == 'Depo Provera'"
-                },
-                "contraceptive_pills": {
-                    "line_number": "2",
-                    "sw": "Vidonge",
-                    "en": "Contraceptive pills"
-                },
-                "the_number_of_pills_clients_at_the_clinic": {
-                    "line_number": "2a",
-                    "sw": "Idadi ya wateja wa Vidonge Kituoni",
-                    "en": "The number of pills clients at the clinic",
-                    "condition": "reproductive_counseling.contraception_current == 'Pills' && reproductive_counseling.contraceptive_source == 'Clinic'"
-                },
-                "number_of_pills_clients_through_cbd": {
-                    "line_number": "2b",
-                    "sw": "Idadi ya wateja wa vidonge wa CBD",
-                    "en": "Number of pills clients through CBD(Community Based Distribution)",
-                    "condition": "reproductive_counseling.contraception_current == 'Pills' && reproductive_counseling.contraceptive_source == 'CBD'"
-                },
-                "the_number_of_clients_who_were_given_pills_at_the_clinic_and_through_cbd": {
-                    "line_number": "2c",
-                    "sw": "Jumla walochukua Vidonge Kituoni na CBD (2a+2b)",
-                    "en": "The number of clients who were given pills at the clinic and through CBD(2a+2b)",
-                    "condition": "reproductive_counseling.contraception_current == 'Pills'"
-                },
-                "condoms": {
-                    "line_number": "3",
-                    "sw": "Kondom",
-                    "en": "Condoms"
-                },
-                "the_number_of_male_clients_who_were_given_condoms_at_the_clinic": {
-                    "line_number": "3a",
-                    "sw": "Idadi ya wateja waliochukua kondom Kituoni Me",
-                    "en": "The number of Male clients who were given condoms at the clinic",
-                    "condition": "patient.gender == 'male' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'Clinic'"
-                },
-                "the_number_of_female_clients_who_were_given_condoms_at_the_clinic": {
-                    "line_number": "3b",
-                    "sw": "Idadi ya wateja waliochukua kondom Kituoni Ke",
-                    "en": "The number of Female clients who were given condoms at the clinic",
-                    "condition": "patient.gender == 'female' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'Clinic'"
-                },
-                "number_of__male_clients_who_were_given_condoms_by_cbd": {
-                    "line_number": "3c",
-                    "sw": "Idadi ya wateja waliochukua kondom CBD Me",
-                    "en": "Number of male clients who were given condoms by CBD",
-                    "condition": "patient.gender == 'male' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'CBD'"
-                },
-                "number_of_female_clients_who_were_given_condoms_by_cbd": {
-                    "line_number": "3d",
-                    "sw": "Idadi ya wateja waliochukua kondom CBD Ke",
-                    "en": "Number of female clients who were given condoms by CBD",
-                    "condition": "patient.gender == 'female' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'CBD'"
-                },
-                "total_customers_who_given_condoms_at_the_clinic_and_cbd": {
-                    "line_number": "3e",
-                    "sw": "Jumla ya Wateja waliochukua kondomu (kituoni na CBD) (3a+3b+3c+3d)",
-                    "en": "Total Customers who given condoms at the clinic and CBD (3a+3b+3c+3d)",
-                    "condition": "reproductive_counseling.contraception_current == 'Condoms'"
-                },
-                "total_customers_who_took_short-term_course": {
-                    "line_number": "3f",
-                    "sw": "Jumla ya Wateja waliochukua njia za muda mfupi (1+2c+3c)",
-                    "en": "Total Customers who took short-term course (1+2c+3c)",
-                    "condition": "reproductive_counseling.???"
-                },
-                "methods_of_long-term_and_permanent_family_planning": {
-                    "line_number": "4",
-                    "sw": "Njia za muda Mrefu na za kudumu za Uzazi wa Mpango",
-                    "en": "Methods of long-term and permanent family planning"
-                },
-                "sterilization": {
-                    "line_number": "4",
-                    "sw": "Kufunga Uzazi",
-                    "en": "Sterilization"
-                },
-                "women_sterilization_ml_la_at_the_clinic": {
-                    "line_number": "4a",
-                    "sw": "Kufunga Uzazi mama (ML/LA) - kituoni",
-                    "en": "Women sterilization (ML / LA) - at the clinic",
-                    "condition": "patient.gender == 'female' && reproductive_counseling.contraception_dispensed == 'Sterilization' && reproductive_counseling.contraception_source == 'Clinic'"
-                },
-                "women_sterilization_ml_la_outreach": {
-                    "line_number": "4b",
-                    "sw": "Kufunga Uzazi mama (ML/LA) - outreach",
-                    "en": "Women sterilization (ML / LA) - outreach",
-                    "condition": "patient.gender == 'female' && reproductive_counseling.contraception_dispensed == 'Sterilization' && reproductive_counseling.contraception_source == 'outreach'"
-                },
-                "men_sterilization_nsv_at_the_clinic": {
-                    "line_number": "4c",
-                    "sw": "Kufunga uzazi baba (NSV) - kituoni",
-                    "en": "Men sterilization (NSV) - at the clinic",
-                    "condition": "patient.gender == 'male' && reproductive_counseling.contraception_dispensed == 'Sterilization' && reproductive_counseling.contraception_source == 'Clinic'"
-                },
-                "men_sterilization_nsv_outreach": {
-                    "line_number": "4d",
-                    "sw": "Kufung uzazi baba (NSV) - outreach",
-                    "en": "Men sterilization (NSV) - outreach",
-                    "condition": "patient.gender == 'male' && reproductive_counseling.contraception_dispensed == 'Sterilization' && reproductive_counseling.contraception_source == 'outreach'"
-                },
-                "implants": {
-                    "line_number": "5",
-                    "sw": "Vipandikizi",
-                    "en": "Implants"
-                },
-                "those_who_put_implants_at_the_clinic": {
-                    "line_number": "5a",
-                    "sw": "Kuweka vipandikizi - kituoni",
-                    "en": "Those who put implants - at the clinic",
-                    "condition": "reproductive_counseling.contraception_source == 'Other Implants' && reproductive_counseling.contraception_source == 'Clinic'"
-                },
-                "those_who_put_implants_outreach": {
-                    "line_number": "5b",
-                    "sw": "Kuweka vipandikizi - outreach",
-                    "en": "Those who put implants - outreach",
-                    "condition": "reproductive_counseling.contraception_source == 'Other Implants' && reproductive_counseling.contraception_source == 'outreach'"
-                },
-                "removing_implants": {
-                    "line_number": "5c",
-                    "sw": "Kuondoa vipandikizi",
-                    "en": "Removing implants",
-                    "condition": "reproductive_counseling.contraception_source == 'Remove IUD'"
-                },
-                "intrauterine_methods_iucd": {
-                    "line_number": "6",
-                    "sw": "Kitanzi (IUCD)",
-                    "en": "Intrauterine methods(IUCD)"
-                },
-                "inserting_iud_clinic": {
-                    "line_number": "6a",
-                    "sw": "Kuweka Kitanzi - kituoni",
-                    "en": "Inserting IUD (at the clinic)",
-                    "condition": "reproductive_counseling.contraception_source == 'IUD' && reproductive_counseling.contraception_source == 'Clinic'"
-                },
-                "inserting_iud_outreach": {
-                    "line_number": "6b",
-                    "sw": "Kuweka Kitanzi - outreach",
-                    "en": "Inserting IUD (outreach)",
-                    "condition": "reproductive_counseling.contraception_source == 'IUD' && reproductive_counseling.contraception_source == 'outreach'"
-                },
-                "removing_iud_clinic": {
-                    "line_number": "6c",
-                    "sw": "Kuondoa Kitanzi - kituoni",
-                    "en": "Removing IUD (at the clinic)",
-                    "condition": "reproductive_counseling.contraception_source == 'Remove IUD' && reproductive_counseling.contraception_source == 'Clinic'"
-                },
-                "removing_iud_outreach": {
-                    "line_number": "6d",
-                    "sw": "Kuondoa Kitanzi - outreach",
-                    "en": "Removing IUD (outreach)",
-                    "condition": "reproductive_counseling.contraception_source == 'Remove IUD' && reproductive_counseling.contraception_source == 'outreach'"
-                },
-                "total_number_of_client_who_used_permanent_contraceptive_methods": {
-                    "line_number": "6e",
-                    "sw": "Jumla ya Wateja waliochukua njia za muda mrefu na za Kudumu za Uzazi wa Mpango (4a+4b+4c+4d+5a+5b+6a+6b)",
-                    "en": "Total number of client who used permanent contraceptive methods(4a+4b+4c+4d+5a+5b+6a+6b)",
-                    "condition": "reproductive_counseling.contraception_source == 'Sterilization'"
-                },
-                "other_methods": {
-                    "line_number": "7b",
-                    "sw": "Njia nyingine",
-                    "en": "Other methods",
-                    "condition": "reproductive_counseling.contraception_source == 'Other'"
-                },
-                "natural_ways": {
-                    "line_number": "7a",
-                    "sw": "Njia za maumbile (mfano LAM, BOM, joto, kalenda)",
-                    "en": "Natural ways(eg. LAM,BOM,body temperature and calendar",
-                    "condition": "reproductive_counseling.contraception_source == 'Natural ways'"
-                },
-                "total_number_of_clients_who_used_other_methods": {
-                    "line_number": "7c",
-                    "sw": "Jumla ya Njia Nyinginezo (7a+7b)",
-                    "en": "Total number of clients who used other methods(7a+7b)",
-                    "condition": "reproductive_counseling.contraception_source == 'Natural ways' && reproductive_counseling.contraception_source == 'Other'"
-                },
-                "total_number_of_types_of_contraceptives": {
-                    "line_number": "8",
-                    "sw": "Jumla ya Aina zote Uzazi wa Mpango",
-                    "en": "Total number of types of contraceptives",
-                    "condition": "FIXME"
-                },
-                "total_number_of_clients_who_used_all_types_of_contraceptives": {
-                    "line_number": "8a",
-                    "sw": "Jumla ya Wateja waliochukua njia zote za Uzazi Mpango (3f+6e+7c)",
-                    "en": "Total number of clients who used all types of contraceptives(3f+6e+7c)",
-                    "condition": "FIXME"
-                },
-                "total_number_of_cycles_distributed": {
-                    "line_number": "9c",
-                    "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) (Kituoni na CBD) (9a+9b)",
-                    "en": "Total number of cycles distributed(at the clinic+CBD) (9a+9b"
-                },
-                "cycles_distributed_at_the_clinic": {
-                    "line_number": "9a",
-                    "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) - Kituoni",
-                    "en": "Cycles distributed at the Clinic",
-                    "condition": "FIXME"
-                },
-                "cycles_distributed_by_cbd": {
-                    "line_number": "9b",
-                    "sw": "Idadi ya mizunguko iliyotolewa (Cycles Distributed) - CBD",
-                    "en": "Cycles distributed by CBD",
-                    "condition": "FIXME"
-                },
-                "condoms_given_out_to_clients": {
-                    "line_number": "10",
-                    "sw": "Kondomu zilizotolewa",
-                    "en": "Condoms given out to clients"
-                },
-                "number_of_condoms_given_to_male_clients_at_the_clinic": {
-                    "line_number": "10a",
-                    "sw": "Idadi ya kondomu zilizogawiwa Kituoni Me",
-                    "en": "Number of condoms given to male clients at the clinic",
-                    "condition": "patient.gender == 'male' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'Clinic'"
-                },
-                "number_of_condoms_given_to_female_clients_at_the_clinic": {
-                    "line_number": "10b",
-                    "sw": "Idadi ya kondomu zilizogawiwa Kituoni Ke",
-                    "en": "Number of condoms given to female clients at the clinic",
-                    "condition": "patient.gender == 'female' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'Clinic'"
-                },
-                "number_of_condoms_given_to_male_clients_by_cbd": {
-                    "line_number": "10c",
-                    "sw": "Idadi ya kondomu zilizogawiwa CBD Me",
-                    "en": "Number of condoms given to male clients by CBD",
-                    "condition": "patient.gender == 'male' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'CBD'"
-                },
-                "number_of_condoms_given_to_female_clients_by_cbd": {
-                    "line_number": "10d",
-                    "sw": "Idadi ya kondomu zilizogawiwa CBD Ke",
-                    "en": "Number of condoms given to female clients by CBD",
-                    "condition": "patient.gender == 'female' && reproductive_counseling.contraception_current == 'Condoms' && reproductive_counseling.contraceptive_source == 'CBD'"
-                },
-                "total_number_of_condoms_given_to_clients": {
-                    "line_number": "10e",
-                    "sw": "Idadi ya kondomu zilizogawiwa kituoni na CBD (10a+10b+10c+10d)",
-                    "en": "Total number of condoms given to clients from the clinic and by CBD(10a+10b+10c+10d)",
-                    "condition": "reproductive_counseling.contraception_current == 'Condoms'"
-                },
-                "service_after_miscarriage_cpac_after_giving_birth": {
-                    "line_number": "11",
-                    "sw": "Huduma baada ya mimba kuharibika (cPAC) Baada ya kujifungua",
-                    "en": "Service after miscarriage (CPAC) After giving birth"
-                },
-                "those_who_got_treatment_after_miscarriages": {
-                    "line_number": "11a",
-                    "sw": "Waliopata huduma baada ya mimba kubaribika",
-                    "en": "Those who got treatment after miscarriages",
-                    "condition": "postnatal.family_planning_method_after_miscarriage == true"
-                },
-                "those_who_used_contraception_after_miscarriage": {
-                    "line_number": "11b",
-                    "sw": "Waliopata uzazi wa mpango baada ya mimba kubaribika",
-                    "en": "Those who used contraception after miscarriage"
-                },
-                "those_who_used_contraceptive_methods_42_days_after_giving_birth": {
-                    "line_number": "11c",
-                    "sw": "Waliopata njia ya uazazi wa mpango siku 42 baada ya kujifungua",
-                    "en": "Those who used contraceptive methods 42 days after giving birth",
-                    "condition": "postnatal.contraception_within_40_days == true"
-                },
-                "clients_who_screened_for_cancer": {
-                    "line_number": "12",
-                    "sw": "Wateja waliochunguzwa saratani",
-                    "en": "clients who screened for cancer",
-                    "condition": "FIXME"
-                },
-                "those_screened_for_breast_diseases": {
-                    "line_number": "12a",
-                    "sw": "waliochunguzwa tit",
-                    "en": "Those Screened for breast diseases",
-                    "condition": "FIXME"
-                },
-                "detected_to_have_breast_cancer_symptoms": {
-                    "line_number": "12b",
-                    "sw": "Waliogundulika na matatizo ya matiti (mfano: kutoka damu kwenye chuchu au uvimbe wa matiti)",
-                    "en": "Detected to have breast cancer symptoms (eg, bleeding or swelling of the breast nipples)",
-                    "condition": "FIXME"
-                },
-                "screened_for_cervical_diseases": {
-                    "line_number": "12c",
-                    "sw": "Waliochunguzwa Shingo ya mfuko wa uzazi",
-                    "en": "Screened for cervical diseases",
-                    "condition": "FIXME"
-                },
-                "detected_to_have_cervical_diseases": {
-                    "line_number": "12d",
-                    "sw": "Waliogundulika na matatizo ya shingo ya mfuko wa uzazi (mfano: mchubuko au kidonda)",
-                    "en": "Detected to have cervical diseases (eg, bruise or cervical ulcer)",
-                    "condition": "FIXME"
-                },
-                "detected_to_have_cervical_cancer_symptoms": {
-                    "line_number": "12e",
-                    "sw": "Waliodhamwa wana saratani ya shingo ya mfuko wa uzazi",
-                    "en": "Detected to have cervical cancer symptoms",
-                    "condition": "FIXME"
-                },
-                "those_who_got_cryotherapy_service": {
-                    "line_number": "12f",
-                    "sw": "Waliopewa huduma ya Cryotherapy",
-                    "en": "Those who got Cryotherapy service",
-                    "condition": "FIXME"
-                },
-                "pitc": {
-                    "line_number": "13",
-                    "sw": "PITC",
-                    "en": "PITC"
-                },
-                "those_who_already_have_an_hiv_infection": {
-                    "line_number": "13a",
-                    "sw": "Tayari wana uambukizo wa VVU",
-                    "en": "Those who already have an HIV infection",
-                    "condition": "FIXME"
-                },
-                "those_who_got_hiv_counseling": {
-                    "line_number": "13b",
-                    "sw": "Waliopata ushauri nasha juu ya VVU",
-                    "en": "Those who got HIV counseling",
-                    "condition": "FIXME"
-                },
-                "clients_who_tested_for_hiv": {
-                    "line_number": "13c",
-                    "sw": "Wateja waliopima VVU",
-                    "en": "Clients who tested for HIV",
-                    "condition": "FIXME"
-                },
-                "clients_who_received_post-test_counseling": {
-                    "line_number": "13d",
-                    "sw": "Wateja waliopata ushauri nasaha baada ya kupima",
-                    "en": "Clients who received post-test counseling",
-                    "condition": "FIXME"
-                },
-                "customers_who_tested_positive": {
-                    "line_number": "13e",
-                    "sw": "Wateja waliogundulika Positive (+)",
-                    "en": "Customers who tested positive (+)",
-                    "condition": "FIXME"
-                },
-                "partners_who_tested_for_hiv": {
-                    "line_number": "13f",
-                    "sw": "Wenza waliopima VVU",
-                    "en": "Partners who tested for HIV",
-                    "condition": "FIXME"
-                },
-                "partners_who_tested_positive": {
-                    "line_number": "13g",
-                    "sw": "Wenza Waliogundulika Positive (+)",
-                    "en": "Partners Who tested Positive (+)",
-                    "condition": "FIXME"
-                },
-                "discordant_couple": {
-                    "line_number": "13h",
-                    "sw": "Wateja ambao matokeo ya vipimo vya VVU yanatofautiana",
-                    "en": "Clients who tested HIV and got different results(discordant couple)",
-                    "condition": "FIXME"
-                },
-                "clients_who_were_reffered_to_ctc": {
-                    "line_number": "13i",
-                    "sw": "Wateja waliopata rufaa kwenda CTC",
-                    "en": "Clients who were reffered to CTC",
-                    "condition": "FIXME"
-                },
-                "NEED_TRANSLATION": {
-                    "line_number": "13j",
-                    "sw": "Wataja waliopata rufaa kwenda CTC",
-                    "en": "NEED TRANSLATION"
-                }
-            },
-            "definitions": {
-                "columns": {
-                    "10to14": {
-                        "title": "10 to 14",
-                        "condition": "patient.approxage => 10 && patient.approxage <= 14"
-                    },
-                    "15to19": {
-                        "title": "15 to 19",
-                        "condition": "patient.approxage >= 15 patient.approxage <= 19"
-                    },
-                    "20to24": {
-                        "title": "20 to 24",
-                        "condition": "patient.approxage >= 20 patient.approxage <= 24"
-                    },
-                    "above25": {
-                        "title": "Above 25",
-                        "condition": "patient.approxage >= 25"
-                    },
-                    "return": {
-                        "title": "Return???",
-                        "condition": "FIXME"
-                    },
-                    "total": {
-                        "title": "Total",
-                        "condition": "true"
-                    }
-                }
-            }
         },
         "report_diagnosis_1": {
             "title": "2.8: Diagnosis and enf of cases put in observation",
@@ -2205,110 +1450,6 @@ exports.reports = function () {
             },
             "parent": "report_diagnosis"
         },
-        "report_dtc": {
-            "collection": "reports",
-            "class": "schema",
-            "_id": "reports/schema/contraceptive",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "title": "Contraceptive",
-            "type": "object",
-            "properties": {
-                "number_of_patients_treated_dtc_dtc-diarrhea_and_treatment_centre": {
-                    "line_number": 1,
-                    "sw": "Idadi ya wagonjwa waliotibiwa DTC DTC-Idara ya magonjwa ya kuhara",
-                    "en": "Number of patients treated DTC DTC-Diarrhea and treatment centre",
-                    "condition": "diarrhea.duration"
-                },
-                "number_of_dtc_patients_treated_with_acute_shortage_of_water_and_sodium_cloride_in_the_body": {
-                    "line_number": 2,
-                    "sw": "Idadi ya wagonjwa waliotibiwa DTC walio na upungufu mkubwa wa maji na churnvichumvi mwilini",
-                    "en": "Number of DTC patients treated with acute shortage of water and Sodium cloride in the body",
-                    "condition": "diarrhea.water_sodium_imbalance == 'Severe'"
-                },
-                "number_of_dtc_patients_treated_with_little_shortage_of_water_and_sodium_cloride": {
-                    "line_number": 3,
-                    "sw": "Idadi ya wagonjwa waliotibiwa DTC walio na upungufu kiasi wa maji na chumvichumvi mwilini",
-                    "en": "Number of DTC patients treated with little shortage of water and sodium cloride",
-                    "condition": "diarrhea.water_sodium_imbalance == 'Mild'"
-                },
-                "number_of_patients_with_blood_in_stool": {
-                    "line_number": 4,
-                    "sw": "Idadi ya wagonjwa walio na damu katika kinyesi",
-                    "en": "Number of patients with blood in stool",
-                    "condition": "diarrhea.blood_in_stool"
-                },
-                "the_number_of_patients_who_received_zinc": {
-                    "line_number": 5,
-                    "sw": "Idadi ya wagonjwa waliopewa zinki",
-                    "en": "The number of patients who received zinc",
-                    "condition": "diarrhea.given_zinc"
-                },
-                "the_number_of_patients_who_received_a_packet_of_ors": {
-                    "line_number": 6,
-                    "sw": "Idadi ya wagonjwa waliopatiwa paketi za ORS",
-                    "en": "The number of patients who received a packet of ORS",
-                    "condition": "diarrhea.given_ors"
-                },
-                "number_of_admitted_patients": {
-                    "line_number": 7,
-                    "sw": "Idadi ya wagonjwa waliolazwa",
-                    "en": "Number of admitted patients",
-                    "condition": "diarrhea.admission"
-                },
-                "the_number_of_refereed_patients": {
-                    "line_number": 8,
-                    "sw": "Idadi ya wagonjwa waliopewa rufaa",
-                    "en": "The number of refereed patients",
-                    "condition": "diarrhea.referral"
-                },
-                "the_number_of_patients_who_died_of_dtc_diarrhoea_treatment_centre": {
-                    "line_number": 9,
-                    "sw": "Idadi ya wagonjwa waliofia DTC",
-                    "en": "The number of patients who died of DTC_Diarrhoea treatment Centre",
-                    "condition": "diarrhea.diarrhea_mortality"
-                },
-                "definitions": {
-                    "columns": {
-                        "lessthan1male": {
-                            "title": "Males",
-                            "condition": "FIXME && patient.gender == 'male'"
-                        },
-                        "lessthan1female": {
-                            "title": "Less than 1 Month - Females",
-                            "condition": "FIXME && patient.gender == 'female'"
-                        },
-                        "lessthan1total": {
-                            "title": "Less than 1 Month - Total",
-                            "condition": "FIXME"
-                        },
-                        "more1momale": {
-                            "title": "More than 1 month and less than 1 Year - Male",
-                            "condition": "FIXME && patient.gender == 'male'"
-                        },
-                        "more1mofemale": {
-                            "title": "More than 1 month and less than 1 Year - Females",
-                            "condition": "FIXME && patient.gender == 'female'"
-                        },
-                        "more1mototal": {
-                            "title": "More than 1 month and less than 1 Year - Total",
-                            "condition": "FIXME "
-                        },
-                        "above1below5male": {
-                            "title": "More than 1 year and less than 5 Years - Male",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'male'"
-                        },
-                        "above1below5female": {
-                            "title": "More than 1 year and less than 5 Years - Females",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'female'"
-                        },
-                        "above1below5total": {
-                            "title": "More than 1 year and less than 5 Years - Total",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5"
-                        }
-                    }
-                }
-            }
-        },
         "report_epidemiological": {
             "title": "Weekly Notification Form - Epidemiological Diseases",
             "type": "object",
@@ -2532,7 +1673,7 @@ exports.reports = function () {
             }
         },
         "report_family": {
-            "title": "3.3  Parteners and Family members of the PW",
+            "title": "3.3  Partners and Family members of the PW",
             "type": "object",
             "properties": {
                 "0_14_yrs": {
@@ -2568,49 +1709,49 @@ exports.reports = function () {
             },
             "definitions": {
                 "columns": {
-                    "male_parteners_of_the_pw_hiv_positive_counseled": {
+                    "male_partners_of_the_pw_hiv_positive_counseled": {
                         "fr": "Conseillés",
                         "en": "Counseled",
                         "title": "Counseled",
                         "condition": "true"
                     },
-                    "male_parteners_of_the_pw_hiv_positive_tested": {
+                    "male_partners_of_the_pw_hiv_positive_tested": {
                         "fr": "Testés",
                         "en": "Tested",
                         "title": "Tested",
                         "condition": "true"
                     },
-                    "male_parteners_of_the_pw_hiv_positive_positif": {
+                    "male_partners_of_the_pw_hiv_positive_positif": {
                         "fr": "Positifs",
                         "en": "Positif",
                         "title": "Positif",
                         "condition": "true"
                     },
-                    "male_parteners_of_the_pw_hiv_positive_informed_about_their_results": {
+                    "male_partners_of_the_pw_hiv_positive_informed_about_their_results": {
                         "fr": "Informées de leur résultat",
                         "en": "Informed about their results",
                         "title": "Informed about their results",
                         "condition": "true"
                     },
-                    "family_parteners_of_the_pw_hiv_positive_counseled": {
+                    "family_partners_of_the_pw_hiv_positive_counseled": {
                         "fr": "Conseillés",
                         "en": "Counseled",
                         "title": "Counseled",
                         "condition": "true"
                     },
-                    "family_parteners_of_the_pw_hiv_positive_tested": {
+                    "family_partners_of_the_pw_hiv_positive_tested": {
                         "fr": "Testés",
                         "en": "Tested",
                         "title": "Tested",
                         "condition": "true"
                     },
-                    "family_parteners_of_the_pw_hiv_positive_positif": {
+                    "family_partners_of_the_pw_hiv_positive_positif": {
                         "fr": "Positifs",
                         "en": "Positif",
                         "title": "Positif",
                         "condition": "true"
                     },
-                    "family_parteners_of_the_pw_hiv_positive_informed_about_their_results": {
+                    "family_partners_of_the_pw_hiv_positive_informed_about_their_results": {
                         "fr": "Informées de leur résultat",
                         "en": "Informed about their results",
                         "title": "Informed about their results",
@@ -2834,562 +1975,35 @@ exports.reports = function () {
             },
             "parent": "report_familyplanning"
         },
-        "report_ipd": {
-            "collection": "reports",
-            "class": "schema",
-            "_id": "reports/schema/reportipd",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "title": "Leprosy and TB",
-            "type": "object",
-            "properties": {
-                "those_who_are_admitted_in_the_ward": {
-                    "line_number": "1",
-                    "sw": "Waliolazwa Wodini",
-                    "en": "Those who are admitted into the ward"
-                },
-                "acute_flacid_paralysis": {
-                    "line_number": "2",
-                    "sw": "Acute Flacid Paralysis",
-                    "en": "Acute Flacid Paralysis",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Acute Flacid Paralysis'"
-                },
-                "cholera": {
-                    "line_number": "3",
-                    "sw": "Cholera",
-                    "en": "Cholera",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Cholera'"
-                },
-                "dysentery": {
-                    "line_number": "4",
-                    "sw": "Dysentery",
-                    "en": "Dysentery",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Dysentery'"
-                },
-                "measles": {
-                    "line_number": "5",
-                    "sw": "Measles",
-                    "en": "Measles",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Measles'"
-                },
-                "meningitis": {
-                    "line_number": "6",
-                    "sw": "Meningitis",
-                    "en": "Meningitis",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Meningitis'"
-                },
-                "tetanus_neonatal": {
-                    "line_number": "7",
-                    "sw": "Tetanus. Neonatal",
-                    "en": "Tetanus. Neonatal",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Tetanus. Neonatal'"
-                },
-                "plague": {
-                    "line_number": "8",
-                    "sw": "Plague",
-                    "en": "Plague",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Plague'"
-                },
-                "relapsing_fever_louse_borne_typhus": {
-                    "line_number": "9",
-                    "sw": "Relapsing Fever Louse borne Typhus",
-                    "en": "Relapsing Fever Louse borne Typhus",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Relapsing Fever Louse borne Typhus'"
-                },
-                "typhoid": {
-                    "line_number": "10",
-                    "sw": "Typhoid",
-                    "en": "Typhoid",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Typhoid'"
-                },
-                "diarrhea_acute": {
-                    "line_number": "11",
-                    "sw": "Diarrhea Acute <14days",
-                    "en": "Diarrhea Acute <14days",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Diarrhea Acute <14days'"
-                },
-                "diarrhea_chronic": {
-                    "line_number": "1",
-                    "sw": "Diarrhea Chronic >or= 14days",
-                    "en": "Diarrhea Chronic >or= 14days",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Diarrhea Chronic >or= 14days'"
-                },
-                "malaria_severe_complicated_blood_side_positive": {
-                    "line_number": "13a",
-                    "sw": "Malaria Severe/Complicated Blood Side Positive",
-                    "en": "Maleria Severe/Complicated Blood Side Positive",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Maleria Severe/Complicated Blood Side Positive'"
-                },
-                "malaria_severe_complicated_mrdt_positive": {
-                    "line_number": "13b",
-                    "sw": "Malaria Severe/Complicated mRDT Positive",
-                    "en": "Maleria Severe/Complicated mRDT Positive",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Maleria Severe/Complicated mRDT Positive'"
-                },
-                "malaria_severe_complicated_clinical_no_test": {
-                    "line_number": "13c",
-                    "sw": "Malaria Severe/Complicated Clinical no test",
-                    "en": "Maleria Severe/Complicated Clinical no test",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Maleria Severe/Complicated Clinical no test'"
-                },
-                "schistosomiasis": {
-                    "line_number": "14",
-                    "sw": "Schistosomiasis",
-                    "en": "Schistosomiasis",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Schistosomiasis'"
-                },
-                "sti_genital_discharge_syndrome_gds": {
-                    "line_number": "15",
-                    "sw": "STI Genital Discharge Syndrome GDS",
-                    "en": "STI Genital Discharge Syndrome GDS",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'STI Genital Discharge Syndrome GDS'"
-                },
-                "sti_genital_ulcer_diseases_gud": {
-                    "line_number": "16",
-                    "sw": "STI Genital Ulcer Diseases GUD",
-                    "en": "STI Genital Ulcer Diseases GUD",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'STI Genital Ulcer Diseases GUD'"
-                },
-                "sti_pelvic_inflammatory_diseases": {
-                    "line_number": "17",
-                    "sw": "STI Pelvic Inflammatory diseases PID",
-                    "en": "STI Pelvic Inflammatory diseases PID",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'STI Pelvic Inflammatory diseases PID'"
-                },
-                "sexually_transmitted_infection_other": {
-                    "line_number": "18",
-                    "sw": "Sexually Transmitted Infection Other",
-                    "en": "Sexually Transmitted Infection Other",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Sexually Transmitted Infection Other'"
-                },
-                "gynaecological_diseases": {
-                    "line_number": "19",
-                    "sw": "Gynaecological diseases Other",
-                    "en": "Gynaecological diseases Other",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Gynaecological diseases Other'"
-                },
-                "tuberculosis": {
-                    "line_number": "20",
-                    "sw": "Tuberculosis",
-                    "en": "Tuberculosis",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Tuberculosis'"
-                },
-                "leprosy": {
-                    "line_number": "21",
-                    "sw": "Leprosy",
-                    "en": "Leprosy",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Leprosy'"
-                },
-                "diabetes_mellitus": {
-                    "line_number": "22",
-                    "sw": "Diabetes Mellitus",
-                    "en": "Diabetes Mellitus",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Diabetes Mellitus'"
-                },
-                "infant_of_diabetic_mother": {
-                    "line_number": "23",
-                    "sw": "Infant of Diabetic Mother",
-                    "en": "Infant of Diabetic Mother",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Infant of Diabetic Mother'"
-                },
-                "kwashiorkor": {
-                    "line_number": "24",
-                    "sw": "Kwashiorkor",
-                    "en": "Kwashiorkor",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Kwashiorkor'"
-                },
-                "marasmus": {
-                    "line_number": "25",
-                    "sw": "Marasmus",
-                    "en": "Marasmus",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Marasmus'"
-                },
-                "marasmic_kwashiorkor": {
-                    "line_number": "26",
-                    "sw": "Marasmic_kwashiorkor",
-                    "en": "Marasmic_kwashiorkor",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Marasmic_kwashiorkor'"
-                },
-                "moderate_malnutrition": {
-                    "line_number": "27",
-                    "sw": "Moderate Malnutrition",
-                    "en": "Moderate Malnutrition",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Moderate Malnutrition'"
-                },
-                "nutritional_disoders_other": {
-                    "line_number": "28",
-                    "sw": "Nutritional Disorders Other",
-                    "en": "Nutritional Disorders Other",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Nutritional Disorders Other'"
-                },
-                "thyroid_diseases": {
-                    "line_number": "29",
-                    "sw": "Thyroid Diseases",
-                    "en": "Thyroid Diseases",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Thyroid Diseases'"
-                },
-                "sickle_cell_disease": {
-                    "line_number": "30",
-                    "sw": "Sickle cell Disease",
-                    "en": "Sickle cell Disease",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Sickle cell Disease'"
-                },
-                "anaemia_mild_moderate": {
-                    "line_number": "31",
-                    "sw": "Anaemia Mild/Moderate",
-                    "en": "Anaemia Mild/Moderate",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Anaemia Mild/Moderate'"
-                },
-                "anaemia_severe": {
-                    "line_number": "32",
-                    "sw": "Anaemia Severe",
-                    "en": "Anaemia Severe",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Anaemia Severe'"
-                },
-                "psychoses": {
-                    "line_number": "33",
-                    "sw": "Psychoses",
-                    "en": "Psychoses",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Psychoses'"
-                },
-                "neuroses": {
-                    "line_number": "34",
-                    "sw": "Neuroses",
-                    "en": "Neuroses",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Neuroses'"
-                },
-                "cerebral_palsy": {
-                    "line_number": "35",
-                    "sw": "Cerebral Palsy",
-                    "en": "Cerebral Palsy",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Cerebral Palsy'"
-                },
-                "epilepsy": {
-                    "line_number": "36",
-                    "sw": "Epilepsy",
-                    "en": "Epilepsy",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Epilepsy'"
-                },
-                "ear_diseases_non_infectious": {
-                    "line_number": "37",
-                    "sw": "Ear Diseases non-infectious",
-                    "en": "Ear Diseases non-infectious",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Ear Diseases non-infectious'"
-                },
-                "ear_infection_acute": {
-                    "line_number": "38",
-                    "sw": "Ear infection Acute",
-                    "en": "Ear infection Acute",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Ear infection Acute'"
-                },
-                "ear_infection_chronic": {
-                    "line_number": "39",
-                    "sw": "Ear Infection Chronic",
-                    "en": "Ear Infection Chronic",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Ear Infection Chronic'"
-                },
-                "eye_infections_viral_keratoconjunctivitis": {
-                    "line_number": "40",
-                    "sw": "Eye Infections Viral Keratoconjunctivitis",
-                    "en": "Eye Infections Viral Keratoconjunctivitis",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Eye Infections Viral Keratoconjunctivitis'"
-                },
-                "eye_infections_other": {
-                    "line_number": "41",
-                    "sw": "Eye Infections Other",
-                    "en": "Eye Infections Other",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Eye Infections Other'"
-                },
-                "eye_diseases_non-infectious": {
-                    "line_number": "42",
-                    "sw": "Eye Diseases Non-infectious",
-                    "en": "Eye Diseases Non-infectious",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Eye Diseases Non-infectious'"
-                },
-                "cardiac_failure": {
-                    "line_number": "43",
-                    "sw": "Cardiac Failure",
-                    "en": "Cardiac Failure",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Cardiac Failure'"
-                },
-                "hypertension_severe": {
-                    "line_number": "44",
-                    "sw": "Hypertension severe",
-                    "en": "Hypertension severe",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Hypertension severe'"
-                },
-                "rheumatic_fever": {
-                    "line_number": "45",
-                    "sw": "Rheumatic Fever",
-                    "en": "Rheumatic Fever",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Rheumatic Fever'"
-                },
-                "cardiovascular_disorders_other": {
-                    "line_number": "46",
-                    "sw": "Cardiovascular Disorders Other",
-                    "en": "Cardiovascular Disorders Other",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Cardiovascular Disorders Other'"
-                },
-                "broncial_asthma_severe": {
-                    "line_number": "47",
-                    "sw": "Broncial Asthma Severe",
-                    "en": "Broncial Asthma Severe",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Broncial Asthma Severe'"
-                },
-                "upper_respiratory_infections_pharyngitis_tonsillitis_rhinitis": {
-                    "line_number": "48",
-                    "sw": "Upper Respiratory Infections Pharyngitis/Tonsillitis/Rhinitis",
-                    "en": "Upper Respiratory Infections Pharyngitis/Tonsillitis/Rhinitis",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Upper Respiratory Infections Pharyngitis/Tonsillitis/Rhinitis'"
-                },
-                "pneumonia": {
-                    "line_number": "49",
-                    "sw": "Pneumonia",
-                    "en": "Pneumonia",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Pneumonia'"
-                },
-                "pneumonia_severe": {
-                    "line_number": "50",
-                    "sw": "Pneumonia Severe",
-                    "en": "Pneumonia Severe",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Pneumonia Severe'"
-                },
-                "respiratory_system_disorders_other": {
-                    "line_number": "51",
-                    "sw": "Respiratory System disorders Other",
-                    "en": "Respiratory System disorders Other",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Respiratory System disorders Other'"
-                },
-                "peptic_ulcers": {
-                    "line_number": "52",
-                    "sw": "Peptic ulcers",
-                    "en": "Peptic ulcers",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Peptic ulcers'"
-                },
-                "liver_diseases_non_infectious": {
-                    "line_number": "53",
-                    "sw": "Liver diseases Non-infectious",
-                    "en": "Liver diseases Non-infectious",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Liver diseases Non-infectious'"
-                },
-                "gastrointestinal_disease_other_non_infectious": {
-                    "line_number": "54",
-                    "sw": "Gastrointestinal diseases Other non-infectious",
-                    "en": "Gastrointestinal diseases Other non-infectious",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Gastrointestinal diseases Other non-infectious'"
-                },
-                "urinary_tract_infections": {
-                    "line_number": "55",
-                    "sw": "Urinary Tract Infections UTI",
-                    "en": "Urinary Tract Infections UTI",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Urinary Tract Infections UTI'"
-                },
-                "nephrotic_syndrome": {
-                    "line_number": "56",
-                    "sw": "Nephrotic Syndrome",
-                    "en": "Nephrotic Syndrome",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Nephrotic Syndrome'"
-                },
-                "acute_glumerulonephritis": {
-                    "line_number": "57",
-                    "sw": "Acute glumerulonephritis",
-                    "en": "Acute glumerulonephritis",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Acute glumerulonephritis'"
-                },
-                "skin_infections": {
-                    "line_number": "58",
-                    "sw": "Skin Infections",
-                    "en": "Skin Infections",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Skin Infections'"
-                },
-                "skin_diseases_non_infectious": {
-                    "line_number": "59",
-                    "sw": "Skin diseases Non-infectious",
-                    "en": "Skin diseases Non-infectious",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Skin diseases Non-infectious'"
-                },
-                "osteomyelitis": {
-                    "line_number": "60",
-                    "sw": "Osteomyelitis",
-                    "en": "Osteomyelitis",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Osteomyelitis'"
-                },
-                "rheumatoid_and_joint_disease": {
-                    "line_number": "61",
-                    "sw": "Rheumatoid and Joint diseases",
-                    "en": "Rheumatoid and Joint diseases",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Rheumatoid and Joint diseases'"
-                },
-                "low_birth_weight_and_prematurity_complications": {
-                    "line_number": "62",
-                    "sw": "Low birth weight and Prematurity complications",
-                    "en": "Low birth weight and Prematurity complications",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Low birth weight and Prematurity complications'"
-                },
-                "birth_asphyxia": {
-                    "line_number": "63",
-                    "sw": "Birth asphyxia",
-                    "en": "Birth asphyxia",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Birth asphyxia'"
-                },
-                "neonatal_septicaemia_local_infections": {
-                    "line_number": "64",
-                    "sw": "Neonatal Septicaemia Local infections",
-                    "en": "Neonatal Septicaemia Local infections",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Neonatal Septicaemia Local infections'"
-                },
-                "road_traffic_accidents": {
-                    "line_number": "65",
-                    "sw": "Road Traffic Accidents",
-                    "en": "Road Traffic Accidents",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Road Traffic Accidents'"
-                },
-                "fractures": {
-                    "line_number": "66",
-                    "sw": "Fractures",
-                    "en": "Fractures",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Fractures'"
-                },
-                "poisoning": {
-                    "line_number": "67",
-                    "sw": "Poisoning",
-                    "en": "Poisoning",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Poisoning'"
-                },
-                "burns": {
-                    "line_number": "68",
-                    "sw": "Burns",
-                    "en": "Burns",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Burns'"
-                },
-                "animal_bites_suspected_rabies": {
-                    "line_number": "69",
-                    "sw": "Animal Bites Suspected Rabies",
-                    "en": "Animal Bites Suspected Rabies",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Animal Bites Suspected Rabies'"
-                },
-                "animal_bites_no_suspected_rabies": {
-                    "line_number": "70",
-                    "sw": "Animal Bites No suspected Rabies",
-                    "en": "Animal Bites No suspected Rabies",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Animal Bites No suspected Rabies'"
-                },
-                "hiv_infection_symptomatic": {
-                    "line_number": "71",
-                    "sw": "HIV infection Symptomatic",
-                    "en": "HIV infection Symptomatic",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'HIV infection Symptomatic'"
-                },
-                "congenital_disorders": {
-                    "line_number": "72",
-                    "sw": "Congenital Disorders",
-                    "en": "Congenital Disorders",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Congenital Disorders'"
-                },
-                "hepatitis": {
-                    "line_number": "73",
-                    "sw": "Hepatitis",
-                    "en": "Hepatitis",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Hepatitis'"
-                },
-                "neoplasm": {
-                    "line_number": "74",
-                    "sw": "Neoplasm",
-                    "en": "Neoplasm",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Neoplasm'"
-                },
-                "soil_transmitted_helminths": {
-                    "line_number": "75",
-                    "sw": "Soil transmitted helminths",
-                    "en": "Soil transmitted helminths",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Soil transmitted helminths'"
-                },
-                "lympatic_filairiasis": {
-                    "line_number": "76",
-                    "sw": "Lympatic filairiasis",
-                    "en": "Lympatic filairiasis",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Lympatic filairiasis'"
-                },
-                "anthrax": {
-                    "line_number": "77",
-                    "sw": "Anthrax",
-                    "en": "Anthrax",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Anthrax'"
-                },
-                "diagnoses_other": {
-                    "line_number": "78",
-                    "sw": "Diagnoses Other",
-                    "en": "Diagnoses Other",
-                    "condition": "disease_diagnosis.admission && disease_diagnosis.diagnosis == 'Diagnoses Other'"
-                },
-                "definitions": {
-                    "columns": {
-                        "lessthan1male": {
-                            "title": "Males",
-                            "condition": "FIXME && patient.gender == 'male'"
-                        },
-                        "lessthan1female": {
-                            "title": "Less than 1 Month - Females",
-                            "condition": "FIXME && patient.gender == 'female'"
-                        },
-                        "lessthan1total": {
-                            "title": "Less than 1 Month - Total",
-                            "condition": "FIXME"
-                        },
-                        "more1momale": {
-                            "title": "More than 1 month and less than 1 Year - Male",
-                            "condition": "FIXME && patient.gender == 'male'"
-                        },
-                        "more1mofemale": {
-                            "title": "More than 1 month and less than 1 Year - Females",
-                            "condition": "FIXME && patient.gender == 'female'"
-                        },
-                        "more1mototal": {
-                            "title": "More than 1 month and less than 1 Year - Total",
-                            "condition": "FIXME "
-                        },
-                        "above1below5male": {
-                            "title": "More than 1 year and less than 5 Years - Male",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'male'"
-                        },
-                        "above1below5female": {
-                            "title": "More than 1 year and less than 5 Years - Females",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'female'"
-                        },
-                        "above1below5total": {
-                            "title": "More than 1 year and less than 5 Years - Total",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5"
-                        }
-                    }
-                }
-            }
-        },
         "report_isthiv_1": {
             "title": "2.3.1 STIs",
+            "en": "2.3.1 STIs",
+            "fr": "2.3.1 IST",
             "type": "object",
             "properties": {
                 "new_stis_cases": {
                     "line_number": "1",
                     "fr": "Nouveaux cas IST",
                     "en": "New STIs cases",
-                    "condition": "true"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.std_status === 'yes') || subforms.disease_diagnosis && ((subforms.disease_diagnosis.diagnosis === 'sti_genital_discharge_syndrome') || (subforms.disease_diagnosis.diagnosis === 'sti_genital_ulcer_diseases') || (subforms.disease_diagnosis.diagnosis === 'sti_pelvic_inflammatory_diseases') || (subforms.disease_diagnosis.diagnosis === 'sexually_transmitted_infections_other'))"
                 },
                 "contact_among_new_stis_cases": {
                     "line_number": "2",
                     "fr": "Contacts parmi les Nouveaux Cas IST",
                     "en": "Contact among new STIs cases",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "cases_of_stis_councilled_and_hiv_tested": {
                     "line_number": "3",
                     "fr": "Cas IST conseillés et testés au VIH",
                     "en": "Cases of STIs councilled and HIV tested",
-                    "condition": "true"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.std_status === 'yes') || subforms.disease_diagnosis && ((subforms.disease_diagnosis.diagnosis === 'sti_genital_discharge_syndrome') || (subforms.disease_diagnosis.diagnosis === 'sti_genital_ulcer_diseases') || (subforms.disease_diagnosis.diagnosis === 'sti_pelvic_inflammatory_diseases') || (subforms.disease_diagnosis.diagnosis === 'sexually_transmitted_infections_other')) && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit === 'yes'))"
                 },
                 "stis_cases_treated_under_syndromic_approach": {
                     "line_number": "4",
                     "fr": "Cas IST traités selon l’approche syndromique",
                     "en": "STIs cases treated under syndromic approach",
-                    "condition": "true"
+                    "condition": "false"
                 }
             },
             "definitions": {
@@ -3406,31 +2020,33 @@ exports.reports = function () {
         },
         "report_isthiv_2": {
             "title": "2.3.2 Voluntary Counseling and Testing VCT",
+            "en": "2.3.2 Voluntary Counseling and Testing VCT",
+            "fr": "2.3.2 Conseils et dépistage volontaire (CDV)",
             "type": "object",
             "properties": {
                 "0_14_yrs": {
                     "line_number": "1",
                     "fr": "0 – 14 ans",
                     "en": "0-14 yrs",
-                    "condition": "true"
+                    "condition": "patient.current_age_years <= 14"
                 },
                 "15_19_yrs": {
                     "line_number": "2",
                     "fr": "15–19 ans",
                     "en": "15-19 yrs",
-                    "condition": "true"
+                    "condition": "(patient.current_age_years > 14 && patient.current_age_years <= 19)"
                 },
                 "20_24_yrs": {
                     "line_number": "3",
                     "fr": "20–24 ans",
                     "en": "20-24 yrs",
-                    "condition": "true"
+                    "condition": "(patient.current_age_years > 20 && patient.current_age_years <= 24)"
                 },
                 "25_yrs_and_above": {
                     "line_number": "4",
                     "fr": "25 ans et plus",
                     "en": "25 yrs and above",
-                    "condition": "true"
+                    "condition": "(patient.current_age_years > 25) || !(patient.current_age_years)"
                 }
             },
             "definitions": {
@@ -3439,156 +2055,161 @@ exports.reports = function () {
                         "fr": "Testés",
                         "en": "Tested",
                         "title": "Tested",
-                        "condition": "true"
+                        "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes'))"
                     },
                     "masculine_positive": {
                         "fr": "Positifs",
                         "en": "Positive",
                         "title": "Positive",
-                        "condition": "true"
+                        "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes'))"
                     },
                     "masculine_negative": {
                         "fr": "Négatifs",
                         "en": "Negative",
                         "title": "Negative",
-                        "condition": "true"
+                        "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no'))"
                     },
                     "feminine_tested": {
                         "fr": "Testés",
                         "en": "Tested",
                         "title": "Tested",
-                        "condition": "true"
+                        "condition": "patient.gender === 'female' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit) || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit))"
                     },
                     "feminine_positive": {
                         "fr": "Positifs",
                         "en": "Positive",
                         "title": "Positive",
-                        "condition": "true"
+                        "condition": "(patient.gender === 'female' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'yes'))"
                     },
                     "feminine_negative": {
                         "fr": "Négatifs",
                         "en": "Negative",
                         "title": "Negative",
-                        "condition": "true"
+                        "condition": "(patient.gender === 'female' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'no'))"
                     },
                     "total_tested": {
                         "fr": "Testés",
                         "en": "Tested",
                         "title": "Tested",
-                        "condition": "true"
+                        "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit === 'yes')"
                     },
                     "total_positive": {
                         "fr": "Positifs",
                         "en": "Positive",
                         "title": "Positive",
-                        "condition": "true"
+                        "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative' && subforms.anc_followup.second_hiv_test === 'yes')"
                     },
                     "total_negative": {
                         "fr": "Négatifs",
                         "en": "Negative",
                         "title": "Negative",
-                        "condition": "true"
+                        "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && subforms.anc_followup.second_hiv_test === 'no')"
                     }
                 }
             },
-            "parent": "report_isthiv"
+            "parent": "report_isthiv",
+            "overrides": {
+                "thead_prefix": "<tr><th></th><th></th><th></th><th colspan=\"3\">Masculin</th><th colspan=\"3\">Féminin</th><th colspan=\"3\">Total</th></tr>"
+            }
         },
         "report_isthiv_3": {
-            "title": "2.3.3  Care, Treatment and support",
+            "title": "2.3.3 Care, Treatment and support",
+            "en": "2.3.3 Care, Treatment and support",
+            "fr": "2.3.3 Soins, traitement et soutien",
             "type": "object",
             "properties": {
                 "number_of_new_cases_io": {
                     "line_number": "1",
                     "fr": "Nombre Nouveaux Cas IO",
                     "en": "Number of new cases IO",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "including_tbc_new_cases": {
                     "line_number": "2",
                     "fr": "Dont Nouveaux Cas TBC",
                     "en": "Including TBC new cases",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "number_of_plwhiv_under_profilaxis_ctx": {
                     "line_number": "3",
                     "fr": "Nombre de PVV sous prophylaxie CTX",
                     "en": "Number of PLWHIV under profilaxis CTX",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "number_of_plwhiv_tested_tb_under_profilaxis_ctx": {
                     "line_number": "4",
                     "fr": "Nombre de PVV VIH dépistée TB sous prophylaxie CTX",
                     "en": "Number of PLWHIV tested TB under profilaxis CTX",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "number_of_patients_who_beneficiated_with_pec_pss": {
                     "line_number": "5",
                     "fr": "Nombre de patients ayant bénéficié de la PEC PSS",
                     "en": "Number of patients who beneficiated with PEC PSS",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "number_of_malnurished_plwhiv_who_beneficiated_nutritional_pec": {
                     "line_number": "6",
                     "fr": "Nombre de PVV Malnutris ayant bénéficié de la PEC Nutritionnelle",
                     "en": "Number of malnurished PLWHIV who beneficiated nutritional PEC",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "number_of_plwhiv_who_are_under_home_based_care": {
                     "line_number": "7",
                     "fr": "Nombre de PVV bénéficiant du suivi dans le cadre des visites à domicile",
                     "en": "Number of PLWHIV who are under Home Based Care",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "number_of_plwhiv_who_beneficiated_the_follow_up_on_the_biological_cd4": {
                     "line_number": "8",
                     "fr": "Nombre des PVVIH ayant bénéficié du suivi biologique par le CD4",
                     "en": "Number of PLWHIV who beneficiated the follow up on the biological CD4",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "number_of_children_born_from_hiv_mothers_who_have_benefciated_the_dbs_pcr_dna": {
                     "line_number": "9",
                     "fr": "Nombre d’enfant nés de mères VIH+ ayant bénéficié du DBS/PCR DNA",
                     "en": "Number of children born from HIV+ mothers who have benefciated the DBS/PCR DNA",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "number_of_exposed_people_who_beneficated_the_pep_kit": {
                     "line_number": "10",
                     "fr": "Nbre des personnes exposées ayant bénéficié du Kit PEP",
                     "en": "Number of exposed people who beneficated the PEP kit",
-                    "condition": "true"
+                    "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_pep_kit === 'yes'"
                 },
                 "number_of_patients_under_arv_treatment": {
                     "line_number": "11",
                     "fr": "Nombre de patients sous TARV",
                     "en": "Number of patients under ARV treatment",
-                    "condition": "true"
+                    "condition": "subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.arv_therapy==='yes'"
                 },
                 "number_of_plwhiv_who_disappeared": {
                     "line_number": "12",
                     "fr": "Nombre de PVV perdues de vue",
                     "en": "Number of PLWHIV who disappeared",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "number_of_plwhiv_on_a_queue": {
                     "line_number": "13",
                     "fr": "Nombre de PVV file d’attente",
                     "en": "Number of PLWHIV on a queue",
-                    "condition": "true"
+                    "condition": "false"
                 }
             },
             "definitions": {
                 "columns": {
-                    "oldcases": {
+                    "old_cases": {
                         "fr": "Anciens Cas",
                         "en": "Oldcases",
                         "title": "Oldcases",
-                        "condition": "true"
+                        "condition": "followup === 'yes'"
                     },
                     "new_cases": {
                         "fr": "Nouveaux Cas",
                         "en": "New cases",
                         "title": "New cases",
-                        "condition": "true"
+                        "condition": "followup === 'no'"
                     },
                     "total": {
                         "fr": "TOTAL",
@@ -3598,53 +2219,226 @@ exports.reports = function () {
                     }
                 }
             },
-            "parent": "report_isthiv"
+            "parent": "report_isthiv",
+            "overrides": {
+                "predefined": [
+                    {
+                        "row": "number_of_new_cases_io",
+                        "col": "old_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_new_cases_io",
+                        "col": "new_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_new_cases_io",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "including_tbc_new_cases",
+                        "col": "old_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "including_tbc_new_cases",
+                        "col": "new_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "including_tbc_new_cases",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_under_profilaxis_ctx",
+                        "col": "old_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_under_profilaxis_ctx",
+                        "col": "new_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_under_profilaxis_ctx",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_tested_tb_under_profilaxis_ctx",
+                        "col": "old_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_tested_tb_under_profilaxis_ctx",
+                        "col": "new_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_tested_tb_under_profilaxis_ctx",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_patients_who_beneficiated_with_pec_pss",
+                        "col": "new_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_patients_who_beneficiated_with_pec_pss",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_malnurished_plwhiv_who_beneficiated_nutritional_pec",
+                        "col": "old_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_malnurished_plwhiv_who_beneficiated_nutritional_pec",
+                        "col": "new_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_malnurished_plwhiv_who_beneficiated_nutritional_pec",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_who_are_under_home_based_care",
+                        "col": "old_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_who_are_under_home_based_care",
+                        "col": "new_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_who_are_under_home_based_care",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_who_beneficiated_the_follow_up_on_the_biological_cd4",
+                        "col": "old_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_who_beneficiated_the_follow_up_on_the_biological_cd4",
+                        "col": "new_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_who_beneficiated_the_follow_up_on_the_biological_cd4",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_children_born_from_hiv_mothers_who_have_benefciated_the_dbs_pcr_dna",
+                        "col": "old_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_children_born_from_hiv_mothers_who_have_benefciated_the_dbs_pcr_dna",
+                        "col": "new_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_children_born_from_hiv_mothers_who_have_benefciated_the_dbs_pcr_dna",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_who_disappeared",
+                        "col": "old_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_who_disappeared",
+                        "col": "new_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_who_disappeared",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_on_a_queue",
+                        "col": "old_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_on_a_queue",
+                        "col": "new_cases",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_plwhiv_on_a_queue",
+                        "col": "total",
+                        "value": ""
+                    }
+                ],
+                "disabled": [
+                    {
+                        "row": "number_of_patients_who_beneficiated_with_pec_pss",
+                        "col": "old_cases",
+                        "value": ""
+                    }
+                ]
+            }
         },
         "report_isthiv_4": {
             "title": "2.3.4 Patient under ARV treatment",
+            "en": "2.3.4 Patient under ARV treatment",
+            "fr": "2.3.4 traitement antirétroviral",
             "type": "object",
             "properties": {
                 "care_azt_3tc_nvp": {
                     "line_number": "1",
                     "fr": "Soins AZT+3TC+NVP",
-                    "en": "Care AZT + 3TC+NVP",
-                    "condition": "true"
+                    "en": "Care AZT+3TC+NVP",
+                    "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'azt_3tc_nvp')"
                 },
                 "care_azt_3tc_efv": {
                     "line_number": "2",
-                    "fr": "Soins AZT+3TC+ EFV",
-                    "en": "Care AZT + 3TC+EFV",
-                    "condition": "true"
+                    "fr": "Soins AZT+3TC+EFV",
+                    "en": "Care AZT+3TC+EFV",
+                    "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'azt_3tc_efv')"
                 },
                 "care_tbf_3tc_nvp": {
                     "line_number": "3",
                     "fr": "Soins TDF+3TC+NVP",
-                    "en": "Care TBF + 3TC + NVP",
-                    "condition": "true"
+                    "en": "Care TBF+3TC+NVP",
+                    "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'tbf_3tc_nvp')"
                 },
                 "care_tbf_3tc_efv": {
                     "line_number": "4",
                     "fr": "Soins TDF+3TC+EFV",
-                    "en": "Care TBF + 3TC + EFV",
-                    "condition": "true"
+                    "en": "Care TBF+3TC+EFV",
+                    "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'tbf_3tc_efv')"
                 },
-                "care_azt_3_tc_mvp_syrup_children_ward": {
+                "care_azt_3_tc_mvp_syrup_children": {
                     "line_number": "5",
-                    "fr": "Soins AZT+3TC+ NVP Sirop (pédiatrique)",
-                    "en": "Care AZT+ 3 TC + MVP syrup (children ward)",
-                    "condition": "true"
+                    "fr": "Soins AZT+3TC+MVP Sirop (pédiatrique)",
+                    "en": "Care AZT+3TC+MVP syrup (children ward)",
+                    "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'azt_3_tc_mvp_syrup_children')"
                 },
                 "care_abc_ddl_lpv_r": {
                     "line_number": "6",
                     "fr": "Soins ABC+ddI+LPV/r",
-                    "en": "Care ABC + ddl+ LPV/r",
-                    "condition": "true"
+                    "en": "Care ABC+ddl+LPV/r",
+                    "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'abc_ddl_lpv_r')"
                 },
                 "care_abc_3tc_efv": {
                     "line_number": "7",
-                    "fr": "Soins ABC + 3TC + EFV",
-                    "en": "Care ABC + 3TC+ EFV",
-                    "condition": "true"
+                    "fr": "Soins ABC+3TC+EFV",
+                    "en": "Care ABC+3TC+EFV",
+                    "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'abc_3tc_efv')"
                 }
             },
             "definitions": {
@@ -3653,49 +2447,49 @@ exports.reports = function () {
                         "fr": "Masculin",
                         "en": "Male",
                         "title": "Male",
-                        "condition": "true"
+                        "condition": "(patient.gender === 'male' && patient.current_age_years <= 14)"
                     },
                     "under_14_yrs_female": {
                         "fr": "Féminin",
                         "en": "Female",
                         "title": "Female",
-                        "condition": "true"
+                        "condition": "(patient.gender === 'female' && patient.current_age_years <= 14)"
                     },
                     "under_14_yrs_incl_pregn": {
                         "fr": "Dont Enceinte",
                         "en": "Incl. Pregn",
                         "title": "Incl. Pregn",
-                        "condition": "true"
+                        "condition": "(patient.gender === 'female' && patient.current_age_years <= 14 && ((subforms.hiv_counseling_mother || subforms.anc_first_visit || subforms.anc_followup || subforms.hiv_pregnancy_clinic) || (subforms.immunization && subforms.immunization.pregnant === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.pregnant === 'yes')))"
                     },
                     "under_14_yrs_total": {
                         "fr": "Total",
                         "en": "Total",
                         "title": "Total",
-                        "condition": "true"
+                        "condition": "patient.current_age_years <= 14"
                     },
                     "14_yrs_and_above_male": {
                         "fr": "Masculin",
                         "en": "Male",
                         "title": "Male",
-                        "condition": "true"
+                        "condition": "(patient.gender === 'male' && patient.current_age_years > 14)"
                     },
                     "14_yrs_and_above_female": {
                         "fr": "Féminin",
                         "en": "Female",
                         "title": "Female",
-                        "condition": "true"
+                        "condition": "(patient.gender === 'female' && patient.current_age_years > 14)"
                     },
                     "14_yrs_and_above_incl_pregn": {
                         "fr": "Dont Enceinte",
                         "en": "Incl. Pregn",
                         "title": "Incl. Pregn",
-                        "condition": "true"
+                        "condition": "(patient.gender === 'female' && patient.current_age_years > 14 && ((subforms.hiv_counseling_mother || subforms.anc_first_visit || subforms.anc_followup || subforms.hiv_pregnancy_clinic) || (subforms.immunization && subforms.immunization.pregnant === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.pregnant === 'yes')))"
                     },
                     "14_yrs_and_above_total": {
                         "fr": "Total",
                         "en": "Total",
                         "title": "Total",
-                        "condition": "true"
+                        "condition": "patient.current_age_years > 14"
                     },
                     "total": {
                         "fr": "Total",
@@ -3705,10 +2499,15 @@ exports.reports = function () {
                     }
                 }
             },
-            "parent": "report_isthiv"
+            "parent": "report_isthiv",
+            "overrides": {
+                "thead_prefix": "<tr><th></th><th></th><th></th><th colspan=\"4\">&lt; 14 ans</th><th colspan=\"4\">&gt; 14 ans et plus</th><th></th></tr>"
+            }
         },
         "report_isthiv_5": {
-            "title": "2.3.5 Detention under AVR treatment",
+            "title": "2.3.5 Continuation of AVR treatment",
+            "en": "2.3.5 Continuation of AVR treatment",
+            "fr": "2.3.5. Rétention sous TARV",
             "type": "object",
             "properties": {
                 "number_of_adults_infants_alive_under_arv_treatment_since": {
@@ -3724,53 +2523,56 @@ exports.reports = function () {
                         "fr": "12 mois",
                         "en": "12 months",
                         "title": "12 months",
-                        "condition": "true"
+                        "condition": "patient.gender === 'male' && (subforms.ctc_record && subforms.ctc_record.arv_treatment_duration === '12')"
                     },
                     "male_24_months": {
                         "fr": "24 mois",
                         "en": "24 months",
                         "title": "24 months",
-                        "condition": "true"
+                        "condition": "patient.gender === 'male' && (subforms.ctc_record && subforms.ctc_record.arv_treatment_duration === '24')"
                     },
                     "male_36_months": {
                         "fr": "36 mois",
                         "en": "36 months",
                         "title": "36 months",
-                        "condition": "true"
+                        "condition": "patient.gender === 'male' && (subforms.ctc_record && subforms.ctc_record.arv_treatment_duration === '36')"
                     },
                     "male_60_months": {
                         "fr": "60 mois",
                         "en": "60 months",
                         "title": "60 months",
-                        "condition": "true"
+                        "condition": "patient.gender === 'male' && (subforms.ctc_record && subforms.ctc_record.arv_treatment_duration === '60')"
                     },
                     "female_12_months": {
                         "fr": "12 mois",
                         "en": "12 months",
                         "title": "12 months",
-                        "condition": "true"
+                        "condition": "patient.gender === 'female' && (subforms.ctc_record && subforms.ctc_record.arv_treatment_duration === '12')"
                     },
                     "female_24_months": {
                         "fr": "24 mois",
                         "en": "24 months",
                         "title": "24 months",
-                        "condition": "true"
+                        "condition": "patient.gender === 'female' && (subforms.ctc_record && subforms.ctc_record.arv_treatment_duration === '24')"
                     },
                     "female_36_months": {
                         "fr": "36 mois",
                         "en": "36 months",
                         "title": "36 months",
-                        "condition": "true"
+                        "condition": "patient.gender === 'female' && (subforms.ctc_record && subforms.ctc_record.arv_treatment_duration === '36')"
                     },
                     "female_60_months": {
                         "fr": "60 mois",
                         "en": "60 months",
                         "title": "60 months",
-                        "condition": "true"
+                        "condition": "patient.gender === 'female' && (subforms.ctc_record && subforms.ctc_record.arv_treatment_duration === '60')"
                     }
                 }
             },
-            "parent": "report_isthiv"
+            "parent": "report_isthiv",
+            "overrides": {
+                "thead_prefix": "<tr><th></th><th></th><th></th><th colspan=\"4\">Masculin</th><th colspan=\"4\">Feminin</th></tr>"
+            }
         },
         "report_labcare_1": {
             "title": "2.5 LABORATORY",
@@ -4045,272 +2847,6 @@ exports.reports = function () {
             },
             "parent": "report_labcare"
         },
-        "report_leprosy": {
-            "collection": "reports",
-            "class": "schema",
-            "_id": "reports.schema.leprosytb",
-            "$schema": "http:..json-schema.org.draft-04.schema#",
-            "title": "Leprosy and TB",
-            "type": "object",
-            "properties": {
-                "totals": {
-                    "title": "Total (a)",
-                    "type": "number",
-                    "line_number": "1",
-                    "condition": "tb_leprosy.classification"
-                },
-                "newly_registered": {
-                    "title": "New",
-                    "type": "number",
-                    "line_number": "2a",
-                    "condition": "tb_leprosy.patient_count"
-                },
-                "return_after_default": {
-                    "title": "Return after Default",
-                    "type": "number",
-                    "line_number": "2b",
-                    "condition": "tb_leprosy.leprosy_status == 'return after default'"
-                },
-                "relapse_after_MDT": {
-                    "title": "Relapse after MDT",
-                    "type": "number",
-                    "line_number": "2c",
-                    "condition": "tb_leprosy.leprosy_status == 'relapse after mdt'"
-                },
-                "relapse_after_dds": {
-                    "title": "Relapse after DDS.Others",
-                    "type": "number",
-                    "line_number": "2d",
-                    "condition": "tb_leprosy.leprosy_status == 'relapse after dds'"
-                },
-                "total_notifications": {
-                    "title": "Total Notifications (b)",
-                    "type": "number",
-                    "line_number": "2e",
-                    "condition": "tb_leprosy.leprosy_status"
-                },
-                "1mb": {
-                    "title": "1MB",
-                    "type": "number",
-                    "line_number": "3a",
-                    "condition": "FIXME"
-                },
-                "1pb": {
-                    "title": "1PB",
-                    "type": "number",
-                    "line_number": "3b",
-                    "condition": "FIXME"
-                },
-                "disability_grade_0": {
-                    "title": "Grade 0",
-                    "type": "number",
-                    "line_number": "4a",
-                    "condition": "tb_leprosy.disability_grade == 'grade 0'"
-                },
-                "disability_grade_1": {
-                    "title": "Grade 1",
-                    "type": "number",
-                    "line_number": "4b",
-                    "condition": "tb_leprosy.disability_grade == 'grade 1'"
-                },
-                "disability_grade_2": {
-                    "title": "Grade 2",
-                    "type": "number",
-                    "line_number": "4c",
-                    "condition": "tb_leprosy.disability_grade == 'grade 2"
-                },
-                "disability_grade_total": {
-                    "title": "Total",
-                    "type": "number",
-                    "line_number": "4d",
-                    "condition": "tb_leprosy.disability_grade"
-                },
-                "treatment_completed": {
-                    "title": "Treatment Completed",
-                    "type": "number",
-                    "line_number": "5a",
-                    "condition": "tb_leprosy.end_result == 'treatment completed'"
-                },
-                "died": {
-                    "title": "Died",
-                    "type": "number",
-                    "line_number": "5b",
-                    "condition": "tb_leprosy.end_result == 'died'"
-                },
-                "transferred_out": {
-                    "title": "Transferred Out",
-                    "type": "number",
-                    "line_number": "5c",
-                    "condition": "tb_leprosy.end_result == 'transferred out'"
-                },
-                "defaulter": {
-                    "title": "Defaulter",
-                    "type": "number",
-                    "line_number": "5d",
-                    "condition": "tb_leprosy.end_result == 'defaulter'"
-                },
-                "total_c": {
-                    "title": "Total (c)",
-                    "type": "number",
-                    "line_number": "5e",
-                    "condition": "tb_leprosy.end_result"
-                },
-                "registered_at_end_of_quarter": {
-                    "title": "(a) + (b) - (c)",
-                    "type": "number",
-                    "line_number": "6",
-                    "condition": "FIXME"
-                },
-                "corticosteroids": {
-                    "title": "Patients who started corticosteroids in the quarter",
-                    "type": "number",
-                    "line_number": "7",
-                    "condition": "tb_leprosy.corticosteroid_treatment"
-                }
-            },
-            "definitions": {
-                "65": {
-                    "title": "65+",
-                    "type": "object",
-                    "properties": {
-                        "male": {
-                            "type": "number",
-                            "title": "Male"
-                        },
-                        "female": {
-                            "type": "number",
-                            "title": "Female"
-                        }
-                    }
-                },
-                "treatment_categories": {
-                    "mb_a": {
-                        "type": "number",
-                        "title": "MB(A)"
-                    },
-                    "mb_c": {
-                        "type": "number",
-                        "title": "MB(C)"
-                    },
-                    "pb_a": {
-                        "type": "number",
-                        "title": "PB(A)"
-                    },
-                    "pb_c": {
-                        "type": "number",
-                        "title": "PB(C)"
-                    },
-                    "total": {
-                        "type": "number",
-                        "title": "Total"
-                    }
-                },
-                "age_ranges": {
-                    "0_14": {
-                        "title": "0-14",
-                        "type": "object",
-                        "properties": {
-                            "male": {
-                                "type": "number",
-                                "title": "Male"
-                            },
-                            "female": {
-                                "type": "number",
-                                "title": "Female"
-                            }
-                        }
-                    }
-                },
-                "15_24": {
-                    "title": "15-24",
-                    "type": "object",
-                    "properties": {
-                        "male": {
-                            "type": "number",
-                            "title": "Male"
-                        },
-                        "female": {
-                            "type": "number",
-                            "title": "Female"
-                        }
-                    }
-                },
-                "25-34": {
-                    "title": "25-34",
-                    "type": "object",
-                    "properties": {
-                        "male": {
-                            "type": "number",
-                            "title": "Male"
-                        },
-                        "female": {
-                            "type": "number",
-                            "title": "Female"
-                        }
-                    }
-                },
-                "35_44": {
-                    "title": "35-44",
-                    "type": "object",
-                    "properties": {
-                        "male": {
-                            "type": "number",
-                            "title": "Male"
-                        },
-                        "female": {
-                            "type": "number",
-                            "title": "Female"
-                        }
-                    }
-                },
-                "45_54": {
-                    "title": "45-54",
-                    "type": "object",
-                    "properties": {
-                        "male": {
-                            "type": "number",
-                            "title": "Male"
-                        },
-                        "female": {
-                            "type": "number",
-                            "title": "Female"
-                        }
-                    }
-                },
-                "55_64": {
-                    "title": "55-64",
-                    "type": "object",
-                    "properties": {
-                        "male": {
-                            "type": "number",
-                            "title": "Male"
-                        },
-                        "female": {
-                            "type": "number",
-                            "title": "Female"
-                        }
-                    }
-                },
-                "total": {
-                    "title": "Total",
-                    "type": "object",
-                    "properties": {
-                        "male": {
-                            "type": "number",
-                            "title": "Male"
-                        },
-                        "female": {
-                            "type": "number",
-                            "title": "Female"
-                        },
-                        "total": {
-                            "type": "number",
-                            "title": "Total"
-                        }
-                    }
-                }
-            }
-        },
         "report_malaria": {
             "title": "Monthly Canvas - 2.7. Malaria",
             "type": "object",
@@ -4470,7 +3006,7 @@ exports.reports = function () {
                     "condition": "true"
                 },
                 "pregnant_w": {
-                    "line_numaber": "3",
+                    "line_number": "3",
                     "fr": "Total NC toutes causes confondues en consultation exteme Femmes enceintes",
                     "en": "?",
                     "condition": "true"
@@ -4741,7 +3277,7 @@ exports.reports = function () {
                 "pregnant_women": {
                     "line_number": "46",
                     "line": "singlecell",
-                    "fr": "emmes  enceintes",
+                    "fr": "Femmes enceintes",
                     "en": "Pregnant women",
                     "condition": "true"
                 }
@@ -5058,559 +3594,6 @@ exports.reports = function () {
                 }
             },
             "parent": "report_monitoringvaccination"
-        },
-        "report_motherchildward": {
-            "collection": "reports",
-            "class": "schema",
-            "_id": "reports/schema/motherchildward",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "title": "Mother and Child Ward",
-            "type": "object",
-            "properties": {
-                "those_who_were_expected_to_deliver": {
-                    "line_number": "1",
-                    "sw": "Waliotarajiwa kujifungua",
-                    "en": "Those who were expected to deliver",
-                    "condition": ""
-                },
-                "reprot_for_mothers_who_delivered": {
-                    "line_number": "2",
-                    "sw": "Taarifa ya Waliojifungua",
-                    "en": "Report for mothers who delivered",
-                    "condition": ""
-                },
-                "those_who_delivered_at_the_clinic": {
-                    "line_number": "2a",
-                    "sw": "Waliojifungulia katika kituo cha kutolea huduma za afya",
-                    "en": "Those who delivered at the clinic",
-                    "condition": ""
-                },
-                "those_who_delivered_on_while_on_their_way_to_the_clinic": {
-                    "line_number": "2b",
-                    "sw": "Waliojifungua kabla ya kufika kituoni (BBA)",
-                    "en": "Those who delivered on while on their way to the clinic (BBA)",
-                    "condition": ""
-                },
-                "those_helped_to_deliver_by_traditional_birth_attendants_tba": {
-                    "line_number": "2c",
-                    "sw": "Waliozalishwa na wakunga wa jadi (TBA)",
-                    "en": "Those helped to deliver by traditional birth attendants (TBA)",
-                    "condition": ""
-                },
-                "home_delivery": {
-                    "line_number": "2d",
-                    "sw": "Waliojifungua nyumbani (H)",
-                    "en": "Home delivery (H)",
-                    "condition": ""
-                },
-                "total_giving_birth": {
-                    "line_number": "2e",
-                    "sw": "Jumla waliojifungua (2a+2b+2c+2d)",
-                    "en": "Total giving birth (2a +2 b +2 c +2 d)",
-                    "condition": ""
-                },
-                "those_who_were_helped_to_deliver_by_skilled_providers": {
-                    "line_number": "2f",
-                    "sw": "Waliozalishwa na watoa huduma wanye ujuzi",
-                    "en": "Those who were helped to deliver by skilled providers",
-                    "condition": ""
-                },
-                "percentage_of_all_who_delivered_at_the_clinic": {
-                    "line_number": "2g",
-                    "sw": "Asilimia ya waliojifungulia katika vituo vya kutolea huduma za afya (2a/1) x 100",
-                    "en": "Percentage of all who delivered at the Clinic (2a / 1) x 100",
-                    "condition": ""
-                },
-                "clinic_reports_on_different_methods_of_methods_of_delivery": {
-                    "line_number": "3",
-                    "sw": "Taarifa ya njia za kujifungua kutoka vituo vya kutolea huduma za afya",
-                    "en": "Clinic reports on different methods of methods of delivery",
-                    "condition": ""
-                },
-                "normal_delivery_kw": {
-                    "line_number": "3a",
-                    "sw": "Waliojifungua Kawaida (KW)",
-                    "en": "Normal delivery (KW)",
-                    "condition": ""
-                },
-                "vacuum_vm_delivery": {
-                    "line_number": "3b",
-                    "sw": "Waliojifungua kwa Vacuum (VM)",
-                    "en": "Vacuum (VM) delivery",
-                    "condition": ""
-                },
-                "breech_delivery": {
-                    "line_number": "3c",
-                    "sw": "Breech Delivery",
-                    "en": "breech Delivery",
-                    "condition": ""
-                },
-                "caesarian_section_cs_delivery": {
-                    "line_number": "3d",
-                    "sw": "Waliojifungua kwa Caesarian Section (CS)",
-                    "en": "Caesarian Section (CS) delivery",
-                    "condition": ""
-                },
-                "delivery_through_other_ways": {
-                    "line_number": "3e",
-                    "sw": "Waliojifungua kwa njia nyingizezo",
-                    "en": "Delivery through other ways",
-                    "condition": ""
-                },
-                "total": {
-                    "line_number": "3f",
-                    "sw": "Jumla (3a+3b+3c+3d+3e)",
-                    "en": "Total (3a +3 b +3 c +3 d +3 e)",
-                    "condition": ""
-                },
-                "the_number_of_pregnant_women_who_underwent_amtsl": {
-                    "line_number": "3g",
-                    "sw": "Idadi ya wajawazito walio fanyiwa AMTSL",
-                    "en": "The number of pregnant women who underwent AMTSL",
-                    "condition": ""
-                },
-                "prenatal_problems": {
-                    "line_number": "4",
-                    "sw": "Matatizo kabla ya kujifungua",
-                    "en": "Prenatal problems",
-                    "condition": ""
-                },
-                "aph": {
-                    "line_number": "4a",
-                    "sw": "APH",
-                    "en": "APH",
-                    "condition": ""
-                },
-                "pre_mature_rupture_of_membrane_prom": {
-                    "line_number": "4b",
-                    "sw": "Pre-mature Rupture of Membrane (PROM)",
-                    "en": "Pre-mature rupture of membrane (PROM)",
-                    "condition": ""
-                },
-                "high_bp": {
-                    "line_number": "4c",
-                    "sw": "High BP",
-                    "en": "high BP",
-                    "condition": ""
-                },
-                "eclampsia": {
-                    "line_number": "6b",
-                    "sw": "Eclampsia",
-                    "en": "eclampsia",
-                    "condition": ""
-                },
-                "anaemia": {
-                    "line_number": "4e",
-                    "sw": "Anaemia",
-                    "en": "Anaemia",
-                    "condition": ""
-                },
-                "malaria": {
-                    "line_number": "4f",
-                    "sw": "Malaria",
-                    "en": "malaria",
-                    "condition": ""
-                },
-                "hiv_stage_iii_or_iv": {
-                    "line_number": "4g",
-                    "sw": "HIV+ stage III or IV",
-                    "en": "HIV + stage III or IV",
-                    "condition": ""
-                },
-                "eptopic_pregnancy": {
-                    "line_number": "4h",
-                    "sw": "Ectopic Pregnancy",
-                    "en": "ectopic Pregnancy",
-                    "condition": ""
-                },
-                "abortion_or_abortion_complications": {
-                    "line_number": "4i",
-                    "sw": "Abortion / Abortion Complications",
-                    "en": "Abortion / Abortion Complications",
-                    "condition": ""
-                },
-                "other": {
-                    "line_number": "6h",
-                    "sw": "Mengineyo",
-                    "en": "other",
-                    "condition": ""
-                },
-                "total_impaired_prenatal": {
-                    "line_number": "4k",
-                    "sw": "Jumla wenye matatizo kabla ya kujifungua (4a+4b+4c+4d+4e+4f+4h+4i+4j+4k)",
-                    "en": "Total impaired prenatal (4a +4 b +4 c +4 d +4 e +4 f +4 h +4 i +4 j +4 k)",
-                    "condition": ""
-                },
-                "waliokeketwa_fgm": {
-                    "line_number": "5",
-                    "sw": "Waliokeketwa (FGM)",
-                    "en": "Waliokeketwa (FGM)",
-                    "condition": ""
-                },
-                "complications_during_and_after_childbirth": {
-                    "line_number": "6",
-                    "sw": "Matatizo wakati na baada ya kujifungua",
-                    "en": "Complications during and after childbirth",
-                    "condition": ""
-                },
-                "pph": {
-                    "line_number": "6a",
-                    "sw": "PPH",
-                    "en": "PPH",
-                    "condition": ""
-                },
-                "obstructed_labour": {
-                    "line_number": "6c",
-                    "sw": "Obstructed Labour",
-                    "en": "Obstructed Labour",
-                    "condition": ""
-                },
-                "retained_placenta": {
-                    "line_number": "6d",
-                    "sw": "Retained Placenta",
-                    "en": "Retained Placenta",
-                    "condition": ""
-                },
-                "tear_third_degree_tear": {
-                    "line_number": "6e",
-                    "sw": "Tear (Third Degree Tear)",
-                    "en": "Tear (Third Degree Tear)",
-                    "condition": ""
-                },
-                "ruptured_uterus": {
-                    "line_number": "6f",
-                    "sw": "Ruptured Uterus",
-                    "en": "Ruptured Uterus",
-                    "condition": ""
-                },
-                "infection_or_sepsis": {
-                    "line_number": "6g",
-                    "sw": "Uambukizo / Sepsis",
-                    "en": "infenction/sepsis",
-                    "condition": ""
-                },
-                "total_complications_after_childbirth": {
-                    "line_number": "6i",
-                    "sw": "Jumla ya matatizo baada ya kujifungua (6a+6b+6c+6d+6e+6f+6g+6h)",
-                    "en": "Total complications after childbirth (6a +6 b +6 +6 c d e +6 +6 +6 G+ f 6h)",
-                    "condition": ""
-                },
-                "emoc": {
-                    "line_number": "7",
-                    "sw": "EmOC",
-                    "en": "EmOC",
-                    "condition": ""
-                },
-                "given_iv_antibiotics": {
-                    "line_number": "7a",
-                    "sw": "Amepewa (IV) Antibiotiki",
-                    "en": "given (IV) antibiotics",
-                    "condition": ""
-                },
-                "given_iv_uterontonic": {
-                    "line_number": "7b",
-                    "sw": "Amepewa (IV) Uterotonic",
-                    "en": "given (IV) Uterotonic",
-                    "condition": ""
-                },
-                "given_iv_anticonvulsants": {
-                    "line_number": "7c",
-                    "sw": "Amepewa (IV) Anticonvulsants",
-                    "en": "given (IV) Anticonvulsants",
-                    "condition": ""
-                },
-                "placenta_has_been_dismissed_by_hand": {
-                    "line_number": "7d",
-                    "sw": "Ameondolewa kondo la nyuma kwa mkono",
-                    "en": "Placenta has been dismissed by hand",
-                    "condition": ""
-                },
-                "those_who_did_mva": {
-                    "line_number": "7e",
-                    "sw": "Amefanyiwa MVA",
-                    "en": "Those who did MVA",
-                    "condition": ""
-                },
-                "those_who_got_blood_transfusion": {
-                    "line_number": "7f",
-                    "sw": "Ameongezewa Damu",
-                    "en": "Those who got blood transfusion",
-                    "condition": ""
-                },
-                "pmtct": {
-                    "line_number": "8",
-                    "sw": "PMTCT",
-                    "en": "PMTCT",
-                    "condition": ""
-                },
-                "total_who_tested_hiv_anc": {
-                    "line_number": "8a",
-                    "sw": "Jumla waliopimwa VVU ANC",
-                    "en": "Total who tested HIV ANC",
-                    "condition": ""
-                },
-                "those_who_were_found_positive_at_anc": {
-                    "line_number": "8b",
-                    "sw": "Waliogundulika Positive kutoka ANC",
-                    "en": "Those who were found positive at ANC",
-                    "condition": ""
-                },
-                "those_who_started_using_arv_during_pregnancy_at_anc": {
-                    "line_number": "8c",
-                    "sw": "Walioanzishiwa dawa za ARV wakati wa ajauzito (ANC)",
-                    "en": "Those who started using ARV during pregnancy at ANC",
-                    "condition": ""
-                },
-                "those_who_started_using_art_treatment_during_pregnancy_anc": {
-                    "line_number": "8d",
-                    "sw": "Walioanza matibabu ya ART wakati wa ujauzito (ANC)",
-                    "en": "Those who started using ART treatment during pregnancy (ANC)",
-                    "condition": ""
-                },
-                "total_number_of_clients_who_tested_for_hiv_during_and_after_childbirth": {
-                    "line_number": "8e",
-                    "sw": "Jumla waliopimwa VVU wakati na baada ya kujifungua",
-                    "en": "Total number of clients who tested for HIV during and after childbirth",
-                    "condition": ""
-                },
-                "those_tested_positive_during_and_after_childbirth": {
-                    "line_number": "8f",
-                    "sw": "Waliogundulika Positive wakati na baada ya kujifungua",
-                    "en": "Those tested positive during and after childbirth",
-                    "condition": ""
-                },
-                "those_who_started_using_arvs_during_labor_and_delivery": {
-                    "line_number": "8g",
-                    "sw": "Walioanzishiwa dawa za ARV wakati wa uchungu na kujifungua",
-                    "en": "Those who started using ARV's during labor and delivery",
-                    "condition": ""
-                },
-                "those_who_started_art_treatment_during_labor_and_delivery": {
-                    "line_number": "8h",
-                    "sw": "Walioanza matibabu ya ART wakati wa uchungu na kujifungua",
-                    "en": "Those who started ART treatment during labor and delivery",
-                    "condition": ""
-                },
-                "total_clients_with_hiv": {
-                    "line_number": "8i",
-                    "sw": "Jumla Walio na VVU (8b+8f)",
-                    "en": "Total Clients with HIV (8b +8 f)",
-                    "condition": ""
-                },
-                "mothers_who_chose_to_breastfeed_only_ebf": {
-                    "line_number": "8j",
-                    "sw": "Waliochagua kunyonyesha maziwa ya mama pekee (EBF)",
-                    "en": "Mothers who chose to breastfeed only (EBF)",
-                    "condition": ""
-                },
-                "mothers_who_chose_to_feed_milk_substitute_rf": {
-                    "line_number": "8k",
-                    "sw": "Waliochagua ulishaji wa maziwa mbadala (RF)",
-                    "en": "Mothers who chose to feeding milk substitute (RF)",
-                    "condition": ""
-                },
-                "those_given_arv_prophylaxis_tail_when_discharged": {
-                    "line_number": "8l",
-                    "sw": "Waliopewa ARV Prophylaxis (tail) wakati wa kuruhusiwa",
-                    "en": "Those given ARV prophylaxis (tail) when discharged",
-                    "condition": ""
-                },
-                "those_given_referral_to_clinical_care_and_treatment_center_ctc": {
-                    "line_number": "8m",
-                    "sw": "Waliopata rufaa kwenda kliniki ya huduma na matibabu ya wenye VVU (CTC)",
-                    "en": "Those given referral to clinical care and treatment center (CTC)",
-                    "condition": ""
-                },
-                "total_hiv_positive_mothers_who_are_younger_than_20_years": {
-                    "line_number": "8n",
-                    "sw": "Jumla ya akina mama walio na VVU wenye umri chini ya miaka 20",
-                    "en": "Total HIV-positive mothers who are younger than 20 years",
-                    "condition": ""
-                },
-                "9_children_single_birth": {
-                    "line_number": "9",
-                    "sw": "Watoto Waliozaliwa mmoja",
-                    "en": "9 children single birth",
-                    "condition": ""
-                },
-                "9a_total_children_born_alive": {
-                    "line_number": "9a",
-                    "sw": "Jumla ya watoto waliozaliwa hai",
-                    "en": "Total children born alive",
-                    "condition": ""
-                },
-                "9b_live_births_weight_low": {
-                    "line_number": "9b",
-                    "sw": "Waliozaliwa hai Uzito <2.5kg",
-                    "en": "9b live births Weight < 2.5kg",
-                    "condition": ""
-                },
-                "9c_live_births_weight_high": {
-                    "line_number": "9c",
-                    "sw": "Waliozaliwa hai Uzito =>2.5kg",
-                    "en": "9c live births Weight = > 2.5kg",
-                    "condition": ""
-                },
-                "9d_macerated_dead_births_msb": {
-                    "line_number": "9d",
-                    "sw": "Waliozaliwa wafu Macerated (MSB)",
-                    "en": "9D macerated dead births ( MSB )",
-                    "condition": ""
-                },
-                "fresh_dead_births_9e_msb": {
-                    "line_number": "9e",
-                    "sw": "Waliozaliwa wafu Fresh (MSB)",
-                    "en": "Fresh dead births 9e ( MSB )",
-                    "condition": ""
-                },
-                "9f_births_to_mothers_with_hiv": {
-                    "line_number": "9f",
-                    "sw": "Waliozaliwa na mama wenye VVU",
-                    "en": "births to mothers with HIV",
-                    "condition": ""
-                },
-                "9g_children_given_arv_drugs": {
-                    "line_number": "9g",
-                    "sw": "Waliopewa dawa za ARV",
-                    "en": "Children given ARV drugs",
-                    "condition": ""
-                },
-                "9h_total_babies_born_alive_and_dead": {
-                    "line_number": "9h",
-                    "sw": "Jumla ya watoto waliozaliwa (hai na wafu) (9a+9d+9e)",
-                    "en": "Total babies born ( alive and dead ) ( 9a +9 +9 d e )",
-                    "condition": ""
-                },
-                "children_9i_apgar_score_less_than_7_at_5_minutes": {
-                    "line_number": "9i",
-                    "sw": "Watoto wenye APGAR Score chini ya 7 katika dakika 5",
-                    "en": "Children Apgar Score less than 7 at 5 minutes",
-                    "condition": ""
-                },
-                "10_twin_births": {
-                    "line_number": "10",
-                    "sw": "Watoto Waliozaliwa mapacha",
-                    "en": "Twin births",
-                    "condition": ""
-                },
-                "10a_total_children_born_alive": {
-                    "line_number": "10a",
-                    "sw": "Jumla ya watoto waliozaliwa hai",
-                    "en": "Total children born alive",
-                    "condition": ""
-                },
-                "10b_live_births_weight_low": {
-                    "line_number": "10b",
-                    "sw": "Waliozaliwa hai Uzito <2.5kg",
-                    "en": "live births Weight < 2.5kg",
-                    "condition": ""
-                },
-                "10c_live_births_weight_high": {
-                    "line_number": "10c",
-                    "sw": "Waliozaliwa hai Uzito =>2.5kg",
-                    "en": "live births Weight = > 2.5kg",
-                    "condition": ""
-                },
-                "10d_macerated_dead_births_msb": {
-                    "line_number": "10d",
-                    "sw": "Waliozaliwa wafu Macerated (MSB)",
-                    "en": "macerated dead births ( MSB )",
-                    "condition": ""
-                },
-                "fresh_dead_births_10e_msb": {
-                    "line_number": "10e",
-                    "sw": "Waliozaliwa wafu Fresh (MSB)",
-                    "en": "Fresh dead births 10E ( MSB )",
-                    "condition": ""
-                },
-                "10f_births_to_mothers_with_hiv": {
-                    "line_number": "10f",
-                    "sw": "Waliozaliwa na mama wenye VVU",
-                    "en": "births to mothers with HIV",
-                    "condition": ""
-                },
-                "10g_children_given_arvs": {
-                    "line_number": "10g",
-                    "sw": "Waliopewa dawa za ARV",
-                    "en": "Children given ARVs",
-                    "condition": ""
-                },
-                "10h_total_babies_born_alive_and_dead": {
-                    "line_number": "10h",
-                    "sw ": "Jumla ya watoto waliozaliwa(hai na wafu)(9a + 9d + 9e)",
-                    "en ": "Total babies born(alive and dead)(9a + 9 + 9 d e)",
-                    "condition": ""
-                },
-                "children_with_apgar_score_less_than_7_at_5_minutes ": {
-                    "line_number": "10i",
-                    "sw": "Watoto wenye APGAR Score chini ya 7 katika dakika 5",
-                    "en": "Children with Apgar Score less than 7 at 5 minutes",
-                    "condition": ""
-                },
-                "11_children_who_were_assisted_to_breath": {
-                    "line_number": "11",
-                    "sw": "Watoto waliosaidiwa kupumua",
-                    "en": "children who were assisted to breath",
-                    "condition": ""
-                },
-                "11a_number_of_children_assisted_to_breathe_stimulation ": {
-                    "line_number ": "11a",
-                    "sw ": "Idadi ya Watoto Waliosaidiwa Kupumua - stimulation",
-                    "en ": "Number of Children assisted to beathe - stimulation",
-                    "condition ": ""
-                },
-                "11b_number_of_children_assisted_to_breath_suction ": {
-                    "line_number ": "11b",
-                    "sw ": "Idadi ya Watoto Waliosaidiwa Kupumua - suction",
-                    "en ": "Number of children assisted to breathe - suction",
-                    "condition ": ""
-                },
-                "11c_number_of_children_who_were_assisted_to_breathe_bag_and_mask ": {
-                    "line_number ": "11c",
-                    "sw ": "Idadi ya Watoto Waliosaidiwa Kupumua - bag and mask",
-                    "en ": "Number of Children who were assisted to breathe - bag and mask",
-                    "condition ": ""
-                },
-                "12_other_services ": {
-                    "line_number ": "12",
-                    "sw ": "Huduma nyinginezo",
-                    "en ": "Other Services "
-                },
-                "12_the_number_of_children_who_were_breastfed_hour_after_birth ": {
-                    "line_number ": "12",
-                    "sw ": "idadi ya Watoto walionyonyeshwa saa moja baada ya kuzaliwa",
-                    "en ": "The number of children who were breastfed hour after birth",
-                    "condition ": ""
-                },
-                "13_those_assessed_24_hours_after_birth ": {
-                    "line_number ": "13",
-                    "sw ": "Waliofanyiwa tathmini masaa 24 baada ya kuzaliwa",
-                    "en ": "Those assessed 24 hours after birth",
-                    "condition ": ""
-                },
-                "14_mother_and_child_given_referral ": {
-                    "line_number ": "14",
-                    "sw ": "Mama na Mtoto waliopewa rufaa",
-                    "en ": "Mother and child given referral",
-                    "condition ": ""
-                },
-                "definitions": {
-                    "columns": {
-                        "below20": {
-                            "title": "Below 20 years old",
-                            "condition": "patient.approxage < 20"
-                        },
-                        "above20": {
-                            "title": "Above 20 years old",
-                            "condition": "patient.approxage >= 20"
-                        },
-                        "total": {
-                            "title": "Total",
-                            "condition": "true"
-                        }
-                    }
-                }
-            }
         },
         "report_mutual": [
             {
@@ -6164,543 +4147,6 @@ exports.reports = function () {
                 }
             }
         },
-        "report_opd": {
-            "collection": "reports",
-            "class": "schema",
-            "_id": "reports/schema/reportopd",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "title": "OPD Report",
-            "type": "object",
-            "properties": {
-                "1": {
-                    "line_number": "1",
-                    "en": "OPD attendance",
-                    "sw": "Mahudhurio ya OPD",
-                    "condition": "FIXME"
-                },
-                "2": {
-                    "line_number": "2",
-                    "en": "Patient who visited for the first time this year\n",
-                    "sw": "Wagonjwa waliohudhuria kwa mara ya kwanza mwaka huu (*)",
-                    "condition": "FIXME"
-                },
-                "3": {
-                    "line_number": "3",
-                    "en": "Repeated attendance",
-                    "sw": "Mahudhurio ya Marudio",
-                    "condition": "FIXME"
-                },
-                "4": {
-                    "line_number": "4",
-                    "en": "Acute Flacid Paralysis",
-                    "condition": "disease_diagnosis.diagnosis == 'Acute Flacid Paralysis'"
-                },
-                "5": {
-                    "line_number": "5",
-                    "en": "Cholera",
-                    "condition": "disease_diagnosis.diagnosis == 'Cholera'"
-                },
-                "6": {
-                    "line_number": "6",
-                    "en": "Dysentery",
-                    "condition": "disease_diagnosis.diagnosis == 'Dysentery'"
-                },
-                "7": {
-                    "line_number": "7",
-                    "en": "Measles",
-                    "condition": "disease_diagnosis.diagnosis == 'Measles'"
-                },
-                "8": {
-                    "line_number": "8",
-                    "en": "Meningitis",
-                    "condition": "disease_diagnosis.diagnosis == 'Meningitis'"
-                },
-                "9": {
-                    "line_number": "9",
-                    "en": "Neonatal Tetanus",
-                    "condition": "disease_diagnosis.diagnosis == 'Neonatal Tetanus'"
-                },
-                "10": {
-                    "line_number": "10",
-                    "en": "Plague",
-                    "condition": "disease_diagnosis.diagnosis == 'Plague'"
-                },
-                "11": {
-                    "line_number": "11",
-                    "en": "Relapsing Fever (Louse borne typhus)",
-                    "condition": "disease_diagnosis.diagnosis == 'Relapsing Fever (Louse borne typhus)'"
-                },
-                "12": {
-                    "line_number": "12",
-                    "en": "Yellow Fever",
-                    "condition": "disease_diagnosis.diagnosis == 'Yellow Fever'"
-                },
-                "13": {
-                    "line_number": "13",
-                    "en": "Influenza",
-                    "condition": "disease_diagnosis.diagnosis == 'Influenza'"
-                },
-                "14": {
-                    "line_number": "14",
-                    "en": "Typhoid",
-                    "condition": "disease_diagnosis.diagnosis == 'Typhoid'"
-                },
-                "15": {
-                    "line_number": "15",
-                    "en": "Rabies/Suspected rabies bites",
-                    "condition": "disease_diagnosis.diagnosis == 'Rabies/Suspected rabies bites'"
-                },
-                "16": {
-                    "line_number": "16",
-                    "en": "Trachoma",
-                    "condition": "disease_diagnosis.diagnosis == 'Trachoma'"
-                },
-                "17": {
-                    "line_number": "17",
-                    "en": "Onchocerciasis",
-                    "condition": "disease_diagnosis.diagnosis == 'Onchocerciasis'"
-                },
-                "18": {
-                    "line_number": "18",
-                    "en": "Trypanosomiasis",
-                    "condition": "disease_diagnosis.diagnosis == 'Trypanosomiasis'"
-                },
-                "19": {
-                    "line_number": "19",
-                    "en": "Viral haemorrhagic fevers",
-                    "condition": "disease_diagnosis.diagnosis == 'Viral haemorrhagic fevers'"
-                },
-                "20": {
-                    "line_number": "20",
-                    "en": "Keratoconjuctivitis",
-                    "condition": "disease_diagnosis.diagnosis == 'Keratoconjuctivitis'"
-                },
-                "21": {
-                    "line_number": "21",
-                    "en": "Diarrhea, Acute (< 14 days)",
-                    "condition": "disease_diagnosis.diagnosis == 'Diarrhea, Acute (< 14 days)'"
-                },
-                "22": {
-                    "line_number": "22",
-                    "en": "Diarrhea, Chronic (.> 14 days)",
-                    "condition": "disease_diagnosis.diagnosis == 'Diarrhea, Chronic (.> 14 days)'"
-                },
-                "23": {
-                    "line_number": "23",
-                    "en": "Malaria",
-                    "condition": "disease_diagnosis.diagnosis == 'Malaria'"
-                },
-                "24": {
-                    "line_number": "24",
-                    "en": "Schistosomiasis",
-                    "condition": "disease_diagnosis.diagnosis == 'Schistosomiasis'"
-                },
-                "25": {
-                    "line_number": "25",
-                    "en": "STI Genital Discharge Syndrome (GDS)",
-                    "condition": "disease_diagnosis.diagnosis == 'STI Genital Discharge Syndrome (GDS)'"
-                },
-                "26": {
-                    "line_number": "26",
-                    "en": "STI Genital Ulcer Diseases (GUD)",
-                    "condition": "disease_diagnosis.diagnosis == 'STI Genital Ulcer Diseases (GUD)'"
-                },
-                "27": {
-                    "line_number": "27",
-                    "en": "STI Pelvic Inflammatory Diseases (PID)",
-                    "condition": "disease_diagnosis.diagnosis == 'STI Pelvic Inflammatory Diseases (PID)'"
-                },
-                "28": {
-                    "line_number": "28",
-                    "en": "Sexually Transmitted Infections, Other",
-                    "condition": "disease_diagnosis.diagnosis == 'Sexually Transmitted Infections, Other'"
-                },
-                "29": {
-                    "line_number": "29",
-                    "en": "Tuberculosis",
-                    "condition": "disease_diagnosis.diagnosis == 'Tuberculosis'"
-                },
-                "30": {
-                    "line_number": "30",
-                    "en": "Leprosy",
-                    "condition": "disease_diagnosis.diagnosis == 'Leprosy'"
-                },
-                "31": {
-                    "line_number": "31",
-                    "en": "Intestinal Worms",
-                    "condition": "disease_diagnosis.diagnosis == 'Intestinal Worms'"
-                },
-                "32": {
-                    "line_number": "32",
-                    "en": "Anaemia, Mild / Moderate ",
-                    "condition": "disease_diagnosis.diagnosis == 'Anaemia, Mild / Moderate '"
-                },
-                "33": {
-                    "line_number": "33",
-                    "en": "Anaemia, Severe",
-                    "condition": "disease_diagnosis.diagnosis == 'Anaemia, Severe'"
-                },
-                "34": {
-                    "line_number": "34",
-                    "en": "Sickle cell Disease ",
-                    "condition": "disease_diagnosis.diagnosis == 'Sickle cell Disease '"
-                },
-                "35": {
-                    "line_number": "35",
-                    "en": "HIV Positive",
-                    "condition": "disease_diagnosis.diagnosis == 'HIV Positive'"
-                },
-                "36": {
-                    "line_number": "36",
-                    "en": "HIV Infection, Symptomatic",
-                    "condition": "disease_diagnosis.diagnosis == 'HIV Infection, Symptomatic'"
-                },
-                "37": {
-                    "line_number": "37",
-                    "en": "Ear Infection, Acute",
-                    "condition": "disease_diagnosis.diagnosis == 'Ear Infection, Acute'"
-                },
-                "38": {
-                    "line_number": "38",
-                    "en": "Ear Infection, Chronic",
-                    "condition": "disease_diagnosis.diagnosis == 'Ear Infection, Chronic'"
-                },
-                "39": {
-                    "line_number": "39",
-                    "en": "Eye Infection",
-                    "condition": "disease_diagnosis.diagnosis == 'Eye Infection'"
-                },
-                "40": {
-                    "line_number": "40",
-                    "en": "Cataract",
-                    "condition": "disease_diagnosis.diagnosis == 'Cataract'"
-                },
-                "41": {
-                    "line_number": "41",
-                    "en": "Eye Diseases, Other non-infectious",
-                    "condition": "disease_diagnosis.diagnosis == 'Eye Diseases, Other non-infectious'"
-                },
-                "42": {
-                    "line_number": "42",
-                    "en": "Skin Infection, Non-Fungal",
-                    "condition": "disease_diagnosis.diagnosis == 'Skin Infection, Non-Fungal'"
-                },
-                "43": {
-                    "line_number": "43",
-                    "en": "Skin Infection, Fungal",
-                    "condition": "disease_diagnosis.diagnosis == 'Skin Infection, Fungal'"
-                },
-                "44": {
-                    "line_number": "44",
-                    "en": "Skin Diseases, Non-infectious",
-                    "condition": "disease_diagnosis.diagnosis == 'Skin Diseases, Non-infectious'"
-                },
-                "45": {
-                    "line_number": "45",
-                    "en": "Fungal Infection, Non-skin",
-                    "condition": "disease_diagnosis.diagnosis == 'Fungal Infection, Non-skin'"
-                },
-                "46": {
-                    "line_number": "46",
-                    "en": "Osteomyelitis",
-                    "condition": "disease_diagnosis.diagnosis == 'Osteomyelitis'"
-                },
-                "47": {
-                    "line_number": "47",
-                    "en": "Neonatal sepsis",
-                    "condition": "disease_diagnosis.diagnosis == 'Neonatal sepsis'"
-                },
-                "48": {
-                    "line_number": "48",
-                    "en": "Low birth weight and Prematurity complications",
-                    "condition": "disease_diagnosis.diagnosis == 'Low birth weight and Prematurity complications'"
-                },
-                "49": {
-                    "line_number": "49",
-                    "en": "Birth asphyxia",
-                    "condition": "disease_diagnosis.diagnosis == 'Birth asphyxia'"
-                },
-                "50": {
-                    "line_number": "50",
-                    "en": "Acute Respiratory Infection (ARI)",
-                    "condition": "disease_diagnosis.diagnosis == 'Acute Respiratory Infection (ARI)'"
-                },
-                "51": {
-                    "line_number": "51",
-                    "en": "Pneumonia, Non-Severe",
-                    "condition": "disease_diagnosis.diagnosis == 'Pneumonia, Non-Severe'"
-                },
-                "52": {
-                    "line_number": "52",
-                    "en": "Cerebral palsy",
-                    "condition": "disease_diagnosis.diagnosis == 'Cerebral palsy'"
-                },
-                "53": {
-                    "line_number": "53",
-                    "en": "Pneumonia, Severe",
-                    "condition": "disease_diagnosis.diagnosis == 'Pneumonia, Severe'"
-                },
-                "54": {
-                    "line_number": "54",
-                    "en": "Upper Respiratory Infections (Pharyngitis, Tonsillitis, Rhinitis)",
-                    "condition": "disease_diagnosis.diagnosis == 'Upper Respiratory Infections (Pharyngitis, Tonsillitis, Rhinitis)'"
-                },
-                "55": {
-                    "line_number": "55",
-                    "en": "Urinary Tract Infections (UTI)",
-                    "condition": "disease_diagnosis.diagnosis == 'Urinary Tract Infections (UTI)'"
-                },
-                "56": {
-                    "line_number": "56",
-                    "en": "Gynaecological diseases, Other",
-                    "condition": "disease_diagnosis.diagnosis == 'Gynaecological diseases, Other'"
-                },
-                "57": {
-                    "line_number": "57",
-                    "en": "Kwashiokor",
-                    "condition": "disease_diagnosis.diagnosis == 'Kwashiokor'"
-                },
-                "58": {
-                    "line_number": "58",
-                    "en": "Marasmus",
-                    "condition": "disease_diagnosis.diagnosis == 'Marasmus'"
-                },
-                "59": {
-                    "line_number": "59",
-                    "en": "Marasmic Kwashiokor",
-                    "condition": "disease_diagnosis.diagnosis == 'Marasmic Kwashiokor'"
-                },
-                "60": {
-                    "line_number": "60",
-                    "en": "Moderate Malnutrition",
-                    "condition": "disease_diagnosis.diagnosis == 'Moderate Malnutrition'"
-                },
-                "61": {
-                    "line_number": "61",
-                    "en": "Vitamin A Deficiency",
-                    "condition": "disease_diagnosis.diagnosis == 'Vitamin A Deficiency'"
-                },
-                "62": {
-                    "line_number": "62",
-                    "en": "Other Nutritional Disorders",
-                    "condition": "disease_diagnosis.diagnosis == 'Other Nutritional Disorders'"
-                },
-                "63": {
-                    "line_number": "63",
-                    "en": "Caries",
-                    "condition": "disease_diagnosis.diagnosis == 'Caries'"
-                },
-                "64": {
-                    "line_number": "64",
-                    "en": "Periodontal Diseases",
-                    "condition": "disease_diagnosis.diagnosis == 'Periodontal Diseases'"
-                },
-                "65": {
-                    "line_number": "65",
-                    "en": "Dental Emergency Care",
-                    "condition": "disease_diagnosis.diagnosis == 'Dental Emergency Care'"
-                },
-                "66": {
-                    "line_number": "66",
-                    "en": "Dental Conditions, Other",
-                    "condition": "disease_diagnosis.diagnosis == 'Dental Conditions, Other'"
-                },
-                "67": {
-                    "line_number": "67",
-                    "en": "Fractures / Dislocations",
-                    "condition": "disease_diagnosis.diagnosis == 'Fractures / Dislocations'"
-                },
-                "68": {
-                    "line_number": "68",
-                    "en": "Burn",
-                    "condition": "disease_diagnosis.diagnosis == 'Burn'"
-                },
-                "69": {
-                    "line_number": "69",
-                    "en": "Poisoning",
-                    "condition": "disease_diagnosis.diagnosis == 'Poisoning'"
-                },
-                "70": {
-                    "line_number": "70",
-                    "en": "Road Traffic Accidents",
-                    "condition": "disease_diagnosis.diagnosis == 'Road Traffic Accidents'"
-                },
-                "71": {
-                    "line_number": "71",
-                    "en": "Pregnancy complications",
-                    "condition": "disease_diagnosis.diagnosis == 'Pregnancy complications'"
-                },
-                "72": {
-                    "line_number": "72",
-                    "en": "Abortion",
-                    "condition": "disease_diagnosis.diagnosis == 'Abortion'"
-                },
-                "73": {
-                    "line_number": "73",
-                    "en": "Snake and Insect Bites",
-                    "condition": "disease_diagnosis.diagnosis == 'Snake and Insect Bites'"
-                },
-                "74": {
-                    "line_number": "74",
-                    "en": "Emergencies, Other",
-                    "condition": "disease_diagnosis.diagnosis == 'Emergencies, Other'"
-                },
-                "75": {
-                    "line_number": "75",
-                    "en": "Surgical conditions, other",
-                    "condition": "disease_diagnosis.diagnosis == 'Surgical conditions, other'"
-                },
-                "76": {
-                    "line_number": "76",
-                    "en": "Epilepsy",
-                    "condition": "disease_diagnosis.diagnosis == 'Epilepsy'"
-                },
-                "77": {
-                    "line_number": "77",
-                    "en": "Psychoses",
-                    "condition": "disease_diagnosis.diagnosis == 'Psychoses'"
-                },
-                "78": {
-                    "line_number": "78",
-                    "en": "Neurosis",
-                    "condition": "disease_diagnosis.diagnosis == 'Neurosis'"
-                },
-                "79": {
-                    "line_number": "79",
-                    "en": "Mental conditions, Other",
-                    "condition": "disease_diagnosis.diagnosis == 'Mental conditions, Other'"
-                },
-                "80": {
-                    "line_number": "80",
-                    "en": "Hypertension",
-                    "condition": "disease_diagnosis.diagnosis == 'Hypertension'"
-                },
-                "81": {
-                    "line_number": "81",
-                    "en": "Rheumatic Fever",
-                    "condition": "disease_diagnosis.diagnosis == 'Rheumatic Fever'"
-                },
-                "82": {
-                    "line_number": "82",
-                    "en": "Cardiovascular Diseases, Other",
-                    "condition": "disease_diagnosis.diagnosis == 'Cardiovascular Diseases, Other'"
-                },
-                "83": {
-                    "line_number": "83",
-                    "en": "Bronchial Asthma",
-                    "condition": "disease_diagnosis.diagnosis == 'Bronchial Asthma'"
-                },
-                "84": {
-                    "line_number": "84",
-                    "en": "Peptic Ulcers",
-                    "condition": "disease_diagnosis.diagnosis == 'Peptic Ulcers'"
-                },
-                "85": {
-                    "line_number": "85",
-                    "en": "GIT Diseases, Other Non-infectious",
-                    "condition": "disease_diagnosis.diagnosis == 'GIT Diseases, Other Non-infectious'"
-                },
-                "86": {
-                    "line_number": "86",
-                    "en": "Diabetes Mellitus",
-                    "condition": "disease_diagnosis.diagnosis == 'Diabetes Mellitus'"
-                },
-                "87": {
-                    "line_number": "87",
-                    "en": "Rheumatoid and Joint Diseases",
-                    "condition": "disease_diagnosis.diagnosis == 'Rheumatoid and Joint Diseases'"
-                },
-                "88": {
-                    "line_number": "88",
-                    "en": "Thyroid Diseases",
-                    "condition": "disease_diagnosis.diagnosis == 'Thyroid Diseases'"
-                },
-                "89": {
-                    "line_number": "89",
-                    "en": "Neoplasms",
-                    "condition": "disease_diagnosis.diagnosis == 'Neoplasms'"
-                },
-                "90": {
-                    "line_number": "90",
-                    "en": "Ill Defined Symptoms (no Diagnosis)",
-                    "condition": "disease_diagnosis.diagnosis == 'Ill Defined Symptoms (no Diagnosis)'"
-                },
-                "91": {
-                    "line_number": "91",
-                    "en": "Diagnoses, Other",
-                    "condition": "disease_diagnosis.diagnosis == 'Diagnoses, Other'"
-                },
-                "92": {
-                    "line_number": "92",
-                    "en": "Waliopewa Rufaa",
-                    "condition": "disease_diagnosis.diagnosis == 'Waliopewa Rufaa'"
-                },
-                "": {
-                    "en": "Diagnoses for OPD",
-                    "sw": "Diagnoses za OPD"
-                },
-                "23a": {
-                    "line_number": "23a",
-                    "en": "Blood Slide positive",
-                    "condition": "disease_diagnosis.diagnosis == 'Blood Slide positive'"
-                },
-                "23b": {
-                    "line_number": "23b",
-                    "en": "mRDT postivie",
-                    "condition": "disease_diagnosis.diagnosis == 'mRDT postivie'"
-                },
-                "23c": {
-                    "line_number": "23c",
-                    "en": "Clinical (No Test)",
-                    "condition": "disease_diagnosis.diagnosis == 'Clinical (No Test)'"
-                },
-                "23d": {
-                    "line_number": "23d",
-                    "en": "In Pregnancy",
-                    "condition": "disease_diagnosis.diagnosis == 'In Pregnancy'"
-                },
-                "definitions": {
-                    "columns": {
-                        "lessthan1male": {
-                            "title": "Males",
-                            "condition": "FIXME && patient.gender == 'male'"
-                        },
-                        "lessthan1female": {
-                            "title": "Less than 1 Month - Females",
-                            "condition": "FIXME && patient.gender == 'female'"
-                        },
-                        "lessthan1total": {
-                            "title": "Less than 1 Month - Total",
-                            "condition": "FIXME"
-                        },
-                        "more1momale": {
-                            "title": "More than 1 month and less than 1 Year - Male",
-                            "condition": "FIXME && patient.gender == 'male'"
-                        },
-                        "more1mofemale": {
-                            "title": "More than 1 month and less than 1 Year - Females",
-                            "condition": "FIXME && patient.gender == 'female'"
-                        },
-                        "more1mototal": {
-                            "title": "More than 1 month and less than 1 Year - Total",
-                            "condition": "FIXME "
-                        },
-                        "above1below5male": {
-                            "title": "More than 1 year and less than 5 Years - Male",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'male'"
-                        },
-                        "above1below5female": {
-                            "title": "More than 1 year and less than 5 Years - Females",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5 && patient.gender == 'female'"
-                        },
-                        "above1below5total": {
-                            "title": "More than 1 year and less than 5 Years - Total",
-                            "condition": "patient.approxage > 1 && patient.approxage < 5"
-                        }
-                    }
-                }
-            }
-        },
         "report_ordervaccine": {
             "title": "Order of vaccines, diluants and infection material form",
             "type": "object",
@@ -7021,284 +4467,6 @@ exports.reports = function () {
                         "en": "Number",
                         "title": "Number",
                         "condition": "true"
-                    }
-                }
-            }
-        },
-        "report_postnatal": {
-            "collection": "reports",
-            "class": "schema",
-            "_id": "reports/schema/postnatal",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "title": "Report Postnatal",
-            "type": "object",
-            "properties": {
-                "attendees_within_24_hours": {
-                    "line_number": "12a",
-                    "sw": "Waliohudhuria Ndani ya saa 24",
-                    "en": "Attendees Within 24 hours",
-                    "condition": "patient.age < 1 && postnatal.days_postpartum <= 1"
-                },
-                "attendess_between_2_and_7_days": {
-                    "line_number": "1b",
-                    "sw": "Waliohudhuria kati ya siku ya 2-7",
-                    "en": "Attendees between 2-7 days",
-                    "condition": "patient.age > 1 && postnatal.days_postpartum >= 2 && postnatal.days_postpartum <= 7"
-                },
-                "total_attendees_within_7_days": {
-                    "line_number": "1c",
-                    "sw": "Jumla Waliohudhuria ndani ya siku 7 (la+lb)",
-                    "en": "Total attendees within 7 days",
-                    "condition": "patient.age > 1 && postnatal.days_postpartum <= 7"
-                },
-                "those_who_finished_all_visits_24_hours_days_2_and_7_day_28_day_42": {
-                    "line_number": "2a",
-                    "sw": "Waliomaliza mahudhurio yote (saa 24, siku 2-7, siku 28, siku 42)",
-                    "en": "Those who finished all visits (24 hours, days 2-7, day 28, day 42)",
-                    "condition": "FIXME"
-                },
-                "those_with_severe_anema": {
-                    "line_number": "3",
-                    "sw": "Wenye upungufu mkubwa wa damu (Hb < 8.5 g/dl)",
-                    "en": "Those with severe anemia (Hb <8.5 g / dl)",
-                    "condition": "postnatal.anemia_severe == '<8.5g/dl'"
-                },
-                "those_with_mental_disorder": {
-                    "line_number": "4",
-                    "sw": "Waliopata matatizo ya akili",
-                    "en": "Those with mental disorder",
-                    "condition": "postnatal.maternal_diagnoses == 'mental disorder'"
-                },
-                "those_given_vita": {
-                    "line_number": "5",
-                    "sw": "Waliopata Vit.A",
-                    "en": "Those given Vit.A",
-                    "condition": "postnatal.given_vitamina"
-                },
-                "those_with_gaping_or_infected_perineum": {
-                    "line_number": "6",
-                    "sw": "Wenye msamba ulioambukizwa/Ulioachia",
-                    "en": "Those with gaping or infected perineum",
-                    "condition": "postnatal.maternal_diagnoses == 'gaping or infected perineum'"
-                },
-                "those_with_fistula": {
-                    "line_number": "7",
-                    "sw": "Wenyc fistula",
-                    "en": "Those with fistula",
-                    "condition": "postnatal.maternal_diagnoses == 'fistula'"
-                },
-                "those_who_delivered_outside_the_health_centre_bba_tba_home_etc": {
-                    "line_number": "8",
-                    "sw": "Waliojifungulia Nje ya kituo cha kutoa huduma za Afya (BBA,TBA, Nyumbani etc)",
-                    "en": "Those who delivered outside the Health Centre(BBA, TBA, Home etc)",
-                    "condition": "postnatal.delivered_outside"
-                },
-                "number_of_those_who_delivered_at_home": {
-                    "line_number": "9",
-                    "sw": "Idadi ya waliojifungulia nyumbani",
-                    "en": "number of those who delivered at home",
-                    "condition": "postnatal.delivered_outside == false"
-                },
-                "family_planning": {
-                    "line_number": "10",
-                    "sw": "Uzazi wa Mpango",
-                    "en": "family planning"
-                },
-                "ones_who_received_counseling": {
-                    "line_number": "10a",
-                    "sw": "Waliopata ushauri nasaha",
-                    "en": "Those who received counseling",
-                    "condition": "postnatal.family_planning_counseling"
-                },
-                "those_received_methods_of_family_planning": {
-                    "line_number": "10b",
-                    "sw": "Waliopata njia za Uzazi wa Mpango",
-                    "en": "Those who received methods of family planning",
-                    "condition": "postnatal.family_planning_method_after_delivery"
-                },
-                "those_received_family_planning_methods_after_miscarriage": {
-                    "line_number": "10c",
-                    "sw": "Waliopata njia za Uzazi wa mpango baada ya mimba kuharibika",
-                    "en": "Those who received family planning methods after miscarriage",
-                    "condition": "postnatal.family_planning_method_after_miscarriage"
-                },
-                "those_who_used_methods_of_contraception_within_40_days_after_delivery": {
-                    "line_number": "10d",
-                    "sw": "Waliopata njia za uzazi wa mpango kwenye arobaini ya uzazi",
-                    "en": "Those who used methods of contraception within 40 days after delivery",
-                    "condition": "postnatal.contraception_within_40_days"
-                },
-                "ptmct": {
-                    "line_number": "11",
-                    "sw": "PTMCT",
-                    "en": "PTMCT"
-                },
-                "that_came_as_positive_during_postnatal": {
-                    "line_number": "11a",
-                    "sw": "Waliokuja postnata wakiwa positive",
-                    "en": "That came as positive during postnatal",
-                    "condition": "postnatal.postnatal_hiv_positive"
-                },
-                "those_tested_for_hiv_during_postnatal_within_42_days_from_delivery": {
-                    "line_number": "11b",
-                    "sw": "Waliopima VVU wakati wa postnatal (ndani ya siku 42 tangu kujifungua)",
-                    "en": "Those tested for HIV during postnatal (within 42 days from delivery)",
-                    "condition": "postnatal.days_postpartum < 42 && postnatal.postnatal_hiv_test"
-                },
-                "those_who_were_found_hiv_positive_during_postnatal_within_42_days_from_delivery": {
-                    "line_number": "11c",
-                    "sw": "Waliogundulika wana VVU wakati wa postnatal (ndani ya siku 42 tangu kujifungua)",
-                    "en": "Those who were found HIV positive during postnatal (within 42 days from delivery)",
-                    "condition": "postnatal.days_postpartum < 42 && postnatal.postnatal_hiv_positive"
-                },
-                "people_with_hiv_who_chose_to_breastfeed_exclusively_breastfed_ebf": {
-                    "line_number": "11d",
-                    "sw": "Wenye VVU waliochagua kunyonyesha maziwa ya mama pekee (EBF)",
-                    "en": "People with HIV who chose to breastfeed exclusively breastfed ( EBF )",
-                    "condition": "postnatal.postnatal_hiv_positive && postnatal.milk_type == 'Mother's Milk ONLY'"
-                },
-                "people_with_hiv_who_chose_to_use_milk_substitute_rf": {
-                    "line_number": "11e",
-                    "sw": "Wenye VVU waliochagua kunywesha maziwa mbadala (RF)",
-                    "en": "People with HIV who chose to use milk substitute ( RF )",
-                    "condition": "postnatal.postnatal_hiv_positive && postnatal.milk_type != 'Mother's Milk ONLY'"
-                },
-                "child": {
-                    "line_number": "12",
-                    "sw": "MTOTO",
-                    "en": "CHILD"
-                },
-                "attendees_between_2_and_7_days": {
-                    "line_number": "12b",
-                    "sw": "Waliohudhuria kati ya siku ya 2-7",
-                    "en": "Attendees between 2-7 days",
-                    "condition": "patient.age < 1 && postnatal.days_postpartum >= 2 && postnatal.days_postpartum <= 7"
-                },
-                "attendees_total_within_7_days": {
-                    "line_number": "12c",
-                    "sw": "Jumla Waliohudhuria ndani ya siku 7 (la+lb)",
-                    "en": "Attendees total within 7 days (la + lb )",
-                    "condition": "patient.age < 1 && postnatal.days_postpartum <= 7"
-                },
-                "those_who_finished_all_visits": {
-                    "line_number": "12d",
-                    "sw": "Waliomaliza mahudhurio yote (saa 24, siku 2-7, siku 28, siku 42)",
-                    "en": "Those who finished  all visits (24 hours , days 2-7 , day 28, day 42 )",
-                    "condition": "FIXME"
-                },
-                "child_services": {
-                    "line_number": "13",
-                    "sw": "HUDUMA KWA MTOTO",
-                    "en": "CHILD SERVICES"
-                },
-                "number_of_children_who_received_bcg": {
-                    "line_number": "13a",
-                    "sw": "Idadi ya watoto waliopewa BCG",
-                    "en": "Number of children who received BCG",
-                    "condition": "postnatal.bcg_opv == 'bcg'"
-                },
-                "number_of_children_who_received_opv_0": {
-                    "line_number": "13b",
-                    "sw": "Idadi ya watoto waliopewa OPV 0",
-                    "en": "Number of children who received OPV 0",
-                    "condition": "postnatal.bcg_opv == 'opv-0'"
-                },
-                "the_number_of_children_born_with_a_low_weight_were_given_kmc": {
-                    "line_number": "13c",
-                    "sw": "Idadi ya watoto waliozaliwa na uzito wa < 2.5kg wakapatiwa KMC",
-                    "en": "The number of children born with a weight of < 2.5 kg were given KMC",
-                    "condition": "FIXME"
-                },
-                "number_of_children_at_home_under_the_born_low_weight": {
-                    "line_number": "13d",
-                    "sw": "Idadi ya watoto walozaliwa nyumbani chini ya 2.5kg",
-                    "en": "Number of children at home under the born 2.5kg",
-                    "condition": "postnatal.delivered_outside && postnatal.less_than_2.5kg"
-                },
-                "number_of_babies_born_at_home_were_started_on_kangaroo_care_kmc": {
-                    "line_number": "13e",
-                    "sw": "Idadi ya watoto waliozaliwa nyumbani walioanzishiwa huduma ya kangaroo (KMC)",
-                    "en": "Number of babies born at home were started on kangaroo care ( KMC )",
-                    "condition": "postnatal.delivered_outside && postnatal.kangaroo_care"
-                },
-                "with_severe_anemia": {
-                    "line_number": "13f",
-                    "sw": "Wenye upungufu mkubwa wa damu (Hb < 10 g/dl au viganja vyeupe sana)",
-                    "en": "With severe anemia ( Hb < 10 g / dl or very white hands )",
-                    "condition": "patient.age < 1 && postnatal.anemia_severe == '<8.5g/dl'"
-                },
-                "infections_of_the_child": {
-                    "line_number": "14",
-                    "sw": "UAMBUKIZO WA MTOTO",
-                    "en": "INFECTIONS OF THE CHILD"
-                },
-                "children_with_severe_infections_septicaemia": {
-                    "line_number": "14a",
-                    "sw": "Watoto wenye uambukizo mkali (septicaemia)",
-                    "en": "Children with severe infections ( septicemia )",
-                    "condition": "postnatal.child_diagnoses == 'septicemia'"
-                },
-                "children_with_umbilical_cord_infection": {
-                    "line_number": "14b",
-                    "sw": "Watoto wenye uambukizo kwenye kitovu",
-                    "en": "Children with umbilical cord infection",
-                    "condition": "postnatal.child_diagnoses == 'umbilical cord infection'"
-                },
-                "children_with_skin_infection": {
-                    "line_number": "14c",
-                    "sw": "Watoto wenye uambukizo kwenye ngozi",
-                    "en": "Children with skin infection",
-                    "condition": "postnatal.child_diagnoses == 'skin infection'"
-                },
-                "deaths_of_infants_born_at_home_prenatal_and_neonatal": {
-                    "line_number": "15",
-                    "sw": "Vifo vya watoto wachanga waliozaliwa nyumbani (perinatal); neonatal",
-                    "en": "Deaths of infants born at home ( perinatal ) , neonatal",
-                    "condition": "postnatal.delivered_outside && postnatal.child_diagnoses == 'neonatal death'"
-                },
-                "those_received_methods_of_family_planning_after_miscarriage": {
-                    "line_number": "16",
-                    "sw": "Waliopata njia za Uzazi wa mpango baada ya mimba kuharibika",
-                    "en": "Those received methods of Family Planning after miscarriage",
-                    "condition": "postnatal.family_planning_method_after_delivery"
-                },
-                "infant_feeding": {
-                    "line_number": "17",
-                    "sw": "ULISHAJI WA MTOTO",
-                    "en": "INFANT FEEDING"
-                },
-                "infants_who_are_breastfed_exclusively_breastfed_ebf": {
-                    "line_number": "17a",
-                    "sw": "Watoto wachanga wanaonyonya maziwa ya mama pekee (EBF)",
-                    "en": "Infants who are breastfed exclusively breastfed ( EBF )",
-                    "condition": "postnatal.milk_type == 'Mother's Milk ONLY'"
-                },
-                "infants_who_drik_milk_substitute_rf": {
-                    "line_number": "17b",
-                    "sw": "Watoto wachanga wanaonyweshwa maziwa mbadala (RF)",
-                    "en": "Infants who drink milk substitute ( RF )",
-                    "condition": "postnatal.milk_type != 'Mother's Milk ONLY' && postnatal.milk_type != 'Mother's Milk + Other'"
-                },
-                "infants_who_drink_breast_milk_and_other_food_access_mf": {
-                    "line_number": "17c",
-                    "sw": "Watoto wachanga wanaonyweshwa maziwa ya mama na kupatiwa chakula kingine (MF)",
-                    "en": "Infants who drink breast milk and other food access ( MF )",
-                    "condition": "postnatal.milk_type == 'Mother's Milk + Other'"
-                },
-                "definitions": {
-                    "columns": {
-                        "below20": {
-                            "title": "Below 20 years old",
-                            "condition": "patient.approxage < 20"
-                        },
-                        "above20": {
-                            "title": "Above 20 years old",
-                            "condition": "patient.approxage >= 20"
-                        },
-                        "total": {
-                            "title": "Total",
-                            "condition": "true"
-                        }
                     }
                 }
             }
@@ -11280,7 +8448,9 @@ exports.reports = function () {
             "parent": "report_resources"
         },
         "report_screening_1": {
-            "title": "2.1 SCREENING",
+            "title": "2.1 Screening",
+            "en": "2.1 Screening",
+            "fr": "2.1 Consultations",
             "type": "object",
             "properties": {
                 "new_cases": {
@@ -11296,39 +8466,39 @@ exports.reports = function () {
                         "fr": "AS",
                         "en": "AS",
                         "title": "AS",
-                        "condition": "true"
+                        "condition": "patient.current_age_years < 5 && area_zone === 'ha'"
                     },
                     "under_5_years_has": {
                         "fr": "HAS",
                         "en": "HAS",
                         "title": "HAS",
-                        "condition": "true"
+                        "condition": "patient.current_age_years < 5 && area_zone === 'oa'"
                     },
                     "under_5_years_hz": {
                         "fr": "HZ",
                         "en": "HZ",
                         "title": "HZ",
-                        "condition": "true"
+                        "condition": "patient.current_age_years < 5 && area_zone === 'oz'"
                     },
                     "above_5_years_as": {
                         "fr": "AS",
                         "en": "AS",
                         "title": "AS",
-                        "condition": "true"
+                        "condition": "(patient.current_age_years >= 5 || patient.current_age_years === undefined) && area_zone === 'ha'"
                     },
                     "above_5_years_has": {
                         "fr": "HAS",
                         "en": "HAS",
                         "title": "HAS",
-                        "condition": "true"
+                        "condition": "(patient.current_age_years >= 5 || patient.current_age_years === undefined) && area_zone === 'oa'"
                     },
                     "above_5_years_hz": {
                         "fr": "HZ",
                         "en": "HZ",
                         "title": "HZ",
-                        "condition": "true"
+                        "condition": "(patient.current_age_years >= 5 || patient.current_age_years === undefined)  && area_zone === 'oz'"
                     },
-                    "above_5_years_total": {
+                    "total": {
                         "fr": "Total",
                         "en": "Total",
                         "title": "Total",
@@ -11336,35 +8506,38 @@ exports.reports = function () {
                     }
                 }
             },
-            "parent": "report_screening"
+            "parent": "report_screening",
+            "overrides": {
+                "thead_prefix": "<tr><th></th><th></th><th></th><th colspan=\"3\">&lt; 5 ans</th><th colspan=\"3\">&gt; 5 ans</th><th></th></tr>"
+            }
         },
         "report_screening_2": {
-            "title": "2.1 SCREENING(table1)",
+            "title": "",
             "type": "object",
             "properties": {
                 "including_new_patients": {
                     "line_number": "1",
                     "fr": "Dont nouveaux patients",
                     "en": "Including New Patients",
-                    "condition": "true"
+                    "condition": "(patient.current_created_months == 0)"
                 },
                 "including_night_health_attendants": {
                     "line_number": "2",
                     "fr": "Dont adhérents de mut. de santé",
                     "en": "including night health attendants",
-                    "condition": "true"
+                    "condition": "(date_created.split('T')[1].split(':')[0] < 9) || (date_created.split('T')[1].split(':')[0] > 17)"
                 },
                 "old_cases": {
                     "line_number": "3",
                     "fr": "Anciens cas",
                     "en": "Old cases",
-                    "condition": "true"
+                    "condition": "(follow_up !== undefined)"
                 },
                 "including_oldcases_contr_refered": {
                     "line_number": "4",
                     "fr": "Dont anciens cas contre-référés",
-                    "en": "Including oldcases contr- refered",
-                    "condition": "true"
+                    "en": "Including old cases counter-referred",
+                    "condition": "(counter_referred !== undefined)"
                 }
             },
             "definitions": {
@@ -11373,19 +8546,19 @@ exports.reports = function () {
                         "fr": "AS",
                         "en": "AS",
                         "title": "AS",
-                        "condition": "true"
+                        "condition": "area_zone === 'ha'"
                     },
                     "has": {
                         "fr": "HAS",
                         "en": "HAS",
                         "title": "HAS",
-                        "condition": "true"
+                        "condition": "area_zone === 'oa'"
                     },
                     "hz": {
                         "fr": "HZ",
                         "en": "HZ",
                         "title": "HZ",
-                        "condition": "true"
+                        "condition": "area_zone === 'oz'"
                     },
                     "total": {
                         "fr": "Total",
@@ -11398,71 +8571,50 @@ exports.reports = function () {
             "parent": "report_screening"
         },
         "report_screening_3": {
-            "title": "2.1 SCREENING(table2)",
+            "title": "",
             "type": "object",
             "properties": {
                 "refered_to_the_general_hospital": {
                     "line_number": "1",
                     "fr": "Référés vers HGR",
                     "en": "Refered to the General Hospital",
-                    "condition": "true"
+                    "condition": "subforms.* && subforms.*.referred_to_location === 'general_hospital'"
                 },
                 "refered_by_community_health_workers": {
                     "line_number": "2",
                     "fr": "Référés par les RECO",
                     "en": "Refered by Community Health Workers",
-                    "condition": "true"
+                    "condition": "subforms.* && subforms.*.referred_to_location === 'community_health_workers'"
                 },
                 "new_feminin_cases": {
                     "line_number": "3",
                     "fr": "Nouveaux cas féminins",
                     "en": "New feminin cases",
-                    "condition": "true"
+                    "condition": "patient.gender === 'female'"
                 },
                 "including_pw": {
                     "line_number": "4",
                     "fr": "Dont Femmes enceintes",
                     "en": "Including PW",
-                    "condition": "true"
+                    "condition": "(subforms.hiv_counseling_mother || subforms.anc_first_visit || subforms.anc_followup || subforms.hiv_pregnancy_clinic) || (subforms.immunization && subforms.immunization.pregnant === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.pregnant === 'yes')"
                 },
                 "indigents": {
                     "line_number": "5",
                     "fr": "Indigents",
                     "en": "Indigents",
-                    "condition": "true"
+                    "condition": "indigent === 'yes'"
                 },
                 "follow_ups_in_observation": {
                     "line_number": "6",
                     "fr": "Suivi en observation",
                     "en": "Follow ups in observation",
-                    "condition": "true"
+                    "condition": "subforms.* && subforms.*.follow_up_recommended === 'yes'"
                 },
                 "children_under_5_deaths": {
                     "line_number": "7",
                     "fr": "Décés enfants <5 ans",
                     "en": "Children under 5 deaths",
-                    "condition": "true"
-                },
-                "targeted_population": {
-                    "line_number": "8",
-                    "line": "singlecell",
-                    "fr": "Population cible = population du mois",
-                    "en": "Targeted population = Monthly popualtion",
-                    "condition": "true"
-                },
-                "total_consultation": {
-                    "line_number": "9",
-                    "line": "singlecell",
-                    "fr": "Total Consultations (c+d)",
-                    "en": "Total consultation (c+d)",
-                    "condition": "true"
-                },
-                "curatif_used_rate": {
-                    "line_number": "10",
-                    "line": "singlecell",
-                    "fr": "Taux d’utilisation du curatif = Total Nouveaux Cas AS (a+b) x 100 / pop du mois",
-                    "en": "Curatif used rate = total new case AS(a+b)X100/monthly population",
-                    "condition": "true"
+                    "condition": "((patient.current_age_years < 5) && ( subforms.disease_diagnosis && subforms.disease_diagnosis.disease_mortality === 'yes')) || (subforms.postnatal && subforms.postnatal.child_diagnoses === 'neonatal_death')"
                 }
             },
             "definitions": {
@@ -11476,6 +8628,60 @@ exports.reports = function () {
                 }
             },
             "parent": "report_screening"
+        },
+        "report_screening_4": {
+            "title": "",
+            "type": "object",
+            "properties": {
+                "targeted_population": {
+                    "line_number": "1",
+                    "fr": "Population cible = population du mois",
+                    "en": "Targeted population = Monthly population",
+                    "condition": "false"
+                },
+                "total_consultation": {
+                    "line_number": "2",
+                    "fr": "Total Consultations (c+d)",
+                    "en": "Total consultation (c+d)",
+                    "condition": "false"
+                },
+                "curatif_used_rate": {
+                    "line_number": "3",
+                    "fr": "Taux d’utilisation du curatif = Total Nouveaux Cas AS (a+b) x 100 / pop du mois",
+                    "en": "Curatif used rate = total new case AS(a+b)X100/monthly population",
+                    "condition": "false"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "number": {
+                        "fr": "Nombre",
+                        "en": "Number",
+                        "title": "Number",
+                        "condition": "true"
+                    }
+                }
+            },
+            "parent": "report_screening",
+            "overrides": {
+                "predefined": [
+                    {
+                        "row": "targeted_population",
+                        "col": "number",
+                        "value": ""
+                    },
+                    {
+                        "row": "total_consultation",
+                        "col": "number",
+                        "value": ""
+                    },
+                    {
+                        "row": "curatif_used_rate",
+                        "col": "number",
+                        "value": ""
+                    }
+                ]
+            }
         },
         "report_summary": {
             "title": "10. Summary  of the use of serivces",
@@ -11688,123 +8894,125 @@ exports.reports = function () {
         },
         "report_svv": {
             "title": "Monthly Canvas - 2.2 Consultation of sexual violence survivors",
+            "en": "Monthly Canvas - 2.2 Consultation of sexual violence survivors",
+            "fr": "Consultations survivants des violences sexuelles",
             "type": "object",
             "properties": {
                 "new_cases_and_svs": {
                     "line_number": "1",
                     "fr": "Nouveaux cas SVS",
                     "en": "New cases and SVS",
-                    "condition": "true"
+                    "condition": "(subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes') || (subforms.sexual_violence_record) && (!(follow_up === 'yes' && subforms.sexual_violence_record))"
                 },
                 "including_those_seen_within_72 hours": {
                     "line_number": "1a",
                     "fr": "Dont vu dans 72 heures",
                     "en": "Including those seen within 72 hours",
-                    "condition": "true"
+                    "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.current_incident_days <= 3)"
                 },
                 "including_feminines": {
                     "line_number": "1b",
                     "fr": "Dont f�minins",
                     "en": "Including feminines",
-                    "condition": "true"
+                    "condition": "patient.gender === 'female' && (subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes') || (subforms.sexual_violence_record) && (!(follow_up === 'yes' && subforms.sexual_violence_record))"
                 },
                 "old_cases_svs": {
                     "line_number": "2",
                     "fr": "Anciens cas SVS",
                     "en": "Old cases SVS",
-                    "condition": "true"
+                    "condition": "(follow_up === 'yes' && subforms.sexual_violence_record)"
                 },
                 "including_those_contre_refered": {
                     "line_number": "2a",
                     "fr": "Dont contre-r�f�r�s",
                     "en": "Including those contre-refered",
-                    "condition": "true"
+                    "condition": "counter_referred && subforms.sexual_violence_record"
                 },
-                "svs_refered_to_pshyco_social": {
+                "svs_refered_to_psycho_social": {
                     "line_number": "3",
                     "fr": "SVS R�f�r�s psycho-social",
-                    "en": "SVS refered to pshyco-social",
-                    "condition": "true"
+                    "en": "SVS refered to psycho-social",
+                    "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'psycho_social'"
                 },
                 "svs_refered_to_justice": {
                     "line_number": "4",
                     "fr": "SVS R�f�r�s juridique",
                     "en": "SVS refered to justice",
-                    "condition": "true"
+                    "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'judicial'"
                 },
                 "svs_refered_to_socio_economic_reintegration": {
                     "line_number": "5",
                     "fr": "SVS R�f�r�s � la r�insertion socio-�conomique",
                     "en": "SVS refered to socio economic reintegration",
-                    "condition": "true"
+                    "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'socio_economic'"
                 },
                 "svs_refered_to_the_general_hospital": {
                     "line_number": "6",
                     "fr": "SVS R�f�r�s vers HGR",
                     "en": "SVS refered to the General Hospital",
-                    "condition": "true"
+                    "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'general_hospital'"
                 },
                 "svs_who_have_received_medical_pec": {
                     "line_number": "7",
                     "fr": "SVS ayant recu une PEC m�dicale (M�d ou Inf)",
                     "en": "SVS who have received medical PEC",
-                    "condition": "true"
+                    "condition": "(subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes' && subforms.disease_diagnosis.admission === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes' && subforms.reproductive_counseling.admission === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes' && subforms.bodily_injury.admission === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes' && subforms.ctc_record.admission === 'yes')"
                 },
                 "svs_who_have_received_pep_kit_within_72_hours": {
                     "line_number": "8",
                     "fr": "SVS ayant recu le kit PEP � 72 h",
                     "en": "SVS who have received PEP kit within 72 hours",
-                    "condition": "true"
+                    "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_pep_kit_72h === 'yes'"
                 },
                 "svs_who_have_received_pep_kit_after_72_hours": {
                     "line_number": "9",
                     "fr": "SVS ayant recu le kit PEP apr�s 72h",
                     "en": "SVS who have received PEP kit after 72 hours",
-                    "condition": "true"
+                    "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_pep_kit === 'yes' && subforms.sexual_violence_record.received_pep_kit_72h === 'no'"
                 },
                 "svs_who_have_received_emergency_contraceptive": {
                     "line_number": "10",
                     "fr": "SVS ayant recu la Contraception d'Urgence",
                     "en": "SVS who have received emergency contraceptive",
-                    "condition": "true"
+                    "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_emergency_contraception === 'yes'"
                 },
                 "svs_hiv_tested": {
                     "line_number": "11",
                     "fr": "SVS test�s pour le VIH",
                     "en": "SVS HIV tested",
-                    "condition": "true"
+                    "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_tested === 'yes'"
                 },
                 "svs_hiv_plus_tested": {
                     "line_number": "12",
                     "fr": "SVS test�s VIH+",
                     "en": "SVS HIV + tested",
-                    "condition": "true"
+                    "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_positive_test === 'yes'"
                 },
                 "urogenital_fistula_post_violence_dignostic": {
                     "line_number": "13",
-                    "fr": "Fistules urog�nitales post viol diagnost",
-                    "en": "Urogenital fistula post violence dignostic",
-                    "condition": "true"
+                    "fr": "Fistules urog�nitales post viol diagnostic",
+                    "en": "Urogenital fistula post rape dignostic",
+                    "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.urogenital_fistula_post_rape === 'yes'"
                 },
                 "refered_urogenital_fistula_post_violence_dignostic": {
                     "line_number": "14",
                     "fr": "Fistules urog�nitales post viol diagnost. et r�f�r�es",
                     "en": "Refered Urogenital fistula post violence dignostic",
-                    "condition": "true"
+                    "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.urogenital_fistula_post_rape === 'yes') && (subforms.sexual_violence_record.referred_to_location === 'general_hospital')"
                 },
                 "total_consultation": {
                     "line_number": "15",
                     "line": "singlecell",
                     "fr": "Total Consultations SVS (a+b)",
                     "en": "Total consultation SVS (a+b)",
-                    "condition": "true"
+                    "condition": "((subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes') || (subforms.sexual_violence_record)) || (follow_up === 'yes' && subforms.sexual_violence_record)"
                 },
-                "total_new_cases": {
+                "rate_new_cases_72h": {
                     "line_number": "16",
                     "line": "singlecell",
                     "fr": "% de SVS vu dans � 72h = Total Nouveaux Cas vus dans � 72h x 100 /Tot Nouveaux Cas SVS",
                     "en": "Rate of SVS seen within 72 hrs  = Total New cases seen X 100/total SVS NC",
-                    "condition": "true"
+                    "condition": "false"
                 }
             },
             "definitions": {
@@ -11816,6 +9024,15 @@ exports.reports = function () {
                         "condition": "true"
                     }
                 }
+            },
+            "overrides": {
+                "predefined": [
+                    {
+                        "row": "rate_new_cases_72h",
+                        "col": "number",
+                        "value": ""
+                    }
+                ]
             }
         },
         "report_vaccination": {
