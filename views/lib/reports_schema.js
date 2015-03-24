@@ -8,7 +8,7 @@ exports.reports = function () {
             "properties": {
                 "antenatal_clinic_visit_1": {
                     "line_number": "1",
-                    "fr": "Nouveaux cas SVSVisites CPN 1",
+                    "fr": "Visites CPN 1",
                     "en": "Antenatal Clinic visit 1",
                     "condition": "true"
                 },
@@ -882,506 +882,435 @@ exports.reports = function () {
             },
             "parent": "report_community"
         },
-        "report_diagnosis_1": {
-            "title": "2.8: Diagnosis and enf of cases put in observation",
+        "report_diagnosis": {
+            "title": "2.8: Diagnosis and end of cases put in observation",
             "type": "object",
             "properties": {
                 "accident_celebro_vascular": {
                     "line_number": "1",
                     "fr": "Accident vasculo-céérebral (AVC)",
                     "en": "Accident Celebro - vascular",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "work_accident": {
                     "line_number": "2",
                     "fr": "Accidents de travail",
                     "en": "Work accident",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "amibiasis": {
                     "line_number": "3",
                     "fr": "Amibiase",
                     "en": "Amibiasis",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "anemia": {
                     "line_number": "4",
                     "fr": "Anémie",
                     "en": "Anemia",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "burns": {
                     "line_number": "5",
                     "fr": "?",
                     "en": "Burns",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "ceivix_cancer": {
                     "line_number": "6",
                     "fr": "?",
                     "en": "Ceivix cancer",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "prostate_cancer": {
                     "line_number": "7",
                     "fr": "?",
                     "en": "Prostate cancer",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "breast_cancer": {
                     "line_number": "8",
                     "fr": "?",
                     "en": "Breast cancer",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "dental_carris": {
                     "line_number": "9",
                     "fr": "?",
                     "en": "Dental carris",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "cataracte": {
                     "line_number": "10",
                     "fr": "?",
                     "en": "Cataracte",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "cholera": {
                     "line_number": "11",
                     "fr": "Choléra",
                     "en": "Cholera",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "conjoctivitis": {
                     "line_number": "12",
                     "fr": "?",
                     "en": "Conjoctivitis",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "whooping_cough_of_non_vaccinated_patients": {
                     "line_number": "13",
                     "fr": "Coqueluche patient non vacciné",
                     "en": "Whooping cough of non vaccinated patients",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "whooping_cough_of_vaccinated_patients": {
                     "line_number": "14",
                     "fr": "Coqueluche patient vacciné",
                     "en": "Whooping cough of  vaccinated patients",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "depression": {
                     "line_number": "15",
                     "fr": "?",
                     "en": "Depression",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "diabetitis": {
                     "line_number": "16",
                     "fr": "Diabète",
                     "en": "Diabetitis",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "bloody_diarrhea": {
                     "line_number": "17",
                     "fr": "Diarrhée sanglante",
                     "en": "Bloody diarrhea",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "simple_diarrhea": {
                     "line_number": "18",
                     "fr": "Diarrhée simple",
                     "en": "Simple diarrhea",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "drepanocytosis": {
                     "line_number": "19",
                     "fr": "Drépanocytose",
                     "en": "Drepanocytosis",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "epilepsy_convulsion_crisis": {
                     "line_number": "20",
                     "fr": "Epilepsie",
                     "en": "Epilepsy/ convulsion crisis",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "viral_heomrrhage_fever": {
                     "line_number": "21",
                     "fr": "Fièvre hémorragique",
                     "en": "Viral Heomrrhage Fever",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "yellow_fever": {
                     "line_number": "22",
                     "fr": "?",
                     "en": "Yellow Fever",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "typhoid_fever": {
                     "line_number": "23",
                     "fr": "?",
                     "en": "Typhoid Fever",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "glaucome": {
                     "line_number": "24",
                     "fr": "?",
                     "en": "Glaucome",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "goiter": {
                     "line_number": "25",
                     "fr": "?",
                     "en": "Goiter",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "bird_flu": {
                     "line_number": "26",
                     "fr": "?",
                     "en": "Bird flu",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "hepatitis": {
                     "line_number": "27",
                     "fr": "?",
                     "en": "Hepatitis",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "hernia": {
                     "line_number": "28",
                     "fr": "?",
                     "en": "Hernia",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "high_blood_pressure": {
                     "line_number": "29",
                     "fr": "?",
                     "en": "High Blood Pressure",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "related_work_accident_incapacities": {
                     "line_number": "30",
                     "fr": "?",
                     "en": "Related work accident incapacities",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "skin_related_infections": {
                     "line_number": "31",
                     "fr": "?",
                     "en": "Skin related Infections",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "urinary_related_infections": {
                     "line_number": "32",
                     "fr": "?",
                     "en": "Urinary related infections",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "indigenious_product_related_to_intoxication": {
                     "line_number": "33",
                     "fr": "?",
                     "en": "Indigenious product related to intoxication",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "pneumonia": {
                     "line_number": "34",
                     "fr": "?",
                     "en": "Pneumonia",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "high_respiratory_infection_syndrom_grippal_cold": {
                     "line_number": "35",
                     "fr": "?",
                     "en": "High Respiratory Infection (syndrom grippal/cold)",
-                    "condition": "true"
-                }
-            },
-            "definitions": {
-                "columns": {
-                    "0_11_months_cases": {
-                        "fr": "Cas",
-                        "en": "Cases",
-                        "title": "Cases",
-                        "condition": "true"
-                    },
-                    "0_11_months_deaths": {
-                        "fr": "DcD",
-                        "en": "Deaths",
-                        "title": "Deaths",
-                        "condition": "true"
-                    },
-                    "12_59_months_cases": {
-                        "fr": "Cas",
-                        "en": "Cases",
-                        "title": "Cases",
-                        "condition": "true"
-                    },
-                    "12_59_months_deaths": {
-                        "fr": "DcD",
-                        "en": "Deaths",
-                        "title": "Deaths",
-                        "condition": "true"
-                    },
-                    "5_14_yrs_cases": {
-                        "fr": "Cas",
-                        "en": "Cases",
-                        "title": "Cases",
-                        "condition": "true"
-                    },
-                    "5_14_yrs_deaths": {
-                        "fr": "DcD",
-                        "en": "Deaths",
-                        "title": "Deaths",
-                        "condition": "true"
-                    },
-                    "15_yrs_plus_cases": {
-                        "fr": "Cas",
-                        "en": "Cases",
-                        "title": "Cases",
-                        "condition": "true"
-                    },
-                    "15_yrs_plus_deaths": {
-                        "fr": "DcD",
-                        "en": "Deaths",
-                        "title": "Deaths",
-                        "condition": "true"
-                    },
-                    "total_cases": {
-                        "fr": "Cas",
-                        "en": "Cases",
-                        "title": "Cases",
-                        "condition": "true"
-                    },
-                    "total_deaths": {
-                        "fr": "DcD",
-                        "en": "Deaths",
-                        "title": "Deaths",
-                        "condition": "true"
-                    }
-                }
-            },
-            "parent": "report_diagnosis"
-        },
-        "report_diagnosis_2": {
-            "title": "2.8: Diagnosis and enf of cases put in observation (Cont)",
-            "type": "object",
-            "properties": {
+                    "condition": "false"
+                },
                 "stis_genital_syndrome_flow": {
-                    "line_number": "1",
+                    "line_number": "36",
                     "fr": "?",
                     "en": "STIs/ genital  syndrome flow",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "stis_pelvic_inflammatory_syndrome": {
-                    "line_number": "2",
+                    "line_number": "37",
                     "fr": "?",
                     "en": "STIs/ Pelvic Inflammatory syndrome",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "stis_genital_ulceration_syndrome": {
-                    "line_number": "3",
+                    "line_number": "38",
                     "fr": "?",
                     "en": "STIs/ Genital  Ulceration Syndrome",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "konzo": {
-                    "line_number": "4",
+                    "line_number": "39",
                     "fr": "Konzo",
                     "en": "Konzo",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "leprosy": {
-                    "line_number": "5",
+                    "line_number": "40",
                     "fr": "Lèpre",
                     "en": "Leprosy",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "moderated_high_malnutrition": {
-                    "line_number": "6",
+                    "line_number": "41",
                     "fr": "Malnutrition protéino-énergétique",
                     "en": "Moderated high malnutrition",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "mania": {
-                    "line_number": "7",
+                    "line_number": "42",
                     "fr": "?",
                     "en": "Mania",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "menengitis": {
-                    "line_number": "8",
+                    "line_number": "43",
                     "fr": "Méningite",
                     "en": "Menengitis",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "monkey_pox": {
-                    "line_number": "9",
+                    "line_number": "44",
                     "fr": "Monkey Pox",
                     "en": "Monkey pox",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "venonimous_animals_bites": {
-                    "line_number": "10",
+                    "line_number": "45",
                     "fr": "?",
                     "en": "Venonimous Animals bites",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "noma": {
-                    "line_number": "11",
+                    "line_number": "46",
                     "fr": "Noma",
                     "en": "Noma",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "intestinal_occlusion": {
-                    "line_number": "12",
+                    "line_number": "47",
                     "fr": "?",
                     "en": "Intestinal occlusion",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "onchocercosis_and_other_filariosis": {
-                    "line_number": "13",
+                    "line_number": "48",
                     "fr": "Onchocercose et autres filarioses",
                     "en": "Onchocercosis and other Filariosis",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "pest": {
-                    "line_number": "14",
+                    "line_number": "49",
                     "fr": "Peste",
                     "en": "Pest",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "pfa_paralysie_flasque_aigue": {
-                    "line_number": "15",
+                    "line_number": "50",
                     "fr": "PFA",
                     "en": "PFA (Paralysie Flasque Aigue)",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "psychose_aigue_bouffee_delirante": {
-                    "line_number": "16",
+                    "line_number": "51",
                     "fr": "?",
                     "en": "Psychose-aigue: bouffee delirante",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "psychose_puerperal": {
-                    "line_number": "17",
+                    "line_number": "52",
                     "fr": "?",
                     "en": "Psychose-Puerperal",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "rage": {
-                    "line_number": "18",
+                    "line_number": "53",
                     "fr": "?",
                     "en": "Rage",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "measles_non_vaccinated_patient": {
-                    "line_number": "19",
+                    "line_number": "54",
                     "fr": "Rougeole patient non vacciné",
                     "en": "Measles ( non vaccinated  patient)",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "measles_vaccinated_patient": {
-                    "line_number": "20",
+                    "line_number": "55",
                     "fr": "Rougeole patient vacciné",
                     "en": "Measles ( vaccinated patient)",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "schistosomiasis": {
-                    "line_number": "21",
+                    "line_number": "56",
                     "fr": "Schistosomiase",
                     "en": "Schistosomiasis",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "appendiculary_syndrome": {
-                    "line_number": "22",
+                    "line_number": "57",
                     "fr": "?",
                     "en": "Appendiculary syndrome",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "post_trauma_stress_syndrome": {
-                    "line_number": "23",
+                    "line_number": "58",
                     "fr": "?",
                     "en": "Post-trauma stress syndrome",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "gastric_syndrome": {
-                    "line_number": "24",
+                    "line_number": "59",
                     "fr": "Gastrites",
                     "en": "Gastric syndrome",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "tetanus": {
-                    "line_number": "25",
+                    "line_number": "60",
                     "fr": "Tétanos",
                     "en": "Tetanus",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "neonatal_tetanus": {
-                    "line_number": "26",
+                    "line_number": "61",
                     "fr": "Tétanos néonatal",
                     "en": "Neonatal Tetanus",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "toxicomania_and_others": {
-                    "line_number": "27",
+                    "line_number": "62",
                     "fr": "?",
                     "en": "Toxicomania and others",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "trauma": {
-                    "line_number": "28",
+                    "line_number": "63",
                     "fr": "?",
                     "en": "Trauma",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "generalised_anxious_trouble": {
-                    "line_number": "29",
+                    "line_number": "64",
                     "fr": "?",
                     "en": "Generalised anxious trouble",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "trypanosomiasis": {
-                    "line_number": "30",
+                    "line_number": "65",
                     "fr": "Trypanosomiase",
                     "en": "Trypanosomiasis",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "tuberculosis": {
-                    "line_number": "31",
+                    "line_number": "66",
                     "fr": "Tuberculose TPM+",
                     "en": "Tuberculosis",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "typhus": {
-                    "line_number": "32",
+                    "line_number": "67",
                     "fr": "Typhus",
                     "en": "Typhus",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "buruli_ulcers": {
-                    "line_number": "33",
+                    "line_number": "68",
                     "fr": "Ulcère de Buruli",
                     "en": "Buruli Ulcers",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "hiv_aids": {
-                    "line_number": "34",
+                    "line_number": "69",
                     "fr": "VIH/SIDA",
                     "en": "HIV/AIDS",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "xerophtalmia": {
-                    "line_number": "35",
+                    "line_number": "70",
                     "fr": "Xérophtalmie",
                     "en": "Xerophtalmia",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "others": {
-                    "line_number": "35",
+                    "line_number": "71",
                     "fr": "Autres",
                     "en": "Others",
-                    "condition": "true"
+                    "condition": "false"
                 }
             },
             "definitions": {
@@ -1390,49 +1319,49 @@ exports.reports = function () {
                         "fr": "Cas",
                         "en": "Cases",
                         "title": "Cases",
-                        "condition": "true"
+                        "condition": "patient.current_age_month < 11"
                     },
                     "0_11_months_deaths": {
                         "fr": "DcD",
                         "en": "Deaths",
                         "title": "Deaths",
-                        "condition": "true"
+                        "condition": "patient.current_age_month < 11 && ( subforms.disease_diagnosis && subforms.disease_diagnosis.disease_mortality === 'yes')"
                     },
                     "12_59_months_cases": {
                         "fr": "Cas",
                         "en": "Cases",
                         "title": "Cases",
-                        "condition": "true"
+                        "condition": "patient.current_age_month >= 12 && patient.current_age_month < 59"
                     },
                     "12_59_months_deaths": {
                         "fr": "DcD",
                         "en": "Deaths",
                         "title": "Deaths",
-                        "condition": "true"
+                        "condition": "patient.current_age_month >= 12 && patient.current_age_month < 59 && ( subforms.disease_diagnosis && subforms.disease_diagnosis.disease_mortality === 'yes')"
                     },
                     "5_14_yrs_cases": {
                         "fr": "Cas",
                         "en": "Cases",
                         "title": "Cases",
-                        "condition": "true"
+                        "condition": "patient.current_age_month >= 60 && patient.current_age_years < 14"
                     },
                     "5_14_yrs_deaths": {
                         "fr": "DcD",
                         "en": "Deaths",
                         "title": "Deaths",
-                        "condition": "true"
+                        "condition": "patient.current_age_month >= 60 && patient.current_age_years < 14 && ( subforms.disease_diagnosis && subforms.disease_diagnosis.disease_mortality === 'yes')"
                     },
                     "15_yrs_plus_cases": {
                         "fr": "Cas",
                         "en": "Cases",
                         "title": "Cases",
-                        "condition": "true"
+                        "condition": "patient.current_age_years >=15"
                     },
                     "15_yrs_plus_deaths": {
                         "fr": "DcD",
                         "en": "Deaths",
                         "title": "Deaths",
-                        "condition": "true"
+                        "condition": "patient.current_age_years >=15 && ( subforms.disease_diagnosis && subforms.disease_diagnosis.disease_mortality === 'yes')"
                     },
                     "total_cases": {
                         "fr": "Cas",
@@ -1444,11 +1373,13 @@ exports.reports = function () {
                         "fr": "DcD",
                         "en": "Deaths",
                         "title": "Deaths",
-                        "condition": "true"
+                        "condition": "( subforms.disease_diagnosis && subforms.disease_diagnosis.disease_mortality === 'yes')"
                     }
                 }
             },
-            "parent": "report_diagnosis"
+            "overrides": {
+                "thead_prefix": "<tr><th></th><th></th><th></th><th colspan=\"2\">0-11 mois</th><th colspan=\"2\">12-59 mois</th><th colspan=\"2\">5-14 ans</th><th colspan=\"2\">15 ans +</th><th colspan=\"2\">Total</th></tr>"
+            }
         },
         "report_epidemiological": {
             "title": "Weekly Notification Form - Epidemiological Diseases",
@@ -1985,7 +1916,7 @@ exports.reports = function () {
                     "line_number": "1",
                     "fr": "Nouveaux cas IST",
                     "en": "New STIs cases",
-                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.std_status === 'yes') || subforms.disease_diagnosis && ((subforms.disease_diagnosis.diagnosis === 'sti_genital_discharge_syndrome') || (subforms.disease_diagnosis.diagnosis === 'sti_genital_ulcer_diseases') || (subforms.disease_diagnosis.diagnosis === 'sti_pelvic_inflammatory_diseases') || (subforms.disease_diagnosis.diagnosis === 'sexually_transmitted_infections_other'))"
+                    "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.std_status === 'yes') || ( subforms.disease_diagnosis && ((subforms.disease_diagnosis.diagnosis === 'sti_genital_discharge_syndrome') || (subforms.disease_diagnosis.diagnosis === 'sti_genital_ulcer_diseases') || (subforms.disease_diagnosis.diagnosis === 'sti_pelvic_inflammatory_diseases') || (subforms.disease_diagnosis.diagnosis === 'sexually_transmitted_infections_other'))) || ((subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'positive') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'positive') || (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'yes'))"
                 },
                 "contact_among_new_stis_cases": {
                     "line_number": "2",
@@ -2016,7 +1947,26 @@ exports.reports = function () {
                     }
                 }
             },
-            "parent": "report_isthiv"
+            "parent": "report_isthiv",
+            "overrides": {
+                "predefined": [
+                    {
+                        "row": "contact_among_new_stis_cases",
+                        "col": "number",
+                        "value": ""
+                    },
+                    {
+                        "row": "stis_cases_treated_under_syndromic_approach",
+                        "col": "number",
+                        "value": ""
+                    },
+                    {
+                        "row": "number_of_new_cases_io",
+                        "col": "total",
+                        "value": ""
+                    }
+                ]
+            }
         },
         "report_isthiv_2": {
             "title": "2.3.2 Voluntary Counseling and Testing VCT",
@@ -2055,55 +2005,55 @@ exports.reports = function () {
                         "fr": "Testés",
                         "en": "Tested",
                         "title": "Tested",
-                        "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes'))"
+                        "condition": "(patient.gender === 'male' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_tested === 'yes') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_tested === 'yes')))"
                     },
                     "masculine_positive": {
                         "fr": "Positifs",
                         "en": "Positive",
                         "title": "Positive",
-                        "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes'))"
+                        "condition": "(patient.gender === 'male' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'positive') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'positive')))"
                     },
                     "masculine_negative": {
                         "fr": "Négatifs",
                         "en": "Negative",
                         "title": "Negative",
-                        "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no'))"
+                        "condition": "(patient.gender === 'male' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'negative') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'negative')))"
                     },
                     "feminine_tested": {
                         "fr": "Testés",
                         "en": "Tested",
                         "title": "Tested",
-                        "condition": "patient.gender === 'female' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit) || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit))"
+                        "condition": "(patient.gender === 'female' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_tested === 'yes') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit) || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit)))"
                     },
                     "feminine_positive": {
                         "fr": "Positifs",
                         "en": "Positive",
                         "title": "Positive",
-                        "condition": "(patient.gender === 'female' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'yes'))"
+                        "condition": "(patient.gender === 'female' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'positive') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'positive') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'yes')))"
                     },
                     "feminine_negative": {
                         "fr": "Négatifs",
                         "en": "Negative",
                         "title": "Negative",
-                        "condition": "(patient.gender === 'female' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'no'))"
+                        "condition": "(patient.gender === 'female' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'negative') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'negative') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'no')))"
                     },
                     "total_tested": {
                         "fr": "Testés",
                         "en": "Tested",
                         "title": "Tested",
-                        "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit === 'yes')"
+                        "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_tested === 'yes') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_tested === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit === 'yes')"
                     },
                     "total_positive": {
                         "fr": "Positifs",
                         "en": "Positive",
                         "title": "Positive",
-                        "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative' && subforms.anc_followup.second_hiv_test === 'yes')"
+                        "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'positive') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'positive') || (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'yes')"
                     },
                     "total_negative": {
                         "fr": "Négatifs",
                         "en": "Negative",
                         "title": "Negative",
-                        "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && subforms.anc_followup.second_hiv_test === 'no')"
+                        "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'negative') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'negative') || (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && subforms.anc_followup.second_hiv_test === 'no')"
                     }
                 }
             },
@@ -2575,264 +2525,617 @@ exports.reports = function () {
             }
         },
         "report_labcare_1": {
-            "title": "2.5 LABORATORY",
+            "title": "2.5 Laboratory",
+            "en": "2.5 Laboratory",
+            "fr": "2.5 Laboratoire",
             "type": "object",
             "properties": {
-                "clinistix": {
+                "clistinix": {
                     "line_number": "1",
                     "fr": "Chimie urines",
                     "en": "Clinistix",
-                    "condition": "true"
+                    "condition": "false"
                 },
-                "dosage_albumine": {
-                    "line_number": "2",
-                    "fr": "Dosage albumine",
-                    "en": "Dosage Albumine",
-                    "condition": "true"
+                "clistinix_albu": {
+                    "line_number": "1a",
+                    "fr": "...Dosage albumine",
+                    "en": "...Dosage albumine",
+                    "condition": "false"
                 },
-                "sugar": {
-                    "line_number": "3",
-                    "fr": "Sucre",
-                    "en": "Sugar",
-                    "condition": "true"
+                "clistinix_sugar": {
+                    "line_number": "1b",
+                    "fr": "...Sucre",
+                    "en": "...Sugar",
+                    "condition": "false"
                 },
                 "culot_urinaire": {
-                    "line_number": "4",
+                    "line_number": "2",
                     "fr": "Culot urinaire",
-                    "en": "Culot Urinaire",
-                    "condition": "true"
+                    "en": "Culot urinaire",
+                    "condition": "false"
                 },
-                "schisto_haem": {
-                    "line_number": "5",
-                    "fr": "Schisto-haem",
-                    "en": "Schisto-haem",
-                    "condition": "true"
+                "culot_schisto": {
+                    "line_number": "2a",
+                    "fr": "...Schisto-haem",
+                    "en": "...Schisto-haem",
+                    "condition": "false"
                 },
-                "trichomonas": {
-                    "line_number": "6",
-                    "fr": "Trichomonas",
-                    "en": "Trichomonas",
-                    "condition": "true"
+                "culot_tricho": {
+                    "line_number": "2b",
+                    "fr": "...Trichomonas",
+                    "en": "...Trichomonas",
+                    "condition": "false"
                 },
-                "others": {
-                    "line_number": "7",
-                    "fr": "Autres",
-                    "en": "Others",
-                    "condition": "true"
+                "culot_other": {
+                    "line_number": "2c",
+                    "fr": "...Autres",
+                    "en": "...Others",
+                    "condition": "false"
                 },
-                "blood_smears": {
-                    "line_number": "8",
+                "smears": {
+                    "line_number": "3",
                     "fr": "Gouttes épaisses",
                     "en": "Blood smears",
-                    "condition": "true"
+                    "condition": "false"
                 },
-                "micro_filaria": {
-                    "line_number": "9",
-                    "fr": "Micro filaire",
-                    "en": "Micro filaria",
-                    "condition": "true"
+                "smears_micro": {
+                    "line_number": "3a",
+                    "fr": "...Micro filaire",
+                    "en": "...Micro filaria",
+                    "condition": "false"
                 },
-                "plasmodium": {
-                    "line_number": "10",
-                    "fr": "Plasmodium",
-                    "en": "Plasmodium",
-                    "condition": "true"
+                "smears_plasmo": {
+                    "line_number": "3b",
+                    "fr": "...Plasmodium",
+                    "en": "...Plasmodium",
+                    "condition": "false"
                 },
-                "trypanosomiasis": {
-                    "line_number": "11",
-                    "fr": "Trypanosomes",
-                    "en": "Trypanosomiasis",
-                    "condition": "true"
+                "smears_trypa": {
+                    "line_number": "3c",
+                    "fr": "...Trypanosomes",
+                    "en": "...Trypanosomiasis",
+                    "condition": "false"
+                },
+                "smears_other": {
+                    "line_number": "3d",
+                    "fr": "...Autres",
+                    "en": "...Others",
+                    "condition": "false"
                 },
                 "fresh_blood_smears": {
-                    "line_number": "12",
+                    "line_number": "4",
                     "fr": "Goutte fraiche",
                     "en": "Fresh Blood smears",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "aspirate_from_nodules": {
-                    "line_number": "13",
+                    "line_number": "5",
                     "fr": "Ponction ganglionnaires",
                     "en": "Aspirate from Nodules",
-                    "condition": "true"
+                    "condition": "false"
+                },
+                "aspirate_trypa": {
+                    "line_number": "5a",
+                    "fr": "...Trypanosomes",
+                    "en": "...Trypanosomiasis",
+                    "condition": "false"
+                },
+                "aspirate_other": {
+                    "line_number": "5b",
+                    "fr": "...Autres",
+                    "en": "...Others",
+                    "condition": "false"
                 },
                 "tested_couple_drepanocytosis": {
-                    "line_number": "14",
+                    "line_number": "6",
                     "fr": "Couples dépistés: drépanocytose",
                     "en": "Tested couple: drepanocytosis",
-                    "condition": "true"
-                }
-            },
-            "definitions": {
-                "columns": {
-                    "screening_total": {
-                        "fr": "Total",
-                        "en": "Total",
-                        "title": "Total",
-                        "condition": "true"
-                    },
-                    "screening_positif": {
-                        "fr": "Positif",
-                        "en": "Positif",
-                        "title": "Positif",
-                        "condition": "true"
-                    }
-                }
-            },
-            "parent": "report_labcare"
-        },
-        "report_labcare_2": {
-            "title": "2.5 LABORATORY(table2)",
-            "type": "object",
-            "properties": {
+                    "condition": "false"
+                },
                 "stool": {
-                    "line_number": "1",
+                    "line_number": "7",
                     "fr": "Selles",
                     "en": "Stool",
-                    "condition": "true"
+                    "condition": "false"
                 },
-                "amoebia": {
-                    "line_number": "2",
-                    "fr": "Amibe",
-                    "en": "Amoebia",
-                    "condition": "true"
+                "stool_amoebia": {
+                    "line_number": "7a",
+                    "fr": "...Amibe",
+                    "en": "...Amoebia",
+                    "condition": "false"
                 },
-                "ankylostoma": {
-                    "line_number": "3",
-                    "fr": "Ankylostome",
-                    "en": "Ankylostoma",
-                    "condition": "true"
+                "stool_ankylostoma": {
+                    "line_number": "7b",
+                    "fr": "...Ankylostome",
+                    "en": "...Ankylostoma",
+                    "condition": "false"
                 },
-                "schisto_mansoni": {
-                    "line_number": "4",
-                    "fr": "Schisto-mansoni",
-                    "en": "Schisto-mansoni",
-                    "condition": "true"
+                "stool_schisto_mansoni": {
+                    "line_number": "7c",
+                    "fr": "...Schisto-mansoni",
+                    "en": "...Schisto-mansoni",
+                    "condition": "false"
                 },
-                "trichomonas": {
-                    "line_number": "5",
-                    "fr": "Trichomonas",
-                    "en": "Trichomonas",
-                    "condition": "true"
+                "stool_trichomonas": {
+                    "line_number": "7d",
+                    "fr": "...Trichomonas",
+                    "en": "...Trichomonas",
+                    "condition": "false"
                 },
-                "ascaris": {
-                    "line_number": "6",
-                    "fr": "Ascaris",
-                    "en": "Ascaris",
-                    "condition": "true"
+                "stool_ascaris": {
+                    "line_number": "7e",
+                    "fr": "...Ascaris",
+                    "en": "...Ascaris",
+                    "condition": "false"
                 },
-                "oxyures": {
-                    "line_number": "7",
-                    "fr": "Oxyures",
-                    "en": "Oxyures",
-                    "condition": "true"
+                "stool_oxyures": {
+                    "line_number": "7f",
+                    "fr": "...Oxyures",
+                    "en": "...Oxyures",
+                    "condition": "false"
                 },
-                "others": {
-                    "line_number": "8",
-                    "fr": "Autres",
-                    "en": "Others",
-                    "condition": "true"
+                "stool_others": {
+                    "line_number": "7g",
+                    "fr": "...Autres",
+                    "en": "...Others",
+                    "condition": "false"
                 },
                 "hemoglobine": {
-                    "line_number": "9",
+                    "line_number": "8",
                     "fr": "Hémoglobine",
                     "en": "Hemoglobine",
-                    "condition": "true"
+                    "condition": "false"
                 },
-                "less_than_8gr_percentage": {
-                    "line_number": "10",
-                    "fr": "<8gr%",
-                    "en": "<8gr%",
-                    "condition": "true"
+                "hemoglobine_less_than_8": {
+                    "line_number": "8a",
+                    "fr": "...<8gr%",
+                    "en": "...<8gr%",
+                    "condition": "false"
                 },
-                "sputum_for_afb": {
-                    "line_number": "11",
+                "ziehl": {
+                    "line_number": "9",
                     "fr": "Crachat Ziehl / BK Dépistage",
                     "en": "Sputum for AFB",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "ziehl_bk_test_c2_c3": {
-                    "line_number": "12",
-                    "fr": "Ziehl / BK Contrôle C2/C3",
-                    "en": "Ziehl/BK test C2/C3",
-                    "condition": "true"
+                    "line_number": "9a",
+                    "fr": "...Ziehl / BK Contrôle C2/C3",
+                    "en": "...Ziehl/BK test C2/C3",
+                    "condition": "false"
                 },
                 "ziehl_bk_control_c5": {
-                    "line_number": "13",
-                    "fr": "Ziehl / BK Contrôle C5",
-                    "en": "Ziehl/BK Control C5",
-                    "condition": "true"
+                    "line_number": "9b",
+                    "fr": "...Ziehl / BK Contrôle C5",
+                    "en": "...Ziehl/BK Control C5",
+                    "condition": "false"
                 },
                 "ziehl_bk_control_c6_c7": {
-                    "line_number": "14",
-                    "fr": "Ziehl / BK Contrôle C6/C7",
-                    "en": "Ziehl/BK control C6/C7",
-                    "condition": "true"
+                    "line_number": "9c",
+                    "fr": "...Ziehl / BK Contrôle C6/C7",
+                    "en": "...Ziehl/BK control C6/C7",
+                    "condition": "false"
                 },
                 "hiv": {
-                    "line_number": "15",
+                    "line_number": "10",
                     "fr": "VIH",
                     "en": "HIV",
-                    "condition": "true"
+                    "condition": "false"
                 },
-                "rapid_test_det_unigld_db_chk": {
-                    "line_number": "16",
-                    "fr": "Test rapide (Det., Unigld, Db chk)",
-                    "en": "Rapid test (Det, Unigld, Db chk)",
-                    "condition": "true"
+                "hiv_rapid_test": {
+                    "line_number": "11",
+                    "fr": "...Test rapide (Det., Unigld, Db chk)",
+                    "en": "...Rapid test (Det, Unigld, Db chk)",
+                    "condition": "false"
+                },
+                "hiv_slow_test": {
+                    "line_number": "12",
+                    "fr": "...Test lent (PCR,DNA,DBS)",
+                    "en": "...Slow test (PCR,DNA,DBS)",
+                    "condition": "false"
+                },
+                "hiv_other_test": {
+                    "line_number": "13",
+                    "fr": "...Autres test drépanocytose",
+                    "en": "...Other tests drepanocytosis",
+                    "condition": "false"
                 }
             },
             "definitions": {
                 "columns": {
-                    "screening_total": {
+                    "total": {
                         "fr": "Total",
                         "en": "Total",
                         "title": "Total",
-                        "condition": "true"
+                        "condition": "false"
                     },
-                    "screening_positif": {
+                    "positive": {
                         "fr": "Positif",
-                        "en": "Positif",
-                        "title": "Positif",
-                        "condition": "true"
+                        "en": "Positive",
+                        "title": "Positive",
+                        "condition": "false"
                     }
                 }
             },
-            "parent": "report_labcare"
+            "parent": "report_labcare",
+            "overrides": {
+                "predefined": [
+                    {
+                        "row": "clistinix",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "clistinix_albu",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "clistinix_sugar",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "culot_urinaire",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "culot_schisto",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "culot_tricho",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "culot_other",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "smears",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "smears_micro",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "smears_plasmo",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "smears_trypa",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "smears_other",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "fresh_blood_smears",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "fresh_blood_smears",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "aspirate_from_nodules",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "aspirate_from_nodules",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "aspirate_trypa",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "aspirate_trypa",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "aspirate_other",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "aspirate_other",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "tested_couple_drepanocytosis",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "tested_couple_drepanocytosis",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_amoebia",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_amoebia",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_ankylostoma",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_ankylostoma",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_schisto_mansoni",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_schisto_mansoni",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_trichomonas",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_trichomonas",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_ascaris",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_ascaris",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_oxyures",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_oxyures",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_others",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "stool_others",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "hemoglobine",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "hemoglobine",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "hemoglobine_less_than_8",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "hemoglobine_less_than_8",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "ziehl",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "ziehl",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "ziehl_bk_test_c2_c3",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "ziehl_bk_test_c2_c3",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "ziehl_bk_control_c5",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "ziehl_bk_control_c5",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "ziehl_bk_control_c6_c7",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "ziehl_bk_control_c6_c7",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "hiv",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "hiv",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "hiv_rapid_test",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "hiv_rapid_test",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "hiv_slow_test",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "hiv_slow_test",
+                        "col": "positive",
+                        "value": ""
+                    },
+                    {
+                        "row": "hiv_other_test",
+                        "col": "total",
+                        "value": ""
+                    },
+                    {
+                        "row": "hiv_other_test",
+                        "col": "positive",
+                        "value": ""
+                    }
+                ],
+                "disabled": [
+                    {
+                        "row": "clistinix",
+                        "col": "positive"
+                    },
+                    {
+                        "row": "clistinix_albu",
+                        "col": "total"
+                    },
+                    {
+                        "row": "clistinix_sugar",
+                        "col": "total"
+                    },
+                    {
+                        "row": "culot_urinaire",
+                        "col": "positive"
+                    },
+                    {
+                        "row": "culot_schisto",
+                        "col": "total"
+                    },
+                    {
+                        "row": "culot_tricho",
+                        "col": "total"
+                    },
+                    {
+                        "row": "culot_other",
+                        "col": "total"
+                    },
+                    {
+                        "row": "smears",
+                        "col": "positive"
+                    },
+                    {
+                        "row": "smears_micro",
+                        "col": "total"
+                    },
+                    {
+                        "row": "smears_plasmo",
+                        "col": "total"
+                    },
+                    {
+                        "row": "smears_trypa",
+                        "col": "total"
+                    },
+                    {
+                        "row": "smears_other",
+                        "col": "total"
+                    }
+                ]
+            }
         },
-        "report_labcare_3": {
-            "title": "2.6.  Care",
+        "report_labcare_2": {
+            "title": "2.6. Care",
             "type": "object",
             "properties": {
                 "persons_who_received_counseling_and_treatment_in_order_to_prevent_heart_crisis_or_the_avc": {
                     "line_number": "1",
                     "fr": "Personnes ayant reçu le conseil et le traitement afin de prévenir les crises cardiaques ou les AVC",
                     "en": "Persons who received counseling and treatment in order to prevent heart crisis or the AVC",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "hbp_found_and_put_on_treatment": {
                     "line_number": "2",
                     "fr": "Cas d'hypertension diagnostiqués et mis sous traitement",
                     "en": "HBP found and put on treatment",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "under_5_children_with_pneumonia_who_received_appropriate_anti_biotic": {
                     "line_number": "3",
                     "fr": "Enfants de moins de 5 ans présentant la pneumonie et ayant reçu un antibiotique approprié",
                     "en": "Under 5 children with pneumonia who received appropriate anti-biotic",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "sick_children_who_were_correctly_treated_against_diarrhea_with_ors_and_sulfate_of_zinc": {
                     "line_number": "4",
                     "fr": "Enfants malades qui ont été correctement soignés contre la diarrhée avec SRO et sulfate de zinc",
                     "en": "Sick children who were correctly treated against diarrhea with ORS and sulfate of zinc",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "new_diabetitis_put_under_treatment": {
                     "line_number": "5",
                     "fr": "Nouveaux patients diabétiques mis sous traitement",
                     "en": "New diabetitis put under treatment.",
-                    "condition": "true"
+                    "condition": "false"
                 }
             },
             "definitions": {
@@ -2841,11 +3144,40 @@ exports.reports = function () {
                         "fr": "Nombre",
                         "en": "Number",
                         "title": "Number",
-                        "condition": "true"
+                        "condition": "false"
                     }
                 }
             },
-            "parent": "report_labcare"
+            "parent": "report_labcare",
+            "overrides": {
+                "predefined": [
+                    {
+                        "row": "persons_who_received_counseling_and_treatment_in_order_to_prevent_heart_crisis_or_the_avc",
+                        "col": "number",
+                        "value": ""
+                    },
+                    {
+                        "row": "hbp_found_and_put_on_treatment",
+                        "col": "number",
+                        "value": ""
+                    },
+                    {
+                        "row": "under_5_children_with_pneumonia_who_received_appropriate_anti_biotic",
+                        "col": "number",
+                        "value": ""
+                    },
+                    {
+                        "row": "sick_children_who_were_correctly_treated_against_diarrhea_with_ors_and_sulfate_of_zinc",
+                        "col": "number",
+                        "value": ""
+                    },
+                    {
+                        "row": "new_diabetitis_put_under_treatment",
+                        "col": "number",
+                        "value": ""
+                    }
+                ]
+            }
         },
         "report_malaria": {
             "title": "Monthly Canvas - 2.7. Malaria",
@@ -2855,97 +3187,97 @@ exports.reports = function () {
                     "line_number": "1",
                     "fr": "Cas suspect",
                     "en": "Suspect cases",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "tdr_realised": {
                     "line_number": "2",
                     "fr": "TDR r�alis�s",
                     "en": "TDR realised",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "including_positif": {
                     "line_number": "2a",
-                    "fr": "Dont positif",
-                    "en": "Including positif",
-                    "condition": "true"
+                    "fr": "...Dont positif",
+                    "en": "...Including positive",
+                    "condition": "false"
                 },
                 "blood_smears_realised": {
                     "line_number": "3",
                     "fr": "Goutte �paisse r�alis�e",
                     "en": "Blood smears realised",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "blood_smears_including": {
                     "line_number": "3a",
-                    "fr": "Dont positif",
-                    "en": "?",
-                    "condition": "true"
+                    "fr": "...Dont positif",
+                    "en": "...Including positive",
+                    "condition": "false"
                 },
                 "including_frottis_mince_realised": {
                     "line_number": "4",
                     "fr": "Frottis mince r�alis�s",
                     "en": "Including frottis mince realised",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "confirmed_simple_malaria": {
                     "line_number": "5",
                     "fr": "Paludisme simple confirm�",
                     "en": "Confirmed simple malaria",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "including_treated": {
                     "line_number": "5a",
-                    "fr": "Dont trait�",
-                    "en": "Including treated",
-                    "condition": "true"
+                    "fr": "...Dont trait�",
+                    "en": "...Including treated",
+                    "condition": "false"
                 },
                 "confirmed_severe_malaria": {
                     "line_number": "6",
                     "fr": "Paludisme grave confirm�",
                     "en": "Confirmed severe malaria",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "confirmed_severe_including_refered": {
                     "line_number": "6a",
-                    "fr": "Dont r�f�r�",
-                    "en": "Including refered",
-                    "condition": "true"
+                    "fr": "...Dont r�f�r�",
+                    "en": "...Including refered",
+                    "condition": "false"
                 },
                 "confirmed_severe_including_deads": {
                     "line_number": "6b",
-                    "fr": "Dont trait�",
-                    "en": "Including deads",
-                    "condition": "true"
+                    "fr": "...Dont d�c�d�",
+                    "en": "...Including deads",
+                    "condition": "false"
                 },
                 "unconfirmed_simple_malaria": {
                     "line_number": "7",
                     "fr": "Paludisme simple non confirm�",
                     "en": "Unconfirmed simple malaria",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "unconfirmed_simple_dead": {
                     "line_number": "7a",
-                    "fr": "Dont trait�",
-                    "en": "Including deads",
-                    "condition": "true"
+                    "fr": "...Dont trait�",
+                    "en": "...Including deads",
+                    "condition": "false"
                 },
                 "unconfirmed_severe_malaria": {
                     "line_number": "8",
                     "fr": "Paludisme grave non confirm�",
                     "en": "Unconfirmed severe malaria",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "unconfirmed_severe_including_refered": {
                     "line_number": "8a",
-                    "fr": "Dont r�f�r�",
-                    "en": "Including refered",
-                    "condition": "true"
+                    "fr": "...Dont r�f�r�",
+                    "en": "...Including refered",
+                    "condition": "false"
                 },
                 "unconfirmed_severe_including_deads": {
                     "line_number": "8b",
-                    "fr": "Dont d�c�d�",
-                    "en": "Including deads",
-                    "condition": "true"
+                    "fr": "...Dont d�c�d�",
+                    "en": "...Including deads",
+                    "condition": "false"
                 }
             },
             "definitions": {
@@ -2954,25 +3286,25 @@ exports.reports = function () {
                         "fr": "0-11 mois",
                         "en": "0-11 months",
                         "title": "0-11 months",
-                        "condition": "true"
+                        "condition": "patient.current_age_month < 11"
                     },
                     "12_59months": {
                         "fr": "12-59 mois",
                         "en": "12-59 months",
                         "title": "12-59 months",
-                        "condition": "true"
+                        "condition": "patient.current_age_month >= 12 && patient.current_age_month < 59"
                     },
                     "5_14yrs": {
                         "fr": "5-14 ans",
                         "en": "5-14yrs",
                         "title": "5-14yrs",
-                        "condition": "true"
+                        "condition": "patient.current_age_month >= 60 && patient.current_age_years < 14"
                     },
                     "15yrs": {
                         "fr": "15 ans +",
                         "en": "15yrs +",
                         "title": "15yrs",
-                        "condition": "true"
+                        "condition": "patient.current_age_years >=15"
                     },
                     "total": {
                         "fr": "Total",
@@ -2984,7 +3316,7 @@ exports.reports = function () {
                         "fr": "Dont femme enceinte",
                         "en": "Incl. P.W",
                         "title": "Incl. P.W",
-                        "condition": "true"
+                        "condition": "((subforms.hiv_counseling_mother || subforms.anc_first_visit || subforms.anc_followup || subforms.hiv_pregnancy_clinic) || (subforms.immunization && subforms.immunization.pregnant === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.pregnant === 'yes')))"
                     }
                 }
             }
@@ -8484,19 +8816,19 @@ exports.reports = function () {
                         "fr": "AS",
                         "en": "AS",
                         "title": "AS",
-                        "condition": "(patient.current_age_years >= 5 || patient.current_age_years === undefined) && area_zone === 'ha'"
+                        "condition": "patient.current_age_years > 5 && area_zone === 'ha'"
                     },
                     "above_5_years_has": {
                         "fr": "HAS",
                         "en": "HAS",
                         "title": "HAS",
-                        "condition": "(patient.current_age_years >= 5 || patient.current_age_years === undefined) && area_zone === 'oa'"
+                        "condition": "patient.current_age_years > 5 && area_zone === 'oa'"
                     },
                     "above_5_years_hz": {
                         "fr": "HZ",
                         "en": "HZ",
                         "title": "HZ",
-                        "condition": "(patient.current_age_years >= 5 || patient.current_age_years === undefined)  && area_zone === 'oz'"
+                        "condition": "patient.current_age_years > 5 && area_zone === 'oz'"
                     },
                     "total": {
                         "fr": "Total",
