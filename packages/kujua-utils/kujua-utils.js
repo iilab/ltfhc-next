@@ -132,11 +132,19 @@ exports.dumper = {
 };
 
 /* poorly named */
-exports.isUserAdmin = function(userCtx) {
-    return exports.hasRole(userCtx, 'national_admin') || exports.isDbAdmin(userCtx);
+exports.isUser = function(userCtx) {
+    if (userCtx.name !== null) {
+        return true;
+    } else {
+        return false;
+    }
 };
 
-exports.isUserDistrictAdmin = function(userCtx) {
+exports.isClinicAdmin = function(userCtx) {
+    return exports.hasRole(userCtx, 'clinic_admin') || exports.isDbAdmin(userCtx);
+};
+
+exports.isDistrictAdmin = function(userCtx) {
     return exports.hasRole(userCtx, 'district_admin');
 };
 
