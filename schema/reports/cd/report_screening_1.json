@@ -35,19 +35,19 @@
                 "fr": "AS",
                 "en": "AS",
                 "title":"AS",
-                "condition": "(patient.current_age_years >= 5 || patient.current_age_years === undefined) && area_zone === 'ha'"
+                "condition": "patient.current_age_years > 5 && area_zone === 'ha'"
             },
             "above_5_years_has": {
                 "fr": "HAS",
                 "en": "HAS",
                 "title":"HAS",
-                "condition": "(patient.current_age_years >= 5 || patient.current_age_years === undefined) && area_zone === 'oa'"
+                "condition": "patient.current_age_years > 5 && area_zone === 'oa'"
             },
             "above_5_years_hz": {
                 "fr": "HZ",
                 "en": "HZ",
                 "title":"HZ",
-                "condition": "(patient.current_age_years >= 5 || patient.current_age_years === undefined)  && area_zone === 'oz'"
+                "condition": "patient.current_age_years > 5 && area_zone === 'oz'"
             },
             "total": {
                 "fr": "Total",

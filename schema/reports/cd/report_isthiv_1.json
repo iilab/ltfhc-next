@@ -8,7 +8,7 @@
             "line_number": "1",
             "fr": "Nouveaux cas IST",
             "en": "New STIs cases",
-            "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.std_status === 'yes') || subforms.disease_diagnosis && ((subforms.disease_diagnosis.diagnosis === 'sti_genital_discharge_syndrome') || (subforms.disease_diagnosis.diagnosis === 'sti_genital_ulcer_diseases') || (subforms.disease_diagnosis.diagnosis === 'sti_pelvic_inflammatory_diseases') || (subforms.disease_diagnosis.diagnosis === 'sexually_transmitted_infections_other'))"
+            "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.std_status === 'yes') || ( subforms.disease_diagnosis && ((subforms.disease_diagnosis.diagnosis === 'sti_genital_discharge_syndrome') || (subforms.disease_diagnosis.diagnosis === 'sti_genital_ulcer_diseases') || (subforms.disease_diagnosis.diagnosis === 'sti_pelvic_inflammatory_diseases') || (subforms.disease_diagnosis.diagnosis === 'sexually_transmitted_infections_other'))) || ((subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'positive') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'positive') || (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'yes'))"
         },
         "contact_among_new_stis_cases": {
             "line_number": "2",
@@ -39,5 +39,12 @@
             }
         }
     },
-"parent": "report_isthiv"
+    "parent": "report_isthiv",
+    "overrides": {
+        "predefined": [
+            {"row": "contact_among_new_stis_cases", "col": "number", "value": ""},
+            {"row": "stis_cases_treated_under_syndromic_approach", "col": "number", "value": ""},
+            {"row": "number_of_new_cases_io", "col": "total", "value": ""}
+        ]
+    }
 }

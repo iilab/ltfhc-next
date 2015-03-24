@@ -1,0 +1,289 @@
+    {
+        "title": "2.5 Laboratory",
+        "en": "2.5 Laboratory",
+        "fr": "2.5 Laboratoire",
+        "type": "object",
+        "properties": {
+            "clistinix": {
+                "line_number": "1",
+                "fr": "Chimie urines",
+                "en": "Clinistix",
+                "condition": "(subforms.disease_diagnosis && ((subforms.disease_diagnosis.testing_method.indexOf('clistinix_albu') != -1 ) || (subforms.disease_diagnosis.testing_method.indexOf('clistinix_sugar') != -1 )))"
+            },
+            "clistinix_positive": {
+                "line_number": "1a",
+                "fr": "Chimie urines (positif)",
+                "en": "Clinistix (positive)",
+                "condition": "(subforms.disease_diagnosis && ((subforms.disease_diagnosis.testing_results.indexOf('clistinix_albu') != -1 ) || (subforms.disease_diagnosis.testing_results.indexOf('clistinix_sugar') != -1 )))"
+            },
+            "clistinix_albu": {
+                "line_number": "2",
+                "fr": "...Dosage albumine",
+                "en": "...Dosage albumine",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_method.indexOf('clistinix_albu') != -1 ))"
+            },
+            "clistinix_albu_positive": {
+                "line_number": "2a",
+                "fr": "...Dosage albumine (positif)",
+                "en": "...Dosage albumine (positive)",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_results.indexOf('clistinix_albu') != -1 ))"
+            },
+            "clistinix_sugar": {
+                "line_number": "3",
+                "fr": "...Sucre",
+                "en": "...Sugar",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_method.indexOf('clistinix_sugar') != -1 ))"
+            },
+            "clistinix_sugar_positive": {
+                "line_number": "3a",
+                "fr": "...Sucre (positif)",
+                "en": "...Sugar (positive)",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_results.indexOf('clistinix_sugar') != -1 ))"
+            },
+            "culot_urinaire": {
+                "line_number": "4",
+                "fr": "Culot urinaire",
+                "en": "Culot urinaire",
+                "condition": "(subforms.disease_diagnosis && ((subforms.disease_diagnosis.testing_method.indexOf('culot_schisto') != -1 ) || (subforms.disease_diagnosis.testing_method.indexOf('culot_tricho') != -1 ) || (subforms.disease_diagnosis.testing_method.indexOf('culot_other') != -1 ) ))"
+            },
+            "culot_urinaire_positive": {
+                "line_number": "4a",
+                "fr": "Culot urinaire (positif)",
+                "en": "Culot urinaire (positive)",
+                "condition": "(subforms.disease_diagnosis && ((subforms.disease_diagnosis.testing_results.indexOf('culot_schisto') != -1 ) || (subforms.disease_diagnosis.testing_results.indexOf('culot_tricho') != -1 ) || (subforms.disease_diagnosis.testing_results.indexOf('culot_other') != -1 ) ))"
+            },
+            "culot_schisto": {
+                "line_number": "5",
+                "fr": "...Schisto-haem",
+                "en": "...Schisto-haem",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_method.indexOf('culot_schisto') != -1 ))"
+            },
+            "culot_schisto_positive": {
+                "line_number": "5a",
+                "fr": "...Schisto-haem (positif)",
+                "en": "...Schisto-haem (positive)",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_results.indexOf('culot_schisto') != -1 ))"
+            },
+            "culot_tricho": {
+                "line_number": "6",
+                "fr": "...Trichomonas",
+                "en": "...Trichomonas",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_method.indexOf('culot_tricho') != -1 ))"
+            },
+            "culot_tricho_positive": {
+                "line_number": "6a",
+                "fr": "...Trichomonas (positif)",
+                "en": "...Trichomonas (positive)",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_results.indexOf('culot_tricho') != -1 ))"
+            },
+            "culot_other": {
+                "line_number": "7",
+                "fr": "...Autres",
+                "en": "...Others",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_method.indexOf('culot_other') != -1 ))"
+            },
+            "culot_other_positive": {
+                "line_number": "7a",
+                "fr": "...Autres (positif)",
+                "en": "...Others (positive)",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_results.indexOf('culot_other') != -1 ))"
+            },
+            "blood_smears": {
+                "line_number": "8",
+                "fr": "Gouttes épaisses",
+                "en": "Blood smears",
+                "condition": "(subforms.disease_diagnosis && ((subforms.disease_diagnosis.testing_method.indexOf('smears_micro') != -1 ) || (subforms.disease_diagnosis.testing_method.indexOf('smears_plasmo') != -1 ) || (subforms.disease_diagnosis.testing_method.indexOf('smears_trypa') != -1 ) || (subforms.disease_diagnosis.testing_method.indexOf('smears_other') != -1 )))"
+            },
+             "blood_smears_positive": {
+                "line_number": "8a",
+                "fr": "Gouttes épaisses (positif)",
+                "en": "Blood smears (positive)",
+                "condition": "(subforms.disease_diagnosis && ((subforms.disease_diagnosis.testing_results.indexOf('smears_micro') != -1 ) || (subforms.disease_diagnosis.testing_results.indexOf('smears_plasmo') != -1 ) || (subforms.disease_diagnosis.testing_results.indexOf('smears_trypa') != -1 ) || (subforms.disease_diagnosis.testing_results.indexOf('smears_other') != -1 )))"
+            },
+            "smears_micro": {
+                "line_number": "9",
+                "fr": "...Micro filaire",
+                "en": "...Micro filaria",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_method.indexOf('smears_micro') != -1 ))"
+            },
+            "smears_micro_positive": {
+                "line_number": "9a",
+                "fr": "...Micro filaire (positif)",
+                "en": "...Micro filaria (positive)",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_results.indexOf('smears_micro') != -1 ))"
+            },
+            "smears_plasmo": {
+                "line_number": "10",
+                "fr": "...Plasmodium",
+                "en": "...Plasmodium",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_method.indexOf('smears_plasmo') != -1 ))"
+            },
+            "smears_plasmo_positive": {
+                "line_number": "10a",
+                "fr": "...Plasmodium (positif)",
+                "en": "...Plasmodium (positive)",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_results.indexOf('smears_plasmo') != -1 ))"
+            },
+            "smears_trypa": {
+                "line_number": "11",
+                "fr": "...Trypanosomes",
+                "en": "...Trypanosomiasis",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_method.indexOf('smears_trypa') != -1 ))"
+            },
+            "smears_trypa_positive": {
+                "line_number": "11a",
+                "fr": "...Trypanosomes (positif)",
+                "en": "...Trypanosomiasis (positive)",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_results.indexOf('smears_trypa') != -1 ))"
+            },
+            "smears_other": {
+                "line_number": "12",
+                "fr": "Autres",
+                "en": "Others",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_method.indexOf('smears_other') != -1 ))"
+            },
+            "smears_other_positive": {
+                "line_number": "12a",
+                "fr": "Autres",
+                "en": "Others",
+                "condition": "(subforms.disease_diagnosis && (subforms.disease_diagnosis.testing_results.indexOf('smears_other') != -1 ))"
+            },
+            "fresh_blood_smears": {
+                "line_number": "13",
+                "fr": "Goutte fraiche",
+                "en": "Fresh Blood smears",
+                "condition": "true"
+            },
+            "aspirate_from_nodules": {
+                "line_number": "14",
+                "fr": "Ponction ganglionnaires",
+                "en": "Aspirate from Nodules",
+                "condition": "true"
+            },
+            "tested_couple_drepanocytosis": {
+                "line_number": "15",
+                "fr": "Couples dépistés: drépanocytose",
+                "en": "Tested couple: drepanocytosis",
+                "condition": "true"
+            },
+            "stool": {
+                "line_number": "16",
+                "fr": "Selles",
+                "en": "Stool",
+                "condition": "true"
+            },
+            "amoebia": {
+                "line_number": "17",
+                "fr": "Amibe",
+                "en": "Amoebia",
+                "condition": "true"
+            },
+            "ankylostoma": {
+                "line_number": "18",
+                "fr": "Ankylostome",
+                "en": "Ankylostoma",
+                "condition": "true"
+            },
+            "schisto_mansoni": {
+                "line_number": "19",
+                "fr": "Schisto-mansoni",
+                "en": "Schisto-mansoni",
+                "condition": "true"
+            },
+            "trichomonas": {
+                "line_number": "20",
+                "fr": "Trichomonas",
+                "en": "Trichomonas",
+                "condition": "true"
+            },
+            "ascaris": {
+                "line_number": "21",
+                "fr": "Ascaris",
+                "en": "Ascaris",
+                "condition": "true"
+            },
+            "oxyures": {
+                "line_number": "22",
+                "fr": "Oxyures",
+                "en": "Oxyures",
+                "condition": "true"
+            },
+            "others": {
+                "line_number": "23",
+                "fr": "Autres",
+                "en": "Others",
+                "condition": "true"
+            },
+            "hemoglobine": {
+                "line_number": "24",
+                "fr": "Hémoglobine",
+                "en": "Hemoglobine",
+                "condition": "true"
+            },
+            "less_than_8gr_percentage": {
+                "line_number": "25",
+                "fr": "<8gr%",
+                "en": "<8gr%",
+                "condition": "true"
+            },
+            "sputum_for_afb": {
+                "line_number": "26",
+                "fr": "Crachat Ziehl / BK Dépistage",
+                "en": "Sputum for AFB",
+                "condition": "true"
+            },
+            "ziehl_bk_test_c2_c3": {
+                "line_number": "27",
+                "fr": "Ziehl / BK Contrôle C2/C3",
+                "en": "Ziehl/BK test C2/C3",
+                "condition": "true"
+            },
+            "ziehl_bk_control_c5": {
+                "line_number": "28",
+                "fr": "Ziehl / BK Contrôle C5",
+                "en": "Ziehl/BK Control C5",
+                "condition": "true"
+            },
+            "ziehl_bk_control_c6_c7": {
+                "line_number": "29",
+                "fr": "Ziehl / BK Contrôle C6/C7",
+                "en": "Ziehl/BK control C6/C7",
+                "condition": "true"
+            },
+            "hiv": {
+                "line_number": "30",
+                "fr": "VIH",
+                "en": "HIV",
+                "condition": "true"
+            },
+            "hiv_rapid_test": {
+                "line_number": "31",
+                "fr": "Test rapide (Det., Unigld, Db chk)",
+                "en": "Rapid test (Det, Unigld, Db chk)",
+                "condition": "true"
+            },
+            "hiv_slow_test": {
+                "line_number": "32",
+                "fr": "Test rapide (Det., Unigld, Db chk)",
+                "en": "Rapid test (Det, Unigld, Db chk)",
+                "condition": "true"
+            },
+            "hiv_other_test": {
+                "line_number": "33",
+                "fr": "Test rapide (Det., Unigld, Db chk)",
+                "en": "Rapid test (Det, Unigld, Db chk)",
+                "condition": "true"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "screening": {
+                    "fr": "Nombre",
+                    "en": "Number",
+                    "title":"Number",
+                    "condition": "true"
+                }
+            }
+        },
+        "parent": "report_labcare"
+    }

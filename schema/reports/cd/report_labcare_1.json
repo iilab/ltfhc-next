@@ -1,107 +1,311 @@
-    {
-        "title": "2.5 LABORATORY",
-        "type": "object",
-        "properties": {
-            "clinistix": {
-                "line_number": "1",
-                "fr": "Chimie urines",
-                "en": "Clinistix",
-                "condition": "true"
-            },
-            "dosage_albumine": {
-                "line_number": "2",
-                "fr": "Dosage albumine",
-                "en": "Dosage Albumine",
-                "condition": "true"
-            },
-            "sugar": {
-                "line_number": "3",
-                "fr": "Sucre",
-                "en": "Sugar",
-                "condition": "true"
-            },
-            "culot_urinaire": {
-                "line_number": "4",
-                "fr": "Culot urinaire",
-                "en": "Culot Urinaire",
-                "condition": "true"
-            },
-            "schisto_haem": {
-                "line_number": "5",
-                "fr": "Schisto-haem",
-                "en": "Schisto-haem",
-                "condition": "true"
-            },
-            "trichomonas": {
-                "line_number": "6",
-                "fr": "Trichomonas",
-                "en": "Trichomonas",
-                "condition": "true"
-            },
-            "others": {
-                "line_number": "7",
-                "fr": "Autres",
-                "en": "Others",
-                "condition": "true"
-            },
-            "blood_smears": {
-                "line_number": "8",
-                "fr": "Gouttes épaisses",
-                "en": "Blood smears",
-                "condition": "true"
-            },
-            "micro_filaria": {
-                "line_number": "9",
-                "fr": "Micro filaire",
-                "en": "Micro filaria",
-                "condition": "true"
-            },
-            "plasmodium": {
-                "line_number": "10",
-                "fr": "Plasmodium",
-                "en": "Plasmodium",
-                "condition": "true"
-            },
-            "trypanosomiasis": {
-                "line_number": "11",
-                "fr": "Trypanosomes",
-                "en": "Trypanosomiasis",
-                "condition": "true"
-            },
-            "fresh_blood_smears": {
-                "line_number": "12",
-                "fr": "Goutte fraiche",
-                "en": "Fresh Blood smears",
-                "condition": "true"
-            },
-            "aspirate_from_nodules": {
-                "line_number": "13",
-                "fr": "Ponction ganglionnaires",
-                "en": "Aspirate from Nodules",
-                "condition": "true"
-            },
-            "tested_couple_drepanocytosis": {
-                "line_number": "14",
-                "fr": "Couples dépistés: drépanocytose",
-                "en": "Tested couple: drepanocytosis",
-                "condition": "true"
-            }
+{
+    "title": "2.5 Laboratory",
+    "en": "2.5 Laboratory",
+    "fr": "2.5 Laboratoire",
+    "type": "object",
+    "properties": {
+        "clistinix": {
+            "line_number": "1",
+            "fr": "Chimie urines",
+            "en": "Clinistix",
+            "condition": "false"
         },
-        "definitions": {
-            "columns": {
-                "screening_total": {
-                    "fr": "Total",
-                    "en": "Total",
-                    "title":"Total",
-                    "condition": "true"
-                },
-                "screening_positif": {
-                    "fr": "Positif",
-                    "en": "Positif",
-                    "title":"Positif",
-                    "condition": "true"
-                }
-            }
+        "clistinix_albu": {
+            "line_number": "1a",
+            "fr": "...Dosage albumine",
+            "en": "...Dosage albumine",
+            "condition": "false"
         },
-    "parent": "report_labcare"
+        "clistinix_sugar": {
+            "line_number": "1b",
+            "fr": "...Sucre",
+            "en": "...Sugar",
+            "condition": "false"
+        },
+        "culot_urinaire": {
+            "line_number": "2",
+            "fr": "Culot urinaire",
+            "en": "Culot urinaire",
+            "condition": "false"
+        },
+        "culot_schisto": {
+            "line_number": "2a",
+            "fr": "...Schisto-haem",
+            "en": "...Schisto-haem",
+            "condition": "false"
+        },
+        "culot_tricho": {
+            "line_number": "2b",
+            "fr": "...Trichomonas",
+            "en": "...Trichomonas",
+            "condition": "false"
+        },
+        "culot_other": {
+            "line_number": "2c",
+            "fr": "...Autres",
+            "en": "...Others",
+            "condition": "false"
+        },
+        "smears": {
+            "line_number": "3",
+            "fr": "Gouttes épaisses",
+            "en": "Blood smears",
+            "condition": "false"
+        },
+        "smears_micro": {
+            "line_number": "3a",
+            "fr": "...Micro filaire",
+            "en": "...Micro filaria",
+            "condition": "false"
+        },
+        "smears_plasmo": {
+            "line_number": "3b",
+            "fr": "...Plasmodium",
+            "en": "...Plasmodium",
+            "condition": "false"
+        },
+        "smears_trypa": {
+            "line_number": "3c",
+            "fr": "...Trypanosomes",
+            "en": "...Trypanosomiasis",
+            "condition": "false"
+        },
+        "smears_other": {
+            "line_number": "3d",
+            "fr": "...Autres",
+            "en": "...Others",
+            "condition": "false"
+        },
+        "fresh_blood_smears": {
+            "line_number": "4",
+            "fr": "Goutte fraiche",
+            "en": "Fresh Blood smears",
+            "condition": "false"
+        },
+        "aspirate_from_nodules": {
+            "line_number": "5",
+            "fr": "Ponction ganglionnaires",
+            "en": "Aspirate from Nodules",
+            "condition": "false"
+        },
+        "aspirate_trypa": {
+            "line_number": "5a",
+            "fr": "...Trypanosomes",
+            "en": "...Trypanosomiasis",
+            "condition": "false"
+        },
+        "aspirate_other": {
+            "line_number": "5b",
+            "fr": "...Autres",
+            "en": "...Others",
+            "condition": "false"
+        },
+        "tested_couple_drepanocytosis": {
+            "line_number": "6",
+            "fr": "Couples dépistés: drépanocytose",
+            "en": "Tested couple: drepanocytosis",
+            "condition": "false"
+        },
+        "stool": {
+            "line_number": "7",
+            "fr": "Selles",
+            "en": "Stool",
+            "condition": "false"
+        },
+        "stool_amoebia": {
+            "line_number": "7a",
+            "fr": "...Amibe",
+            "en": "...Amoebia",
+            "condition": "false"
+        },
+        "stool_ankylostoma": {
+            "line_number": "7b",
+            "fr": "...Ankylostome",
+            "en": "...Ankylostoma",
+            "condition": "false"
+        },
+        "stool_schisto_mansoni": {
+            "line_number": "7c",
+            "fr": "...Schisto-mansoni",
+            "en": "...Schisto-mansoni",
+            "condition": "false"
+        },
+        "stool_trichomonas": {
+            "line_number": "7d",
+            "fr": "...Trichomonas",
+            "en": "...Trichomonas",
+            "condition": "false"
+        },
+        "stool_ascaris": {
+            "line_number": "7e",
+            "fr": "...Ascaris",
+            "en": "...Ascaris",
+            "condition": "false"
+        },
+        "stool_oxyures": {
+            "line_number": "7f",
+            "fr": "...Oxyures",
+            "en": "...Oxyures",
+            "condition": "false"
+        },
+        "stool_others": {
+            "line_number": "7g",
+            "fr": "...Autres",
+            "en": "...Others",
+            "condition": "false"
+        },
+        "hemoglobine": {
+            "line_number": "8",
+            "fr": "Hémoglobine",
+            "en": "Hemoglobine",
+            "condition": "false"
+        },
+        "hemoglobine_less_than_8": {
+            "line_number": "8a",
+            "fr": "...<8gr%",
+            "en": "...<8gr%",
+            "condition": "false"
+        },
+        "ziehl": {
+            "line_number": "9",
+            "fr": "Crachat Ziehl / BK Dépistage",
+            "en": "Sputum for AFB",
+            "condition": "false"
+        },
+        "ziehl_bk_test_c2_c3": {
+            "line_number": "9a",
+            "fr": "...Ziehl / BK Contrôle C2/C3",
+            "en": "...Ziehl/BK test C2/C3",
+            "condition": "false"
+        },
+        "ziehl_bk_control_c5": {
+            "line_number": "9b",
+            "fr": "...Ziehl / BK Contrôle C5",
+            "en": "...Ziehl/BK Control C5",
+            "condition": "false"
+        },
+        "ziehl_bk_control_c6_c7": {
+            "line_number": "9c",
+            "fr": "...Ziehl / BK Contrôle C6/C7",
+            "en": "...Ziehl/BK control C6/C7",
+            "condition": "false"
+        },
+        "hiv": {
+            "line_number": "10",
+            "fr": "VIH",
+            "en": "HIV",
+            "condition": "false"
+        },
+        "hiv_rapid_test": {
+            "line_number": "11",
+            "fr": "...Test rapide (Det., Unigld, Db chk)",
+            "en": "...Rapid test (Det, Unigld, Db chk)",
+            "condition": "false"
+        },
+        "hiv_slow_test": {
+            "line_number": "12",
+            "fr": "...Test lent (PCR,DNA,DBS)",
+            "en": "...Slow test (PCR,DNA,DBS)",
+            "condition": "false"
+        },
+        "hiv_other_test": {
+            "line_number": "13",
+            "fr": "...Autres test drépanocytose",
+            "en": "...Other tests drepanocytosis",
+            "condition": "false"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title":"Total",
+                "condition": "false"
+            },
+            "positive": {
+                "fr": "Positif",
+                "en": "Positive",
+                "title":"Positive",
+                "condition": "false"
+            }
+        }
+    },
+    "parent": "report_labcare",
+    "overrides": {
+        "predefined": [
+            {"row": "clistinix", "col": "total", "value": ""},
+            {"row": "clistinix_albu", "col": "positive", "value": ""},
+            {"row": "clistinix_sugar", "col": "positive", "value": ""},
+            {"row": "culot_urinaire", "col": "total", "value": ""},
+            {"row": "culot_schisto", "col": "positive", "value": ""},
+            {"row": "culot_tricho", "col": "positive", "value": ""},
+            {"row": "culot_other", "col": "positive", "value": ""},
+            {"row": "smears", "col": "total", "value": ""},
+            {"row": "smears_micro", "col": "positive", "value": ""},
+            {"row": "smears_plasmo", "col": "positive", "value": ""},
+            {"row": "smears_trypa", "col": "positive", "value": ""},
+            {"row": "smears_other", "col": "positive", "value": ""},
+            {"row": "fresh_blood_smears", "col": "total", "value": ""},
+            {"row": "fresh_blood_smears", "col": "positive", "value": ""},
+            {"row": "aspirate_from_nodules", "col": "total", "value": ""},
+            {"row": "aspirate_from_nodules", "col": "positive", "value": ""},
+            {"row": "aspirate_trypa", "col": "total", "value": ""},
+            {"row": "aspirate_trypa", "col": "positive", "value": ""},
+            {"row": "aspirate_other", "col": "total", "value": ""},
+            {"row": "aspirate_other", "col": "positive", "value": ""},
+            {"row": "tested_couple_drepanocytosis", "col": "total", "value": ""},
+            {"row": "tested_couple_drepanocytosis", "col": "positive", "value": ""},
+            {"row": "stool", "col": "total", "value": ""},
+            {"row": "stool", "col": "positive", "value": ""},
+            {"row": "stool_amoebia", "col": "total", "value": ""},
+            {"row": "stool_amoebia", "col": "positive", "value": ""},
+            {"row": "stool_ankylostoma", "col": "total", "value": ""},
+            {"row": "stool_ankylostoma", "col": "positive", "value": ""},
+            {"row": "stool_schisto_mansoni", "col": "total", "value": ""},
+            {"row": "stool_schisto_mansoni", "col": "positive", "value": ""},
+            {"row": "stool_trichomonas", "col": "total", "value": ""},
+            {"row": "stool_trichomonas", "col": "positive", "value": ""},
+            {"row": "stool_ascaris", "col": "total", "value": ""},
+            {"row": "stool_ascaris", "col": "positive", "value": ""},
+            {"row": "stool_oxyures", "col": "total", "value": ""},
+            {"row": "stool_oxyures", "col": "positive", "value": ""},
+            {"row": "stool_others", "col": "total", "value": ""},
+            {"row": "stool_others", "col": "positive", "value": ""},
+            {"row": "hemoglobine", "col": "total", "value": ""},
+            {"row": "hemoglobine", "col": "positive", "value": ""},
+            {"row": "hemoglobine_less_than_8", "col": "total", "value": ""},
+            {"row": "hemoglobine_less_than_8", "col": "positive", "value": ""},
+            {"row": "ziehl", "col": "total", "value": ""},
+            {"row": "ziehl", "col": "positive", "value": ""},
+            {"row": "ziehl_bk_test_c2_c3", "col": "total", "value": ""},
+            {"row": "ziehl_bk_test_c2_c3", "col": "positive", "value": ""},
+            {"row": "ziehl_bk_control_c5", "col": "total", "value": ""},
+            {"row": "ziehl_bk_control_c5", "col": "positive", "value": ""},
+            {"row": "ziehl_bk_control_c6_c7", "col": "total", "value": ""},
+            {"row": "ziehl_bk_control_c6_c7", "col": "positive", "value": ""},
+            {"row": "hiv", "col": "total", "value": ""},
+            {"row": "hiv", "col": "positive", "value": ""},
+            {"row": "hiv_rapid_test", "col": "total", "value": ""},
+            {"row": "hiv_rapid_test", "col": "positive", "value": ""},
+            {"row": "hiv_slow_test", "col": "total", "value": ""},
+            {"row": "hiv_slow_test", "col": "positive", "value": ""},
+            {"row": "hiv_other_test", "col": "total", "value": ""},
+            {"row": "hiv_other_test", "col": "positive", "value": ""}
+        ],
+        "disabled": [
+            {"row": "clistinix", "col": "positive"},
+            {"row": "clistinix_albu", "col": "total"},
+            {"row": "clistinix_sugar", "col": "total"},
+            {"row": "culot_urinaire", "col": "positive"},
+            {"row": "culot_schisto", "col": "total"},
+            {"row": "culot_tricho", "col": "total"},
+            {"row": "culot_other", "col": "total"},
+            {"row": "smears", "col": "positive"},
+            {"row": "smears_micro", "col": "total"},
+            {"row": "smears_plasmo", "col": "total"},
+            {"row": "smears_trypa", "col": "total"},
+            {"row": "smears_other", "col": "total"}
+        ]
     }
+}

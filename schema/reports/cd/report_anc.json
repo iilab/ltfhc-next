@@ -6,7 +6,7 @@
     "properties": {
         "antenatal_clinic_visit_1": {
             "line_number": "1",
-            "fr": "Nouveaux cas SVSVisites CPN 1",
+            "fr": "Visites CPN 1",
             "en": "Antenatal Clinic visit 1",
             "condition": "true"
         },

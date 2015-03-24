@@ -35,55 +35,55 @@
                 "fr": "Testés",
                 "en": "Tested",
                 "title":"Tested",
-                "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes'))"
+                "condition": "(patient.gender === 'male' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_tested === 'yes') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_tested === 'yes')))"
             },
             "masculine_positive": {
                 "fr": "Positifs",
                 "en": "Positive",
                 "title":"Positive",
-                "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes'))"
+                "condition": "(patient.gender === 'male' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'positive') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'positive')))"
             },
             "masculine_negative": {
                 "fr": "Négatifs",
                 "en": "Negative",
                 "title":"Negative",
-                "condition": "(patient.gender === 'male' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no'))"
+                "condition": "(patient.gender === 'male' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'negative') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'negative')))"
             },
             "feminine_tested": {
                 "fr": "Testés",
                 "en": "Tested",
                 "title":"Tested",
-                "condition": "patient.gender === 'female' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit) || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit))"
+                "condition": "(patient.gender === 'female' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_tested === 'yes') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit) || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit)))"
             },
             "feminine_positive": {
                 "fr": "Positifs",
                 "en": "Positive",
                 "title":"Positive",
-                "condition": "(patient.gender === 'female' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'yes'))"
+                "condition": "(patient.gender === 'female' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'positive') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'positive') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'yes')))"
             },
             "feminine_negative": {
                 "fr": "Négatifs",
                 "en": "Negative",
                 "title":"Negative",
-                "condition": "(patient.gender === 'female' && (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'no'))"
+                "condition": "(patient.gender === 'female' && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') || (subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'negative') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'negative') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative' && !subforms.anc_first_visit.second_hiv_test) || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'no')))"
             },
             "total_tested": {
                 "fr": "Testés",
                 "en": "Tested",
                 "title":"Tested",
-                "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit === 'yes')"
+                "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_tested === 'yes') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_tested === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit === 'yes')"
             },
             "total_positive": {
                 "fr": "Positifs",
                 "en": "Positive",
                 "title":"Positive",
-                "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative' && subforms.anc_followup.second_hiv_test === 'yes')"
+                "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'positive') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'positive') || (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'yes')"
             },
             "total_negative": {
                 "fr": "Négatifs",
                 "en": "Negative",
                 "title":"Negative",
-                "condition": "(subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') && (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && subforms.anc_followup.second_hiv_test === 'no')"
+                "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'negative') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'negative') || (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'no') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'negative') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'no') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'negative') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && subforms.anc_followup.second_hiv_test === 'no')"
             }
         }
     },
