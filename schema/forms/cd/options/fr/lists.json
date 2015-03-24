@@ -736,6 +736,25 @@
         "PEP"
       ]
     },
+    "arv_treatment": {
+      "optionLabels": [
+        "Soins AZT+3TC+NVP",
+        "Soins AZT+3TC+EFV",
+        "Soins TDF+3TC+NVP",
+        "Soins TDF+3TC+EFV",
+        "Soins AZT+3TC+MVP Sirop (pédiatrique)",
+        "Soins ABC+ddI+LPV/r",
+        "Soins ABC+3TC+EFV"
+      ]
+    },
+    "arv_treatment_duration": {
+      "optionLabels": [
+        "12 mois",
+        "24 mois",
+        "36 mois",
+        "60 mois"
+      ]
+    },
     "who_score": {
       "optionLabels": []
     },
@@ -744,6 +763,37 @@
         "Working",
         "Bedridden",
         "Ambulatory"
+      ]
+    },
+    "tests": {
+      "optionLabels": [
+        "Chimie urines - Dosage albumine",
+        "Chimie urines - Sucre",
+        "Culot urinaire - Schisto-haem.",
+        "Culot urinaire - Trichomonas",
+        "Culot urinaire - Autres",
+        "Gouttes épaisses - Micro filaire",
+        "Gouttes épaisses - Plasmodium",
+        "Gouttes épaisses - Trypanosome",
+        "Gouttes épaisses - Autres",
+        "Goutte fraiche",
+        "Ponction ganglionnaires - Trypanosomes",
+        "Ponction ganglionnaires - Autres",
+        "Couples dépistés: drépanocytose",
+        "Selles - Amibe",
+        "Selles - Ankylostome",
+        "Selles - Schisto-mansoni",
+        "Selles - Trichomonas",
+        "Selles - Ascaris",
+        "Selles - Oxyures",
+        "Selles - Autres",
+        "Hémoglobine < 8gr%",
+        "Crachat Ziehl / BK Dépis - Ziehl / BK Contrôle C2/C3",
+        "Crachat Ziehl / BK Dépis - Ziehl / BK Contrôle C5",
+        "Crachat Ziehl / BK Dépis - Ziehl / BK Contrôle C6/C7",
+        "VIH - Test rapide (Det., Unigld, Db chk)",
+        "VIH - Test lent (PCR,DNA,DBS)",
+        "VIH - Autres test drépanocytose"
       ]
     }
   }

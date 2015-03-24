@@ -50,6 +50,14 @@
       "removeDefaultNone": true,
       "label": "Prior ARV exposure"
     },
+    "arv_treatment": {
+      "type": "select",
+      "label": "ARV Treatment"
+    },
+    "arv_treatment_duration": {
+      "type": "select",
+      "label": "ARV Treatment duration"
+    },
     "sexual_violence": {
       "type": "radio",
       "enum": [

@@ -41,8 +41,24 @@
       "label": "Examination Notes:"
     },
     "testing_method": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Amepimwa kwa njia zifuatazo",
+      "helper": "Please check the boxes in front of the tests that were used."
+    },
+    "testing_method_other": {
       "type": "textarea",
-      "label": "Amepimwa kwa njia zifuatazo"
+      "label": "Other method"
+    },
+    "testing_results": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Positive Test results",
+      "helper": "Please check the boxes in front of the tests which had positive results"
+    },
+    "testing_results_other": {
+      "type": "textarea",
+      "label": "Other test results"
     },
     "diagnosis": {
       "type": "select",

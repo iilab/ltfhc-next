@@ -51,6 +51,14 @@
       "type": "string",
       "$ref": "./lists/#arv_exposure"
     },
+    "arv_treatment": {
+      "type": "string",
+      "$ref": "./lists/#arv_treatment"
+    },
+    "arv_treatment_duration": {
+      "type": "string",
+      "$ref": "./lists/#arv_treatment_duration"
+    },
     "sexual_violence": {
       "type": "number",
       "enum": [

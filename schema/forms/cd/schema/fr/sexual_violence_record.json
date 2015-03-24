@@ -5,12 +5,12 @@
   "description": "",
   "type": "object",
   "properties": {
-    "date_incident": {
-      "type": "date",
-      "format": "date"
-    },
-    "current_incident_days": {
-      "type": "number"
+    "incident_72h": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
     },
     "received_pep_kit": {
       "type": "number",
@@ -33,6 +33,14 @@
         "no"
       ]
     },
+    "hiv_status_prior": {
+      "type": "string",
+      "$ref": "./lists/#hiv_statuses"
+    },
+    "hiv_partner_status_prior": {
+      "type": "string",
+      "$ref": "./lists/#hiv_statuses"
+    },
     "hiv_tested": {
       "type": "number",
       "enum": [
@@ -40,21 +48,36 @@
         "no"
       ]
     },
-    "hiv_partner_test": {
+    "hiv_status": {
+      "type": "string",
+      "$ref": "./lists/#hiv_statuses"
+    },
+    "post_test_counseling": {
       "type": "number",
       "enum": [
         "yes",
         "no"
       ]
     },
-    "hiv_positive_test": {
+    "hiv_partner_tested": {
       "type": "number",
       "enum": [
         "yes",
         "no"
       ]
     },
-    "hiv_partner_positive_test": {
+    "hiv_partner_status": {
+      "type": "string",
+      "$ref": "./lists/#hiv_statuses"
+    },
+    "hiv_partner_visit_recorded": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_discordant": {
       "type": "number",
       "enum": [
         "yes",
@@ -69,20 +92,6 @@
       ]
     },
     "hiv_partner_counseling": {
-      "type": "number",
-      "enum": [
-        "yes",
-        "no"
-      ]
-    },
-    "hiv_discordant": {
-      "type": "number",
-      "enum": [
-        "yes",
-        "no"
-      ]
-    },
-    "post_test_counseling": {
       "type": "number",
       "enum": [
         "yes",

@@ -1,38 +1,10 @@
 {
   "$schema": "http://json_schema.org/draft-04/schema#",
-  "_id": "sexual_violence_record",
-  "title": "Sexual Violence Record",
+  "_id": "hiv_diagnosis",
+  "title": "Diagnostic VIH",
   "description": "",
   "type": "object",
   "properties": {
-    "incident_72h": {
-      "type": "number",
-      "enum": [
-        "yes",
-        "no"
-      ]
-    },
-    "received_pep_kit": {
-      "type": "number",
-      "enum": [
-        "yes",
-        "no"
-      ]
-    },
-    "received_pep_kit_72h": {
-      "type": "number",
-      "enum": [
-        "yes",
-        "no"
-      ]
-    },
-    "received_emergency_contraception": {
-      "type": "number",
-      "enum": [
-        "yes",
-        "no"
-      ]
-    },
     "hiv_status_prior": {
       "type": "string",
       "$ref": "./lists/#hiv_statuses"
@@ -98,7 +70,14 @@
         "no"
       ]
     },
-    "urogenital_fistula_post_rape": {
+    "art_drugs": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "combo_drugs": {
       "type": "number",
       "enum": [
         "yes",

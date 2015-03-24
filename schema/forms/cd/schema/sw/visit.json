@@ -86,7 +86,8 @@
               "delivery_record",
               "diarrhea",
               "ctc_record",
-              "sexual_violence_record"
+              "sexual_violence_record",
+              "hiv_diagnosis"
             ]
           },
           "subforms": {
@@ -171,6 +172,11 @@
                 "title": "Sexual Violence Record",
                 "dependencies": "#reasons",
                 "$ref": "sexual_violence_record"
+              },
+              "hiv_diagnosis": {
+                "title": "HIV Diagnosis",
+                "dependencies": "#reasons",
+                "$ref": "hiv_diagnosis"
               }
             }
           }

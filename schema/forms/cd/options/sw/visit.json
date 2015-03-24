@@ -86,6 +86,7 @@
               null,
               null,
               null,
+              null,
               null
             ]
           },
@@ -169,6 +170,11 @@
               "sexual_violence_record": {
                 "dependencies": {
                   "#reasons": "sexual_violence_record"
+                }
+              },
+              "hiv_diagnosis": {
+                "dependencies": {
+                  "#reasons": "hiv_diagnosis"
                 }
               }
             }

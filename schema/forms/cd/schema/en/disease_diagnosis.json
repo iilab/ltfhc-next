@@ -37,6 +37,17 @@
       "type": "string"
     },
     "testing_method": {
+      "type": "string",
+      "$ref": "./lists/#tests"
+    },
+    "testing_method_other": {
+      "type": "string"
+    },
+    "testing_results": {
+      "type": "string",
+      "$ref": "./lists/#tests"
+    },
+    "testing_results_other": {
       "type": "string"
     },
     "diagnosis": {

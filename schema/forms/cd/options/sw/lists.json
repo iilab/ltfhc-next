@@ -736,6 +736,25 @@
         "PEP"
       ]
     },
+    "arv_treatment": {
+      "optionLabels": [
+        "Care AZT+3TC+NVP",
+        "Care AZT+3TC+EFV",
+        "Care TBF+3TC+NVP",
+        "Care TBF+3TC+EFV",
+        "Care AZT+3TC+MVP syrup (children ward)",
+        "Care ABC+ddl+LPV/r",
+        "Care ABC+3TC+EFV"
+      ]
+    },
+    "arv_treatment_duration": {
+      "optionLabels": [
+        "12 months",
+        "24 months",
+        "36 months",
+        "60 months"
+      ]
+    },
     "who_score": {
       "optionLabels": []
     },
@@ -744,6 +763,37 @@
         "Working",
         "Bedridden",
         "Ambulatory"
+      ]
+    },
+    "tests": {
+      "optionLabels": [
+        "Clinistix - Dosage albumine",
+        "Clinistix - Sugar",
+        "Culot urinaire - Schisto-haem.",
+        "Culot urinaire - Trichomonas",
+        "Culot urinaire - Autres",
+        "Blood smears - Micro Filaria",
+        "Blood smears - Plasmodium",
+        "Blood smears - Trypanosomiasis",
+        "Blood smears - Others",
+        "Fresh Blood smears",
+        "Aspirate from Nodules - Trypanosomiasis",
+        "Aspirate from Nodules - Others",
+        "Tested couple: drepanocytosis",
+        "Stool - Amoebia",
+        "Stool - Ankylostoma",
+        "Stool - Schisto-mansoni",
+        "Stool - Trichomonas",
+        "Stool - Ascaris",
+        "Stool - Oxyures",
+        "Stool - Others",
+        "Hémoglobine < 8gr%",
+        "Sputum for AFB - Ziehl/BK test C2/C3",
+        "Sputum for AFB - Ziehl/BK Control C5",
+        "Sputum for AFB - Ziehl/BK control C6/C7",
+        "HIV - Rapid test (Det, Unigld, Db chk )",
+        "HIV - Slow test (PCR, DNA, DBS)",
+        "HIV - Other test drépanocytose"
       ]
     }
   }

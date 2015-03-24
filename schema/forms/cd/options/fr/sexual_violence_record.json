@@ -1,18 +1,13 @@
 {
   "fields": {
-    "date_incident": {
-      "type": "date",
-      "dateFormat": "yy-mm-dd",
-      "datepicker": {
-        "hideIfNoPrevNextType": true,
-        "yearRange": "1900:+1",
-        "changeMonth": true,
-        "changeYear": true
-      },
-      "label": "When did the incident take place?"
-    },
-    "current_incident_days": {
-      "type": "hidden"
+    "incident_72h": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Did the incident take place in the past 72h?"
     },
     "received_pep_kit": {
       "type": "radio",
@@ -21,7 +16,7 @@
         "No"
       ],
       "removeDefaultNone": true,
-      "label": "Reçu le kit PEP"
+      "label": "Reçu le kit PEP?"
     },
     "received_pep_kit_72h": {
       "type": "radio",
@@ -30,7 +25,7 @@
         "No"
       ],
       "removeDefaultNone": true,
-      "label": "Reçu le kit PEP avant 72h"
+      "label": "Reçu le kit PEP avant 72h?"
     },
     "received_emergency_contraception": {
       "type": "radio",
@@ -39,7 +34,17 @@
         "No"
       ],
       "removeDefaultNone": true,
-      "label": "Reçu contraception d'urgence"
+      "label": "Reçu contraception d'urgence?"
+    },
+    "hiv_status_prior": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "Statut VIH connu avant la visite"
+    },
+    "hiv_partner_status_prior": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "Statut VIH du partenaire connu avant la visite"
     },
     "hiv_tested": {
       "type": "radio",
@@ -48,34 +53,54 @@
         "No"
       ],
       "removeDefaultNone": true,
-      "label": "Tested for HIV?"
+      "label": "Tested for HIV on this visit?"
     },
-    "hiv_partner_test": {
+    "hiv_status": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "HIV test results for this visit?"
+    },
+    "post_test_counseling": {
       "type": "radio",
       "enum": [
         "Yes",
         "No"
       ],
       "removeDefaultNone": true,
-      "label": "Partner tested for HIV?"
+      "label": "Post-test HIV counseling given?"
     },
-    "hiv_positive_test": {
+    "hiv_partner_tested": {
       "type": "radio",
       "enum": [
         "Yes",
         "No"
       ],
       "removeDefaultNone": true,
-      "label": "Tested positive for HIV?"
+      "label": "Partner tested for HIV on this visit?"
     },
-    "hiv_partner_positive_test": {
+    "hiv_partner_status": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "Partner HIV test results?"
+    },
+    "hiv_partner_visit_recorded": {
       "type": "radio",
       "enum": [
         "Yes",
         "No"
       ],
       "removeDefaultNone": true,
-      "label": "Partner tested positive for HIV?"
+      "label": "Visite du partenaire documentée?",
+      "helper": "Merci de créer une nouvelle fiche de données pour le diagnostique VIH du partenaire."
+    },
+    "hiv_discordant": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "HIV discordant couple?"
     },
     "hiv_counseling": {
       "type": "radio",
@@ -94,24 +119,6 @@
       ],
       "removeDefaultNone": true,
       "label": "HIV counseling given to partner?"
-    },
-    "hiv_discordant": {
-      "type": "radio",
-      "enum": [
-        "Yes",
-        "No"
-      ],
-      "removeDefaultNone": true,
-      "label": "HIV discordant couple?"
-    },
-    "post_test_counseling": {
-      "type": "radio",
-      "enum": [
-        "Yes",
-        "No"
-      ],
-      "removeDefaultNone": true,
-      "label": "Post-test HIV counseling given?"
     },
     "urogenital_fistula_post_rape": {
       "type": "radio",

@@ -846,6 +846,29 @@
         "pep_ther"
       ]
     },
+    "arv_treatment": {
+      "id": "arv_treatment",
+      "type": "string",
+      "enum": [
+        "azt_3tc_nvp",
+        "azt_3tc_efv",
+        "tbf_3tc_nvp",
+        "tbf_3tc_efv",
+        "azt_3_tc_mvp_syrup_children",
+        "abc_ddl_lpv_r",
+        "abc_3tc_efv"
+      ]
+    },
+    "arv_treatment_duration": {
+      "id": "arv_treatment_duration",
+      "type": "string",
+      "enum": [
+        12,
+        24,
+        36,
+        60
+      ]
+    },
     "who_score": {
       "id": "who_score",
       "type": "string",
@@ -858,6 +881,39 @@
         "working_func",
         "bed_func",
         "amb_func"
+      ]
+    },
+    "tests": {
+      "id": "tests",
+      "type": "string",
+      "enum": [
+        "urine_albu",
+        "urine_sucre",
+        "culot_schisto",
+        "culot_tricho",
+        "culot_autre",
+        "goutte_micro",
+        "goutte_plasmo",
+        "goutte_trypa",
+        "goutte_autre",
+        "goutte_fraiche",
+        "ganglion_trypa",
+        "ganglion_autre",
+        "couple_drepa",
+        "selles_amibe",
+        "selles_anky",
+        "selles_schisto",
+        "selles_tricho",
+        "selles_ascaris",
+        "selles_oxyures",
+        "selles_autre",
+        "hemoglobine",
+        "ziehl_c2_c3",
+        "ziehl_c5",
+        "ziehl_c6_c7",
+        "vih_rapide",
+        "vih_lent",
+        "vih_autre"
       ]
     }
   }
