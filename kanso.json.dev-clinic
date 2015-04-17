@@ -2,7 +2,7 @@
 	"name": "emr",
 	"version": "0.5.0",
 	"description": "Medical Record for LTFHC",
-	"clinic": "kimena",
+	"clinic": "demo",
 	"zone":  "dev",
 	"type": "clinic",
 	"country": "cd",
