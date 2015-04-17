@@ -1,179 +1,131 @@
 exports.reports = function () {
     return {
-        "report_anc": {
+        "report_anc_1": {
             "title": "3.1. Antenatal Clinic",
             "en": "3.1. Antenatal Clinic",
             "fr": "3.1. Consultation Prénatale (CPN)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "antenatal_clinic_visit_1": {
                     "line_number": "1",
                     "fr": "Visites CPN 1",
                     "en": "Antenatal Clinic visit 1",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "pregnant_women_less_than_20_yrs": {
                     "line_number": "2",
                     "fr": "Femmes enceintes < 20 Ans",
                     "en": "Pregnant women less than 20 yrs",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "antenatal_clinic_visit_2": {
                     "line_number": "3",
                     "fr": "Visites CPN 2",
                     "en": "Antenatal Clinic visit 2",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "antenatal_clinic_visit_3": {
                     "line_number": "4",
                     "fr": "Visites CPN 3",
                     "en": "Antenatal Clinic visit 3",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "antenatal_clinic_vist_4": {
                     "line_number": "5",
                     "fr": "Visites CPN 4",
                     "en": "Antenatal Clinic vist 4",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "pregnant_women_who_realised_the_antenatal_cininc_1st_term": {
                     "line_number": "6",
                     "fr": "Femmes enceinte ayant réalisé la CPN1 au 1er trimestre",
                     "en": "Pregnant women who realised the Antenatal cininc 1st term",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "pregnant_women_with_anc4_during_their_last_pregnancy": {
                     "line_number": "7",
                     "fr": "Femmes enceinte avec CPN 4 pendant leur dernière grossesse",
                     "en": "Pregnant women with ANC4 during their last pregnancy",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "pregnant_women_with_anc4_with_one_at_8th_or_9th_month": {
                     "line_number": "8",
                     "fr": "Femmes enceinte avec CPN 4 dont une au 8ème-9ème mois",
                     "en": "Pregnant women with ANC4  with one at 8th or 9th month",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "tested_pregnant_women_at_risk": {
                     "line_number": "9",
                     "fr": "Femmes enceinte à risque détectées",
                     "en": "Tested Pregnant women at risk",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "refered_pregant_women_at_risk_to_the_general_hospital": {
                     "line_number": "10",
                     "fr": "Femmes enceinte à risque référée vers l'HGR",
                     "en": "Refered Pregant women at risk to the general hospital",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "pregnant_women_under_20_yrs_refered": {
                     "line_number": "11",
                     "fr": "Femmes enceintes < 20 Ans référées",
                     "en": "Pregnant women under 20 yrs refered",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "iron_plus_folic_acid_1st_dose_received": {
                     "line_number": "12",
                     "fr": "Fer + Acide Folique 1ère dose reçue",
                     "en": "Iron + folic acid 1st dose received",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "iron_plus_folic_acid_2nd_dose_received": {
                     "line_number": "13",
                     "fr": "Fer + Acide Folique 2ème dose reçues",
                     "en": "Iron + folic acid 2nd dose received",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "iron_plus_folic_acid_3rd_dose_received": {
                     "line_number": "14",
                     "fr": "Fer + Acide Folique 3ème dose reçue",
                     "en": "Iron + folic acid 3rd dose received",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "sulfadox_plus_pyrimet_1st_dose_received": {
                     "line_number": "15",
                     "fr": "Sulfadox. + Pyrimét 1ère dose reçue",
                     "en": "Sulfadox + Pyrimet 1st dose received",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "sulfadox_plus_pyrimet_2nd_dose_received": {
                     "line_number": "16",
                     "fr": "Sulfadox. + Pyrimét 2ème dose reçues",
                     "en": "Sulfadox + Pyrimet 2nd dose received",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "sulfadox_plus_pyrimet_3rd_dose_received": {
                     "line_number": "17",
                     "fr": "Sulfadox. + Pyrimét 3ème dose reçue",
                     "en": "Sulfadox + Pyrimet 3rd dose received",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "completed_vaccinated_before_pregnancy": {
                     "line_number": "18",
                     "fr": "Complètement vaccinées avant grossesse",
                     "en": "Completed vaccinated before pregnancy",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "who_required_the_mild": {
                     "line_number": "19",
                     "fr": "Ayant acquis une MILD",
                     "en": "Who required the MILD",
-                    "condition": "true"
+                    "condition": "false"
                 },
                 "who_received_mebendazole_since_the_2nd_term": {
                     "line_number": "20",
                     "fr": "Ayant reçu le Mébendazole à partir du 2ème trimestre",
                     "en": "Who received Mebendazole since the 2nd term",
-                    "condition": "true"
-                },
-                "target_population": {
-                    "line_number": "21",
-                    "line": "singlecell",
-                    "fr": "Population cible = fe du mois",
-                    "en": "target population= monthly woman",
-                    "condition": "true"
-                },
-                "anc_sessions": {
-                    "line_number": "22",
-                    "line": "singlecell",
-                    "fr": "Séances de CPN",
-                    "en": "ANC sessions",
-                    "condition": "true"
-                },
-                "used_rate_anc": {
-                    "line_number": "23",
-                    "line": "singlecell",
-                    "fr": "Taux d’utilisation CPN = CPN 1 AS (Nlles inscrites)x 100/ Pop femmes enceintes du mois",
-                    "en": "Used rate ANC= ANC 1 AS (new registered)X100/pop monthly pregnant women",
-                    "condition": "true"
-                },
-                "pregnacies_at_high_risk_detected": {
-                    "line_number": "24",
-                    "line": "singlecell",
-                    "fr": "Proportion de grossesses à haut risque détectées = Tot Grossesses à haut risque détectées x 100 / Total Nlles Inscrites",
-                    "en": "Pregnacies at high risk detected = total pregnancies at high risk detected X100/tota new registered",
-                    "condition": "true"
-                },
-                "pregnancies_at_high_risk_avarage_refered": {
-                    "line_number": "25",
-                    "line": "singlecell",
-                    "fr": "Propor)on de grossesses à haut risque référées = Tot Grossesses à haut risque référées x 100 / Total femmes à hauts risques détectées inscrites",
-                    "en": "Pregnancies at high risk avarage refered= total pregnanciesat high risk refered X100/total women at high risk detected registered",
-                    "condition": "true"
-                },
-                "average_of_women_who_received_at_least_the_sp2": {
-                    "line_number": "26",
-                    "line": "singlecell",
-                    "fr": "Proportion de fe ayant reçu au moins la SP 2 = Nombre de femmes enceintes ayant reçu au moins 2 Quantité de SPX100 / Fe ayant effectué la première visite prénatale",
-                    "en": "Average of women who received at least the SP2= number of pregnant women Who received at least 2 quantities of SPX100/woman who was visited for the 1st time at ANC",
-                    "condition": "true"
-                },
-                "average_of_pregnant_women_who_received_one_mild_at_anc": {
-                    "line_number": "27",
-                    "line": "singlecell",
-                    "fr": "Proportion des femmes enceintes ayant reçues une MILD à la CPN = femmes enceintes ayant acquis MILD X 100/ Total CPN1",
-                    "en": "Average of pregnant women who received one MILD at ANC= Pregnant woman who required a MILD X100/total ANC 1",
-                    "condition": "true"
+                    "condition": "false"
                 }
             },
             "definitions": {
@@ -182,14 +134,86 @@ exports.reports = function () {
                         "fr": "Total",
                         "en": "Total",
                         "title": "Total",
-                        "condition": "true"
+                        "condition": "false"
                     }
                 }
-            }
+            },
+            "parent": "report_anc"
+        },
+        "report_anc_2": {
+            "title": "3.1. Antenatal Clinic Indicators",
+            "en": "3.1. Antenatal Clinic",
+            "fr": "3.1. Consultation Prénatale (CPN)",
+            "manual": "true",
+            "type": "object",
+            "properties": {
+                "target_population": {
+                    "line_number": "21",
+                    "line": "singlecell",
+                    "fr": "Population cible = fe du mois",
+                    "en": "target population= monthly woman",
+                    "condition": "false"
+                },
+                "anc_sessions": {
+                    "line_number": "22",
+                    "line": "singlecell",
+                    "fr": "Séances de CPN",
+                    "en": "ANC sessions",
+                    "condition": "false"
+                },
+                "used_rate_anc": {
+                    "line_number": "23",
+                    "line": "singlecell",
+                    "fr": "Taux d’utilisation CPN = CPN 1 AS (Nlles inscrites)x 100/ Pop femmes enceintes du mois",
+                    "en": "Used rate ANC= ANC 1 AS (new registered)X100/pop monthly pregnant women",
+                    "condition": "false"
+                },
+                "pregnacies_at_high_risk_detected": {
+                    "line_number": "24",
+                    "line": "singlecell",
+                    "fr": "Proportion de grossesses à haut risque détectées = Tot Grossesses à haut risque détectées x 100 / Total Nlles Inscrites",
+                    "en": "Pregnacies at high risk detected = total pregnancies at high risk detected X100/tota new registered",
+                    "condition": "false"
+                },
+                "pregnancies_at_high_risk_avarage_refered": {
+                    "line_number": "25",
+                    "line": "singlecell",
+                    "fr": "Proportion de grossesses à haut risque référées = Tot Grossesses à haut risque référées x 100 / Total femmes à hauts risques détectées inscrites",
+                    "en": "Pregnancies at high risk avarage refered= total pregnanciesat high risk refered X100/total women at high risk detected registered",
+                    "condition": "false"
+                },
+                "average_of_women_who_received_at_least_the_sp2": {
+                    "line_number": "26",
+                    "line": "singlecell",
+                    "fr": "Proportion de fe ayant reçu au moins la SP 2 = Nombre de femmes enceintes ayant reçu au moins 2 Quantité de SPX100 / Fe ayant effectué la première visite prénatale",
+                    "en": "Average of women who received at least the SP2= number of pregnant women Who received at least 2 quantities of SPX100/woman who was visited for the 1st time at ANC",
+                    "condition": "false"
+                },
+                "average_of_pregnant_women_who_received_one_mild_at_anc": {
+                    "line_number": "27",
+                    "line": "singlecell",
+                    "fr": "Proportion des femmes enceintes ayant reçues une MILD à la CPN = femmes enceintes ayant acquis MILD X 100/ Total CPN1",
+                    "en": "Average of pregnant women who received one MILD at ANC= Pregnant woman who required a MILD X100/total ANC 1",
+                    "condition": "false"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "total": {
+                        "fr": "Total",
+                        "en": "Total",
+                        "title": "Total",
+                        "condition": "false"
+                    }
+                }
+            },
+            "parent": "report_anc"
         },
         "report_childvaccination_1": {
             "title": "4.1 Child's vaccination",
+            "fr": "4.1 Vaccination des enfants",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "prepared_sessions": {
                     "line_number": "1",
@@ -231,7 +255,9 @@ exports.reports = function () {
         },
         "report_childvaccination_2": {
             "title": "4.1 Child's vaccination (cont)",
+            "fr": "4.1 Vaccination des enfants",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "bcg": {
                     "line_number": "16",
@@ -624,7 +650,9 @@ exports.reports = function () {
         },
         "report_community_1": {
             "title": "6.1 Reference of Community care site activities",
+            "fr": "6.1 Référence du Site de Soin Communautaire au CS",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "active_care_sites": {
                     "line_number": "1",
@@ -659,7 +687,9 @@ exports.reports = function () {
         },
         "report_community_2": {
             "title": "6.2 Treatment and Notification",
+            "fr": "6.2 Notification et traitement",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "new_children_cases_receivedat_the_site": {
                     "line_number": "1",
@@ -718,7 +748,9 @@ exports.reports = function () {
         },
         "report_community_3": {
             "title": "6.2 Treatment and Notification (cont)",
+            "fr": "6.2. Notification et traitement (suite)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "cases_of_fever_in_malaria_zone_at_risk": {
                     "line_number": "1",
@@ -807,7 +839,9 @@ exports.reports = function () {
         },
         "report_community_4": {
             "title": "6.3  Consumption of medicines",
+            "fr": "6.3. Consommation des médicaments",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "amoxyciline_250mg_or_syrup_125mg": {
                     "line_number": "1",
@@ -885,6 +919,7 @@ exports.reports = function () {
         "report_diagnosis": {
             "title": "2.8: Diagnosis and end of cases put in observation",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "accident_celebro_vascular": {
                     "line_number": "1",
@@ -1384,6 +1419,7 @@ exports.reports = function () {
         "report_epidemiological": {
             "title": "Weekly Notification Form - Epidemiological Diseases",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "structure_of_care": {
                     "line_number": "1",
@@ -1605,7 +1641,9 @@ exports.reports = function () {
         },
         "report_family": {
             "title": "3.3  Partners and Family members of the PW",
+            "fr": "3.2 Partenaires et membres de la famille de la femme enceinte",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "0_14_yrs": {
                     "line_number": "1",
@@ -1693,7 +1731,9 @@ exports.reports = function () {
         },
         "report_familyplanning_1": {
             "title": "3.7.1 The use of Family Planning services",
+            "fr": "3.7.1 Utilisation des Services de Planification familiale (PF)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "new_cases_new_accepted_fp_services": {
                     "line_number": "1",
@@ -1745,8 +1785,10 @@ exports.reports = function () {
             "parent": "report_familyplanning"
         },
         "report_familyplanning_2": {
-            "title": "3.7.2  The use of FP methods",
+            "title": "3.7.2 The use of FP methods",
+            "fr": "3.7.2 Utilisation des Methodes de Planification familiale (PF)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "inj_deprovera": {
                     "line_number": "1",
@@ -2529,6 +2571,7 @@ exports.reports = function () {
             "en": "2.5 Laboratory",
             "fr": "2.5 Laboratoire",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "clistinix": {
                     "line_number": "1",
@@ -3106,6 +3149,7 @@ exports.reports = function () {
         "report_labcare_2": {
             "title": "2.6. Care",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "persons_who_received_counseling_and_treatment_in_order_to_prevent_heart_crisis_or_the_avc": {
                     "line_number": "1",
@@ -3182,6 +3226,7 @@ exports.reports = function () {
         "report_malaria": {
             "title": "Monthly Canvas - 2.7. Malaria",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "suspect_cases": {
                     "line_number": "1",
@@ -3191,7 +3236,7 @@ exports.reports = function () {
                 },
                 "tdr_realised": {
                     "line_number": "2",
-                    "fr": "TDR r�alis�s",
+                    "fr": "TDR réalisés",
                     "en": "TDR realised",
                     "condition": "false"
                 },
@@ -3203,7 +3248,7 @@ exports.reports = function () {
                 },
                 "blood_smears_realised": {
                     "line_number": "3",
-                    "fr": "Goutte �paisse r�alis�e",
+                    "fr": "Goutte épaisse réalisée",
                     "en": "Blood smears realised",
                     "condition": "false"
                 },
@@ -3215,67 +3260,67 @@ exports.reports = function () {
                 },
                 "including_frottis_mince_realised": {
                     "line_number": "4",
-                    "fr": "Frottis mince r�alis�s",
+                    "fr": "Frottis mince réalisés",
                     "en": "Including frottis mince realised",
                     "condition": "false"
                 },
                 "confirmed_simple_malaria": {
                     "line_number": "5",
-                    "fr": "Paludisme simple confirm�",
+                    "fr": "Paludisme simple confirmé",
                     "en": "Confirmed simple malaria",
                     "condition": "false"
                 },
                 "including_treated": {
                     "line_number": "5a",
-                    "fr": "...Dont trait�",
+                    "fr": "...Dont traité",
                     "en": "...Including treated",
                     "condition": "false"
                 },
                 "confirmed_severe_malaria": {
                     "line_number": "6",
-                    "fr": "Paludisme grave confirm�",
+                    "fr": "Paludisme grave confirmé",
                     "en": "Confirmed severe malaria",
                     "condition": "false"
                 },
                 "confirmed_severe_including_refered": {
                     "line_number": "6a",
-                    "fr": "...Dont r�f�r�",
+                    "fr": "...Dont référé",
                     "en": "...Including refered",
                     "condition": "false"
                 },
                 "confirmed_severe_including_deads": {
                     "line_number": "6b",
-                    "fr": "...Dont d�c�d�",
+                    "fr": "...Dont décédé",
                     "en": "...Including deads",
                     "condition": "false"
                 },
                 "unconfirmed_simple_malaria": {
                     "line_number": "7",
-                    "fr": "Paludisme simple non confirm�",
+                    "fr": "Paludisme simple non confirmé",
                     "en": "Unconfirmed simple malaria",
                     "condition": "false"
                 },
                 "unconfirmed_simple_dead": {
                     "line_number": "7a",
-                    "fr": "...Dont trait�",
+                    "fr": "...Dont traité",
                     "en": "...Including deads",
                     "condition": "false"
                 },
                 "unconfirmed_severe_malaria": {
                     "line_number": "8",
-                    "fr": "Paludisme grave non confirm�",
+                    "fr": "Paludisme grave non confirmé",
                     "en": "Unconfirmed severe malaria",
                     "condition": "false"
                 },
                 "unconfirmed_severe_including_refered": {
                     "line_number": "8a",
-                    "fr": "...Dont r�f�r�",
+                    "fr": "...Dont référé",
                     "en": "...Including refered",
                     "condition": "false"
                 },
                 "unconfirmed_severe_including_deads": {
                     "line_number": "8b",
-                    "fr": "...Dont d�c�d�",
+                    "fr": "...Dont décédé",
                     "en": "...Including deads",
                     "condition": "false"
                 }
@@ -3323,7 +3368,9 @@ exports.reports = function () {
         },
         "report_malariacomplement": {
             "title": "Form 1 : Monthly Report complementing the SNIS",
+            "fr": "Formulaire 1 : Rapport mensuel complémentaire au SNIS",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "0_5years": {
                     "line_number": "1",
@@ -3634,6 +3681,7 @@ exports.reports = function () {
         "report_monitoringvaccination_1": {
             "title": "MONITORING OF PREVENTABLE DESEASES THROUGH VACCINATION",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "pfa": {
                     "line_number": "1",
@@ -3804,6 +3852,7 @@ exports.reports = function () {
         "report_monitoringvaccination_2": {
             "title": "MONITORING OF PREVENTABLE DESEASES THROUGH VACCINATION(table1)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "bcg": {
                     "line_number": "1",
@@ -3869,6 +3918,7 @@ exports.reports = function () {
         "report_monitoringvaccination_3": {
             "title": "MONITORING OF PREVENTABLE DESEASES THROUGH VACCINATION ( Vaccination Sessions )",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "stable": {
                     "line_number": "1",
@@ -3927,99 +3977,100 @@ exports.reports = function () {
             },
             "parent": "report_monitoringvaccination"
         },
-        "report_mutual": [
-            {
-                "title": "9. Health's Mutual",
-                "type": "object",
-                "properties": {
-                    "news_mutual_cases": {
-                        "line_number": "1",
-                        "fr": "Nouveaux cas mutualis tes",
-                        "en": "News mutual cases",
-                        "condition": "true"
-                    },
-                    "including_new_mutual_patients": {
-                        "line_number": "2",
-                        "fr": "Dont nouveaux patients mutual is tes",
-                        "en": "Including new mutual patients",
-                        "condition": "true"
-                    },
-                    "old_mutual_cases": {
-                        "line_number": "3",
-                        "fr": "Anciens cas mutualis tes",
-                        "en": "Old mutual cases",
-                        "condition": "true"
-                    },
-                    "including_contre_refered_mutuals": {
-                        "line_number": "4",
-                        "fr": "Dont contre-référés mutual is tes",
-                        "en": "Including contre- refered mutuals",
-                        "condition": "true"
-                    },
-                    "mutual_eutocic_deliveries": {
-                        "line_number": "5",
-                        "fr": "Accouchements eutociques mutuali s tes",
-                        "en": "Mutual eutocic deliveries",
-                        "condition": "true"
-                    },
-                    "mutual_dystocic_deliveries": {
-                        "line_number": "6",
-                        "fr": "Accouchements dys toci ques mutual is tes",
-                        "en": "Mutual Dystocic deliveries",
-                        "condition": "true"
-                    },
-                    "use_of_services_rate_of_mutual_member_of_the_hc": {
-                        "line_number": "7",
-                        "line": "singlecell",
-                        "fr": "Taux d'utilisation des services par les adhérents de la mutuelle de santé = Nb d’adhérents de mutuelles ayant consulté au CS X 100 / Total des adhérents",
-                        "en": "Use of services rate of mutual member of the HC= Nbr of members who were consulted at the HC X100/Total members",
-                        "condition": "true"
-                    },
-                    "penetration_rate": {
-                        "line_number": "8",
-                        "line": "singlecell",
-                        "fr": "Total Consultations SVS (a+b)",
-                        "en": "Penetration rate=nbr of persons who joined an health mutual (Nbr of new mutualistcases + old mutualist cases)X 100/population",
-                        "condition": "true"
-                    }
+        "report_mutual": {
+            "title": "9. Health's Mutual",
+            "fr": "9. Mutuelles de Sante",
+            "type": "object",
+            "manual": "true",
+            "properties": {
+                "news_mutual_cases": {
+                    "line_number": "1",
+                    "fr": "Nouveaux cas mutualis tes",
+                    "en": "News mutual cases",
+                    "condition": "true"
                 },
-                "definitions": {
-                    "columns": {
-                        "as": {
-                            "fr": "AS",
-                            "en": "AS",
-                            "title": "AS",
-                            "condition": "true"
-                        },
-                        "has": {
-                            "fr": "HAS",
-                            "en": "HAS",
-                            "title": "HAS",
-                            "condition": "true"
-                        },
-                        "hz": {
-                            "fr": "HZ",
-                            "en": "HZ",
-                            "title": "HZ",
-                            "condition": "true"
-                        },
-                        "total": {
-                            "fr": "Total",
-                            "en": "Total",
-                            "title": "Total",
-                            "condition": "true"
-                        }
+                "including_new_mutual_patients": {
+                    "line_number": "2",
+                    "fr": "Dont nouveaux patients mutual is tes",
+                    "en": "Including new mutual patients",
+                    "condition": "true"
+                },
+                "old_mutual_cases": {
+                    "line_number": "3",
+                    "fr": "Anciens cas mutualis tes",
+                    "en": "Old mutual cases",
+                    "condition": "true"
+                },
+                "including_contre_refered_mutuals": {
+                    "line_number": "4",
+                    "fr": "Dont contre-référés mutual is tes",
+                    "en": "Including contre- refered mutuals",
+                    "condition": "true"
+                },
+                "mutual_eutocic_deliveries": {
+                    "line_number": "5",
+                    "fr": "Accouchements eutociques mutuali s tes",
+                    "en": "Mutual eutocic deliveries",
+                    "condition": "true"
+                },
+                "mutual_dystocic_deliveries": {
+                    "line_number": "6",
+                    "fr": "Accouchements dys toci ques mutual is tes",
+                    "en": "Mutual Dystocic deliveries",
+                    "condition": "true"
+                },
+                "use_of_services_rate_of_mutual_member_of_the_hc": {
+                    "line_number": "7",
+                    "line": "singlecell",
+                    "fr": "Taux d'utilisation des services par les adhérents de la mutuelle de santé = Nb d’adhérents de mutuelles ayant consulté au CS X 100 / Total des adhérents",
+                    "en": "Use of services rate of mutual member of the HC= Nbr of members who were consulted at the HC X100/Total members",
+                    "condition": "true"
+                },
+                "penetration_rate": {
+                    "line_number": "8",
+                    "line": "singlecell",
+                    "fr": "Total Consultations SVS (a+b)",
+                    "en": "Penetration rate=nbr of persons who joined an health mutual (Nbr of new mutualistcases + old mutualist cases)X 100/population",
+                    "condition": "true"
+                }
+            },
+            "definitions": {
+                "columns": {
+                    "as": {
+                        "fr": "AS",
+                        "en": "AS",
+                        "title": "AS",
+                        "condition": "true"
+                    },
+                    "has": {
+                        "fr": "HAS",
+                        "en": "HAS",
+                        "title": "HAS",
+                        "condition": "true"
+                    },
+                    "hz": {
+                        "fr": "HZ",
+                        "en": "HZ",
+                        "title": "HZ",
+                        "condition": "true"
+                    },
+                    "total": {
+                        "fr": "Total",
+                        "en": "Total",
+                        "title": "Total",
+                        "condition": "true"
                     }
                 }
             }
-        ],
+        },
         "report_nci": {
             "title": "Monthly Canvas - 2.4. New cases Identification",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "accident_celebro_vascular": {
                     "line_number": "1",
-                    "fr": "Accident vasculo-c�rebral (AVC)",
+                    "fr": "Accident vasculo-cérebral (AVC)",
                     "en": "Accident Celebro - vascular",
                     "condition": "true"
                 },
@@ -4037,19 +4088,19 @@ exports.reports = function () {
                 },
                 "anemia": {
                     "line_number": "4",
-                    "fr": "An�mie",
+                    "fr": "Anémie",
                     "en": "Anemia",
                     "condition": "true"
                 },
                 "burns": {
                     "line_number": "5",
-                    "fr": "Br�lures",
+                    "fr": "Brûlures",
                     "en": "Burns",
                     "condition": "true"
                 },
                 "ceivix_cancer": {
                     "line_number": "6",
-                    "fr": "Cancer du col ut�rin",
+                    "fr": "Cancer du col utérin",
                     "en": "Ceivix cancer",
                     "condition": "true"
                 },
@@ -4079,7 +4130,7 @@ exports.reports = function () {
                 },
                 "cholera": {
                     "line_number": "11",
-                    "fr": "Chol�ra",
+                    "fr": "Choléra",
                     "en": "Cholera",
                     "condition": "true"
                 },
@@ -4091,43 +4142,43 @@ exports.reports = function () {
                 },
                 "whooping_cough_of_non_vaccinated": {
                     "line_number": "13",
-                    "fr": "Coqueluche patient non vaccin�",
+                    "fr": "Coqueluche patient non vacciné",
                     "en": "Whooping cough of non vaccinated patients",
                     "condition": "true"
                 },
                 "whooping_cough_of_vaccinated": {
                     "line_number": "14",
-                    "fr": "Coqueluche patient vaccin�",
+                    "fr": "Coqueluche patient vacciné",
                     "en": "Whooping cough of  vaccinated patients",
                     "condition": "true"
                 },
                 "depression": {
                     "line_number": "15",
-                    "fr": "D�pression",
+                    "fr": "Dépression",
                     "en": "Depression",
                     "condition": "true"
                 },
                 "diabetitis": {
                     "line_number": "16",
-                    "fr": "Diab�te",
+                    "fr": "Diabète",
                     "en": "Diabetitis",
                     "condition": "true"
                 },
                 "bloody_diarrhea": {
                     "line_number": "17",
-                    "fr": "Diarrh�e sanglante",
+                    "fr": "Diarrhée sanglante",
                     "en": "Bloody diarrhea",
                     "condition": "true"
                 },
                 "simple_diarrhea": {
                     "line_number": "18",
-                    "fr": "Diarrh�e simple",
+                    "fr": "Diarrhée simple",
                     "en": "Simple diarrhea",
                     "condition": "true"
                 },
                 "drepanocytosis": {
                     "line_number": "19",
-                    "fr": "Dr�panocytose",
+                    "fr": "Drépanocytose",
                     "en": "Drepanocytosis",
                     "condition": "true"
                 },
@@ -4139,19 +4190,19 @@ exports.reports = function () {
                 },
                 "viral_heomrrhage_fever": {
                     "line_number": "21",
-                    "fr": "Fi�vre h�morragique",
+                    "fr": "Fièvre hémorragique",
                     "en": "Viral Heomrrhage Fever",
                     "condition": "true"
                 },
                 "yellow_fever": {
                     "line_number": "22",
-                    "fr": "Fi�vre jaune",
+                    "fr": "Fièvre jaune",
                     "en": "Yellow Fever",
                     "condition": "true"
                 },
                 "typhoid_fever": {
                     "line_number": "23",
-                    "fr": "Fi�vre typho�de",
+                    "fr": "Fièvre typhoïde",
                     "en": "Typhoid Fever",
                     "condition": "true"
                 },
@@ -4175,7 +4226,7 @@ exports.reports = function () {
                 },
                 "hepatitis": {
                     "line_number": "27",
-                    "fr": "H�patites",
+                    "fr": "Hépatites",
                     "en": "Hepatitis",
                     "condition": "true"
                 },
@@ -4187,13 +4238,13 @@ exports.reports = function () {
                 },
                 "high_blood_pressure": {
                     "line_number": "29",
-                    "fr": "Hypertension art�rielle",
+                    "fr": "Hypertension artérielle",
                     "en": "High Blood Pressure",
                     "condition": "true"
                 },
                 "related_work_accident_incapacities": {
                     "line_number": "30",
-                    "fr": "Incapacit�s li�es aux accidents de travail",
+                    "fr": "Incapacités liées aux accidents de travail",
                     "en": "Related work accident incapacities",
                     "condition": "true"
                 },
@@ -4211,13 +4262,13 @@ exports.reports = function () {
                 },
                 "indigenious_product": {
                     "line_number": "33",
-                    "fr": "Intoxications aux produits indig�nes",
+                    "fr": "Intoxications aux produits indigènes",
                     "en": "Indigenious product related to intoxication",
                     "condition": "true"
                 },
                 "pneumonia": {
                     "line_number": "34",
-                    "fr": "IRA inf�rieure (pneumonie)",
+                    "fr": "IRA inférieure (pneumonie)",
                     "en": "Pneumonia",
                     "condition": "true"
                 },
@@ -4229,19 +4280,19 @@ exports.reports = function () {
                 },
                 "stis_genital_syndrome_flow": {
                     "line_number": "36",
-                    "fr": "IST / Syndrome d��coulement g�nital",
+                    "fr": "IST / Syndrome d’écoulement génital",
                     "en": "STIs/ genital  syndrome flow",
                     "condition": "true"
                 },
                 "stis_pelvic_inflammatory_syndrome": {
                     "line_number": "37",
-                    "fr": "IST / Syndrome d�inflammation pelvienne",
+                    "fr": "IST / Syndrome d’inflammation pelvienne",
                     "en": "STIs/ Pelvic Inflammatory syndrome",
                     "condition": "true"
                 },
                 "stis_genital_ulceration_syndrome": {
                     "line_number": "38",
-                    "fr": "IST / Syndrome d�ulc�ration g�nitale",
+                    "fr": "IST / Syndrome d’ulcération génitale",
                     "en": "STIs/ Genital  Ulceration Syndrome",
                     "condition": "true"
                 },
@@ -4253,13 +4304,13 @@ exports.reports = function () {
                 },
                 "leprosy": {
                     "line_number": "40",
-                    "fr": "L�pre",
+                    "fr": "Lèpre",
                     "en": "Leprosy",
                     "condition": "true"
                 },
                 "moderated_high_malnutrition": {
                     "line_number": "41",
-                    "fr": "Malnutrition aigue mod�r�",
+                    "fr": "Malnutrition aigue modéré",
                     "en": "Moderated high malnutrition",
                     "condition": "true"
                 },
@@ -4271,7 +4322,7 @@ exports.reports = function () {
                 },
                 "menengitis": {
                     "line_number": "43",
-                    "fr": "M�ningite",
+                    "fr": "Méningite",
                     "en": "Menengitis",
                     "condition": "true"
                 },
@@ -4283,7 +4334,7 @@ exports.reports = function () {
                 },
                 "venonimous_animals_bites": {
                     "line_number": "45",
-                    "fr": "Morsure par des animaux v�nimeux",
+                    "fr": "Morsure par des animaux vénimeux",
                     "en": "Venonimous Animals bites",
                     "condition": "true"
                 },
@@ -4319,13 +4370,13 @@ exports.reports = function () {
                 },
                 "psychose_aigue": {
                     "line_number": "51",
-                    "fr": "Psychose aigue : bouff�e d�lirante",
+                    "fr": "Psychose aigue : bouffée délirante",
                     "en": "Psychose-aigue: bouffee delirante",
                     "condition": "true"
                 },
                 "psychose_puerperal": {
                     "line_number": "52",
-                    "fr": "Psychose puerp�rale",
+                    "fr": "Psychose puerpérale",
                     "en": "Psychose-Puerperal",
                     "condition": "true"
                 },
@@ -4337,13 +4388,13 @@ exports.reports = function () {
                 },
                 "measles_non_vaccinated": {
                     "line_number": "54",
-                    "fr": "Rougeole patient non vaccin�",
+                    "fr": "Rougeole patient non vacciné",
                     "en": "Measles ( non vaccinated  patient)",
                     "condition": "true"
                 },
                 "measles_vaccinated": {
                     "line_number": "55",
-                    "fr": "Rougeole patient vaccin�",
+                    "fr": "Rougeole patient vacciné",
                     "en": "Measles ( vaccinated patient)",
                     "condition": "true"
                 },
@@ -4373,13 +4424,13 @@ exports.reports = function () {
                 },
                 "tetanus": {
                     "line_number": "60",
-                    "fr": "T�tanos",
+                    "fr": "Tétanos",
                     "en": "Tetanus",
                     "condition": "true"
                 },
                 "neonatal_tetanus": {
                     "line_number": "61",
-                    "fr": "T�tanos n�onatal",
+                    "fr": "Tétanos néonatal",
                     "en": "Neonatal Tetanus",
                     "condition": "true"
                 },
@@ -4397,7 +4448,7 @@ exports.reports = function () {
                 },
                 "generalised_anxious_trouble": {
                     "line_number": "64",
-                    "fr": "Trouble anxieux g�n�ralis�",
+                    "fr": "Trouble anxieux généralisé",
                     "en": "Generalised anxious trouble",
                     "condition": "true"
                 },
@@ -4421,7 +4472,7 @@ exports.reports = function () {
                 },
                 "buruli_ulcers": {
                     "line_number": "68",
-                    "fr": "Ulc�re de buruli",
+                    "fr": "Ulcère de buruli",
                     "en": "Buruli Ulcers",
                     "condition": "true"
                 },
@@ -4433,7 +4484,7 @@ exports.reports = function () {
                 },
                 "xerophtalmia": {
                     "line_number": "70",
-                    "fr": "X�rophtalmie",
+                    "fr": "Xérophtalmie",
                     "en": "Xerophtalmia",
                     "condition": "true"
                 },
@@ -4482,6 +4533,7 @@ exports.reports = function () {
         "report_ordervaccine": {
             "title": "Order of vaccines, diluants and infection material form",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "vaccination_pev_title": {
                     "line_number": "1",
@@ -4645,29 +4697,31 @@ exports.reports = function () {
         },
         "report_pmtct": {
             "title": "3.2 PMTCT",
+            "fr": "Prévention transmission mère enfant (PTME)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "who_know_their_hiv_status_before_anc_1": {
                     "line_number": "1",
-                    "fr": "Qui connaissent leur statut s�rologique VIH avant l a CPN1",
+                    "fr": "Qui connaissent leur statut sérologique VIH avant l a CPN1",
                     "en": "Who know their HIV status before ANC 1",
                     "condition": "true"
                 },
                 "who_were_counseled_for_hiv_test": {
                     "line_number": "2",
-                    "fr": "Qui ont �t� conseill�e pour un test VIH",
+                    "fr": "Qui ont été conseillée pour un test VIH",
                     "en": "Who were counseled for HIV test",
                     "condition": "true"
                 },
                 "who_were_hiv_tested": {
                     "line_number": "3",
-                    "fr": "Qui ont �t� test�es pour le VIH",
+                    "fr": "Qui ont été testées pour le VIH",
                     "en": "Who were HIV tested",
                     "condition": "true"
                 },
                 "who_were_informed_about_their_result": {
                     "line_number": "4",
-                    "fr": "Qui ont �t� inform�es du r�sultat",
+                    "fr": "Qui ont été informées du résultat",
                     "en": "who were informed about their result",
                     "condition": "true"
                 },
@@ -4679,115 +4733,121 @@ exports.reports = function () {
                 },
                 "who_had_hiv_test_and_were_informed_about_their_results": {
                     "line_number": "6",
-                    "fr": "Qui ont eu un test positif au VIH et ont �t� inform�es du r�sultat",
+                    "fr": "Qui ont eu un test positif au VIH et ont été informées du résultat",
                     "en": "Who had HIV+ test and were informed about their results",
                     "condition": "true"
                 },
                 "who_are_hiv_and_beneficiated_a_prophylaxie_at_arv_azt_3tc_nvp)": {
                     "line_number": "7",
-                    "fr": "Qui sont VIH+ ayant b�n�fici� de la prophylaxie aux ARV (AZT /AZT+3TC+NVP)",
+                    "fr": "Qui sont VIH+ ayant bénéficié de la prophylaxie aux ARV (AZT /AZT+3TC+NVP)",
                     "en": "Who are HIV+ and beneficiated a prophylaxie at ARV (AZT+3TC+NVP)",
                     "condition": "true"
                 },
                 "who_are_hiv_and_beneficiated_a_prophylaxie_and_cotrimoxazole": {
                     "line_number": "8",
-                    "fr": "Qui sont VIH+ ayant b�n�fici� de la prophylaxie au cotrimoxazole",
+                    "fr": "Qui sont VIH+ ayant bénéficié de la prophylaxie au cotrimoxazole",
                     "en": "Who are HIV+ and beneficiated a prophylaxie and cotrimoxazole",
                     "condition": "true"
                 },
                 "who_are_hiv_and_refered_to_a_pec_center": {
                     "line_number": "9",
-                    "fr": "Qui sont VIH+ qui sont r�f�r�es vers une structure de PEC",
+                    "fr": "Qui sont VIH+ qui sont référées vers une structure de PEC",
                     "en": "Who are HIV+ and refered to a PEC center",
                     "condition": "true"
                 },
                 "tested_and_informed_about_their_results_during_labour_delivery_and_post_portum_72": {
                     "line_number": "10",
-                    "fr": "Test�es et inform�es de leur r�sultat lors du trava il, accouchement et post partum (72 h)",
+                    "fr": "Testées et informées de leur résultat lors du trava il, accouchement et post partum (72 h)",
                     "en": "Tested and informed about their results during labour, delivery and post-portum (72)",
                     "condition": "true"
                 },
                 "pregnant_women_put_under_arvt": {
                     "line_number": "11",
-                    "fr": "Femmes enceintes ont �t� mis sous TARV",
+                    "fr": "Femmes enceintes ont été mis sous TARV",
                     "en": "Pregnant women put under ARVT",
                     "condition": "true"
                 },
                 "who_were_pregnants_after_being_raped": {
                     "line_number": "12",
-                    "fr": "Qui ont eu la grossesse � l�issue d�un Viol",
+                    "fr": "Qui ont eu la grossesse à l’issue d’un Viol",
                     "en": "Who were pregnants after being raped",
                     "condition": "true"
                 },
                 "hiv_mother_who_opted_the_breast_feeding_up_to_6_months": {
                     "line_number": "13",
-                    "fr": "M�res VIH+ ayant opt� pour l�allaitement exclusif jusqu�� 6 mois",
+                    "fr": "Mères VIH+ ayant opté pour l’allaitement exclusif jusqu’à 6 mois",
                     "en": "HIV+ mother who opted the breast feeding up to 6 months",
                     "condition": "true"
                 },
                 "who_were_tested_for_ghonorrhea": {
                     "line_number": "14",
-                    "fr": "?",
+                    "fr": "Qui ont été dépistés pour la syphilis à la CPN",
                     "en": "Who were tested for Ghonorrhea",
                     "condition": "true"
                 },
-                "hiv_mother_put_under_double_protection_pf_preservatif": {
+                "who_were_positive_for_ghonorrhea": {
                     "line_number": "15",
-                    "fr": "Dont m�res VIH+ mises sous double protection (PF+ pr�servatif)",
+                    "fr": "Qui ont été dépistés positives à la syphilis",
+                    "en": "Who were tested positive for Ghonorrhea",
+                    "condition": "true"
+                },
+                "hiv_mother_put_under_double_protection_pf_preservatif": {
+                    "line_number": "16",
+                    "fr": "Dont mères VIH+ mises sous double protection (PF+ préservatif)",
                     "en": "HIV+ mother put under double protection (PF+ preservatif)",
                     "condition": "true"
                 },
                 "delivered_hiv": {
-                    "line_number": "16",
-                    "fr": "?",
-                    "en": "Delivered HIV+",
+                    "line_number": "17",
+                    "fr": "Accouchées VIH +",
+                    "en": "Delivered HIV +",
                     "condition": "true"
                 },
                 "including_those_have_received_the_nevirapine_azt_lav": {
-                    "line_number": "17",
-                    "fr": "Dont ayant re�u de la n�virapine + AZT+LAV",
+                    "line_number": "18",
+                    "fr": "Dont ayant reçu de la névirapine + AZT+LAV",
                     "en": "Including those have received the Nevirapine + AZT + LAV",
                     "condition": "true"
                 },
                 "children_born_from_hiv_mothers_who_were_put_under_nevirapine_at_birth": {
-                    "line_number": "18",
-                    "fr": "Enfants n�s de m�re VIH+",
+                    "line_number": "19",
+                    "fr": "Enfants nés de mère VIH+",
                     "en": "Children born from HIV+ mothers who were put under nevirapine at birth.",
                     "condition": "true"
                 },
                 "who_were_put_under_cotrimoxazole_during_6_weeks_after_birth": {
-                    "line_number": "19",
-                    "fr": "Dont mis sous cotrimoxazole pendant 6 semaines apr�s la naissance",
+                    "line_number": "20",
+                    "fr": "Dont mis sous cotrimoxazole pendant 6 semaines après la naissance",
                     "en": "Who were put under cotrimoxazole during 6 weeks after birth",
                     "condition": "true"
                 },
                 "who_were_put_under_nevirapine_during_the_12_months_after_birth": {
-                    "line_number": "20",
-                    "fr": "Dont mis sous NVP pendant 12 mois apr�s la naissance",
+                    "line_number": "21",
+                    "fr": "Dont mis sous NVP pendant 12 mois après la naissance",
                     "en": "Who were put under Nevirapine during the 12 months after birth",
                     "condition": "true"
                 },
                 "exposed_children_who_were_tested_hiv_at_pcr_1_after_6_weeks_after_birth": {
-                    "line_number": "21",
-                    "fr": "Enfants expos�s re�us et test�s au PCR1 � 6 semaines apr�s la naissance",
+                    "line_number": "22",
+                    "fr": "Enfants exposés reçus et testés au PCR1 à 6 semaines après la naissance",
                     "en": "Exposed children who were tested HIV+ at PCR 1 after 6 weeks after birth",
                     "condition": "true"
                 },
                 "exposed_children_who_were_tested_at_pcr_2_at_10_weeks_after_birth": {
-                    "line_number": "22",
-                    "fr": "Enfants expos�s re�us et test�s au PCR2 � 10 semaines apr�s la naissance",
+                    "line_number": "23",
+                    "fr": "Enfants exposés reçus et testés au PCR2 à 10 semaines après la naissance",
                     "en": "Exposed children who were tested at PCR 2 at 10 weeks after birth",
                     "condition": "true"
                 },
                 "exposed_children_who_were_tested_hiv_at_pcr2_at_10_weeks_after_birth": {
-                    "line_number": "23",
-                    "fr": "Enfants expos�s test�s positifs au PCR2 � 10 semai nes apr�s la naissance",
+                    "line_number": "24",
+                    "fr": "Enfants exposés testés positifs au PCR2 à 10 semai nes après la naissance",
                     "en": "Exposed children who were tested HIV+at PCR2 at 10 weeks after birth",
                     "condition": "true"
                 },
                 "exposed_children_tested_at_pcr1_who_receiveda_hiv_test_at_12_months": {
-                    "line_number": "24",
-                    "fr": "Enfants expos�s test�s au PCR1 ayant b�n�fici� d'untest s�ro. � 12 mois",
+                    "line_number": "25",
+                    "fr": "Enfants exposés testés au PCR1 ayant bénéficié d'untest séro. à 12 mois",
                     "en": "Exposed children tested at PCR1 who receiveda HIV test at 12 months",
                     "condition": "true"
                 }
@@ -4805,7 +4865,9 @@ exports.reports = function () {
         },
         "report_postnatal_1": {
             "title": "3.6 Post natal consultations",
+            "fr": "3.6 Consultations post-natales (CPoN)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "ponc_6th_day_after_delivery": {
                     "line_number": "1",
@@ -4870,8 +4932,10 @@ exports.reports = function () {
             "parent": "report_postnatal"
         },
         "report_postnatal_2": {
-            "title": "3.6 Post natal consultations(table 2)",
+            "title": "3.6 Post-natal consultations (table 2)",
+            "fr": "3.6 Consultations post-natales (table 2)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "women_who_presented_complications_after_delivery": {
                     "line_number": "1",
@@ -4894,7 +4958,9 @@ exports.reports = function () {
         },
         "report_pregnant_1": {
             "title": "3.4 Pregnant women vaccination",
+            "fr": "3.4. Vaccination des femmes enceintes",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "vat_1": {
                     "line_number": "1",
@@ -4959,7 +5025,9 @@ exports.reports = function () {
         },
         "report_pregnant_2": {
             "title": "3.5.1 Deliveries at the Health center",
+            "fr": "3.5.1 Accouchements au Centre de Santé",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "eutocic_deliveries": {
                     "line_number": "1",
@@ -5023,8 +5091,10 @@ exports.reports = function () {
             "parent": "report_pregnant"
         },
         "report_pregnant_3": {
-            "title": "3.5.2 Delveries in the community",
+            "title": "3.5.2 Deliveries in the community",
+            "fr": "3.5.2 Accouchements dans la communauté",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "eutocic_deliveries": {
                     "line_number": "1",
@@ -5072,7 +5142,9 @@ exports.reports = function () {
         },
         "report_pregnant_4": {
             "title": "3.5.3 Births and deaths",
+            "fr": "3.5.3. Naissances et décès",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "alive_births": {
                     "line_number": "1",
@@ -5168,7 +5240,9 @@ exports.reports = function () {
         },
         "report_pregnant_5": {
             "title": "3.5.3 Births and deaths (cont)",
+            "fr": "3.5.3 Naissances et décès (cont)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "refered_mother_and_child": {
                     "line_number": "1",
@@ -5215,7 +5289,9 @@ exports.reports = function () {
         },
         "report_pregnant_6": {
             "title": "3.5.4 Follow up",
+            "fr": "3.5.4 Suivi",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "maternal_deaths_at_the_health_center": {
                     "line_number": "1",
@@ -5270,7 +5346,9 @@ exports.reports = function () {
         },
         "report_preschool_1": {
             "title": "4.2 Pre-scolary consultation",
+            "fr": "4.2 Consultation préscolaire (CPS)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "psc_10_11_months": {
                     "line_number": "1",
@@ -5317,7 +5395,9 @@ exports.reports = function () {
         },
         "report_preschool_2": {
             "title": "4.2 Pre-scolary consultation (cont)",
+            "fr": "4.2 Consultation préscolaire (CPS) (cont)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "organised_psc_sessions": {
                     "line_number": "1",
@@ -5437,7 +5517,9 @@ exports.reports = function () {
         },
         "report_preschool_3": {
             "title": "4.3 Growth follow up at the Pre-scolary consultation",
+            "fr": "4.3 Suivi de la croissance à la CPS",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "nbr_of_children_on_middle_line_growth_chart": {
                     "line_number": "1",
@@ -5535,7 +5617,9 @@ exports.reports = function () {
         },
         "report_preschool_4": {
             "title": "4.3 Growth follow up at the Pre-scolary consultation (cont)",
+            "fr": "4.3 Suivi de la croissance à la CPS (cont)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "attendance_at_the_beginning_of_the_month_a": {
                     "line_number": "1",
@@ -5633,7 +5717,9 @@ exports.reports = function () {
         },
         "report_preschool_5": {
             "title": "4.3 Growth follow up at the Pre-scolary consultation (cont2)",
+            "fr": "4.3 Suivi de la croissance à la CPS (cont2)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "recovered_a": {
                     "line_number": "1",
@@ -5718,7 +5804,9 @@ exports.reports = function () {
         },
         "report_promo_1": {
             "title": "5.1 Community participation",
+            "fr": "5.1 Participation communautaire",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "prepared_meetings": {
                     "line_number": "1",
@@ -5822,7 +5910,9 @@ exports.reports = function () {
         },
         "report_promo_2": {
             "title": "5.2 Follow of Relais Communautaire",
+            "fr": "5.2 Suivi des Relais",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "nbr_of_children_on_middle_line_growth_chart": {
                     "line_number": "1",
@@ -5869,7 +5959,9 @@ exports.reports = function () {
         },
         "report_promo_3": {
             "title": "5.3 Communication for behavioral change CCC",
+            "fr": "5.3 Communication pour Changement de Comportement (CCC)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "nbr_of_sessions_planned": {
                     "line_number": "1",
@@ -5922,7 +6014,9 @@ exports.reports = function () {
         },
         "report_promo_4": {
             "title": "5.4 Hygiene & Disposals management (health center)",
+            "fr": "5.4 Hygiene & Gestion des dechets (CS)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "incinarator": {
                     "line_number": "1",
@@ -5987,7 +6081,9 @@ exports.reports = function () {
         },
         "report_promo_5": {
             "title": "5.5 Relais communautaire Identification (RECO)",
+            "fr": "5.5 Identification des relais communautaire (RECO)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "nbr_of_needed": {
                     "line_number": "1",
@@ -6048,7 +6144,9 @@ exports.reports = function () {
         },
         "report_promo_6": {
             "title": "5.6 Water coverage",
+            "fr": "5.6 Desserte et Couverture en Eau",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "improved_existing_water_points": {
                     "line_number": "1",
@@ -6119,7 +6217,9 @@ exports.reports = function () {
         },
         "report_promo_7": {
             "title": "5.8 Other Community Information",
+            "fr": "5.8 Autres informations sur la communauté",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "deaths_in_the_community": {
                     "line_number": "1",
@@ -6153,8 +6253,10 @@ exports.reports = function () {
             "parent": "report_promo"
         },
         "report_reprohealth_1": {
-            "title": "1. Antenatal Care  re- centered",
+            "title": "1. Antenatal Care re-centered",
+            "fr": "1. CPN recentrée",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "targeted_population": {
                     "line_number": "1",
@@ -6200,7 +6302,7 @@ exports.reports = function () {
                 },
                 "nber_of_pw_who_received_vat2_fcv": {
                     "line_number": "8",
-                    "fr": "Nombre  de femmes  enceintes ayant  regu VAT2+  et  FCV",
+                    "fr": "Nombre  de femmes  enceintes ayant  regu VAT2+ et FCV (Femmes compldtement vaccinées)",
                     "en": "Nber of PW who received VAT2+ FCV",
                     "condition": "true"
                 },
@@ -6299,8 +6401,10 @@ exports.reports = function () {
             "parent": "report_reprohealth"
         },
         "report_reprohealth_10": {
-            "title": "9 FAMILY PLANNING",
+            "title": "9. Family planning",
+            "fr": "9. Planification familiale",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "target_population": {
                     "line_number": "1",
@@ -6316,13 +6420,13 @@ exports.reports = function () {
                 },
                 "nc_2a": {
                     "line_number": "2a",
-                    "fr": "NC",
-                    "en": "NC",
+                    "fr": "Nouveaux cas",
+                    "en": "New cases",
                     "condition": "true"
                 },
                 "ac_2b": {
                     "line_number": "2b",
-                    "fr": "ac",
+                    "fr": "Ancien cas",
                     "en": "AC",
                     "condition": "true"
                 },
@@ -6334,7 +6438,7 @@ exports.reports = function () {
                 },
                 "apc_2d": {
                     "line_number": "2d",
-                    "fr": "APC",
+                    "fr": "Année de Protection Couple",
                     "en": "APC",
                     "condition": "true"
                 },
@@ -6346,13 +6450,13 @@ exports.reports = function () {
                 },
                 "nc_3a": {
                     "line_number": "3a",
-                    "fr": "NC",
-                    "en": "NC",
+                    "fr": "Nouveaux cas",
+                    "en": "New cases",
                     "condition": "true"
                 },
                 "ac_3b": {
                     "line_number": "3b",
-                    "fr": "AC",
+                    "fr": "Ancien cas",
                     "en": "AC",
                     "condition": "true"
                 },
@@ -6364,7 +6468,7 @@ exports.reports = function () {
                 },
                 "apc_3d": {
                     "line_number": "3d",
-                    "fr": "Apc",
+                    "fr": "Année de Protection Couple",
                     "en": "APC",
                     "condition": "true"
                 },
@@ -6376,13 +6480,13 @@ exports.reports = function () {
                 },
                 "nc_4a": {
                     "line_number": "4a",
-                    "fr": "NC",
-                    "en": "NC",
+                    "fr": "Nouveaux cas",
+                    "en": "New cases",
                     "condition": "true"
                 },
                 "ac_4b": {
                     "line_number": "4b",
-                    "fr": "AC",
+                    "fr": "Ancien cas",
                     "en": "AC",
                     "condition": "true"
                 },
@@ -6394,7 +6498,7 @@ exports.reports = function () {
                 },
                 "apc_4d": {
                     "line_number": "4d",
-                    "fr": "APC",
+                    "fr": "Année de Protection Couple",
                     "en": "A.P.C",
                     "condition": "true"
                 },
@@ -6406,13 +6510,13 @@ exports.reports = function () {
                 },
                 "nc_5a": {
                     "line_number": "5a",
-                    "fr": "NC",
-                    "en": "NC",
+                    "fr": "Nouveaux cas",
+                    "en": "New cases",
                     "condition": "true"
                 },
                 "ac_5b": {
                     "line_number": "5b",
-                    "fr": "AC",
+                    "fr": "Ancien cas",
                     "en": "AC",
                     "condition": "true"
                 },
@@ -6424,7 +6528,7 @@ exports.reports = function () {
                 },
                 "apc_5d": {
                     "line_number": "5d",
-                    "fr": "APC",
+                    "fr": "Année de Protection Couple",
                     "en": "A.P.C",
                     "condition": "true"
                 },
@@ -6436,13 +6540,13 @@ exports.reports = function () {
                 },
                 "nc_6a": {
                     "line_number": "6a",
-                    "fr": "NC",
-                    "en": "NC",
+                    "fr": "Nouveaux cas",
+                    "en": "New cases",
                     "condition": "true"
                 },
                 "ac_6b": {
                     "line_number": "6b",
-                    "fr": "AC",
+                    "fr": "Ancien cas",
                     "en": "AC",
                     "condition": "true"
                 },
@@ -6454,7 +6558,7 @@ exports.reports = function () {
                 },
                 "apc_6d": {
                     "line_number": "6d",
-                    "fr": "APC",
+                    "fr": "Année de Protection Couple",
                     "en": "A.P.C",
                     "condition": "true"
                 },
@@ -6466,13 +6570,13 @@ exports.reports = function () {
                 },
                 "nc_7a": {
                     "line_number": "7a",
-                    "fr": "NC",
-                    "en": "NC",
+                    "fr": "Nouveaux cas",
+                    "en": "New cases",
                     "condition": "true"
                 },
                 "ac_7b": {
                     "line_number": "7b",
-                    "fr": "AC",
+                    "fr": "Ancien cas",
                     "en": "A.C",
                     "condition": "true"
                 },
@@ -6484,7 +6588,7 @@ exports.reports = function () {
                 },
                 "apc_7d": {
                     "line_number": "7d",
-                    "fr": "APC",
+                    "fr": "Année de Protection Couple",
                     "en": "A.P.C",
                     "condition": "true"
                 },
@@ -6496,13 +6600,13 @@ exports.reports = function () {
                 },
                 "nc_8a": {
                     "line_number": "8a",
-                    "fr": "NC",
-                    "en": "NC",
+                    "fr": "Nouveaux cas",
+                    "en": "New cases",
                     "condition": "true"
                 },
                 "ac_8b": {
                     "line_number": "8b",
-                    "fr": "AC",
+                    "fr": "Ancien cas",
                     "en": "A.C",
                     "condition": "true"
                 },
@@ -6514,7 +6618,7 @@ exports.reports = function () {
                 },
                 "apc_8d": {
                     "line_number": "8d",
-                    "fr": "APC",
+                    "fr": "Année de Protection Couple",
                     "en": "A.P.C",
                     "condition": "true"
                 },
@@ -6526,13 +6630,13 @@ exports.reports = function () {
                 },
                 "nc_9a": {
                     "line_number": "9a",
-                    "fr": "NC",
-                    "en": "NC",
+                    "fr": "Nouveaux cas",
+                    "en": "New cases",
                     "condition": "true"
                 },
                 "ac_9b": {
                     "line_number": "9b",
-                    "fr": "AC",
+                    "fr": "Ancien cas",
                     "en": "A.C",
                     "condition": "true"
                 },
@@ -6544,7 +6648,7 @@ exports.reports = function () {
                 },
                 "apc_9d": {
                     "line_number": "9d",
-                    "fr": "APC",
+                    "fr": "Année de Protection Couple",
                     "en": "A.P.C",
                     "condition": "true"
                 }
@@ -6562,7 +6666,7 @@ exports.reports = function () {
             "parent": "report_reprohealth"
         },
         "report_reprohealth_11": {
-            "title": "10. DRUG STORE CONTROL",
+            "title": "10. Controle de stock des médicaments",
             "type": "object",
             "properties": {},
             "definitions": {
@@ -6571,8 +6675,10 @@ exports.reports = function () {
             "parent": "report_reprohealth"
         },
         "report_reprohealth_12": {
-            "title": "11. a USE OF REVENUES GENERATED FROM THE DRUGS SALE",
+            "title": "11. a Use of revenues generated from the drugs sale",
+            "fr": "11.a. Utilisation des recettes générées par la vente des médicaments",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "total_revenues": {
                     "line_number": "1",
@@ -6636,8 +6742,10 @@ exports.reports = function () {
             "parent": "report_reprohealth"
         },
         "report_reprohealth_13": {
-            "title": "11.b USE OF REVENUES GENERATED BY ULTRASOUND SCAN",
+            "title": "11.b Use of revenues generated by ultrasound scan",
+            "fr": "11.b. Utilisation des recettes générées par échographe",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "total_revenues": {
                     "line_number": "1",
@@ -6702,7 +6810,9 @@ exports.reports = function () {
         },
         "report_reprohealth_2": {
             "title": "2. Assisted delivery",
+            "fr": "2. Accouchement assisté",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "targeted_population": {
                     "line_number": "1",
@@ -6796,8 +6906,10 @@ exports.reports = function () {
             "parent": "report_reprohealth"
         },
         "report_reprohealth_3": {
-            "title": "3.MOTHER TO CHILD PREVENTION TREATMENT(PMTCT)",
+            "title": "3. Mother to child prevention treatment (PMTCT)",
+            "fr": "3. Prévention de la transmission mère enfant (PrME)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "nber_of_pw_hiv_tested": {
                     "line_number": "1",
@@ -6844,7 +6956,9 @@ exports.reports = function () {
         },
         "report_reprohealth_4": {
             "title": "4. Gyneco-Obstetrical Emergency Care",
+            "fr": "4. Soins gyneco/obstetricaux d'urgence (SGONU)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "nber_of_hta_cases_and_pregnancies": {
                     "line_number": "1",
@@ -6950,8 +7064,10 @@ exports.reports = function () {
             "parent": "report_reprohealth"
         },
         "report_reprohealth_5": {
-            "title": "5.CPON",
+            "title": "5. CPON",
+            "fr": "5. CPON",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "targeted_population": {
                     "line_number": "1",
@@ -6991,7 +7107,8 @@ exports.reports = function () {
             "parent": "report_reprohealth"
         },
         "report_reprohealth_6": {
-            "title": "6.STIs",
+            "title": "6. STIs",
+            "fr": "6. IST",
             "type": "object",
             "properties": {},
             "definitions": {
@@ -7000,8 +7117,9 @@ exports.reports = function () {
             "parent": "report_reprohealth"
         },
         "report_reprohealth_7": {
-            "title": "7.Sexual Violence",
+            "title": "7. Violences Sexuelles",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "nber_of_identified_sexual_violence_cases": {
                     "line_number": "1",
@@ -7035,8 +7153,10 @@ exports.reports = function () {
             "parent": "report_reprohealth"
         },
         "report_reprohealth_8": {
-            "title": "8. INFECTION CONTROL IN THE WORKPLACE",
+            "title": "8. Infection control in the workplace",
+            "fr": "8. Prévention des infections en milieu de soins",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "nbr_of_post_operatory_infection_cases": {
                     "line_number": "1",
@@ -7089,7 +7209,9 @@ exports.reports = function () {
         },
         "report_reprohealth_9": {
             "title": "9. CCC",
+            "fr": "9. CCC",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "nbr_of_post_operatory_infection_cases": {
                     "line_number": "1",
@@ -7158,9 +7280,11 @@ exports.reports = function () {
             },
             "parent": "report_reprohealth"
         },
-        "report_resources": {
+        "report_resources_1": {
             "title": "8.1 Material management",
+            "fr": "8.1 Gestion du matériel",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "refrigerator": {
                     "line_number": "1",
@@ -7261,7 +7385,9 @@ exports.reports = function () {
         },
         "report_resources_10": {
             "title": "8.3.7 Epargne/ Reserve",
+            "fr": "8.3.7. Epargne/réserve",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "epargne_reserve": {
                     "line_number": "1",
@@ -7302,7 +7428,9 @@ exports.reports = function () {
         },
         "report_resources_11": {
             "title": "8.4.1 Consumption of medicines Vaccins sentinelles and others",
+            "fr": "8.4.1 Consommation des médicaments, vaccins sentinelles et autres",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "aspirin_tabs_500mg": {
                     "line_number": "1",
@@ -7511,7 +7639,9 @@ exports.reports = function () {
         },
         "report_resources_12": {
             "title": "8.4.1 Consumption of medicines Vaccins sentinelles and others (cont)",
+            "fr": "8.4.1 Consommation des médicaments, vaccins sentinelles et autres (suite)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "male_preservatives": {
                     "line_number": "1",
@@ -7738,7 +7868,9 @@ exports.reports = function () {
         },
         "report_resources_13": {
             "title": "8.4.2 general situation of items in the stock",
+            "fr": "8.4.2 Situation Generale des items en stock",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "items_in_the_stock": {
                     "line_number": "1",
@@ -7779,7 +7911,9 @@ exports.reports = function () {
         },
         "report_resources_14": {
             "title": "8.4.3 Value of consummed medicines at the buying cost",
+            "fr": "8.4.3 Valeur des médicaments consommés au coût d’achat",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "administrated_medicines_to_patients": {
                     "line_number": "1",
@@ -7856,7 +7990,9 @@ exports.reports = function () {
         },
         "report_resources_15": {
             "title": "8.4.4 Pharmacy value",
+            "fr": "8.4.4. Valeur de la pharmacie",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "physics_stocks_value_of_medicines_plus": {
                     "line_number": "1",
@@ -7921,7 +8057,9 @@ exports.reports = function () {
         },
         "report_resources_16": {
             "title": "8.4.4 Pharmacy value (cont)",
+            "fr": "8.4.4. Valeur de la pharmacie (suite)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "items_out_of_use": {
                     "line_number": "1",
@@ -7956,7 +8094,9 @@ exports.reports = function () {
         },
         "report_resources_17": {
             "title": "8.5 Vaccins and other intrants Management",
+            "fr": "8.5 Gestion des vaccins et autres intrants",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "bcg": {
                     "line_number": "1",
@@ -8093,7 +8233,9 @@ exports.reports = function () {
         },
         "report_resources_18": {
             "title": "8.5 Vaccins and other intrants Management (cont)",
+            "fr": "8.5. Gestion des vaccins et autres intrants (suite)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "nbr_of_liters_in_stock_at_the_beginning_of_the_month": {
                     "line_number": "1",
@@ -8141,7 +8283,9 @@ exports.reports = function () {
         },
         "report_resources_2": {
             "title": "8.2 Personnel Management",
+            "fr": "8.2 Gestion du personnel",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "doctors_for_consultation": {
                     "line_number": "1",
@@ -8224,7 +8368,9 @@ exports.reports = function () {
         },
         "report_resources_3": {
             "title": "8.3.1 Monthly Income",
+            "fr": "8.3.1 Entrées du mois",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "sold_of_the_month_previous": {
                     "line_number": "1",
@@ -8360,8 +8506,10 @@ exports.reports = function () {
             "parent": "report_resources"
         },
         "report_resources_4": {
-            "title": "8.3.2 Monthly outcome",
+            "title": "8.3.2 Monthly expenses",
+            "fr": "8.3.2 Sorties du mois",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "salaries_incentives": {
                     "line_number": "1",
@@ -8474,7 +8622,9 @@ exports.reports = function () {
         },
         "report_resources_5": {
             "title": "8.3.3 Loans",
+            "fr": "8.3.3 Crédits",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "amount_due_by_a_patient": {
                     "line_number": "1",
@@ -8532,8 +8682,10 @@ exports.reports = function () {
             "parent": "report_resources"
         },
         "report_resources_6": {
-            "title": "8.3.4 Credits",
+            "title": "8.3.4 Debts",
+            "fr": "8.3.4 Dettes",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "amount": {
                     "line_number": "1",
@@ -8580,7 +8732,9 @@ exports.reports = function () {
         },
         "report_resources_7": {
             "title": "8.3.5 Account Management",
+            "fr": "8.3.5 Gestion des comptes",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "previous_month_sold": {
                     "line_number": "1",
@@ -8644,8 +8798,10 @@ exports.reports = function () {
             "parent": "report_resources"
         },
         "report_resources_8": {
-            "title": "8.3.5 Account Management(table2)",
+            "title": "8.3.5 Account Management (table 2)",
+            "fr": "8.3.5 Gestion des comptes (table 2)",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "exchange_rate": {
                     "line_number": "1",
@@ -8668,7 +8824,9 @@ exports.reports = function () {
         },
         "report_resources_9": {
             "title": "8.3.6 Subventions and subsides received values",
+            "fr": "8.3.6 Valorisation des subventions et subsides recues",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "personal_salaries": {
                     "line_number": "1",
@@ -9017,7 +9175,9 @@ exports.reports = function () {
         },
         "report_summary": {
             "title": "10. Summary  of the use of serivces",
+            "fr": "10.Synthese de l'Utilisation des Services",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "news_curative_cases_all_new_curative_cases": {
                     "line_number": "1",
@@ -9082,7 +9242,9 @@ exports.reports = function () {
         },
         "report_supervision_1": {
             "title": "7.1 Realised supervisions by the health center and the RECO in the community",
+            "fr": "7.1. Supervisions réalisées par le Centre de Santé et RECOs dans la communauté",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "nbr_of_visits_from_the_health_center_team_to_reco": {
                     "line_number": "1",
@@ -9135,7 +9297,9 @@ exports.reports = function () {
         },
         "report_supervision_2": {
             "title": "7.2 Supervisions realies by the main nurses and/or the ECZS to other structures",
+            "fr": "7.2. Supervisions réalisées par l’IT et/ou l’ECZS vers les autres structures",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "visited_strucutres": {
                     "line_number": "1",
@@ -9244,7 +9408,7 @@ exports.reports = function () {
                 },
                 "including_feminines": {
                     "line_number": "1b",
-                    "fr": "Dont f�minins",
+                    "fr": "Dont féminins",
                     "en": "Including feminines",
                     "condition": "patient.gender === 'female' && (subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes') || (subforms.sexual_violence_record) && (!(follow_up === 'yes' && subforms.sexual_violence_record))"
                 },
@@ -9256,49 +9420,49 @@ exports.reports = function () {
                 },
                 "including_those_contre_refered": {
                     "line_number": "2a",
-                    "fr": "Dont contre-r�f�r�s",
+                    "fr": "Dont contre-référés",
                     "en": "Including those contre-refered",
                     "condition": "counter_referred && subforms.sexual_violence_record"
                 },
                 "svs_refered_to_psycho_social": {
                     "line_number": "3",
-                    "fr": "SVS R�f�r�s psycho-social",
+                    "fr": "SVS Référés psycho-social",
                     "en": "SVS refered to psycho-social",
                     "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'psycho_social'"
                 },
                 "svs_refered_to_justice": {
                     "line_number": "4",
-                    "fr": "SVS R�f�r�s juridique",
+                    "fr": "SVS Référés juridique",
                     "en": "SVS refered to justice",
                     "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'judicial'"
                 },
                 "svs_refered_to_socio_economic_reintegration": {
                     "line_number": "5",
-                    "fr": "SVS R�f�r�s � la r�insertion socio-�conomique",
+                    "fr": "SVS Référés à la réinsertion socio-économique",
                     "en": "SVS refered to socio economic reintegration",
                     "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'socio_economic'"
                 },
                 "svs_refered_to_the_general_hospital": {
                     "line_number": "6",
-                    "fr": "SVS R�f�r�s vers HGR",
+                    "fr": "SVS Référés vers HGR",
                     "en": "SVS refered to the General Hospital",
                     "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'general_hospital'"
                 },
                 "svs_who_have_received_medical_pec": {
                     "line_number": "7",
-                    "fr": "SVS ayant recu une PEC m�dicale (M�d ou Inf)",
+                    "fr": "SVS ayant recu une PEC médicale (Méd ou Inf)",
                     "en": "SVS who have received medical PEC",
                     "condition": "(subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes' && subforms.disease_diagnosis.admission === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes' && subforms.reproductive_counseling.admission === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes' && subforms.bodily_injury.admission === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes' && subforms.ctc_record.admission === 'yes')"
                 },
                 "svs_who_have_received_pep_kit_within_72_hours": {
                     "line_number": "8",
-                    "fr": "SVS ayant recu le kit PEP � 72 h",
+                    "fr": "SVS ayant recu le kit PEP – 72 h",
                     "en": "SVS who have received PEP kit within 72 hours",
                     "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_pep_kit_72h === 'yes'"
                 },
                 "svs_who_have_received_pep_kit_after_72_hours": {
                     "line_number": "9",
-                    "fr": "SVS ayant recu le kit PEP apr�s 72h",
+                    "fr": "SVS ayant recu le kit PEP après 72h",
                     "en": "SVS who have received PEP kit after 72 hours",
                     "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_pep_kit === 'yes' && subforms.sexual_violence_record.received_pep_kit_72h === 'no'"
                 },
@@ -9310,25 +9474,25 @@ exports.reports = function () {
                 },
                 "svs_hiv_tested": {
                     "line_number": "11",
-                    "fr": "SVS test�s pour le VIH",
+                    "fr": "SVS testés pour le VIH",
                     "en": "SVS HIV tested",
                     "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_tested === 'yes'"
                 },
                 "svs_hiv_plus_tested": {
                     "line_number": "12",
-                    "fr": "SVS test�s VIH+",
+                    "fr": "SVS testés VIH+",
                     "en": "SVS HIV + tested",
                     "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_positive_test === 'yes'"
                 },
                 "urogenital_fistula_post_violence_dignostic": {
                     "line_number": "13",
-                    "fr": "Fistules urog�nitales post viol diagnostic",
+                    "fr": "Fistules urogénitales post viol diagnostic",
                     "en": "Urogenital fistula post rape dignostic",
                     "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.urogenital_fistula_post_rape === 'yes'"
                 },
                 "refered_urogenital_fistula_post_violence_dignostic": {
                     "line_number": "14",
-                    "fr": "Fistules urog�nitales post viol diagnost. et r�f�r�es",
+                    "fr": "Fistules urogénitales post viol diagnost. et référées",
                     "en": "Refered Urogenital fistula post violence dignostic",
                     "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.urogenital_fistula_post_rape === 'yes') && (subforms.sexual_violence_record.referred_to_location === 'general_hospital')"
                 },
@@ -9342,7 +9506,7 @@ exports.reports = function () {
                 "rate_new_cases_72h": {
                     "line_number": "16",
                     "line": "singlecell",
-                    "fr": "% de SVS vu dans � 72h = Total Nouveaux Cas vus dans � 72h x 100 /Tot Nouveaux Cas SVS",
+                    "fr": "% de SVS vu dans – 72h = Total Nouveaux Cas vus dans – 72h x 100 /Tot Nouveaux Cas SVS",
                     "en": "Rate of SVS seen within 72 hrs  = Total New cases seen X 100/total SVS NC",
                     "condition": "false"
                 }
@@ -9370,6 +9534,7 @@ exports.reports = function () {
         "report_vaccination": {
             "title": "Form 1: Vaccination Report",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "fix": {
                     "line_number": "1",
@@ -9586,6 +9751,7 @@ exports.reports = function () {
         "report_vaccinationintrants": {
             "title": "Form 1: Vaccines/Intrants management",
             "type": "object",
+            "manual": "true",
             "properties": {
                 "bcg": {
                     "line_number": "1",
