@@ -358,7 +358,7 @@
 		}
 		
 		if ($td.data('type') == 'field') {
-			val = val? val:"0";
+//			val = val? val:"0";
 			var field = $("<input type='text' name='" + $td.data('cell_key') + "' value='" + val + "'/>");
 			$td.html(field)
 		} else {
