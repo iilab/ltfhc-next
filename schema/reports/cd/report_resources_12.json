@@ -1,227 +1,229 @@
-    {
-        "title": "8.4.1 Consumption of medicines Vaccins sentinelles and others (cont)",
-        "type": "object",
-        "properties": {
-            "male_preservatives": {
-                "line_number": "1",
-                "fr": "Preservatif masculin",
-                "en": "Male preservatives",
+{
+    "title": "8.4.1 Consumption of medicines Vaccins sentinelles and others (cont)",
+    "fr": "8.4.1 Consommation des médicaments, vaccins sentinelles et autres (suite)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "male_preservatives": {
+            "line_number": "1",
+            "fr": "Preservatif masculin",
+            "en": "Male preservatives",
+            "condition": "true"
+        },
+        "depo_provera": {
+            "line_number": "2",
+            "fr": "Depo-Provera",
+            "en": "Depo-provera",
+            "condition": "true"
+        },
+        "iud": {
+            "line_number": "3",
+            "fr": "DIU",
+            "en": "IUD",
+            "condition": "true"
+        },
+        "microgynon": {
+            "line_number": "4",
+            "fr": "Microgynon",
+            "en": "Microgynon",
+            "condition": "true"
+        },
+        "implants": {
+            "line_number": "5",
+            "fr": "Implants",
+            "en": "Implants",
+            "condition": "true"
+        },
+        "pills_tabs": {
+            "line_number": "6",
+            "fr": "Plaquettes des Pilules",
+            "en": "Pills tabs",
+            "condition": "true"
+        },
+        "determine": {
+            "line_number": "7",
+            "fr": "Determine",
+            "en": "Determine",
+            "condition": "true"
+        },
+        "double_check": {
+            "line_number": "8",
+            "fr": "Double check",
+            "en": "Double check",
+            "condition": "true"
+        },
+        "pepkit": {
+            "line_number": "9",
+            "fr": "Kit PEP",
+            "en": "PEPkit",
+            "condition": "true"
+        },
+        "nevirapine_sp": {
+            "line_number": "10",
+            "fr": "Névirapine Sp",
+            "en": "Nevirapine SP",
+            "condition": "true"
+        },
+        "oxytocine_10ui": {
+            "line_number": "11",
+            "fr": "Oxytocine 10 UI",
+            "en": "Oxytocine 10UI",
+            "condition": "true"
+        },
+        "methylergometrine_inj_1ml": {
+            "line_number": "12",
+            "fr": "Methylergométrine amp 1 ml",
+            "en": "Methylergometrine Inj 1ml",
+            "condition": "true"
+        },
+        "misoprostol": {
+            "line_number": "13",
+            "fr": "Misoprostol",
+            "en": "Misoprostol",
+            "condition": "true"
+        },
+        "magnesium_sulphate": {
+            "line_number": "14",
+            "fr": "Sulphate de magnésium",
+            "en": "Magnesium sulphate",
+            "condition": "true"
+        },
+        "salbutamol_tab_4mg": {
+            "line_number": "15",
+            "fr": "Salbutamol 4 mg, co",
+            "en": "Salbutamol tab 4mg",
+            "condition": "true"
+        },
+        "na_dcc_tabs": {
+            "line_number": "16",
+            "fr": "Na DCC co",
+            "en": "Na DCC tabs",
+            "condition": "true"
+        },
+        "rh": {
+            "line_number": "17",
+            "fr": "RH",
+            "en": "RH",
+            "condition": "true"
+        },
+        "rhz": {
+            "line_number": "18",
+            "fr": "RHZ",
+            "en": "RHZ",
+            "condition": "true"
+        },
+        "rhze": {
+            "line_number": "19",
+            "fr": "RHZE",
+            "en": "RHZE",
+            "condition": "true"
+        },
+        "gas_compressor": {
+            "line_number": "20",
+            "fr": "Compresses de gaze",
+            "en": "Gas compressor",
+            "condition": "true"
+        },
+        "dakin_na_dcc_tabs": {
+            "line_number": "21",
+            "fr": "Dakin (Na DCC co)",
+            "en": "Dakin (Na DCC tabs)",
+            "condition": "true"
+        },
+        "niddles_21g": {
+            "line_number": "22",
+            "fr": "Aiguilles 21 G",
+            "en": "Niddles 21g",
+            "condition": "true"
+        },
+        "syringues_5ml": {
+            "line_number": "23",
+            "fr": "Seringue 5 ml",
+            "en": "Syringues 5ml",
+            "condition": "true"
+        },
+        "water_ppi_5ml_v": {
+            "line_number": "24",
+            "fr": "Eau ppi 5 ml fl",
+            "en": "Water ppi 5ml (v)",
+            "condition": "true"
+        },
+        "lidocaine_2_percentage_v": {
+            "line_number": "25",
+            "fr": "Lidocaïne 2%, fl",
+            "en": "Lidocaine 2% (v)",
+            "condition": "true"
+        },
+        "curative_consultation_form": {
+            "line_number": "26",
+            "fr": "Fiche Consultation curative",
+            "en": "Curative consultation form",
+            "condition": "true"
+        },
+        "anc_form": {
+            "line_number": "27",
+            "fr": "Fiche CPN",
+            "en": "ANC form",
+            "condition": "true"
+        },
+        "psc_form": {
+            "line_number": "28",
+            "fr": "Fiche CPS",
+            "en": "PSC form",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "initial_stock_beginning_of_the_month": {
+                "fr": "Stock initiale (début mois )",
+                "en": "Initial Stock (beginning of the month)",
+                "title":"Initial Stock (beginning of the month)",
                 "condition": "true"
             },
-            "depo_provera": {
-                "line_number": "2",
-                "fr": "Depo-Provera",
-                "en": "Depo-provera",
+            "entries": {
+                "fr": "Entrées",
+                "en": "Entries",
+                "title":"Entries",
                 "condition": "true"
             },
-            "iud": {
-                "line_number": "3",
-                "fr": "DIU",
-                "en": "IUD",
+            "exit_out_of_consumption": {
+                "fr": "Sorties hors consommation",
+                "en": "Exit (out of consumption)",
+                "title":"Exit (out of consumption)",
                 "condition": "true"
             },
-            "microgynon": {
-                "line_number": "4",
-                "fr": "Microgynon",
-                "en": "Microgynon",
+            "qty_consummed": {
+                "fr": "Qtés consommées",
+                "en": "Qty consummed",
+                "title":"Exit (out of consumption)",
                 "condition": "true"
             },
-            "implants": {
-                "line_number": "5",
-                "fr": "Implants",
-                "en": "Implants",
+            "available_stock": {
+                "fr": "Stock disponible (inventaire physique)",
+                "en": "Available Stock",
+                "title":"Available Stock",
                 "condition": "true"
             },
-            "pills_tabs": {
-                "line_number": "6",
-                "fr": "Plaquettes des Pilules",
-                "en": "Pills tabs",
+            "inventaire_phsyique": {
+                "fr": "?",
+                "en": "Inventaire Phsyique",
+                "title":"Inventaire Phsyique",
                 "condition": "true"
             },
-            "determine": {
-                "line_number": "7",
-                "fr": "Determine",
-                "en": "Determine",
+            "number_of_days_out_of_stock": {
+                "fr": "Nb jours rupture de stock",
+                "en": "Number of days out of stock",
+                "title":"Number of days out of stock",
                 "condition": "true"
             },
-            "double_check": {
-                "line_number": "8",
-                "fr": "Double check",
-                "en": "Double check",
-                "condition": "true"
-            },
-            "pepkit": {
-                "line_number": "9",
-                "fr": "Kit PEP",
-                "en": "PEPkit",
-                "condition": "true"
-            },
-            "nevirapine_sp": {
-                "line_number": "10",
-                "fr": "Névirapine Sp",
-                "en": "Nevirapine SP",
-                "condition": "true"
-            },
-            "oxytocine_10ui": {
-                "line_number": "11",
-                "fr": "Oxytocine 10 UI",
-                "en": "Oxytocine 10UI",
-                "condition": "true"
-            },
-            "methylergometrine_inj_1ml": {
-                "line_number": "12",
-                "fr": "Methylergométrine amp 1 ml",
-                "en": "Methylergometrine Inj 1ml",
-                "condition": "true"
-            },
-            "misoprostol": {
-                "line_number": "13",
-                "fr": "Misoprostol",
-                "en": "Misoprostol",
-                "condition": "true"
-            },
-            "magnesium_sulphate": {
-                "line_number": "14",
-                "fr": "Sulphate de magnésium",
-                "en": "Magnesium sulphate",
-                "condition": "true"
-            },
-            "salbutamol_tab_4mg": {
-                "line_number": "15",
-                "fr": "Salbutamol 4 mg, co",
-                "en": "Salbutamol tab 4mg",
-                "condition": "true"
-            },
-            "na_dcc_tabs": {
-                "line_number": "16",
-                "fr": "Na DCC co",
-                "en": "Na DCC tabs",
-                "condition": "true"
-            },
-            "rh": {
-                "line_number": "17",
-                "fr": "RH",
-                "en": "RH",
-                "condition": "true"
-            },
-            "rhz": {
-                "line_number": "18",
-                "fr": "RHZ",
-                "en": "RHZ",
-                "condition": "true"
-            },
-            "rhze": {
-                "line_number": "19",
-                "fr": "RHZE",
-                "en": "RHZE",
-                "condition": "true"
-            },
-            "gas_compressor": {
-                "line_number": "20",
-                "fr": "Compresses de gaze",
-                "en": "Gas compressor",
-                "condition": "true"
-            },
-            "dakin_na_dcc_tabs": {
-                "line_number": "21",
-                "fr": "Dakin (Na DCC co)",
-                "en": "Dakin (Na DCC tabs)",
-                "condition": "true"
-            },
-            "niddles_21g": {
-                "line_number": "22",
-                "fr": "Aiguilles 21 G",
-                "en": "Niddles 21g",
-                "condition": "true"
-            },
-            "syringues_5ml": {
-                "line_number": "23",
-                "fr": "Seringue 5 ml",
-                "en": "Syringues 5ml",
-                "condition": "true"
-            },
-            "water_ppi_5ml_v": {
-                "line_number": "24",
-                "fr": "Eau ppi 5 ml fl",
-                "en": "Water ppi 5ml (v)",
-                "condition": "true"
-            },
-            "lidocaine_2_percentage_v": {
-                "line_number": "25",
-                "fr": "Lidocaïne 2%, fl",
-                "en": "Lidocaine 2% (v)",
-                "condition": "true"
-            },
-            "curative_consultation_form": {
-                "line_number": "26",
-                "fr": "Fiche Consultation curative",
-                "en": "Curative consultation form",
-                "condition": "true"
-            },
-            "anc_form": {
-                "line_number": "27",
-                "fr": "Fiche CPN",
-                "en": "ANC form",
-                "condition": "true"
-            },
-            "psc_form": {
-                "line_number": "28",
-                "fr": "Fiche CPS",
-                "en": "PSC form",
+            "qty_of_stock_near_the_expired_date": {
+                "fr": "Qté voie péremption",
+                "en": "Qty of stock near the expired date",
+                "title":"Qty of stock near the expired date",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "initial_stock_beginning_of_the_month": {
-                    "fr": "Stock initiale (début mois )",
-                    "en": "Initial Stock (beginning of the month)",
-                    "title":"Initial Stock (beginning of the month)",
-                    "condition": "true"
-                },
-                "entries": {
-                    "fr": "Entrées",
-                    "en": "Entries",
-                    "title":"Entries",
-                    "condition": "true"
-                },
-                "exit_out_of_consumption": {
-                    "fr": "Sorties hors consommation",
-                    "en": "Exit (out of consumption)",
-                    "title":"Exit (out of consumption)",
-                    "condition": "true"
-                },
-                "qty_consummed": {
-                    "fr": "Qtés consommées",
-                    "en": "Qty consummed",
-                    "title":"Exit (out of consumption)",
-                    "condition": "true"
-                },
-                "available_stock": {
-                    "fr": "Stock disponible (inventaire physique)",
-                    "en": "Available Stock",
-                    "title":"Available Stock",
-                    "condition": "true"
-                },
-                "inventaire_phsyique": {
-                    "fr": "?",
-                    "en": "Inventaire Phsyique",
-                    "title":"Inventaire Phsyique",
-                    "condition": "true"
-                },
-                "number_of_days_out_of_stock": {
-                    "fr": "Nb jours rupture de stock",
-                    "en": "Number of days out of stock",
-                    "title":"Number of days out of stock",
-                    "condition": "true"
-                },
-                "qty_of_stock_near_the_expired_date": {
-                    "fr": "Qté voie péremption",
-                    "en": "Qty of stock near the expired date",
-                    "title":"Qty of stock near the expired date",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_resources"
-    }
+}

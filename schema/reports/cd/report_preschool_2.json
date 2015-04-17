@@ -1,120 +1,122 @@
 {
-        "title": "4.2 Pre-scolary consultation (cont)",
-        "type": "object",
-        "properties": {
-            "organised_psc_sessions": {
-                "line_number": "1",
-                "fr": "Séances CPS organisées",
-                "en": "Organised PSC sessions",
-                "condition": "true"
-            },
-            "children_0_11_months_who_have_acquired_a_mild": {
-                "line_number": "2",
-                "fr": "Enfants 0-11 mois ayant acquis une MILD",
-                "en": "Children 0-11 months who have acquired a MILD",
-                "condition": "true"
-            },
-            "children_6_59_months_with_nutritional_oedem": {
-                "line_number": "3",
-                "fr": "Enfants de 6 à 59 mois avec œdèmes nutritionnels",
-                "en": "Children 6-59 months with nutritional oedem",
-                "condition": "true"
-            },
-            "children_on_supplementary_in_vitamine_a_at_6_months": {
-                "line_number": "4",
-                "fr": "Enfants s upplémentés en vitamine A à 6 Mois",
-                "en": "Children on supplementary in vitamine A at 6 months",
-                "condition": "true"
-            },
-            "children_from_6_11_months_1st_dose_suppl_in_vita": {
-                "line_number": "5",
-                "fr": "Enfants 6-11 mois (1 ère dos e) s upplémentés en vitamine",
-                "en": "Children from 6-11 months (1st dose)suppl in VitA",
-                "condition": "true"
-            },
-            "children_12_59_months_supplimented_in_vit_a": {
-                "line_number": "6",
-                "fr": "Enfants 12 à 59 mois s upplémentés en vitamine A",
-                "en": "Children  12-59 months supplimented in Vit A",
-                "condition": "true"
-            },
-            "children_6_59months_with_pb_less_than_125mm": {
-                "line_number": "7",
-                "fr": "Enfants 6 à 59 mois avec PB < 125 mm",
-                "en": "Children 6-59months with PB<125mm",
-                "condition": "true"
-            },
-            "children_12_59_were_given_mebendazole": {
-                "line_number": "8",
-                "fr": "Enfants 12-59 mois dépara sités au Mebendazole",
-                "en": "Children 12-59 were given Mebendazole",
-                "condition": "true"
-            },
-            "mothers_of_0_23_children_who_were_counseled_on_children_nutrition": {
-                "line_number": "9",
-                "fr": "Mères enfants 0-23 mois cons eillés s ur l’aliment. des enfants",
-                "en": "Mothers of 0-23 children who were counseled on children nutrition",
-                "condition": "true"
-            },
-            "mothers_who_exclusively_breast_feeded_up_6_months": {
-                "line_number": "10",
-                "fr": "Mères ayant pratiquél’allaitement exclus if jus qu’à 6 mois",
-                "en": "Mothers who exclusively breast feeded up 6 months",
-                "condition": "true"
-            },
-            "0_59_months_children_weighted": {
-                "line_number": "11",
-                "fr": "Enfants 0-59 mois pes és",
-                "en": "0-59 months children weighted",
-                "condition": "true"
-            },
-            "mothers_care_takers_of_children_0f_0_24_months_who_were_counseled_in_anje": {
-                "line_number": "12",
-                "fr": "Mères /gardiennes d’enfants de 0 à 24 m. aya nt reçu un couns eling en ANJE",
-                "en": "Mothers/care takers of children 0f 0-24 months who were counseled in ANJE",
-                "condition": "true"
-            },
-            "mothers_who_correctly_observed_a_good_nutrition_from_6_months": {
-                "line_number": "13",
-                "fr": "Mères ayant pratiqué correct. l’aliment. des compléments à partir de 6 mois",
-                "en": "Mothers who correctly observed a good nutrition from 6 months",
-                "condition": "true"
-            },
-            "children_under_5_who_went_off_this_month": {
-                "line_number": "14",
-                "fr": "Enfants > 5 ans s ortis ce mois",
-                "en": "Children under 5 who went off this month",
-                "condition": "true"
-            },
-            "including_completely_vaccinated": {
-                "line_number": "15",
-                "fr": "Dont complètement vaccinés",
-                "en": "Including completely vaccinated",
-                "condition": "true"
-            },
-            "including_those_seen_once_year": {
-                "line_number": "16",
-                "fr": "Dont vus au moins 1 fois par an",
-                "en": "Including those seen once/year",
-                "condition": "true"
-            },
-            "used_rate_of_psc": {
-                "line_number": "17",
-                "line": "singlecell",
-                "fr": "Taux d’utilisation CPS = NC CPS 0-11 mois AS / Pop 0-11 mois x 100",
-                "en": "Used rate of PSC= NCPSC 0-11 months AS /Population 0-11x100",
+    "title": "4.2 Pre-scolary consultation (cont)",
+    "fr": "4.2 Consultation préscolaire (CPS) (cont)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "organised_psc_sessions": {
+            "line_number": "1",
+            "fr": "Séances CPS organisées",
+            "en": "Organised PSC sessions",
+            "condition": "true"
+        },
+        "children_0_11_months_who_have_acquired_a_mild": {
+            "line_number": "2",
+            "fr": "Enfants 0-11 mois ayant acquis une MILD",
+            "en": "Children 0-11 months who have acquired a MILD",
+            "condition": "true"
+        },
+        "children_6_59_months_with_nutritional_oedem": {
+            "line_number": "3",
+            "fr": "Enfants de 6 à 59 mois avec œdèmes nutritionnels",
+            "en": "Children 6-59 months with nutritional oedem",
+            "condition": "true"
+        },
+        "children_on_supplementary_in_vitamine_a_at_6_months": {
+            "line_number": "4",
+            "fr": "Enfants s upplémentés en vitamine A à 6 Mois",
+            "en": "Children on supplementary in vitamine A at 6 months",
+            "condition": "true"
+        },
+        "children_from_6_11_months_1st_dose_suppl_in_vita": {
+            "line_number": "5",
+            "fr": "Enfants 6-11 mois (1 ère dos e) s upplémentés en vitamine",
+            "en": "Children from 6-11 months (1st dose)suppl in VitA",
+            "condition": "true"
+        },
+        "children_12_59_months_supplimented_in_vit_a": {
+            "line_number": "6",
+            "fr": "Enfants 12 à 59 mois s upplémentés en vitamine A",
+            "en": "Children  12-59 months supplimented in Vit A",
+            "condition": "true"
+        },
+        "children_6_59months_with_pb_less_than_125mm": {
+            "line_number": "7",
+            "fr": "Enfants 6 à 59 mois avec PB < 125 mm",
+            "en": "Children 6-59months with PB<125mm",
+            "condition": "true"
+        },
+        "children_12_59_were_given_mebendazole": {
+            "line_number": "8",
+            "fr": "Enfants 12-59 mois dépara sités au Mebendazole",
+            "en": "Children 12-59 were given Mebendazole",
+            "condition": "true"
+        },
+        "mothers_of_0_23_children_who_were_counseled_on_children_nutrition": {
+            "line_number": "9",
+            "fr": "Mères enfants 0-23 mois cons eillés s ur l’aliment. des enfants",
+            "en": "Mothers of 0-23 children who were counseled on children nutrition",
+            "condition": "true"
+        },
+        "mothers_who_exclusively_breast_feeded_up_6_months": {
+            "line_number": "10",
+            "fr": "Mères ayant pratiquél’allaitement exclus if jus qu’à 6 mois",
+            "en": "Mothers who exclusively breast feeded up 6 months",
+            "condition": "true"
+        },
+        "0_59_months_children_weighted": {
+            "line_number": "11",
+            "fr": "Enfants 0-59 mois pes és",
+            "en": "0-59 months children weighted",
+            "condition": "true"
+        },
+        "mothers_care_takers_of_children_0f_0_24_months_who_were_counseled_in_anje": {
+            "line_number": "12",
+            "fr": "Mères /gardiennes d’enfants de 0 à 24 m. aya nt reçu un couns eling en ANJE",
+            "en": "Mothers/care takers of children 0f 0-24 months who were counseled in ANJE",
+            "condition": "true"
+        },
+        "mothers_who_correctly_observed_a_good_nutrition_from_6_months": {
+            "line_number": "13",
+            "fr": "Mères ayant pratiqué correct. l’aliment. des compléments à partir de 6 mois",
+            "en": "Mothers who correctly observed a good nutrition from 6 months",
+            "condition": "true"
+        },
+        "children_under_5_who_went_off_this_month": {
+            "line_number": "14",
+            "fr": "Enfants > 5 ans s ortis ce mois",
+            "en": "Children under 5 who went off this month",
+            "condition": "true"
+        },
+        "including_completely_vaccinated": {
+            "line_number": "15",
+            "fr": "Dont complètement vaccinés",
+            "en": "Including completely vaccinated",
+            "condition": "true"
+        },
+        "including_those_seen_once_year": {
+            "line_number": "16",
+            "fr": "Dont vus au moins 1 fois par an",
+            "en": "Including those seen once/year",
+            "condition": "true"
+        },
+        "used_rate_of_psc": {
+            "line_number": "17",
+            "line": "singlecell",
+            "fr": "Taux d’utilisation CPS = NC CPS 0-11 mois AS / Pop 0-11 mois x 100",
+            "en": "Used rate of PSC= NCPSC 0-11 months AS /Population 0-11x100",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "number": {
-                    "fr": "Nombre",
-                    "en": "Number",
-                    "title":"Number",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_preschool"
-    }
+}

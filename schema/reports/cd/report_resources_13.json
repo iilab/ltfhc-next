@@ -1,41 +1,43 @@
-    {
-        "title": "8.4.2 general situation of items in the stock",
-        "type": "object",
-        "properties": {
-            "items_in_the_stock": {
-                "line_number": "1",
-                "fr": "Items en stock",
-                "en": "Items in the stock",
-                "condition": "true"
-            },
-            "items_in_extra_stock": {
-                "line_number": "2",
-                "fr": "Items en sur stock",
-                "en": "Items in extra stock",
-                "condition": "true"
-            },
-            "including_items_on_the_expiry_date": {
-                "line_number": "3",
-                "fr": "Item dont une partie du stock est en voie de péremption",
-                "en": "Including items on the expiry date",
-                "condition": "true"
-            },
-            "items_with_risk_of_expiration": {
-                "line_number": "4",
-                "fr": "Item avec risque de perte par péremption",
-                "en": "Items with risk of expiration",
+{
+    "title": "8.4.2 general situation of items in the stock",
+    "fr": "8.4.2 Situation Generale des items en stock",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "items_in_the_stock": {
+            "line_number": "1",
+            "fr": "Items en stock",
+            "en": "Items in the stock",
+            "condition": "true"
+        },
+        "items_in_extra_stock": {
+            "line_number": "2",
+            "fr": "Items en sur stock",
+            "en": "Items in extra stock",
+            "condition": "true"
+        },
+        "including_items_on_the_expiry_date": {
+            "line_number": "3",
+            "fr": "Item dont une partie du stock est en voie de péremption",
+            "en": "Including items on the expiry date",
+            "condition": "true"
+        },
+        "items_with_risk_of_expiration": {
+            "line_number": "4",
+            "fr": "Item avec risque de perte par péremption",
+            "en": "Items with risk of expiration",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "number": {
-                    "fr": "Nombre",
-                    "en": "Number",
-                    "title":"Number",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_resources"
-    }
+}

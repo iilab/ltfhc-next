@@ -18,7 +18,7 @@
         },
         "including_feminines": {
             "line_number": "1b",
-            "fr": "Dont féminins",
+            "fr": "Dont fÃ©minins",
             "en": "Including feminines",
             "condition": "patient.gender === 'female' && (subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes') || (subforms.sexual_violence_record) && (!(follow_up === 'yes' && subforms.sexual_violence_record))"
         },
@@ -30,49 +30,49 @@
         },
         "including_those_contre_refered": {
             "line_number": "2a",
-            "fr": "Dont contre-référés",
+            "fr": "Dont contre-rÃ©fÃ©rÃ©s",
             "en": "Including those contre-refered",
             "condition": "counter_referred && subforms.sexual_violence_record"
         },
         "svs_refered_to_psycho_social": {
             "line_number": "3",
-            "fr": "SVS Référés psycho-social",
+            "fr": "SVS RÃ©fÃ©rÃ©s psycho-social",
             "en": "SVS refered to psycho-social",
             "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'psycho_social'"
         },
         "svs_refered_to_justice": {
             "line_number": "4",
-            "fr": "SVS Référés juridique",
+            "fr": "SVS RÃ©fÃ©rÃ©s juridique",
             "en": "SVS refered to justice",
             "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'judicial'"
         },
         "svs_refered_to_socio_economic_reintegration": {
             "line_number": "5",
-            "fr": "SVS Référés à la réinsertion socio-économique",
+            "fr": "SVS RÃ©fÃ©rÃ©s Ã  la rÃ©insertion socio-Ã©conomique",
             "en": "SVS refered to socio economic reintegration",
             "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'socio_economic'"
         },
         "svs_refered_to_the_general_hospital": {
             "line_number": "6",
-            "fr": "SVS Référés vers HGR",
+            "fr": "SVS RÃ©fÃ©rÃ©s vers HGR",
             "en": "SVS refered to the General Hospital",
             "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.referred_to_location === 'general_hospital'"
         },
         "svs_who_have_received_medical_pec": {
             "line_number": "7",
-            "fr": "SVS ayant recu une PEC médicale (Méd ou Inf)",
+            "fr": "SVS ayant recu une PEC mÃ©dicale (MÃ©d ou Inf)",
             "en": "SVS who have received medical PEC",
             "condition": "(subforms.disease_diagnosis && subforms.disease_diagnosis.sexual_violence === 'yes' && subforms.disease_diagnosis.admission === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.sexual_violence === 'yes' && subforms.reproductive_counseling.admission === 'yes') || (subforms.bodily_injury && subforms.bodily_injury.sexual_violence === 'yes' && subforms.bodily_injury.admission === 'yes') || (subforms.ctc_record && subforms.ctc_record.sexual_violence === 'yes' && subforms.ctc_record.admission === 'yes')"
         },
         "svs_who_have_received_pep_kit_within_72_hours": {
             "line_number": "8",
-            "fr": "SVS ayant recu le kit PEP – 72 h",
+            "fr": "SVS ayant recu le kit PEP â€“ 72 h",
             "en": "SVS who have received PEP kit within 72 hours",
             "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_pep_kit_72h === 'yes'"
         },
         "svs_who_have_received_pep_kit_after_72_hours": {
             "line_number": "9",
-            "fr": "SVS ayant recu le kit PEP après 72h",
+            "fr": "SVS ayant recu le kit PEP aprÃ¨s 72h",
             "en": "SVS who have received PEP kit after 72 hours",
             "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_pep_kit === 'yes' && subforms.sexual_violence_record.received_pep_kit_72h === 'no'"
         },
@@ -84,25 +84,25 @@
         },
         "svs_hiv_tested": {
             "line_number": "11",
-            "fr": "SVS testés pour le VIH",
+            "fr": "SVS testÃ©s pour le VIH",
             "en": "SVS HIV tested",
             "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_tested === 'yes'"
         },
         "svs_hiv_plus_tested": {
             "line_number": "12",
-            "fr": "SVS testés VIH+",
+            "fr": "SVS testÃ©s VIH+",
             "en": "SVS HIV + tested",
             "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_positive_test === 'yes'"
         },
         "urogenital_fistula_post_violence_dignostic": {
             "line_number": "13",
-            "fr": "Fistules urogénitales post viol diagnostic",
+            "fr": "Fistules urogÃ©nitales post viol diagnostic",
             "en": "Urogenital fistula post rape dignostic",
             "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.urogenital_fistula_post_rape === 'yes'"
         },
         "refered_urogenital_fistula_post_violence_dignostic": {
             "line_number": "14",
-            "fr": "Fistules urogénitales post viol diagnost. et référées",
+            "fr": "Fistules urogÃ©nitales post viol diagnost. et rÃ©fÃ©rÃ©es",
             "en": "Refered Urogenital fistula post violence dignostic",
             "condition": "(subforms.sexual_violence_record && subforms.sexual_violence_record.urogenital_fistula_post_rape === 'yes') && (subforms.sexual_violence_record.referred_to_location === 'general_hospital')"
         },
@@ -116,7 +116,7 @@
         "rate_new_cases_72h": {
             "line_number": "16",
             "line": "singlecell",
-            "fr": "% de SVS vu dans – 72h = Total Nouveaux Cas vus dans – 72h x 100 /Tot Nouveaux Cas SVS",
+            "fr": "% de SVS vu dans â€“ 72h = Total Nouveaux Cas vus dans â€“ 72h x 100 /Tot Nouveaux Cas SVS",
             "en": "Rate of SVS seen within 72 hrs  = Total New cases seen X 100/total SVS NC",
             "condition": "false"
         }

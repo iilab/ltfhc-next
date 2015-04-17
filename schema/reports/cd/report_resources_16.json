@@ -1,35 +1,37 @@
-    {
-        "title": "8.4.4 Pharmacy value (cont)",
-        "type": "object",
-        "properties": {
-            "items_out_of_use": {
-                "line_number": "1",
-                "fr": "Articles hors usage",
-                "en": "items out of use",
-                "condition": "true"
-            },
-            "requested_items_at_the_bcz": {
-                "line_number": "2",
-                "fr": "Articles commandés au BCZS",
-                "en": "Requested items at the BCZ",
-                "condition": "true"
-            },
-            "items_completely_served_by_bcz": {
-                "line_number": "3",
-                "fr": "Articles complètement servis par BCZS",
-                "en": "Items completely served by BCZ",
+{
+    "title": "8.4.4 Pharmacy value (cont)",
+    "fr": "8.4.4. Valeur de la pharmacie (suite)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "items_out_of_use": {
+            "line_number": "1",
+            "fr": "Articles hors usage",
+            "en": "items out of use",
+            "condition": "true"
+        },
+        "requested_items_at_the_bcz": {
+            "line_number": "2",
+            "fr": "Articles commandés au BCZS",
+            "en": "Requested items at the BCZ",
+            "condition": "true"
+        },
+        "items_completely_served_by_bcz": {
+            "line_number": "3",
+            "fr": "Articles complètement servis par BCZS",
+            "en": "Items completely served by BCZ",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "amount": {
+                "fr": "Montant",
+                "en": "Amount",
+                "title":"Amount",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "amount": {
-                    "fr": "Montant",
-                    "en": "Amount",
-                    "title":"Amount",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_resources"
-    }
+}

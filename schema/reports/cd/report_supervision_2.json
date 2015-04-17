@@ -1,91 +1,93 @@
 {
-        "title": "7.2 Supervisions realies by the main nurses and/or the ECZS to other structures",
-        "type": "object",
-        "properties": {
-            "visited_strucutres": {
-                "line_number": "1",
-                "fr": "Structures visitées",
-                "en": "Visited strucutres",
+    "title": "7.2 Supervisions realies by the main nurses and/or the ECZS to other structures",
+    "fr": "7.2. Supervisions réalisées par l’IT et/ou l’ECZS vers les autres structures",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "visited_strucutres": {
+            "line_number": "1",
+            "fr": "Structures visitées",
+            "en": "Visited strucutres",
+            "condition": "true"
+        },
+        "programed_supervision_visits": {
+            "line_number": "2",
+            "fr": "Visites de supervisions programmées",
+            "en": "Programed supervision visits",
+            "condition": "true"
+        },
+        "realised_supervision_visits": {
+            "line_number": "3",
+            "fr": "Visites de supervisions réalisées",
+            "en": "Realised supervision visits",
+            "condition": "true"
+        },
+        "visits_of_supervision_received": {
+            "line_number": "4",
+            "fr": "Visites de supervisions reçues",
+            "en": "Visits of supervision received",
+            "condition": "true"
+        },
+        "recipients_who_beneficiated_with_one_supervision": {
+            "line_number": "5",
+            "fr": "Prestataires ayant bénéficié d'une supervision",
+            "en": "Recipients who beneficiated with one supervision",
+            "condition": "true"
+        },
+        "written_retro_information_received": {
+            "line_number": "6",
+            "fr": "Rétro-informations écrites reçues",
+            "en": "Written retro-information received",
+            "condition": "true"
+        },
+        "accoplished_visits_rate_from_the_hc_to_the_reco": {
+            "line_number": "7",
+            "line": "singlecell",
+            "fr": "Taux de réalisation des visites du CS vers le RC = Nb de visites réalisées X 100 / Nb de visites programmées par le CS",
+            "en": "Accoplished visits rate from the HC to the RECO = Nbr of visits realized X 100/nbr of programed visits to the HC",
+            "condition": "true"
+        },
+        "accomplished_visits_rate_from_the_reco_to_the_community": {
+            "line_number": "8",
+            "line": "singlecell",
+            "fr": "Taux de réalisation des visites des RC dans la communauté = Nb de visites réalisées X 100/ Nb de visites programmées par le RC",
+            "en": "Accomplished visits rate from the RECO to the community =Nbr of visits realized X100/Nbr of visits programed the RECO",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "main_nurse": {
+                "fr": "IT",
+                "en": "Main Nurse",
+                "":"Main Nurse",
                 "condition": "true"
             },
-            "programed_supervision_visits": {
-                "line_number": "2",
-                "fr": "Visites de supervisions programmées",
-                "en": "Programed supervision visits",
+            "ecz": {
+                "fr": "ECZ",
+                "en": "ECZ",
+                "title":"ECZ",
                 "condition": "true"
             },
-            "realised_supervision_visits": {
-                "line_number": "3",
-                "fr": "Visites de supervisions réalisées",
-                "en": "Realised supervision visits",
+            "combined_team": {
+                "fr": "Equipe Conjointe",
+                "en": "Combined team",
+                "title":"Combined",
                 "condition": "true"
             },
-            "visits_of_supervision_received": {
-                "line_number": "4",
-                "fr": "Visites de supervisions reçues",
-                "en": "Visits of supervision received",
+            "others": {
+                "fr": "Autres",
+                "en": "Others",
+                "title":"Others",
                 "condition": "true"
             },
-            "recipients_who_beneficiated_with_one_supervision": {
-                "line_number": "5",
-                "fr": "Prestataires ayant bénéficié d'une supervision",
-                "en": "Recipients who beneficiated with one supervision",
-                "condition": "true"
-            },
-            "written_retro_information_received": {
-                "line_number": "6",
-                "fr": "Rétro-informations écrites reçues",
-                "en": "Written retro-information received",
-                "condition": "true"
-            },
-            "accoplished_visits_rate_from_the_hc_to_the_reco": {
-                "line_number": "7",
-                "line": "singlecell",
-                "fr": "Taux de réalisation des visites du CS vers le RC = Nb de visites réalisées X 100 / Nb de visites programmées par le CS",
-                "en": "Accoplished visits rate from the HC to the RECO = Nbr of visits realized X 100/nbr of programed visits to the HC",
-                "condition": "true"
-            },
-            "accomplished_visits_rate_from_the_reco_to_the_community": {
-                "line_number": "8",
-                "line": "singlecell",
-                "fr": "Taux de réalisation des visites des RC dans la communauté = Nb de visites réalisées X 100/ Nb de visites programmées par le RC",
-                "en": "Accomplished visits rate from the RECO to the community =Nbr of visits realized X100/Nbr of visits programed the RECO",
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title":"Total",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "main_nurse": {
-                    "fr": "IT",
-                    "en": "Main Nurse",
-                    "":"Main Nurse",
-                    "condition": "true"
-                },
-                "ecz": {
-                    "fr": "ECZ",
-                    "en": "ECZ",
-                    "title":"ECZ",
-                    "condition": "true"
-                },
-                "combined_team": {
-                    "fr": "Equipe Conjointe",
-                    "en": "Combined team",
-                    "title":"Combined",
-                    "condition": "true"
-                },
-                "others": {
-                    "fr": "Autres",
-                    "en": "Others",
-                    "title":"Others",
-                    "condition": "true"
-                },
-                "total": {
-                    "fr": "Total",
-                    "en": "Total",
-                    "title":"Total",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_supervision"
-    }
+}

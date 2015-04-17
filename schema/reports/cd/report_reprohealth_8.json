@@ -1,53 +1,55 @@
-    {
-        "title": "8. INFECTION CONTROL IN THE WORKPLACE",
-        "type": "object",
-        "properties": {
-            "nbr_of_post_operatory_infection_cases": {
-                "line_number": "1",
-                "fr": "Nombre de cas d'infection post operatoire",
-                "en": "Nbr of post operatory infection cases",
-                "condition": "true"
-            },
-            "nbr_of_infections_due_to_lack_of_aspsie": {
-                "line_number": "2",
-                "fr": "Nbre de  cas d'infection  due au  manque d'aspsie",
-                "en": "Nbr of infections due to lack of aspsie",
-                "condition": "true"
-            },
-            "nbr_of_means_of_waste_evacuation": {
-                "line_number": "3",
-                "fr": "Nbre de  moyens  d'evacuation  des matidres  usees",
-                "en": "Nbr of means of waste evacuation",
-                "condition": "true"
-            },
-            "nbr_of_energy_power_source_and_type": {
-                "line_number": "4",
-                "fr": "Nbre de  sources  d'energie  et genre",
-                "en": "Nbr of energy power source and type",
-                "condition": "true"
-            },
-            "nbr_of_hours_of_rupture_of_water_supply_in_the_hc_maternity_ward": {
-                "line_number": "5",
-                "fr": "Nbre d'heures  de  rupture  de  fournitures d'eau  dans  le  CS/maternite",
-                "en": "Nbr of hours of rupture of water supply in the HC/maternity ward",
-                "condition": "true"
-            },
-            "nbr_of_days_rupture_in_stock_of_disinfectant_means_of_sterilization": {
-                "line_number": "6",
-                "fr": "Nbre de jour de rupture de stock en desinfectant, moyens de sterilisation",
-                "en": "Nbr of days rupture in stock of disinfectant, means of sterilization",
+{
+    "title": "8. Infection control in the workplace",
+    "fr": "8. Prévention des infections en milieu de soins",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "nbr_of_post_operatory_infection_cases": {
+            "line_number": "1",
+            "fr": "Nombre de cas d'infection post operatoire",
+            "en": "Nbr of post operatory infection cases",
+            "condition": "true"
+        },
+        "nbr_of_infections_due_to_lack_of_aspsie": {
+            "line_number": "2",
+            "fr": "Nbre de  cas d'infection  due au  manque d'aspsie",
+            "en": "Nbr of infections due to lack of aspsie",
+            "condition": "true"
+        },
+        "nbr_of_means_of_waste_evacuation": {
+            "line_number": "3",
+            "fr": "Nbre de  moyens  d'evacuation  des matidres  usees",
+            "en": "Nbr of means of waste evacuation",
+            "condition": "true"
+        },
+        "nbr_of_energy_power_source_and_type": {
+            "line_number": "4",
+            "fr": "Nbre de  sources  d'energie  et genre",
+            "en": "Nbr of energy power source and type",
+            "condition": "true"
+        },
+        "nbr_of_hours_of_rupture_of_water_supply_in_the_hc_maternity_ward": {
+            "line_number": "5",
+            "fr": "Nbre d'heures  de  rupture  de  fournitures d'eau  dans  le  CS/maternite",
+            "en": "Nbr of hours of rupture of water supply in the HC/maternity ward",
+            "condition": "true"
+        },
+        "nbr_of_days_rupture_in_stock_of_disinfectant_means_of_sterilization": {
+            "line_number": "6",
+            "fr": "Nbre de jour de rupture de stock en desinfectant, moyens de sterilisation",
+            "en": "Nbr of days rupture in stock of disinfectant, means of sterilization",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "number": {
-                    "fr": "Nombre",
-                    "en": "Number",
-                    "title":"Number",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_reprohealth"
-    }
+}

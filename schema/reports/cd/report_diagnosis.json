@@ -1,6 +1,7 @@
 {
     "title": "2.8: Diagnosis and end of cases put in observation",
     "type": "object",
+    "manual": "true",
     "properties": {
         "accident_celebro_vascular": {
             "line_number": "1",

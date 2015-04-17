@@ -1,6 +1,7 @@
    {
         "title": "MONITORING OF PREVENTABLE DESEASES THROUGH VACCINATION ( Vaccination Sessions )",
         "type": "object",
+        "manual": "true",
         "properties": {
             "stable": {
                 "line_number": "1",

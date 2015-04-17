@@ -3,6 +3,7 @@
     "en": "2.5 Laboratory",
     "fr": "2.5 Laboratoire",
     "type": "object",
+    "manual": "true",
     "properties": {
         "clistinix": {
             "line_number": "1",

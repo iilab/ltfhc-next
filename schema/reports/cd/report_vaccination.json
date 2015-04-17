@@ -1,216 +1,217 @@
-    {
-        "title": "Form 1: Vaccination Report",
-        "type": "object",
-        "properties": {
-            "fix": {
-                "line_number": "1",
-                "fr": "Fixe",
-                "en": "Fix",
-                "condition": "true"
-            },
-            "advanced": {
-                "line_number": "2",
-                "fr": "Advancee",
-                "en": "Advanced",
-                "condition": "true"
-            },
-            "mobile": {
-                "line_number": "3",
-                "fr": "Mobile",
-                "en": "Mobile",
-                "condition": "true"
-            },
-            "total": {
-                "line_number": "4",
-                "fr": "Total",
-                "en": "Total",
-                "condition": "true"
-            },
-            "determine_the_number_of_children": {
-                "line_number": "5",
-                "line": "singlecell",
-                "fr": "1. Precisez le nombre d'enfantslfernmes enceintea recuperes par les RC: BCG:/……………../;  DTC-HepB-Hib3:/………../OVP3:/…………/; PNEUMO3:/………./;VAR:/………./;VAA:/……;/…….VAT2+/………….",
-                "en": "1. Determine the  number of children/PW recovered by CHW: BCG:/……………../;  DTC-HepB-Hib3:/………../OVP3:/…………/; PNEUMO3:/………./;VAR:/………./;VAA:/……;/…….VAT2+/………….",
-                "condition": "true"
-            },
-            "fetch_the_information_on_all": {
-                "line_number": "6",
-                "line": "singlecell",
-                "fr": "2. Puisez rinformation sur toutes les fiches de pointage des postes de vaccination se trouvant dans faire de sante",
-                "en": "2. Fetch the information on all the scorecards of vaccination post  located in the area of ​​health.",
-                "condition": "true"
-            }
+{
+    "title": "Form 1: Vaccination Report",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "fix": {
+            "line_number": "1",
+            "fr": "Fixe",
+            "en": "Fix",
+            "condition": "true"
         },
-        "definitions": {
-            "columns": {
-                "vat_to_pregnant_women_1_dose": {
-                    "fr": "VAT AUx Femmes ENCEINTES 1 dose",
-                    "en": "VAT TO Pregnant women 1st dose",
-                    "title":"VAT TO Pregnant women 1st dose",
-                    "condition": "true"
-                },
-                "vat_to_pregnant_women_2_dose": {
-                    "fr": "VAT AUx Femmes ENCEINTES 2 dose",
-                    "en": "VAT TO Pregnant women 2nd dose",
-                    "title":"VAT TO Pregnant women 2nd dose",
-                    "condition": "true"
-                },
-                "vat_to_pregnant_women_3_dose": {
-                    "fr": "VAT AUx Femmes ENCEINTES 3 dose",
-                    "en": "VAT TO Pregnant women 3rd dose",
-                    "title":"VAT TO Pregnant women 3rd dose",
-                    "condition": "true"
-                },
-                "vat_to_pregnant_women_4_dose": {
-                    "fr": "VAT AUx Femmes ENCEINTES 4 dose",
-                    "en": "VAT TO Pregnant women 4th dose",
-                    "title":"VAT TO Pregnant women 4th dose",
-                    "condition": "true"
-                },
-                "vat_to_pregnant_women_5_dose": {
-                    "fr": "VAT AUx Femmes ENCEINTES 5 dose",
-                    "en": "VAT TO Pregnant women 5th dose",
-                    "title":"VAT TO Pregnant women 5th dose",
-                    "condition": "true"
-                },
-                "bcg_0_11_months": {
-                    "fr": "BCG 0-11 Mois",
-                    "en": "BCG 0-11 Mths",
-                    "title":"BCG 0-11 Mths",
-                    "condition": "true"
-                },
-                "bcg_12_23_months": {
-                    "fr": "BCG 12-23 Mois",
-                    "en": "BCG 12-23 Mths",
-                    "title":"BCG 12-23 Mths",
-                    "condition": "true"
-                },
-                "ovp_0_11_months_1_dose": {
-                    "fr": "VPO 0-11 mois 1 dose",
-                    "en": "OVP 0-11 Months 1st dose",
-                    "title":"OVP 0-11 Months 1st dose",
-                    "condition": "true"
-                },
-                "ovp_0_11_months_2_dose": {
-                    "fr": "VPO 0-11 mois 2 dose",
-                    "en": "OVP 0-11 Months 2nd dose",
-                    "title":"OVP 0-11 Months 2nd dose",
-                    "condition": "true"
-                },
-                "ovp_0_11_months_3_dose": {
-                    "fr": "VPO 0-11 mois 3 dose",
-                    "en": "OVP 0-11 Months 3rd dose",
-                    "title":"OVP 0-11 Months 3rd dose",
-                    "condition": "true"
-                },
-                "ovp_12_23_months_1_dose": {
-                    "fr": "VPO 12-23 mois 1 dose",
-                    "en": "OVP 12-23 Months 1st dose",
-                    "title":"OVP 12-23 Months 1st dose",
-                    "condition": "true"
-                },
-                "ovp_12_23_months_2_dose": {
-                    "fr": "VPO 12-23 mois 2 dose",
-                    "en": "OVP 12-23 Months 2nd dose",
-                    "title":"OVP 12-23 Months 2nd dose",
-                    "condition": "true"
-                },
-                "ovp_12_23_months_3_dose": {
-                    "fr": "VPO 12-23 mois 3 dose",
-                    "en": "OVP 12-23 Months 3rd dose",
-                    "title":"OVP 12-23 Months 3rd dose",
-                    "condition": "true"
-                },
-                "dtc_hepb_hib_1_dose": {
-                    "fr": "DTC-HepB-Hib 1 dose",
-                    "en": "DTC-HepB-Hib 1st dose",
-                    "title":"DTC-HepB-Hib 1st dose",
-                    "condition": "true"
-                },
-                "dtc_hepb_hib_2_dose": {
-                    "fr": "DTC-HepB-Hib 2 dose",
-                    "en": "DTC-HepB-Hib 2nd dose",
-                    "title":"DTC-HepB-Hib 2nd dose",
-                    "condition": "true"
-                },
-                "dtc_hepb_hib_3_dose": {
-                    "fr": "DTC-HepB-Hib 3 dose",
-                    "en": "DTC-HepB-Hib 3rd dose",
-                    "title":"DTC-HepB-Hib 3rd dose",
-                    "condition": "true"
-                },
-                "dtc_hepb_hib_12_23_mois_1_dose": {
-                    "fr": "DTC-HepB-Hib 12-23 mois 1 dose",
-                    "en": "DTC-HepB-Hib 12-23 Months 1st dose",
-                    "title":"DTC-HepB-Hib 12-23 Months 1st dose",
-                    "condition": "true"
-                },
-                "dtc_hepb_hib_12_23_mois_2_dose": {
-                    "fr": "DTC-HepB-Hib 12-23 mois 2 dose",
-                    "en": "DTC-HepB-Hib 12-23 Months 2nd dose",
-                    "title":"DTC-HepB-Hib 12-23 Months 2nd dose",
-                    "condition": "true"
-                },
-                "dtc_hepb_hib_12_23_mois_3_dose": {
-                    "fr": "DTC-HepB-Hib 12-23 mois 3 dose",
-                    "en": "DTC-HepB-Hib 12-23 Months 3rd dose",
-                    "title":"DTC-HepB-Hib 12-23 Months 3rd dose",
-                    "condition": "true"
-                },
-                "pneumo_0_11_months_1_dose": {
-                    "fr": "PNEUMO 0-11 mois 1 dose",
-                    "en": "PNEUMO 0-11 Months 1st dose",
-                    "title":"PNEUMO 0-11 Months 1st dose",
-                    "condition": "true"
-                },
-                "pneumo_0_11_months_2_dose": {
-                    "fr": "PNEUMO 0-11 mois 2 dose",
-                    "en": "PNEUMO 0-11 Months 2nd dose",
-                    "title":"PNEUMO 0-11 Months 2nd dose",
-                    "condition": "true"
-                },
-                "pneumo_0_11_months_3_dose": {
-                    "fr": "PNEUMO 0-11 mois 3 dose",
-                    "en": "PNEUMO 0-11 Months 3rd dose",
-                    "title":"PNEUMO 0-11 Months 3rd dose",
-                    "condition": "true"
-                },
-                "pneumo_12_23_months_1_dose": {
-                    "fr": "PNEUMO 12-23 mois 1 dose",
-                    "en": "PNEUMO 12-23 Months 1st dose",
-                    "title":"PNEUMO 12-23 Months 1st dose",
-                    "condition": "true"
-                },
-                "pneumo_12_23_months_2_dose": {
-                    "fr": "PNEUMO 12-23 mois 2 dose",
-                    "en": "PNEUMO 12-23 Months 2nd dose",
-                    "title":"PNEUMO 12-23 Months 2nd dose",
-                    "condition": "true"
-                },
-                "pneumo_12_23_months_3_dose": {
-                    "fr": "PNEUMO 12-23 mois 3 dose",
-                    "en": "PNEUMO 12-23 Months 3rd dose",
-                    "title":"PNEUMO 12-23 Months 3rd dose",
-                    "condition": "true"
-                },
-                "var_09_11_months": {
-                    "fr": "VAR 12-23 mois",
-                    "en": "VAR 12-23 Months",
-                    "title":"VAR 12-23 Months",
-                    "condition": "true"
-                },
-                "vaa_09_11_month": {
-                    "fr": "VAA 09-11 mois",
-                    "en": "VAA 09-11 Months",
-                    "title":"VAA 09-11 Months",
-                    "condition": "true"
-                },
-                "vaa_12_23_months": {
-                    "fr": "VAA 12-23 mois",
-                    "en": "VAA 12-23 Months",
-                    "title":"VAA 12-23 Months",
-                    "condition": "true"
-                }
+        "advanced": {
+            "line_number": "2",
+            "fr": "Advancee",
+            "en": "Advanced",
+            "condition": "true"
+        },
+        "mobile": {
+            "line_number": "3",
+            "fr": "Mobile",
+            "en": "Mobile",
+            "condition": "true"
+        },
+        "total": {
+            "line_number": "4",
+            "fr": "Total",
+            "en": "Total",
+            "condition": "true"
+        },
+        "determine_the_number_of_children": {
+            "line_number": "5",
+            "line": "singlecell",
+            "fr": "1. Precisez le nombre d'enfantslfernmes enceintea recuperes par les RC: BCG:/……………../;  DTC-HepB-Hib3:/………../OVP3:/…………/; PNEUMO3:/………./;VAR:/………./;VAA:/……;/…….VAT2+/………….",
+            "en": "1. Determine the  number of children/PW recovered by CHW: BCG:/……………../;  DTC-HepB-Hib3:/………../OVP3:/…………/; PNEUMO3:/………./;VAR:/………./;VAA:/……;/…….VAT2+/………….",
+            "condition": "true"
+        },
+        "fetch_the_information_on_all": {
+            "line_number": "6",
+            "line": "singlecell",
+            "fr": "2. Puisez rinformation sur toutes les fiches de pointage des postes de vaccination se trouvant dans faire de sante",
+            "en": "2. Fetch the information on all the scorecards of vaccination post  located in the area of ​​health.",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "vat_to_pregnant_women_1_dose": {
+                "fr": "VAT AUx Femmes ENCEINTES 1 dose",
+                "en": "VAT TO Pregnant women 1st dose",
+                "title":"VAT TO Pregnant women 1st dose",
+                "condition": "true"
+            },
+            "vat_to_pregnant_women_2_dose": {
+                "fr": "VAT AUx Femmes ENCEINTES 2 dose",
+                "en": "VAT TO Pregnant women 2nd dose",
+                "title":"VAT TO Pregnant women 2nd dose",
+                "condition": "true"
+            },
+            "vat_to_pregnant_women_3_dose": {
+                "fr": "VAT AUx Femmes ENCEINTES 3 dose",
+                "en": "VAT TO Pregnant women 3rd dose",
+                "title":"VAT TO Pregnant women 3rd dose",
+                "condition": "true"
+            },
+            "vat_to_pregnant_women_4_dose": {
+                "fr": "VAT AUx Femmes ENCEINTES 4 dose",
+                "en": "VAT TO Pregnant women 4th dose",
+                "title":"VAT TO Pregnant women 4th dose",
+                "condition": "true"
+            },
+            "vat_to_pregnant_women_5_dose": {
+                "fr": "VAT AUx Femmes ENCEINTES 5 dose",
+                "en": "VAT TO Pregnant women 5th dose",
+                "title":"VAT TO Pregnant women 5th dose",
+                "condition": "true"
+            },
+            "bcg_0_11_months": {
+                "fr": "BCG 0-11 Mois",
+                "en": "BCG 0-11 Mths",
+                "title":"BCG 0-11 Mths",
+                "condition": "true"
+            },
+            "bcg_12_23_months": {
+                "fr": "BCG 12-23 Mois",
+                "en": "BCG 12-23 Mths",
+                "title":"BCG 12-23 Mths",
+                "condition": "true"
+            },
+            "ovp_0_11_months_1_dose": {
+                "fr": "VPO 0-11 mois 1 dose",
+                "en": "OVP 0-11 Months 1st dose",
+                "title":"OVP 0-11 Months 1st dose",
+                "condition": "true"
+            },
+            "ovp_0_11_months_2_dose": {
+                "fr": "VPO 0-11 mois 2 dose",
+                "en": "OVP 0-11 Months 2nd dose",
+                "title":"OVP 0-11 Months 2nd dose",
+                "condition": "true"
+            },
+            "ovp_0_11_months_3_dose": {
+                "fr": "VPO 0-11 mois 3 dose",
+                "en": "OVP 0-11 Months 3rd dose",
+                "title":"OVP 0-11 Months 3rd dose",
+                "condition": "true"
+            },
+            "ovp_12_23_months_1_dose": {
+                "fr": "VPO 12-23 mois 1 dose",
+                "en": "OVP 12-23 Months 1st dose",
+                "title":"OVP 12-23 Months 1st dose",
+                "condition": "true"
+            },
+            "ovp_12_23_months_2_dose": {
+                "fr": "VPO 12-23 mois 2 dose",
+                "en": "OVP 12-23 Months 2nd dose",
+                "title":"OVP 12-23 Months 2nd dose",
+                "condition": "true"
+            },
+            "ovp_12_23_months_3_dose": {
+                "fr": "VPO 12-23 mois 3 dose",
+                "en": "OVP 12-23 Months 3rd dose",
+                "title":"OVP 12-23 Months 3rd dose",
+                "condition": "true"
+            },
+            "dtc_hepb_hib_1_dose": {
+                "fr": "DTC-HepB-Hib 1 dose",
+                "en": "DTC-HepB-Hib 1st dose",
+                "title":"DTC-HepB-Hib 1st dose",
+                "condition": "true"
+            },
+            "dtc_hepb_hib_2_dose": {
+                "fr": "DTC-HepB-Hib 2 dose",
+                "en": "DTC-HepB-Hib 2nd dose",
+                "title":"DTC-HepB-Hib 2nd dose",
+                "condition": "true"
+            },
+            "dtc_hepb_hib_3_dose": {
+                "fr": "DTC-HepB-Hib 3 dose",
+                "en": "DTC-HepB-Hib 3rd dose",
+                "title":"DTC-HepB-Hib 3rd dose",
+                "condition": "true"
+            },
+            "dtc_hepb_hib_12_23_mois_1_dose": {
+                "fr": "DTC-HepB-Hib 12-23 mois 1 dose",
+                "en": "DTC-HepB-Hib 12-23 Months 1st dose",
+                "title":"DTC-HepB-Hib 12-23 Months 1st dose",
+                "condition": "true"
+            },
+            "dtc_hepb_hib_12_23_mois_2_dose": {
+                "fr": "DTC-HepB-Hib 12-23 mois 2 dose",
+                "en": "DTC-HepB-Hib 12-23 Months 2nd dose",
+                "title":"DTC-HepB-Hib 12-23 Months 2nd dose",
+                "condition": "true"
+            },
+            "dtc_hepb_hib_12_23_mois_3_dose": {
+                "fr": "DTC-HepB-Hib 12-23 mois 3 dose",
+                "en": "DTC-HepB-Hib 12-23 Months 3rd dose",
+                "title":"DTC-HepB-Hib 12-23 Months 3rd dose",
+                "condition": "true"
+            },
+            "pneumo_0_11_months_1_dose": {
+                "fr": "PNEUMO 0-11 mois 1 dose",
+                "en": "PNEUMO 0-11 Months 1st dose",
+                "title":"PNEUMO 0-11 Months 1st dose",
+                "condition": "true"
+            },
+            "pneumo_0_11_months_2_dose": {
+                "fr": "PNEUMO 0-11 mois 2 dose",
+                "en": "PNEUMO 0-11 Months 2nd dose",
+                "title":"PNEUMO 0-11 Months 2nd dose",
+                "condition": "true"
+            },
+            "pneumo_0_11_months_3_dose": {
+                "fr": "PNEUMO 0-11 mois 3 dose",
+                "en": "PNEUMO 0-11 Months 3rd dose",
+                "title":"PNEUMO 0-11 Months 3rd dose",
+                "condition": "true"
+            },
+            "pneumo_12_23_months_1_dose": {
+                "fr": "PNEUMO 12-23 mois 1 dose",
+                "en": "PNEUMO 12-23 Months 1st dose",
+                "title":"PNEUMO 12-23 Months 1st dose",
+                "condition": "true"
+            },
+            "pneumo_12_23_months_2_dose": {
+                "fr": "PNEUMO 12-23 mois 2 dose",
+                "en": "PNEUMO 12-23 Months 2nd dose",
+                "title":"PNEUMO 12-23 Months 2nd dose",
+                "condition": "true"
+            },
+            "pneumo_12_23_months_3_dose": {
+                "fr": "PNEUMO 12-23 mois 3 dose",
+                "en": "PNEUMO 12-23 Months 3rd dose",
+                "title":"PNEUMO 12-23 Months 3rd dose",
+                "condition": "true"
+            },
+            "var_09_11_months": {
+                "fr": "VAR 12-23 mois",
+                "en": "VAR 12-23 Months",
+                "title":"VAR 12-23 Months",
+                "condition": "true"
+            },
+            "vaa_09_11_month": {
+                "fr": "VAA 09-11 mois",
+                "en": "VAA 09-11 Months",
+                "title":"VAA 09-11 Months",
+                "condition": "true"
+            },
+            "vaa_12_23_months": {
+                "fr": "VAA 12-23 mois",
+                "en": "VAA 12-23 Months",
+                "title":"VAA 12-23 Months",
+                "condition": "true"
             }
         }
     }
+}

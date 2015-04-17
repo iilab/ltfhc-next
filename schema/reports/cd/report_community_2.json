@@ -1,6 +1,8 @@
 {
     "title": "6.2 Treatment and Notification",
+    "fr": "6.2 Notification et traitement",
     "type": "object",
+    "manual": "true",
     "properties": {
         "new_children_cases_receivedat_the_site": {
             "line_number": "1",

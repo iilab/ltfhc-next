@@ -1,86 +1,86 @@
-[
-    {
-        "title": "9. Health's Mutual",
-        "type": "object",
-        "properties": {
-            "news_mutual_cases": {
-                "line_number": "1",
-                "fr": "Nouveaux cas mutualis tes",
-                "en": "News mutual cases",
-                "condition": "true"
-            },
-            "including_new_mutual_patients": {
-                "line_number": "2",
-                "fr": "Dont nouveaux patients mutual is tes",
-                "en": "Including new mutual patients",
-                "condition": "true"
-            },
-            "old_mutual_cases": {
-                "line_number": "3",
-                "fr": "Anciens cas mutualis tes",
-                "en": "Old mutual cases",
-                "condition": "true"
-            },
-            "including_contre_refered_mutuals": {
-                "line_number": "4",
-                "fr": "Dont contre-référés mutual is tes",
-                "en": "Including contre- refered mutuals",
-                "condition": "true"
-            },
-            "mutual_eutocic_deliveries": {
-                "line_number": "5",
-                "fr": "Accouchements eutociques mutuali s tes",
-                "en": "Mutual eutocic deliveries",
-                "condition": "true"
-            },
-            "mutual_dystocic_deliveries": {
-                "line_number": "6",
-                "fr": "Accouchements dys toci ques mutual is tes",
-                "en": "Mutual Dystocic deliveries",
-                "condition": "true"
-            },
-            "use_of_services_rate_of_mutual_member_of_the_hc": {
-                "line_number": "7",
-                "line": "singlecell",
-                "fr": "Taux d'utilisation des services par les adhérents de la mutuelle de santé = Nb d’adhérents de mutuelles ayant consulté au CS X 100 / Total des adhérents",
-                "en": "Use of services rate of mutual member of the HC= Nbr of members who were consulted at the HC X100/Total members",
-                "condition": "true"
-            },
-            "penetration_rate": {
-                "line_number": "8",
-                "line": "singlecell",
-                "fr": "Total Consultations SVS (a+b)",
-                "en": "Penetration rate=nbr of persons who joined an health mutual (Nbr of new mutualistcases + old mutualist cases)X 100/population",
-                "condition": "true"
-            }
+{
+    "title": "9. Health's Mutual",
+    "fr": "9. Mutuelles de Sante",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "news_mutual_cases": {
+            "line_number": "1",
+            "fr": "Nouveaux cas mutualis tes",
+            "en": "News mutual cases",
+            "condition": "true"
         },
-        "definitions": {
-            "columns": {
-                "as": {
-                    "fr": "AS",
-                    "en": "AS",
-                    "title":"AS",
-                    "condition": "true"
-                },
-                "has": {
-                    "fr": "HAS",
-                    "en": "HAS",
-                    "title":"HAS",
-                    "condition": "true"
-                },
-                "hz": {
-                    "fr": "HZ",
-                    "en": "HZ",
-                    "title":"HZ",
-                    "condition": "true"
-                },
-                "total": {
-                    "fr": "Total",
-                    "en": "Total",
-                    "title":"Total",
-                    "condition": "true"
-                }
+        "including_new_mutual_patients": {
+            "line_number": "2",
+            "fr": "Dont nouveaux patients mutual is tes",
+            "en": "Including new mutual patients",
+            "condition": "true"
+        },
+        "old_mutual_cases": {
+            "line_number": "3",
+            "fr": "Anciens cas mutualis tes",
+            "en": "Old mutual cases",
+            "condition": "true"
+        },
+        "including_contre_refered_mutuals": {
+            "line_number": "4",
+            "fr": "Dont contre-référés mutual is tes",
+            "en": "Including contre- refered mutuals",
+            "condition": "true"
+        },
+        "mutual_eutocic_deliveries": {
+            "line_number": "5",
+            "fr": "Accouchements eutociques mutuali s tes",
+            "en": "Mutual eutocic deliveries",
+            "condition": "true"
+        },
+        "mutual_dystocic_deliveries": {
+            "line_number": "6",
+            "fr": "Accouchements dys toci ques mutual is tes",
+            "en": "Mutual Dystocic deliveries",
+            "condition": "true"
+        },
+        "use_of_services_rate_of_mutual_member_of_the_hc": {
+            "line_number": "7",
+            "line": "singlecell",
+            "fr": "Taux d'utilisation des services par les adhérents de la mutuelle de santé = Nb d’adhérents de mutuelles ayant consulté au CS X 100 / Total des adhérents",
+            "en": "Use of services rate of mutual member of the HC= Nbr of members who were consulted at the HC X100/Total members",
+            "condition": "true"
+        },
+        "penetration_rate": {
+            "line_number": "8",
+            "line": "singlecell",
+            "fr": "Total Consultations SVS (a+b)",
+            "en": "Penetration rate=nbr of persons who joined an health mutual (Nbr of new mutualistcases + old mutualist cases)X 100/population",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "as": {
+                "fr": "AS",
+                "en": "AS",
+                "title":"AS",
+                "condition": "true"
+            },
+            "has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title":"HAS",
+                "condition": "true"
+            },
+            "hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title":"HZ",
+                "condition": "true"
+            },
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title":"Total",
+                "condition": "true"
             }
         }
     }
-]
+}

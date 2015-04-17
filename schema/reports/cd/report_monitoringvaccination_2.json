@@ -1,6 +1,7 @@
 {
         "title": "MONITORING OF PREVENTABLE DESEASES THROUGH VACCINATION(table1)",
         "type": "object",
+        "manual": "true",
         "properties": {
             "bcg": {
                 "line_number": "1",

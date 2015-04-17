@@ -1,10 +1,11 @@
 {
     "title": "Monthly Canvas - 2.4. New cases Identification",
     "type": "object",
+    "manual": "true",
     "properties": {
         "accident_celebro_vascular": {
             "line_number": "1",
-            "fr": "Accident vasculo-cérebral (AVC)",
+            "fr": "Accident vasculo-cÃ©rebral (AVC)",
             "en": "Accident Celebro - vascular",
             "condition": "true"
         },
@@ -22,19 +23,19 @@
         },
         "anemia": {
             "line_number": "4",
-            "fr": "Anémie",
+            "fr": "AnÃ©mie",
             "en": "Anemia",
             "condition": "true"
         },
         "burns": {
             "line_number": "5",
-            "fr": "Brûlures",
+            "fr": "BrÃ»lures",
             "en": "Burns",
             "condition": "true"
         },
         "ceivix_cancer": {
             "line_number": "6",
-            "fr": "Cancer du col utérin",
+            "fr": "Cancer du col utÃ©rin",
             "en": "Ceivix cancer",
             "condition": "true"
         },
@@ -64,7 +65,7 @@
         },
         "cholera": {
             "line_number": "11",
-            "fr": "Choléra",
+            "fr": "CholÃ©ra",
             "en": "Cholera",
             "condition": "true"
         },
@@ -76,44 +77,44 @@
         },
         "whooping_cough_of_non_vaccinated": {
             "line_number": "13",
-            "fr": "Coqueluche patient non vacciné",
+            "fr": "Coqueluche patient non vaccinÃ©",
             "en": "Whooping cough of non vaccinated patients",
             "condition": "true"
         },
         "whooping_cough_of_vaccinated": {
             "line_number": "14",
-            "fr": "Coqueluche patient vacciné",
+            "fr": "Coqueluche patient vaccinÃ©",
             "en": "Whooping cough of  vaccinated patients",
             "condition": "true"
         },		
         "depression": {
             "line_number": "15",
-            "fr": "Dépression",
+            "fr": "DÃ©pression",
             "en": "Depression",
             "condition": "true"
         },
         "diabetitis": {
             "line_number": "16",
-            "fr": "Diabète",
+            "fr": "DiabÃ¨te",
             "en": "Diabetitis",
             "condition": "true"
         },
 
         "bloody_diarrhea": {
             "line_number": "17",
-            "fr": "Diarrhée sanglante",
+            "fr": "DiarrhÃ©e sanglante",
             "en": "Bloody diarrhea",
             "condition": "true"
         },			
         "simple_diarrhea": {
             "line_number": "18",
-            "fr": "Diarrhée simple",
+            "fr": "DiarrhÃ©e simple",
             "en": "Simple diarrhea",
             "condition": "true"
         },
         "drepanocytosis": {
             "line_number": "19",
-            "fr": "Drépanocytose",
+            "fr": "DrÃ©panocytose",
             "en": "Drepanocytosis",
             "condition": "true"
         },
@@ -125,19 +126,19 @@
         },		
         "viral_heomrrhage_fever": {
             "line_number": "21",
-            "fr": "Fièvre hémorragique",
+            "fr": "FiÃ¨vre hÃ©morragique",
             "en": "Viral Heomrrhage Fever",
             "condition": "true"
         },
         "yellow_fever": {
             "line_number": "22",
-            "fr": "Fièvre jaune",
+            "fr": "FiÃ¨vre jaune",
             "en": "Yellow Fever",
             "condition": "true"
         },
         "typhoid_fever": {
             "line_number": "23",
-            "fr": "Fièvre typhoïde",
+            "fr": "FiÃ¨vre typhoÃ¯de",
             "en": "Typhoid Fever",
             "condition": "true"
         },
@@ -161,7 +162,7 @@
         },
         "hepatitis": {
             "line_number": "27",
-            "fr": "Hépatites",
+            "fr": "HÃ©patites",
             "en": "Hepatitis",
             "condition": "true"
         },		
@@ -173,13 +174,13 @@
         },
         "high_blood_pressure": {
             "line_number": "29",
-            "fr": "Hypertension artérielle",
+            "fr": "Hypertension artÃ©rielle",
             "en": "High Blood Pressure",
             "condition": "true"
         },
         "related_work_accident_incapacities": {
             "line_number": "30",
-            "fr": "Incapacités liées aux accidents de travail",
+            "fr": "IncapacitÃ©s liÃ©es aux accidents de travail",
             "en": "Related work accident incapacities",
             "condition": "true"
         },			
@@ -197,13 +198,13 @@
         },
         "indigenious_product": {
             "line_number": "33",
-            "fr": "Intoxications aux produits indigènes",
+            "fr": "Intoxications aux produits indigÃ¨nes",
             "en": "Indigenious product related to intoxication",
             "condition": "true"
         },			
         "pneumonia": {
             "line_number": "34",
-            "fr": "IRA inférieure (pneumonie)",
+            "fr": "IRA infÃ©rieure (pneumonie)",
             "en": "Pneumonia",
             "condition": "true"
         },
@@ -215,20 +216,20 @@
         },
         "stis_genital_syndrome_flow": {
             "line_number": "36",
-            "fr": "IST / Syndrome d’écoulement génital",
+            "fr": "IST / Syndrome dâ€™Ã©coulement gÃ©nital",
             "en": "STIs/ genital  syndrome flow",
             "condition": "true"
         },
 		
         "stis_pelvic_inflammatory_syndrome": {
             "line_number": "37",
-            "fr": "IST / Syndrome d’inflammation pelvienne",
+            "fr": "IST / Syndrome dâ€™inflammation pelvienne",
             "en": "STIs/ Pelvic Inflammatory syndrome",
             "condition": "true"
         },			
         "stis_genital_ulceration_syndrome": {
             "line_number": "38",
-            "fr": "IST / Syndrome d’ulcération génitale",
+            "fr": "IST / Syndrome dâ€™ulcÃ©ration gÃ©nitale",
             "en": "STIs/ Genital  Ulceration Syndrome",
             "condition": "true"
         },
@@ -240,13 +241,13 @@
         },
         "leprosy": {
             "line_number": "40",
-            "fr": "Lèpre",
+            "fr": "LÃ¨pre",
             "en": "Leprosy",
             "condition": "true"
         },		
         "moderated_high_malnutrition": {
             "line_number": "41",
-            "fr": "Malnutrition aigue modéré",
+            "fr": "Malnutrition aigue modÃ©rÃ©",
             "en": "Moderated high malnutrition",
             "condition": "true"
         },
@@ -258,7 +259,7 @@
         },
         "menengitis": {
             "line_number": "43",
-            "fr": "Méningite",
+            "fr": "MÃ©ningite",
             "en": "Menengitis",
             "condition": "true"
         },
@@ -270,7 +271,7 @@
         },
         "venonimous_animals_bites": {
             "line_number": "45",
-            "fr": "Morsure par des animaux vénimeux",
+            "fr": "Morsure par des animaux vÃ©nimeux",
             "en": "Venonimous Animals bites",
             "condition": "true"
         },
@@ -306,13 +307,13 @@
         },			
         "psychose_aigue": {
             "line_number": "51",
-            "fr": "Psychose aigue : bouffée délirante",
+            "fr": "Psychose aigue : bouffÃ©e dÃ©lirante",
             "en": "Psychose-aigue: bouffee delirante",
             "condition": "true"
         },
         "psychose_puerperal": {
             "line_number": "52",
-            "fr": "Psychose puerpérale",
+            "fr": "Psychose puerpÃ©rale",
             "en": "Psychose-Puerperal",
             "condition": "true"
         },
@@ -324,13 +325,13 @@
         },			
         "measles_non_vaccinated": {
             "line_number": "54",
-            "fr": "Rougeole patient non vacciné",
+            "fr": "Rougeole patient non vaccinÃ©",
             "en": "Measles ( non vaccinated  patient)",
             "condition": "true"
         },
         "measles_vaccinated": {
             "line_number": "55",
-            "fr": "Rougeole patient vacciné",
+            "fr": "Rougeole patient vaccinÃ©",
             "en": "Measles ( vaccinated patient)",
             "condition": "true"
         },
@@ -360,13 +361,13 @@
         },
         "tetanus": {
             "line_number": "60",
-            "fr": "Tétanos",
+            "fr": "TÃ©tanos",
             "en": "Tetanus",
             "condition": "true"
         },
         "neonatal_tetanus": {
             "line_number": "61",
-            "fr": "Tétanos néonatal",
+            "fr": "TÃ©tanos nÃ©onatal",
             "en": "Neonatal Tetanus",
             "condition": "true"
         },		
@@ -384,7 +385,7 @@
         },
         "generalised_anxious_trouble": {
             "line_number": "64",
-            "fr": "Trouble anxieux généralisé",
+            "fr": "Trouble anxieux gÃ©nÃ©ralisÃ©",
             "en": "Generalised anxious trouble",
             "condition": "true"
         },			
@@ -408,7 +409,7 @@
         },			
         "buruli_ulcers": {
             "line_number": "68",
-            "fr": "Ulcère de buruli",
+            "fr": "UlcÃ¨re de buruli",
             "en": "Buruli Ulcers",
             "condition": "true"
         },
@@ -420,7 +421,7 @@
         },
         "xerophtalmia": {
             "line_number": "70",
-            "fr": "Xérophtalmie",
+            "fr": "XÃ©rophtalmie",
             "en": "Xerophtalmia",
             "condition": "true"
         },			

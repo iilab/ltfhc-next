@@ -1,85 +1,87 @@
-    {
-        "title": "4.3 Growth follow up at the Pre-scolary consultation (cont2)",
-        "type": "object",
-        "properties": {
-            "recovered_a": {
-                "line_number": "1",
-                "fr": "Guéris (a)",
-                "en": "Recovered (a)",
+{
+    "title": "4.3 Growth follow up at the Pre-scolary consultation (cont2)",
+    "fr": "4.3 Suivi de la croissance à la CPS (cont2)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "recovered_a": {
+            "line_number": "1",
+            "fr": "Guéris (a)",
+            "en": "Recovered (a)",
+            "condition": "true"
+        },
+        "non_respondants": {
+            "line_number": "2",
+            "fr": "Non répondants",
+            "en": "Non respondants",
+            "condition": "true"
+        },
+        "died_b": {
+            "line_number": "3",
+            "fr": "Décédés (b)",
+            "en": "Died (b)",
+            "condition": "true"
+        },
+        "dropped_out": {
+            "line_number": "4",
+            "fr": "Abandons",
+            "en": "Dropped out",
+            "condition": "true"
+        },
+        "refered_c": {
+            "line_number": "5",
+            "fr": "Référés (c )",
+            "en": "Refered ( c)",
+            "condition": "true"
+        },
+        "sum_of_staying_discharged": {
+            "line_number": "6",
+            "fr": "Somme de séjour des sortants",
+            "en": "Sum of staying discharged",
+            "condition": "true"
+        },
+        "total_discharged_a_plus_b_plus_c": {
+            "line_number": "7",
+            "fr": "Total Sorties (a+b+c)",
+            "en": "Total discharged (a+b+c)",
+            "condition": "true"
+        },
+        "non_repsondant_rate": {
+            "line_number": "8",
+            "line": "singlecell",
+            "fr": "Taux de non réponse=Total non répondant x100/Total sorties",
+            "en": "Non repsondant rate= total of non respondants X 100/total discharged",
+            "condition": "true"
+        },
+        "average_staying_time": {
+            "line_number": "9",
+            "line": "singlecell",
+            "fr": "Durée moyenne de séjour=somme de séjour de",
+            "en": "Average staying time = Staying sum of",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "discharged": {
+                "fr": "Sorties",
+                "en": "Discharged",
+                "title":"Discharged",
                 "condition": "true"
             },
-            "non_respondants": {
-                "line_number": "2",
-                "fr": "Non répondants",
-                "en": "Non respondants",
+            "high_balanced_malnutrition_uns": {
+                "fr": "Malnutrition aigue modérée (UNS)",
+                "en": "High Balanced Malnutrition UNS",
+                "title":"High Balanced Malnutrition UNS",
                 "condition": "true"
             },
-            "died_b": {
-                "line_number": "3",
-                "fr": "Décédés (b)",
-                "en": "Died (b)",
-                "condition": "true"
-            },
-            "dropped_out": {
-                "line_number": "4",
-                "fr": "Abandons",
-                "en": "Dropped out",
-                "condition": "true"
-            },
-            "refered_c": {
-                "line_number": "5",
-                "fr": "Référés (c )",
-                "en": "Refered ( c)",
-                "condition": "true"
-            },
-            "sum_of_staying_discharged": {
-                "line_number": "6",
-                "fr": "Somme de séjour des sortants",
-                "en": "Sum of staying discharged",
-                "condition": "true"
-            },
-            "total_discharged_a_plus_b_plus_c": {
-                "line_number": "7",
-                "fr": "Total Sorties (a+b+c)",
-                "en": "Total discharged (a+b+c)",
-                "condition": "true"
-            },
-            "non_repsondant_rate": {
-                "line_number": "8",
-                "line": "singlecell",
-                "fr": "Taux de non réponse=Total non répondant x100/Total sorties",
-                "en": "Non repsondant rate= total of non respondants X 100/total discharged",
-                "condition": "true"
-            },
-            "average_staying_time": {
-                "line_number": "9",
-                "line": "singlecell",
-                "fr": "Durée moyenne de séjour=somme de séjour de",
-                "en": "Average staying time = Staying sum of",
+            "high_severe_malnutrition_unta": {
+                "fr": "Malnutrition aigue sévère (UNTA)",
+                "en": "High Severe Malnutrition UNTA",
+                "title":"High Severe Malnutrition UNTA",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "discharged": {
-                    "fr": "Sorties",
-                    "en": "Discharged",
-                    "title":"Discharged",
-                    "condition": "true"
-                },
-                "high_balanced_malnutrition_uns": {
-                    "fr": "Malnutrition aigue modérée (UNS)",
-                    "en": "High Balanced Malnutrition UNS",
-                    "title":"High Balanced Malnutrition UNS",
-                    "condition": "true"
-                },
-                "high_severe_malnutrition_unta": {
-                    "fr": "Malnutrition aigue sévère (UNTA)",
-                    "en": "High Severe Malnutrition UNTA",
-                    "title":"High Severe Malnutrition UNTA",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_preschool"
-    }
+}

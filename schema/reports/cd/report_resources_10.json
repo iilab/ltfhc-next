@@ -1,41 +1,43 @@
-    {
-        "title": "8.3.7 Epargne/ Reserve",
-        "type": "object",
-        "properties": {
-            "epargne_reserve": {
-                "line_number": "1",
-                "fr": "Epargne/réserve",
-                "en": "Epargne/Reserve",
+{
+    "title": "8.3.7 Epargne/ Reserve",
+    "fr": "8.3.7. Epargne/réserve",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "epargne_reserve": {
+            "line_number": "1",
+            "fr": "Epargne/réserve",
+            "en": "Epargne/Reserve",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "medicine": {
+                "fr": "Médicaments",
+                "en": "Medicine",
+                "title":"Medicine",
+                "condition": "true"
+            },
+            "income": {
+                "fr": "Recettes",
+                "en": "Income",
+                "title":"Income",
+                "condition": "true"
+            },
+            "others": {
+                "fr": "Autres",
+                "en": "Others",
+                "title":"Others",
+                "condition": "true"
+            },
+            "totals": {
+                "fr": "Total",
+                "en": "Total",
+                "title":"Total",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "medicine": {
-                    "fr": "Médicaments",
-                    "en": "Medicine",
-                    "title":"Medicine",
-                    "condition": "true"
-                },
-                "income": {
-                    "fr": "Recettes",
-                    "en": "Income",
-                    "title":"Income",
-                    "condition": "true"
-                },
-                "others": {
-                    "fr": "Autres",
-                    "en": "Others",
-                    "title":"Others",
-                    "condition": "true"
-                },
-                "totals": {
-                    "fr": "Total",
-                    "en": "Total",
-                    "title":"Total",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_resources"
-    }
+}

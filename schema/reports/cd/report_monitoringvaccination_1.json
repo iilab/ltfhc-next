@@ -1,6 +1,7 @@
 {
     "title": "MONITORING OF PREVENTABLE DESEASES THROUGH VACCINATION",
     "type": "object",
+    "manual": "true",
     "properties": {
         "pfa": {
             "line_number": "1",

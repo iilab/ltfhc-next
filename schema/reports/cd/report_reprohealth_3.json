@@ -1,47 +1,49 @@
-    {
-        "title": "3.MOTHER TO CHILD PREVENTION TREATMENT(PMTCT)",
-        "type": "object",
-        "properties": {
-            "nber_of_pw_hiv_tested": {
-                "line_number": "1",
-                "fr": "Nbre des femmes  enceintes test6es  au  VIH",
-                "en": "Nber of PW HIV tested",
-                "condition": "true"
-            },
-            "nber_of_pw_tested_positive_at_antenatal_clinic": {
-                "line_number": "2",
-                "fr": "Nombre  des femmes  enceintes test6es  VIH+  a  la  CPN",
-                "en": "Nber of PW tested positive at antenatal clinic",
-                "condition": "true"
-            },
-            "nber_of_pw_tested_positive_and_were_informed_about_their_results": {
-                "line_number": "3",
-                "fr": "Nombre  des femmes  enceintes testees  VIH+  informees  de  leurs resultats",
-                "en": "Nber of PW tested positive and were informed about their results",
-                "condition": "true"
-            },
-            "nber_of_nbb_of_hvi_mothers": {
-                "line_number": "4",
-                "fr": "Nombre des nouveau-nes des meres seropositives",
-                "en": "Nber of NBB of HVI+ mothers",
-                "condition": "true"
-            },
-            "nber_of_hiv_pw_who_took_nevirapine_during_labour": {
-                "line_number": "5",
-                "fr": "Nombre des femmes enceintes seropositives ayant pris la niverapine pendant le travails",
-                "en": "Nber of HIV+ PW who took nevirapine during labour",
+{
+    "title": "3. Mother to child prevention treatment (PMTCT)",
+    "fr": "3. Prévention de la transmission mère enfant (PrME)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "nber_of_pw_hiv_tested": {
+            "line_number": "1",
+            "fr": "Nbre des femmes  enceintes test6es  au  VIH",
+            "en": "Nber of PW HIV tested",
+            "condition": "true"
+        },
+        "nber_of_pw_tested_positive_at_antenatal_clinic": {
+            "line_number": "2",
+            "fr": "Nombre  des femmes  enceintes test6es  VIH+  a  la  CPN",
+            "en": "Nber of PW tested positive at antenatal clinic",
+            "condition": "true"
+        },
+        "nber_of_pw_tested_positive_and_were_informed_about_their_results": {
+            "line_number": "3",
+            "fr": "Nombre  des femmes  enceintes testees  VIH+  informees  de  leurs resultats",
+            "en": "Nber of PW tested positive and were informed about their results",
+            "condition": "true"
+        },
+        "nber_of_nbb_of_hvi_mothers": {
+            "line_number": "4",
+            "fr": "Nombre des nouveau-nes des meres seropositives",
+            "en": "Nber of NBB of HVI+ mothers",
+            "condition": "true"
+        },
+        "nber_of_hiv_pw_who_took_nevirapine_during_labour": {
+            "line_number": "5",
+            "fr": "Nombre des femmes enceintes seropositives ayant pris la niverapine pendant le travails",
+            "en": "Nber of HIV+ PW who took nevirapine during labour",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "number": {
-                    "fr": "Nombre",
-                    "en": "Number",
-                    "title":"Number",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_reprohealth"
-    }
+}

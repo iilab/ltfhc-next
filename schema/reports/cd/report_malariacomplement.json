@@ -1,6 +1,8 @@
 {
     "title": "Form 1 : Monthly Report complementing the SNIS",
+    "fr": "Formulaire 1 : Rapport mensuel complémentaire au SNIS",
     "type": "object",
+    "manual": "true",
     "properties": {
         "0_5years": {
             "line_number": "1",

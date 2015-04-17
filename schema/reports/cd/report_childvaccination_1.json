@@ -1,6 +1,8 @@
 {
     "title": "4.1 Child's vaccination",
+    "fr": "4.1 Vaccination des enfants",
     "type": "object",
+    "manual": "true",
     "properties": {
         "prepared_sessions": {
             "line_number": "1",

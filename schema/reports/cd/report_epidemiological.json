@@ -1,6 +1,7 @@
     {
         "title": "Weekly Notification Form - Epidemiological Diseases",
         "type": "object",
+        "manual": "true",
         "properties": {
             "structure_of_care": {
                 "line_number": "1",

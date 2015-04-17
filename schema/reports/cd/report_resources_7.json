@@ -1,65 +1,67 @@
-    {
-        "title": "8.3.5 Account Management",
-        "type": "object",
-        "properties": {
-            "previous_month_sold": {
-                "line_number": "1",
-                "fr": "Solde mois précédent",
-                "en": "Previous month sold",
+{
+    "title": "8.3.5 Account Management",
+    "fr": "8.3.5 Gestion des comptes",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "previous_month_sold": {
+            "line_number": "1",
+            "fr": "Solde mois précédent",
+            "en": "Previous month sold",
+            "condition": "true"
+        },
+        "entry_cash_e1": {
+            "line_number": "2",
+            "fr": "Entrée cash (E1)",
+            "en": "Entry cash (E1)",
+            "condition": "true"
+        },
+        "exit_cash_s1": {
+            "line_number": "3",
+            "fr": "Sortie cash (S1)",
+            "en": "Exit cash (S1)",
+            "condition": "true"
+        },
+        "stock_to_provision": {
+            "line_number": "4",
+            "fr": "Caisse vers provision",
+            "en": "Stock to provision",
+            "condition": "true"
+        },
+        "provision_stock": {
+            "line_number": "5",
+            "fr": "Provision vers caisse",
+            "en": "Provision stock",
+            "condition": "true"
+        },
+        "monthly_end": {
+            "line_number": "6",
+            "fr": "Solde fin de mois",
+            "en": "Monthly end",
+            "condition": "true"
+        },
+        "total_accounts": {
+            "line_number": "7",
+            "fr": "Total des comptes",
+            "en": "Total accounts",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "stock": {
+                "fr": "Caisse",
+                "en": "Stock",
+                "title":"Stock",
                 "condition": "true"
             },
-            "entry_cash_e1": {
-                "line_number": "2",
-                "fr": "Entrée cash (E1)",
-                "en": "Entry cash (E1)",
-                "condition": "true"
-            },
-            "exit_cash_s1": {
-                "line_number": "3",
-                "fr": "Sortie cash (S1)",
-                "en": "Exit cash (S1)",
-                "condition": "true"
-            },
-            "stock_to_provision": {
-                "line_number": "4",
-                "fr": "Caisse vers provision",
-                "en": "Stock to provision",
-                "condition": "true"
-            },
-            "provision_stock": {
-                "line_number": "5",
-                "fr": "Provision vers caisse",
-                "en": "Provision stock",
-                "condition": "true"
-            },
-            "monthly_end": {
-                "line_number": "6",
-                "fr": "Solde fin de mois",
-                "en": "Monthly end",
-                "condition": "true"
-            },
-            "total_accounts": {
-                "line_number": "7",
-                "fr": "Total des comptes",
-                "en": "Total accounts",
+            "provision": {
+                "fr": "Provision",
+                "en": "Provision",
+                "title":"Provision",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "stock": {
-                    "fr": "Caisse",
-                    "en": "Stock",
-                    "title":"Stock",
-                    "condition": "true"
-                },
-                "provision": {
-                    "fr": "Provision",
-                    "en": "Provision",
-                    "title":"Provision",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_resources"
-    }
+}

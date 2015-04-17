@@ -1,47 +1,49 @@
-    {
-        "title": "8.3.4 Credits",
-        "type": "object",
-        "properties": {
-            "amount": {
-                "line_number": "1",
-                "fr": "Montant",
-                "en": "Amount",
+{
+    "title": "8.3.4 Debts",
+    "fr": "8.3.4 Dettes",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "amount": {
+            "line_number": "1",
+            "fr": "Montant",
+            "en": "Amount",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "previous_monthly_cummulation": {
+                "fr": "Cumul mois précédant",
+                "en": "Previous monthly Cummulation",
+                "title":"Previous monthly Cummulation",
+                "condition": "true"
+            },
+            "monthly_credit_e2": {
+                "fr": "Crédits du mois (S2)",
+                "en": "Monthly Credit (S2)",
+                "title":"Monthly Credit (S2)",
+                "condition": "true"
+            },
+            "reimboursed_credit_e3": {
+                "fr": "Crédits remboursées (S3)",
+                "en": "Reimboursed Credit (S3)",
+                "title":"Reimboursed Credit (S3)",
+                "condition": "true"
+            },
+            "dropped_out_credits": {
+                "fr": "Crédits abandonnées",
+                "en": "Dropped out Credits",
+                "title":"Dropped out Credits",
+                "condition": "true"
+            },
+            "end_of_the_year_cummulation": {
+                "fr": "Cumul fin de mois",
+                "en": "End of the year Cummulation",
+                "title":"End of the year Cummulation",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "previous_monthly_cummulation": {
-                    "fr": "Cumul mois précédant",
-                    "en": "Previous monthly Cummulation",
-                    "title":"Previous monthly Cummulation",
-                    "condition": "true"
-                },
-                "monthly_credit_e2": {
-                    "fr": "Crédits du mois (S2)",
-                    "en": "Monthly Credit (S2)",
-                    "title":"Monthly Credit (S2)",
-                    "condition": "true"
-                },
-                "reimboursed_credit_e3": {
-                    "fr": "Crédits remboursées (S3)",
-                    "en": "Reimboursed Credit (S3)",
-                    "title":"Reimboursed Credit (S3)",
-                    "condition": "true"
-                },
-                "dropped_out_credits": {
-                    "fr": "Crédits abandonnées",
-                    "en": "Dropped out Credits",
-                    "title":"Dropped out Credits",
-                    "condition": "true"
-                },
-                "end_of_the_year_cummulation": {
-                    "fr": "Cumul fin de mois",
-                    "en": "End of the year Cummulation",
-                    "title":"End of the year Cummulation",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_resources"
-    }
+}

@@ -1,35 +1,37 @@
-    {
-        "title": "7.Sexual Violence",
-        "type": "object",
-        "properties": {
-            "nber_of_identified_sexual_violence_cases": {
-                "line_number": "1",
-                "fr": "Nbre de  cas de  violences  sexuelles identifies",
-                "en": "Nber of identified Sexual Violence cases",
-                "condition": "true"
-            },
-            "nbr_of_sexual_violence_oriented_cases": {
-                "line_number": "2",
-                "fr": "Nbre de cas de violences sexuelles orients",
-                "en": "Nbr of sexual violence oriented cases",
-                "condition": "true"
-            },
-            "nbr_of_supported_sexual_violence_cases": {
-                "line_number": "3",
-                "fr": "Nbre de cas de violences sexuelles pris en charge",
-                "en": "Nbr of supported sexual violence cases",
+{
+    "title": "7. Sexual Violence",
+    "title": "7. Violences Sexuelles",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "nber_of_identified_sexual_violence_cases": {
+            "line_number": "1",
+            "fr": "Nbre de  cas de  violences  sexuelles identifies",
+            "en": "Nber of identified Sexual Violence cases",
+            "condition": "true"
+        },
+        "nbr_of_sexual_violence_oriented_cases": {
+            "line_number": "2",
+            "fr": "Nbre de cas de violences sexuelles orients",
+            "en": "Nbr of sexual violence oriented cases",
+            "condition": "true"
+        },
+        "nbr_of_supported_sexual_violence_cases": {
+            "line_number": "3",
+            "fr": "Nbre de cas de violences sexuelles pris en charge",
+            "en": "Nbr of supported sexual violence cases",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "number": {
-                    "fr": "Nombre",
-                    "en": "Number",
-                    "title":"Number",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_reprohealth"
-    }
+}

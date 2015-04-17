@@ -1,6 +1,8 @@
 {
     "title": "4.1 Child's vaccination (cont)",
+    "fr": "4.1 Vaccination des enfants",
     "type": "object",
+    "manual": "true",
     "properties": {
         "bcg": {
             "line_number": "16",

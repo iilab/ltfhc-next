@@ -1,6 +1,8 @@
 {
     "title": "6.1 Reference of Community care site activities",
+    "fr": "6.1 Référence du Site de Soin Communautaire au CS",
     "type": "object",
+    "manual": "true",
     "properties": {
         "active_care_sites": {
             "line_number": "1",

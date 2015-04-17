@@ -1,160 +1,168 @@
-    {
-        "title": "3.2 PMTCT",
-        "type": "object",
-        "properties": {
-            "who_know_their_hiv_status_before_anc_1": {
-                "line_number": "1",
-                "fr": "Qui connaissent leur statut sÈrologique VIH avant l a CPN1",
-                "en": "Who know their HIV status before ANC 1",
-                "condition": "true"
-            },
-            "who_were_counseled_for_hiv_test": {
-                "line_number": "2",
-                "fr": "Qui ont ÈtÈ conseillÈe pour un test VIH",
-                "en": "Who were counseled for HIV test",
-                "condition": "true"
-            },
-            "who_were_hiv_tested": {
-                "line_number": "3",
-                "fr": "Qui ont ÈtÈ testÈes pour le VIH",
-                "en": "Who were HIV tested",
-                "condition": "true"
-            },
-            "who_were_informed_about_their_result": {
-                "line_number": "4",
-                "fr": "Qui ont ÈtÈ informÈes du rÈsultat",
-                "en": "who were informed about their result",
-                "condition": "true"
-            },
-            "who_had_hiv_test": {
-                "line_number": "5",
-                "fr": "Qui ont eu un test positif au VIH",
-                "en": "Who had HIV+ test",
-                "condition": "true"
-            },
-            "who_had_hiv_test_and_were_informed_about_their_results": {
-                "line_number": "6",
-                "fr": "Qui ont eu un test positif au VIH et ont ÈtÈ informÈes du rÈsultat",
-                "en": "Who had HIV+ test and were informed about their results",
-                "condition": "true"
-            },
-            "who_are_hiv_and_beneficiated_a_prophylaxie_at_arv_azt_3tc_nvp)": {
-                "line_number": "7",
-                "fr": "Qui sont VIH+ ayant bÈnÈficiÈ de la prophylaxie aux ARV (AZT /AZT+3TC+NVP)",
-                "en": "Who are HIV+ and beneficiated a prophylaxie at ARV (AZT+3TC+NVP)",
-                "condition": "true"
-            },
-            "who_are_hiv_and_beneficiated_a_prophylaxie_and_cotrimoxazole": {
-                "line_number": "8",
-                "fr": "Qui sont VIH+ ayant bÈnÈficiÈ de la prophylaxie au cotrimoxazole",
-                "en": "Who are HIV+ and beneficiated a prophylaxie and cotrimoxazole",
-                "condition": "true"
-            },
-            "who_are_hiv_and_refered_to_a_pec_center": {
-                "line_number": "9",
-                "fr": "Qui sont VIH+ qui sont rÈfÈrÈes vers une structure de PEC",
-                "en": "Who are HIV+ and refered to a PEC center",
-                "condition": "true"
-            },
-            "tested_and_informed_about_their_results_during_labour_delivery_and_post_portum_72": {
-                "line_number": "10",
-                "fr": "TestÈes et informÈes de leur rÈsultat lors du trava il, accouchement et post partum (72 h)",
-                "en": "Tested and informed about their results during labour, delivery and post-portum (72)",
-                "condition": "true"
-            },
-            "pregnant_women_put_under_arvt": {
-                "line_number": "11",
-                "fr": "Femmes enceintes ont ÈtÈ mis sous TARV",
-                "en": "Pregnant women put under ARVT",
-                "condition": "true"
-            },
-            "who_were_pregnants_after_being_raped": {
-                "line_number": "12",
-                "fr": "Qui ont eu la grossesse ‡ líissue díun Viol",
-                "en": "Who were pregnants after being raped",
-                "condition": "true"
-            },
-            "hiv_mother_who_opted_the_breast_feeding_up_to_6_months": {
-                "line_number": "13",
-                "fr": "MËres VIH+ ayant optÈ pour líallaitement exclusif jusquí‡ 6 mois",
-                "en": "HIV+ mother who opted the breast feeding up to 6 months",
-                "condition": "true"
-            },
-            "who_were_tested_for_ghonorrhea": {
-                "line_number": "14",
-                "fr": "?",
-                "en": "Who were tested for Ghonorrhea",
-                "condition": "true"
-            },
-            "hiv_mother_put_under_double_protection_pf_preservatif": {
-                "line_number": "15",
-                "fr": "Dont mËres VIH+ mises sous double protection (PF+ prÈservatif)",
-                "en": "HIV+ mother put under double protection (PF+ preservatif)",
-                "condition": "true"
-            },
-            "delivered_hiv": {
-                "line_number": "16",
-                "fr": "?",
-                "en": "Delivered HIV+",
-                "condition": "true"
-            },
-            "including_those_have_received_the_nevirapine_azt_lav": {
-                "line_number": "17",
-                "fr": "Dont ayant reÁu de la nÈvirapine + AZT+LAV",
-                "en": "Including those have received the Nevirapine + AZT + LAV",
-                "condition": "true"
-            },
-            "children_born_from_hiv_mothers_who_were_put_under_nevirapine_at_birth": {
-                "line_number": "18",
-                "fr": "Enfants nÈs de mËre VIH+",
-                "en": "Children born from HIV+ mothers who were put under nevirapine at birth.",
-                "condition": "true"
-            },
-            "who_were_put_under_cotrimoxazole_during_6_weeks_after_birth": {
-                "line_number": "19",
-                "fr": "Dont mis sous cotrimoxazole pendant 6 semaines aprËs la naissance",
-                "en": "Who were put under cotrimoxazole during 6 weeks after birth",
-                "condition": "true"
-            },
-            "who_were_put_under_nevirapine_during_the_12_months_after_birth": {
-                "line_number": "20",
-                "fr": "Dont mis sous NVP pendant 12 mois aprËs la naissance",
-                "en": "Who were put under Nevirapine during the 12 months after birth",
-                "condition": "true"
-            },
-            "exposed_children_who_were_tested_hiv_at_pcr_1_after_6_weeks_after_birth": {
-                "line_number": "21",
-                "fr": "Enfants exposÈs reÁus et testÈs au PCR1 ‡ 6 semaines aprËs la naissance",
-                "en": "Exposed children who were tested HIV+ at PCR 1 after 6 weeks after birth",
-                "condition": "true"
-            },
-            "exposed_children_who_were_tested_at_pcr_2_at_10_weeks_after_birth": {
-                "line_number": "22",
-                "fr": "Enfants exposÈs reÁus et testÈs au PCR2 ‡ 10 semaines aprËs la naissance",
-                "en": "Exposed children who were tested at PCR 2 at 10 weeks after birth",
-                "condition": "true"
-            },
-            "exposed_children_who_were_tested_hiv_at_pcr2_at_10_weeks_after_birth": {
-                "line_number": "23",
-                "fr": "Enfants exposÈs testÈs positifs au PCR2 ‡ 10 semai nes aprËs la naissance",
-                "en": "Exposed children who were tested HIV+at PCR2 at 10 weeks after birth",
-                "condition": "true"
-            },
-            "exposed_children_tested_at_pcr1_who_receiveda_hiv_test_at_12_months": {
-                "line_number": "24",
-                "fr": "Enfants exposÈs testÈs au PCR1 ayant bÈnÈficiÈ d'untest sÈro. ‡ 12 mois",
-                "en": "Exposed children tested at PCR1 who receiveda HIV test at 12 months",
-                "condition": "true"
-            }
+{
+    "title": "3.2 PMTCT",
+    "fr": "Pr√©vention transmission m√®re enfant (PTME)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "who_know_their_hiv_status_before_anc_1": {
+            "line_number": "1",
+            "fr": "Qui connaissent leur statut s√©rologique VIH avant l a CPN1",
+            "en": "Who know their HIV status before ANC 1",
+            "condition": "true"
         },
-        "definitions": {
-            "columns": {
-                "number": {
-                    "fr": "Nombre",
-                    "en": "Number",
-                    "title":"Number",
-                    "condition": "true"
-                }
+        "who_were_counseled_for_hiv_test": {
+            "line_number": "2",
+            "fr": "Qui ont √©t√© conseill√©e pour un test VIH",
+            "en": "Who were counseled for HIV test",
+            "condition": "true"
+        },
+        "who_were_hiv_tested": {
+            "line_number": "3",
+            "fr": "Qui ont √©t√© test√©es pour le VIH",
+            "en": "Who were HIV tested",
+            "condition": "true"
+        },
+        "who_were_informed_about_their_result": {
+            "line_number": "4",
+            "fr": "Qui ont √©t√© inform√©es du r√©sultat",
+            "en": "who were informed about their result",
+            "condition": "true"
+        },
+        "who_had_hiv_test": {
+            "line_number": "5",
+            "fr": "Qui ont eu un test positif au VIH",
+            "en": "Who had HIV+ test",
+            "condition": "true"
+        },
+        "who_had_hiv_test_and_were_informed_about_their_results": {
+            "line_number": "6",
+            "fr": "Qui ont eu un test positif au VIH et ont √©t√© inform√©es du r√©sultat",
+            "en": "Who had HIV+ test and were informed about their results",
+            "condition": "true"
+        },
+        "who_are_hiv_and_beneficiated_a_prophylaxie_at_arv_azt_3tc_nvp)": {
+            "line_number": "7",
+            "fr": "Qui sont VIH+ ayant b√©n√©fici√© de la prophylaxie aux ARV (AZT /AZT+3TC+NVP)",
+            "en": "Who are HIV+ and beneficiated a prophylaxie at ARV (AZT+3TC+NVP)",
+            "condition": "true"
+        },
+        "who_are_hiv_and_beneficiated_a_prophylaxie_and_cotrimoxazole": {
+            "line_number": "8",
+            "fr": "Qui sont VIH+ ayant b√©n√©fici√© de la prophylaxie au cotrimoxazole",
+            "en": "Who are HIV+ and beneficiated a prophylaxie and cotrimoxazole",
+            "condition": "true"
+        },
+        "who_are_hiv_and_refered_to_a_pec_center": {
+            "line_number": "9",
+            "fr": "Qui sont VIH+ qui sont r√©f√©r√©es vers une structure de PEC",
+            "en": "Who are HIV+ and refered to a PEC center",
+            "condition": "true"
+        },
+        "tested_and_informed_about_their_results_during_labour_delivery_and_post_portum_72": {
+            "line_number": "10",
+            "fr": "Test√©es et inform√©es de leur r√©sultat lors du trava il, accouchement et post partum (72 h)",
+            "en": "Tested and informed about their results during labour, delivery and post-portum (72)",
+            "condition": "true"
+        },
+        "pregnant_women_put_under_arvt": {
+            "line_number": "11",
+            "fr": "Femmes enceintes ont √©t√© mis sous TARV",
+            "en": "Pregnant women put under ARVT",
+            "condition": "true"
+        },
+        "who_were_pregnants_after_being_raped": {
+            "line_number": "12",
+            "fr": "Qui ont eu la grossesse √† l‚Äôissue d‚Äôun Viol",
+            "en": "Who were pregnants after being raped",
+            "condition": "true"
+        },
+        "hiv_mother_who_opted_the_breast_feeding_up_to_6_months": {
+            "line_number": "13",
+            "fr": "M√®res VIH+ ayant opt√© pour l‚Äôallaitement exclusif jusqu‚Äô√† 6 mois",
+            "en": "HIV+ mother who opted the breast feeding up to 6 months",
+            "condition": "true"
+        },
+        "who_were_tested_for_ghonorrhea": {
+            "line_number": "14",
+            "fr": "Qui ont √©t√© d√©pist√©s pour la syphilis √† la CPN",
+            "en": "Who were tested for Ghonorrhea",
+            "condition": "true"
+        },        
+        "who_were_positive_for_ghonorrhea": {
+            "line_number": "15",
+            "fr": "Qui ont √©t√© d√©pist√©s positives √† la syphilis",
+            "en": "Who were tested positive for Ghonorrhea",
+            "condition": "true"
+        },
+        "hiv_mother_put_under_double_protection_pf_preservatif": {
+            "line_number": "16",
+            "fr": "Dont m√®res VIH+ mises sous double protection (PF+ pr√©servatif)",
+            "en": "HIV+ mother put under double protection (PF+ preservatif)",
+            "condition": "true"
+        },
+        "delivered_hiv": {
+            "line_number": "17",
+            "fr": "Accouch√©es VIH +",
+            "en": "Delivered HIV +",
+            "condition": "true"
+        },
+        "including_those_have_received_the_nevirapine_azt_lav": {
+            "line_number": "18",
+            "fr": "Dont ayant re√ßu de la n√©virapine + AZT+LAV",
+            "en": "Including those have received the Nevirapine + AZT + LAV",
+            "condition": "true"
+        },
+        "children_born_from_hiv_mothers_who_were_put_under_nevirapine_at_birth": {
+            "line_number": "19",
+            "fr": "Enfants n√©s de m√®re VIH+",
+            "en": "Children born from HIV+ mothers who were put under nevirapine at birth.",
+            "condition": "true"
+        },
+        "who_were_put_under_cotrimoxazole_during_6_weeks_after_birth": {
+            "line_number": "20",
+            "fr": "Dont mis sous cotrimoxazole pendant 6 semaines apr√®s la naissance",
+            "en": "Who were put under cotrimoxazole during 6 weeks after birth",
+            "condition": "true"
+        },
+        "who_were_put_under_nevirapine_during_the_12_months_after_birth": {
+            "line_number": "21",
+            "fr": "Dont mis sous NVP pendant 12 mois apr√®s la naissance",
+            "en": "Who were put under Nevirapine during the 12 months after birth",
+            "condition": "true"
+        },
+        "exposed_children_who_were_tested_hiv_at_pcr_1_after_6_weeks_after_birth": {
+            "line_number": "22",
+            "fr": "Enfants expos√©s re√ßus et test√©s au PCR1 √† 6 semaines apr√®s la naissance",
+            "en": "Exposed children who were tested HIV+ at PCR 1 after 6 weeks after birth",
+            "condition": "true"
+        },
+        "exposed_children_who_were_tested_at_pcr_2_at_10_weeks_after_birth": {
+            "line_number": "23",
+            "fr": "Enfants expos√©s re√ßus et test√©s au PCR2 √† 10 semaines apr√®s la naissance",
+            "en": "Exposed children who were tested at PCR 2 at 10 weeks after birth",
+            "condition": "true"
+        },
+        "exposed_children_who_were_tested_hiv_at_pcr2_at_10_weeks_after_birth": {
+            "line_number": "24",
+            "fr": "Enfants expos√©s test√©s positifs au PCR2 √† 10 semai nes apr√®s la naissance",
+            "en": "Exposed children who were tested HIV+at PCR2 at 10 weeks after birth",
+            "condition": "true"
+        },
+        "exposed_children_tested_at_pcr1_who_receiveda_hiv_test_at_12_months": {
+            "line_number": "25",
+            "fr": "Enfants expos√©s test√©s au PCR1 ayant b√©n√©fici√© d'untest s√©ro. √† 12 mois",
+            "en": "Exposed children tested at PCR1 who receiveda HIV test at 12 months",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
+                "condition": "true"
             }
         }
     }
+}

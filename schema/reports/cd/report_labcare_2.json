@@ -1,6 +1,7 @@
 {
     "title": "2.6. Care",
     "type": "object",
+    "manual": "true",
     "properties": {
         "persons_who_received_counseling_and_treatment_in_order_to_prevent_heart_crisis_or_the_avc": {
             "line_number": "1",

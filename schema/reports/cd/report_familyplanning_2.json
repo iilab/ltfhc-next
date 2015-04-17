@@ -1,6 +1,8 @@
 {
-        "title": "3.7.2  The use of FP methods",
+        "title": "3.7.2 The use of FP methods",
+        "fr": "3.7.2 Utilisation des Methodes de Planification familiale (PF)",
         "type": "object",
+        "manual": "true",
         "properties": {
             "inj_deprovera": {
                 "line_number": "1",

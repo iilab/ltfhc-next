@@ -1,23 +1,25 @@
-    {
-        "title": "8.3.5 Account Management(table2)",
-        "type": "object",
-        "properties": {
-            "exchange_rate": {
-                "line_number": "1",
-                "fr": "Taux de change",
-                "en": "Exchange rate",
+{
+    "title": "8.3.5 Account Management (table 2)",
+    "fr": "8.3.5 Gestion des comptes (table 2)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "exchange_rate": {
+            "line_number": "1",
+            "fr": "Taux de change",
+            "en": "Exchange rate",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "amount_cdf": {
+                "fr": "Montant CDF",
+                "en": "Amount CDF",
+                "title":"Amount CDF",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "amount_cdf": {
-                    "fr": "Montant CDF",
-                    "en": "Amount CDF",
-                    "title":"Amount CDF",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_resources"
-    }
+}

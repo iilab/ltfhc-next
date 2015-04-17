@@ -1,95 +1,97 @@
-    {
-        "title": "2. Assisted delivery",
-        "type": "object",
-        "properties": {
-            "targeted_population": {
-                "line_number": "1",
-                "fr": "Pop Cible",
-                "en": "Targeted population",
-                "condition": "true"
-            },
-            "nber_of_eutectic_deliveries_1": {
-                "line_number": "2",
-                "fr": "Nombre  d'Accouchements Eutociques  (1)",
-                "en": "Nber of Eutectic deliveries (1)",
-                "condition": "true"
-            },
-            "nber_of_dystocia_deliveries_2": {
-                "line_number": "3",
-                "fr": "Nombre Acc Dystociques  (2)",
-                "en": "Nber of Dystocia Deliveries (2)",
-                "condition": "true"
-            },
-            "nberof_home_deliveries_assisted_by_tbas_3": {
-                "line_number": "4",
-                "fr": "Nombre  d'Acc.  d domicile  par Accoucheuses  recyclees  (3)",
-                "en": "Nber of Home Deliveries assisted by TBAs (3)",
-                "condition": "true"
-            },
-            "total_of_assisted_deliveries_1_2_3": {
-                "line_number": "5",
-                "fr": "Total  accouc.  Assist6  [(1  )+(2)+(3)]",
-                "en": "Total of assisted deliveries[(1)+(2)+(3)]",
-                "condition": "true"
-            },
-            "nber_of_a_live_births": {
-                "line_number": "6",
-                "fr": "Nombre  de  naissances  vivantes",
-                "en": "Nber of a live Births",
-                "condition": "true"
-            },
-            "nber_of_still_born_babies_births": {
-                "line_number": "7",
-                "fr": "Nombre  d'enfants  morts  nes",
-                "en": "Nber of still born babies Births",
-                "condition": "true"
-            },
-            "nber_of_nbb_who_received_vit_a": {
-                "line_number": "8",
-                "fr": "Nombre d'accouch6es ayant  regu la  Vit A",
-                "en": "Nber of NBB who received Vit A",
-                "condition": "true"
-            },
-            "nber_of_nbb_delivered_on_time_2500g": {
-                "line_number": "9",
-                "fr": "Nombre  de  nouveaux  -  n6s  d terme <25009",
-                "en": "Nber of Nbb delivered on time <2500g",
-                "condition": "true"
-            },
-            "nber_of_premature": {
-                "line_number": "10",
-                "fr": "Nombre  de  Prematures",
-                "en": "Nber of Premature",
-                "condition": "true"
-            },
-            "nber_of_nbb_deaths_or_7_days": {
-                "line_number": "11",
-                "fr": "Nombre  de  deces  Nouveaux-nes=ou<Tjours",
-                "en": "Nber of NBB deaths = or <7 days",
-                "condition": "true"
-            },
-            "nber_of_maternal_deaths": {
-                "line_number": "11",
-                "fr": "Nombre  decds  maternels",
-                "en": "Nber of maternal deaths",
-                "condition": "true"
-            },
-            "nber_of_mother_and_child_transfers": {
-                "line_number": "12",
-                "fr": "Nombre  de  transferts meres et bebes",
-                "en": "Nber of Mother and Child transfers",
+{
+    "title": "2. Assisted delivery",
+    "fr": "2. Accouchement assisté",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "targeted_population": {
+            "line_number": "1",
+            "fr": "Pop Cible",
+            "en": "Targeted population",
+            "condition": "true"
+        },
+        "nber_of_eutectic_deliveries_1": {
+            "line_number": "2",
+            "fr": "Nombre  d'Accouchements Eutociques  (1)",
+            "en": "Nber of Eutectic deliveries (1)",
+            "condition": "true"
+        },
+        "nber_of_dystocia_deliveries_2": {
+            "line_number": "3",
+            "fr": "Nombre Acc Dystociques  (2)",
+            "en": "Nber of Dystocia Deliveries (2)",
+            "condition": "true"
+        },
+        "nberof_home_deliveries_assisted_by_tbas_3": {
+            "line_number": "4",
+            "fr": "Nombre  d'Acc.  d domicile  par Accoucheuses  recyclees  (3)",
+            "en": "Nber of Home Deliveries assisted by TBAs (3)",
+            "condition": "true"
+        },
+        "total_of_assisted_deliveries_1_2_3": {
+            "line_number": "5",
+            "fr": "Total  accouc.  Assist6  [(1  )+(2)+(3)]",
+            "en": "Total of assisted deliveries[(1)+(2)+(3)]",
+            "condition": "true"
+        },
+        "nber_of_a_live_births": {
+            "line_number": "6",
+            "fr": "Nombre  de  naissances  vivantes",
+            "en": "Nber of a live Births",
+            "condition": "true"
+        },
+        "nber_of_still_born_babies_births": {
+            "line_number": "7",
+            "fr": "Nombre  d'enfants  morts  nes",
+            "en": "Nber of still born babies Births",
+            "condition": "true"
+        },
+        "nber_of_nbb_who_received_vit_a": {
+            "line_number": "8",
+            "fr": "Nombre d'accouch6es ayant  regu la  Vit A",
+            "en": "Nber of NBB who received Vit A",
+            "condition": "true"
+        },
+        "nber_of_nbb_delivered_on_time_2500g": {
+            "line_number": "9",
+            "fr": "Nombre  de  nouveaux  -  n6s  d terme <25009",
+            "en": "Nber of Nbb delivered on time <2500g",
+            "condition": "true"
+        },
+        "nber_of_premature": {
+            "line_number": "10",
+            "fr": "Nombre  de  Prematures",
+            "en": "Nber of Premature",
+            "condition": "true"
+        },
+        "nber_of_nbb_deaths_or_7_days": {
+            "line_number": "11",
+            "fr": "Nombre  de  deces  Nouveaux-nes=ou<Tjours",
+            "en": "Nber of NBB deaths = or <7 days",
+            "condition": "true"
+        },
+        "nber_of_maternal_deaths": {
+            "line_number": "11",
+            "fr": "Nombre  decds  maternels",
+            "en": "Nber of maternal deaths",
+            "condition": "true"
+        },
+        "nber_of_mother_and_child_transfers": {
+            "line_number": "12",
+            "fr": "Nombre  de  transferts meres et bebes",
+            "en": "Nber of Mother and Child transfers",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "number": {
-                    "fr": "Nombre",
-                    "en": "Number",
-                    "title":"Number",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_reprohealth"
-    }
+}

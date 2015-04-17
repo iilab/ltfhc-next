@@ -1,47 +1,49 @@
-    {
-        "title": "5.2 Follow of Relais Communautaire",
-        "type": "object",
-        "properties": {
-            "nbr_of_children_on_middle_line_growth_chart": {
-                "line_number": "1",
-                "fr": "Relais communautaires ",
-                "en": "Relaiscommunautaire",
+{
+    "title": "5.2 Follow of Relais Communautaire",
+    "fr": "5.2 Suivi des Relais",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "nbr_of_children_on_middle_line_growth_chart": {
+            "line_number": "1",
+            "fr": "Relais communautaires ",
+            "en": "Relaiscommunautaire",
+            "condition": "true"
+        },
+        "nbr_of_light_malunutrition_cases": {
+            "line_number": "2",
+            "fr": "Relais communautaires Actifs",
+            "en": "Active relais communautaire",
+            "condition": "true"
+        },
+        "nbr_of_high_balanced_malnutriation_cases": {
+            "line_number": "3",
+            "fr": "MILD distribuées par les RECO",
+            "en": "MILD distributed by the relais communautaire",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "ladies": {
+                "fr": "Femme",
+                "en": "Ladies",
+                "title":"Ladies",
                 "condition": "true"
             },
-            "nbr_of_light_malunutrition_cases": {
-                "line_number": "2",
-                "fr": "Relais communautaires Actifs",
-                "en": "Active relais communautaire",
+            "men": {
+                "fr": "Homme",
+                "en": "Men",
+                "title":"Men",
                 "condition": "true"
             },
-            "nbr_of_high_balanced_malnutriation_cases": {
-                "line_number": "3",
-                "fr": "MILD distribuées par les RECO",
-                "en": "MILD distributed by the relais communautaire",
+            "totals": {
+                "fr": "Total",
+                "en": "Total",
+                "title":"Total",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "ladies": {
-                    "fr": "Femme",
-                    "en": "Ladies",
-                    "title":"Ladies",
-                    "condition": "true"
-                },
-                "men": {
-                    "fr": "Homme",
-                    "en": "Men",
-                    "title":"Men",
-                    "condition": "true"
-                },
-                "totals": {
-                    "fr": "Total",
-                    "en": "Total",
-                    "title":"Total",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_promo"
-    }
+}

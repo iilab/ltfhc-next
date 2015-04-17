@@ -1,23 +1,25 @@
 {
-        "title": "3.6 Post natal consultations(table 2)",
-        "type": "object",
-        "properties": {
-            "women_who_presented_complications_after_delivery": {
-                "line_number": "1",
-                "fr": "Femmes ayant présenté des complications après l’accouchement",
-                "en": "Women who presented complications after delivery",
+    "title": "3.6 Post-natal consultations (table 2)",
+    "fr": "3.6 Consultations post-natales (table 2)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "women_who_presented_complications_after_delivery": {
+            "line_number": "1",
+            "fr": "Femmes ayant présenté des complications après l’accouchement",
+            "en": "Women who presented complications after delivery",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
                 "condition": "true"
             }
-        },
-        "definitions": {
-            "columns": {
-                "number": {
-                    "fr": "Nombre",
-                    "en": "Number",
-                    "title":"Number",
-                    "condition": "true"
-                }
-            }
-        },
+        }
+    },
     "parent": "report_postnatal"
-    }
+}
