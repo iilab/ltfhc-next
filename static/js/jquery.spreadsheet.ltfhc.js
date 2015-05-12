@@ -83,7 +83,7 @@
 	 * Creates a tbody element for the given keys and data
 	 */
 
-	var createBody = function(columns, data) {
+	var createBody = function(columns, data, overrides) {
 		var tbody = $('<tbody/>');
 		_.each(data, function(doc) {
 			var tr
@@ -100,7 +100,7 @@
 				}
 				tr = createHeadings(heading)
 			} else {
-				tr = createRow(columns, doc);
+				tr = createRow(columns, doc, overrides);
 			}
 			tbody.append(tr);
 		});
@@ -134,7 +134,9 @@
 		}
 	};
 
-	var createRow = function(columns, doc) {
+	var createRow = function(columns, doc, overrides) {
+        // doc.indicator === row id
+        // columns[n].property[0] === col id
 		var tr = $('<tr/>');
 		tr.data('_id', doc._id);
 		tr.append('<th class="handle"><div class="control"><a class="btn btn-xs btn-primary edit-row" href="#"><i class="icon icon-edit"></i></a></div></th>');
@@ -163,7 +165,29 @@
 				'editSelectionHandler': _.isFunction(c.editSelectionHandler) ? c.editSelectionHandler : undefined,
 				'property': c.property
 			});
-
+            // check for disabled cells
+            var disabled = _.detect(overrides.disabled, function (x) {
+                return (
+                    x.col === c.property.join('.') &&
+                    x.row === doc.indicator
+                );
+            });
+            if (disabled) {
+                console.log(['DISABLED', c.property.join('.'), doc.indicator]);
+                $('input', td).val('').attr('disabled', 'disabled').css({
+                    visibility: 'hidden'
+                });
+                $(td).addClass('disabled');
+            }
+            var predefined = _.detect(overrides.predefined, function (x) {
+                return (
+                    x.col === c.property.join('.') &&
+                    x.row === doc.indicator
+                );
+            });
+            if (predefined) {
+                $('input', td).val('').val(predefined.value);
+            }
 			tr.append(td);
 		});
 		return tr;
@@ -334,7 +358,7 @@
 		}
 		
 		if ($td.data('type') == 'field') {
-			val = val? val:"0";
+//			val = val? val:"0";
 			var field = $("<input type='text' name='" + $td.data('cell_key') + "' value='" + val + "'/>");
 			$td.html(field)
 		} else {
@@ -490,24 +514,6 @@
 			$tr.data('save_queued', true);
 			setTimeout(_saveDoc, 0);
 		}
-	};
-
-	var addRow = function(table, options) {
-		var _add = function(err, doc) {
-			if (err) {
-				return console.error(err);
-			}
-			if (!doc) {
-				throw new Error(
-					'Create function did not return a document object'
-				);
-			}
-			options.data.push(doc);
-			var tr = createRow(options.columns, doc);
-			$('tbody', table).append(tr);
-			$(table).trigger('change');
-		};
-		options.create(_add);
 	};
 
 	// adds .active class to thead th for columns and first th element of rows
@@ -720,21 +726,6 @@
 				ev.stopImmediatePropagation();
 			}
 		});
-		/*$table.on('click', 'tbody .delete-row', function(ev) {
-			ev.preventDefault();
-			var deleted,
-				row = $(this).parents('tr'),
-				index = row.index();
-			row.trigger('change');
-			row.detach();
-			// update row counter
-			$('.row-counter', $table).text(options.data.length - 1 + ' rows');
-		});
-		$table.on('click', '.spreadsheet-actions .add-row-btn', function(ev) {
-			ev.preventDefault();
-			addRow($table, options);
-			return false;
-		});*/
 	};
 
 
@@ -971,6 +962,12 @@
 	 */
 
 	$.fn.spreadsheet = function(options) {
+        console.log('SPREADSHEET');
+        console.log(options);
+
+        // options.data[n].indicator === disabled .row
+        // options.columns[n].property[0] === disabled .col
+
 		var $table = $(this),
 			table,
 			tbody,
@@ -982,18 +979,26 @@
 			create: $.noop,
 			data: [],
 			remove: $.noop,
-			save: $.noop
+			save: $.noop,
+            overrides: {}
 		})
 
 		if (!options.columns) {
 			throw new Error('You must define some columns');
 		}
 
-		help = '<div class="spreadsheet-help">' + '<i class="icon-question-sign"></i>' + '<ul>' + '<li><b>Double click</b> or enter key to edit a cell.</li>' + '<li><b>Enter</b> key to save.</li>' + '<li><b>Escape</b> key for undo.</li>' + '<li><b>Tab</b> cycles through cells.</li>' + '</ul>' + '</div>';
+		help = ''; // '<div class="spreadsheet-help">' + '<i class="icon-question-sign"></i>' + '<ul>' + '<li><b>Double click</b> or enter key to edit a cell.</li>' + '<li><b>Enter</b> key to save.</li>' + '<li><b>Escape</b> key for undo.</li>' + '<li><b>Tab</b> cycles through cells.</li>' + '</ul>' + '</div>';
+
+        var thead_contents = (
+            (options.overrides.thead_prefix || '') +
+            createHeadings(options.columns).html()
+        );
+        console.log('thead_contents');
+        console.log(thead_contents);
 
 		table = $('<table class="spreadsheet"></table>');
-		thead = $('<thead/>').append(createHeadings(options.columns));
-		tbody = createBody(options.columns, options.data);
+		thead = $('<thead/>').append(thead_contents);
+		tbody = createBody(options.columns, options.data, options.overrides);
 
 		table.append(thead).append(tbody);
 		$table.append(help);

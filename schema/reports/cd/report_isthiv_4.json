@@ -1,0 +1,112 @@
+{
+    "title": "2.3.4 Patient under ARV treatment",
+    "en": "2.3.4 Patient under ARV treatment",
+    "fr": "2.3.4 traitement antirétroviral",
+    "type": "object",
+    "properties": {
+        "care_azt_3tc_nvp": {
+            "line_number": "1",
+            "fr": "Soins AZT+3TC+NVP",
+            "en": "Care AZT+3TC+NVP",
+            "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'azt_3tc_nvp')"
+        },
+        "care_azt_3tc_efv": {
+            "line_number": "2",
+            "fr": "Soins AZT+3TC+EFV",
+            "en": "Care AZT+3TC+EFV",
+            "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'azt_3tc_efv')"
+        },
+        "care_tbf_3tc_nvp": {
+            "line_number": "3",
+            "fr": "Soins TDF+3TC+NVP",
+            "en": "Care TBF+3TC+NVP",
+            "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'tbf_3tc_nvp')"
+        },
+        "care_tbf_3tc_efv": {
+            "line_number": "4",
+            "fr": "Soins TDF+3TC+EFV",
+            "en": "Care TBF+3TC+EFV",
+            "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'tbf_3tc_efv')"
+        },
+        "care_azt_3_tc_mvp_syrup_children": {
+            "line_number": "5",
+            "fr": "Soins AZT+3TC+MVP Sirop (pédiatrique)",
+            "en": "Care AZT+3TC+MVP syrup (children ward)",
+            "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'azt_3_tc_mvp_syrup_children')"
+        },
+        "care_abc_ddl_lpv_r": {
+            "line_number": "6",
+            "fr": "Soins ABC+ddI+LPV/r",
+            "en": "Care ABC+ddl+LPV/r",
+            "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'abc_ddl_lpv_r')"
+        },
+        "care_abc_3tc_efv": {
+            "line_number": "7",
+            "fr": "Soins ABC+3TC+EFV",
+            "en": "Care ABC+3TC+EFV",
+            "condition": "(subforms.ctc_record && subforms.ctc_record.arv_treatment === 'abc_3tc_efv')"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "under_14_yrs_male": {
+                "fr": "Masculin",
+                "en": "Male",
+                "title":"Male",
+                "condition": "(patient.gender === 'male' && patient.current_age_years <= 14)"
+            },
+            "under_14_yrs_female": {
+                "fr": "Féminin",
+                "en": "Female",
+                "title":"Female",
+                "condition": "(patient.gender === 'female' && patient.current_age_years <= 14)"
+            },
+            "under_14_yrs_incl_pregn": {
+                "fr": "Dont Enceinte",
+                "en": "Incl. Pregn",
+                "title":"Incl. Pregn",
+                "condition": "(patient.gender === 'female' && patient.current_age_years <= 14 && ((subforms.hiv_counseling_mother || subforms.anc_first_visit || subforms.anc_followup || subforms.hiv_pregnancy_clinic) || (subforms.immunization && subforms.immunization.pregnant === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.pregnant === 'yes')))"
+            },
+            "under_14_yrs_total": {
+                "fr": "Total",
+                "en": "Total",
+                "title":"Total",
+                "condition": "patient.current_age_years <= 14"
+            },
+            "14_yrs_and_above_male": {
+                "fr": "Masculin",
+                "en": "Male",
+                "title":"Male",
+                "condition": "(patient.gender === 'male' && patient.current_age_years > 14)"
+            },
+            "14_yrs_and_above_female": {
+                "fr": "Féminin",
+                "en": "Female",
+                "title":"Female",
+                "condition": "(patient.gender === 'female' && patient.current_age_years > 14)"
+            },
+            "14_yrs_and_above_incl_pregn": {
+                "fr": "Dont Enceinte",
+                "en": "Incl. Pregn",
+                "title":"Incl. Pregn",
+                "condition": "(patient.gender === 'female' && patient.current_age_years > 14 && ((subforms.hiv_counseling_mother || subforms.anc_first_visit || subforms.anc_followup || subforms.hiv_pregnancy_clinic) || (subforms.immunization && subforms.immunization.pregnant === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.pregnant === 'yes')))"
+            },
+            "14_yrs_and_above_total": {
+                "fr": "Total",
+                "en": "Total",
+                "title":"Total",
+                "condition": "patient.current_age_years > 14"
+            },
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title":"Total",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_isthiv",
+    "overrides": {
+        "thead_prefix": "<tr><th></th><th></th><th></th><th colspan=\"4\">&lt; 14 ans</th><th colspan=\"4\">&gt; 14 ans et plus</th><th></th></tr>"
+    }
+}

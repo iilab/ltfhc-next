@@ -1,0 +1,109 @@
+{
+    "title": "4. Gyneco-Obstetrical Emergency Care",
+    "fr": "4. Soins gyneco/obstetricaux d'urgence (SGONU)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "nber_of_hta_cases_and_pregnancies": {
+            "line_number": "1",
+            "fr": "Nbre de  cas d HTA  & orossesse",
+            "en": "Nber of HTA cases and pregnancies",
+            "condition": "true"
+        },
+        "nber_of_geu_cases": {
+            "line_number": "2",
+            "fr": "Nbre de  cas de  GEU",
+            "en": "Nber of GEU cases",
+            "condition": "true"
+        },
+        "nber_of_miscarriage_complications": {
+            "line_number": "3",
+            "fr": "Nbre  de complications  d'avortement",
+            "en": "Nber of miscarriage complications",
+            "condition": "true"
+        },
+        "nber_of_hemorrhage_cases_during_pregnancy": {
+            "line_number": "4",
+            "fr": "Nbre de cas d'hemorragie pendant la grossessse",
+            "en": "Nber of hemorrhage cases during pregnancy",
+            "condition": "true"
+        },
+        "nber_of_placenta_previa_cases": {
+            "line_number": "5",
+            "fr": "Nbre de  cas de  placenta  praevia",
+            "en": "Nber of placenta Previa cases",
+            "condition": "true"
+        },
+        "nber_of_uterus_blast_cases": {
+            "line_number": "6",
+            "fr": "Nbre de  cas de  rupture  uterine",
+            "en": "Nber of uterus blast cases",
+            "condition": "true"
+        },
+        "nber_of_pre_eclampsia_eclampsia_cases": {
+            "line_number": "7",
+            "fr": "Nbre  de cas de  pre-eclampsie/eclampsie",
+            "en": "Nber of pre-eclampsia/eclampsia cases",
+            "condition": "true"
+        },
+        "nber_of_vaginal_hemorrhage_cases_after_delivery": {
+            "line_number": "8",
+            "fr": "Nbre  de cas de  saignement  vaginal  aprds accouchement",
+            "en": "Nber of vaginal hemorrhage cases after delivery",
+            "condition": "true"
+        },
+        "nber_of_severe_anemia_cases": {
+            "line_number": "9",
+            "fr": "Nbre de cas  d'anemie  sevdre",
+            "en": "Nber of severe anemia cases",
+            "condition": "true"
+        },
+        "nber_of_infection_cases": {
+            "line_number": "10",
+            "fr": "Nbre de  cas d'infection",
+            "en": "Nber of Infection cases",
+            "condition": "true"
+        },
+        "nber_of_hypotonic_cases_of_nbb": {
+            "line_number": "11",
+            "fr": "Nbre  de cas d'hypotonie  du  nouveau-ne",
+            "en": "Nber of Hypotonic cases of NBB",
+            "condition": "true"
+        },
+        "nber_of_neonatal_infections_cases": {
+            "line_number": "12",
+            "fr": "Nbre de  cas d'infection  neonatale",
+            "en": "Nber of Neonatal infections cases",
+            "condition": "true"
+        },
+        "nber_of_respiratory_stress_cases_of_the_nbb": {
+            "line_number": "13",
+            "fr": "Nbre de  cas de  detresse  respiratoire  du nouveau-ne",
+            "en": "Nber of Respiratory stress cases of the NBB",
+            "condition": "true"
+        },
+        "nber_of_nbb_convulsion_cases": {
+            "line_number": "14",
+            "fr": "Nbre  de cas de  convulsion  du  nouveau-ne",
+            "en": "Nber of NBB convulsion cases",
+            "condition": "true"
+        },
+        "nber_of_neonatal_malaria_cases": {
+            "line_number": "15",
+            "fr": "Nbre de cas de paludisme neonatal",
+            "en": "Nber of Neonatal Malaria cases",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_reprohealth"
+}

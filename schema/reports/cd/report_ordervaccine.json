@@ -1,0 +1,165 @@
+{
+    "title": "Order of vaccines, diluants and infection material form",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "vaccination_pev_title": {
+            "line_number": "1",
+            "line": "singlecell",
+            "fr": "REPUBLIQUE DEMOCRATIQUE DU CONGO MINISTERE DE LA SANTE PROGRAMME ELARGI DE VACCINATION PEV",
+            "en": "REPUBLIQUE DEMOCRATIQUE DU CONGO MINISTERE DE LA SANTE PROGRAMME ELARGI DE VACCINATION PEV",
+            "condition": "true"
+        },
+        "store": {
+            "line_number": "2",
+            "line": "singlecell",
+            "fr": "DEPOT",
+            "en": "STORE",
+            "condition": "true"
+        },
+        "sub_store": {
+            "line_number": "3",
+            "line": "singlecell",
+            "fr": "ANTFNNE",
+            "en": "SUB STORE",
+            "condition": "true"
+        },
+        "health_zone_storage_site": {
+            "line_number": "4",
+            "line": "singlecell",
+            "fr": "ZONE DE SANTE/SITE DE STOCKAGE ",
+            "en": "HEALTH ZONE/STORAGE SITE",
+            "condition": "true"
+        },
+        "bcg": {
+            "line_number": "5",
+            "fr": "BCG",
+            "en": "BCG",
+            "condition": "true"
+        },
+        "bcg_diluant": {
+            "line_number": "6",
+            "fr": "Diluant BCG ",
+            "en": "BCG Diluant",
+            "condition": "true"
+        },
+        "dtc": {
+            "line_number": "7",
+            "fr": "DTC",
+            "en": "DTC",
+            "condition": "true"
+        },
+        "ovp": {
+            "line_number": "8",
+            "fr": "VP0",
+            "en": "OVP",
+            "condition": "true"
+        },
+        "var": {
+            "line_number": "9",
+            "fr": "VAR",
+            "en": "VAR",
+            "condition": "true"
+        },
+        "var_diluant": {
+            "line_number": "10",
+            "fr": "Diluant VAR",
+            "en": "VAR Diluant",
+            "condition": "true"
+        },
+        "vat": {
+            "line_number": "11",
+            "fr": "VAT",
+            "en": "VAT",
+            "condition": "true"
+        },
+        "vaa": {
+            "line_number": "12",
+            "fr": "VAA",
+            "en": "VAA",
+            "condition": "true"
+        },
+        "vaa_diluant": {
+            "line_number": "13",
+            "fr": "Diluant VAA",
+            "en": "VAA Diluant",
+            "condition": "true"
+        },
+        "syringes_005ml": {
+            "line_number": "14",
+            "fr": "Seringues 0.05 ml",
+            "en": "Syringes 0.05ml",
+            "condition": "true"
+        },
+        "syringes_05ml": {
+            "line_number": "15",
+            "fr": "Seringues 0.5 mi",
+            "en": "Syringes 0.5ml",
+            "condition": "true"
+        },
+        "syringes_10ml_5ml_2ml": {
+            "line_number": "16",
+            "fr": "Seringues 10 ml / 5m1 / 2m1",
+            "en": "Syringes 10ml/5ml/2ml",
+            "condition": "true"
+        },
+        "receptacles": {
+            "line_number": "17",
+            "fr": "Receptacles",
+            "en": "Receptacles",
+            "condition": "true"
+        },
+        "paraffin": {
+            "line_number": "18",
+            "fr": "Petrole",
+            "en": "Paraffin",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "antigen": {
+                "fr": "ANTIGEN",
+                "en": "ANTIGEN",
+                "title":"ANTIGEN",
+                "condition": "true"
+            },
+            "period_needs": {
+                "fr": "BESOINS PERIODES (doses /unite I litres) A",
+                "en": "PERIOD NEEDS (doses, Unity, liters) A",
+                "title":"PERIOD NEEDS (doses, Unity, liters) A",
+                "condition": "true"
+            },
+            "stock_min_b": {
+                "fr": "STOCK Mini B",
+                "en": "STOCK Min B",
+                "title":"STOCK Min B",
+                "condition": "true"
+            },
+            "stock_min_c": {
+                "fr": "STOCK Maxi C",
+                "en": "STOCK Max C",
+                "title":"STOCK Max C",
+                "condition": "true"
+            },
+            "available_in_stock_d": {
+                "fr": "QUANTITE (doses/unites/litres) Disponible en stock D",
+                "en": "QUANTITY (doses/unities/liters) Available in stock D",
+                "title":"QUANTITY (doses/unities/liters) Available in stock D",
+                "condition": "true"
+            },
+            "available_in_stock_e": {
+                "fr": "QUANTITE (doses/unites/litres) commandee E",
+                "en": "QUANTITY (doses/unities/liters) Available in stock E",
+                "title":"QUANTITY (doses/unities/liters) Available in stock E",
+                "condition": "true"
+            },
+            "observation_f": {
+                "fr": "OBSERVATIONS F",
+                "en": "Observation F",
+                "title":"Observation F",
+                "condition": "true"
+            }
+        }
+    }
+}

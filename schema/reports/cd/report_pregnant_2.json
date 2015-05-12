@@ -1,0 +1,67 @@
+{
+    "title": "3.5.1 Deliveries at the Health center",
+    "fr": "3.5.1 Accouchements au Centre de Santé",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "eutocic_deliveries": {
+            "line_number": "1",
+            "fr": "Accouchements eutociques",
+            "en": "Eutocic deliveries",
+            "condition": "true"
+        },
+        "dystocic_deliveries": {
+            "line_number": "2",
+            "fr": "Accouchements dystociques",
+            "en": "Dystocic deliveries",
+            "condition": "true"
+        },
+        "including_20_yrs": {
+            "line_number": "3",
+            "fr": "Dont âgés de < 20 an",
+            "en": "Including < 20 yrs",
+            "condition": "true"
+        },
+        "including_watched_out": {
+            "line_number": "4",
+            "fr": "Dont surveillés",
+            "en": "Including watched out",
+            "condition": "true"
+        },
+        "mother_who_beneficiated_gatpa": {
+            "line_number": "5",
+            "fr": "Mère ayant bénéficié de la GATPA",
+            "en": "Mother who beneficiated GATPA",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "as": {
+                "fr": "AS",
+                "en": "AS",
+                "title":"AS",
+                "condition": "true"
+            },
+            "has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title":"HAS",
+                "condition": "true"
+            },
+            "hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title":"HZ",
+                "condition": "true"
+            },
+            "total": {
+                "fr": "TOTAL",
+                "en": "TOTAL",
+                "title":"TOTAL",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_pregnant"
+}

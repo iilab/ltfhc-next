@@ -1,0 +1,115 @@
+{
+    "title": "8.3.2 Monthly expenses",
+    "fr": "8.3.2 Sorties du mois",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "salaries_incentives": {
+            "line_number": "1",
+            "fr": "Salaires / Primes",
+            "en": "Salaries/incentives",
+            "condition": "true"
+        },
+        "personnel_transportation": {
+            "line_number": "2",
+            "fr": "Transports personnel",
+            "en": "Personnel transportation",
+            "condition": "true"
+        },
+        "other_personnel_expenses": {
+            "line_number": "3",
+            "fr": "Autres dépenses personnel",
+            "en": "Other personnel expenses",
+            "condition": "true"
+        },
+        "medicines": {
+            "line_number": "4",
+            "fr": "Médicaments",
+            "en": "Medicines",
+            "condition": "true"
+        },
+        "furniture_and_small_material": {
+            "line_number": "5",
+            "fr": "Fourniture et petit matériel",
+            "en": "Furniture and small material",
+            "condition": "true"
+        },
+        "outside_services": {
+            "line_number": "6",
+            "fr": "Services extérieurs",
+            "en": "Outside services",
+            "condition": "true"
+        },
+        "contribution_to_bcz": {
+            "line_number": "7",
+            "fr": "Contribution au BCZ",
+            "en": "Contribution to BCZ",
+            "condition": "true"
+        },
+        "other_contributions": {
+            "line_number": "8",
+            "fr": "Contribution autres",
+            "en": "Other contributions",
+            "condition": "true"
+        },
+        "codesa": {
+            "line_number": "9",
+            "fr": "CODESA",
+            "en": "CODESA",
+            "condition": "true"
+        },
+        "investiment": {
+            "line_number": "10",
+            "fr": "Investissement",
+            "en": "Investiment",
+            "condition": "true"
+        },
+        "other_expenses": {
+            "line_number": "11",
+            "fr": "Autres dépenses",
+            "en": "Other expenses",
+            "condition": "true"
+        },
+        "total_fixe_charges": {
+            "line_number": "12",
+            "fr": "Total Charges Fixes (a)",
+            "en": "Total fixe charges",
+            "condition": "true"
+        },
+        "credit_reimboursement": {
+            "line_number": "13",
+            "fr": "Remboursement dettes",
+            "en": "Credit reimboursement",
+            "condition": "true"
+        },
+        "loan_reimboursement": {
+            "line_number": "14",
+            "fr": "Remboursement emprunts",
+            "en": "Loan reimboursement",
+            "condition": "true"
+        },
+        "installement": {
+            "line_number": "15",
+            "fr": "Prêt / avances",
+            "en": "Installement",
+            "condition": "true"
+        },
+        "total_ponctual_charges": {
+            "line_number": "16",
+            "fr": "Total Charges Ponctuelles",
+            "en": "Total ponctual charges",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "amount": {
+                "fr": "Montant",
+                "en": "Amount",
+                "title":"Amount",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_resources"
+}

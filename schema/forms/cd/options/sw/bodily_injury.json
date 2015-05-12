@@ -1,52 +1,83 @@
 {
-    "fields": {
-        "injury_date": {
-            "label": "Tarehe ya majeraha",
-            "type": "date",
-            "dateFormat": "yyyy-mm-dd",
-            "datepicker": {
-                "hideIfNoPrevNextType": true,
-                "yearRange": "2010:+10",
-                "changeMonth": true,
-                "changeYear": true
-            }
-        },
-        "injury_type": {
-            "label": "Aina ya majeraha",
-            "type": "select"
-        },
-        "injury_other": {
-            "label": "Other Injury:"
-        },
-        "testing_method": {
-            "label": "Amepimwa kwa njia zifuatazo",
-            "type": "textarea"
-        },
-        "treatment": {
-            "label": "Matibabu",
-            "type": "select"
-        },
-        "treatment_other": {
-            "label": "Matibabu nyingine",
-            "type": "textarea"
-        },
-        "admission": {
-            "label": "Admission Required?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ],
-            "removeDefaultNone": true
-        },
-        "injury_mortality": {
-            "label": "Je majeraha yalisababisha kifo?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ],
-            "removeDefaultNone": true
-        }
+  "fields": {
+    "injury_date": {
+      "type": "date",
+      "dateFormat": "yy-mm-dd",
+      "datepicker": {
+        "hideIfNoPrevNextType": true,
+        "yearRange": "1900:+1",
+        "changeMonth": true,
+        "changeYear": true
+      },
+      "label": "Tarehe ya majeraha"
+    },
+    "injury_type": {
+      "type": "select",
+      "label": "Aina ya majeraha"
+    },
+    "injury_other": {
+      "label": "Other Injury:"
+    },
+    "sexual_violence": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Visit related to Sexual violence"
+    },
+    "testing_method": {
+      "type": "textarea",
+      "label": "Amepimwa kwa njia zifuatazo"
+    },
+    "treatment": {
+      "type": "select",
+      "label": "Matibabu"
+    },
+    "treatment_other": {
+      "type": "textarea",
+      "label": "Matibabu nyingine"
+    },
+    "admission": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Admission Required?"
+    },
+    "injury_mortality": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Je majeraha yalisababisha kifo?"
+    },
+    "referred_to_elsewhere": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred to another facility?"
+    },
+    "referred_to_location": {
+      "type": "select",
+      "label": "If Yes, which facility was the patient referred to?"
+    },
+    "follow_up_recommended": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "A follow up visit has been recommended"
     }
+  }
 }

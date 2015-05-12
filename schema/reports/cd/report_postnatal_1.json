@@ -1,0 +1,68 @@
+{
+    "title": "3.6 Post natal consultations",
+    "fr": "3.6 Consultations post-natales (CPoN)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "ponc_6th_day_after_delivery": {
+            "line_number": "1",
+            "fr": "CPoN1 (6e jr après accouchement)",
+            "en": "PoNC N ° 1 (6th day after delivery)",
+            "condition": "true"
+        },
+        "registered_deliveries_at_the_ponc_42nd_day": {
+            "line_number": "2",
+            "fr": "Accouchées enregistrées à la CPON3 (42ème jour)",
+            "en": "Registered deliveries at the PoNC N°3 42nd day",
+            "condition": "true"
+        },
+        "delivered_who_received_the_folate_iron": {
+            "line_number": "3",
+            "fr": "Accouchées ayant reçu du Fer Folate",
+            "en": "Delivered who received the folate iron",
+            "condition": "true"
+        },
+        "delivered_who_received_the_vitamine_a": {
+            "line_number": "4",
+            "fr": "Accouchées ayant reçu de la vitamine A",
+            "en": "Delivered who received the Vitamine A",
+            "condition": "true"
+        },
+        "number_of_sessions": {
+            "line_number": "5",
+            "line": "singlecell",
+            "fr": "Nombre de séances",
+            "en": "Number of sessions",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "as": {
+                "fr": "AS",
+                "en": "AS",
+                "title":"AS",
+                "condition": "true"
+            },
+            "has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title":"HAS",
+                "condition": "true"
+            },
+            "hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title":"HZ",
+                "condition": "true"
+            },
+            "total": {
+                "fr": "TOTAL",
+                "en": "TOTAL",
+                "title":"TOTAL",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_postnatal"
+}

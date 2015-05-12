@@ -1,0 +1,418 @@
+{
+  "fields": {
+    "last_menstrual_period": {
+      "type": "number",
+      "label": "Date of Last Menstrual Period:"
+    },
+    "due_date": {
+      "type": "number",
+      "label": "Expected Due Date:"
+    },
+    "gestational_age": {
+      "type": "select",
+      "label": "Approximate Estiamted Gestational Age (weeks):"
+    },
+    "number_pregnancy": {
+      "type": "select",
+      "label": "Pregnancy Number:"
+    },
+    "pregnancy_test": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Positive Pregnancy Test?"
+    },
+    "number_full_term_delivery": {
+      "type": "select",
+      "label": "Number of Previous Full Term Deliveries:"
+    },
+    "number_pre_term_delivery": {
+      "type": "select",
+      "label": "Number of Previous Preterm Deliveries:"
+    },
+    "number_miscarriage_abortion": {
+      "type": "select",
+      "label": "Number of Previous Miscarriages/Abortions:"
+    },
+    "number_live_birth": {
+      "type": "select",
+      "label": "Number of Previous Live Births"
+    },
+    "weight_heaviest_infant": {
+      "type": "select",
+      "label": "Approximate Weight of Heaviest Infant Previously Delivered:"
+    },
+    "pregnancy_complications": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Complications in Previous Pregnancies:"
+    },
+    "other_pregnancy_complications": {
+      "label": "If Other Pregnancy Complication, Please Describe:"
+    },
+    "pregnancy_diseases": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Diseases:"
+    },
+    "std_status": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Infected with STD"
+    },
+    "std_treatment": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Being treated for STD"
+    },
+    "hiv_status_prior_firstvisit": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "HIV Status prior to first visit"
+    },
+    "tested_hiv_firstvisit": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Tested for HIV on first visit?"
+    },
+    "first_hiv_status": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "Result if tested for HIV on first visit"
+    },
+    "second_hiv_test": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Tested positive by second HIV test?"
+    },
+    "refer_ctc": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred to CTC?"
+    },
+    "partner_hiv": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Partner tested for HIV in clinic?"
+    },
+    "partner_positive": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Partner tested positive for HIV?"
+    },
+    "discordant_couple": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Discordant couple?"
+    },
+    "combo_drugs": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Patient recieved PMCTC combo drugs?"
+    },
+    "art_drugs": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Patient using ART?"
+    },
+    "ctx_given": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Patient given CTX?"
+    },
+    "counsel_feeding": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Counseled on how to feed the baby?"
+    },
+    "syphillus_test": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Tested for Syphillus"
+    },
+    "syphillus_status": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Infected with Syphillus"
+    },
+    "syphillus_treatment": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Being treated for Syphillus"
+    },
+    "partner_std": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Partner infected with STD"
+    },
+    "partner_std_treatment": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Partner being treated for STD"
+    },
+    "partner_syphillus_test": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Partner infected with Syphillus"
+    },
+    "partner_syphillus_status": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Partner infected with Syphillus"
+    },
+    "partner_syphillus_treatment": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Partner being treated for Syphillus"
+    },
+    "malaria_test": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Tested for malaria?"
+    },
+    "malar_pos": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Tested positive for malaria?"
+    },
+    "bednet_voucher": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Given voucher for free bednet?"
+    },
+    "ipt1": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Given IPT1?"
+    },
+    "ipt2": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Given IPT2?"
+    },
+    "bp_systolic": {
+      "type": "number",
+      "label": "BP Systolic"
+    },
+    "bp_diastolic": {
+      "type": "number",
+      "label": "BP Diastolic"
+    },
+    "anemia_severe": {
+      "type": "select",
+      "label": "Severe Anemia (>8.5g/dl)"
+    },
+    "symptoms": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Symptoms:"
+    },
+    "tt2plus_vaccine": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Received vaccination of TT2+"
+    },
+    "other_symptoms": {
+      "label": "If Other Symptom, Please Describe:"
+    },
+    "fundal_height": {
+      "type": "number",
+      "label": "Fundal Height (cm):"
+    },
+    "fetal_heart_rate": {
+      "type": "number",
+      "label": "Fetal Heart Rate (Beats Per Minute):"
+    },
+    "treatment_given": {
+      "type": "textarea",
+      "label": "If Any Treatment Given, Please Describe:"
+    },
+    "iron_tablets": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Given iron tablets?"
+    },
+    "alben_tablets": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Given albendazole?"
+    },
+    "notes": {
+      "type": "textarea",
+      "label": "Examination Notes:"
+    },
+    "admission": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Admission Required Today?"
+    },
+    "referral": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referral?"
+    },
+    "referred_ctc": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Mother Referred To CTC?"
+    },
+    "in_labor": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Laboring Now?"
+    },
+    "referred_to_elsewhere": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred to another facility?"
+    },
+    "referred_to_location": {
+      "type": "select",
+      "label": "If Yes, which facility was the patient referred to?"
+    },
+    "follow_up_recommended": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "A follow up visit has been recommended"
+    }
+  }
+}

@@ -117,3 +117,62 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+
+
+## Caolan's dev environment
+
+I was having problems with the vagrant setup above (CouchDB was eating 100%
+ram and CPU when PUT'ing documents for some reason). Until we can invest time
+in fixing the development environment properly here's the process I'm using:
+
+### Setup .dev domains for local machine (debian)
+
+- `sudo apt-get install dnsmasq`
+- edit /etc/dnsmasq.conf
+    - add: `address=/dev/127.0.0.1`
+- `service dnsmasq restart`
+- edit /etc/dhcp/dhclient.conf
+    - add: `prepend domain-name-servers 127.0.0.1;`
+- `service network-manager restart`
+
+### Start couchdb docker container
+
+    $ fig up
+
+CouchDB should then be accessible at http://localhost:5985/_utils,
+username: demo, password: demo
+
+### Push district couchapp
+
+    $ rm kanso.json
+    $ ln -s kanso.json.dev-district ./kanso.json
+    $ kanso push http://demo:demo@localhost:5985/emr_district
+
+You can now access the district couchapp at http://district.ltfhc.dev:5985
+
+### Push clinic couchapp
+
+    $ rm kanso.json
+    $ ln -s kanso.json.dev-clinic ./kanso.json
+    $ kanso push http://demo:demo@localhost:5985/emr_clinic
+
+You can now access the clinic couchapp at http://clinic.ltfhc.dev:5985
+
+### Push clinic data
+
+    $ kanso upload data http://demo:demo@localhost:5985/emr_clinic --skip
+
+### Setup replication of approved reports from clinic instance to district
+
+    $ ./utils/setup_clinic_to_district_replication.js http://demo:demo@localhost:5985 emr_clinic emr_district
+
+
+### To view reports in district instance
+
+Create a user of type 'District' in the user administration interface,
+login to the district couchapp and click the tab for the clinic. To add
+more clinics to the district or add more distrits edit the lib/districts.js file.
+
+You'll need to approve a report in the clinic instance (and make sure you
+have done the above replication setup).

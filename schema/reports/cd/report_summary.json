@@ -1,0 +1,67 @@
+{
+    "title": "10. Summary  of the use of serivces",
+    "fr": "10.Synthese de l'Utilisation des Services",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "news_curative_cases_all_new_curative_cases": {
+            "line_number": "1",
+            "fr": "Nouveaux cas curatif (Tous les NC curatifs)",
+            "en": "News curative cases (all new curative cases)",
+            "condition": "true"
+        },
+        "new_pmtct_cases_anc_cpon_fp": {
+            "line_number": "2",
+            "fr": "Nouveaux cas prévention mère (CPN,CPON,PF)",
+            "en": "New PMTCT cases (ANC, CPON FP)",
+            "condition": "true"
+        },
+        "new_child_prevention_cases_psc1": {
+            "line_number": "3",
+            "fr": "Nouveaux cas prévention enfant (CPS1",
+            "en": "New Child prevention cases (PSC1)",
+            "condition": "true"
+        },
+        "total_new_cases": {
+            "line_number": "4",
+            "fr": "Total des Nouveaux Cas",
+            "en": "Total new cases",
+            "condition": "true"
+        },
+        "use_of_service_rate_at_the_hc_total": {
+            "line_number": "5",
+            "line": "singlecell",
+            "fr": "Taux d’utilisation des services au CS= Total Nouveaux Cas reçus au CS X100/Population",
+            "en": "Use of service rate at the HC Total of new cases received at the HC X100/population",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "as": {
+                "fr": "AS",
+                "en": "AS",
+                "title":"AS",
+                "condition": "true"
+            },
+            "has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title":"HAS",
+                "condition": "true"
+            },
+            "hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title":"HZ",
+                "condition": "true"
+            },
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title":"Total",
+                "condition": "true"
+            }
+        }
+    }
+}

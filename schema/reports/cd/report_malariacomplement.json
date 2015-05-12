@@ -1,0 +1,312 @@
+{
+    "title": "Form 1 : Monthly Report complementing the SNIS",
+    "fr": "Formulaire 1 : Rapport mensuel complémentaire au SNIS",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "0_5years": {
+            "line_number": "1",
+            "fr": "Total NC toutes causes confondues en consultation exteme 0-5ans",
+            "en": "?",
+            "condition": "true"
+        },
+        "less_5years": {
+            "line_number": "2",
+            "fr": "Total NC toutes causes confondues en consultation exteme >5ans",
+            "en": "?",
+            "condition": "true"
+        },
+        "pregnant_w": {
+            "line_number": "3",
+            "fr": "Total NC toutes causes confondues en consultation exteme Femmes enceintes",
+            "en": "?",
+            "condition": "true"
+        },
+        "all_new_simple_malaria_cases_in_opd_0_5years": {
+            "line_number": "4",
+            "fr": "Total nouveaux  cas  consultation  exteme  pour paludisme  simple 0-5ans",
+            "en": "All new simple malaria cases in OPD 0_5years",
+            "condition": "true"
+        },
+        "all_new_simple_malaria_cases_in_opd_greater_5years": {
+            "line_number": "5",
+            "fr": "Total nouveaux  cas  consultation  exteme  pour paludisme  simple >5ans",
+            "en": "All new simple malaria cases in OPD >5years",
+            "condition": "true"
+        },
+        "all_new_simple_malaria_cases_in_opd_pregnant_w": {
+            "line_number": "6",
+            "fr": "Total nouveaux  cas  consultation  exteme  pour paludisme  simple Femmes enceintes",
+            "en": "All new simple malaria cases in OPD Pregnant W",
+            "condition": "true"
+        },
+        "all_pw_who_attended_antenatal_care_for_the_first_time": {
+            "line_number": "7",
+            "fr": "Femmes  enceintes regues  en CPN  (lire  consultation)",
+            "en": "All PW who attended antenatal care for the first time",
+            "condition": "true"
+        },
+        "all_pw_who_received_sp1": {
+            "line_number": "8",
+            "fr": "Femmes  enceintes ayant  regu  la  SP  1",
+            "en": "All PW who received SP1",
+            "condition": "true"
+        },
+        "all_pw_who_received_sp2": {
+            "line_number": "9",
+            "fr": "Femmes  enceintes  ayant  regu  la  SP  2",
+            "en": "All PW who received SP2",
+            "condition": "true"
+        },
+        "mild_received": {
+            "line_number": "10",
+            "fr": "MILD  regues",
+            "en": "MILD received",
+            "condition": "true"
+        },
+        "mild_distributed_during_antenatal_care": {
+            "line_number": "11",
+            "fr": "MILD distribu6es d travers la CPN",
+            "en": "MILD distributed during Antenatal care",
+            "condition": "true"
+        },
+        "mild_distributed_during_cps": {
+            "line_number": "12",
+            "fr": "MILD  distribu6es  d travers  CPS",
+            "en": "MILD distributed during CPS",
+            "condition": "true"
+        },
+        "asaq_received_2_11_months": {
+            "line_number": "13",
+            "fr": "ASAQ reçu 2-11mois",
+            "en": "ASAQ Received 2- 11 Months",
+            "condition": "true"
+        },
+        "asaq_received_1_5_years": {
+            "line_number": "14",
+            "fr": "ASAQ reçu 1-5ans",
+            "en": "ASAQ Received 1-5 Years",
+            "condition": "true"
+        },
+        "asaq_received_6_13_years": {
+            "line_number": "15",
+            "fr": "ASAQ reçu 6-13ans",
+            "en": "ASAQ Received 6- 13 Years",
+            "condition": "true"
+        },
+        "asaq_received_14_years_plus": {
+            "line_number": "16",
+            "fr": "ASAQ reçu 14 ans et plus",
+            "en": "ASAQ Received 14 Years +",
+            "condition": "true"
+        },
+        "asaq_administrated_2_11_months": {
+            "line_number": "17",
+            "fr": "ASAQ administré 2-11mois",
+            "en": "ASAQ administrated 2- 11 Months",
+            "condition": "true"
+        },
+        "asaq_administrated_1_5_years": {
+            "line_number": "18",
+            "fr": "ASAQ administré 1-5ans",
+            "en": "ASAQ administrated 1-5 Years",
+            "condition": "true"
+        },
+        "asaq_administrated_6_13_years": {
+            "line_number": "19",
+            "fr": "ASAQ administré 6-13ans",
+            "en": "ASAQ administrated 6- 13 Years",
+            "condition": "true"
+        },
+        "asaq_administrated_14_years_plus": {
+            "line_number": "20",
+            "fr": "ASAQ administré 14 ans et plus",
+            "en": "ASAQ administrated 14 Years +",
+            "condition": "true"
+        },
+        "gouttes_épaisses_realized": {
+            "line_number": "21",
+            "fr": "Gouttes épaisses Realisees",
+            "en": "Gouttesépaisses Realized",
+            "condition": "true"
+        },
+        "gouttes_épaisses_positive": {
+            "line_number": "22",
+            "fr": "Gouttes épaisses Positives",
+            "en": "Gouttesépaisses Positive",
+            "condition": "true"
+        },
+        "tdr_received": {
+            "line_number": "23",
+            "fr": "TDR reçus",
+            "en": "TDR Received",
+            "condition": "true"
+        },
+        "tdr_realized": {
+            "line_number": "24",
+            "fr": "TDR Realises",
+            "en": "TDR Realized",
+            "condition": "true"
+        },
+        "tdr_positive": {
+            "line_number": "25",
+            "fr": "TDR Positifis",
+            "en": "TDR Positive",
+            "condition": "true"
+        },
+        "number_of_health_centers_with_no_stock_for_more_than_3_days_sp": {
+            "line_number": "26",
+            "fr": "Nombre de centres de santé avec aucun stock de plus de 3 jours SP",
+            "en": "Number of Health centers with no stock for more than 3 days SP",
+            "condition": "true"
+        },
+        "number_of_health_centers_with_no_stock_for_more_than_3_days_asaq_2_11_months": {
+            "line_number": "27",
+            "fr": "Nombre de centres de santé avec aucun stock de plus de 3 jours ASAO 2  - 11 mois",
+            "en": "Number of Health centers with no stock for more than 3 days ASAQ 2-11 Months",
+            "condition": "true"
+        },
+        "number_of_health_centers_with_no_stock_for_more_than_3_days_asaq_1_5_years": {
+            "line_number": "28",
+            "fr": "Nombre de centres de santé avec aucun stock de plus de 3 jours ASAO 1-5  ans",
+            "en": "Number of Health centers with no stock for more than 3 days ASAO 1-5  Years",
+            "condition": "true"
+        },
+        "number_of_health_centers_with_no_stock_for_more_than_3_days_asaq_6_13_years": {
+            "line_number": "29",
+            "fr": "Nombre de centres de santé avec aucun stock de plus de 3 jours ASAO 5-13  ans",
+            "en": "Number of Health centers with no stock for more than 3 days ASAQ 6- 13 Years",
+            "condition": "true"
+        },
+        "number_of_health_centers_with_no_stock_for_more_than_3_days_asaq_14_years_plus": {
+            "line_number": "30",
+            "fr": "Nombre de centres de santé avec aucun stock de plus de 3 jours ASAQ l4ans  et +",
+            "en": "Number of Health centers with no stock for more than 3 days ASAQ 14 Years +",
+            "condition": "true"
+        },
+        "number_of_health_centers_with_no_stock_for_more_than_3_days_quinine_tablets": {
+            "line_number": "31",
+            "fr": "Nombre de centres de santé avec aucun stock de plus de 3 jours Quinine  comprime",
+            "en": "Number of Health centers with no stock for more than 3 days Quinine tablets",
+            "condition": "true"
+        },
+        "number_of_health_centers_with_no_stock_for_more_than_3_days_quinine_injectable": {
+            "line_number": "32",
+            "fr": "Nombre de centres de santé avec aucun stock de plus de 3 jours Quinine lnjectable",
+            "en": "Number of Health centers with no stock for more than 3 days Quinine injectable",
+            "condition": "true"
+        },
+        "number_of_health_centers_with_no_stock_for_more_than_3_days_mild": {
+            "line_number": "33",
+            "fr": "Nombre de centres de santé avec aucun stock de plus de 3 jours MILD",
+            "en": "Number of Health centers with no stock for more than 3 days MILD",
+            "condition": "true"
+        },
+        "sensitization_activities_on_the_enhancement_of_the_fight_against_malaria": {
+            "line_number": "34",
+            "fr": "Seances  de sensibilisation sur  la  promotion de  la  lutte  antipaludique",
+            "en": "Sensitization activities on the enhancement of the fight against Malaria",
+            "condition": "true"
+        },
+        "month": {
+            "line_number": "35",
+            "line": "singlecell",
+            "fr": "Mois",
+            "en": "Month",
+            "condition": "true"
+        },
+        "province": {
+            "line_number": "36",
+            "line": "singlecell",
+            "fr": "Province",
+            "en": "Province",
+            "condition": "true"
+        },
+        "health_zone": {
+            "line_number": "37",
+            "line": "singlecell",
+            "fr": "Zone  de  Sante",
+            "en": "Health zone",
+            "condition": "true"
+        },
+        "total_pop_in_h_area": {
+            "line_number": "38",
+            "line": "singlecell",
+            "fr": "Population totale  de I'AS",
+            "en": "Total pop in H.Area",
+            "condition": "true"
+        },
+        "term": {
+            "line_number": "39",
+            "line": "singlecell",
+            "fr": "Trimastre",
+            "en": "Term",
+            "condition": "true"
+        },
+        "district_health": {
+            "line_number": "40",
+            "line": "singlecell",
+            "fr": "District sanitaire",
+            "en": "District Health",
+            "condition": "true"
+        },
+        "health_area": {
+            "line_number": "41",
+            "line": "singlecell",
+            "fr": "Aire  de Sante",
+            "en": "Health Area",
+            "condition": "true"
+        },
+        "children_less_5": {
+            "line_number": "42",
+            "line": "singlecell",
+            "fr": "Enfants  de  moins  de  5 ans",
+            "en": "Children <5",
+            "condition": "true"
+        },
+        "year": {
+            "line_number": "43",
+            "line": "singlecell",
+            "fr": "annee",
+            "en": "Year",
+            "condition": "true"
+        },
+        "territory_commune": {
+            "line_number": "44",
+            "line": "singlecell",
+            "fr": "territoire/commune",
+            "en": "Territory/ commune",
+            "condition": "true"
+        },
+        "health_center": {
+            "line_number": "45",
+            "line": "singlecell",
+            "fr": "Sentre de sante",
+            "en": "Health center",
+            "condition": "true"
+        },
+        "pregnant_women": {
+            "line_number": "46",
+            "line": "singlecell",
+            "fr": "Femmes enceintes",
+            "en": "Pregnant women",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "data": {
+                "fr": "DONNEES",
+                "en": "Data",
+                "title":"Data",
+                "condition": "true"
+            },
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
+                "condition": "true"
+            }
+        }
+    }
+}

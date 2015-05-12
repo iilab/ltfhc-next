@@ -1,0 +1,44 @@
+{
+    "title": "4.1 Child's vaccination",
+    "fr": "4.1 Vaccination des enfants",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "prepared_sessions": {
+            "line_number": "1",
+            "fr": "Séances prévues",
+            "en": "Prepared sessions",
+            "condition": "true"
+        },
+        "realised_sessions": {
+            "line_number": "2",
+            "fr": "Séances réalisées",
+            "en": "Realised sessions",
+            "condition": "true"
+        },
+        "children_non_attended_to_but_reached_out_by_the_community_health_workers": {
+            "line_number": "3",
+            "fr": "Enfants non atteints récupérés par les RECO",
+            "en": "Children non attended to but reached out by the Community Health Workers",
+            "condition": "true"
+        },
+        "target_population": {
+            "line_number": "4",
+            "line": "singlecell",
+            "fr": "Population cible = Enfants de 0 à 11 mois du mois (pop du mois x 0,039)",
+            "en": "target population = child from 0-11 months of the month (Monthly Pop X 0.39)",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title": "Number",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_childvaccination"
+}

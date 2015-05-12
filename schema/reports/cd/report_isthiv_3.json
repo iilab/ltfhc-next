@@ -1,0 +1,148 @@
+{
+    "title": "2.3.3 Care, Treatment and support",
+    "en": "2.3.3 Care, Treatment and support",
+    "fr": "2.3.3 Soins, traitement et soutien",
+    "type": "object",
+    "properties": {
+        "number_of_new_cases_io": {
+            "line_number": "1",
+            "fr": "Nombre Nouveaux Cas IO",
+            "en": "Number of new cases IO",
+            "condition": "false"
+        },
+        "including_tbc_new_cases": {
+            "line_number": "2",
+            "fr": "Dont Nouveaux Cas TBC",
+            "en": "Including TBC new cases",
+            "condition": "false"
+        },
+        "number_of_plwhiv_under_profilaxis_ctx": {
+            "line_number": "3",
+            "fr": "Nombre de PVV sous prophylaxie CTX",
+            "en": "Number of PLWHIV under profilaxis CTX",
+            "condition": "false"
+        },
+        "number_of_plwhiv_tested_tb_under_profilaxis_ctx": {
+            "line_number": "4",
+            "fr": "Nombre de PVV VIH dépistée TB sous prophylaxie CTX",
+            "en": "Number of PLWHIV tested TB under profilaxis CTX",
+            "condition": "false"
+        },
+        "number_of_patients_who_beneficiated_with_pec_pss": {
+            "line_number": "5",
+            "fr": "Nombre de patients ayant bénéficié de la PEC PSS",
+            "en": "Number of patients who beneficiated with PEC PSS",
+            "condition": "false"
+        },
+        "number_of_malnurished_plwhiv_who_beneficiated_nutritional_pec": {
+            "line_number": "6",
+            "fr": "Nombre de PVV Malnutris ayant bénéficié de la PEC Nutritionnelle",
+            "en": "Number of malnurished PLWHIV who beneficiated nutritional PEC",
+            "condition": "false"
+        },
+        "number_of_plwhiv_who_are_under_home_based_care": {
+            "line_number": "7",
+            "fr": "Nombre de PVV bénéficiant du suivi dans le cadre des visites à domicile",
+            "en": "Number of PLWHIV who are under Home Based Care",
+            "condition": "false"
+        },
+        "number_of_plwhiv_who_beneficiated_the_follow_up_on_the_biological_cd4": {
+            "line_number": "8",
+            "fr": "Nombre des PVVIH ayant bénéficié du suivi biologique par le CD4",
+            "en": "Number of PLWHIV who beneficiated the follow up on the biological CD4",
+            "condition": "false"
+        },
+        "number_of_children_born_from_hiv_mothers_who_have_benefciated_the_dbs_pcr_dna": {
+            "line_number": "9",
+            "fr": "Nombre d’enfant nés de mères VIH+ ayant bénéficié du DBS/PCR DNA",
+            "en": "Number of children born from HIV+ mothers who have benefciated the DBS/PCR DNA",
+            "condition": "false"
+        },
+        "number_of_exposed_people_who_beneficated_the_pep_kit": {
+            "line_number": "10",
+            "fr": "Nbre des personnes exposées ayant bénéficié du Kit PEP",
+            "en": "Number of exposed people who beneficated the PEP kit",
+            "condition": "subforms.sexual_violence_record && subforms.sexual_violence_record.received_pep_kit === 'yes'"
+        },
+        "number_of_patients_under_arv_treatment": {
+            "line_number": "11",
+            "fr": "Nombre de patients sous TARV",
+            "en": "Number of patients under ARV treatment",
+            "condition": "subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.arv_therapy==='yes'"
+        },
+        "number_of_plwhiv_who_disappeared": {
+            "line_number": "12",
+            "fr": "Nombre de PVV perdues de vue",
+            "en": "Number of PLWHIV who disappeared",
+            "condition": "false"
+        },
+        "number_of_plwhiv_on_a_queue": {
+            "line_number": "13",
+            "fr": "Nombre de PVV file d’attente",
+            "en": "Number of PLWHIV on a queue",
+            "condition": "false"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "old_cases": {
+                "fr": "Anciens Cas",
+                "en": "Oldcases",
+                "title":"Oldcases",
+                "condition": "followup === 'yes'"
+            },
+            "new_cases": {
+                "fr": "Nouveaux Cas",
+                "en": "New cases",
+                "title":"New cases",
+                "condition": "followup === 'no'"
+            },
+            "total": {
+                "fr": "TOTAL",
+                "en": "TOTAL",
+                "title":"TOTAL",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_isthiv",
+    "overrides": {
+        "predefined": [
+            {"row": "number_of_new_cases_io", "col": "old_cases", "value": ""},
+            {"row": "number_of_new_cases_io", "col": "new_cases", "value": ""},
+            {"row": "number_of_new_cases_io", "col": "total", "value": ""},
+            {"row": "including_tbc_new_cases", "col": "old_cases", "value": ""},
+            {"row": "including_tbc_new_cases", "col": "new_cases", "value": ""},
+            {"row": "including_tbc_new_cases", "col": "total", "value": ""},
+            {"row": "number_of_plwhiv_under_profilaxis_ctx", "col": "old_cases", "value": ""},
+            {"row": "number_of_plwhiv_under_profilaxis_ctx", "col": "new_cases", "value": ""},
+            {"row": "number_of_plwhiv_under_profilaxis_ctx", "col": "total", "value": ""},
+            {"row": "number_of_plwhiv_tested_tb_under_profilaxis_ctx", "col": "old_cases", "value": ""},
+            {"row": "number_of_plwhiv_tested_tb_under_profilaxis_ctx", "col": "new_cases", "value": ""},
+            {"row": "number_of_plwhiv_tested_tb_under_profilaxis_ctx", "col": "total", "value": ""},
+            {"row": "number_of_patients_who_beneficiated_with_pec_pss", "col": "new_cases", "value": ""},
+            {"row": "number_of_patients_who_beneficiated_with_pec_pss", "col": "total", "value": ""},
+            {"row": "number_of_malnurished_plwhiv_who_beneficiated_nutritional_pec", "col": "old_cases", "value": ""},
+            {"row": "number_of_malnurished_plwhiv_who_beneficiated_nutritional_pec", "col": "new_cases", "value": ""},
+            {"row": "number_of_malnurished_plwhiv_who_beneficiated_nutritional_pec", "col": "total", "value": ""},
+            {"row": "number_of_plwhiv_who_are_under_home_based_care", "col": "old_cases", "value": ""},
+            {"row": "number_of_plwhiv_who_are_under_home_based_care", "col": "new_cases", "value": ""},
+            {"row": "number_of_plwhiv_who_are_under_home_based_care", "col": "total", "value": ""},
+            {"row": "number_of_plwhiv_who_beneficiated_the_follow_up_on_the_biological_cd4", "col": "old_cases", "value": ""},
+            {"row": "number_of_plwhiv_who_beneficiated_the_follow_up_on_the_biological_cd4", "col": "new_cases", "value": ""},
+            {"row": "number_of_plwhiv_who_beneficiated_the_follow_up_on_the_biological_cd4", "col": "total", "value": ""},
+            {"row": "number_of_children_born_from_hiv_mothers_who_have_benefciated_the_dbs_pcr_dna", "col": "old_cases", "value": ""},
+            {"row": "number_of_children_born_from_hiv_mothers_who_have_benefciated_the_dbs_pcr_dna", "col": "new_cases", "value": ""},
+            {"row": "number_of_children_born_from_hiv_mothers_who_have_benefciated_the_dbs_pcr_dna", "col": "total", "value": ""},
+            {"row": "number_of_plwhiv_who_disappeared", "col": "old_cases", "value": ""},
+            {"row": "number_of_plwhiv_who_disappeared", "col": "new_cases", "value": ""},
+            {"row": "number_of_plwhiv_who_disappeared", "col": "total", "value": ""},
+            {"row": "number_of_plwhiv_on_a_queue", "col": "old_cases", "value": ""},
+            {"row": "number_of_plwhiv_on_a_queue", "col": "new_cases", "value": ""},
+            {"row": "number_of_plwhiv_on_a_queue", "col": "total", "value": ""}
+        ],
+        "disabled": [
+            {"row": "number_of_patients_who_beneficiated_with_pec_pss", "col": "old_cases", "value": ""}
+        ]
+    }
+}

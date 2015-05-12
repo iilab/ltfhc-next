@@ -1,0 +1,60 @@
+{
+        "title": "",
+        "type": "object",
+        "properties": {
+            "including_new_patients": {
+                "line_number": "1",
+                "fr": "Dont nouveaux patients",
+                "en": "Including New Patients",
+                "condition": "(patient.current_created_months == 0)"
+            },
+            "including_night_health_attendants": {
+                "line_number": "2",
+                "fr": "Dont adhérents de mut. de santé",
+                "en": "including night health attendants",
+                "condition": "(date_created.split('T')[1].split(':')[0] < 9) || (date_created.split('T')[1].split(':')[0] > 17)"
+            },
+            "old_cases": {
+                "line_number": "3",
+                "fr": "Anciens cas",
+                "en": "Old cases",
+                "condition": "(follow_up !== undefined)"
+            },
+            "including_oldcases_contr_refered": {
+                "line_number": "4",
+                "fr": "Dont anciens cas contre-référés",
+                "en": "Including old cases counter-referred",
+                "condition": "(counter_referred !== undefined)"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "as": {
+                    "fr": "AS",
+                    "en": "AS",
+                    "title":"AS",
+                    "condition": "area_zone === 'ha'"
+                },
+                "has": {
+                    "fr": "HAS",
+                    "en": "HAS",
+                    "title":"HAS",
+                    "condition": "area_zone === 'oa'"
+                },
+                "hz": {
+                    "fr": "HZ",
+                    "en": "HZ",
+                    "title":"HZ",
+                    "condition": "area_zone === 'oz'"
+                },
+                "total": {
+                    "fr": "Total",
+                    "en": "Total",
+                    "title":"Total",
+                    "condition": "true"
+                }
+            }
+        },
+    "parent": "report_screening"
+    }
+    

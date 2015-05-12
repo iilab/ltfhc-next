@@ -1,37 +1,60 @@
 {
-    "fields": {
-        "vaccine_dispensed": {
-            "label": "Dawa iliogawanywa",
-            "type": "checkbox"
-        },
-        "vaccine_effect": {
-            "label": "Athari za haraka za chanjo",
-            "type": "select"
-        },
-        "vaccine_other_reaction": {
-            "label": "If Other Vaccine Reaction, Please Describe:"
-        },
-        "anaphylaxis": {
-            "label": "Mzio ni dhahiri?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ],
-            "removeDefaultNone": true
-        },
-        "side_effect_counseling": {
-            "label": "Describe Any Counseling Given Regarding Side-Effects:",
-            "type": "textarea"
-        },
-        "pregnant": {
-            "label": "Pregnant?",
-            "type": "radio",
-            "enum": [
-                "Yes",
-                "No"
-            ],
-            "removeDefaultNone": true
-        }
+  "fields": {
+    "vaccine_dispensed": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Dawa iliogawanywa"
+    },
+    "vaccine_effect": {
+      "type": "select",
+      "label": "Athari za haraka za chanjo"
+    },
+    "vaccine_other_reaction": {
+      "label": "If Other Vaccine Reaction, Please Describe:"
+    },
+    "anaphylaxis": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Mzio ni dhahiri?"
+    },
+    "side_effect_counseling": {
+      "type": "textarea",
+      "label": "Describe Any Counseling Given Regarding Side-Effects:"
+    },
+    "pregnant": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Pregnant?"
+    },
+    "referred_to_elsewhere": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred to another facility?"
+    },
+    "referred_to_location": {
+      "type": "select",
+      "label": "If Yes, which facility was the patient referred to?"
+    },
+    "follow_up_recommended": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "A follow up visit has been recommended"
     }
+  }
 }

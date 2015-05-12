@@ -1,0 +1,92 @@
+{
+  "fields": {
+    "child_given_npv_during_labor": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No",
+        "Unknown"
+      ],
+      "removeDefaultNone": true,
+      "label": "Child Given NPV Syrup in Labor and Delivery Ward?"
+    },
+    "milk_source": {
+      "type": "select",
+      "label": "Child Milk Source:"
+    },
+    "hiv_diagnosis_dna_pcr": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No",
+        "Unknown"
+      ],
+      "removeDefaultNone": true,
+      "label": "Was Child Diagnosed With HIV Using DNA-PCR(DBS)?"
+    },
+    "hiv_diagnosis_antibody": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No",
+        "Unknown"
+      ],
+      "removeDefaultNone": true,
+      "label": "Was Child Diagnosed With HIV Antibody or PCR As A Second Test?"
+    },
+    "hiv_diagnosis_date": {
+      "type": "select",
+      "label": "When Did Diagnosis Take Place?"
+    },
+    "child_taking_ctx": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No",
+        "Unknown"
+      ],
+      "removeDefaultNone": true,
+      "label": "Is Child Taking CTX?"
+    },
+    "child_start_ctx": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No",
+        "Unknown"
+      ],
+      "removeDefaultNone": true,
+      "label": "Did Child Start On CTX Between 4 Weeks and 2 Months of Age?"
+    },
+    "other_treatment": {
+      "type": "textarea",
+      "label": "If Any Treatment Given, Please Describe:"
+    },
+    "note": {
+      "type": "textarea",
+      "label": "Other Notes For This Visit:"
+    },
+    "referred_to_elsewhere": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred to another facility?"
+    },
+    "referred_to_location": {
+      "type": "select",
+      "label": "If Yes, which facility was the patient referred to?"
+    },
+    "follow_up_recommended": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "A follow up visit has been recommended"
+    }
+  }
+}

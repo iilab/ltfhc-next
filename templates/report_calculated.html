@@ -1,14 +1,14 @@
 <div id="report_calculated">
   {>"loader.html"/}
-  <div id="report-name" class="list-group-item">{title} - {period} - <strong>Current</strong></div>
+  <div id="report-name" class="list-group-item">{title} - {period} - <strong>{@translate value="Current"/}</strong></div>
   <div class="row">
       <div class="col-md-12">
           <form id="report-form" action="" method="post">
-			<input type="hidden" name="report" value="{report}"></input>
-			<input type="hidden" name="title" value="{title}"></input>
-			<input type="hidden" name="period" value="{period}"></input>
-			<div id="form"></div>
-			<a class='btn btn-lg btn-default' href='{baseURL}/reports'>Back</a>
+              <input type="hidden" name="report" value="{report}"></input>
+              <input type="hidden" name="title" value="{title}"></input>
+              <input type="hidden" name="period" value="{period}"></input>
+              <div id="form"></div>
+              <a class='btn btn-lg btn-default' href='{baseURL}/reports'>Back</a>
 			    </form>
       </div>
   </div>

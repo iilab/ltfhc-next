@@ -1,0 +1,469 @@
+{
+    "title": "Monthly Canvas - 2.4. New cases Identification",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "accident_celebro_vascular": {
+            "line_number": "1",
+            "fr": "Accident vasculo-cérebral (AVC)",
+            "en": "Accident Celebro - vascular",
+            "condition": "true"
+        },
+        "work_accident": {
+            "line_number": "2",
+            "fr": "Accidents de travail",
+            "en": "Work accident",
+            "condition": "true"
+        },
+        "amibiasis": {
+            "line_number": "3",
+            "fr": "Amibiase",
+            "en": "Amibiasis",
+            "condition": "true"
+        },
+        "anemia": {
+            "line_number": "4",
+            "fr": "Anémie",
+            "en": "Anemia",
+            "condition": "true"
+        },
+        "burns": {
+            "line_number": "5",
+            "fr": "Brûlures",
+            "en": "Burns",
+            "condition": "true"
+        },
+        "ceivix_cancer": {
+            "line_number": "6",
+            "fr": "Cancer du col utérin",
+            "en": "Ceivix cancer",
+            "condition": "true"
+        },
+        "prostate_cancer": {
+            "line_number": "7",
+            "fr": "Cancer du prostate",
+            "en": "Prostate cancer",
+            "condition": "true"
+        },
+        "breast_cancer": {
+            "line_number": "8",
+            "fr": "Cancer du sein",
+            "en": "Breast cancer",
+            "condition": "true"
+        },
+        "dental_carris": {
+            "line_number": "9",
+            "fr": "Carie dentaire",
+            "en": "Dental carris",
+            "condition": "true"
+        },
+        "cataracte": {
+            "line_number": "10",
+            "fr": "Cataracte",
+            "en": "Cataracte",
+            "condition": "true"
+        },
+        "cholera": {
+            "line_number": "11",
+            "fr": "Choléra",
+            "en": "Cholera",
+            "condition": "true"
+        },
+        "conjoctivitis": {
+            "line_number": "12",
+            "fr": "Conjonctivite",
+            "en": "Conjoctivitis",
+            "condition": "true"
+        },
+        "whooping_cough_of_non_vaccinated": {
+            "line_number": "13",
+            "fr": "Coqueluche patient non vacciné",
+            "en": "Whooping cough of non vaccinated patients",
+            "condition": "true"
+        },
+        "whooping_cough_of_vaccinated": {
+            "line_number": "14",
+            "fr": "Coqueluche patient vacciné",
+            "en": "Whooping cough of  vaccinated patients",
+            "condition": "true"
+        },		
+        "depression": {
+            "line_number": "15",
+            "fr": "Dépression",
+            "en": "Depression",
+            "condition": "true"
+        },
+        "diabetitis": {
+            "line_number": "16",
+            "fr": "Diabète",
+            "en": "Diabetitis",
+            "condition": "true"
+        },
+
+        "bloody_diarrhea": {
+            "line_number": "17",
+            "fr": "Diarrhée sanglante",
+            "en": "Bloody diarrhea",
+            "condition": "true"
+        },			
+        "simple_diarrhea": {
+            "line_number": "18",
+            "fr": "Diarrhée simple",
+            "en": "Simple diarrhea",
+            "condition": "true"
+        },
+        "drepanocytosis": {
+            "line_number": "19",
+            "fr": "Drépanocytose",
+            "en": "Drepanocytosis",
+            "condition": "true"
+        },
+        "epilepsy_convulsion_crisis": {
+            "line_number": "20",
+            "fr": "Epilepsie/crises convulsives",
+            "en": "Epilepsy/ convulsion crisis",
+            "condition": "true"
+        },		
+        "viral_heomrrhage_fever": {
+            "line_number": "21",
+            "fr": "Fièvre hémorragique",
+            "en": "Viral Heomrrhage Fever",
+            "condition": "true"
+        },
+        "yellow_fever": {
+            "line_number": "22",
+            "fr": "Fièvre jaune",
+            "en": "Yellow Fever",
+            "condition": "true"
+        },
+        "typhoid_fever": {
+            "line_number": "23",
+            "fr": "Fièvre typhoïde",
+            "en": "Typhoid Fever",
+            "condition": "true"
+        },
+        "glaucome": {
+            "line_number": "24",
+            "fr": "Glaucome",
+            "en": "Glaucome",
+            "condition": "true"
+        },
+        "goiter": {
+            "line_number": "25",
+            "fr": "Goitre",
+            "en": "Goiter",
+            "condition": "true"
+        },
+        "bird_flu": {
+            "line_number": "26",
+            "fr": "Grippe aviaire",
+            "en": "Bird flu",
+            "condition": "true"
+        },
+        "hepatitis": {
+            "line_number": "27",
+            "fr": "Hépatites",
+            "en": "Hepatitis",
+            "condition": "true"
+        },		
+        "hernia": {
+            "line_number": "28",
+            "fr": "Hernie",
+            "en": "Hernia",
+            "condition": "true"
+        },
+        "high_blood_pressure": {
+            "line_number": "29",
+            "fr": "Hypertension artérielle",
+            "en": "High Blood Pressure",
+            "condition": "true"
+        },
+        "related_work_accident_incapacities": {
+            "line_number": "30",
+            "fr": "Incapacités liées aux accidents de travail",
+            "en": "Related work accident incapacities",
+            "condition": "true"
+        },			
+        "skin_related_infections": {
+            "line_number": "31",
+            "fr": "Infection dermatologique",
+            "en": "Skin related Infections",
+            "condition": "true"
+        },
+        "urinary_related_infections": {
+            "line_number": "32",
+            "fr": "Infection urinaire",
+            "en": "Urinary related infections",
+            "condition": "true"
+        },
+        "indigenious_product": {
+            "line_number": "33",
+            "fr": "Intoxications aux produits indigènes",
+            "en": "Indigenious product related to intoxication",
+            "condition": "true"
+        },			
+        "pneumonia": {
+            "line_number": "34",
+            "fr": "IRA inférieure (pneumonie)",
+            "en": "Pneumonia",
+            "condition": "true"
+        },
+        "high_respiratory_infection": {
+            "line_number": "35",
+            "fr": "IRA sup (syndrome grippal / rhume)",
+            "en": "High Respiratory Infection (syndrom grippal/cold)",
+            "condition": "true"
+        },
+        "stis_genital_syndrome_flow": {
+            "line_number": "36",
+            "fr": "IST / Syndrome d’écoulement génital",
+            "en": "STIs/ genital  syndrome flow",
+            "condition": "true"
+        },
+		
+        "stis_pelvic_inflammatory_syndrome": {
+            "line_number": "37",
+            "fr": "IST / Syndrome d’inflammation pelvienne",
+            "en": "STIs/ Pelvic Inflammatory syndrome",
+            "condition": "true"
+        },			
+        "stis_genital_ulceration_syndrome": {
+            "line_number": "38",
+            "fr": "IST / Syndrome d’ulcération génitale",
+            "en": "STIs/ Genital  Ulceration Syndrome",
+            "condition": "true"
+        },
+        "konzo": {
+            "line_number": "39",
+            "fr": "Konzo",
+            "en": "Konzo",
+            "condition": "true"
+        },
+        "leprosy": {
+            "line_number": "40",
+            "fr": "Lèpre",
+            "en": "Leprosy",
+            "condition": "true"
+        },		
+        "moderated_high_malnutrition": {
+            "line_number": "41",
+            "fr": "Malnutrition aigue modéré",
+            "en": "Moderated high malnutrition",
+            "condition": "true"
+        },
+        "mania": {
+            "line_number": "42",
+            "fr": "Manie",
+            "en": "Mania",
+            "condition": "true"
+        },
+        "menengitis": {
+            "line_number": "43",
+            "fr": "Méningite",
+            "en": "Menengitis",
+            "condition": "true"
+        },
+        "monkey_pox": {
+            "line_number": "44",
+            "fr": "Monkey pox",
+            "en": "Monkey pox",
+            "condition": "true"
+        },
+        "venonimous_animals_bites": {
+            "line_number": "45",
+            "fr": "Morsure par des animaux vénimeux",
+            "en": "Venonimous Animals bites",
+            "condition": "true"
+        },
+        "noma": {
+            "line_number": "46",
+            "fr": "Noma",
+            "en": "Noma",
+            "condition": "true"
+        },
+        "intestinal_occlusion": {
+            "line_number": "47",
+            "fr": "Occlusion intestinale",
+            "en": "Intestinal occlusion",
+            "condition": "true"
+        },		
+        "onchocercosis_and_other_filariosis": {
+            "line_number": "48",
+            "fr": "Onchocercose et autres filarioses",
+            "en": "Onchocercosis and other Filariosis",
+            "condition": "true"
+        },
+        "pest": {
+            "line_number": "49",
+            "fr": "Peste",
+            "en": "Pest",
+            "condition": "true"
+        },
+        "pfa": {
+            "line_number": "50",
+            "fr": "PFA",
+            "en": "PFA (Paralysie Flasque Aigue)",
+            "condition": "true"
+        },			
+        "psychose_aigue": {
+            "line_number": "51",
+            "fr": "Psychose aigue : bouffée délirante",
+            "en": "Psychose-aigue: bouffee delirante",
+            "condition": "true"
+        },
+        "psychose_puerperal": {
+            "line_number": "52",
+            "fr": "Psychose puerpérale",
+            "en": "Psychose-Puerperal",
+            "condition": "true"
+        },
+        "rage": {
+            "line_number": "53",
+            "fr": "Rage",
+            "en": "Rage",
+            "condition": "true"
+        },			
+        "measles_non_vaccinated": {
+            "line_number": "54",
+            "fr": "Rougeole patient non vacciné",
+            "en": "Measles ( non vaccinated  patient)",
+            "condition": "true"
+        },
+        "measles_vaccinated": {
+            "line_number": "55",
+            "fr": "Rougeole patient vacciné",
+            "en": "Measles ( vaccinated patient)",
+            "condition": "true"
+        },
+        "schistosomiasis": {
+            "line_number": "56",
+            "fr": "Schistosomiase",
+            "en": "Schistosomiasis",
+            "condition": "true"
+        },		
+        "appendiculary_syndrome": {
+            "line_number": "57",
+            "fr": "Syndrome appendiculaire",
+            "en": "Appendiculary syndrome",
+            "condition": "true"
+        },
+        "posttrauma_stress_syndrome": {
+            "line_number": "58",
+            "fr": "Syndrome de stress post-traumatique",
+            "en": "Post-trauma stress syndrome",
+            "condition": "true"
+        },
+        "gastric_syndrome": {
+            "line_number": "59",
+            "fr": "Syndrome gastritique",
+            "en": "Gastric syndrome",
+            "condition": "true"
+        },
+        "tetanus": {
+            "line_number": "60",
+            "fr": "Tétanos",
+            "en": "Tetanus",
+            "condition": "true"
+        },
+        "neonatal_tetanus": {
+            "line_number": "61",
+            "fr": "Tétanos néonatal",
+            "en": "Neonatal Tetanus",
+            "condition": "true"
+        },		
+        "toxicomania_and_others": {
+            "line_number": "62",
+            "fr": "Toxicomanie et autres",
+            "en": "Toxicomania and others",
+            "condition": "true"
+        },
+        "trauma": {
+            "line_number": "63",
+            "fr": "Traumatisme",
+            "en": "Trauma",
+            "condition": "true"
+        },
+        "generalised_anxious_trouble": {
+            "line_number": "64",
+            "fr": "Trouble anxieux généralisé",
+            "en": "Generalised anxious trouble",
+            "condition": "true"
+        },			
+        "trypanosomiasis": {
+            "line_number": "65",
+            "fr": "Trypanosomiase",
+            "en": "Trypanosomiasis",
+            "condition": "true"
+        },
+        "tuberculosis": {
+            "line_number": "66",
+            "fr": "Tuberculose",
+            "en": "Tuberculosis",
+            "condition": "true"
+        },
+        "typhus": {
+            "line_number": "67",
+            "fr": "Typhus",
+            "en": "Typhus",
+            "condition": "true"
+        },			
+        "buruli_ulcers": {
+            "line_number": "68",
+            "fr": "Ulcère de buruli",
+            "en": "Buruli Ulcers",
+            "condition": "true"
+        },
+        "hiv_aids": {
+            "line_number": "69",
+            "fr": "VIH/SIDA",
+            "en": "HIV/AIDS",
+            "condition": "true"
+        },
+        "xerophtalmia": {
+            "line_number": "70",
+            "fr": "Xérophtalmie",
+            "en": "Xerophtalmia",
+            "condition": "true"
+        },			
+        "others": {
+            "line_number": "71",
+            "fr": "Autres",
+            "en": "Others",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "0_11months": {
+                "fr": "0-11 mois",
+                "en": "0-11 months",
+                "title":"0-11 months",
+                "condition": "true"
+            },
+            "12_59months": {
+                "fr": "12-59 mois",
+                "en": "12-59 months",
+                "title":"12-59 months",
+                "condition": "true"
+            },
+            "5_14yrs": {
+                "fr": "5-14 ans",
+                "en": "5-14yrs",
+                "title":"5-14 yrs",
+                "condition": "true"
+            },			
+            "15yrs": {
+                "fr": "15 ans +",
+                "en": "15yrs +",
+                "title":"15yrs +",
+                "condition": "true"
+            },				
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title":"Total",
+                "condition": "true"
+            }  
+        }
+    }
+}

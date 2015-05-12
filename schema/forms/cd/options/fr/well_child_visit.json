@@ -1,0 +1,120 @@
+{
+  "fields": {
+    "height": {
+      "type": "number",
+      "label": "Height (cm)"
+    },
+    "weight": {
+      "type": "number",
+      "label": "Weight (kg)"
+    },
+    "alben_tablets": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Given albendazole?"
+    },
+    "milk_source": {
+      "type": "select",
+      "label": "Milk Source"
+    },
+    "mother_hiv_status": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "Mother's HIV Status"
+    },
+    "mother_tetanus_delivery": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No",
+        "Unknown"
+      ],
+      "removeDefaultNone": true,
+      "label": "Mother given Tetanus vaccine during delivery?"
+    },
+    "possible_hiv": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Is HIV Possible?"
+    },
+    "hiv_status": {
+      "type": "select",
+      "label": "HIV Status"
+    },
+    "hiv_pcr_test_2mo": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Tested for HIV by PCR within two months from birth?"
+    },
+    "hiv_pcr_test_18mo": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Tested for HIV by PCR within 6 weeks after stopping breastfeeding or 18 months?"
+    },
+    "ctx_status": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Started on cotrimoxazole between 1 month to 2 months?"
+    },
+    "referred_ctc": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred CTC?"
+    },
+    "bed_net_voucher": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Given bed net voucher?"
+    },
+    "referred_to_elsewhere": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred to another facility?"
+    },
+    "referred_to_location": {
+      "type": "select",
+      "label": "If Yes, which facility was the patient referred to?"
+    },
+    "follow_up_recommended": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Visite de suivi"
+    }
+  }
+}

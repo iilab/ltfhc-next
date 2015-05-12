@@ -1,0 +1,139 @@
+{
+    "title": "8.5 Vaccins and other intrants Management",
+    "fr": "8.5 Gestion des vaccins et autres intrants",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "bcg": {
+            "line_number": "1",
+            "fr": "BCG",
+            "en": "BCG",
+            "condition": "true"
+        },
+        "diluant_bcg": {
+            "line_number": "2",
+            "fr": "Diluant BCG",
+            "en": "Diluant BCG",
+            "condition": "true"
+        },
+        "ovp": {
+            "line_number": "3",
+            "fr": "VPO",
+            "en": "OVP",
+            "condition": "true"
+        },
+        "dtc_htpb_hib": {
+            "line_number": "4",
+            "fr": "DTC hepB Hib",
+            "en": "DTC hepB Hib",
+            "condition": "true"
+        },
+        "var": {
+            "line_number": "5",
+            "fr": "VAR",
+            "en": "VAR",
+            "condition": "true"
+        },
+        "diluant_var": {
+            "line_number": "6",
+            "fr": "Diluant VAR",
+            "en": "Diluant VAR",
+            "condition": "true"
+        },
+        "vat": {
+            "line_number": "7",
+            "fr": "VAT",
+            "en": "VAT",
+            "condition": "true"
+        },
+        "vaa": {
+            "line_number": "8",
+            "fr": "VAA",
+            "en": "VAA",
+            "condition": "true"
+        },
+        "diluant_vaa": {
+            "line_number": "9",
+            "fr": "Diluant VAA",
+            "en": "Diluant VAA",
+            "condition": "true"
+        },
+        "syringues_sab_bcg": {
+            "line_number": "10",
+            "fr": "Seringue SAB BCG",
+            "en": "Syringues SAB BCG",
+            "condition": "true"
+        },
+        "syringues_sab": {
+            "line_number": "11",
+            "fr": "Seringue SAB",
+            "en": "Syringues SAB",
+            "condition": "true"
+        },
+        "diluation_syringues": {
+            "line_number": "12",
+            "fr": "Seringue de dilution",
+            "en": "Diluation syringues",
+            "condition": "true"
+        },
+        "pvc_13": {
+            "line_number": "13",
+            "fr": "PCV13",
+            "en": "PVC 13",
+            "condition": "true"
+        },
+        "receptacle": {
+            "line_number": "14",
+            "fr": "Réceptacle",
+            "en": "Receptacle",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "qty_of_the_beginning_of_month": {
+                "fr": "Quantité au début du mois",
+                "en": "Qty of the Beginning of Month",
+                "title":"Qty of the Beginning of Month",
+                "condition": "true"
+            },
+            "entries": {
+                "fr": "Entrées",
+                "en": "Entries",
+                "title":"Entries",
+                "condition": "true"
+            },
+            "consummed_qty": {
+                "fr": "Quantité consommée",
+                "en": "Consummed Qty",
+                "title":"Consummed Qty",
+                "condition": "true"
+            },
+            "qty_at_month_end": {
+                "fr": "Quantité à la fin du moi",
+                "en": "Qty at month end",
+                "title":"Qty at month end",
+                "condition": "true"
+            },
+            "exit_out_of_consumption": {
+                "fr": "Sorties hors consommation",
+                "en": "Exit out of consumption",
+                "title":"Exit out of consumption",
+                "condition": "true"
+            },
+            "nbr_of_days_out_stock": {
+                "fr": "Nb jours rupture de stock",
+                "en": "Nbr of days out stock",
+                "title":"Nbr of days out stock",
+                "condition": "true"
+            },
+            "loss_rate_in_vaccins": {
+                "fr": "Taux de perte en vaccins BCG",
+                "en": "Loss rate in vaccins",
+                "title":"Loss rate in vaccins",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_resources"
+}

@@ -1,0 +1,55 @@
+{
+    "title": "7.1 Realised supervisions by the health center and the RECO in the community",
+    "fr": "7.1. Supervisions réalisées par le Centre de Santé et RECOs dans la communauté",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "nbr_of_visits_from_the_health_center_team_to_reco": {
+            "line_number": "1",
+            "fr": "Nb Visites de l’équipe du CS auprès de relais communautaires",
+            "en": "Nbr of visits from the health center team to RECO",
+            "condition": "true"
+        },
+        "nbr_of_visits_of_reco_to_the_community_including_family_planning": {
+            "line_number": "2",
+            "fr": "Nb Visites des RECO vers la communauté dont Counsel ing PF",
+            "en": "Nbr of visits of RECO to the community including Family Planning",
+            "condition": "true"
+        },
+        "nbr_of_visits_of_reco_to_the_community_for_other_problems": {
+            "line_number": "3",
+            "fr": "Nb Visites des RECO vers la communauté dont pour autres problèmes de santé",
+            "en": "Nbr of visits of RECO to the community for  other problems",
+            "condition": "true"
+        },
+        "nbr_of_visits_of_reco_to_the_community_for_family_planning_material_distribution": {
+            "line_number": "4",
+            "fr": "Nb Visites des RECO vers la communauté dont distribution des intrants PF",
+            "en": "Nbr of visits of RECO to the community for family planning material distribution",
+            "condition": "true"
+        },
+        "nbr_of_visits_of_reco_to_the_community_for_other_intrants_distribution": {
+            "line_number": "5",
+            "fr": "Nb Visites des RECO vers la communauté dont distribution autres intrants",
+            "en": "Nbr of visits of RECo to the community for other intrants distribution",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "program": {
+                "fr": "Program",
+                "en": "Program",
+                "title":"Program",
+                "condition": "true"
+            },
+            "realised": {
+                "fr": "Réalisées",
+                "en": "Realised",
+                "title":"Realised",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_supervision"
+}

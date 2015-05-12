@@ -1,0 +1,303 @@
+{
+  "fields": {
+    "last_menstrual_period": {
+      "type": "date",
+      "dateFormat": "yy-mm-dd",
+      "datepicker": {
+        "hideIfNoPrevNextType": true,
+        "yearRange": "1900:+1",
+        "changeMonth": true,
+        "changeYear": true
+      },
+      "label": "Last Menstrual Period:"
+    },
+    "menstrual_history": {
+      "type": "select",
+      "label": "Menstrual History:"
+    },
+    "pregnant": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Pregnant?"
+    },
+    "number_pregnancy": {
+      "type": "select",
+      "label": "Total Number of Pregnancies"
+    },
+    "number_full_term_delivery": {
+      "type": "select",
+      "label": "Number of Full Term Deliveries"
+    },
+    "number_pre_term_delivery": {
+      "type": "select",
+      "label": "Number of Preterm Deliveries"
+    },
+    "number_miscarriage_or_abortion": {
+      "type": "select",
+      "label": "Number of Miscarriages or Abortions"
+    },
+    "number_live_birth": {
+      "type": "select",
+      "label": "Number of Live Births"
+    },
+    "pregnancy_complication": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Pregnancy Complications, Check All That Apply:"
+    },
+    "pregnancy_complication_other": {
+      "label": "If Other Pregnancy Complication, Describe:"
+    },
+    "marital_status": {
+      "type": "select",
+      "label": "Marital Status:"
+    },
+    "sexual_violence": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Visit related to Sexual violence"
+    },
+    "contraception_previous": {
+      "type": "select",
+      "label": "Previous Contraception:"
+    },
+    "contraception_current": {
+      "type": "select",
+      "label": "Current Contraception:"
+    },
+    "contraception_source": {
+      "type": "select",
+      "label": "Source of Contraception"
+    },
+    "fertility_desire": {
+      "type": "select",
+      "label": "Fertility Desires:"
+    },
+    "hiv_risk": {
+      "type": "select",
+      "label": "HIV Risks:"
+    },
+    "hiv_status": {
+      "type": "select",
+      "label": "HIV Status"
+    },
+    "hiv_tested": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Tested for HIV?"
+    },
+    "hiv_partner_test": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Partner tested for HIV?"
+    },
+    "hiv_positive_test": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Tested positive for HIV?"
+    },
+    "hiv_partner_positive_test": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Partner tested positive for HIV?"
+    },
+    "hiv_counseling": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "HIV counseling given?"
+    },
+    "hiv_partner_counseling": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "HIV counseling given to partner?"
+    },
+    "hiv_discordant": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "HIV discordant couple?"
+    },
+    "referred_ctc": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred to CTC?"
+    },
+    "post_test_counseling": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Post-test HIV counseling given?"
+    },
+    "implant_removed": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Implant removed?"
+    },
+    "contraception_after_miscarriage": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Contraception given after recent miscarriage?"
+    },
+    "delivery_in_42_days": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Delivery within 42 days?"
+    },
+    "contraception_in_42_days": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Contraception given within 42 days of delivery?"
+    },
+    "contraception_dispensed": {
+      "type": "select",
+      "label": "Contraception Dispensed:"
+    },
+    "quantity_pills_dispensed": {
+      "type": "select",
+      "label": "Quantity of Pills Dispensed:"
+    },
+    "quantity_condoms_dispensed": {
+      "type": "select",
+      "label": "Quantity of Condoms Dispensed:"
+    },
+    "quantity_depo_provera": {
+      "type": "select",
+      "label": "Dose of Depo Provera:"
+    },
+    "condom_education": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Condom Use Education Preformed"
+    },
+    "cervical_symptom": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Cervical Symptoms:"
+    },
+    "breast_symptom": {
+      "type": "checkbox",
+      "removeDefaultNone": true,
+      "label": "Breast Symptoms:"
+    },
+    "screened_cervical_cancer": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Screened for cervical cancer?"
+    },
+    "screened_breast_cancer": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Screened for breast cancer"
+    },
+    "suspicious_cervical_cancer": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Findings suspicious for cervical cancer on examination?"
+    },
+    "admission": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Admission Required?"
+    },
+    "referred_to_elsewhere": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred to another facility?"
+    },
+    "referred_to_location": {
+      "type": "select",
+      "label": "If Yes, which facility was the patient referred to?"
+    },
+    "follow_up_recommended": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "A follow up visit has been recommended"
+    }
+  }
+}

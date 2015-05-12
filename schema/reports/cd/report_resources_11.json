@@ -1,0 +1,211 @@
+{
+    "title": "8.4.1 Consumption of medicines Vaccins sentinelles and others",
+    "fr": "8.4.1 Consommation des médicaments, vaccins sentinelles et autres",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "aspirin_tabs_500mg": {
+            "line_number": "1",
+            "fr": "Aspirine Co 500mg",
+            "en": "Aspirin tabs 500mg",
+            "condition": "true"
+        },
+        "paracetamol_500mg": {
+            "line_number": "2",
+            "fr": "Paracétamol 500 mg",
+            "en": "Paracetamol 500mg",
+            "condition": "true"
+        },
+        "artemether_inj_40mg": {
+            "line_number": "3",
+            "fr": "Artémether inj 40 mg",
+            "en": "Artemether Inj 40mg",
+            "condition": "true"
+        },
+        "artemether_inj_80mg": {
+            "line_number": "4",
+            "fr": "Artémether inj 80 mg",
+            "en": "Artemether Inj 80mg",
+            "condition": "true"
+        },
+        "artesunate_amodiaquine_12_59_m": {
+            "line_number": "5",
+            "fr": "Artésunate-Amodiaquine (12 -59 m) ",
+            "en": "Artésunate-Amodiaquine (12 -59 m)",
+            "condition": "true"
+        },
+        "artesunate_amodiaquine_2_11_m": {
+            "line_number": "6",
+            "fr": "Artésunate-Amodiaquine (2-11 m)",
+            "en": "Artesunate - Amodiaquine (2 - 11 m)",
+            "condition": "true"
+        },
+        "artesunate_amodiaquine_6_13_y": {
+            "line_number": "7",
+            "fr": "Artésunate-Amodiaquine (6-13 a)",
+            "en": "Artesunate - Amodiaquine (6-13 y)",
+            "condition": "true"
+        },
+        "artesunate_amodiaquine_14_y_plus": {
+            "line_number": "8",
+            "fr": "Artésunate-Amodiaquine, (14a+)",
+            "en": "Artesunate - Amodiaquine (14 y +)",
+            "condition": "true"
+        },
+        "lumefantrine_artemether": {
+            "line_number": "9",
+            "fr": "Luméfantrine + Artéméther",
+            "en": "Lumefantrine + Artemether",
+            "condition": "true"
+        },
+        "quinine_inj_600mg": {
+            "line_number": "10",
+            "fr": "Quinine amp 600 mg",
+            "en": "Quinine Inj 600mg",
+            "condition": "true"
+        },
+        "quinine_tabs_500mg": {
+            "line_number": "11",
+            "fr": "Quinine co 500 mg",
+            "en": "Quinine tabs 500mg",
+            "condition": "true"
+        },
+        "tdr": {
+            "line_number": "12",
+            "fr": "TDR",
+            "en": "TDR",
+            "condition": "true"
+        },
+        "sp_500_25_mg_tabs": {
+            "line_number": "13",
+            "fr": "SP 500/25 mg, co",
+            "en": "SP/500/25 mg tabs",
+            "condition": "true"
+        },
+        "mild": {
+            "line_number": "14",
+            "fr": "MILD",
+            "en": "MILD",
+            "condition": "true"
+        },
+        "diazepan_500mg_inj": {
+            "line_number": "15",
+            "fr": "Diazepam 5 mg amp",
+            "en": "Diazepan 500mg Inj",
+            "condition": "true"
+        },
+        "ors": {
+            "line_number": "16",
+            "fr": "SRO",
+            "en": "ORS",
+            "condition": "true"
+        },
+        "zinc_20mg": {
+            "line_number": "17",
+            "fr": "Zinc 20 mg",
+            "en": "Zinc 20mg",
+            "condition": "true"
+        },
+        "amoxyciline_caps_250mg": {
+            "line_number": "18",
+            "fr": "Amoxycilline caps 250 mg",
+            "en": "Amoxyciline Caps 250mg",
+            "condition": "true"
+        },
+        "amoxyciline_caps_500mg": {
+            "line_number": "19",
+            "fr": "Amoxycilline caps 500 mg",
+            "en": "Amoxyciline Caps 500mg",
+            "condition": "true"
+        },
+        "cotrimoxazole_480mg": {
+            "line_number": "20",
+            "fr": "Cotrimoxazole 480 mg",
+            "en": "Cotrimoxazole 480mg",
+            "condition": "true"
+        },
+        "ceftriaxone_1g_inj": {
+            "line_number": "21",
+            "fr": "Ceftriaxone 1 gr inj",
+            "en": "Ceftriaxone 1g Inj",
+            "condition": "true"
+        },
+        "gentamicyine": {
+            "line_number": "22",
+            "fr": "Gentamycine",
+            "en": "Gentamicyine",
+            "condition": "true"
+        },
+        "mebendazole_100mg": {
+            "line_number": "23",
+            "fr": "Mebendazole 100 mg",
+            "en": "Mebendazole 100mg",
+            "condition": "true"
+        },
+        "metronidazole_250_mg_tabs": {
+            "line_number": "24",
+            "fr": "Métronidazole 250 mg co",
+            "en": "Metronidazole 250 mg tabs",
+            "condition": "true"
+        },
+        "female_preservatives": {
+            "line_number": "25",
+            "fr": "Preservatif feminine",
+            "en": "Female preservatives",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "initial_stock_beginning_of_the_month": {
+                "fr": "Stock initiale (début mois )",
+                "en": "Initial Stock (beginning of the month)",
+                "title":"Initial Stock (beginning of the month)",
+                "condition": "true"
+            },
+            "entries": {
+                "fr": "Entrées",
+                "en": "Entries",
+                "title":"Entries",
+                "condition": "true"
+            },
+            "exit_out_of_consumption": {
+                "fr": "Sorties hors consommation",
+                "en": "Exit (out of consumption)",
+                "title":"Exit (out of consumption)",
+                "condition": "true"
+            },
+            "qty_consummed": {
+                "fr": "Qtés consommées",
+                "en": "Qty consummed",
+                "title":"Qty consummed",
+                "condition": "true"
+            },
+            "available_stock": {
+                "fr": "Stock disponible (inventaire physique)",
+                "en": "Available Stock",
+                "title":"Available Stock",
+                "condition": "true"
+            },
+            "inventaire_phsyique": {
+                "fr": "?",
+                "en": "Inventaire Phsyique",
+                "title":"Inventaire Phsyique",
+                "condition": "true"
+            },
+            "number_of_days_out_of_stock": {
+                "fr": "Nb jours rupture de stock",
+                "en": "Number of days out of stock",
+                "title":"Number of days out of stock",
+                "condition": "true"
+            },
+            "qty_of_stock_near_the_expired_date": {
+                "fr": "Qté voie péremption",
+                "en": "Qty of stock near the expired date",
+                "title":"Qty of stock near the expired date",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_resources"
+}

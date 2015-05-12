@@ -1,0 +1,59 @@
+{
+        "title": "",
+        "type": "object",
+        "properties": {
+            "refered_to_the_general_hospital": {
+                "line_number": "1",
+                "fr": "Référés vers HGR",
+                "en": "Refered to the General Hospital",
+                "condition": "subforms.* && subforms.*.referred_to_location === 'general_hospital'"
+            },
+            "refered_by_community_health_workers": {
+                "line_number": "2",
+                "fr": "Référés par les RECO",
+                "en": "Refered by Community Health Workers",
+                "condition": "subforms.* && subforms.*.referred_to_location === 'community_health_workers'"
+            },
+            "new_feminin_cases": {
+                "line_number": "3",
+                "fr": "Nouveaux cas féminins",
+                "en": "New feminin cases",
+                "condition": "patient.gender === 'female'"
+            },
+            "including_pw": {
+                "line_number": "4",
+                "fr": "Dont Femmes enceintes",
+                "en": "Including PW",
+                "condition": "(subforms.hiv_counseling_mother || subforms.anc_first_visit || subforms.anc_followup || subforms.hiv_pregnancy_clinic) || (subforms.immunization && subforms.immunization.pregnant === 'yes') || (subforms.reproductive_counseling && subforms.reproductive_counseling.pregnant === 'yes')"
+            },
+            "indigents": {
+                "line_number": "5",
+                "fr": "Indigents",
+                "en": "Indigents",
+                "condition": "indigent === 'yes'"
+            },
+            "follow_ups_in_observation": {
+                "line_number": "6",
+                "fr": "Suivi en observation",
+                "en": "Follow ups in observation",
+                "condition": "subforms.* && subforms.*.follow_up_recommended === 'yes'"
+            },
+            "children_under_5_deaths": {
+                "line_number": "7",
+                "fr": "Décés enfants <5 ans",
+                "en": "Children under 5 deaths",
+                "condition": "((patient.current_age_years < 5) && ( subforms.disease_diagnosis && subforms.disease_diagnosis.disease_mortality === 'yes')) || (subforms.postnatal && subforms.postnatal.child_diagnoses === 'neonatal_death')"
+            }
+        },
+        "definitions": {
+            "columns": {
+                "number": {
+                    "fr": "Nombre",
+                    "en": "Number",
+                    "title":"Number",
+                    "condition": "true"
+                }
+            }
+        },
+        "parent": "report_screening"
+    }

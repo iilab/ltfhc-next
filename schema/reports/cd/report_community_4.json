@@ -1,0 +1,79 @@
+{
+    "title": "6.3  Consumption of medicines",
+    "fr": "6.3. Consommation des médicaments",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "amoxyciline_250mg_or_syrup_125mg": {
+            "line_number": "1",
+            "fr": "Amoxycilline caps 250 mg ou sirop 125 mg",
+            "en": "Amoxyciline  250mg or Syrup 125mg",
+            "condition": "true"
+        },
+        "artesunate_amodiaquine_2_11_months": {
+            "line_number": "2",
+            "fr": "Artésunate-Amodiaquine (2-11 mois)",
+            "en": "Artesunate-Amodiaquine 2-11 months",
+            "condition": "true"
+        },
+        "artesunate_amodiaquine_12_59_months": {
+            "line_number": "3",
+            "fr": "Artésunate-Amodiaquine (12 -59 mois)",
+            "en": "Artesunate-Amodiaquine 12-59 months",
+            "condition": "true"
+        },
+        "paracetamol_500mg": {
+            "line_number": "4",
+            "fr": "Paracétamol 500mg",
+            "en": "Paracetamol 500mg",
+            "condition": "true"
+        },
+        "ors": {
+            "line_number": "5",
+            "fr": "SRO",
+            "en": "ORS",
+            "condition": "true"
+        },
+        "tdr": {
+            "line_number": "6",
+            "fr": "TDR",
+            "en": "TDR",
+            "condition": "true"
+        },
+        "zinc_20mg": {
+            "line_number": "7",
+            "fr": "Zinc 20 mg",
+            "en": "Zinc 20mg",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "qty_at_beginning": {
+                "fr": "Quantité au début",
+                "en": "Qty at beginning",
+                "title":"Qty at beginning",
+                "condition": "true"
+            },
+            "entries": {
+                "fr": "Entrées",
+                "en": "Entries",
+                "title":"Entries",
+                "condition": "true"
+            },
+            "consumed_qty": {
+                "fr": "Quantité consommée",
+                "en": "Consumed QTY",
+                "title":"Consumed QTY",
+                "condition": "true"
+            },
+            "qty_at_the_end_of_month": {
+                "fr": "Quantité à la fin du mois",
+                "en": "QTY at the end of month",
+                "title":"QTY at the end of month",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_community"
+}

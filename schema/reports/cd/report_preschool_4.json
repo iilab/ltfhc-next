@@ -1,0 +1,100 @@
+{
+    "title": "4.3 Growth follow up at the Pre-scolary consultation (cont)",
+    "fr": "4.3 Suivi de la croissance à la CPS (cont)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "attendance_at_the_beginning_of_the_month_a": {
+            "line_number": "1",
+            "fr": "Effectif au début du mois (a)",
+            "en": "Attendance at the beginning of the month (a)",
+            "condition": "true"
+        },
+        "new_kwashiorkor_admission_b": {
+            "line_number": "2",
+            "fr": "Nouvelles admissions Kwashiorkor (b)",
+            "en": "New Kwashiorkor Admission (b)",
+            "condition": "true"
+        },
+        "new_admission_p_t_3_et_c": {
+            "line_number": "3",
+            "fr": "Nouvelles admissions P/T < < -3 ET (c )",
+            "en": "New Admission P/T<<- 3 ET ( C)",
+            "condition": "true"
+        },
+        "new_admission_pbt_less_than_115mm_d": {
+            "line_number": "4",
+            "fr": "Nouvelles admissions PB ≤115mm (d)",
+            "en": "New Admission PBT< 115mm (d)",
+            "condition": "true"
+        },
+        "unti_referal": {
+            "line_number": "5",
+            "fr": "Référence d’une UNTI",
+            "en": "UNTI referal",
+            "condition": "true"
+        },
+        "untia_referal": {
+            "line_number": "6",
+            "fr": "Référence d’une UNTA",
+            "en": "UNTIA referal",
+            "condition": "true"
+        },
+        "readmisson_after_drop_out": {
+            "line_number": "7",
+            "fr": "Réadmission après abandon",
+            "en": "Readmisson after drop out",
+            "condition": "true"
+        },
+        "total_new_admissions_a_plus_b_plus_c_plus_d": {
+            "line_number": "8",
+            "fr": "Total Nouvelles admissions (a+b+c+d)",
+            "en": "Total New admissions (a+b+c+d)",
+            "condition": "true"
+        },
+        "recovered_rate": {
+            "line_number": "9",
+            "line": "singlecell",
+            "fr": "Taux de guérison=Total enf. guéri x100/Total sorties",
+            "en": "recovered rate= total number of children recovered X 100/total of discharged",
+            "condition": "true"
+        },
+        "deaths_rate": {
+            "line_number": "10",
+            "line": "singlecell",
+            "fr": "Taux de décès=Total enf. décédés x100/Total sortis",
+            "en": "Deaths rate=total number of died children X 100/total discharged",
+            "condition": "true"
+        },
+        "dropped_out_rate": {
+            "line_number": "11",
+            "line": "singlecell",
+            "fr": "Taux d’abandon=Total abandons x 100/Total sorties",
+            "en": "Dropped out rate=total of dropped out X 100/total discharged",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number_of_cases": {
+                "fr": "Nombre de cas",
+                "en": "Number of cases",
+                "title":"Number of cases",
+                "condition": "true"
+            },
+            "high_balanced_malnutrition_uns": {
+                "fr": "Malnutrition aigue modérée (UNS)",
+                "en": "High Balanced Malnutrition UNS",
+                "title":"High Balanced Malnutrition UNS",
+                "condition": "true"
+            },
+            "high_severe_malnutrition_unta": {
+                "fr": "Malnutrition aigue sévère (UNTA)",
+                "en": "High Severe Malnutrition UNTA",
+                "title":"High Severe Malnutrition UNTA",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_preschool"
+}

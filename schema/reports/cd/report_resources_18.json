@@ -1,0 +1,50 @@
+{
+    "title": "8.5 Vaccins and other intrants Management (cont)",
+    "fr": "8.5. Gestion des vaccins et autres intrants (suite)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "nbr_of_liters_in_stock_at_the_beginning_of_the_month": {
+            "line_number": "1",
+            "fr": "Nb litres en stock début de mois",
+            "en": "Nbr of liters in stock at the beginning of the month",
+            "condition": "true"
+        },
+        "nbr_of_entry_liters": {
+            "line_number": "2",
+            "fr": "Nb litres entrées",
+            "en": "Nbr of entry liters",
+            "condition": "true"
+        },
+        "nbr_of_liters_in_stock_at_the_end_of_the_month": {
+            "line_number": "3",
+            "fr": "Nb litres en stock fin du mois",
+            "en": "Nbr of liters in stock at the end of  the month",
+            "condition": "true"
+        },
+        "nbr_of_days_out_of_stock": {
+            "line_number": "4",
+            "fr": "Nb jrs rupture de stock",
+            "en": "Nbr of days out of stock",
+            "condition": "true"
+        },
+        "availability_in_vaccins_rate": {
+            "line_number": "5",
+            "line": "singlecell",
+            "fr": "Taux de disponibilité en vaccins = Nb de vaccin disponible pendant un mois X 100 /Total Besoins requis en vaccin pour un mois",
+            "en": "Availability in vaccins rate = nbr of vaccins available during a  month X 100/total needs required in vaccins for a month",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "paraffin": {
+                "fr": "Pétrole",
+                "en": "Paraffin",
+                "title":"Paraffin",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_resources"
+}

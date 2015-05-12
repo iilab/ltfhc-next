@@ -1,0 +1,7 @@
+couchdb:
+    build: couchdb
+    ports:
+        - 5985:5985
+    volumes:
+        - couchdb/data:/usr/local/var/lib/couchdb
+        - couchdb/logs:/usr/local/var/log/couchdb

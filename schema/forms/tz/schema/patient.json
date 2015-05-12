@@ -33,7 +33,8 @@
             "type": "string"
         },
         "date_age": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
         },
         "current_age_years": {
             "type": "number"

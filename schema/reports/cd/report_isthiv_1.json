@@ -1,0 +1,50 @@
+{
+    "title": "2.3.1 STIs",
+    "en": "2.3.1 STIs",
+    "fr": "2.3.1 IST",
+    "type": "object",
+    "properties": {
+        "new_stis_cases": {
+            "line_number": "1",
+            "fr": "Nouveaux cas IST",
+            "en": "New STIs cases",
+            "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.std_status === 'yes') || ( subforms.disease_diagnosis && ((subforms.disease_diagnosis.diagnosis === 'sti_genital_discharge_syndrome') || (subforms.disease_diagnosis.diagnosis === 'sti_genital_ulcer_diseases') || (subforms.disease_diagnosis.diagnosis === 'sti_pelvic_inflammatory_diseases') || (subforms.disease_diagnosis.diagnosis === 'sexually_transmitted_infections_other'))) || ((subforms.sexual_violence_record && subforms.sexual_violence_record.hiv_status === 'positive') || (subforms.hiv_diagnosis && subforms.hiv_diagnosis.hiv_status === 'positive') || (subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_positive_test === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.first_hiv_status === 'positive') || (subforms.anc_first_visit && subforms.anc_first_visit.second_hiv_test === 'yes') || (subforms.anc_followup && subforms.anc_followup.first_hiv_status === 'positive' && !subforms.anc_followup.second_hiv_test) || (subforms.anc_followup && subforms.anc_followup.second_hiv_test === 'yes'))"
+        },
+        "contact_among_new_stis_cases": {
+            "line_number": "2",
+            "fr": "Contacts parmi les Nouveaux Cas IST",
+            "en": "Contact among new STIs cases",
+            "condition": "false"
+        },
+        "cases_of_stis_councilled_and_hiv_tested": {
+            "line_number": "3",
+            "fr": "Cas IST conseillés et testés au VIH",
+            "en": "Cases of STIs councilled and HIV tested",
+            "condition": "(subforms.anc_first_visit && subforms.anc_first_visit.std_status === 'yes') || subforms.disease_diagnosis && ((subforms.disease_diagnosis.diagnosis === 'sti_genital_discharge_syndrome') || (subforms.disease_diagnosis.diagnosis === 'sti_genital_ulcer_diseases') || (subforms.disease_diagnosis.diagnosis === 'sti_pelvic_inflammatory_diseases') || (subforms.disease_diagnosis.diagnosis === 'sexually_transmitted_infections_other')) && ((subforms.reproductive_counseling && subforms.reproductive_counseling.hiv_tested === 'yes') || (subforms.hiv_counseling_mother && subforms.hiv_counseling_mother.hiv_test === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_first_visit && subforms.anc_first_visit.tested_hiv_firstvisit === 'yes') || (subforms.anc_followup && subforms.anc_followup.tested_hiv_firstvisit === 'yes'))"
+        },
+        "stis_cases_treated_under_syndromic_approach": {
+            "line_number": "4",
+            "fr": "Cas IST traités selon l’approche syndromique",
+            "en": "STIs cases treated under syndromic approach",
+            "condition": "false"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_isthiv",
+    "overrides": {
+        "predefined": [
+            {"row": "contact_among_new_stis_cases", "col": "number", "value": ""},
+            {"row": "stis_cases_treated_under_syndromic_approach", "col": "number", "value": ""},
+            {"row": "number_of_new_cases_io", "col": "total", "value": ""}
+        ]
+    }
+}

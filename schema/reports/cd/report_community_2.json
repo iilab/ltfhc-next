@@ -1,0 +1,61 @@
+{
+    "title": "6.2 Treatment and Notification",
+    "fr": "6.2 Notification et traitement",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "new_children_cases_receivedat_the_site": {
+            "line_number": "1",
+            "fr": "Nouveaux cas enfants reçus au site",
+            "en": "New children cases receivedat the site",
+            "condition": "true"
+        },
+        "nbr_of_old_cases_received_at_the_site": {
+            "line_number": "2",
+            "fr": "Nombre d’anciens cas reçus au site",
+            "en": "Nbr of old cases received at the site",
+            "condition": "true"
+        },
+        "nbr_of_referals_to_hc": {
+            "line_number": "3",
+            "fr": "Nombre de référés vers CS",
+            "en": "Nbr of referals to HC",
+            "condition": "true"
+        },
+        "nbr_of_contre_refered": {
+            "line_number": "4",
+            "fr": "Nombre de contre-référés",
+            "en": "Nbr of contre - refered",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "as": {
+                "fr": "AS",
+                "en": "AS",
+                "title": "AS",
+                "condition": "true"
+            },
+            "has": {
+                "fr": "HAS",
+                "en": "HAS",
+                "title": "HAS",
+                "condition": "true"
+            },
+            "hz": {
+                "fr": "HZ",
+                "en": "HZ",
+                "title": "HZ",
+                "condition": "true"
+            },
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title": "Total",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_community"
+}

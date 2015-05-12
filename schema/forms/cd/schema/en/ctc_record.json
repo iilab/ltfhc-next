@@ -1,0 +1,145 @@
+{
+  "$schema": "http://json_schema.org/draft-04/schema#",
+  "_id": "ctc_record",
+  "title": "CTC Patient Record",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "ctc_id_number": {
+      "type": "string"
+    },
+    "height_cm": {
+      "type": "string"
+    },
+    "transferred_in_with": {
+      "type": "string",
+      "$ref": "./lists/#transferred_from"
+    },
+    "district_div_ward": {
+      "type": "string"
+    },
+    "steet_village": {
+      "type": "string"
+    },
+    "village_chairman": {
+      "type": "string"
+    },
+    "ten_cell_leader": {
+      "type": "string"
+    },
+    "head_of_household": {
+      "type": "string"
+    },
+    "contact_household_head": {
+      "type": "string"
+    },
+    "treatment_support": {
+      "type": "string"
+    },
+    "contact_treatment_support": {
+      "type": "string"
+    },
+    "joined_community_support": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "prior_arv_expos": {
+      "type": "string",
+      "$ref": "./lists/#arv_exposure"
+    },
+    "arv_treatment": {
+      "type": "string",
+      "$ref": "./lists/#arv_treatment"
+    },
+    "arv_treatment_duration": {
+      "type": "string",
+      "$ref": "./lists/#arv_treatment_duration"
+    },
+    "sexual_violence": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "date_confirmed_hiv": {
+      "type": "date",
+      "format": "date"
+    },
+    "date_enrolled": {
+      "type": "date",
+      "format": "date"
+    },
+    "date_medically_elig": {
+      "type": "date",
+      "format": "date"
+    },
+    "date_elig_ready": {
+      "type": "date",
+      "format": "date"
+    },
+    "date_art": {
+      "type": "date",
+      "format": "date"
+    },
+    "tb_reg_num": {
+      "type": "string"
+    },
+    "hbc_num": {
+      "type": "string"
+    },
+    "who_stage": {
+      "type": "string",
+      "$ref": "./lists/#who_score"
+    },
+    "cd4_count": {
+      "type": "string"
+    },
+    "age_start_art": {
+      "type": "string"
+    },
+    "who_stage_start_art": {
+      "type": "string",
+      "$ref": "./lists/#who_score"
+    },
+    "cd4_start_art": {
+      "type": "string"
+    },
+    "body_weight_start_art": {
+      "type": "string"
+    },
+    "functional_status": {
+      "type": "string",
+      "$ref": "./lists/#functional_status"
+    },
+    "admission": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "referred_to_elsewhere": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "referred_to_location": {
+      "type": "string",
+      "$ref": "./lists/#referral_locations"
+    },
+    "follow_up_recommended": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    }
+  }
+}

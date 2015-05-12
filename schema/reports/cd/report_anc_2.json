@@ -1,0 +1,69 @@
+{
+    "title": "3.1. Antenatal Clinic Indicators",
+    "en": "3.1. Antenatal Clinic",
+    "fr": "3.1. Consultation Prénatale (CPN)",
+    "manual": "true",
+    "type": "object",
+    "properties": {
+        "target_population": {
+            "line_number": "21",
+            "line": "singlecell",
+            "fr": "Population cible = fe du mois",
+            "en": "target population= monthly woman",
+            "condition": "false"
+        },
+        "anc_sessions": {
+            "line_number": "22",
+            "line": "singlecell",
+            "fr": "Séances de CPN",
+            "en": "ANC sessions",
+            "condition": "false"
+        },
+        "used_rate_anc": {
+            "line_number": "23",
+            "line": "singlecell",
+            "fr": "Taux d’utilisation CPN = CPN 1 AS (Nlles inscrites)x 100/ Pop femmes enceintes du mois",
+            "en": "Used rate ANC= ANC 1 AS (new registered)X100/pop monthly pregnant women",
+            "condition": "false"
+        },
+        "pregnacies_at_high_risk_detected": {
+            "line_number": "24",
+            "line": "singlecell",
+            "fr": "Proportion de grossesses à haut risque détectées = Tot Grossesses à haut risque détectées x 100 / Total Nlles Inscrites",
+            "en": "Pregnacies at high risk detected = total pregnancies at high risk detected X100/tota new registered",
+            "condition": "false"
+        },
+        "pregnancies_at_high_risk_avarage_refered": {
+            "line_number": "25",
+            "line": "singlecell",
+            "fr": "Proportion de grossesses à haut risque référées = Tot Grossesses à haut risque référées x 100 / Total femmes à hauts risques détectées inscrites",
+            "en": "Pregnancies at high risk avarage refered= total pregnanciesat high risk refered X100/total women at high risk detected registered",
+            "condition": "false"
+        },
+        "average_of_women_who_received_at_least_the_sp2": {
+            "line_number": "26",
+            "line": "singlecell",
+            "fr": "Proportion de fe ayant reçu au moins la SP 2 = Nombre de femmes enceintes ayant reçu au moins 2 Quantité de SPX100 / Fe ayant effectué la première visite prénatale",
+            "en": "Average of women who received at least the SP2= number of pregnant women Who received at least 2 quantities of SPX100/woman who was visited for the 1st time at ANC",
+            "condition": "false"
+        },
+        "average_of_pregnant_women_who_received_one_mild_at_anc": {
+            "line_number": "27",
+            "line": "singlecell",
+            "fr": "Proportion des femmes enceintes ayant reçues une MILD à la CPN = femmes enceintes ayant acquis MILD X 100/ Total CPN1",
+            "en": "Average of pregnant women who received one MILD at ANC= Pregnant woman who required a MILD X100/total ANC 1",
+            "condition": "false"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title": "Total",
+                "condition": "false"
+            }
+        }
+    },
+    "parent": "report_anc"
+}

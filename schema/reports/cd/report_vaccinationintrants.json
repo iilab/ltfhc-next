@@ -1,0 +1,171 @@
+{
+    "title": "Form 1: Vaccines/Intrants management",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "bcg": {
+            "line_number": "1",
+            "fr": "BCG",
+            "en": "BCG",
+            "condition": "true"
+        },
+        "bcg_diluant": {
+            "line_number": "2",
+            "fr": "Diluant BCG ",
+            "en": "BCG Diluant",
+            "condition": "true"
+        },
+        "dtc_hepb_hib": {
+            "line_number": "3",
+            "fr": "DTC-HepB-Hib",
+            "en": "DTC-HepB-Hib",
+            "condition": "true"
+        },
+        "pneumo": {
+            "line_number": "4",
+            "fr": "PNEUMO",
+            "en": "PNEUMO",
+            "condition": "true"
+        },
+        "vpo": {
+            "line_number": "5",
+            "fr": "VPO",
+            "en": "VPO",
+            "condition": "true"
+        },
+        "var": {
+            "line_number": "6",
+            "fr": "VAR",
+            "en": "VAR",
+            "condition": "true"
+        },
+        "var_diluant": {
+            "line_number": "7",
+            "fr": "Diluant VAR",
+            "en": "VAR Diluant",
+            "condition": "true"
+        },
+        "vaa": {
+            "line_number": "8",
+            "fr": "VAA",
+            "en": "VAA",
+            "condition": "true"
+        },
+        "vaa_diluant": {
+            "line_number": "9",
+            "fr": "Diluant VAA",
+            "en": "VAA Diluant",
+            "condition": "true"
+        },
+        "vat": {
+            "line_number": "10",
+            "fr": "VAT",
+            "en": "VAT",
+            "condition": "true"
+        },
+        "sab_bcg": {
+            "line_number": "11",
+            "fr": "SAB BCG",
+            "en": "SAB BCG",
+            "condition": "true"
+        },
+        "sab": {
+            "line_number": "12",
+            "fr": "SAB",
+            "en": "SAB",
+            "condition": "true"
+        },
+        "dilution_2ml": {
+            "line_number": "13",
+            "fr": "Dilution 2m1",
+            "en": "Dilution2ml",
+            "condition": "true"
+        },
+        "dilution_5ml": {
+            "line_number": "14",
+            "fr": "Dilution 5m1",
+            "en": "Dilution5ml",
+            "condition": "true"
+        },
+        "receptacles": {
+            "line_number": "15",
+            "fr": "Receptacles",
+            "en": "Receptacles",
+            "condition": "true"
+        },
+        "paraffin": {
+            "line_number": "16",
+            "fr": "Petrole",
+            "en": "Paraffin",
+            "condition": "true"
+        },
+        "doses_administered": {
+            "line_number": "17",
+            "line": "singlecell",
+            "fr": "1. Doses administrees = Nombre totald'enfants de moins d'un an vaccines",
+            "en": "1.Doses administered= Total number of children below one year who are vaccinated",
+            "condition": "true"
+        },
+        "used_doses": {
+            "line_number": "18",
+            "line": "singlecell",
+            "fr": "2, Doses utilisees = (doses au debut du mois + doses revues au cours du mois) - doses a la fin du mois",
+            "en": "2. Used doses: (doses at the bigining of the month+ doses received during the month) - doses at the end of the month",
+            "condition": "true"
+        },
+        "lost_doses": {
+            "line_number": "19",
+            "line": "singlecell",
+            "fr": "3, Doses perdues = (doses utilisees + flacons entames + doses utilisees des enfants de plus d'un an + doses flacons vires + doses flacons perimes + doses flacons casses) - doses administrees aux enfants de moins d'un an",
+            "en": "3. Lost doses = (used doses+ started vials+ doses used for children above one year+ collected expired vials pus  doses broken vials) minus doses administered to children bellow one year",
+            "condition": "true"
+        },
+        "doses_at_the_bigining_and_the_end_of_the_month": {
+            "line_number": "20",
+            "line": "singlecell",
+            "fr": "4,Doses au debut du mois et Doses a la fin du mois: ces colonnes ne sont remplies que par les centres de sante ayant un refrigerateur",
+            "en": "4.Doses at the bigining and the end of the month: these colms are only filled by the health centre which have",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "vaccines_intrants": {
+                "fr": "VACCINES/INTRANTS",
+                "en": "VACCINES/INTRANTS",
+                "title":"VACCINES/INTRANTS",
+                "condition": "true"
+            },
+            "dose_quantity_bigining_of_the_month": {
+                "fr": "* Doses/Cite au debut du mois *",
+                "en": "Dose/quantity bigining of the month",
+                "title":"Dose/quantity bigining of the month",
+                "condition": "true"
+            },
+            "doses_quantity_received_during_the_month": {
+                "fr": "Doses/ate revues au cours du mois",
+                "en": "Doses/quantity received during the month",
+                "title":"Doses/quantity received during the month",
+                "condition": "true"
+            },
+            "doses_quantity_administered": {
+                "fr": "Doses/Qte Administrees",
+                "en": "Doses/quantity Administered",
+                "title":"Doses/quantity Administered",
+                "condition": "true"
+            },
+            "doses_quantity_used": {
+                "fr": "Doses/ate Utilisees2",
+                "en": "Doses/quantity used",
+                "title":"Doses/quantity used",
+                "condition": "true"
+            },
+            "dose_quantity_lost": {
+                "fr": "Doses/ate Perdues2",
+                "en": "Dose/quantity lost",
+                "title":"Dose/quantity lost",
+                "condition": "true"
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "title": "3.5.2 Deliveries in the community",
+    "fr": "3.5.2 Accouchements dans la communauté",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "eutocic_deliveries": {
+            "line_number": "1",
+            "fr": "Accouchements par accoucheuse traditionnelle",
+            "en": "Deliveries assisted by TBA",
+            "condition": "true"
+        },
+        "dystocic_deliveries": {
+            "line_number": "2",
+            "fr": "Dont Accouchements par accoucheuses traditionnellesrecyclées",
+            "en": "Including deliverie by trained TBAs",
+            "condition": "true"
+        },
+        "including_20_yrs": {
+            "line_number": "3",
+            "fr": "Dont référés au CS",
+            "en": "Including the refered to Health center",
+            "condition": "true"
+        },
+        "including_watched_out": {
+            "line_number": "4",
+            "fr": "Total accouchement dans la communauté",
+            "en": "Total deliveries in the community",
+            "condition": "true"
+        },
+        "rate_of_deliveries_assited_by_qualified_personnel": {
+            "line_number": "5",
+            "line": "singlecell",
+            "fr": "Taux d'accouchements assistés par du personnel qualifié = Nb total d’Accouchements en présence d'un personnelqualifié/formé X 100 / Total accouchements attendus",
+            "en": "rate of deliveries assited by qualified personnel=tottal of deliveries in presence of one qualified personnel/trainedX100/total number of deliveries attended",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_pregnant"
+}

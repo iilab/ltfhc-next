@@ -1,0 +1,148 @@
+{
+    "title": "1. Antenatal Care re-centered",
+    "fr": "1. CPN recentrée",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "targeted_population": {
+            "line_number": "1",
+            "fr": "Pop. Cible",
+            "en": "Targeted Population",
+            "condition": "true"
+        },
+        "total_new_cases": {
+            "line_number": "2",
+            "fr": "Total  Nouveaux  Cas",
+            "en": "Total  new cases",
+            "condition": "true"
+        },
+        "new_registered_12_19_years": {
+            "line_number": "3",
+            "fr": "Nouvelles  inscrites  12 -  19  ans",
+            "en": "New registered 12-19 years",
+            "condition": "true"
+        },
+        "nber_of_pw_who_received_fer_folate": {
+            "line_number": "4",
+            "fr": "Nbre de  femmes  enceintes  ayant regu  le  Fer  folate",
+            "en": "Nber of PW who received Fer Folate",
+            "condition": "true"
+        },
+        "nber_of_pw_who_received_sp": {
+            "line_number": "5",
+            "fr": "Nombre  de femmes  enceintes ayant  regu  la  SP",
+            "en": "Nber of PW who received SP",
+            "condition": "true"
+        },
+        "nber_of_pw_who_received_vermifuge": {
+            "line_number": "6",
+            "fr": "Nombre  de  Femmes  enceintes ayant  regu  le  Vermifuge",
+            "en": "Nber of PW who received Vermifuge",
+            "condition": "true"
+        },
+        "nber_of_pw_sleeping_under_tmn": {
+            "line_number": "7",
+            "fr": "Nombre  de  Femmes  enceintes dormant  sous  Mll",
+            "en": "Nber of PW sleeping under TMN",
+            "condition": "true"
+        },
+        "nber_of_pw_who_received_vat2_fcv": {
+            "line_number": "8",
+            "fr": "Nombre  de femmes  enceintes ayant  regu VAT2+ et FCV (Femmes compldtement vaccinées)",
+            "en": "Nber of PW who received VAT2+ FCV",
+            "condition": "true"
+        },
+        "nber_of_pw_who_completed_the_4_visits": {
+            "line_number": "9",
+            "fr": "Nombre  de  femmes  enceintes ayant  accompli  les  4  visites",
+            "en": "Nber of PW who completed the 4 visits",
+            "condition": "true"
+        },
+        "nber_of_pw_who_have_delivery_plan": {
+            "line_number": "10",
+            "fr": "Nombre  de  femmes  enceintes ayant  un plan  d'accouchement",
+            "en": "Nber of PW who have delivery plan",
+            "condition": "true"
+        },
+        "nber_of_pw_referred": {
+            "line_number": "11",
+            "fr": "Nombre  de  femmes  enceintes referees",
+            "en": "Nber of PW referred",
+            "condition": "true"
+        },
+        "province": {
+            "line_number": "12",
+            "line": "singlecell",
+            "fr": "Province",
+            "en": "Province",
+            "condition": "true"
+        },
+        "district": {
+            "line_number": "13",
+            "line": "singlecell",
+            "fr": "District",
+            "en": "District",
+            "condition": "true"
+        },
+        "health_zone": {
+            "line_number": "14",
+            "line": "singlecell",
+            "fr": "Zone  de  Sante",
+            "en": "Health Zone",
+            "condition": "true"
+        },
+        "health_center_maternity": {
+            "line_number": "15",
+            "line": "singlecell",
+            "fr": "CS/Maternite",
+            "en": "Health Center/Maternity",
+            "condition": "true"
+        },
+        "responsible": {
+            "line_number": "16",
+            "line": "singlecell",
+            "fr": "Responsable",
+            "en": "Responsible",
+            "condition": "true"
+        },
+        "covered_population": {
+            "line_number": "17",
+            "line": "singlecell",
+            "fr": "Population  couverte  par la  structure",
+            "en": "Covered population",
+            "condition": "true"
+        },
+        "month": {
+            "line_number": "18",
+            "line": "singlecell",
+            "fr": "Mois de",
+            "en": "Month",
+            "condition": "true"
+        },
+        "year": {
+            "line_number": "19",
+            "line": "singlecell",
+            "fr": "Annee",
+            "en": "Year",
+            "condition": "true"
+        },
+        "health_area": {
+            "line_number": "20",
+            "line": "singlecell",
+            "fr": "Aire  de  sante",
+            "en": "Health Area",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_reprohealth"
+}

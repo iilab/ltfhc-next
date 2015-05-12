@@ -21,3 +21,8 @@ erl_crash.dump
 *.sublime-workspace
 .DS_Store
 
+/couchdb/data
+/couchdb/logs
+/kanso.json
+/node_modules
+tests/node_modules

@@ -1,0 +1,139 @@
+{
+    "title": "8.3.1 Monthly Income",
+    "fr": "8.3.1 Entrées du mois",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "sold_of_the_month_previous": {
+            "line_number": "1",
+            "fr": "Solde mois précédent",
+            "en": "Sold of the month Previous",
+            "condition": "true"
+        },
+        "medicines": {
+            "line_number": "2",
+            "fr": "Médicaments",
+            "en": "Medicines",
+            "condition": "true"
+        },
+        "laboratory": {
+            "line_number": "3",
+            "fr": "Laboratoire",
+            "en": "Laboratory",
+            "condition": "true"
+        },
+        "curative_consultation": {
+            "line_number": "4",
+            "fr": "Cons. Curative",
+            "en": "Curative consultation",
+            "condition": "true"
+        },
+        "anc": {
+            "line_number": "5",
+            "fr": "CPN",
+            "en": "ANC",
+            "condition": "true"
+        },
+        "psc": {
+            "line_number": "6",
+            "fr": "CPS",
+            "en": "PSC",
+            "condition": "true"
+        },
+        "deliveries": {
+            "line_number": "7",
+            "fr": "Accouchement",
+            "en": "Deliveries",
+            "condition": "true"
+        },
+        "small_surgery": {
+            "line_number": "8",
+            "fr": "Petite chirurgie",
+            "en": "Small surgery",
+            "condition": "true"
+        },
+        "observation": {
+            "line_number": "9",
+            "fr": "Observation",
+            "en": "Observation",
+            "condition": "true"
+        },
+        "print": {
+            "line_number": "10",
+            "fr": "Imprimés",
+            "en": "Print",
+            "condition": "true"
+        },
+        "sub_total_local_contribution_a": {
+            "line_number": "11",
+            "fr": "Sous-Total Contributions Locales (a)",
+            "en": "Sub total local contribution (a)",
+            "condition": "true"
+        },
+        "subvention_and_state_subsides": {
+            "line_number": "12",
+            "fr": "Subvention et subsides Etat",
+            "en": "Subvention and state subsides",
+            "condition": "true"
+        },
+        "subvention_and_partener_subsides": {
+            "line_number": "13",
+            "fr": "Subvention et subsides Partenaires",
+            "en": "Subvention and partener subsides",
+            "condition": "true"
+        },
+        "subvention_and_other_subsides": {
+            "line_number": "14",
+            "fr": "Subventions et subsides autres",
+            "en": "Subvention and other subsides",
+            "condition": "true"
+        },
+        "sub_total_of_external_support_b": {
+            "line_number": "15",
+            "fr": "Sous-Total Appuis Extérieurs(b)",
+            "en": "Sub total of External support (b)",
+            "condition": "true"
+        },
+        "reimboursement_patients_loan": {
+            "line_number": "16",
+            "fr": "Remb. Crédits patients",
+            "en": "Reimboursement patient's loan",
+            "condition": "true"
+        },
+        "credit": {
+            "line_number": "17",
+            "fr": "Emprunts",
+            "en": "Credit",
+            "condition": "true"
+        },
+        "installements": {
+            "line_number": "18",
+            "fr": "Retour Prêts/ avances",
+            "en": "Installements",
+            "condition": "true"
+        },
+        "sub_total_of_other_business_recoveries_c": {
+            "line_number": "19",
+            "fr": "Sous-Total Recouvrements divers (c )",
+            "en": "Sub total of other business recoveries(c)",
+            "condition": "true"
+        },
+        "total_a_b_c": {
+            "line_number": "20",
+            "fr": "TOTAL (a+b+c)",
+            "en": "TOTAL (a+b+c)",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "amount": {
+                "fr": "Montant",
+                "en": "Amount",
+                "title":"Amount",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_resources"
+}

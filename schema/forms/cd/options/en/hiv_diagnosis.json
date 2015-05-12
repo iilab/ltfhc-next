@@ -1,0 +1,128 @@
+{
+  "fields": {
+    "hiv_status_prior": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "Known HIV Status prior to visit"
+    },
+    "hiv_partner_status_prior": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "Known HIV Partner status prior to visit"
+    },
+    "hiv_tested": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Tested for HIV on this visit?"
+    },
+    "hiv_status": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "HIV test results for this visit?"
+    },
+    "post_test_counseling": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Post-test HIV counseling given?"
+    },
+    "hiv_partner_tested": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Partner tested for HIV on this visit?"
+    },
+    "hiv_partner_status": {
+      "type": "radio",
+      "removeDefaultNone": true,
+      "label": "Partner HIV test results?"
+    },
+    "hiv_partner_visit_recorded": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Partner visit recorded?",
+      "helper": "Please create a new visit entry for the partner's HIV diagnosis"
+    },
+    "hiv_discordant": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "HIV discordant couple?"
+    },
+    "hiv_counseling": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "HIV counseling given?"
+    },
+    "hiv_partner_counseling": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "HIV counseling given to partner?"
+    },
+    "art_drugs": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Patient given ART?"
+    },
+    "combo_drugs": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Patient given PMCTC combo drugs?"
+    },
+    "referred_to_elsewhere": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "Referred to another facility?"
+    },
+    "referred_to_location": {
+      "type": "select",
+      "label": "If Yes, which facility was the patient referred to?"
+    },
+    "follow_up_recommended": {
+      "type": "radio",
+      "enum": [
+        "Yes",
+        "No"
+      ],
+      "removeDefaultNone": true,
+      "label": "A follow up visit has been recommended"
+    }
+  }
+}

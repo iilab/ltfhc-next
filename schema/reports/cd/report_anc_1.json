@@ -1,0 +1,140 @@
+{
+    "title": "3.1. Antenatal Clinic",
+    "en": "3.1. Antenatal Clinic",
+    "fr": "3.1. Consultation Prénatale (CPN)",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "antenatal_clinic_visit_1": {
+            "line_number": "1",
+            "fr": "Visites CPN 1",
+            "en": "Antenatal Clinic visit 1",
+            "condition": "false"
+        },
+        "pregnant_women_less_than_20_yrs": {
+            "line_number": "2",
+            "fr": "Femmes enceintes < 20 Ans",
+            "en": "Pregnant women less than 20 yrs",
+            "condition": "false"
+        },
+        "antenatal_clinic_visit_2": {
+            "line_number": "3",
+            "fr": "Visites CPN 2",
+            "en": "Antenatal Clinic visit 2",
+            "condition": "false"
+        },
+        "antenatal_clinic_visit_3": {
+            "line_number": "4",
+            "fr": "Visites CPN 3",
+            "en": "Antenatal Clinic visit 3",
+            "condition": "false"
+        },
+        "antenatal_clinic_vist_4": {
+            "line_number": "5",
+            "fr": "Visites CPN 4",
+            "en": "Antenatal Clinic vist 4",
+            "condition": "false"
+        },
+        "pregnant_women_who_realised_the_antenatal_cininc_1st_term": {
+            "line_number": "6",
+            "fr": "Femmes enceinte ayant réalisé la CPN1 au 1er trimestre",
+            "en": "Pregnant women who realised the Antenatal cininc 1st term",
+            "condition": "false"
+        },
+        "pregnant_women_with_anc4_during_their_last_pregnancy": {
+            "line_number": "7",
+            "fr": "Femmes enceinte avec CPN 4 pendant leur dernière grossesse",
+            "en": "Pregnant women with ANC4 during their last pregnancy",
+            "condition": "false"
+        },
+        "pregnant_women_with_anc4_with_one_at_8th_or_9th_month": {
+            "line_number": "8",
+            "fr": "Femmes enceinte avec CPN 4 dont une au 8ème-9ème mois",
+            "en": "Pregnant women with ANC4  with one at 8th or 9th month",
+            "condition": "false"
+        },
+        "tested_pregnant_women_at_risk": {
+            "line_number": "9",
+            "fr": "Femmes enceinte à risque détectées",
+            "en": "Tested Pregnant women at risk",
+            "condition": "false"
+        },
+        "refered_pregant_women_at_risk_to_the_general_hospital": {
+            "line_number": "10",
+            "fr": "Femmes enceinte à risque référée vers l'HGR",
+            "en": "Refered Pregant women at risk to the general hospital",
+            "condition": "false"
+        },
+        "pregnant_women_under_20_yrs_refered": {
+            "line_number": "11",
+            "fr": "Femmes enceintes < 20 Ans référées",
+            "en": "Pregnant women under 20 yrs refered",
+            "condition": "false"
+        },
+        "iron_plus_folic_acid_1st_dose_received": {
+            "line_number": "12",
+            "fr": "Fer + Acide Folique 1ère dose reçue",
+            "en": "Iron + folic acid 1st dose received",
+            "condition": "false"
+        },
+        "iron_plus_folic_acid_2nd_dose_received": {
+            "line_number": "13",
+            "fr": "Fer + Acide Folique 2ème dose reçues",
+            "en": "Iron + folic acid 2nd dose received",
+            "condition": "false"
+        },
+        "iron_plus_folic_acid_3rd_dose_received": {
+            "line_number": "14",
+            "fr": "Fer + Acide Folique 3ème dose reçue",
+            "en": "Iron + folic acid 3rd dose received",
+            "condition": "false"
+        },
+        "sulfadox_plus_pyrimet_1st_dose_received": {
+            "line_number": "15",
+            "fr": "Sulfadox. + Pyrimét 1ère dose reçue",
+            "en": "Sulfadox + Pyrimet 1st dose received",
+            "condition": "false"
+        },
+        "sulfadox_plus_pyrimet_2nd_dose_received": {
+            "line_number": "16",
+            "fr": "Sulfadox. + Pyrimét 2ème dose reçues",
+            "en": "Sulfadox + Pyrimet 2nd dose received",
+            "condition": "false"
+        },
+        "sulfadox_plus_pyrimet_3rd_dose_received": {
+            "line_number": "17",
+            "fr": "Sulfadox. + Pyrimét 3ème dose reçue",
+            "en": "Sulfadox + Pyrimet 3rd dose received",
+            "condition": "false"
+        },
+        "completed_vaccinated_before_pregnancy": {
+            "line_number": "18",
+            "fr": "Complètement vaccinées avant grossesse",
+            "en": "Completed vaccinated before pregnancy",
+            "condition": "false"
+        },
+        "who_required_the_mild": {
+            "line_number": "19",
+            "fr": "Ayant acquis une MILD",
+            "en": "Who required the MILD",
+            "condition": "false"
+        },
+        "who_received_mebendazole_since_the_2nd_term": {
+            "line_number": "20",
+            "fr": "Ayant reçu le Mébendazole à partir du 2ème trimestre",
+            "en": "Who received Mebendazole since the 2nd term",
+            "condition": "false"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "total": {
+                "fr": "Total",
+                "en": "Total",
+                "title": "Total",
+                "condition": "false"
+            }
+        }
+    },
+    "parent": "report_anc"
+}

@@ -258,20 +258,25 @@ exports.stringifyQuery = function (query) {
  */
 
 exports.request = function (options, callback) {
-    var key = JSON.stringify(options);
-
-    if (!requestCache[key] || /^\/?_/.test(options.url)) {
-        // removed in onComplete
-        //$(document.body).addClass('loading');
-        requestCache[key] = true;
-        setTimeout(function() {
-            delete requestCache[key];
-        }, 400);
+    if (/^\/?_/.test(options.url)) {
         options.complete = onComplete(options, callback);
         options.dataType = 'json';
         $.ajax(options);
-    } else if (requestCache[key]) {
-        callback("", JSON.parse(key).data)        
+    } else {
+        var key = JSON.stringify(options);
+        if (!requestCache[key]) {
+            requestCache[key] = [callback];
+            options.complete = onComplete(options, function(err, response) {
+                _.each(requestCache[key], function(cb_fn) {
+                    cb_fn(err, response);
+                });
+                requestCache[key] = undefined;
+            });
+            options.dataType = 'json';
+            $.ajax(options);
+        } else {
+            requestCache[key].push(callback);
+        }
     }
 };
 
@@ -566,7 +571,7 @@ DB.prototype.getDoc = function (id, /*optional*/q, callback) {
     var req = {
         url: this.url + '/' + exports.encode(id),
         expect_json: true,
-				async:false,
+        async:false,
         data: data
     };
     exports.request(req, callback);
@@ -605,7 +610,6 @@ DB.prototype.saveDoc = function (doc, callback) {
         data: data,
         processData: false,
         contentType: 'application/json',
-				async:false,
         expect_json: true
     };
     exports.request(req, callback);

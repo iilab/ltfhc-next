@@ -1,0 +1,265 @@
+{
+    "title": "9. Family planning",
+    "fr": "9. Planification familiale",
+    "type": "object",
+    "manual": "true",
+    "properties": {
+        "target_population": {
+            "line_number": "1",
+            "fr": "Pop. cible",
+            "en": "Target Population",
+            "condition": "true"
+        },
+        "depo_inj": {
+            "line_number": "2",
+            "fr": "Injection Depo",
+            "en": "DEPO Inj",
+            "condition": "true"
+        },
+        "nc_2a": {
+            "line_number": "2a",
+            "fr": "Nouveaux cas",
+            "en": "New cases",
+            "condition": "true"
+        },
+        "ac_2b": {
+            "line_number": "2b",
+            "fr": "Ancien cas",
+            "en": "AC",
+            "condition": "true"
+        },
+        "qty_2c": {
+            "line_number": "2c",
+            "fr": "Qty",
+            "en": "Qty",
+            "condition": "true"
+        },
+        "apc_2d": {
+            "line_number": "2d",
+            "fr": "Année de Protection Couple",
+            "en": "APC",
+            "condition": "true"
+        },
+        "pills": {
+            "line_number": "3",
+            "fr": "Pilule",
+            "en": "Pills",
+            "condition": "true"
+        },
+        "nc_3a": {
+            "line_number": "3a",
+            "fr": "Nouveaux cas",
+            "en": "New cases",
+            "condition": "true"
+        },
+        "ac_3b": {
+            "line_number": "3b",
+            "fr": "Ancien cas",
+            "en": "AC",
+            "condition": "true"
+        },
+        "qty_3c": {
+            "line_number": "3c",
+            "fr": "Qte",
+            "en": "Qty",
+            "condition": "true"
+        },
+        "apc_3d": {
+            "line_number": "3d",
+            "fr": "Année de Protection Couple",
+            "en": "APC",
+            "condition": "true"
+        },
+        "iud_sterilet": {
+            "line_number": "4",
+            "fr": "DIU/STERILET",
+            "en": "IUD/STERILET",
+            "condition": "true"
+        },
+        "nc_4a": {
+            "line_number": "4a",
+            "fr": "Nouveaux cas",
+            "en": "New cases",
+            "condition": "true"
+        },
+        "ac_4b": {
+            "line_number": "4b",
+            "fr": "Ancien cas",
+            "en": "AC",
+            "condition": "true"
+        },
+        "qty_4c": {
+            "line_number": "4c",
+            "fr": "QTE",
+            "en": "QTY",
+            "condition": "true"
+        },
+        "apc_4d": {
+            "line_number": "4d",
+            "fr": "Année de Protection Couple",
+            "en": "A.P.C",
+            "condition": "true"
+        },
+        "implant": {
+            "line_number": "5",
+            "fr": "IMPLANT",
+            "en": "IMPLANT",
+            "condition": "true"
+        },
+        "nc_5a": {
+            "line_number": "5a",
+            "fr": "Nouveaux cas",
+            "en": "New cases",
+            "condition": "true"
+        },
+        "ac_5b": {
+            "line_number": "5b",
+            "fr": "Ancien cas",
+            "en": "AC",
+            "condition": "true"
+        },
+        "qty_5c": {
+            "line_number": "5c",
+            "fr": "QTE",
+            "en": "QTY",
+            "condition": "true"
+        },
+        "apc_5d": {
+            "line_number": "5d",
+            "fr": "Année de Protection Couple",
+            "en": "A.P.C",
+            "condition": "true"
+        },
+        "mao_confirmed": {
+            "line_number": "6",
+            "fr": "MAO Confirmee",
+            "en": "MAO Confirmed",
+            "condition": "true"
+        },
+        "nc_6a": {
+            "line_number": "6a",
+            "fr": "Nouveaux cas",
+            "en": "New cases",
+            "condition": "true"
+        },
+        "ac_6b": {
+            "line_number": "6b",
+            "fr": "Ancien cas",
+            "en": "AC",
+            "condition": "true"
+        },
+        "qty_6c": {
+            "line_number": "6c",
+            "fr": "QTE",
+            "en": "QTY",
+            "condition": "true"
+        },
+        "apc_6d": {
+            "line_number": "6d",
+            "fr": "Année de Protection Couple",
+            "en": "A.P.C",
+            "condition": "true"
+        },
+        "mjf": {
+            "line_number": "7",
+            "fr": "MJF",
+            "en": "MJF",
+            "condition": "true"
+        },
+        "nc_7a": {
+            "line_number": "7a",
+            "fr": "Nouveaux cas",
+            "en": "New cases",
+            "condition": "true"
+        },
+        "ac_7b": {
+            "line_number": "7b",
+            "fr": "Ancien cas",
+            "en": "A.C",
+            "condition": "true"
+        },
+        "qty_7c": {
+            "line_number": "7c",
+            "fr": "QTE",
+            "en": "QTY",
+            "condition": "true"
+        },
+        "apc_7d": {
+            "line_number": "7d",
+            "fr": "Année de Protection Couple",
+            "en": "A.P.C",
+            "condition": "true"
+        },
+        "preservatifs": {
+            "line_number": "8",
+            "fr": "PRESERVATIFS",
+            "en": "PRESERVATIFS",
+            "condition": "true"
+        },
+        "nc_8a": {
+            "line_number": "8a",
+            "fr": "Nouveaux cas",
+            "en": "New cases",
+            "condition": "true"
+        },
+        "ac_8b": {
+            "line_number": "8b",
+            "fr": "Ancien cas",
+            "en": "A.C",
+            "condition": "true"
+        },
+        "qty_8c": {
+            "line_number": "8c",
+            "fr": "QTE",
+            "en": "QTY",
+            "condition": "true"
+        },
+        "apc_8d": {
+            "line_number": "8d",
+            "fr": "Année de Protection Couple",
+            "en": "A.P.C",
+            "condition": "true"
+        },
+        "spermicides": {
+            "line_number": "9",
+            "fr": "SPERMICIDES BOMB",
+            "en": "SPERMICIDES Bomb",
+            "condition": "true"
+        },
+        "nc_9a": {
+            "line_number": "9a",
+            "fr": "Nouveaux cas",
+            "en": "New cases",
+            "condition": "true"
+        },
+        "ac_9b": {
+            "line_number": "9b",
+            "fr": "Ancien cas",
+            "en": "A.C",
+            "condition": "true"
+        },
+        "qty_9c": {
+            "line_number": "9c",
+            "fr": "QTE",
+            "en": "QTY",
+            "condition": "true"
+        },
+        "apc_9d": {
+            "line_number": "9d",
+            "fr": "Année de Protection Couple",
+            "en": "A.P.C",
+            "condition": "true"
+        }
+    },
+    "definitions": {
+        "columns": {
+            "number": {
+                "fr": "Nombre",
+                "en": "Number",
+                "title":"Number",
+                "condition": "true"
+            }
+        }
+    },
+    "parent": "report_reprohealth"
+}

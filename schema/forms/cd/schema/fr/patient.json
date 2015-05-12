@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json_schema.org/draft-04/schema#",
+  "_id": "patient",
+  "title": "Patient Information",
+  "description": "Saisir les données personelles du patient",
+  "type": "object",
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string",
+      "$ref": "./lists/#genders"
+    },
+    "clinic_id": {
+      "type": "string"
+    },
+    "government_id": {
+      "type": "string"
+    },
+    "hiv_id": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "number"
+    },
+    "hometown": {
+      "type": "string"
+    },
+    "village": {
+      "type": "string"
+    },
+    "date_age": {
+      "type": "date",
+      "format": "date"
+    },
+    "current_age_years": {
+      "type": "number"
+    },
+    "medication_allergies": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "current_age_months": {
+      "type": "number"
+    },
+    "current_created_months": {
+      "type": "number"
+    }
+  }
+}

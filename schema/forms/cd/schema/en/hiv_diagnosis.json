@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json_schema.org/draft-04/schema#",
+  "_id": "hiv_diagnosis",
+  "title": "HIV Diagnosis",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "hiv_status_prior": {
+      "type": "string",
+      "$ref": "./lists/#hiv_statuses"
+    },
+    "hiv_partner_status_prior": {
+      "type": "string",
+      "$ref": "./lists/#hiv_statuses"
+    },
+    "hiv_tested": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_status": {
+      "type": "string",
+      "$ref": "./lists/#hiv_statuses"
+    },
+    "post_test_counseling": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_partner_tested": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_partner_status": {
+      "type": "string",
+      "$ref": "./lists/#hiv_statuses"
+    },
+    "hiv_partner_visit_recorded": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_discordant": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_counseling": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "hiv_partner_counseling": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "art_drugs": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "combo_drugs": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "referred_to_elsewhere": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "referred_to_location": {
+      "type": "string",
+      "$ref": "./lists/#referral_locations"
+    },
+    "follow_up_recommended": {
+      "type": "number",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    }
+  }
+}

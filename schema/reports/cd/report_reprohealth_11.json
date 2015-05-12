@@ -1,0 +1,10 @@
+{
+    "title": "10. Drug store control",
+    "title": "10. Controle de stock des médicaments",
+    "type": "object",
+    "properties": {},
+    "definitions": {
+        "columns": {}
+    },
+    "parent": "report_reprohealth"
+}
